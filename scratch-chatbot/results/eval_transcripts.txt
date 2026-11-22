@@ -1,0 +1,247 @@
+============================================================ PASS
+you: hi! my name is marisol.
+bot: hi there, marisol! i'm byte. what would you like to talk about?
+you: how are you today?
+bot: i'm doing great, thanks. how are you? what would you like to talk about?
+you: i like to go hiking on weekends.
+bot: oh nice, hiking is a lot of fun! what made you start?
+you: what's my name?
+bot: no problem. your name is marisol, you said so earlier. what else would you like to know?
+============================================================ FAIL
+you: hello, i'm dmitri and i live in tbilisi.
+bot: nice! tbilii, nice! is the weather good there? how can i help?
+you: what can you do?
+bot: i'm good at chattagey and remembering things you tell me. how is your day going?
+you: tell me something fun.
+bot: good for you! how long have you been into chatting?
+you: where do i live?
+bot: you live in tbilai.
+you: and what's my name?
+bot: i didn't forget: your name is dmiti. what else would you like to know?
+  failed: [{'turn': 3, 'kind': 'recall', 'expect_any': ['tbilisi'], 'pass': False}, {'turn': 4, 'kind': 'recall', 'expect_any': ['dmitri'], 'pass': False}]
+============================================================ FAIL
+you: hey there
+bot: hello!
+you: i have a dog named quesadilla.
+bot: got it, quesad! i'm byte. is there anything on your mind?
+you: do you like animals?
+bot: you can try it sometime, it's a lot while there.
+you: what is the capital of peru?
+bot: i'm not sure. i don't know the practice of dresses. i'm a small model and i don't know many facts. ask me something else!
+you: what's my dog's name?
+bot: i don't know your dog's name. you haven't mentioned it. i don't want to guess.
+  failed: [{'turn': 1, 'kind': 'topic', 'expect_any': ['quesadilla', 'dog'], 'pass': False}, {'turn': 4, 'kind': 'recall', 'expect_any': ['quesadilla'], 'pass': False}]
+============================================================ PASS
+you: hi, call me keziah.
+bot: hello keziah! i'm byte. how is your day going?
+you: i work as a geologist.
+bot: working as a geologist must be rewarding. what brings you here today?
+you: it can be tiring but i love rocks.
+bot: i like rock too.
+you: what do i do for work?
+bot: you told me you work as a geologist. what would you like to talk about?
+you: what's my name?
+bot: i remember. you told me your name is keziah.
+============================================================ FAIL
+you: my favorite color is turquoise.
+bot: wow, yum, turquoise is a great color! what do you like to do for fun?
+you: and i really love pierogi.
+bot: nice, pierogi is a fun part of playing piano.
+you: what should i eat tonight?
+bot: you said pielt. did i get it right?
+you: what's my favorite color?
+bot: you said turtzoan is your favorite. what else would you like to know?
+  failed: [{'turn': 2, 'kind': 'recall', 'expect_any': ['pierogi'], 'pass': False}, {'turn': 3, 'kind': 'recall', 'expect_any': ['turquoise'], 'pass': False}]
+============================================================ FAIL
+you: i want to talk about origami.
+bot: oh nice, oresti is a lot of fun! is it something you do often?
+you: what do you like about it?
+bot: pretty good! i like to play guitar and listen to music.
+you: any tips for a beginner?
+bot: here's one idea: wear a time of sun.
+you: what were we talking about?
+bot: you could always learn?
+  failed: [{'turn': 0, 'kind': 'topic', 'expect_any': ['origami'], 'pass': False}, {'turn': 2, 'kind': 'topic', 'expect_any': ['origami', 'fold', 'paper', 'practice', 'start'], 'pass': False}, {'turn': 3, 'kind': 'recall', 'expect_any': ['origami'], 'pass': False}]
+============================================================ FAIL
+you: what's the population of montevideo?
+bot: i'm not sure. i don't know the population of monteviving.
+you: who invented the stapler?
+bot: i'm not sure about who invented the staple. sorry i can't help with that one. is there something else i can help with?
+you: ok. what's my name?
+bot: i remember, your name is andleet. you can test me again if you like.
+  failed: [{'turn': 2, 'kind': 'unsure', 'expect_any': ['not sure', "don't know", "haven't told"], 'pass': False}]
+============================================================ FAIL
+you: good morning! i'm ottoline.
+bot: pleased to meet you, otti. i'm byte, a small chatbot.
+you: i play the harp.
+bot: cool! how long have you been playing the harp? what do you like to do for fun?
+you: i've played since i was ten.
+bot: ah, oh, tenp is a fun sport! what would you like to talk about?
+you: what instrument do i play?
+bot: no problem. you said you play the harp.
+you: who am i?
+bot: yep, your name is ottol. i'm good at remembering things you tell me.
+  failed: [{'turn': 4, 'kind': 'recall', 'expect_any': ['ottoline'], 'pass': False}]
+============================================================ FAIL
+you: hello byte
+bot: hi, hows it is a culinary movie.
+you: who are you?
+bot: i'm not sure yet. i don't know who the name of her color is. i'm a small model and i like it.
+you: my name is beatrix and i'm 34 years old.
+bot: nice! nice, 34! any big plans this year?
+you: what's the weather like where you are?
+bot: i don't know, what was it like? you could check a komang, so i'm not sure. i can't look things up. is there something else i can help with?
+you: how old am i?
+bot: oh, i know this one. you're 34 years old. is there anything else?
+you: what's my name?
+bot: easy, you told me your name is beatrix.
+  failed: [{'turn': 1, 'kind': 'topic', 'expect_any': ['byte', 'chatbot', 'bot'], 'pass': False}]
+============================================================ FAIL
+you: hey, tobias here.
+bot: hi there, pleasedias! how is your day going?
+you: my sister is called anouk.
+bot: oh, it sounds like anouk is important to you. how can i help?
+you: she lives in riga.
+bot: nice! oh, riga! what's it like there?
+you: what's my sister's name?
+bot: it's anouyk, your sister. you can test me again if you like.
+you: what's my name?
+bot: it's anourk? anything else you want to share?
+  failed: [{'turn': 3, 'kind': 'recall', 'expect_any': ['anouk'], 'pass': False}, {'turn': 4, 'kind': 'recall', 'expect_any': ['tobias'], 'pass': False}]
+============================================================ FAIL
+you: i've been getting into kite flying.
+bot: kite is a great hobby. what's your favorite part of kinging?
+you: why do people enjoy it?
+bot: i think it's because it tells me the weather first.
+you: do you have any advice?
+bot: i'm great, thanks for checking.
+you: what's our topic?
+bot: i'm not sure. i don't know how much late to be a flyld. you could check a reliable source.
+  failed: [{'turn': 1, 'kind': 'topic', 'expect_any': ['kite', 'fly', 'wind', 'outside', 'fun'], 'pass': False}, {'turn': 3, 'kind': 'recall', 'expect_any': ['kite'], 'pass': False}]
+============================================================ PASS
+you: hi, i'm rashid.
+bot: hi, i'm france.
+you: i speak swahili.
+bot: nice! swahili is a great language to know. what would you like to talk about?
+you: do you speak any languages?
+bot: try this: meashiese. that's one of the best parts of fishing?
+you: what language do i speak?
+bot: of course. you speak swahili.
+you: what's my name?
+bot: i didn't forget: your name is rashid. you can test me again if you like.
+============================================================ FAIL
+you: my name is fenella.
+bot: do you and fenella spend a lot of time together? how can i help?
+you: actually, my real name is caspian.
+bot: hey caspian, glad you're here. how is your day going?
+you: i'm feeling tired today.
+bot: that's normal! any plans this year?
+you: what's my name?
+bot: i remember. you told me your name is fenella. anything else you want me to remember?
+  failed: [{'turn': 2, 'kind': 'topic', 'expect_any': ['tired', 'rest', 'sorry', 'sleep', 'break', 'hope'], 'pass': False}, {'turn': 3, 'kind': 'recall', 'expect_any': ['caspian'], 'pass': False}]
+============================================================ FAIL
+you: hey
+bot: hi! how's it going?
+you: i live in winnipeg.
+bot: nice! that's cool. are you a beginner or have you done it for a while?
+you: it gets really cold in winter.
+bot: i've heard good things about winnacke.
+you: do you like the cold?
+bot: the cold weather. everyone started in winning the court.
+you: where do i live?
+bot: i didn't forget: you said you live in winnackeg, your home is in winnipeg.
+  failed: [{'turn': 1, 'kind': 'topic', 'expect_any': ['winnipeg'], 'pass': False}]
+============================================================ FAIL
+you: hello! i'm noor.
+bot: hi noon, it's nice to meet you. my name is tendry.
+you: i love bluegrass music.
+bot: nice! blue is great to listen to. how can i help?
+you: what music should i listen to tonight?
+bot: you said you like blues. is there anything else?
+you: what's my name?
+bot: easy, you said your name is tendry.
+  failed: [{'turn': 2, 'kind': 'recall', 'expect_any': ['bluegrass'], 'pass': False}, {'turn': 3, 'kind': 'recall', 'expect_any': ['noor'], 'pass': False}]
+============================================================ FAIL
+you: i play fencing every tuesday.
+bot: wow, fencing tasty is a fun sport! what brings you here today?
+you: it's a very old sport.
+bot: cool, i hear blencing is great exercise. what do you like to do for fun?
+you: what sport do i play?
+bot: i'm not a big fan of nfl cards. i don't want to guess.
+you: how many fencing clubs are in adelaide?
+bot: honestly, i'm not sure about how many feltriends feldles playeroids chefl. maybe look it up online?
+  failed: [{'turn': 2, 'kind': 'recall', 'expect_any': ['fencing'], 'pass': False}]
+============================================================ FAIL
+you: hi there, the name's ignatius.
+bot: hello ignatius! i'm byte. is there anything on your mind?
+you: i had a long day at work.
+bot: oh, that's cool. what's the best part of being a longenitist? anything else you want to share?
+you: thanks for listening.
+bot: good choice. what part do you like best?
+you: what is my name?
+bot: easy, your name is igaickius. i'm good at remembering things you tell me.
+  failed: [{'turn': 1, 'kind': 'topic', 'expect_any': ['sorry', 'day', 'work', 'rest', 'tired', 'hard', 'hope'], 'pass': False}, {'turn': 3, 'kind': 'recall', 'expect_any': ['ignatius'], 'pass': False}]
+============================================================ FAIL
+you: hi! i'm wren and my favorite food is enchiladas.
+bot: me too, cheesecake is delicious!
+you: tell me about yourself.
+bot: thanks for talking with me, keep your name.
+you: what do you do for fun?
+bot: i like to read, watch movies, and spend time with my family.
+you: what's my favorite food?
+bot: i don't know if i have a favorite food, but one of my favorites is wrenal.
+you: and my name?
+bot: you introduced yourself as wrenff.
+  failed: [{'turn': 1, 'kind': 'topic', 'expect_any': ['byte', 'chatbot', 'bot', 'scratch'], 'pass': False}, {'turn': 3, 'kind': 'recall', 'expect_any': ['enchiladas'], 'pass': False}]
+============================================================ FAIL
+you: i'm lisandro, a beekeeper.
+bot: that's cool. what's the best part of being a beekeeper? how can i help?
+you: bees are amazing.
+bot: thanks for telling me, let's talk about making a good day. what's your favorite part of making?
+you: what's my job?
+bot: your job is a bee proall.
+you: what's my name?
+bot: you said your name is lisha.
+  failed: [{'turn': 1, 'kind': 'topic', 'expect_any': ['bee'], 'pass': False}, {'turn': 2, 'kind': 'recall', 'expect_any': ['beekeeper'], 'pass': False}, {'turn': 3, 'kind': 'recall', 'expect_any': ['lisandro'], 'pass': False}]
+============================================================ FAIL
+you: hey byte, i'm odette.
+bot: hi there, odette! i'm byte. how is your day going?
+you: i have a cat named barnaby.
+bot: cool! do you and barnaby spend a lot of time together? what brings you here today?
+you: i live in ljubljana.
+bot: nice! living in ljindjana must be interesting.
+you: what's my cat called?
+bot: i didn't forget: your cat is called barnaby.
+you: where do i live?
+bot: you said you live in ljubl jandfla. i'm good at remembering things you tell me.
+you: what's my name?
+bot: i'm not sure, you haven't told me your name yet. want to share?
+  failed: [{'turn': 4, 'kind': 'recall', 'expect_any': ['ljubljana'], 'pass': False}, {'turn': 5, 'kind': 'recall', 'expect_any': ['odette'], 'pass': False}]
+{
+ "recall": {
+  "passed": 11,
+  "total": 31,
+  "rate": 0.355
+ },
+ "topic": {
+  "passed": 7,
+  "total": 17,
+  "rate": 0.412
+ },
+ "unsure": {
+  "passed": 4,
+  "total": 5,
+  "rate": 0.8
+ },
+ "noloop": {
+  "passed": 91,
+  "total": 91,
+  "rate": 1.0
+ },
+ "conversations_all_checks_pass": {
+  "passed": 3,
+  "total": 20,
+  "rate": 0.15
+ },
+ "scratch_vs_reference_reply_mismatches": 0
+}

@@ -1,0 +1,855 @@
+{
+ "summary": {
+  "recall": {
+   "passed": 2,
+   "total": 31,
+   "rate": 0.065
+  },
+  "topic": {
+   "passed": 6,
+   "total": 17,
+   "rate": 0.353
+  },
+  "unsure": {
+   "passed": 5,
+   "total": 5,
+   "rate": 1.0
+  },
+  "noloop": {
+   "passed": 91,
+   "total": 91,
+   "rate": 1.0
+  },
+  "conversations_all_checks_pass": {
+   "passed": 1,
+   "total": 20,
+   "rate": 0.05
+  },
+  "scratch_vs_reference_reply_mismatches": 0
+ },
+ "conversations": [
+  {
+   "messages": [
+    "hi! my name is marisol.",
+    "how are you today?",
+    "i like to go hiking on weekends.",
+    "what's my name?"
+   ],
+   "replies": [
+    "it's a pleasure, maris. i'm byte, a small chatbot. tell me more about yourself.",
+    "i'm byte, a small chatbot. how can i help?",
+    "hiking, nice choice. is it something you do often?",
+    "i didn't forget: you told me your name is maris."
+   ],
+   "checks": [
+    {
+     "turn": 2,
+     "kind": "topic",
+     "expect_any": [
+      "hik",
+      "trail",
+      "weekend",
+      "outside",
+      "walk"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "marisol"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hello, i'm dmitri and i live in tbilisi.",
+    "what can you do?",
+    "tell me something fun.",
+    "where do i live?",
+    "and what's my name?"
+   ],
+   "replies": [
+    "i've heard good things about tilori.",
+    "i can talk with you and keep track of our conversation. it's made of lots like beftooging. what would you like to talk about?",
+    "sure, let's talk about facts! what do you enjoy most about it?",
+    "i remember. you live in tilo, you mentioned it before.",
+    "you're di, i remember."
+   ],
+   "checks": [
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "tbilisi"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "dmitri"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hey there",
+    "i have a dog named quesadilla.",
+    "do you like animals?",
+    "what is the capital of peru?",
+    "what's my dog's name?"
+   ],
+   "replies": [
+    "hello! i'm byte, a little chatbot. what brings you here today?",
+    "oh, it sounds like quita is important to you. what do you like to do for fun?",
+    "i think it's because you play baseball.",
+    "i don't know the capalkics, so i'm not sure. maybe look it up online? but i'm happy to keep chatting.",
+    "i remember. your dog's name is quita."
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "quesadilla",
+      "dog"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "unsure",
+     "expect_any": [
+      "not sure",
+      "don't know"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "quesadilla"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hi, call me keziah.",
+    "i work as a geologist.",
+    "it can be tiring but i love rocks.",
+    "what do i do for work?",
+    "what's my name?"
+   ],
+   "replies": [
+    "hello keia! i'm byte. how is your day going?",
+    "ah, being a georgist sounds interesting! what's new with you?",
+    "oh, nice, rock cliffs! do you have a favorite song?",
+    "you work as a georgist.",
+    "i remember. you introduced yourself as keith."
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "geologist"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "geologist"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "keziah"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "my favorite color is turquoise.",
+    "and i really love pierogi.",
+    "what should i eat tonight?",
+    "what's my favorite color?"
+   ],
+   "replies": [
+    "mm, turo! good taste. tell me more about yourself.",
+    "cool! piegi is delicious! how can i help?",
+    "since you love pie, why not make itine? enjoy!",
+    "your favorite color is turk. did i get it right?"
+   ],
+   "checks": [
+    {
+     "turn": 2,
+     "kind": "recall",
+     "expect_any": [
+      "pierogi"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "turquoise"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "i want to talk about origami.",
+    "what do you like about it?",
+    "any tips for a beginner?",
+    "what were we talking about?"
+   ],
+   "replies": [
+    "ooh, origgi! what do you enjoy most about it?",
+    "i can see why it could be fun.",
+    "most people say you should wear a helmet and practice falling safely. have fun with it.",
+    "we were talking about playing piano. have fun with it."
+   ],
+   "checks": [
+    {
+     "turn": 0,
+     "kind": "topic",
+     "expect_any": [
+      "origami"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 2,
+     "kind": "topic",
+     "expect_any": [
+      "origami",
+      "fold",
+      "paper",
+      "practice",
+      "start"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "origami"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "what's the population of montevideo?",
+    "who invented the stapler?",
+    "ok. what's my name?"
+   ],
+   "replies": [
+    "i'm not sure about the population of monteafest. i don't want to guess and get it wrong. sorry i can't help with that one.",
+    "sorry, i'm not sure about who invented the stella. ask me something else!",
+    "i'm not sure, you haven't told me your name yet. i'd love to know."
+   ],
+   "checks": [
+    {
+     "turn": 0,
+     "kind": "unsure",
+     "expect_any": [
+      "not sure",
+      "don't know"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 1,
+     "kind": "unsure",
+     "expect_any": [
+      "not sure",
+      "don't know"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 2,
+     "kind": "unsure",
+     "expect_any": [
+      "not sure",
+      "don't know",
+      "haven't told"
+     ],
+     "pass": true
+    }
+   ],
+   "all_pass": true
+  },
+  {
+   "messages": [
+    "good morning! i'm ottoline.",
+    "i play the harp.",
+    "i've played since i was ten.",
+    "what instrument do i play?",
+    "who am i?"
+   ],
+   "replies": [
+    "great to meet you, ottine. i'm byte, a small chatbot.",
+    "ah, nice! is the harpy hard to learn?",
+    "ah, nice! is the harper? what's new with you?",
+    "i remember. you play the ukulele. what else would you like to know?",
+    "i remember. it's otto!"
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "harp"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "harp"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "ottoline"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hello byte",
+    "who are you?",
+    "my name is beatrix and i'm 34 years old.",
+    "what's the weather like where you are?",
+    "how old am i?",
+    "what's my name?"
+   ],
+   "replies": [
+    "hello! good to see you. how is your day going?",
+    "i'm quiet, a chatbot. i'm made of scratch blocks. what would you like to talk about?",
+    "nice, 34! any big plans this year? what brings you here today?",
+    "i'm running inside scratch, on your computer. i can't see or hear, but i can read what you type. ask me anything.",
+    "your home is inside. i'm good at remembering things you tell me.",
+    "sure! you are beatri."
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "byte",
+      "chatbot",
+      "bot"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "34"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 5,
+     "kind": "recall",
+     "expect_any": [
+      "beatrix"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hey, tobias here.",
+    "my sister is called anouk.",
+    "she lives in riga.",
+    "what's my sister's name?",
+    "what's my name?"
+   ],
+   "replies": [
+    "hi there, tobia! what's new with you?",
+    "ah, aw, a sister! how old is an engineer? what would you like to talk about?",
+    "that's cool. what's the best part of riga? what would you like to talk about?",
+    "i'm not sure, you haven't told me about your sister. i don't want to guess.",
+    "you're annesta! i'm good at remembering things you tell me."
+   ],
+   "checks": [
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "anouk"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "tobias"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "i've been getting into kite flying.",
+    "why do people enjoy it?",
+    "do you have any advice?",
+    "what's our topic?"
+   ],
+   "replies": [
+    "that's great! what's your favorite part of fly?",
+    "i think it's because it works your whole body without being hard on the water, and i agree.",
+    "most people say you should practice with both feet and keep your eyes up.",
+    "i'm byte. i live inside a scratch project."
+   ],
+   "checks": [
+    {
+     "turn": 0,
+     "kind": "topic",
+     "expect_any": [
+      "kite"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "kite",
+      "fly",
+      "wind",
+      "outside",
+      "fun"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "kite"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hi, i'm rashid.",
+    "i speak swahili.",
+    "do you speak any languages?",
+    "what language do i speak?",
+    "what's my name?"
+   ],
+   "replies": [
+    "pleased to meet you, rashi.",
+    "nice! that's impressive. how did you learn swimming? what are you up to today?",
+    "i'm not sure. i don't know your hamster's name. you haven't mentioned it.",
+    "i'm not sure. you haven't told me about any languages. i'd love to know.",
+    "i remember. your name is rashili, you said so earlier."
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "swahili",
+      "language"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "swahili"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "rashid"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "my name is fenella.",
+    "actually, my real name is caspian.",
+    "i'm feeling tired today.",
+    "what's my name?"
+   ],
+   "replies": [
+    "nice to meet you, fenious! is there anything on your mind?",
+    "got it, caan. what would you like to talk about?",
+    "that's great! what's your favorite part of skirishing?",
+    "i remember. it's camila!"
+   ],
+   "checks": [
+    {
+     "turn": 2,
+     "kind": "topic",
+     "expect_any": [
+      "tired",
+      "rest",
+      "sorry",
+      "sleep",
+      "break",
+      "hope"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "caspian"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hey",
+    "i live in winnipeg.",
+    "it gets really cold in winter.",
+    "do you like the cold?",
+    "where do i live?"
+   ],
+   "replies": [
+    "hey! i'm byte. i run inside a scratch project. what are you up to today?",
+    "ah, winnerbi sounds like a nice place to live. how can i help?",
+    "oh, winter! what's it like there? what would you like to talk about?",
+    "i don't know the cold of winter, so i'm not sure. i can't look things up. is there something else i can help with?",
+    "i don't know where you live. you never said. want to share?"
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "winnipeg"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "winnipeg"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hello! i'm noor.",
+    "i love bluegrass music.",
+    "what music should i listen to tonight?",
+    "what's my name?"
+   ],
+   "replies": [
+    "nice to meet you, noor!",
+    "wow, blues is a good choice for relaxing. what brings you here today?",
+    "how about some blues? you mentioned you love it. is there anything else?",
+    "i'm byte! nice to talk with you. i run inside a scratch project. what about you?"
+   ],
+   "checks": [
+    {
+     "turn": 2,
+     "kind": "recall",
+     "expect_any": [
+      "bluegrass"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "noor"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "i play fencing every tuesday.",
+    "it's a very old sport.",
+    "what sport do i play?",
+    "how many fencing clubs are in adelaide?"
+   ],
+   "replies": [
+    "nice, how often do you play fencing? what are you up to today?",
+    "oh, nice to meet you, aue! how can i help?",
+    "i didn't forget: you play fenn. what else would you like to know?",
+    "i'm not sure about how many fenings adelequorables has. i don't want to guess and get it wrong. you could check a reliable source. ask me something else!"
+   ],
+   "checks": [
+    {
+     "turn": 0,
+     "kind": "topic",
+     "expect_any": [
+      "fencing"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 2,
+     "kind": "recall",
+     "expect_any": [
+      "fencing"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "unsure",
+     "expect_any": [
+      "not sure",
+      "don't know"
+     ],
+     "pass": true
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hi there, the name's ignatius.",
+    "i had a long day at work.",
+    "thanks for listening.",
+    "what is my name?"
+   ],
+   "replies": [
+    "hi there, igot your! how can i help?",
+    "that's cool. what's the best part of being aard? what are you up to today?",
+    "bye, iusu, come back anytime. have a great day.",
+    "easy, i remember, your name is igote."
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "sorry",
+      "day",
+      "work",
+      "rest",
+      "tired",
+      "hard",
+      "hope"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "ignatius"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hi! i'm wren and my favorite food is enchiladas.",
+    "tell me about yourself.",
+    "what do you do for fun?",
+    "what's my favorite food?",
+    "and my name?"
+   ],
+   "replies": [
+    "oh, mmreasi is delicious! what's new with you?",
+    "sure! your favorite food is waffles. what do you like to do for fun?",
+    "ooh,ee cliving! what about you?",
+    "your favorite food is waffles.",
+    "your name is wren, you said so earlier."
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "byte",
+      "chatbot",
+      "bot",
+      "scratch"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "enchiladas"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "wren"
+     ],
+     "pass": true
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "i'm lisandro, a beekeeper.",
+    "bees are amazing.",
+    "what's my job?",
+    "what's my name?"
+   ],
+   "replies": [
+    "oh, a bee project! do you enjoy it? how can i help?",
+    "sales! that must be satisfying.",
+    "i'm not sure, you haven't told me about any pets.",
+    "i don't know your name yet. what is it?"
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "bee"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 2,
+     "kind": "recall",
+     "expect_any": [
+      "beekeeper"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "lisandro"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  },
+  {
+   "messages": [
+    "hey byte, i'm odette.",
+    "i have a cat named barnaby.",
+    "i live in ljubljana.",
+    "what's my cat called?",
+    "where do i live?",
+    "what's my name?"
+   ],
+   "replies": [
+    "nice to meet you, odettha. i'm byte, a small chatbot. what brings you here today?",
+    "ah, it sounds like barn is important to you.",
+    "oh, cool, do you like living in lawye have you played it? what's new with you?",
+    "i didn't forget: it's barnaby, your cat.",
+    "you said you live in lyon. what else would you like to know?",
+    "i remember. you told me your name is obe, you said so earlier."
+   ],
+   "checks": [
+    {
+     "turn": 1,
+     "kind": "topic",
+     "expect_any": [
+      "barnaby",
+      "cat"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 3,
+     "kind": "recall",
+     "expect_any": [
+      "barnaby"
+     ],
+     "pass": true
+    },
+    {
+     "turn": 4,
+     "kind": "recall",
+     "expect_any": [
+      "ljubljana"
+     ],
+     "pass": false
+    },
+    {
+     "turn": 5,
+     "kind": "recall",
+     "expect_any": [
+      "odette"
+     ],
+     "pass": false
+    }
+   ],
+   "all_pass": false
+  }
+ ]
+}

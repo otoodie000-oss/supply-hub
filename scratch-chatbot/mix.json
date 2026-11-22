@@ -1,0 +1,12 @@
+{
+  "comment": "Stage-1 sampling: number of passes over each source's training conversations (fractional = random subset). Chit-chat is up-weighted, task-oriented booking dialogue down-weighted.",
+  "epochs": {
+    "topical_chat": 1.5,
+    "synthetic_persona_chat": 1.5,
+    "taskmaster1": 1.0,
+    "taskmaster2": 0.5,
+    "taskmaster3": 0.25,
+    "sgd": 0.25,
+    "multiwoz": 0.25
+  }
+}

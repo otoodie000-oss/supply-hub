@@ -1,0 +1,12 @@
+{
+ "/home/user/work/stage2_val.npz": {
+  "float_val_loss": 0.3513,
+  "int8_val_loss": 0.3517,
+  "rel_diff_pct": 0.093
+ },
+ "/home/user/work/stage1_val.npz": {
+  "float_val_loss": 5.7425,
+  "int8_val_loss": 5.7446,
+  "rel_diff_pct": 0.036
+ }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "scratch-chatbot-harness",
+  "version": "1.0.0",
+  "description": "Headless scratch-vm / TurboWarp test harness for the Scratch transformer chatbot",
+  "scripts": {
+    "check-vocab": "node check_vocab.js ../vocab.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "scratch-vm": "^5.0.300"
+  },
+  "private": true
+}

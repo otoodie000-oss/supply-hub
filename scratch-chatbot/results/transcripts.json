@@ -1,0 +1,281 @@
+[
+ {
+  "conversation": 1,
+  "chat_list": [
+   "you: hi! i'm jonas.",
+   "bot: hi, i'm franky.",
+   "you: i live in hamburg and i",
+   "      work as a nurse.",
+   "bot: wow, working as a nurse",
+   "      must be rewarding. what",
+   "      do you like to do for",
+   "      fun?",
+   "you: it's a busy job but i",
+   "      like helping people.",
+   "bot: that's awesome. what's",
+   "      your favorite part of",
+   "      being a nurse?",
+   "you: do you have any advice",
+   "      for staying calm at",
+   "      work?",
+   "bot: i enjoy it as a",
+   "      newspaper. it's nice to",
+   "      find yourself feel good",
+   "      and happy.",
+   "you: where do i live?",
+   "bot: you live in hamburg, you",
+   "      mentioned it before.",
+   "      anything else you want",
+   "      me to remember?",
+   "you: what's my name?",
+   "bot: yes! your name is jonky,",
+   "      you said so earlier tom."
+  ],
+  "turns": [
+   {
+    "you": "hi! i'm jonas.",
+    "bot": "hi, i'm franky."
+   },
+   {
+    "you": "i live in hamburg and i work as a nurse.",
+    "bot": "wow, working as a nurse must be rewarding. what do you like to do for fun?"
+   },
+   {
+    "you": "it's a busy job but i like helping people.",
+    "bot": "that's awesome. what's your favorite part of being a nurse?"
+   },
+   {
+    "you": "do you have any advice for staying calm at work?",
+    "bot": "i enjoy it as a newspaper. it's nice to find yourself feel good and happy."
+   },
+   {
+    "you": "where do i live?",
+    "bot": "you live in hamburg, you mentioned it before. anything else you want me to remember?"
+   },
+   {
+    "you": "what's my name?",
+    "bot": "yes! your name is jonky, you said so earlier tom."
+   }
+  ]
+ },
+ {
+  "conversation": 2,
+  "chat_list": [
+   "you: hello byte, how are you?",
+   "bot: hi there, do you like to",
+   "      draw?",
+   "you: what can you do?",
+   "bot: i can see why you like to",
+   "      draw, but don't worry",
+   "      about them.",
+   "you: i have a turtle named",
+   "      shelby.",
+   "bot: aw, that's a little bit",
+   "      of a daughter!",
+   "you: he is twenty years old.",
+   "bot: that's really cool. i've",
+   "      always wanted to draw.",
+   "you: what's my turtle called?",
+   "bot: i'm not sure, but i don't",
+   "      know.",
+   "you: thanks, bye!",
+   "bot: good night, come back",
+   "      anytime."
+  ],
+  "turns": [
+   {
+    "you": "hello byte, how are you?",
+    "bot": "hi there, do you like to draw?"
+   },
+   {
+    "you": "what can you do?",
+    "bot": "i can see why you like to draw, but don't worry about them."
+   },
+   {
+    "you": "i have a turtle named shelby.",
+    "bot": "aw, that's a little bit of a daughter!"
+   },
+   {
+    "you": "he is twenty years old.",
+    "bot": "that's really cool. i've always wanted to draw."
+   },
+   {
+    "you": "what's my turtle called?",
+    "bot": "i'm not sure, but i don't know."
+   },
+   {
+    "you": "thanks, bye!",
+    "bot": "good night, come back anytime."
+   }
+  ]
+ },
+ {
+  "conversation": 3,
+  "chat_list": [
+   "you: hey, can we talk about",
+   "      baking?",
+   "bot: baking is nice to meet",
+   "      you. what's your",
+   "      favorite part of baking?",
+   "you: i made bread yesterday",
+   "      but it was too dense.",
+   "bot: that's a great plan. i",
+   "      only wish i could bring",
+   "      out a fellow though.",
+   "you: any tips?",
+   "bot: i would love to go with",
+   "      baking bread, but i",
+   "      don't have that",
+   "      information.",
+   "you: what were we talking",
+   "      about?",
+   "bot: we talk about baking, but",
+   "      i think we will always",
+   "      be delicious.",
+   "you: who invented bread?",
+   "bot: we've been there in a few",
+   "      brees and we have to go",
+   "      with them."
+  ],
+  "turns": [
+   {
+    "you": "hey, can we talk about baking?",
+    "bot": "baking is nice to meet you. what's your favorite part of baking?"
+   },
+   {
+    "you": "i made bread yesterday but it was too dense.",
+    "bot": "that's a great plan. i only wish i could bring out a fellow though."
+   },
+   {
+    "you": "any tips?",
+    "bot": "i would love to go with baking bread, but i don't have that information."
+   },
+   {
+    "you": "what were we talking about?",
+    "bot": "we talk about baking, but i think we will always be delicious."
+   },
+   {
+    "you": "who invented bread?",
+    "bot": "we've been there in a few brees and we have to go with them."
+   }
+  ]
+ },
+ {
+  "conversation": 4,
+  "chat_list": [
+   "you: my name is priya and my",
+   "      favorite food is",
+   "      dumplings.",
+   "bot: yum, dumplings is a great",
+   "      choice. what would you",
+   "      like to talk about?",
+   "you: i also love jazz.",
+   "bot: nice! jazz sounds tasty.",
+   "      do you make it yourself?",
+   "      how can i help?",
+   "you: what should i eat for",
+   "      dinner?",
+   "bot: you could have dumplings,",
+   "      you told me you love it.",
+   "      enjoy!",
+   "you: and what music should i",
+   "      put on?",
+   "bot: you said you love the",
+   "      musician.",
+   "you: what's my name?",
+   "bot: easy, you told me your",
+   "      name is priya."
+  ],
+  "turns": [
+   {
+    "you": "my name is priya and my favorite food is dumplings.",
+    "bot": "yum, dumplings is a great choice. what would you like to talk about?"
+   },
+   {
+    "you": "i also love jazz.",
+    "bot": "nice! jazz sounds tasty. do you make it yourself? how can i help?"
+   },
+   {
+    "you": "what should i eat for dinner?",
+    "bot": "you could have dumplings, you told me you love it. enjoy!"
+   },
+   {
+    "you": "and what music should i put on?",
+    "bot": "you said you love the musician."
+   },
+   {
+    "you": "what's my name?",
+    "bot": "easy, you told me your name is priya."
+   }
+  ]
+ },
+ {
+  "conversation": 5,
+  "chat_list": [
+   "you: hi",
+   "bot: hi, how can i help you?",
+   "you: who are you?",
+   "bot: i'm a quarterback in",
+   "      alabama. i like the",
+   "      piano. what about you?",
+   "you: are you a robot?",
+   "bot: i'm a chatbot made of",
+   "      scratch blocks. i also",
+   "      watch it and popcory.",
+   "you: what's the tallest",
+   "      mountain in the world?",
+   "bot: i don't know the",
+   "      tallestument called in",
+   "      the world, so i'm not",
+   "      sure. i can't look",
+   "      things up.",
+   "you: how old is the universe?",
+   "bot: i'm not sure about the",
+   "      factore. i don't want to",
+   "      guess and get it wrong.",
+   "      you could check a",
+   "      reliable source.",
+   "you: what's my name?",
+   "bot: let me think... it's duy!",
+   "you: my name is leo.",
+   "bot: ah, welcome, leo!",
+   "you: what's my name now?",
+   "bot: i didn't forget: you said",
+   "      your name is leo."
+  ],
+  "turns": [
+   {
+    "you": "hi",
+    "bot": "hi, how can i help you?"
+   },
+   {
+    "you": "who are you?",
+    "bot": "i'm a quarterback in alabama. i like the piano. what about you?"
+   },
+   {
+    "you": "are you a robot?",
+    "bot": "i'm a chatbot made of scratch blocks. i also watch it and popcory."
+   },
+   {
+    "you": "what's the tallest mountain in the world?",
+    "bot": "i don't know the tallestument called in the world, so i'm not sure. i can't look things up."
+   },
+   {
+    "you": "how old is the universe?",
+    "bot": "i'm not sure about the factore. i don't want to guess and get it wrong. you could check a reliable source."
+   },
+   {
+    "you": "what's my name?",
+    "bot": "let me think... it's duy!"
+   },
+   {
+    "you": "my name is leo.",
+    "bot": "ah, welcome, leo!"
+   },
+   {
+    "you": "what's my name now?",
+    "bot": "i didn't forget: you said your name is leo."
+   }
+  ]
+ }
+]
