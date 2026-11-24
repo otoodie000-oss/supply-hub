@@ -1,6 +1,6 @@
 {
  "phase": "0",
- "step": "eval_suite",
+ "step": "sft_generator",
  "done": [
   "env_check",
   "throughput_bench",
@@ -25,7 +25,9 @@
   "resume_proof(eager bitwise)",
   "smoke_test(pass)",
   "speed_full_size(prefill ~28ms/tok, decode ~34ms/tok, fact turn 1.9-3.0s)",
-  "tokcache(all sources)"
+  "tokcache(all sources)",
+  "eval_suite(618)",
+  "bm25 b=0.5 thresholds (9,0.5,0.8) dev recall 0.912"
  ],
  "work_dir": "/home/user/work",
  "train": {
