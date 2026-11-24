@@ -181,6 +181,17 @@ def bm_word(part):
             for i in range(1, n):
                 w2 = join(w2, letter(i, w))
             w = w2
+        n = strlen(w)
+        if n > 5 and letter(n, w) == "g" and letter(n - 1, w) == "n" and letter(n - 2, w) == "i":
+            w2 = ""
+            for i in range(1, n - 2):
+                w2 = join(w2, letter(i, w))
+            w = w2
+        elif n > 5 and letter(n, w) == "d" and letter(n - 1, w) == "e":
+            w2 = ""
+            for i in range(1, n - 1):
+                w2 = join(w2, letter(i, w))
+            w = w2
         if strlen(w) < 2:
             return 0
     k = index_of(syn_from, w)

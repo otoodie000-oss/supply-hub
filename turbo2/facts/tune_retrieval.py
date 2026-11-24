@@ -96,18 +96,19 @@ def main():
     results = []
     for ta in [0, 4, 6, 7, 8, 9, 10, 11, 12]:
         for tf in [0, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
-            for ts in [0, 0.7, 0.8, 0.9]:
+            for ts in [0, 0.5, 0.6, 0.7, 0.8, 0.9]:
                 t = (ta, tf, ts)
                 rec = sum(fid in sel(c, t) for c, fid, k in cache) / len(cache)
                 fp = sum(bool(sel(c, t)) for c in negc) / len(negc)
                 nins = sum(len(sel(c, t)) for c, f, k in cache) / len(cache)
                 results.append((rec, fp, nins, t))
     # choose: maximise recall - 0.5*fp, prefer fewer insertions on ties
-    best = max(results, key=lambda r: (round(r[0] - 0.1 * r[1] - 0.02 * r[2], 3), -r[2]))
+    best = max(results, key=lambda r: (round(r[0] - 0.05 * r[1] - 0.02 * r[2], 3), -r[2]))
     print("recall with no threshold (top-2):", round(base, 3))
-    for r in sorted(results, key=lambda r: -(r[0] - 0.1 * r[1] - 0.02 * r[2]))[:8]:
+    for r in sorted(results, key=lambda r: -(r[0] - 0.05 * r[1] - 0.02 * r[2]))[:8]:
         print("recall %.3f negFP %.3f ins/q %.2f t=%s" % r)
     t = best[3]
+    print("OBJECTIVE", round(best[0] - 0.05 * best[1] - 0.02 * best[2], 4))
     rec, fp, per, nins = evaluate(b, pos, t)
     print("CHOSEN", t, "recall", round(rec, 3), "neg FP", round(fp, 3), "per-kind", per, "ins/q", round(nins, 2))
     idx_path = os.path.join(WORK, "bm25.json")

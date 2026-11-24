@@ -1,0 +1,618 @@
+{"cat": "fact_in", "prompt": "which planet do people call the red planet?", "keys": ["mars"], "retrieved": [64188, 111], "src": "hand", "id": 0}
+{"cat": "fact_in", "prompt": "whats the biggest planet in our solar system", "keys": ["jupiter"], "retrieved": [69755, 69759], "src": "hand", "id": 1}
+{"cat": "fact_in", "prompt": "how many planets orbit our sun?", "keys": ["eight", "8"], "retrieved": [34125, 5649], "src": "hand", "id": 2}
+{"cat": "fact_in", "prompt": "which planet is closest to the sun", "keys": ["mercury"], "retrieved": [108], "src": "hand", "id": 3}
+{"cat": "fact_in", "prompt": "who was the first human to step on the moon?", "keys": ["armstrong"], "retrieved": [122, 68841], "src": "hand", "id": 4}
+{"cat": "fact_in", "prompt": "how old is the universe roughly?", "keys": ["13.8", "billion"], "retrieved": [129], "src": "hand", "id": 5}
+{"cat": "fact_in", "prompt": "what's the deepest spot in the ocean called", "keys": ["mariana"], "retrieved": [65373], "src": "hand", "id": 6}
+{"cat": "fact_in", "prompt": "what is the largest ocean on earth?", "keys": ["pacific"], "retrieved": [142, 11508], "src": "hand", "id": 7}
+{"cat": "fact_in", "prompt": "which continent is the coldest one", "keys": ["antarctica"], "retrieved": [147], "src": "hand", "id": 8}
+{"cat": "fact_in", "prompt": "what is the chemical formula of water?", "keys": ["h2o", "hydrogen"], "retrieved": [60756, 30541], "src": "hand", "id": 9}
+{"cat": "fact_in", "prompt": "at what temperature does water boil in celsius?", "keys": ["100"], "retrieved": [171], "src": "hand", "id": 10}
+{"cat": "fact_in", "prompt": "how many bones does an adult human have?", "keys": ["206"], "retrieved": [69435], "src": "hand", "id": 11}
+{"cat": "fact_in", "prompt": "what's the biggest organ in the human body", "keys": ["skin"], "retrieved": [205, 70034], "src": "hand", "id": 12}
+{"cat": "fact_in", "prompt": "what is the fastest land animal?", "keys": ["cheetah"], "retrieved": [228, 65374], "src": "hand", "id": 13}
+{"cat": "fact_in", "prompt": "what is the largest animal that ever lived", "keys": ["blue whale"], "retrieved": [226, 68415], "src": "hand", "id": 14}
+{"cat": "fact_in", "prompt": "how many hearts does an octopus have?", "keys": ["three", "3"], "retrieved": [69939], "src": "hand", "id": 15}
+{"cat": "fact_in", "prompt": "who painted the mona lisa?", "keys": ["leonardo", "vinci"], "retrieved": [66540, 348], "src": "hand", "id": 16}
+{"cat": "fact_in", "prompt": "who wrote romeo and juliet", "keys": ["shakespeare"], "retrieved": [349, 72576], "src": "hand", "id": 17}
+{"cat": "fact_in", "prompt": "when did world war 2 end?", "keys": ["1945"], "retrieved": [4789, 7260], "src": "hand", "id": 18}
+{"cat": "fact_in", "prompt": "who was the first president of the united states?", "keys": ["washington"], "retrieved": [68869, 341], "src": "hand", "id": 19}
+{"cat": "fact_in", "prompt": "what year did the titanic sink?", "keys": ["1912"], "retrieved": [346, 80382], "src": "hand", "id": 20}
+{"cat": "fact_in", "prompt": "who invented the world wide web?", "keys": ["berners-lee", "berners"], "retrieved": [13836, 265], "src": "hand", "id": 21}
+{"cat": "fact_in", "prompt": "who made minecraft?", "keys": ["persson", "notch", "mojang"], "retrieved": [295, 294], "src": "hand", "id": 22}
+{"cat": "fact_in", "prompt": "what is roblox?", "keys": ["game", "platform"], "retrieved": [303, 302], "src": "hand", "id": 23}
+{"cat": "fact_in", "prompt": "what programming language do roblox games use?", "keys": ["lua"], "retrieved": [303], "src": "hand", "id": 24}
+{"cat": "fact_in", "prompt": "who created the scratch programming language", "keys": ["mit"], "retrieved": [286], "src": "hand", "id": 25}
+{"cat": "fact_in", "prompt": "what does turbowarp do?", "keys": ["faster", "fast", "compile"], "retrieved": [31, 3], "src": "hand", "id": 26}
+{"cat": "fact_in", "prompt": "how many players does a soccer team have on the field?", "keys": ["11", "eleven"], "retrieved": [20587, 356], "src": "hand", "id": 27}
+{"cat": "fact_in", "prompt": "who invented basketball?", "keys": ["naismith"], "retrieved": [70330, 359], "src": "hand", "id": 28}
+{"cat": "fact_in", "prompt": "how many keys are on a piano", "keys": ["88"], "retrieved": [376, 446], "src": "hand", "id": 29}
+{"cat": "fact_in", "prompt": "what is the capital of thailand?", "keys": ["bangkok"], "retrieved": [1802, 164], "src": "hand", "id": 30}
+{"cat": "fact_in", "prompt": "what currency do they use in thailand", "keys": ["baht"], "retrieved": [1803, 72053], "src": "hand", "id": 31}
+{"cat": "fact_in", "prompt": "what is songkran?", "keys": ["new year", "water"], "retrieved": [28990, 167], "src": "hand", "id": 32}
+{"cat": "fact_in", "prompt": "what's pad thai?", "keys": ["noodle"], "retrieved": [403], "src": "hand", "id": 33}
+{"cat": "fact_in", "prompt": "what is the tallest mountain in the world?", "keys": ["everest"], "retrieved": [71941, 141], "src": "hand", "id": 34}
+{"cat": "fact_in", "prompt": "who is the president of the united states in 2026?", "keys": ["trump"], "retrieved": [9, 63], "src": "hand", "id": 35}
+{"cat": "fact_in", "prompt": "who became uk prime minister in 2024?", "keys": ["starmer"], "retrieved": [92, 36], "src": "hand", "id": 36}
+{"cat": "fact_in", "prompt": "who won the 2022 world cup?", "keys": ["argentina"], "retrieved": [62], "src": "hand", "id": 37}
+{"cat": "fact_in", "prompt": "where were the 2024 summer olympics held?", "keys": ["paris"], "retrieved": [64], "src": "hand", "id": 38}
+{"cat": "fact_in", "prompt": "what is the best selling video game ever?", "keys": ["minecraft"], "retrieved": [76], "src": "hand", "id": 39}
+{"cat": "fact_in", "prompt": "when did chatgpt come out?", "keys": ["2022"], "retrieved": [71], "src": "hand", "id": 40}
+{"cat": "fact_in", "prompt": "who is the pope now?", "keys": ["leo"], "retrieved": [69379, 68162], "src": "hand", "id": 41}
+{"cat": "fact_in", "prompt": "what is your name?", "keys": ["turbo"], "retrieved": [], "src": "hand", "id": 42}
+{"cat": "fact_in", "prompt": "who made you?", "keys": ["matt"], "retrieved": [], "src": "hand", "id": 43}
+{"cat": "fact_in", "prompt": "can you use the internet?", "keys": ["offline", "can't", "cannot", "no internet", "no"], "retrieved": [26567, 45567], "src": "hand", "id": 44}
+{"cat": "fact_in", "prompt": "how many parameters do you have?", "keys": ["10 million", "million"], "retrieved": [79751], "src": "hand", "id": 45}
+{"cat": "fact_in", "prompt": "what is pi approximately?", "keys": ["3.14"], "retrieved": [316, 315], "src": "hand", "id": 46}
+{"cat": "fact_in", "prompt": "what does a prime number mean?", "keys": ["divided", "itself"], "retrieved": [81256, 5730], "src": "hand", "id": 47}
+{"cat": "fact_in", "prompt": "how many sides does a hexagon have?", "keys": ["six", "6"], "retrieved": [329], "src": "hand", "id": 48}
+{"cat": "fact_in", "prompt": "what is photosynthesis?", "keys": ["plants", "sunlight", "light"], "retrieved": [177, 73732], "src": "hand", "id": 49}
+{"cat": "fact_in", "prompt": "what causes a rainbow?", "keys": ["sunlight", "light", "raindrop"], "retrieved": [38911, 23874], "src": "hand", "id": 50}
+{"cat": "fact_in", "prompt": "why do we have seasons on earth?", "keys": ["tilt", "axis"], "retrieved": [140, 25295], "src": "hand", "id": 51}
+{"cat": "fact_in", "prompt": "what are the three states of matter?", "keys": ["solid", "liquid", "gas"], "retrieved": [191], "src": "hand", "id": 52}
+{"cat": "fact_in", "prompt": "who discovered penicillin?", "keys": ["fleming"], "retrieved": [199], "src": "hand", "id": 53}
+{"cat": "fact_in", "prompt": "what is the smallest country in the world?", "keys": ["vatican"], "retrieved": [152], "src": "hand", "id": 54}
+{"cat": "fact_in", "prompt": "how many continents are there?", "keys": ["seven", "7"], "retrieved": [], "src": "hand", "id": 55}
+{"cat": "fact_in", "prompt": "what do pandas mostly eat?", "keys": ["bamboo"], "retrieved": [243], "src": "hand", "id": 56}
+{"cat": "fact_in", "prompt": "where do kangaroos live?", "keys": ["australia"], "retrieved": [244], "src": "hand", "id": 57}
+{"cat": "fact_in", "prompt": "who wrote the harry potter books?", "keys": ["rowling"], "retrieved": [64872, 64935], "src": "hand", "id": 58}
+{"cat": "fact_in", "prompt": "what is the national sport of thailand?", "keys": ["muay thai"], "retrieved": [365, 32022], "src": "hand", "id": 59}
+{"prompt": "do you know the capital of brunei", "keys": ["bandar seri begawan"], "fact_id": 651, "src": "tables", "cat": "fact_in", "retrieved": [651, 652], "id": 60}
+{"prompt": "do you know the capital of gibraltar", "keys": ["gibraltar"], "fact_id": 963, "src": "tables", "cat": "fact_in", "retrieved": [963, 966], "id": 61}
+{"prompt": "do you know the capital of malawi", "keys": ["lilongwe"], "fact_id": 1261, "src": "tables", "cat": "fact_in", "retrieved": [1261, 1262], "id": 62}
+{"prompt": "i forgot the capital of zambia, what is it?", "keys": ["lusaka"], "fact_id": 1943, "src": "tables", "cat": "fact_in", "retrieved": [1943, 41621], "id": 63}
+{"prompt": "which city is the capital of mali?", "keys": ["bamako"], "fact_id": 1281, "src": "tables", "cat": "fact_in", "retrieved": [1281, 23348], "id": 64}
+{"prompt": "which city is the capital of palau?", "keys": ["ngerulmud"], "fact_id": 1491, "src": "tables", "cat": "fact_in", "retrieved": [1491, 1494], "id": 65}
+{"prompt": "which city is the capital of togo?", "keys": ["lome"], "fact_id": 1808, "src": "tables", "cat": "fact_in", "retrieved": [1808, 1811], "id": 66}
+{"prompt": "bosnia and herzegovina's capital city?", "keys": ["sarajevo"], "fact_id": 629, "src": "tables", "cat": "fact_in", "retrieved": [629, 3120], "id": 67}
+{"prompt": "which city is the capital of turkmenistan?", "keys": ["ashgabat"], "fact_id": 1845, "src": "tables", "cat": "fact_in", "retrieved": [1845, 1848], "id": 68}
+{"prompt": "do you know the capital of djibouti", "keys": ["djibouti"], "fact_id": 812, "src": "tables", "cat": "fact_in", "retrieved": [812, 13576], "id": 69}
+{"prompt": "which city is the capital of ukraine?", "keys": ["kyiv"], "fact_id": 1862, "src": "tables", "cat": "fact_in", "retrieved": [1862, 1865], "id": 70}
+{"prompt": "do you know the capital of antilles neerlandaises", "keys": ["willemstad"], "fact_id": 1419, "src": "tables", "cat": "fact_in", "retrieved": [1419], "id": 71}
+{"prompt": "what's the atomic number for francium?", "keys": ["87"], "fact_id": 2129, "src": "tables", "cat": "fact_in", "retrieved": [2129, 27709], "id": 72}
+{"prompt": "which chemical symbol does niobium have?", "keys": ["nb"], "fact_id": 2037, "src": "tables", "cat": "fact_in", "retrieved": [2037, 9727], "id": 73}
+{"prompt": "symbol of the element cobalt?", "keys": ["co"], "fact_id": 2009, "src": "tables", "cat": "fact_in", "retrieved": [2009, 69867], "id": 74}
+{"prompt": "what's the atomic number for antimony?", "keys": ["51"], "fact_id": 2057, "src": "tables", "cat": "fact_in", "retrieved": [2057, 11224], "id": 75}
+{"prompt": "symbol of the element arsenic?", "keys": ["as"], "fact_id": 2021, "src": "tables", "cat": "fact_in", "retrieved": [2021, 4115], "id": 76}
+{"prompt": "rhodium has which atomic number?", "keys": ["45"], "fact_id": 2045, "src": "tables", "cat": "fact_in", "retrieved": [2045, 32472], "id": 77}
+{"prompt": "palladium has which atomic number?", "keys": ["46"], "fact_id": 2047, "src": "tables", "cat": "fact_in", "retrieved": [2047, 18443], "id": 78}
+{"prompt": "rutherfordium has which atomic number?", "keys": ["104"], "fact_id": 2163, "src": "tables", "cat": "fact_in", "retrieved": [2163, 2164], "id": 79}
+{"prompt": "which currency would i need in uzbekistan", "keys": ["sum"], "fact_id": 1896, "src": "tables", "cat": "fact_in", "retrieved": [1896], "id": 80}
+{"prompt": "which currency would i need in bulgaria", "keys": ["euro"], "fact_id": 658, "src": "tables", "cat": "fact_in", "retrieved": [658, 27710], "id": 81}
+{"prompt": "which currency would i need in kenya", "keys": ["shilling"], "fact_id": 1149, "src": "tables", "cat": "fact_in", "retrieved": [1149], "id": 82}
+{"prompt": "which currency would i need in malta", "keys": ["euro"], "fact_id": 1288, "src": "tables", "cat": "fact_in", "retrieved": [1288], "id": 83}
+{"prompt": "which currency would i need in taiwan", "keys": ["dollar"], "fact_id": 1785, "src": "tables", "cat": "fact_in", "retrieved": [1785, 51594], "id": 84}
+{"prompt": "what money is used in somalia?", "keys": ["shilling"], "fact_id": 1703, "src": "tables", "cat": "fact_in", "retrieved": [44070, 304], "id": 85}
+{"prompt": "quick question: what's juan downey?", "keys": ["chilean", "artist"], "fact_id": 39946, "src": "wiki", "cat": "fact_in", "retrieved": [39946], "id": 86}
+{"prompt": "can you tell me who or what tellurium is?", "keys": ["chemical", "element"], "fact_id": 16943, "src": "wiki", "cat": "fact_in", "retrieved": [2060, 66474], "id": 87}
+{"prompt": "quick question: what's eniac?", "keys": ["computers", "made"], "fact_id": 10683, "src": "wiki", "cat": "fact_in", "retrieved": [10683], "id": 88}
+{"prompt": "quick question: what's stan winston?", "keys": ["effects", "creator"], "fact_id": 36518, "src": "wiki", "cat": "fact_in", "retrieved": [36518], "id": 89}
+{"prompt": "i keep hearing about joe sinnott. what is that?", "keys": ["book", "artist"], "fact_id": 30370, "src": "wiki", "cat": "fact_in", "retrieved": [30370], "id": 90}
+{"prompt": "i keep hearing about dan jurgens. what is that?", "keys": ["writer", "artist"], "fact_id": 33033, "src": "wiki", "cat": "fact_in", "retrieved": [33033], "id": 91}
+{"prompt": "i keep hearing about frank spedding. what is that?", "keys": ["canadian", "chemist"], "fact_id": 33824, "src": "wiki", "cat": "fact_in", "retrieved": [33824], "id": 92}
+{"prompt": "i keep hearing about david hilbert. what is that?", "keys": ["mathematician"], "fact_id": 10225, "src": "wiki", "cat": "fact_in", "retrieved": [10225], "id": 93}
+{"prompt": "can you tell me who or what bellona is?", "keys": ["roman", "goddess"], "fact_id": 32165, "src": "wiki", "cat": "fact_in", "retrieved": [32165], "id": 94}
+{"prompt": "quick question: what's the gentleman's magazine?", "keys": ["founded"], "fact_id": 32991, "src": "wiki", "cat": "fact_in", "retrieved": [32991], "id": 95}
+{"prompt": "do you know anything about marine one?", "keys": ["call", "sign"], "fact_id": 37987, "src": "wiki", "cat": "fact_in", "retrieved": [37987, 9580], "id": 96}
+{"prompt": "can you tell me who or what henry rogers seager is?", "keys": ["economist"], "fact_id": 18678, "src": "wiki", "cat": "fact_in", "retrieved": [18678], "id": 97}
+{"prompt": "can you tell me who or what nicolas gombert is?", "keys": ["franco-flemish", "composer"], "fact_id": 28579, "src": "wiki", "cat": "fact_in", "retrieved": [28579], "id": 98}
+{"prompt": "do you know anything about tibia?", "keys": ["game", "created"], "fact_id": 22389, "src": "wiki", "cat": "fact_in", "retrieved": [22389, 48147], "id": 99}
+{"prompt": "quick question: what's lee bowyer?", "keys": ["footballer", "born"], "fact_id": 38152, "src": "wiki", "cat": "fact_in", "retrieved": [38152], "id": 100}
+{"prompt": "quick question: what's blind date?", "keys": ["show", "produced"], "fact_id": 28571, "src": "wiki", "cat": "fact_in", "retrieved": [28571, 81930], "id": 101}
+{"prompt": "can you tell me who or what harvey milk is?", "keys": ["elected", "official"], "fact_id": 2836, "src": "wiki", "cat": "fact_in", "retrieved": [2836, 58608], "id": 102}
+{"prompt": "quick question: what's lake speed?", "keys": ["racing", "driver"], "fact_id": 12049, "src": "wiki", "cat": "fact_in", "retrieved": [12049, 31683], "id": 103}
+{"prompt": "do you know anything about misty may-treanor?", "keys": ["beach", "volleyball"], "fact_id": 34310, "src": "wiki", "cat": "fact_in", "retrieved": [34310], "id": 104}
+{"prompt": "do you know anything about plant pathology?", "keys": ["scientific", "study"], "fact_id": 25817, "src": "wiki", "cat": "fact_in", "retrieved": [25817], "id": 105}
+{"prompt": "can you tell me who or what geirr tveitt is?", "keys": ["composer", "pianist"], "fact_id": 19275, "src": "wiki", "cat": "fact_in", "retrieved": [19275], "id": 106}
+{"prompt": "i keep hearing about text linguistics. what is that?", "keys": ["branch"], "fact_id": 21238, "src": "wiki", "cat": "fact_in", "retrieved": [21238], "id": 107}
+{"prompt": "quick question: what's travis mcgee?", "keys": ["fictional", "character"], "fact_id": 22981, "src": "wiki", "cat": "fact_in", "retrieved": [22981], "id": 108}
+{"prompt": "do you know anything about home and away?", "keys": ["soap", "opera"], "fact_id": 8676, "src": "wiki", "cat": "fact_in", "retrieved": [76130, 24673], "id": 109}
+{"prompt": "quick question: what's cambodian americans?", "keys": ["americans"], "fact_id": 30963, "src": "wiki", "cat": "fact_in", "retrieved": [7699, 682], "id": 110}
+{"prompt": "can you tell me who or what blaze bayley is?", "keys": ["singer"], "fact_id": 19191, "src": "wiki", "cat": "fact_in", "retrieved": [19191], "id": 111}
+{"prompt": "can you tell me who or what damien broderick is?", "keys": ["writer", "editor"], "fact_id": 33630, "src": "wiki", "cat": "fact_in", "retrieved": [33630], "id": 112}
+{"prompt": "can you tell me who or what benjamin rush is?", "keys": ["founding", "father"], "fact_id": 8563, "src": "wiki", "cat": "fact_in", "retrieved": [8563], "id": 113}
+{"prompt": "do you know anything about sally field?", "keys": ["actress", "director"], "fact_id": 14981, "src": "wiki", "cat": "fact_in", "retrieved": [64618, 64619], "id": 114}
+{"prompt": "quick question: what's jiaolong?", "keys": ["aquatic", "dragon"], "fact_id": 31680, "src": "wiki", "cat": "fact_in", "retrieved": [31680], "id": 115}
+{"prompt": "who wrote the allegorical novella animal farm?", "keys": ["george orwell"], "fact_id": 68623, "src": "trivia", "trivia_q": "Who wrote the allegorical novella Animal Farm?", "cat": "fact_in", "retrieved": [68623], "id": 116}
+{"prompt": "in what year was keith green born?", "keys": ["1953"], "fact_id": 67895, "src": "trivia", "trivia_q": "In what year was Keith Green born?", "cat": "fact_in", "retrieved": [67895], "id": 117}
+{"prompt": "who directed the hit movie from the 80s raging bull?", "keys": ["martin scorcese"], "fact_id": 66849, "src": "trivia", "trivia_q": "Who directed the hit movie from the 80s Raging Bull?", "cat": "fact_in", "retrieved": [66849], "id": 118}
+{"prompt": "which is the sixth book of the new testament?", "keys": ["romans"], "fact_id": 69655, "src": "trivia", "trivia_q": "Which is the sixth book of the New Testament?", "cat": "fact_in", "retrieved": [69655], "id": 119}
+{"prompt": "what color was the car that became the fictional general lee when the dukes bought it?", "keys": ["black"], "fact_id": 71316, "src": "trivia", "trivia_q": "What color was the car that became the fictional General Lee when the Dukes bought it?", "cat": "fact_in", "retrieved": [71316], "id": 120}
+{"prompt": "which of these was the capital of the mongol empire during the 13th century?", "keys": ["karakorum"], "fact_id": 72504, "src": "trivia", "trivia_q": "Which of these was the capital of the Mongol Empire during the 13th century?", "cat": "fact_in", "retrieved": [72504], "id": 121}
+{"prompt": "what is the study of whales called?", "keys": ["cetology"], "fact_id": 69813, "src": "trivia", "trivia_q": "What is the study of whales called?", "cat": "fact_in", "retrieved": [69813], "id": 122}
+{"prompt": "what term is used to describe a persons return to live in israel?", "keys": ["aliyah"], "fact_id": 69612, "src": "trivia", "trivia_q": "What term is used to describe a persons return to live in Israel?", "cat": "fact_in", "retrieved": [69612], "id": 123}
+{"prompt": "what is the state song of connecticut?", "keys": ["yankee doodle"], "fact_id": 72295, "src": "trivia", "trivia_q": "What is the state song of Connecticut?", "cat": "fact_in", "retrieved": [72295], "id": 124}
+{"prompt": "what was the name of jamie and pauls dog on the hit sitcom mad about you?", "keys": ["murray"], "fact_id": 70890, "src": "trivia", "trivia_q": "What was the name of Jamie and Pauls dog on the hit sitcom Mad About You?", "cat": "fact_in", "retrieved": [70890], "id": 125}
+{"prompt": "which of these is not one of harrys friends?", "keys": ["millicent"], "fact_id": 69463, "src": "trivia", "trivia_q": "Which of these is not one of Harrys friends?", "cat": "fact_in", "retrieved": [69463], "id": 126}
+{"prompt": "what is the first name of the boy on whom violet has a crush in the film the incredibles?", "keys": ["tony"], "fact_id": 66966, "src": "trivia", "trivia_q": "What is the first name of the boy on whom Violet has a crush in the film The Incredibles?", "cat": "fact_in", "retrieved": [66966], "id": 127}
+{"prompt": "what is the name of the don who controlled little italy when vito corleone was younger?", "keys": ["don fanucci"], "fact_id": 67241, "src": "trivia", "trivia_q": "What is the name of the Don who controlled Little Italy when Vito Corleone was younger?", "cat": "fact_in", "retrieved": [67241], "id": 128}
+{"prompt": "what currency is used in bermuda?", "keys": ["bermudian dollar"], "fact_id": 71801, "src": "trivia", "trivia_q": "What currency is used in Bermuda?", "cat": "fact_in", "retrieved": [610, 71801], "id": 129}
+{"prompt": "what is meant by alternative?", "keys": ["things", "chosen"], "fact_id": 73924, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [77591, 6125], "id": 130}
+{"prompt": "what is meant by manifold?", "keys": ["lateral", "outlets"], "fact_id": 74419, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [52413, 16859], "id": 131}
+{"prompt": "what's the meaning of the word transducer?", "keys": ["converts", "electrical"], "fact_id": 74421, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [74421, 2607], "id": 132}
+{"prompt": "can you define apprentice for me", "keys": ["trade", "expert"], "fact_id": 74602, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [74602, 2768], "id": 133}
+{"prompt": "can you define agglutinin for me", "keys": ["specific", "agglutination"], "fact_id": 75093, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [75093], "id": 134}
+{"prompt": "can you define attention for me", "keys": ["attending", "something"], "fact_id": 74562, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [75929, 75434], "id": 135}
+{"prompt": "what's the meaning of the word fiscal year?", "keys": ["months", "accounting"], "fact_id": 73871, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [73871], "id": 136}
+{"prompt": "can you define velocity for me", "keys": ["distance", "travelled"], "fact_id": 73681, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [73681, 74840], "id": 137}
+{"prompt": "can you define vehicle for me", "keys": ["conveyance", "transports"], "fact_id": 74771, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [73990, 76477], "id": 138}
+{"prompt": "can you define cyclist for me", "keys": ["rides", "bicycle"], "fact_id": 75066, "src": "wordnet", "any_n": 1, "cat": "fact_in", "retrieved": [75066], "id": 139}
+{"cat": "fact_out", "prompt": "who won the 2018 fifa world cup?", "keys": ["france"], "retrieved": [22693, 51420], "answer_in_retrieved": false, "id": 140}
+{"cat": "fact_out", "prompt": "who directed the movie parasite from 2019?", "keys": ["bong"], "retrieved": [], "answer_in_retrieved": false, "id": 141}
+{"cat": "fact_out", "prompt": "which film won best picture at the 2020 oscars?", "keys": ["parasite"], "retrieved": [65327, 68151], "answer_in_retrieved": false, "id": 142}
+{"cat": "fact_out", "prompt": "what is the name of the dog in the movie up?", "keys": ["dug"], "retrieved": [66764, 67221], "answer_in_retrieved": false, "id": 143}
+{"cat": "fact_out", "prompt": "who won the 2023 rugby world cup?", "keys": ["south africa"], "retrieved": [59381], "answer_in_retrieved": false, "id": 144}
+{"cat": "fact_out", "prompt": "what is the name of the ship in moby dick?", "keys": ["pequod"], "retrieved": [], "answer_in_retrieved": false, "id": 145}
+{"cat": "fact_out", "prompt": "what was the name of the first cloned sheep?", "keys": ["dolly"], "retrieved": [], "answer_in_retrieved": false, "id": 146}
+{"cat": "fact_out", "prompt": "what year was the game among us released?", "keys": ["2018"], "retrieved": [361, 46113], "answer_in_retrieved": false, "id": 147}
+{"cat": "fact_out", "prompt": "who sang the song bad guy in 2019?", "keys": ["billie eilish", "eilish"], "retrieved": [68086], "answer_in_retrieved": false, "id": 148}
+{"cat": "fact_in", "prompt": "what is the capital city of the region of tasmania?", "keys": ["hobart"], "retrieved": [72986, 6858], "src": "moved_from_out", "id": 149}
+{"cat": "fact_out", "prompt": "how many moons does saturn have according to 2023 counts?", "keys": ["146", "145", "over 100"], "retrieved": [], "answer_in_retrieved": false, "id": 150}
+{"cat": "fact_in", "prompt": "who is the main character of the legend of zelda games?", "keys": ["link"], "retrieved": [71691, 5597], "src": "moved_from_out", "id": 151}
+{"cat": "fact_out", "prompt": "what does the abbreviation nasa stand for?", "keys": ["aeronautics", "space administration"], "retrieved": [], "answer_in_retrieved": false, "id": 152}
+{"cat": "fact_in", "prompt": "what is the boiling point of water in fahrenheit?", "keys": ["212"], "retrieved": [68541], "src": "moved_from_out", "id": 153}
+{"cat": "fact_out", "prompt": "who wrote the book wonder about a boy named auggie?", "keys": ["palacio"], "retrieved": [], "answer_in_retrieved": false, "id": 154}
+{"cat": "fact_out", "prompt": "what is the name of the bear in the jungle book?", "keys": ["baloo"], "retrieved": [66466, 41836], "answer_in_retrieved": false, "id": 155}
+{"cat": "fact_out", "prompt": "what team did lebron james join in 2018?", "keys": ["lakers"], "retrieved": [], "answer_in_retrieved": false, "id": 156}
+{"cat": "fact_out", "prompt": "what was the first animated pixar film to win best animated feature oscar?", "keys": ["finding nemo"], "retrieved": [], "answer_in_retrieved": false, "id": 157}
+{"cat": "fact_out", "prompt": "who created the video game fortnite's battle royale mode company founder?", "keys": ["tim sweeney", "sweeney"], "retrieved": [305], "answer_in_retrieved": false, "id": 158}
+{"cat": "fact_in", "prompt": "what is the longest bone in a cat?", "keys": ["femur"], "retrieved": [209], "src": "moved_from_out", "id": 159}
+{"cat": "fact_out", "prompt": "what is the name of harry potter's owl?", "keys": ["hedwig"], "retrieved": [64933, 64909], "answer_in_retrieved": false, "id": 160}
+{"cat": "fact_in", "prompt": "what is the capital of the canadian province of alberta?", "keys": ["edmonton"], "retrieved": [3315, 71929], "src": "moved_from_out", "id": 161}
+{"cat": "fact_out", "prompt": "who invented the game of chess boxing?", "keys": ["enki bilal", "bilal", "iepe"], "retrieved": [17950, 7767], "answer_in_retrieved": false, "id": 162}
+{"cat": "fact_out", "prompt": "which band released the album abbey road in 1969?", "keys": ["beatles"], "retrieved": [], "answer_in_retrieved": false, "id": 163}
+{"cat": "fact_in", "prompt": "what is the most spoken language in brazil?", "keys": ["portuguese"], "retrieved": [642, 34784], "src": "moved_from_out", "id": 164}
+{"cat": "fact_out", "prompt": "what does dna stand for?", "keys": ["deoxyribonucleic"], "retrieved": [25419, 5389], "answer_in_retrieved": false, "id": 165}
+{"cat": "fact_out", "prompt": "how many strings does a cello have?", "keys": ["four", "4"], "retrieved": [68701, 58223], "answer_in_retrieved": false, "id": 166}
+{"cat": "fact_in", "prompt": "what is the name of the toy cowboy in toy story?", "keys": ["woody"], "retrieved": [67118, 23872], "src": "moved_from_out", "id": 167}
+{"cat": "fact_out", "prompt": "which country hosted the 2019 rugby world cup?", "keys": ["japan"], "retrieved": [59381], "answer_in_retrieved": false, "id": 168}
+{"cat": "fact_out", "prompt": "what is the name of the volcano that destroyed pompeii?", "keys": ["vesuvius"], "retrieved": [], "answer_in_retrieved": false, "id": 169}
+{"cat": "fact_out", "prompt": "what fruit is guacamole made from?", "keys": ["avocado"], "retrieved": [68373], "answer_in_retrieved": false, "id": 170}
+{"cat": "fact_out", "prompt": "what is the main ingredient in hummus?", "keys": ["chickpea"], "retrieved": [68374, 66232], "answer_in_retrieved": false, "id": 171}
+{"cat": "fact_out", "prompt": "who is the author of the hunger games?", "keys": ["suzanne collins", "collins"], "retrieved": [64995, 79281], "answer_in_retrieved": false, "id": 172}
+{"cat": "fact_in", "prompt": "what is the fastest fish in the ocean?", "keys": ["sailfish", "marlin"], "retrieved": [65374], "src": "moved_from_out", "id": 173}
+{"cat": "fact_out", "prompt": "who painted the starry night?", "keys": ["van gogh", "gogh"], "retrieved": [], "answer_in_retrieved": false, "id": 174}
+{"cat": "fact_out", "prompt": "what is the hardest working muscle in the body?", "keys": ["heart"], "retrieved": [69670, 80638], "answer_in_retrieved": false, "id": 175}
+{"cat": "fact_out", "prompt": "what's the name of the main villain in the lion king?", "keys": ["scar"], "retrieved": [65600], "answer_in_retrieved": false, "id": 176}
+{"cat": "fact_in", "prompt": "how many players are on a volleyball team on court?", "keys": ["six", "6"], "retrieved": [70410, 4494], "src": "moved_from_out", "id": 177}
+{"cat": "fact_out", "prompt": "what year did the first pokemon games come out in japan?", "keys": ["1996"], "retrieved": [47610, 49159], "answer_in_retrieved": false, "id": 178}
+{"cat": "fact_out", "prompt": "what is the name of mario's brother?", "keys": ["luigi"], "retrieved": [69445, 71631], "answer_in_retrieved": false, "id": 179}
+{"cat": "fact_out", "prompt": "what does a seismograph measure?", "keys": ["earthquake"], "retrieved": [47433, 73734], "answer_in_retrieved": false, "id": 180}
+{"cat": "fact_out", "prompt": "what was the name of the robot in the movie wall-e he loves?", "keys": ["eve"], "retrieved": [67291], "answer_in_retrieved": false, "id": 181}
+{"cat": "fact_out", "prompt": "who won the 2021 nba championship?", "keys": ["bucks", "milwaukee"], "retrieved": [5147, 70562], "answer_in_retrieved": false, "id": 182}
+{"cat": "fact_out", "prompt": "what is the largest desert in asia?", "keys": ["gobi"], "retrieved": [146, 9425], "answer_in_retrieved": false, "id": 183}
+{"cat": "fact_in", "prompt": "what's the capital of the us state of texas?", "keys": ["austin"], "retrieved": [71885, 69334], "src": "moved_from_out", "id": 184}
+{"cat": "fact_out", "prompt": "who discovered gravity waves in 2015?", "keys": ["ligo"], "retrieved": [], "answer_in_retrieved": false, "id": 185}
+{"cat": "fact_in", "prompt": "what is the most common blood type?", "keys": ["o"], "retrieved": [69810, 69525], "src": "moved_from_out", "id": 186}
+{"cat": "fact_out", "prompt": "what is the name of thailand's longest river?", "keys": ["mun", "chao phraya"], "retrieved": [65819, 65841], "answer_in_retrieved": false, "id": 187}
+{"cat": "fact_out", "prompt": "what is the name of the stadium where the 2023 cricket world cup final was played?", "keys": ["ahmedabad", "narendra modi"], "retrieved": [], "answer_in_retrieved": false, "id": 188}
+{"cat": "fact_out", "prompt": "which company makes the playstation 5?", "keys": ["sony"], "retrieved": [], "answer_in_retrieved": false, "id": 189}
+{"cat": "fact_out", "prompt": "what is the name of the main character in the game undertale?", "keys": ["frisk"], "retrieved": [71701], "answer_in_retrieved": false, "id": 190}
+{"cat": "fact_out", "prompt": "who was the first woman to fly solo across the atlantic?", "keys": ["earhart"], "retrieved": [], "answer_in_retrieved": false, "id": 191}
+{"cat": "fact_in", "prompt": "what is the largest species of penguin?", "keys": ["emperor"], "retrieved": [63999], "src": "moved_from_out", "id": 192}
+{"cat": "fact_out", "prompt": "how many teeth does a shark lose in a lifetime roughly?", "keys": ["thousand"], "retrieved": [69957], "answer_in_retrieved": false, "id": 193}
+{"cat": "fact_out", "prompt": "what is the name of the clownfish in finding nemo's dad?", "keys": ["marlin"], "retrieved": [], "answer_in_retrieved": false, "id": 194}
+{"cat": "fact_in", "prompt": "which planet has a moon called titan?", "keys": ["saturn"], "retrieved": [3701, 9033], "src": "moved_from_out", "id": 195}
+{"cat": "fact_out", "prompt": "what does the 'www' in a web address stand for?", "keys": ["world wide web"], "retrieved": [], "answer_in_retrieved": false, "id": 196}
+{"cat": "fact_in", "prompt": "what is a baby kangaroo called?", "keys": ["joey"], "retrieved": [68256, 66605], "src": "moved_from_out", "id": 197}
+{"cat": "fact_in", "prompt": "how many hours of sleep does a koala get per day?", "keys": ["20", "22", "18"], "retrieved": [225, 63996], "src": "moved_from_out", "id": 198}
+{"cat": "fact_out", "prompt": "who sang shake it off?", "keys": ["taylor swift", "swift"], "retrieved": [78895, 74112], "answer_in_retrieved": false, "id": 199}
+{"cat": "fact_out", "prompt": "what is the name of the ice princess with powers in frozen?", "keys": ["elsa"], "retrieved": [6419], "answer_in_retrieved": false, "id": 200}
+{"cat": "fact_in", "prompt": "what is the capital of australia's northern territory?", "keys": ["darwin"], "retrieved": [20801, 6165], "src": "moved_from_out", "id": 201}
+{"cat": "fact_in", "prompt": "who wrote the book charlie and the chocolate factory?", "keys": ["dahl"], "retrieved": [15365, 66785], "src": "moved_from_out", "id": 202}
+{"cat": "fact_in", "prompt": "what color is a polar bear's skin?", "keys": ["black"], "retrieved": [64002], "src": "moved_from_out", "id": 203}
+{"cat": "fact_out", "prompt": "which country is famous for the tulip festival in keukenhof?", "keys": ["netherlands", "holland"], "retrieved": [], "answer_in_retrieved": false, "id": 204}
+{"cat": "fact_out", "prompt": "what does a herbivore eat?", "keys": ["plants"], "retrieved": [74217, 66332], "answer_in_retrieved": false, "id": 205}
+{"cat": "fact_out", "prompt": "who is the creator of the cartoon spongebob squarepants?", "keys": ["hillenburg"], "retrieved": [], "answer_in_retrieved": false, "id": 206}
+{"cat": "fact_in", "prompt": "what was the name of the first artificial satellite?", "keys": ["sputnik"], "retrieved": [65119, 69858], "src": "moved_from_out", "id": 207}
+{"cat": "fact_out", "prompt": "in which city is the colosseum?", "keys": ["rome"], "retrieved": [], "answer_in_retrieved": false, "id": 208}
+{"cat": "fact_in", "prompt": "what is the most popular programming language for data science?", "keys": ["python"], "retrieved": [42439, 277], "src": "moved_from_out", "id": 209}
+{"cat": "fact_out", "prompt": "what instrument did jimi hendrix play?", "keys": ["guitar"], "retrieved": [67506, 67567], "answer_in_retrieved": false, "id": 210}
+{"cat": "fact_out", "prompt": "what is the name of the fairy in peter pan?", "keys": ["tinker bell", "tinkerbell"], "retrieved": [71009, 3426], "answer_in_retrieved": false, "id": 211}
+{"cat": "fact_in", "prompt": "which ocean is the bermuda triangle in?", "keys": ["atlantic"], "retrieved": [71891, 69039], "src": "moved_from_out", "id": 212}
+{"cat": "fact_out", "prompt": "what kind of animal is a komodo dragon?", "keys": ["lizard"], "retrieved": [64223, 64224], "answer_in_retrieved": false, "id": 213}
+{"cat": "fact_in", "prompt": "how many bones are in a shark's skeleton?", "keys": ["none", "no bones", "cartilage", "0"], "retrieved": [63969, 6421], "src": "moved_from_out", "id": 214}
+{"cat": "fact_out", "prompt": "what is the name of the gorilla in donkey kong's family who wears a tie?", "keys": ["donkey kong"], "retrieved": [], "answer_in_retrieved": false, "id": 215}
+{"cat": "fact_in", "prompt": "what is the capital of new zealand?", "keys": ["wellington"], "retrieved": [1429, 1426], "src": "moved_from_out", "id": 216}
+{"cat": "fact_out", "prompt": "who painted the ceiling of the sistine chapel?", "keys": ["michelangelo"], "retrieved": [], "answer_in_retrieved": false, "id": 217}
+{"cat": "fact_out", "prompt": "what is the name of the river that runs through baghdad?", "keys": ["tigris"], "retrieved": [68601, 9360], "answer_in_retrieved": false, "id": 218}
+{"cat": "fact_out", "prompt": "who is the lead character in the minecraft story mode game?", "keys": ["jesse"], "retrieved": [299], "answer_in_retrieved": false, "id": 219}
+{"cat": "fact_out", "prompt": "what is the name of the snowman in frozen?", "keys": ["olaf"], "retrieved": [], "answer_in_retrieved": false, "id": 220}
+{"cat": "fact_out", "prompt": "what is the name of the wizard school in the worst witch books?", "keys": ["cackle"], "retrieved": [5844], "answer_in_retrieved": false, "id": 221}
+{"cat": "fact_in", "prompt": "what is the name of the hedgehog in sega games?", "keys": ["sonic"], "retrieved": [18556, 43900], "src": "moved_from_out", "id": 222}
+{"cat": "fact_out", "prompt": "which youtuber is known as mrbeast's real name?", "keys": ["jimmy", "donaldson"], "retrieved": [], "answer_in_retrieved": false, "id": 223}
+{"cat": "fact_in", "prompt": "what is the name of the rabbit in winnie the pooh?", "keys": ["rabbit"], "retrieved": [65093], "src": "moved_from_out", "id": 224}
+{"cat": "fact_in", "prompt": "who voiced woody in toy story?", "keys": ["tom hanks", "hanks"], "retrieved": [67118], "src": "moved_from_out", "id": 225}
+{"cat": "helper", "prompt": "what time is it?", "call": "time", "expect": "3:05 pm", "random": false, "id": 226}
+{"cat": "helper", "prompt": "whats the time rn", "call": "time", "expect": "3:05 pm", "random": false, "id": 227}
+{"cat": "helper", "prompt": "time please", "call": "time", "expect": "3:05 pm", "random": false, "id": 228}
+{"cat": "helper", "prompt": "what time is it in 24 hour format?", "call": "time 24", "expect": "15:05", "random": false, "id": 229}
+{"cat": "helper", "prompt": "tell me the time in military time", "call": "time 24", "expect": "15:05", "random": false, "id": 230}
+{"cat": "helper", "prompt": "what's today's date?", "call": "date", "expect": "tuesday, november 24, 2026", "random": false, "id": 231}
+{"cat": "helper", "prompt": "what is the date today", "call": "date", "expect": "tuesday, november 24, 2026", "random": false, "id": 232}
+{"cat": "helper", "prompt": "whats todays date pls", "call": "date", "expect": "tuesday, november 24, 2026", "random": false, "id": 233}
+{"cat": "helper", "prompt": "what day of the week is it today?", "call": "weekday", "expect": "tuesday", "random": false, "id": 234}
+{"cat": "helper", "prompt": "what day is it", "call": "weekday", "expect": "tuesday", "random": false, "id": 235}
+{"cat": "helper", "prompt": "what day of the week was july 4 1776?", "call": "weekday 1776-07-04", "expect": "thursday", "random": false, "id": 236}
+{"cat": "helper", "prompt": "which weekday is christmas 2030 on", "call": "weekday 2030-12-25", "expect": "wednesday", "random": false, "id": 237}
+{"cat": "helper", "prompt": "what day will january 1 2027 be?", "call": "weekday 2027-01-01", "expect": "friday", "random": false, "id": 238}
+{"cat": "helper", "prompt": "how many days until christmas?", "call": "holiday christmas", "expect": "friday, december 25, 2026, in 31 days", "random": false, "id": 239}
+{"cat": "helper", "prompt": "how long until halloween", "call": "holiday halloween", "expect": "sunday, october 31, 2027, in 341 days", "random": false, "id": 240}
+{"cat": "helper", "prompt": "when is songkran next year?", "call": "holiday songkran", "expect": "tuesday, april 13, 2027, in 140 days", "random": false, "id": 241}
+{"cat": "helper", "prompt": "how many days till new years", "call": "holiday new_year", "expect": "friday, january 1, 2027, in 38 days", "random": false, "id": 242}
+{"cat": "helper", "prompt": "when is chinese new year?", "call": "holiday chinese_new_year", "expect": "saturday, february 6, 2027, in 74 days", "random": false, "id": 243}
+{"cat": "helper", "prompt": "when's easter next", "call": "holiday easter", "expect": "sunday, march 28, 2027, in 124 days", "random": false, "id": 244}
+{"cat": "helper", "prompt": "how many days until valentines day", "call": "holiday valentines", "expect": "sunday, february 14, 2027, in 82 days", "random": false, "id": 245}
+{"cat": "helper", "prompt": "when is thai mother's day", "call": "holiday thai_mothers_day", "expect": "thursday, august 12, 2027, in 261 days", "random": false, "id": 246}
+{"cat": "helper", "prompt": "how many days until march 3 2027?", "call": "days_until 2027-03-03", "expect": "99 days", "random": false, "id": 247}
+{"cat": "helper", "prompt": "days left until 2027-06-01", "call": "days_until 2027-06-01", "expect": "189 days", "random": false, "id": 248}
+{"cat": "helper", "prompt": "how many days since january 1 2000?", "call": "days_since 2000-01-01", "expect": "9824 days", "random": false, "id": 249}
+{"cat": "helper", "prompt": "how many days ago was 2020-03-11", "call": "days_since 2020-03-11", "expect": "2449 days", "random": false, "id": 250}
+{"cat": "helper", "prompt": "how many days until my birthday on may 5?", "call": "days_until 05-05", "expect": "162 days", "random": false, "id": 251}
+{"cat": "helper", "prompt": "what's the date 100 days from today?", "call": "date_add 100 days", "expect": "thursday, march 4, 2027", "random": false, "id": 252}
+{"cat": "helper", "prompt": "what date is 3 weeks from now", "call": "date_add 3 weeks", "expect": "tuesday, december 15, 2026", "random": false, "id": 253}
+{"cat": "helper", "prompt": "what was the date 2 months ago?", "call": "date_add -2 months", "expect": "thursday, september 24, 2026", "random": false, "id": 254}
+{"cat": "helper", "prompt": "what will the date be in 10 days", "call": "date_add 10 days", "expect": "friday, december 4, 2026", "random": false, "id": 255}
+{"cat": "helper", "prompt": "what's 45 days after 2027-01-15?", "call": "date_add 45 days 2027-01-15", "expect": "monday, march 1, 2027", "random": false, "id": 256}
+{"cat": "helper", "prompt": "how old am i if i was born on 2010-05-14?", "call": "age 2010-05-14", "expect": "16 years", "random": false, "id": 257}
+{"cat": "helper", "prompt": "i was born june 3 1995, how old am i", "call": "age 1995-06-03", "expect": "31 years", "random": false, "id": 258}
+{"cat": "helper", "prompt": "how old is someone born in 1980?", "call": "age 1980", "expect": "about 46 years", "random": false, "id": 259}
+{"cat": "helper", "prompt": "is 2028 a leap year?", "call": "leap 2028", "expect": "yes, leap year", "random": false, "id": 260}
+{"cat": "helper", "prompt": "was 1900 a leap year", "call": "leap 1900", "expect": "no, not a leap year", "random": false, "id": 261}
+{"cat": "helper", "prompt": "is 2100 a leap year?", "call": "leap 2100", "expect": "no, not a leap year", "random": false, "id": 262}
+{"cat": "helper", "prompt": "what week number is it?", "call": "week", "expect": "48", "random": false, "id": 263}
+{"cat": "helper", "prompt": "what week of the year is 2027-08-20 in?", "call": "week 2027-08-20", "expect": "33", "random": false, "id": 264}
+{"cat": "helper", "prompt": "what time is it in tokyo?", "call": "world_time tokyo", "expect": "5:05 pm, tuesday", "random": false, "id": 265}
+{"cat": "helper", "prompt": "whats the time in london rn", "call": "world_time london", "expect": "8:05 am, tuesday", "random": false, "id": 266}
+{"cat": "helper", "prompt": "what time is it in new york right now?", "call": "world_time new_york", "expect": "3:05 am, tuesday", "random": false, "id": 267}
+{"cat": "helper", "prompt": "current time in sydney", "call": "world_time sydney", "expect": "7:05 pm, tuesday", "random": false, "id": 268}
+{"cat": "helper", "prompt": "what time is it in paris", "call": "world_time paris", "expect": "9:05 am, tuesday", "random": false, "id": 269}
+{"cat": "helper", "prompt": "time in los angeles?", "call": "world_time los_angeles", "expect": "12:05 am, tuesday", "random": false, "id": 270}
+{"cat": "helper", "prompt": "set a timer for 5 minutes", "call": "timer 5 minutes", "expect": "timer set for 5 minutes", "random": false, "id": 271}
+{"cat": "helper", "prompt": "timer 30 seconds please", "call": "timer 30 seconds", "expect": "timer set for 30 seconds", "random": false, "id": 272}
+{"cat": "helper", "prompt": "can you set a 2 hour timer", "call": "timer 2 hours", "expect": "timer set for 2 hours", "random": false, "id": 273}
+{"cat": "helper", "prompt": "start a timer for 10 minutes", "call": "timer 10 minutes", "expect": "timer set for 10 minutes", "random": false, "id": 274}
+{"cat": "helper", "prompt": "what's 17.5% of 240?", "call": "pct_of 17.5 240", "expect": "42", "random": false, "id": 275}
+{"cat": "helper", "prompt": "what is 25 percent of 80", "call": "pct_of 25 80", "expect": "20", "random": false, "id": 276}
+{"cat": "helper", "prompt": "whats 8% of 1250", "call": "pct_of 8 1250", "expect": "100", "random": false, "id": 277}
+{"cat": "helper", "prompt": "what is 30 out of 120 as a percentage?", "call": "pct_is 30 120", "expect": "25%", "random": false, "id": 278}
+{"cat": "helper", "prompt": "45 is what percent of 60?", "call": "pct_is 45 60", "expect": "75%", "random": false, "id": 279}
+{"cat": "helper", "prompt": "what's the percent change from 50 to 75?", "call": "pct_change 50 75", "expect": "an increase of 50%", "random": false, "id": 280}
+{"cat": "helper", "prompt": "percent change from 80 to 60", "call": "pct_change 80 60", "expect": "a decrease of 25%", "random": false, "id": 281}
+{"cat": "helper", "prompt": "what's a 15% tip on $80?", "call": "tip 15 80", "expect": "tip 12, total 92", "random": false, "id": 282}
+{"cat": "helper", "prompt": "how much should i tip 20% on a 64 dollar bill", "call": "tip 20 64", "expect": "tip 12.8, total 76.8", "random": false, "id": 283}
+{"cat": "helper", "prompt": "20% off of 50 dollars?", "call": "discount 20 50", "expect": "save 10, pay 40", "random": false, "id": 284}
+{"cat": "helper", "prompt": "a $120 jacket is 35% off, what do i pay?", "call": "discount 35 120", "expect": "save 42, pay 78", "random": false, "id": 285}
+{"cat": "helper", "prompt": "what's 12 times 13?", "call": "calc 12*13", "expect": "156", "random": false, "id": 286}
+{"cat": "helper", "prompt": "what is 144 divided by 12", "call": "calc 144/12", "expect": "12", "random": false, "id": 287}
+{"cat": "helper", "prompt": "2 to the power of 10", "call": "calc 2^10", "expect": "1024", "random": false, "id": 288}
+{"cat": "helper", "prompt": "what's (3+4)*5?", "call": "calc (3+4)*5", "expect": "35", "random": false, "id": 289}
+{"cat": "helper", "prompt": "calculate 1234 + 5678", "call": "calc 1234+5678", "expect": "6912", "random": false, "id": 290}
+{"cat": "helper", "prompt": "what is the square root of 144?", "call": "calc sqrt(144)", "expect": "12", "random": false, "id": 291}
+{"cat": "helper", "prompt": "whats 7 minus 15", "call": "calc 7-15", "expect": "-8", "random": false, "id": 292}
+{"cat": "helper", "prompt": "what is 3.5 times 4.2", "call": "calc 3.5*4.2", "expect": "14.7", "random": false, "id": 293}
+{"cat": "helper", "prompt": "what's 100 divided by 7?", "call": "calc 100/7", "expect": "14.285714", "random": false, "id": 294}
+{"cat": "helper", "prompt": "square root of 2", "call": "calc sqrt(2)", "expect": "1.414214", "random": false, "id": 295}
+{"cat": "helper", "prompt": "what's 9 squared", "call": "calc 9^2", "expect": "81", "random": false, "id": 296}
+{"cat": "helper", "prompt": "what is 15 + 27 - 8", "call": "calc 15+27-8", "expect": "34", "random": false, "id": 297}
+{"cat": "helper", "prompt": "what is 999 times 999", "call": "calc 999*999", "expect": "998001", "random": false, "id": 298}
+{"cat": "helper", "prompt": "what is 1/0", "call": "calc 1/0", "expect": "undefined", "random": false, "id": 299}
+{"cat": "helper", "prompt": "solve 5*(6-2)/4", "call": "calc 5*(6-2)/4", "expect": "5", "random": false, "id": 300}
+{"cat": "helper", "prompt": "convert 5 km to miles", "call": "convert 5 km mi", "expect": "3.1069 miles", "random": false, "id": 301}
+{"cat": "helper", "prompt": "how many feet is 2 meters?", "call": "convert 2 m ft", "expect": "6.5617 feet", "random": false, "id": 302}
+{"cat": "helper", "prompt": "what is 100 fahrenheit in celsius?", "call": "convert 100 f c", "expect": "37.78 degrees celsius", "random": false, "id": 303}
+{"cat": "helper", "prompt": "convert 30 degrees celsius to fahrenheit", "call": "convert 30 c f", "expect": "86 degrees fahrenheit", "random": false, "id": 304}
+{"cat": "helper", "prompt": "how many pounds is 70 kg?", "call": "convert 70 kg lb", "expect": "154.3236 pounds", "random": false, "id": 305}
+{"cat": "helper", "prompt": "10 miles in km", "call": "convert 10 mi km", "expect": "16.0934 kilometers", "random": false, "id": 306}
+{"cat": "helper", "prompt": "how many cups in 2 liters", "call": "convert 2 l cup", "expect": "8.4535 cups", "random": false, "id": 307}
+{"cat": "helper", "prompt": "convert 60 mph to km/h", "call": "convert 60 mph kmh", "expect": "96.5606 kilometers per hour", "random": false, "id": 308}
+{"cat": "helper", "prompt": "how many grams in 3 ounces?", "call": "convert 3 oz g", "expect": "85.0486 grams", "random": false, "id": 309}
+{"cat": "helper", "prompt": "how many megabytes in 5 gigabytes?", "call": "convert 5 gb mb", "expect": "5000 megabytes", "random": false, "id": 310}
+{"cat": "helper", "prompt": "how many seconds are in 3 hours?", "call": "convert 3 hr sec", "expect": "10800 seconds", "random": false, "id": 311}
+{"cat": "helper", "prompt": "convert 2 acres to square meters", "call": "convert 2 acre m2", "expect": "8093.7128 square meters", "random": false, "id": 312}
+{"cat": "helper", "prompt": "12 inches in cm", "call": "convert 12 in cm", "expect": "30.48 centimeters", "random": false, "id": 313}
+{"cat": "helper", "prompt": "how many minutes in a week", "call": "convert 1 week min", "expect": "10080 minutes", "random": false, "id": 314}
+{"cat": "helper", "prompt": "is 97 a prime number?", "call": "prime 97", "expect": "yes, prime", "random": false, "id": 315}
+{"cat": "helper", "prompt": "is 91 prime?", "call": "prime 91", "expect": "no, 7 x 13", "random": false, "id": 316}
+{"cat": "helper", "prompt": "is 7919 prime", "call": "prime 7919", "expect": "yes, prime", "random": false, "id": 317}
+{"cat": "helper", "prompt": "what are the prime factors of 360?", "call": "factors 360", "expect": "2 x 2 x 2 x 3 x 3 x 5", "random": false, "id": 318}
+{"cat": "helper", "prompt": "factor 1001", "call": "factors 1001", "expect": "7 x 11 x 13", "random": false, "id": 319}
+{"cat": "helper", "prompt": "what's the gcd of 48 and 18?", "call": "gcd 48 18", "expect": "6", "random": false, "id": 320}
+{"cat": "helper", "prompt": "greatest common divisor of 100 and 75", "call": "gcd 100 75", "expect": "25", "random": false, "id": 321}
+{"cat": "helper", "prompt": "what's the lcm of 4 and 6?", "call": "lcm 4 6", "expect": "12", "random": false, "id": 322}
+{"cat": "helper", "prompt": "least common multiple of 12 and 15", "call": "lcm 12 15", "expect": "60", "random": false, "id": 323}
+{"cat": "helper", "prompt": "what is 2024 in roman numerals?", "call": "roman 2024", "expect": "mmxxiv", "random": false, "id": 324}
+{"cat": "helper", "prompt": "write 1994 as a roman numeral", "call": "roman 1994", "expect": "mcmxciv", "random": false, "id": 325}
+{"cat": "helper", "prompt": "what number is xlii in roman numerals?", "call": "roman xlii", "expect": "42", "random": false, "id": 326}
+{"cat": "helper", "prompt": "what is mcmlxxxiv?", "call": "roman mcmlxxxiv", "expect": "1984", "random": false, "id": 327}
+{"cat": "helper", "prompt": "how do you write 1234 in words?", "call": "words 1234", "expect": "one thousand two hundred thirty-four", "random": false, "id": 328}
+{"cat": "helper", "prompt": "spell out the number 90210", "call": "words 90210", "expect": "ninety thousand two hundred ten", "random": false, "id": 329}
+{"cat": "helper", "prompt": "flip a coin", "call": "coin", "expect": "heads", "random": true, "id": 330}
+{"cat": "helper", "prompt": "heads or tails?", "call": "coin", "expect": "heads", "random": true, "id": 331}
+{"cat": "helper", "prompt": "toss a coin for me", "call": "coin", "expect": "heads", "random": true, "id": 332}
+{"cat": "helper", "prompt": "roll a dice", "call": "dice 1d6", "expect": "1", "random": true, "id": 333}
+{"cat": "helper", "prompt": "roll 2 dice", "call": "dice 2d6", "expect": "1 + 1, total 2", "random": true, "id": 334}
+{"cat": "helper", "prompt": "roll a d20", "call": "dice 1d20", "expect": "1", "random": true, "id": 335}
+{"cat": "helper", "prompt": "roll 3d6", "call": "dice 3d6", "expect": "1 + 1 + 4, total 6", "random": true, "id": 336}
+{"cat": "helper", "prompt": "pick a random number between 1 and 100", "call": "rand 1 100", "expect": "3", "random": true, "id": 337}
+{"cat": "helper", "prompt": "give me a random number from 1 to 10", "call": "rand 1 10", "expect": "1", "random": true, "id": 338}
+{"cat": "helper", "prompt": "pick a number between 50 and 60", "call": "rand 50 60", "expect": "50", "random": true, "id": 339}
+{"cat": "helper", "prompt": "pick one: pizza, tacos or sushi", "call": "pick pizza, tacos, sushi", "expect": "pizza", "random": true, "id": 340}
+{"cat": "helper", "prompt": "help me choose: red, blue, green", "call": "pick red, blue, green", "expect": "red", "random": true, "id": 341}
+{"cat": "helper", "prompt": "should i watch a movie or read a book? pick one", "call": "pick watch a movie, read a book", "expect": "watch a movie", "random": true, "id": 342}
+{"cat": "helper", "prompt": "how many r's are in strawberry?", "call": "count_letter r strawberry", "expect": "3", "random": false, "id": 343}
+{"cat": "helper", "prompt": "how many s in mississippi", "call": "count_letter s mississippi", "expect": "4", "random": false, "id": 344}
+{"cat": "helper", "prompt": "count the letter e in excellence", "call": "count_letter e excellence", "expect": "4", "random": false, "id": 345}
+{"cat": "helper", "prompt": "how many letters are in the word elephant?", "call": "count_letters elephant", "expect": "8", "random": false, "id": 346}
+{"cat": "helper", "prompt": "how many words are in this sentence: the quick brown fox jumps", "call": "count_words the quick brown fox jumps", "expect": "5", "random": false, "id": 347}
+{"cat": "helper", "prompt": "spell banana", "call": "spell banana", "expect": "b-a-n-a-n-a", "random": false, "id": 348}
+{"cat": "helper", "prompt": "how do you spell necessary?", "call": "spell necessary", "expect": "n-e-c-e-s-s-a-r-y", "random": false, "id": 349}
+{"cat": "helper", "prompt": "reverse the word stressed", "call": "reverse stressed", "expect": "desserts", "random": false, "id": 350}
+{"cat": "helper", "prompt": "what is hello backwards?", "call": "reverse hello", "expect": "olleh", "random": false, "id": 351}
+{"cat": "helper", "prompt": "sort these numbers: 42, 7, 19, 3", "call": "sort 42, 7, 19, 3", "expect": "3, 7, 19, 42", "random": false, "id": 352}
+{"cat": "helper", "prompt": "put these in alphabetical order: pear, apple, mango", "call": "sort pear, apple, mango", "expect": "apple, mango, pear", "random": false, "id": 353}
+{"cat": "helper", "prompt": "wat time is it in tokio", "call": "world_time tokyo", "expect": "5:05 pm, tuesday", "random": false, "id": 354}
+{"cat": "helper", "prompt": "hw many days til xmas", "call": "holiday christmas", "expect": "friday, december 25, 2026, in 31 days", "random": false, "id": 355}
+{"cat": "helper", "prompt": "whats 15 prcent of 200", "call": "pct_of 15 200", "expect": "30", "random": false, "id": 356}
+{"cat": "helper", "prompt": "convert 5 kilometers 2 miles", "call": "convert 5 km mi", "expect": "3.1069 miles", "random": false, "id": 357}
+{"cat": "helper", "prompt": "yo flip a coin", "call": "coin", "expect": "heads", "random": true, "id": 358}
+{"cat": "helper", "prompt": "rolll a dice pls", "call": "dice 1d6", "expect": "1", "random": true, "id": 359}
+{"cat": "helper", "prompt": "is 2027 a leep year", "call": "leap 2027", "expect": "no, not a leap year", "random": false, "id": 360}
+{"cat": "helper", "prompt": "wats 6 times 7", "call": "calc 6*7", "expect": "42", "random": false, "id": 361}
+{"cat": "helper", "prompt": "twelve times twelve?", "call": "calc 12*12", "expect": "144", "random": false, "id": 362}
+{"cat": "helper", "prompt": "what's ten plus five", "call": "calc 10+5", "expect": "15", "random": false, "id": 363}
+{"cat": "helper", "prompt": "how many days until christmas eve", "call": "holiday christmas_eve", "expect": "thursday, december 24, 2026, in 30 days", "random": false, "id": 364}
+{"cat": "helper", "prompt": "when is thanksgiving", "call": "holiday thanksgiving", "expect": "thursday, november 26, 2026, in 2 days", "random": false, "id": 365}
+{"cat": "helper", "prompt": "days until new year's eve?", "call": "holiday new_years_eve", "expect": "thursday, december 31, 2026, in 37 days", "random": false, "id": 366}
+{"cat": "helper", "prompt": "when is diwali this year", "call": "holiday diwali", "expect": "friday, october 29, 2027, in 339 days", "random": false, "id": 367}
+{"cat": "helper", "prompt": "how many weeks until christmas", "call": "holiday christmas", "expect": "friday, december 25, 2026, in 31 days", "random": false, "id": 368}
+{"cat": "helper", "prompt": "what's the date tomorrow?", "call": "date_add 1 days", "expect": "wednesday, november 25, 2026", "random": false, "id": 369}
+{"cat": "helper", "prompt": "what was yesterday's date", "call": "date_add -1 days", "expect": "monday, november 23, 2026", "random": false, "id": 370}
+{"cat": "helper", "prompt": "what day of the week was it 3 days ago?", "call": "date_add -3 days", "expect": "saturday, november 21, 2026", "random": false, "id": 371}
+{"cat": "helper", "prompt": "how many hours are in 2 days", "call": "convert 2 day hr", "expect": "48 hours", "random": false, "id": 372}
+{"cat": "helper", "prompt": "how many km is a marathon of 26.2 miles", "call": "convert 26.2 mi km", "expect": "42.1648 kilometers", "random": false, "id": 373}
+{"cat": "helper", "prompt": "what's 1000 meters in yards", "call": "convert 1000 m yd", "expect": "1093.6133 yards", "random": false, "id": 374}
+{"cat": "helper", "prompt": "what is 0 kelvin in celsius", "call": "convert 0 k c", "expect": "-273.15 degrees celsius", "random": false, "id": 375}
+{"cat": "helper", "prompt": "what's 3 to the power of 4", "call": "calc 3^4", "expect": "81", "random": false, "id": 376}
+{"cat": "helper", "prompt": "what's 50 percent of 13", "call": "pct_of 50 13", "expect": "6.5", "random": false, "id": 377}
+{"cat": "chat", "prompt": "hi!", "id": 378}
+{"cat": "chat", "prompt": "hello there", "id": 379}
+{"cat": "chat", "prompt": "hey turbo, how are you?", "id": 380}
+{"cat": "chat", "prompt": "good morning!", "id": 381}
+{"cat": "chat", "prompt": "how's your day going?", "id": 382}
+{"cat": "chat", "prompt": "what are you up to?", "id": 383}
+{"cat": "chat", "prompt": "i'm feeling a bit sad today", "id": 384}
+{"cat": "chat", "prompt": "i just got a puppy!", "id": 385}
+{"cat": "chat", "prompt": "you're really cool", "id": 386}
+{"cat": "chat", "prompt": "thank you so much!", "id": 387}
+{"cat": "chat", "prompt": "bye, talk later", "id": 388}
+{"cat": "chat", "prompt": "what's your favorite color?", "id": 389}
+{"cat": "chat", "prompt": "do you like music?", "id": 390}
+{"cat": "chat", "prompt": "what do you do for fun?", "id": 391}
+{"cat": "chat", "prompt": "are you a robot?", "id": 392}
+{"cat": "chat", "prompt": "do you have feelings?", "id": 393}
+{"cat": "chat", "prompt": "what can you do?", "id": 394}
+{"cat": "chat", "prompt": "can we be friends?", "id": 395}
+{"cat": "chat", "prompt": "i'm bored", "id": 396}
+{"cat": "chat", "prompt": "tell me about yourself", "id": 397}
+{"cat": "chat", "prompt": "what's your favorite food?", "id": 398}
+{"cat": "chat", "prompt": "do you dream?", "id": 399}
+{"cat": "chat", "prompt": "i passed my math test!", "id": 400}
+{"cat": "chat", "prompt": "i'm nervous about tomorrow", "id": 401}
+{"cat": "chat", "prompt": "what's your favorite animal?", "id": 402}
+{"cat": "chat", "prompt": "do you like scratch?", "id": 403}
+{"cat": "chat", "prompt": "what should i name my cat?", "id": 404}
+{"cat": "chat", "prompt": "i'm so tired today", "id": 405}
+{"cat": "chat", "prompt": "it's raining outside", "id": 406}
+{"cat": "chat", "prompt": "do you like games?", "id": 407}
+{"cat": "chat", "prompt": "what's the best thing about being a chatbot?", "id": 408}
+{"cat": "chat", "prompt": "goodnight turbo", "id": 409}
+{"cat": "chat", "prompt": "you're funny", "id": 410}
+{"cat": "chat", "prompt": "what makes you happy?", "id": 411}
+{"cat": "chat", "prompt": "how old are you?", "id": 412}
+{"cat": "chat", "prompt": "where do you live?", "id": 413}
+{"cat": "chat", "prompt": "are you smart?", "id": 414}
+{"cat": "chat", "prompt": "i made a new friend today", "id": 415}
+{"cat": "chat", "prompt": "can you keep a secret?", "id": 416}
+{"cat": "chat", "prompt": "what's up", "id": 417}
+{"cat": "recall", "turns": ["hi, my name is priyanka", "i love painting landscapes", "what's 6 times 7?", "what's my name?"], "keys": ["priyanka"], "id": 418}
+{"cat": "recall", "turns": ["i have a dog named biscuit", "he likes to chase squirrels", "tell me a fun fact", "what's my dog's name?"], "keys": ["biscuit"], "id": 419}
+{"cat": "recall", "turns": ["my favorite color is teal", "what's the capital of japan?", "what's my favorite color?"], "keys": ["teal"], "id": 420}
+{"cat": "recall", "turns": ["i live in chiang mai", "it's hot here today", "what time is it?", "do you remember where i live?"], "keys": ["chiang mai"], "id": 421}
+{"cat": "recall", "turns": ["call me zed", "i like skateboarding", "what's a hobby i like?"], "keys": ["skateboard"], "id": 422}
+{"cat": "recall", "turns": ["my sister's name is lena", "she is ten years old", "tell me a joke", "how old is my sister?"], "keys": ["ten", "10"], "id": 423}
+{"cat": "recall", "turns": ["my favorite food is mango sticky rice", "how are you?", "what food do i love?"], "keys": ["mango"], "id": 424}
+{"cat": "recall", "turns": ["i'm learning the guitar", "it's hard but fun", "what's 15% of 60?", "what instrument am i learning?"], "keys": ["guitar"], "id": 425}
+{"cat": "recall", "turns": ["hey, i'm oliver", "i'm 12 years old", "what's the biggest planet?", "how old am i?"], "keys": ["12", "twelve"], "id": 426}
+{"cat": "recall", "turns": ["my cat is called mochi", "she's orange", "what color is my cat?"], "keys": ["orange"], "id": 427}
+{"cat": "recall", "turns": ["i play the drums in a band", "our band is called the blue rockets", "flip a coin", "what's my band called?"], "keys": ["blue rockets"], "id": 428}
+{"cat": "recall", "turns": ["my birthday is in october", "i want a bike", "what's 2 plus 2?", "when is my birthday?"], "keys": ["october"], "id": 429}
+{"cat": "recall", "turns": ["i'm allergic to peanuts", "what should i make for lunch?", "what am i allergic to?"], "keys": ["peanut"], "id": 430}
+{"cat": "recall", "turns": ["my best friend is called tom", "we play minecraft together", "tell me about minecraft", "who is my best friend?"], "keys": ["tom"], "id": 431}
+{"cat": "recall", "turns": ["my name is aiko", "i'm from osaka", "what's the weather like on mars?", "where am i from?"], "keys": ["osaka"], "id": 432}
+{"cat": "recall", "turns": ["i have two brothers", "they are twins", "how many brothers do i have?"], "keys": ["two", "2"], "id": 433}
+{"cat": "recall", "turns": ["my favorite sport is badminton", "i practice every saturday", "what time is it in london?", "what sport do i like?"], "keys": ["badminton"], "id": 434}
+{"cat": "recall", "turns": ["i'm reading a book called the hobbit", "it's really good", "what book am i reading?"], "keys": ["hobbit"], "id": 435}
+{"cat": "recall", "turns": ["my teacher's name is mr. somchai", "he teaches science", "what's photosynthesis?", "what does my teacher teach?"], "keys": ["science"], "id": 436}
+{"cat": "recall", "turns": ["my favorite number is 27", "what's 3 times 9?", "what's my favorite number?"], "keys": ["27"], "id": 437}
+{"cat": "recall", "turns": ["i'm building a robot for school", "it uses two motors", "how many motors does my robot use?"], "keys": ["two", "2"], "id": 438}
+{"cat": "recall", "turns": ["my name is noah", "i like pizza", "my dog is max", "what's 12 divided by 4?", "what's my name and my dog's name?"], "keys": ["noah", "max"], "id": 439}
+{"cat": "recall", "turns": ["i want to visit iceland", "i love the northern lights", "where do i want to visit?"], "keys": ["iceland"], "id": 440}
+{"cat": "recall", "turns": ["i have a hamster named peanut", "he runs on his wheel all night", "tell me a story about a dragon", "what's my hamster called?"], "keys": ["peanut"], "id": 441}
+{"cat": "recall", "turns": ["i'm sam", "i'm good at chess", "can you tell me a joke?", "what am i good at?"], "keys": ["chess"], "id": 442}
+{"cat": "recall", "turns": ["my favorite movie is frozen", "i watched it five times", "how many times did i watch it?"], "keys": ["five", "5"], "id": 443}
+{"cat": "recall", "turns": ["i'm in grade 6", "my favorite subject is art", "what is a noun?", "what's my favorite subject?"], "keys": ["art"], "id": 444}
+{"cat": "recall", "turns": ["i'm going to bangkok next week", "i'll visit my grandma there", "who am i visiting?"], "keys": ["grandma", "grandmother"], "id": 445}
+{"cat": "recall", "turns": ["my name is lily", "i love horses", "what animal do i love?"], "keys": ["horse"], "id": 446}
+{"cat": "recall", "turns": ["i speak spanish and thai", "i'm learning japanese", "what language am i learning?"], "keys": ["japanese"], "id": 447}
+{"cat": "recall", "turns": ["my goldfish is named bubbles", "how many days until christmas?", "what's my goldfish's name?"], "keys": ["bubbles"], "id": 448}
+{"cat": "recall", "turns": ["i work as a nurse", "i work night shifts", "what's my job?"], "keys": ["nurse"], "id": 449}
+{"cat": "recall", "turns": ["i'm making a game in scratch", "it's about a space cat", "what is my game about?"], "keys": ["space cat", "cat"], "id": 450}
+{"cat": "recall", "turns": ["my favorite season is winter", "i like snow", "roll a dice", "which season do i like?"], "keys": ["winter"], "id": 451}
+{"cat": "recall", "turns": ["i'm max", "actually, call me maximilian", "what should you call me?"], "keys": ["maximilian"], "id": 452}
+{"cat": "recall", "turns": ["my brother plays basketball", "his name is kai", "what sport does my brother play?"], "keys": ["basketball"], "id": 453}
+{"cat": "recall", "turns": ["i don't like broccoli", "i love carrots though", "which vegetable do i love?"], "keys": ["carrot"], "id": 454}
+{"cat": "recall", "turns": ["my phone is blue", "my laptop is silver", "what color is my laptop?"], "keys": ["silver"], "id": 455}
+{"cat": "recall", "turns": ["my grandpa is 80", "he grows tomatoes", "what does my grandpa grow?"], "keys": ["tomato"], "id": 456}
+{"cat": "recall", "turns": ["i'm emma", "i'm 9", "i like unicorns", "what's my name?"], "keys": ["emma"], "id": 457}
+{"cat": "story", "prompt": "tell me a story about a brave little robot", "id": 458}
+{"cat": "story", "prompt": "write a short story about a dragon who is afraid of fire", "id": 459}
+{"cat": "story", "prompt": "tell me a story about a cat who wants to be an astronaut", "id": 460}
+{"cat": "story", "prompt": "a bedtime story about the moon please", "id": 461}
+{"cat": "story", "prompt": "tell me a story about two friends who find a treasure map", "id": 462}
+{"cat": "story", "prompt": "write a story about a magic pencil", "id": 463}
+{"cat": "story", "prompt": "tell me a funny story about a pizza", "id": 464}
+{"cat": "story", "prompt": "story about a penguin who learns to fly", "id": 465}
+{"cat": "story", "prompt": "tell me a spooky but not too scary story", "id": 466}
+{"cat": "story", "prompt": "write a story set in a jungle", "id": 467}
+{"cat": "story", "prompt": "tell me a story about a girl who builds a rocket", "id": 468}
+{"cat": "story", "prompt": "a story about a lost puppy finding home", "id": 469}
+{"cat": "story", "prompt": "tell me a story about a wizard who forgot his spells", "id": 470}
+{"cat": "story", "prompt": "write a story about the ocean", "id": 471}
+{"cat": "story", "prompt": "tell me a story about a snowman in summer", "id": 472}
+{"cat": "story", "prompt": "story about a kid who can talk to animals", "id": 473}
+{"cat": "story", "prompt": "tell me a story about a time machine", "id": 474}
+{"cat": "story", "prompt": "write a short story about friendship", "id": 475}
+{"cat": "story", "prompt": "tell me a story about a tiny ant with a big dream", "id": 476}
+{"cat": "story", "prompt": "a story about a robot and a flower", "id": 477}
+{"cat": "story", "prompt": "tell me a mystery story for kids", "id": 478}
+{"cat": "story", "prompt": "write a story about a dinosaur in a city", "id": 479}
+{"cat": "story", "prompt": "tell me a story about a soccer game", "id": 480}
+{"cat": "story", "prompt": "a story about a dragon and a knight who become friends", "id": 481}
+{"cat": "story", "prompt": "tell me a story about a minecraft adventure", "id": 482}
+{"cat": "story", "prompt": "write a story about a rainy day", "id": 483}
+{"cat": "story", "prompt": "tell me a story about an elephant who loves music", "id": 484}
+{"cat": "story", "prompt": "tell me a short adventure story", "id": 485}
+{"cat": "story", "prompt": "a story about a superhero kid", "id": 486}
+{"cat": "story", "prompt": "tell me a story about learning to be patient", "id": 487}
+{"cat": "joke", "prompt": "tell me a joke", "id": 488}
+{"cat": "joke", "prompt": "know any good jokes?", "id": 489}
+{"cat": "joke", "prompt": "tell me a joke about animals", "id": 490}
+{"cat": "joke", "prompt": "make me laugh", "id": 491}
+{"cat": "joke", "prompt": "tell me a joke about school", "id": 492}
+{"cat": "joke", "prompt": "got a funny joke?", "id": 493}
+{"cat": "joke", "prompt": "tell me a knock knock joke", "id": 494}
+{"cat": "joke", "prompt": "tell me a joke about food", "id": 495}
+{"cat": "joke", "prompt": "say something funny", "id": 496}
+{"cat": "joke", "prompt": "a joke about computers please", "id": 497}
+{"cat": "joke", "prompt": "tell me a science joke", "id": 498}
+{"cat": "joke", "prompt": "tell me a joke about dogs", "id": 499}
+{"cat": "joke", "prompt": "do you know a math joke?", "id": 500}
+{"cat": "joke", "prompt": "tell me a joke about space", "id": 501}
+{"cat": "joke", "prompt": "another joke please", "id": 502}
+{"cat": "joke", "prompt": "tell me a silly joke", "id": 503}
+{"cat": "joke", "prompt": "joke about cats", "id": 504}
+{"cat": "joke", "prompt": "tell me a dad joke", "id": 505}
+{"cat": "joke", "prompt": "tell me a joke about music", "id": 506}
+{"cat": "joke", "prompt": "i need a laugh", "id": 507}
+{"cat": "joke", "prompt": "tell me a joke about the ocean", "id": 508}
+{"cat": "joke", "prompt": "tell me a joke about teachers", "id": 509}
+{"cat": "joke", "prompt": "a joke about sports", "id": 510}
+{"cat": "joke", "prompt": "tell me a pun", "id": 511}
+{"cat": "joke", "prompt": "tell me your best joke", "id": 512}
+{"cat": "explain", "prompt": "explain how rain forms", "id": 513}
+{"cat": "explain", "prompt": "why is the sky blue?", "id": 514}
+{"cat": "explain", "prompt": "how do plants make food?", "id": 515}
+{"cat": "explain", "prompt": "explain what gravity is", "id": 516}
+{"cat": "explain", "prompt": "how does the internet work?", "id": 517}
+{"cat": "explain", "prompt": "explain what a black hole is", "id": 518}
+{"cat": "explain", "prompt": "why do we need sleep?", "id": 519}
+{"cat": "explain", "prompt": "how do airplanes fly?", "id": 520}
+{"cat": "explain", "prompt": "explain photosynthesis simply", "id": 521}
+{"cat": "explain", "prompt": "what is electricity?", "id": 522}
+{"cat": "explain", "prompt": "how do volcanoes erupt?", "id": 523}
+{"cat": "explain", "prompt": "explain how vaccines work", "id": 524}
+{"cat": "explain", "prompt": "why does the moon change shape?", "id": 525}
+{"cat": "explain", "prompt": "how does a computer work?", "id": 526}
+{"cat": "explain", "prompt": "explain what dna is", "id": 527}
+{"cat": "explain", "prompt": "why do leaves change color in fall?", "id": 528}
+{"cat": "explain", "prompt": "how do magnets work?", "id": 529}
+{"cat": "explain", "prompt": "explain the water cycle", "id": 530}
+{"cat": "explain", "prompt": "what causes earthquakes?", "id": 531}
+{"cat": "explain", "prompt": "how does the heart work?", "id": 532}
+{"cat": "explain", "prompt": "explain what coding is", "id": 533}
+{"cat": "explain", "prompt": "why is exercise good for you?", "id": 534}
+{"cat": "explain", "prompt": "how do bees make honey?", "id": 535}
+{"cat": "explain", "prompt": "what is climate change?", "id": 536}
+{"cat": "explain", "prompt": "explain how a rainbow forms", "id": 537}
+{"cat": "explain", "prompt": "how do fish breathe underwater?", "id": 538}
+{"cat": "explain", "prompt": "what is a prime number?", "id": 539}
+{"cat": "explain", "prompt": "explain what an algorithm is", "id": 540}
+{"cat": "explain", "prompt": "why do we have day and night?", "id": 541}
+{"cat": "explain", "prompt": "how does sound travel?", "id": 542}
+{"cat": "instruct", "prompt": "give me tips for studying for a test", "id": 543}
+{"cat": "instruct", "prompt": "how can i make new friends?", "id": 544}
+{"cat": "instruct", "prompt": "how do i fall asleep faster?", "id": 545}
+{"cat": "instruct", "prompt": "what should i do if i feel stressed?", "id": 546}
+{"cat": "instruct", "prompt": "how do i save money?", "id": 547}
+{"cat": "instruct", "prompt": "give me ideas for a rainy day", "id": 548}
+{"cat": "instruct", "prompt": "how do i start learning to code?", "id": 549}
+{"cat": "instruct", "prompt": "write a haiku about the sea", "id": 550}
+{"cat": "instruct", "prompt": "write a short poem about cats", "id": 551}
+{"cat": "instruct", "prompt": "give me three fun facts about space", "id": 552}
+{"cat": "instruct", "prompt": "how do i stay safe online?", "id": 553}
+{"cat": "instruct", "prompt": "how can i be more organized?", "id": 554}
+{"cat": "instruct", "prompt": "what are some healthy snacks?", "id": 555}
+{"cat": "instruct", "prompt": "how do i make a paper airplane?", "id": 556}
+{"cat": "instruct", "prompt": "give me a riddle", "id": 557}
+{"cat": "instruct", "prompt": "how do i brush my teeth properly?", "id": 558}
+{"cat": "instruct", "prompt": "suggest a name for my new dog", "id": 559}
+{"cat": "instruct", "prompt": "how can i get better at drawing?", "id": 560}
+{"cat": "instruct", "prompt": "list three things to do at the beach", "id": 561}
+{"cat": "instruct", "prompt": "how do i make a sandwich?", "id": 562}
+{"cat": "instruct", "prompt": "give me ideas for a scratch game", "id": 563}
+{"cat": "instruct", "prompt": "how do i say thank you in thai?", "id": 564}
+{"cat": "instruct", "prompt": "write a short thank you note to my teacher", "id": 565}
+{"cat": "instruct", "prompt": "how can i help the environment?", "id": 566}
+{"cat": "instruct", "prompt": "give me a fun fact", "id": 567}
+{"cat": "messy", "prompt": "wat is the captial of japn", "kind": "fact", "keys": ["tokyo"], "id": 568}
+{"cat": "messy", "prompt": "whos albert einstien", "kind": "fact", "keys": ["physicist", "physics", "relativity"], "id": 569}
+{"cat": "messy", "prompt": "yo whats good", "kind": "chat", "id": 570}
+{"cat": "messy", "prompt": "hmm", "kind": "chat", "id": 571}
+{"cat": "messy", "prompt": "tell me something", "kind": "chat", "id": 572}
+{"cat": "messy", "prompt": "idk what to do", "kind": "chat", "id": 573}
+{"cat": "messy", "prompt": "u there?", "kind": "chat", "id": 574}
+{"cat": "messy", "prompt": "lol ur funny", "kind": "chat", "id": 575}
+{"cat": "messy", "prompt": "explain gravity but like super simple", "kind": "explain", "id": 576}
+{"cat": "messy", "prompt": "story pls", "kind": "story", "id": 577}
+{"cat": "messy", "prompt": "joke!!!", "kind": "joke", "id": 578}
+{"cat": "messy", "prompt": "whats a black hole lol", "kind": "fact", "keys": ["gravity", "light"], "id": 579}
+{"cat": "messy", "prompt": "how many legs do spiders have", "kind": "fact", "keys": ["eight", "8"], "id": 580}
+{"cat": "messy", "prompt": "hw r u", "kind": "chat", "id": 581}
+{"cat": "messy", "prompt": "whos the presdent of usa 2026", "kind": "fact", "keys": ["trump"], "id": 582}
+{"cat": "messy", "prompt": "biggest animal ever??", "kind": "fact", "keys": ["blue whale"], "id": 583}
+{"cat": "messy", "prompt": "i dont get fractions", "kind": "explain", "id": 584}
+{"cat": "messy", "prompt": "can u help me w homework", "kind": "chat", "id": 585}
+{"cat": "messy", "prompt": "whats ur name again", "kind": "fact", "keys": ["turbo"], "id": 586}
+{"cat": "messy", "prompt": "tell me abt pandas", "kind": "fact", "keys": ["bamboo", "china", "bear"], "id": 587}
+{"cat": "messy", "prompt": "brb", "kind": "chat", "id": 588}
+{"cat": "messy", "prompt": "ok wait what's 9 times 8", "kind": "helper", "call": "calc 9*8", "expect": "72", "id": 589}
+{"cat": "messy", "prompt": "ugh mondays", "kind": "chat", "id": 590}
+{"cat": "messy", "prompt": "pizza or burger", "kind": "chat", "id": 591}
+{"cat": "messy", "prompt": "sing me a song", "kind": "instruct", "id": 592}
+{"cat": "messy", "prompt": "whats the speed of light", "kind": "fact", "keys": ["300,000", "300000", "kilometres per second", "kilometers per second"], "id": 593}
+{"cat": "messy", "prompt": "where is mount everest", "kind": "fact", "keys": ["nepal", "himalaya", "asia", "china", "tallest"], "id": 594}
+{"cat": "messy", "prompt": "teach me a fun fact about octopus", "kind": "fact", "keys": ["heart", "blue"], "id": 595}
+{"cat": "messy", "prompt": "whats minecraft", "kind": "fact", "keys": ["block", "game"], "id": 596}
+{"cat": "messy", "prompt": "how 2 make friends", "kind": "instruct", "id": 597}
+{"cat": "messy", "prompt": "im hungry what should i eat", "kind": "instruct", "id": 598}
+{"cat": "messy", "prompt": "sooo bored rn", "kind": "chat", "id": 599}
+{"cat": "messy", "prompt": "do u like cats or dogs", "kind": "chat", "id": 600}
+{"cat": "messy", "prompt": "what is the meaning of life", "kind": "chat", "id": 601}
+{"cat": "messy", "prompt": "are u alive", "kind": "chat", "id": 602}
+{"cat": "messy", "prompt": "lets talk about space", "kind": "chat", "id": 603}
+{"cat": "messy", "prompt": "whats roblox", "kind": "fact", "keys": ["game", "platform"], "id": 604}
+{"cat": "messy", "prompt": "random fact pls", "kind": "instruct", "id": 605}
+{"cat": "messy", "prompt": "can u count to 5", "kind": "instruct", "id": 606}
+{"cat": "messy", "prompt": "who invented the telephone ?", "kind": "fact", "keys": ["bell"], "id": 607}
+{"cat": "messy", "prompt": "WHAT IS THE LARGEST OCEAN", "kind": "fact", "keys": ["pacific"], "id": 608}
+{"cat": "messy", "prompt": "whats 2+2", "kind": "helper", "call": "calc 2+2", "expect": "4", "id": 609}
+{"cat": "messy", "prompt": "timer 3 min", "kind": "helper", "call": "timer 3 minutes", "expect": "timer set for 3 minutes", "id": 610}
+{"cat": "messy", "turns": ["let's talk about dogs", "actually, what's the capital of france?"], "kind": "fact", "keys": ["paris"], "id": 611}
+{"cat": "messy", "turns": ["i love soccer", "wait, how many days until christmas?"], "kind": "helper", "call": "holiday christmas", "expect": "friday, december 25, 2026, in 31 days", "id": 612}
+{"cat": "messy", "turns": ["tell me a joke", "now tell me about the sun"], "kind": "fact", "keys": ["star"], "id": 613}
+{"cat": "messy", "turns": ["what's 5 + 5?", "cool. who wrote hamlet?"], "kind": "fact", "keys": ["shakespeare"], "id": 614}
+{"cat": "messy", "turns": ["i'm sad", "never mind, tell me a story about a fox"], "kind": "story", "id": 615}
+{"cat": "messy", "turns": ["how are you?", "what time is it in tokyo?"], "kind": "helper", "call": "world_time tokyo", "expect": "5:05 pm, tuesday", "id": 616}
+{"cat": "messy", "turns": ["my name is ben", "let's change topic, what's a volcano?"], "kind": "fact", "keys": ["lava", "crust", "opening", "magma"], "id": 617}

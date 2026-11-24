@@ -6,6 +6,8 @@ Word normalisation (identical in Scratch):
   2. a trailing "'s" is removed, then every "'" is removed;
   3. digit runs lose leading zeros ("007" -> "7"; "0" stays);
   4. stem: len>4 and ends "ies" -> "...y"; else len>3, ends "s", not "ss"/"us"/"is" -> drop "s";
+     then len>5 and ends "ing" -> drop "ing", else len>5 and ends "ed" -> drop "ed";
+     then the SYNONYMS map (verb/agent forms, roman numerals, a few size words);
   5. single letters are dropped; stopwords are dropped.
 Scoring: score(fact) = sum over DISTINCT query words (in order of first appearance) of the
 posting weight w = round(idf * tf*(k1+1) / (tf + k1*(1-b+b*dl/avgdl)), 3).
@@ -23,7 +25,8 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = "/home/user/work"
-K1, B = 1.2, 0.75
+K1 = 1.2
+B = float(os.environ.get('BM25_B', '0.5'))
 MAX_DF_FRAC = 0.05
 DEF_BONUS = 3.0
 DEF_WORDS = {"mean", "means", "meaning", "define", "definition"}
@@ -37,17 +40,26 @@ under until up very was wasn we were weren what when where which while who whom 
 yourself yourselves tell know please explain describe give say said says thing things something anything also just
 like really ok okay hey hi hello thanks thank yes yeah um uh well actually maybe much many lot lots kind sort way
 wanna gonna gotta whats whos wheres hows im ive id youre dont doesnt didnt isnt wasnt cant wont ill pls plz u ur r
-called call name named mean means meaning define definition fact facts interesting info information""".split())
+call mean means meaning define definition fact facts interesting info information us question quick hearing
+hear heard forgot forget wondering wonder curious want wanted need kinda sorta basically exactly guess think
+thought ask asking anyone someone everyone told saying lemme go going get got see look find show keep keeping
+now today right remember learn wondered whats tellme dunno pls please approximately roughly around
+nearly almost approx""".split())
 
 # small synonym map applied after stemming (Scratch: lists syn_from / syn_to)
 SYNONYMS = {"biggest": "largest", "bigger": "larger", "big": "large", "huge": "large", "giant": "large",
             "tiny": "small", "smallest": "smallest", "quickest": "fastest", "speediest": "fastest",
             "kid": "child", "children": "child", "kiddo": "child", "earth's": "earth", "folk": "people",
             "persons": "people", "movie": "film", "flick": "film", "mom": "mother", "dad": "father",
-            "inventor": "invented", "invent": "invented", "creator": "created", "create": "created",
-            "founder": "founded", "author": "wrote", "writer": "wrote", "write": "wrote",
-            "painter": "painted", "paint": "painted", "discoverer": "discovered", "discover": "discovered",
-            "usa": "united", "us": "united", "america": "united", "uk": "united", "britain": "united"}
+            "inventor": "invent", "invented": "invent", "creator": "creat", "create": "creat",
+            "founder": "found", "founded": "found", "author": "wrote", "writer": "wrote",
+            "painter": "paint", "discoverer": "discover",
+            "ii": "2", "iii": "3", "iv": "4", "creat": "creat", "write": "wrote", "written": "wrote", "writ": "wrote",
+            "won": "won", "win": "won", "winner": "won", "sink": "sank", "sunk": "sank", "begin": "began", "begun": "began",
+            "die": "died", "direct": "direct", "director": "direct", "came": "come", "took": "take", "gave": "give",
+            "made": "creat", "built": "build", "became": "become", "ran": "run", "grew": "grow", "flew": "fly",
+            "swam": "swim", "sang": "sing", "fought": "fight", "caught": "catch", "taught": "teach", "bought": "buy",
+            "ate": "eat", "human": "person", "humans": "person", "persons": "people"}
 
 IDF_UNKNOWN = None  # set at build: log(1 + (N - 0.5)/1.5)
 
@@ -76,6 +88,10 @@ def words(text, stop=None):
                     part = part[:-3] + "y"
                 elif len(part) > 3 and part.endswith("s") and not part.endswith(("ss", "us", "is")):
                     part = part[:-1]
+                if len(part) > 5 and part.endswith("ing"):
+                    part = part[:-3]
+                elif len(part) > 5 and part.endswith("ed"):
+                    part = part[:-2]
                 if len(part) < 2:
                     continue
             part = SYNONYMS.get(part, part)

@@ -164,7 +164,7 @@ def raw_facts(name, tok, src, limit=None, keyfn=None):
         n = len(tok.encode(ct, already_clean=True))
         if 5 <= n <= MAXTOK:
             d = {"text": ct, "src": src, "ntok": n}
-            for k in ("q", "a", "word", "cat"):
+            for k in ("q", "a", "word", "cat", "pos", "count"):
                 if k in r:
                     d[k] = r[k]
             out.append(d)
