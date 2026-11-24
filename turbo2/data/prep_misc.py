@@ -76,6 +76,9 @@ def trivia_statement(q, a):
     ql = q[0].lower() + q[1:] if q else q
     if a.lower() in ("true", "false"):
         return q if a.lower() == "true" and not q.endswith("?") else None
+    m = re.match(r"^(?:what|which) (is|was|are|were) (.+) (called|named|known as)\?$", ql)
+    if m:
+        return "%s %s %s %s." % (m.group(2), m.group(1), m.group(3), a)
     m = re.match(r"^(who|what|which) (is|was|are|were) (the .+|an? .+|[a-z].+)\?$", ql)
     if m and not PREP_END.search(m.group(3)) and len(m.group(3).split()) >= 2:
         return "%s %s %s." % (m.group(3), m.group(2), a)

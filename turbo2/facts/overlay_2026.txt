@@ -1,0 +1,72 @@
+# 2026 overlay (hand-written by Claude from training knowledge, cutoff mid-2026; flagged in README).
+# Facts that may change are phrased as dated events.
+Donald Trump began his second term as president of the United States on January 20, 2025.
+Donald Trump is the 47th president of the United States, and JD Vance is the vice president.
+Joe Biden was president of the United States from 2021 to 2025.
+Keir Starmer became prime minister of the United Kingdom in July 2024.
+Charles III became king of the United Kingdom in September 2022 after Queen Elizabeth II died.
+Queen Elizabeth II died in September 2022 after reigning for 70 years.
+Pope Leo XIV was elected in May 2025 and is the first pope from the United States.
+Pope Francis died in April 2025.
+Rama X became king of Thailand in 2016.
+Rama X is the title of King Maha Vajiralongkorn of Thailand.
+Anutin Charnvirakul became prime minister of Thailand in September 2025.
+Sanae Takaichi became the first woman prime minister of Japan in October 2025.
+Mark Carney became prime minister of Canada in March 2025.
+Friedrich Merz became chancellor of Germany in May 2025.
+Narendra Modi began a third term as prime minister of India in June 2024.
+Emmanuel Macron has been president of France since 2017.
+Xi Jinping has been the leader of China since 2012.
+The COVID-19 pandemic began in 2019 and spread around the world.
+COVID-19 is a disease caused by a coronavirus called SARS-CoV-2.
+Russia launched a full-scale invasion of Ukraine in February 2022.
+The United Kingdom left the European Union in January 2020, called Brexit.
+The world population passed 8 billion people in November 2022.
+India passed China as the country with the most people in 2023.
+The James Webb Space Telescope launched on December 25, 2021.
+In 2019, scientists showed the first picture of a black hole, in the galaxy M87.
+NASA's Perseverance rover landed on Mars in February 2021.
+In 2021, the Ingenuity helicopter made the first powered flight on Mars.
+India's Chandrayaan-3 landed near the south pole of the Moon.
+The Artemis program is NASA's plan to send astronauts back to the Moon.
+Argentina won the 2022 FIFA World Cup in Qatar.
+The 2026 FIFA World Cup was hosted by the United States, Canada and Mexico.
+The 2024 Summer Olympics were held in Paris, France.
+The 2026 Winter Olympics were held in Milan and Cortina, Italy.
+The 2028 Summer Olympics will be held in Los Angeles.
+The 2032 Summer Olympics will be held in Brisbane, Australia.
+Usain Bolt holds the 100 metres world record of 9.58 seconds.
+The Burj Khalifa in Dubai is the world's tallest building.
+Mount Everest is 8,849 metres tall, according to a 2020 survey.
+ChatGPT, an AI chatbot made by OpenAI, came out in 2022.
+Elon Musk bought Twitter in 2022 and later renamed it X.
+The Nintendo Switch 2 game console was released in June 2025.
+Notre-Dame cathedral in Paris reopened in 2024 after a big fire.
+Taylor Swift's Eras Tour became the highest-grossing concert tour ever.
+Minecraft is the best-selling video game ever, with over 300 million copies sold.
+Scratch 3.0 was released in January 2019.
+The Paris Agreement is an international treaty to fight climate change, signed in 2016.
+Facebook's parent company renamed itself Meta in October 2021.
+The Euro 2024 football championship was won by Spain.
+Lionel Messi won his eighth Ballon d'Or award in 2023.
+The Webb telescope studies the universe in infrared light.
+2024 was the hottest year measured up to that time.
+Large language models are AI programs trained on lots of text to predict and write words.
+Electric cars became much more common in the 2020s.
+In 2023, the Writers Guild of America went on strike for 148 days.
+King Charles III was crowned at Westminster Abbey on May 6, 2023.
+Kamala Harris was vice president of the United States from 2021 to 2025.
+Rishi Sunak was prime minister of the United Kingdom from 2022 to 2024.
+Liz Truss was prime minister of the United Kingdom for 49 days in 2022.
+Boris Johnson was prime minister of the United Kingdom from 2019 to 2022.
+Paetongtarn Shinawatra became prime minister of Thailand in 2024.
+Srettha Thavisin became prime minister of Thailand in 2023.
+Prayut Chan-o-cha led Thailand as prime minister from 2014.
+Fumio Kishida was prime minister of Japan from 2021 to 2024.
+Shigeru Ishiba was prime minister of Japan from 2024 to 2025.
+Justin Trudeau was prime minister of Canada from 2015 to 2025.
+Olaf Scholz was chancellor of Germany from 2021 to 2025.
+Angela Merkel was chancellor of Germany from 2005 to 2021.
+Barack Obama was president of the United States from 2009 to 2017.
+Donald Trump's first term as president was from 2017 to 2021.
+The Burj Khalifa is 828 metres tall.

@@ -1,0 +1,384 @@
+# Core coverage facts (hand-written by Claude; flagged in README). One per line, <=24 tokens.
+# --- space
+The Sun is a star at the center of our solar system.
+The Sun is about 150 million kilometres from Earth.
+Sunlight takes about 8 minutes to reach Earth.
+There are eight planets in our solar system.
+In order from the Sun, the planets are Mercury, Venus, Earth, Mars, then Jupiter.
+Mercury is the smallest planet and the closest planet to the Sun.
+Venus is the hottest planet in our solar system because its thick clouds trap heat.
+Earth is the third planet from the Sun and the only planet known to have life.
+Mars is the fourth planet from the Sun and is called the Red Planet because of rusty iron in its soil.
+Mars has two small moons called Phobos and Deimos.
+Olympus Mons on Mars is the tallest volcano in the solar system.
+Jupiter is the largest planet in our solar system, and it is a gas giant.
+Jupiter's Great Red Spot is a giant storm bigger than Earth.
+Saturn is the sixth planet from the Sun and is famous for its bright rings made of ice and rock.
+Uranus is an ice giant that spins on its side.
+Neptune is the farthest planet from the Sun and has the strongest winds in the solar system.
+Pluto was called a planet until 2006, when it became a dwarf planet.
+The Moon is Earth's only natural satellite, and it is about 384,000 kilometres away.
+The Moon takes about 27 days to orbit Earth, and we always see the same side of it.
+Neil Armstrong was the first person to walk on the Moon, in 1969.
+Buzz Aldrin walked on the Moon with Neil Armstrong on Apollo 11.
+Yuri Gagarin was the first human in space, in 1961.
+A light-year is the distance light travels in one year.
+A black hole is a place in space where gravity is so strong that not even light can escape.
+The Milky Way is the galaxy that contains our solar system.
+A galaxy is a huge group of stars, gas and dust held together by gravity.
+The universe is about 13.8 billion years old.
+A comet is a ball of ice and dust that grows a tail near the Sun.
+An asteroid is a rocky object that orbits the Sun.
+Most asteroids are in the asteroid belt between Mars and Jupiter.
+A shooting star is really a meteor, a small piece of space rock burning up in Earth's air.
+The International Space Station is a science lab that orbits Earth about every 90 minutes.
+Stars twinkle because their light bends as it passes through Earth's moving air.
+A solar eclipse happens when the Moon passes between Earth and the Sun.
+A lunar eclipse happens when Earth's shadow falls on the Moon.
+Earth takes about 365 and a quarter days to orbit the Sun.
+Earth spins once on its axis about every 24 hours, which gives us day and night.
+Seasons happen because Earth's axis is tilted about 23.5 degrees.
+# --- earth science / geography
+Mount Everest is the tallest mountain above sea level in the world.
+The Pacific Ocean is the largest and deepest ocean on Earth.
+The Mariana Trench in the Pacific is the deepest part of the ocean.
+The Nile is usually called the longest river in the world, at about 6,650 kilometres.
+The Amazon River carries more water than any other river in the world.
+The Sahara is the largest hot desert in the world, in northern Africa.
+Antarctica is the coldest, windiest and driest continent on Earth.
+There are seven continents: Africa, Antarctica, Asia, Australia, Europe, North America and South America.
+There are five oceans: the Pacific, Atlantic, Indian, Southern and Arctic oceans.
+Asia is the largest continent by both area and population.
+Russia is the largest country in the world by area.
+Vatican City is the smallest country in the world.
+About 71 percent of Earth's surface is covered by water.
+A volcano is an opening in Earth's crust where melted rock called lava comes out.
+Earthquakes happen when big pieces of Earth's crust called tectonic plates suddenly move.
+A tsunami is a series of huge ocean waves usually caused by an underwater earthquake.
+Rain forms when water vapour in clouds cools and turns into drops that are heavy enough to fall.
+A rainbow forms when sunlight is bent and split into colours by raindrops.
+The colours of the rainbow are red, orange, yellow, green, blue, indigo and violet.
+Lightning is a giant spark of electricity in a storm, and thunder is the sound it makes.
+In the water cycle, water evaporates, forms clouds and falls as rain.
+Climate change is the long-term warming of Earth, mostly caused by burning coal, oil and gas.
+The ozone layer high in the sky protects Earth from harmful ultraviolet rays from the Sun.
+Bangkok is the capital and largest city of Thailand.
+Thailand is a country in Southeast Asia, and its capital is Bangkok.
+The Thai currency is the baht, and the official language is Thai.
+Songkran is the Thai New Year festival in April, famous for friendly water fights.
+Loy Krathong is a Thai festival where people float decorated baskets on rivers.
+Chiang Mai is a large city in the mountains of northern Thailand.
+# --- science
+Water is made of two hydrogen atoms and one oxygen atom, so its formula is H2O.
+Water freezes at 0 degrees Celsius and boils at 100 degrees.
+Gravity is the force that pulls objects toward each other, and it keeps us on the ground.
+Isaac Newton described the laws of motion and universal gravitation in 1687.
+Albert Einstein developed the theory of relativity, including the famous equation E equals m c squared.
+Light travels at about 300,000 kilometres per second.
+Sound travels at about 343 metres per second in air.
+Photosynthesis is how plants use sunlight to make food and oxygen.
+Plants are green because of a pigment called chlorophyll.
+An atom is the smallest unit of a chemical element, made of protons, neutrons and electrons.
+DNA is the molecule that carries the genetic instructions for living things.
+Cells are the basic building blocks of all living things.
+The periodic table arranges all the chemical elements by their atomic number.
+Hydrogen is the lightest and most common element in the universe.
+Air is about 78 percent nitrogen and 21 percent oxygen.
+Gold is a soft, shiny, yellow metal with the chemical symbol Au.
+Diamond is the hardest natural material, and it is made of carbon.
+Electricity is the flow of tiny charged particles called electrons.
+A magnet attracts iron, and every magnet has a north pole and a south pole.
+Friction is a force that slows things down when two surfaces rub together.
+Energy cannot be created or destroyed; it can only change from one form to another.
+Solids, liquids and gases are the three common states of matter.
+Evaporation is when a liquid turns into a gas, like water drying in the sun.
+Charles Darwin explained evolution by natural selection in his 1859 book On the Origin of Species.
+Marie Curie was the first woman to win a Nobel Prize, and she studied radioactivity.
+Thomas Edison invented a practical light bulb and the phonograph.
+Alexander Graham Bell is credited with inventing the telephone in 1876.
+The Wright brothers made the first powered airplane flight in 1903.
+Louis Pasteur showed that germs cause many diseases and invented pasteurization.
+Alexander Fleming discovered penicillin, the first antibiotic.
+Vaccines train your immune system to fight a disease before you catch it.
+# --- human body
+The human body has 206 bones in adulthood.
+The heart is a muscle that pumps blood around your body.
+The human heart beats about 100,000 times a day.
+The brain controls your thoughts, memories, movements and feelings.
+The skin is the largest organ of the human body.
+The lungs take in oxygen and get rid of carbon dioxide.
+The stomach uses acid to help break down the food you eat.
+Red blood cells carry oxygen, and white blood cells fight germs.
+The femur, or thigh bone, is the longest bone in the human body.
+The smallest bone in the human body is the stapes, in the ear.
+Adults have 32 teeth, and children have 20 baby teeth.
+The five senses are sight, hearing, smell, taste and touch.
+Muscles move your body by pulling on bones.
+The liver cleans your blood and helps digest food.
+The kidneys filter waste from your blood and make urine.
+Most adults need about 7 to 9 hours of sleep each night.
+Children usually need about 9 to 12 hours of sleep each night.
+Drinking water helps your body control its temperature and keeps your organs working.
+Washing your hands with soap for 20 seconds helps stop germs from spreading.
+Exercise makes your heart and muscles stronger and can improve your mood.
+A balanced diet includes fruits, vegetables, whole grains, protein and dairy or other calcium foods.
+# --- animals
+A dog is a domesticated mammal that descended from wolves and is often called man's best friend.
+Dogs have a sense of smell tens of thousands of times stronger than humans.
+A cat is a small domesticated carnivore that loves to hunt and climb.
+Cats can sleep up to 16 hours a day.
+The blue whale is the largest animal that has ever lived.
+The African elephant is the largest land animal.
+The cheetah is the fastest land animal, reaching about 110 kilometres per hour.
+The giraffe is the tallest animal, growing up to about 5.5 metres tall.
+The peregrine falcon is the fastest bird, diving at over 300 kilometres per hour.
+Penguins are birds that cannot fly, but they are excellent swimmers.
+Octopuses have three hearts and blue blood.
+Sharks have existed for over 400 million years, longer than trees.
+Dolphins are mammals, and they breathe air through a blowhole.
+Bats are the only mammals that can truly fly.
+Frogs are amphibians that start life as tadpoles in water.
+Butterflies start life as caterpillars and change inside a chrysalis.
+Bees make honey from flower nectar and help pollinate plants.
+Ants can carry many times their own body weight.
+A group of lions is called a pride, and a group of crows is called a murder.
+Lions live mostly in Africa, and male lions have a big mane.
+Tigers are the largest wild cats, and each tiger has a unique pattern of stripes.
+Pandas eat mostly bamboo and live in the mountains of China.
+Kangaroos live in Australia and carry their babies in a pouch.
+Koalas live in Australia, eat eucalyptus leaves and sleep a lot.
+Elephants are very smart and can recognize themselves in a mirror.
+Snakes are reptiles with no legs, and they smell with their tongues.
+Owls can turn their heads about 270 degrees.
+Hummingbirds can fly backwards.
+Camels store fat, not water, in their humps.
+Dinosaurs died out about 66 million years ago.
+Tyrannosaurus rex was a huge meat-eating dinosaur with tiny arms.
+Birds are living descendants of dinosaurs.
+Mammals are warm-blooded animals with hair or fur that feed their babies milk.
+Reptiles are cold-blooded animals with scales, like snakes and lizards.
+Insects have six legs and three body parts: a head, a thorax and an abdomen.
+Spiders are not insects; they are arachnids with eight legs.
+The axolotl is a salamander that can regrow lost limbs.
+A tortoise can live for more than 150 years.
+# --- technology & coding
+A computer is a machine that follows instructions called programs to process information.
+The CPU, or central processing unit, is the brain of a computer.
+RAM is a computer's short-term memory.
+A hard drive or SSD is a computer's long-term storage.
+The internet is a worldwide network that connects billions of computers.
+The World Wide Web was invented by Tim Berners-Lee in 1989.
+Wikipedia is a free online encyclopedia written by volunteers.
+Google is a search engine company founded by Larry Page and Sergey Brin in 1998.
+Apple was founded by Steve Jobs, Steve Wozniak and Ronald Wayne in 1976.
+Microsoft was founded by Bill Gates and Paul Allen in 1975.
+The first iPhone was released by Apple in 2007.
+A smartphone is a mobile phone that works like a small computer with a touchscreen.
+Coding, or programming, means writing instructions that tell a computer what to do.
+An algorithm is a step-by-step set of instructions for solving a problem.
+A variable stores a value in a program, like a score or a name.
+A loop repeats instructions, and an if statement makes a choice.
+A bug is a mistake in a program, and debugging means finding and fixing it.
+Python is a popular programming language known for being easy to read.
+JavaScript is the programming language that runs inside web browsers.
+Binary is a number system with only two digits, 0 and 1, which computers use.
+A byte is 8 bits, and a kilobyte is about a thousand bytes.
+Artificial intelligence is when computers do tasks that usually need human thinking.
+A robot is a machine that can sense, think and act on its own or by remote control.
+Ada Lovelace is often called the first computer programmer.
+Alan Turing was a computer science pioneer who helped break secret codes in World War II.
+A password should be long, unique and kept secret.
+# --- Scratch / games
+Scratch is a free block-based programming language made by the MIT Media Lab.
+Scratch was first released in 2007.
+In Scratch, you build programs by snapping colorful code blocks together.
+In Scratch, characters are called sprites, and the background is called the stage.
+In Scratch, the green flag starts a project and the red stop sign stops it.
+Scratch projects can be shared on the Scratch website, where millions of kids share games and animations.
+TurboWarp is a Scratch mod that makes Scratch projects run much faster.
+In Scratch, a custom block is made with My Blocks, and run without screen refresh makes it faster.
+Minecraft is a sandbox video game where players build and explore worlds made of blocks.
+Minecraft was created by Markus Persson, also called Notch.
+Minecraft was fully released by Mojang in 2011.
+In Minecraft, creepers are green mobs that explode.
+The Ender Dragon is the final boss in Minecraft.
+Minecraft has a survival mode and a creative mode for building freely.
+Roblox is an online game platform where players make and play games created by other users.
+Roblox was created by David Baszucki and Erik Cassel.
+Roblox was released in 2006.
+Roblox games are made with Roblox Studio using a programming language called Lua.
+Robux is the virtual money used in Roblox.
+Fortnite is a battle royale game made by Epic Games, released in 2017.
+Mario is Nintendo's famous plumber character, who first appeared in Donkey Kong in 1981.
+Pokemon is a game and cartoon series where trainers catch and battle creatures called Pokemon.
+Pikachu is a yellow electric-type Pokemon and the series' mascot.
+Tetris is a puzzle game created by Alexey Pajitnov.
+Chess is a strategy board game for two players, and the goal is to checkmate the other king.
+In chess, each player starts with 16 pieces, including eight pawns.
+Sudoku is a number puzzle where each row, column and box has every digit once.
+In rock paper scissors, rock beats scissors and scissors beats paper.
+In rock paper scissors, paper beats rock.
+# --- math
+Pi is the ratio of a circle's circumference to its diameter.
+Pi is about 3.14159.
+The Pythagorean theorem says a squared plus b squared equals c squared.
+A prime number is a whole number greater than 1 that can only be divided by 1 and itself.
+The smallest prime numbers are 2, 3, 5 and 7.
+An even number can be divided by 2 with no remainder, and an odd number cannot.
+A triangle's angles always add up to 180 degrees.
+A square has four equal sides and four right angles.
+A circle has 360 degrees.
+The area of a rectangle is its length times its width.
+The area of a circle is pi times the radius squared.
+A fraction shows part of a whole, like one half or three quarters.
+Percent means per hundred, so 50 percent means 50 out of 100.
+Zero is the only number that is neither positive nor negative.
+A hexagon has six sides, a pentagon has five, and an octagon has eight.
+Multiplication is repeated addition.
+Order of operations: brackets, powers, multiply and divide, then add and subtract.
+A googol is 1 followed by 100 zeros.
+An equation is a math statement that says two things are equal.
+# --- history
+World War I lasted from 1914 to 1918.
+World War II lasted from 1939 to 1945.
+The Great Wall of China is a series of walls built over many centuries to protect China.
+The ancient Egyptians built the pyramids of Giza more than 4,500 years ago.
+The Roman Empire was one of the largest empires in history, centred on the city of Rome.
+Christopher Columbus sailed across the Atlantic Ocean to the Americas in 1492.
+The United States declared independence on July 4, 1776.
+George Washington was the first president of the United States.
+Abraham Lincoln was the 16th president of the United States and ended slavery there.
+Martin Luther King Jr. was a civil rights leader famous for his I Have a Dream speech.
+Nelson Mandela became South Africa's first Black president in 1994.
+Mahatma Gandhi led India's peaceful struggle for independence from Britain.
+The Titanic sank in April 1912 after hitting an iceberg on its first voyage.
+The Berlin Wall fell in 1989, and Germany reunited in 1990.
+Leonardo da Vinci was an Italian artist and inventor who painted the Mona Lisa.
+William Shakespeare was an English playwright who wrote Romeo and Juliet and Hamlet.
+Cleopatra was the last active ruler of ancient Egypt.
+The Industrial Revolution began in Britain in the 1700s, when machines and factories spread.
+The printing press was invented by Johannes Gutenberg around 1440.
+Thailand is the only country in Southeast Asia that was never colonized by a European power.
+The Sukhothai Kingdom is often called the first Thai kingdom, founded in 1238.
+# --- sports
+Football, also called soccer, is the most popular sport in the world.
+A football team has 11 players on the field, including the goalkeeper.
+The FIFA World Cup is held every four years.
+Brazil has won the men's FIFA World Cup five times, more than any other country.
+Basketball was invented by James Naismith in 1891.
+A basketball team has five players on the court.
+The Olympic Games are held every four years, with Summer and Winter Games two years apart.
+The modern Olympic Games began in Athens in 1896.
+The five Olympic rings stand for the five inhabited continents joined together.
+Tennis is played with rackets on a court, and the biggest tournaments are called Grand Slams.
+Muay Thai is the national sport of Thailand, known as the art of eight limbs.
+Cristiano Ronaldo and Lionel Messi are two of the most famous footballers ever.
+Michael Jordan is often called the greatest basketball player of all time.
+Serena Williams won 23 Grand Slam singles titles in tennis.
+A marathon is a running race of 42.195 kilometres.
+Swimmer Michael Phelps has won 28 Olympic medals, more than anyone else.
+# --- music
+The Beatles were a British rock band from Liverpool, with John, Paul, George and Ringo.
+Wolfgang Amadeus Mozart was an Austrian composer who started writing music at age five.
+Ludwig van Beethoven was a German composer who kept writing music after he became deaf.
+Michael Jackson was called the King of Pop, and Thriller is the best-selling album of all time.
+Taylor Swift is an American singer-songwriter famous for pop and country songs.
+A piano has 88 keys.
+The violin is the smallest and highest-pitched member of the string family.
+A guitar usually has six strings.
+Musical notes are named with the letters A, B, C, D, E, F and G.
+An orchestra has four main sections: strings, woodwinds, brass and percussion.
+K-pop is popular music from South Korea, with groups like BTS and Blackpink.
+Elvis Presley was called the King of Rock and Roll.
+# --- movies & books
+Harry Potter is a series of seven fantasy books by J. K. Rowling about a young wizard.
+Hogwarts is the school of witchcraft and wizardry in the Harry Potter books.
+The Lord of the Rings is a fantasy novel by J. R. R. Tolkien.
+Star Wars is a space adventure film series created by George Lucas, first released in 1977.
+Toy Story, released in 1995, was the first fully computer-animated feature film.
+Frozen is a 2013 Disney animated film about sisters Elsa and Anna.
+The Lion King is a 1994 Disney animated film about a young lion named Simba.
+Walt Disney founded the Walt Disney Company and created Mickey Mouse in 1928.
+Studio Ghibli is a Japanese animation studio that made Spirited Away and My Neighbor Totoro.
+Spider-Man is a Marvel superhero created by Stan Lee and Steve Ditko.
+Batman is a DC Comics superhero who protects Gotham City.
+Superman is a DC Comics superhero from the planet Krypton.
+The Very Hungry Caterpillar is a picture book by Eric Carle.
+Dr. Seuss wrote The Cat in the Hat and Green Eggs and Ham.
+Charlotte's Web is a children's book by E. B. White about a pig and a spider.
+Alice's Adventures in Wonderland was written by Lewis Carroll in 1865.
+Sherlock Holmes is a fictional detective created by Arthur Conan Doyle.
+# --- food
+Pizza comes from Italy.
+A classic Margherita pizza has tomato, mozzarella and basil.
+Sushi is a Japanese dish of vinegared rice with fish, seafood or vegetables.
+Pad Thai is a stir-fried rice noodle dish from Thailand.
+Tom yum is a hot and sour Thai soup, often made with shrimp.
+Som tam is a spicy green papaya salad from Thailand.
+Mango sticky rice is a popular Thai dessert made with sweet coconut milk.
+Chocolate is made from the seeds of the cacao tree.
+Bread is made from flour, water, yeast and salt.
+Rice is the main food for more than half of the people in the world.
+Honey never spoils if it is stored in a sealed container.
+Tomatoes are fruits, botanically speaking, because they contain seeds.
+Bananas are rich in potassium.
+Carrots are a good source of vitamin A, which helps your eyes.
+Oranges are a good source of vitamin C.
+Vegetables give your body vitamins, minerals and fiber.
+Popcorn pops because water inside each kernel turns to steam and bursts it open.
+# --- school subjects & language
+A noun is a word for a person, place, thing or idea.
+A verb is an action word, like run, jump or think.
+An adjective is a word that describes a noun, like big, red or happy.
+A sentence starts with a capital letter and ends with a period, question mark or exclamation mark.
+A synonym is a word with the same meaning as another word.
+An antonym is a word with the opposite meaning.
+A haiku is a short Japanese poem with three lines.
+The English alphabet has 26 letters.
+The vowels are a, e, i, o and u.
+English is the most widely studied foreign language in the world.
+Mandarin Chinese has the most native speakers of any language.
+History is the study of the past, and geography is the study of places and the Earth.
+Biology is the study of living things.
+Chemistry is the study of substances.
+Physics is the study of matter and energy.
+# --- everyday advice
+To study well, take short breaks, test yourself and get enough sleep.
+When you feel stressed, slow deep breaths can help you calm down.
+A good way to make friends is to ask people questions and listen to their answers.
+To stay safe online, never share your password, address or phone number with strangers.
+If you feel sad for a long time, talk to a trusted adult, friend or doctor.
+To fall asleep more easily, keep a regular bedtime and avoid screens before bed.
+Saving a little money every week adds up over time.
+Brush your teeth twice a day for two minutes and floss once a day.
+Before crossing the street, stop, look left and right, and listen for traffic.
+In Thailand, call 191 for police in an emergency.
+In Thailand, call 1669 for an ambulance.
+In an emergency in the United States, call 911.
+Wear sunscreen and drink water when you spend a long time in the sun.
+Breaking big tasks into small steps makes them easier to finish.
+# --- riddles & fun facts
+Riddle: what has keys but can't open locks? A piano.
+Riddle: what gets wetter the more it dries? A towel.
+Riddle: what has hands but cannot clap? A clock.
+Riddle: what has to be broken before you can use it? An egg.
+Riddle: what can you catch but not throw? A cold.
+Riddle: what has a neck but no head? A bottle.
+Riddle: what goes up but never comes down? Your age.
+Riddle: what has many teeth but cannot bite? A comb.
+Riddle: what runs but never walks? A river.
+Riddle: what has one eye but cannot see? A needle.
+Riddle: the more you take, the more you leave behind. What are they? Footsteps.
+Riddle: what word is spelled wrong in every dictionary? Wrong.
+A day on Venus is longer than a year on Venus.
+Bananas are berries, but strawberries are not.
+A group of flamingos is called a flamboyance.
+Sloths can hold their breath longer than dolphins, up to 40 minutes.
+There are more stars in the universe than grains of sand on all of Earth's beaches.
+A bolt of lightning is about five times hotter than the surface of the Sun.
+Sea otters hold hands while they sleep so they don't drift apart.
+Cows have best friends and get stressed when they are separated.
+The Eiffel Tower grows a little taller in summer because metal expands in heat.
+Wombats make cube-shaped poop.
+Some turtles can breathe through their bottoms.
+After Jupiter come Saturn, Uranus and Neptune, the outer planets.

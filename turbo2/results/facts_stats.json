@@ -1,0 +1,14 @@
+{
+ "total": 82039,
+ "by_src": {
+  "about_me": 33,
+  "overlay_2026": 70,
+  "core": 367,
+  "tables": 1759,
+  "wiki": 61693,
+  "trivia": 9083,
+  "wordnet": 9034
+ },
+ "wiki_candidates": 171104,
+ "mean_tokens": 18.22
+}

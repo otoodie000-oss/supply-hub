@@ -1,0 +1,18 @@
+{
+ "thresholds": [
+  9,
+  0.7,
+  0.8
+ ],
+ "dev_recall": 0.8972,
+ "neg_fp": 0.49038461538461536,
+ "per_kind": {
+  "trivia": 0.978,
+  "capital": 1.0,
+  "wiki": 0.863,
+  "wordnet": 0.75
+ },
+ "n_pos": 2500,
+ "n_neg": 104,
+ "recall_no_threshold": 0.9204
+}

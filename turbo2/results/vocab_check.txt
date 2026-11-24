@@ -1,0 +1,1 @@
+entries=8192 pairs=33550336 problems=0
