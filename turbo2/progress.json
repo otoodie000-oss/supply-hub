@@ -1,6 +1,6 @@
 {
- "phase": "0",
- "step": "sft_generator",
+ "phase": "1",
+ "step": "pretraining",
  "done": [
   "env_check",
   "throughput_bench",
@@ -27,7 +27,13 @@
   "speed_full_size(prefill ~28ms/tok, decode ~34ms/tok, fact turn 1.9-3.0s)",
   "tokcache(all sources)",
   "eval_suite(618)",
-  "bm25 b=0.5 thresholds (9,0.5,0.8) dev recall 0.912"
+  "bm25 b=0.5 thresholds (9,0.5,0.8) dev recall 0.912",
+  "sft_data(140.9k+84.5k convs, 24.9M tok)",
+  "synth(171.5k convs, 11.3M tok)",
+  "stories(207)",
+  "pack_pretrain(342,266 windows, 173.5M tok)",
+  "pack_sft(49,393 windows)",
+  "turbo1_baseline_replies"
  ],
  "work_dir": "/home/user/work",
  "train": {
@@ -125,5 +131,11 @@
  "decisions": [
   "keep 10 layers (speed ok)",
   "torch.compile for training (nondeterministic across processes; resume exact in eager)"
- ]
+ ],
+ "run": {
+  "name": "main",
+  "config": "configs/run_main.json",
+  "resume_cmd": "python3 train.py --run main --budget 540",
+  "dev_eval_cmd": "python3 dev_eval.py main"
+ }
 }

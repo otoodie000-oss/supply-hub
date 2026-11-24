@@ -1,0 +1,16 @@
+{
+ "sft.sft": {
+  "unique_tokens": 15524418,
+  "used_tokens": 15524418,
+  "epochs": 1.0
+ },
+ "sft2.sft": {
+  "unique_tokens": 9348650,
+  "used_tokens": 9348650,
+  "epochs": 1.0
+ },
+ "_windows": 49393,
+ "_tokens_in_windows": 24873068,
+ "_fill": 0.9816,
+ "_trained_targets": 11673857
+}

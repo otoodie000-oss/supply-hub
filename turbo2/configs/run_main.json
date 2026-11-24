@@ -1,0 +1,4 @@
+{"model": {"vocab": 8192, "ctx": 512, "n_layer": 10, "d_model": 256, "n_head": 4, "d_ff": 1024}, "seed": 1, "data_seed": 1234,
+ "data": {"pretrain": "/home/user/work/pack/pretrain", "sft": "/home/user/work/pack/sft"},
+ "pretrain_steps": 9600, "sft_steps": 2100, "peak": 0.0012, "warmup": 300, "decay_frac": 0.2, "final_frac": 0.1,
+ "sft_peak": 0.0003, "sft_warmup": 50, "sft_decay_frac": 0.3, "sft_final_frac": 0.1, "micro_batch": 16, "accum": 2}

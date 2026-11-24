@@ -1,0 +1,9 @@
+{"seed": 11, "split": "train", "sources": [
+ {"tag": "wiki_lead", "tokens": 75000000, "order": "rawlen"},
+ {"tag": "factstext", "epochs": 3},
+ {"tag": "topical_chat", "epochs": 2}, {"tag": "taskmaster", "epochs": 1.2}, {"tag": "sgd", "epochs": 1.2},
+ {"tag": "alpaca", "epochs": 2.6},
+ {"tag": "trivia_ex", "epochs": 3}, {"tag": "wordnet", "epochs": 4}, {"tag": "tables", "epochs": 4},
+ {"tag": "wiki_plot", "epochs": 1.4}, {"tag": "stories", "epochs": 4},
+ {"tag": "jokes", "epochs": 4},
+ {"tag": "synth", "epochs": 1}]}
