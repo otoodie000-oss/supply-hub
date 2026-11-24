@@ -52,8 +52,10 @@ SYNONYMS = {"biggest": "largest", "bigger": "larger", "big": "large", "huge": "l
 IDF_UNKNOWN = None  # set at build: log(1 + (N - 0.5)/1.5)
 
 
-def words(text):
-    """Normalised query/fact words, in order, with duplicates."""
+def words(text, stop=None):
+    """Normalised query/fact words, in order, with duplicates.  `stop` is the stopword set
+    (the index's full list at query time, so Scratch can use one list for both checks)."""
+    stop = STOPWORDS if stop is None else stop
     s = re.sub(r"[^a-z0-9']", " ", text.lower())
     out = []
     for raw in s.split():
@@ -65,7 +67,7 @@ def words(text):
             part = part.replace("'", "")
             if not part:
                 continue
-            if part in STOPWORDS:
+            if part in stop:
                 continue
             if part.isdigit():
                 part = part.lstrip("0") or "0"
@@ -77,7 +79,7 @@ def words(text):
                 if len(part) < 2:
                     continue
             part = SYNONYMS.get(part, part)
-            if part in STOPWORDS:
+            if part in stop:
                 continue
             out.append(part)
     return out
@@ -101,8 +103,8 @@ class BM25:
 
     def qwords(self, text):
         seen, out = set(), []
-        for w in words(text):
-            if w in self.stop or w in seen:
+        for w in words(text, self.stop):
+            if w in seen:
                 continue
             seen.add(w)
             out.append(w)

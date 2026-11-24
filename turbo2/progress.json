@@ -1,8 +1,24 @@
 {
-  "phase": "0",
-  "step": "helpers_twins",
-  "done": ["env_check", "throughput_bench", "fetch_sources", "wiki_split", "wiki_clean", "prep_dialogue", "prep_misc"],
-  "work_dir": "/home/user/work",
-  "train": {"chunks_done": 0, "train_seconds": 0, "phase": null},
-  "notes": "see NOTES.md for decisions/flags"
+ "phase": "0",
+ "step": "scratch_compiler",
+ "done": [
+  "env_check",
+  "throughput_bench",
+  "fetch_sources",
+  "wiki_split",
+  "wiki_clean",
+  "prep_dialogue",
+  "prep_misc",
+  "vocab_8192 (Cast.compare 0 collisions)",
+  "helper_twins",
+  "facts_82039",
+  "bm25_thresholds(9,0.7,0.8)"
+ ],
+ "work_dir": "/home/user/work",
+ "train": {
+  "chunks_done": 0,
+  "train_seconds": 0,
+  "phase": null
+ },
+ "notes": "see NOTES.md for decisions/flags"
 }

@@ -71,8 +71,12 @@ def fmt(x, dmax=6) -> str:
     if x != x or math.isinf(x):
         return "undefined"
     ax = abs(x)
-    if ax >= 1e15:
-        return js_num(x)
+    if ax >= 1e15:  # mantissa (3 decimals) + exponent; robust to 1-ulp libm differences
+        m, e = ax, 0
+        while m >= 10:
+            m = m / 10
+            e += 1
+        return ("-" if x < 0 else "") + js_num(rnd(m, 3)) + "e+" + str(e)
     d = 6 if ax < 1e3 else (4 if ax < 1e7 else 2)
     d = min(d, dmax)
     y = rnd(x, d)
@@ -318,12 +322,19 @@ def _ipow(b: float, e: float) -> float:
         r = 1.0
         for _ in range(int(abs(e))):
             r = r * b
-        return 1.0 / r if e < 0 else r
+        if e < 0:
+            if r == 0:
+                raise CalcError("div0")
+            return 1.0 / r
+        return r
     if b < 0:
         raise CalcError("negative base")
     if b == 0:
         return 0.0
-    return math.exp(e * math.log(b))
+    try:
+        return math.exp(e * math.log(b))
+    except OverflowError:  # JavaScript's Math.exp returns Infinity instead of raising
+        return math.inf
 
 
 def calc_twin(expr: str) -> str:
@@ -522,6 +533,10 @@ TOOLS = ["time", "date", "weekday", "days_until", "days_since", "date_add", "age
          "count_letters", "count_words", "spell", "reverse", "sort"]
 
 
+def plural_days(n):
+    return "1 day" if n == 1 else "%d days" % n
+
+
 def _int_arg(s):
     v = parse_num(s)
     if v is None or v != math.floor(v):
@@ -554,8 +569,8 @@ def run_tool(call: str, now: Now, rng: LCG) -> str:
                 return "bad date"
             n = (d - today).days if name == "days_until" else (today - d).days
             if n < 0:
-                return ("%d days ago" if name == "days_until" else "in %d days") % (-n)
-            return "1 day" if n == 1 else "%d days" % n
+                return ("%s ago" if name == "days_until" else "in %s") % plural_days(-n)
+            return plural_days(n)
         if name == "date_add":
             n = _int_arg(args[0]) if args else None
             unit = args[1] if len(args) > 1 else ""
@@ -652,7 +667,10 @@ def run_tool(call: str, now: Now, rng: LCG) -> str:
             if a is None or b is None or a <= 0 or b <= 0 or a > 1000000000 or b > 1000000000:
                 return "error"
             g = math.gcd(a, b)
-            return str(g) if name == "gcd" else str(a // g * b)
+            if name == "gcd":
+                return str(g)
+            l = a // g * b
+            return "too big" if l > 10 ** 15 else str(l)
         if name == "roman":
             if not args:
                 return "error"
@@ -682,7 +700,7 @@ def run_tool(call: str, now: Now, rng: LCG) -> str:
         if name == "rand":
             a = _int_arg(args[0]) if len(args) > 0 else None
             b = _int_arg(args[1]) if len(args) > 1 else None
-            if a is None or b is None:
+            if a is None or b is None or abs(a) > 10 ** 12 or abs(b) > 10 ** 12:
                 return "error"
             if a > b:
                 a, b = b, a
