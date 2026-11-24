@@ -1,0 +1,8 @@
+{
+  "phase": "0",
+  "step": "helpers_twins",
+  "done": ["env_check", "throughput_bench", "fetch_sources", "wiki_split", "wiki_clean", "prep_dialogue", "prep_misc"],
+  "work_dir": "/home/user/work",
+  "train": {"chunks_done": 0, "train_seconds": 0, "phase": null},
+  "notes": "see NOTES.md for decisions/flags"
+}
