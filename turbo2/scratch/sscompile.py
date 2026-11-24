@@ -127,6 +127,17 @@ class Compiler:
 
     # ---------------------------------------------------------- module
     def compile_module(self, src, filename="<ss>"):
+        self.compile_all([(src, filename)])
+
+    def compile_all(self, modules):
+        """Declare every module first (cross-module procs/variables), then emit bodies."""
+        trees = [self._declare_module(src, fn) for src, fn in modules]
+        for tree in trees:
+            for node in tree.body:
+                if isinstance(node, ast.FunctionDef):
+                    self._compile_function(node, self._deco(node))
+
+    def _declare_module(self, src, filename):
         tree = ast.parse(src, filename)
         # pass 1: declarations and proc signatures
         for node in tree.body:
@@ -147,11 +158,7 @@ class Compiler:
                 pass  # docstring
             else:
                 raise CompileError("%s:%d unsupported module statement" % (filename, node.lineno))
-        # pass 2: bodies
-        for node in tree.body:
-            if isinstance(node, ast.FunctionDef):
-                deco = self._deco(node)
-                self._compile_function(node, deco)
+        return tree
 
     def _deco(self, node):
         if not node.decorator_list:

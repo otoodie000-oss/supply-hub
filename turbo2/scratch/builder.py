@@ -101,6 +101,45 @@ def timer_watch():
                 if busy == 0:
                     say(join("Time's up! (", join(timer_label, " timer)")))
 
+rq_in = List()
+rq_out = List()
+tin = List()
+tnow = List()
+tseed = List()
+tout = List()
+
+@when_broadcast("init_bm")
+def init_bm():
+    bm_score.clear()
+    for i in range(0, NFACTS_N):
+        bm_score.append(0)
+
+@when_broadcast("rq_run")
+def rq_run():
+    """test hook: retrieval parity"""
+    rq_out.clear()
+    for i in range(1, len(rq_in) + 1):
+        bm25(rq_in[i])
+        r = ""
+        for k in range(1, len(picked) + 1):
+            if r == "":
+                r = join("", picked[k])
+            else:
+                r = join(r, join(" ", picked[k]))
+        rq_out.append(r)
+
+@when_broadcast("tooltest")
+def tooltest():
+    """test hook: helper tests on the real build"""
+    global cfg_now, seed
+    tout.clear()
+    for i in range(1, len(tin) + 1):
+        cfg_now = tnow[i]
+        seed = tseed[i]
+        run_tool(tin[i])
+        tout.append(run_tool.ret)
+    cfg_now = ""
+
 @proc
 def trim(s):
     a = 1
@@ -187,21 +226,19 @@ def build(weights_npz, out, random_layers=None, tools_source=None, extra_source=
               "T_FREE": mirror.T_FREE, "T_GROUNDED": mirror.T_GROUNDED}
     dstats = declare_data(P, tok, bm, facts, consts)
     C = Compiler(P)
-    C.compile_module(kernel_source(lay), "kernels")
     if tools_source is None:
         sys.path.insert(0, os.path.join(ROOT, "helpers"))
         from scratch_tools import tools_source as ts, declare_tool_tables
         declare_tool_tables(P)
         tools_source = ts()
-    C.compile_module(tools_source, "tools")
-    C.compile_module(runtime_source(consts), "runtime")
     ui = UI_SOURCE.replace("HELP_TEXT_HERE", mirror.HELP_TEXT.replace('"', "'"))
     ui = ui.replace("ALLOC_KV", "\n".join("    alloc_kv%d()\n    say(\"Loading Turbo 2.0... %d%%\")" %
                                           (l, 10 + 80 * (l + 1) // lay.L) for l in range(lay.L)))
     ui = ui.replace("VOCAB_N", str(cfg["vocab"])).replace("NFACTS_N", str(len(facts)))
-    C.compile_module(ui, "ui")
+    mods = [(kernel_source(lay), "kernels"), (runtime_source(consts), "runtime"), (tools_source, "tools"), (ui, "ui")]
     if extra_source:
-        C.compile_module(extra_source, "extra")
+        mods.append((extra_source, "extra"))
+    C.compile_all(mods)
     P.monitors = [{"id": P.lists["chat"][0], "mode": "list", "opcode": "data_listcontents",
                    "params": {"LIST": "chat"}, "spriteName": None, "value": [], "width": 230, "height": 340,
                    "x": 245, "y": 5, "visible": True}]

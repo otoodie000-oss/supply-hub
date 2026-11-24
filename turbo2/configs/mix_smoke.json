@@ -1,0 +1,5 @@
+{"seed": 3, "split": "train", "sources": [
+ {"tag": "wiki_lead", "tokens": 12000000, "order": "rawlen"},
+ {"tag": "topical_chat", "epochs": 0.5}, {"tag": "alpaca", "epochs": 0.5}, {"tag": "trivia", "epochs": 1},
+ {"tag": "wordnet", "epochs": 1}, {"tag": "tables", "epochs": 2}, {"tag": "jokes", "epochs": 1},
+ {"tag": "wiki_plot", "epochs": 0.2}, {"tag": "sgd", "epochs": 0.3}]}

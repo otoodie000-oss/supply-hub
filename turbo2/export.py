@@ -75,25 +75,22 @@ def dequant_state(w, cfg):
 
 
 def val_loss(model, path, max_windows=400):
-    """Mean loss over the first windows of a packed val file (npz with tokens/pos/seg/mask)."""
+    """Mean masked loss over the first windows of a packed val dir (same batching as train.py)."""
     import torch
     import torch.nn.functional as F
-    d = np.load(path)
-    toks, pos, seg, msk = d["tokens"], d["pos"], d["seg"], d["mask"]
-    n = min(len(toks), max_windows)
-    tot, cnt = 0.0, 0
+    from train import Data
+    d = Data(path, 0)
+    n = min(d.n, max_windows)
+    d._perm, d._perm_ep = np.arange(d.n), 0  # fixed order
+    tot, cnt = 0.0, 0.0
     model.eval()
     with torch.no_grad():
         for i in range(0, n, 16):
-            x = torch.tensor(toks[i:i + 16, :-1].astype(np.int64))
-            y = torch.tensor(toks[i:i + 16, 1:].astype(np.int64))
-            p = torch.tensor(pos[i:i + 16, :-1].astype(np.int64))
-            s = torch.tensor(seg[i:i + 16, :-1].astype(np.int64))
-            m = torch.tensor(msk[i:i + 16, 1:].astype(np.float32))
-            lg = model(x, p, s)
+            x, y, pos, si, ym = d.batch(i, min(16, n - i))
+            lg = model(x, pos, si)
             l = F.cross_entropy(lg.float().reshape(-1, lg.shape[-1]), y.reshape(-1), reduction="none")
-            tot += float((l * m.reshape(-1)).sum())
-            cnt += float(m.sum())
+            tot += float((l * ym.reshape(-1)).sum())
+            cnt += float(ym.sum())
     return tot / max(cnt, 1)
 
 

@@ -1,0 +1,143 @@
+{
+ "sb3": "/home/user/work/smoke.sb3",
+ "weights": "/home/user/work/smoke_q.npz",
+ "parity": {
+  "pass": true,
+  "turns": [
+   {
+    "msg": "hi! who are you?",
+    "max_abs_logit_diff": 8.881784197001252e-15,
+    "greedy_tokens": 12,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": "I do you know that is a lot of the movie?"
+   },
+   {
+    "msg": "what is the capital of thailand?",
+    "max_abs_logit_diff": 4.440892098500626e-15,
+    "greedy_tokens": 40,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 2,
+    "display_match": true,
+    "scratch_reply": "The capital of the city is the largest city is located in the city is the city is the city of the city of the city of th"
+   },
+   {
+    "msg": "what's 17.5% of 240?",
+    "max_abs_logit_diff": 5.329070518200751e-15,
+    "greedy_tokens": 7,
+    "greedy_match": true,
+    "tool_call": "pct_of 17.5 240",
+    "tool_result": "42",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": "The answer is 19."
+   },
+   {
+    "msg": "tell me a story about a brave little robot",
+    "max_abs_logit_diff": 7.105427357601002e-15,
+    "greedy_tokens": 5,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": "What is a love?"
+   },
+   {
+    "msg": "my name is matt",
+    "max_abs_logit_diff": 7.105427357601002e-15,
+    "greedy_tokens": 2,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": "A."
+   },
+   {
+    "msg": "what is my name?",
+    "max_abs_logit_diff": 6.217248937900877e-15,
+    "greedy_tokens": 10,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": "The answer is the name of the name it."
+   },
+   {
+    "msg": "who invented the telephone?",
+    "max_abs_logit_diff": 6.217248937900877e-15,
+    "greedy_tokens": 13,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 2,
+    "display_match": true,
+    "scratch_reply": "The answer is the same name of the 198."
+   }
+  ]
+ },
+ "sampled_parity": {
+  "pass": true,
+  "turns": [
+   true,
+   true,
+   true
+  ]
+ },
+ "retrieval": {
+  "pass": true,
+  "matched": 200,
+  "total": 200,
+  "with_facts": 175,
+  "mismatches": []
+ },
+ "speed": {
+  "boot_ms": 116,
+  "load_ms": 402,
+  "turns": [
+   {
+    "msg": "what is the capital of france?",
+    "prefill_tokens": 32,
+    "prefill_ms_per_token": 4.8516513437499995,
+    "decode_tokens": 26,
+    "decode_ms_per_token": 3.800338730769231,
+    "turn_s": 0.25406164999999997,
+    "facts": 2
+   },
+   {
+    "msg": "how far away is the moon from earth?",
+    "prefill_tokens": 35,
+    "prefill_ms_per_token": 0.8306525714285714,
+    "decode_tokens": 5,
+    "decode_ms_per_token": 2.574139600000001,
+    "turn_s": 0.041943538,
+    "facts": 1
+   },
+   {
+    "msg": "tell me about the planet jupiter",
+    "prefill_tokens": 43,
+    "prefill_ms_per_token": 0.7393188837209302,
+    "decode_tokens": 5,
+    "decode_ms_per_token": 2.5708901999999996,
+    "turn_s": 0.044645162999999995,
+    "facts": 2
+   }
+  ],
+  "project_json_bytes": null,
+  "sb3_bytes": 6028165
+ }
+}

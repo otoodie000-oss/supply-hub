@@ -1,0 +1,2 @@
+{"seed": 3, "split": "val", "sources": [{"tag": "wiki_lead", "tokens": 300000}, {"tag": "topical_chat", "epochs": 1},
+ {"tag": "alpaca", "epochs": 1}, {"tag": "trivia", "epochs": 1}]}

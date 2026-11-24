@@ -1,0 +1,136 @@
+{
+ "sb3": "/home/user/work/rand10.sb3",
+ "weights": "/home/user/work/rand10.npz",
+ "parity": {
+  "pass": true,
+  "turns": [
+   {
+    "msg": "hi! who are you?",
+    "max_abs_logit_diff": 1.672273430841642e-15,
+    "greedy_tokens": 40,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": " Allowing allowing allowing coll coll coll coll coll coll coll coll coll coll coll coll coll coll coll coll coll coll co"
+   },
+   {
+    "msg": "what is the capital of thailand?",
+    "max_abs_logit_diff": 2.1094237467877974e-15,
+    "greedy_tokens": 40,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 2,
+    "display_match": true,
+    "scratch_reply": " Participintintint lawyer coll coll coll coll coll coll coll coll coll coll coll coll coll coll programming programming "
+   },
+   {
+    "msg": "what's 17.5% of 240?",
+    "max_abs_logit_diff": 1.7763568394002505e-15,
+    "greedy_tokens": 40,
+    "greedy_match": true,
+    "tool_call": "pct_of 17.5 240",
+    "tool_result": "42",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": " Heard heard heard heard heard heard heard heard heard heard heard heard heard heard heard heard heard heard heard heard"
+   },
+   {
+    "msg": "tell me a story about a brave little robot",
+    "max_abs_logit_diff": 1.7763568394002505e-15,
+    "greedy_tokens": 40,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": "Uch nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine n"
+   },
+   {
+    "msg": "my name is matt",
+    "max_abs_logit_diff": 1.3322676295501878e-15,
+    "greedy_tokens": 40,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": "Aaaaaa nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nine nin"
+   },
+   {
+    "msg": "what is my name?",
+    "max_abs_logit_diff": 1.609823385706477e-15,
+    "greedy_tokens": 40,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 0,
+    "display_match": true,
+    "scratch_reply": " Lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear lear"
+   },
+   {
+    "msg": "who invented the telephone?",
+    "max_abs_logit_diff": 1.5543122344752192e-15,
+    "greedy_tokens": 40,
+    "greedy_match": true,
+    "tool_call": "",
+    "tool_result": "",
+    "tool_match": true,
+    "facts": 2,
+    "display_match": true,
+    "scratch_reply": " Courses courses courses courses courses courses courses courses courses courses courses courses courses courses courses"
+   }
+  ]
+ },
+ "sampled_parity": {
+  "pass": true,
+  "turns": [
+   true,
+   true,
+   true
+  ]
+ },
+ "speed": {
+  "boot_ms": 297,
+  "load_ms": 1104,
+  "turns": [
+   {
+    "msg": "what is the capital of france?",
+    "prefill_tokens": 32,
+    "prefill_ms_per_token": 61.0870795625,
+    "decode_tokens": 29,
+    "decode_ms_per_token": 34.71389599999996,
+    "turn_s": 2.961489529999999,
+    "facts": 2
+   },
+   {
+    "msg": "how far away is the moon from earth?",
+    "prefill_tokens": 35,
+    "prefill_ms_per_token": 26.875455542857143,
+    "decode_tokens": 29,
+    "decode_ms_per_token": 32.4476484137931,
+    "turn_s": 1.8816227479999998,
+    "facts": 1
+   },
+   {
+    "msg": "tell me about the planet jupiter",
+    "prefill_tokens": 43,
+    "prefill_ms_per_token": 28.402211976744184,
+    "decode_tokens": 29,
+    "decode_ms_per_token": 35.07844696551724,
+    "turn_s": 2.238570077,
+    "facts": 2
+   }
+  ],
+  "project_json_bytes": null,
+  "sb3_bytes": 17637005
+ }
+}

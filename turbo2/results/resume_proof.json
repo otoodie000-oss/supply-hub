@@ -1,0 +1,19 @@
+{
+ "eager_resumed_15_15_vs_uninterrupted_30": {
+  "max_param_diff": 0.0,
+  "max_adam_state_diff": 0.0,
+  "cursor_equal": true,
+  "step_equal": true
+ },
+ "eager_uninterrupted_vs_uninterrupted": {
+  "max_param_diff": 0.0
+ },
+ "compiled_uninterrupted_vs_uninterrupted": {
+  "max_param_diff": 0.026149149984121323
+ },
+ "compiled_resumed_vs_uninterrupted": {
+  "max_param_diff": 0.021854152902960777
+ },
+ "conclusion": "checkpoint/resume is exact (bitwise in eager mode); torch.compile CPU kernels are nondeterministic across processes, so compiled runs differ at the same level with or without resume",
+ "model": "2 layers, d64, 30 steps, smoke pack"
+}

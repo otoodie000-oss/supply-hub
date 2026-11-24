@@ -5,6 +5,8 @@ lib.silence();
 (async () => {
     const cases = JSON.parse(fs.readFileSync(process.argv[3]));
     const {vm} = await lib.makeVM(process.argv[2]);
+    const fill = (n, arr) => { const l = lib.list(vm, n); l.length = 0; arr.forEach(x => l.push(x)); };
+    fill('tin', cases.map(c => c.call)); fill('tnow', cases.map(c => c.cfg_now)); fill('tseed', cases.map(c => c.seed));
     const t0 = Date.now();
     lib.broadcast(vm, 'tooltest');
     await lib.runUntilIdle(vm);

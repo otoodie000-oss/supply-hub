@@ -1,6 +1,6 @@
 {
  "phase": "0",
- "step": "scratch_compiler",
+ "step": "eval_suite",
  "done": [
   "env_check",
   "throughput_bench",
@@ -12,13 +12,116 @@
   "vocab_8192 (Cast.compare 0 collisions)",
   "helper_twins",
   "facts_82039",
-  "bm25_thresholds(9,0.7,0.8)"
+  "bm25_thresholds(9,0.7,0.8)",
+  "scratch_compiler",
+  "kernels",
+  "runtime",
+  "helpers_scratch(1927/1927)",
+  "builder",
+  "harness",
+  "mirror",
+  "parity_random10(pass)",
+  "retrieval_parity(200/200)",
+  "resume_proof(eager bitwise)",
+  "smoke_test(pass)",
+  "speed_full_size(prefill ~28ms/tok, decode ~34ms/tok, fact turn 1.9-3.0s)",
+  "tokcache(all sources)"
  ],
  "work_dir": "/home/user/work",
  "train": {
   "chunks_done": 0,
   "train_seconds": 0,
-  "phase": null
+  "phase": null,
+  "runs": {
+   "resA": {
+    "chunks": 1,
+    "train_seconds": 25.6,
+    "steps": 30,
+    "tokens": 491520,
+    "last": {
+     "loss": 7.622,
+     "lr": 0.0004799999999999998,
+     "phase": "pretrain",
+     "time": "16:14:54"
+    }
+   },
+   "resB": {
+    "chunks": 2,
+    "train_seconds": 23.9,
+    "steps": 30,
+    "tokens": 491520,
+    "last": {
+     "loss": 7.0387,
+     "lr": 0.0004799999999999998,
+     "phase": "pretrain",
+     "time": "16:15:32"
+    }
+   },
+   "resC": {
+    "chunks": 1,
+    "train_seconds": 24.9,
+    "steps": 30,
+    "tokens": 491520,
+    "last": {
+     "loss": 7.6207,
+     "lr": 0.0004799999999999998,
+     "phase": "pretrain",
+     "time": "16:16:15"
+    }
+   },
+   "resD": {
+    "chunks": 1,
+    "train_seconds": 24.3,
+    "steps": 30,
+    "tokens": 491520,
+    "last": {
+     "loss": 7.6191,
+     "lr": 0.0004799999999999998,
+     "phase": "pretrain",
+     "time": "16:16:44"
+    }
+   },
+   "resE": {
+    "chunks": 1,
+    "train_seconds": 23.1,
+    "steps": 30,
+    "tokens": 491520,
+    "last": {
+     "loss": 7.6191,
+     "lr": 0.0004799999999999998,
+     "phase": "pretrain",
+     "time": "16:17:10"
+    }
+   },
+   "resF": {
+    "chunks": 2,
+    "train_seconds": 23.4,
+    "steps": 30,
+    "tokens": 491520,
+    "last": {
+     "loss": 7.0354,
+     "lr": 0.0004799999999999998,
+     "phase": "pretrain",
+     "time": "16:17:54"
+    }
+   },
+   "smoke": {
+    "chunks": 1,
+    "train_seconds": 540.5,
+    "steps": 707,
+    "tokens": 11583488,
+    "last": {
+     "loss": 4.9117,
+     "lr": 0.003,
+     "phase": "pretrain",
+     "time": "16:27:20"
+    }
+   }
+  }
  },
- "notes": "see NOTES.md for decisions/flags"
+ "notes": "see NOTES.md for decisions/flags",
+ "decisions": [
+  "keep 10 layers (speed ok)",
+  "torch.compile for training (nondeterministic across processes; resume exact in eager)"
+ ]
 }

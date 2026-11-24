@@ -1,0 +1,9 @@
+{
+ "ckpt": "/home/user/work/smoke/ckpt.pt",
+ "params": 657152,
+ "smoke_val": {
+  "float": 5.07667,
+  "int8": 5.07678,
+  "rel_diff_pct": 0.002
+ }
+}
