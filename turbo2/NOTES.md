@@ -21,3 +21,14 @@
 - Taskmaster repo has no LICENSE file at root; license CC BY 4.0 per its READMEs.
 - Jokes after the hard family-friendly filter: 7,350 (official 383, wocka 1,906, stupidstuff 158, reddit 4,903),
   772K chars (~0.19M tokens). At <=4 epochs that is ~0.5% of the stream, under the 3% target (flag).
+
+## Training-run adjustments (flagged)
+- Chunk 1 measured 6,122 tok/s (budget 540 s + cold compile 40 s exceeded the 600 s command limit once; the
+  chunk finished in the background and saved normally). Chunks 2+ use --budget 520 so startup+save fit.
+- After chunk 1: pretrain_steps 9,600 -> 10,600 and sft_steps 2,100 -> 2,400 (still in warmup; LR history unchanged).
+- After chunk 4 (step 837, ~6,900 tok/s): re-packed pretraining data to 211.6M tokens (pack/pretrain2: more wiki,
+  more passes of each source but every source <=3.5 epochs, plus a fresh synthetic set synth2, seed 2003) so the
+  run fills ~10 h; pretrain_steps -> 12,300, sft_steps -> 2,600.  Steps 0-836 came from pack/pretrain; the
+  cursor continues in pack/pretrain2's permutation (some already-seen windows can recur: <=~4% of steps).
+  The LR schedule (warmup 300, stable, decay over the last 20% of pretrain_steps) was in its stable phase, so
+  the change did not alter any LR already used.

@@ -124,6 +124,18 @@
      "phase": "pretrain",
      "time": "16:27:20"
     }
+   },
+   "main": {
+    "chunks": 5,
+    "train_seconds": 2622.9,
+    "steps": 1045,
+    "tokens": 17121280,
+    "last": {
+     "loss": 4.0589,
+     "lr": 0.0012,
+     "phase": "pretrain",
+     "time": "21:29:09"
+    }
    }
   }
  },

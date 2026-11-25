@@ -519,13 +519,13 @@ def main():
     mode, out = sys.argv[1], sys.argv[2]
     scale = float(sys.argv[3]) if len(sys.argv) > 3 else 1.0
     guard = EvalGuard()
-    g = Gen({"sft": 1001, "synth": 2002, "sftval": 3003, "sft2": 1002}[mode], guard)
+    g = Gen({"sft": 1001, "synth": 2002, "sftval": 3003, "sft2": 1002, "synth2": 2003}[mode], guard)
     g.stories = load_stories()
     g.jokes = load_docs("jokes")
     g.alp = load_docs("alpaca")
     g.top = load_docs("topical_chat")
     rc = Recall(g)
-    mix = MIX_SYNTH if mode == "synth" else MIX_SFT
+    mix = MIX_SYNTH if mode.startswith("synth") else MIX_SFT
     counts = {}
     n_ex = 0
     tmp = out + ".tmp"

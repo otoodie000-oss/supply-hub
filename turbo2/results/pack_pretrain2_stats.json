@@ -1,0 +1,76 @@
+{
+ "wiki_lead": {
+  "unique_tokens": 141138237,
+  "used_tokens": 90000055,
+  "epochs": 0.638
+ },
+ "factstext": {
+  "unique_tokens": 1398746,
+  "used_tokens": 4196238,
+  "epochs": 3.0
+ },
+ "topical_chat": {
+  "unique_tokens": 5459948,
+  "used_tokens": 13661575,
+  "epochs": 2.502
+ },
+ "taskmaster": {
+  "unique_tokens": 14861311,
+  "used_tokens": 22282269,
+  "epochs": 1.499
+ },
+ "sgd": {
+  "unique_tokens": 5517125,
+  "used_tokens": 8264325,
+  "epochs": 1.498
+ },
+ "alpaca": {
+  "unique_tokens": 6963138,
+  "used_tokens": 22276864,
+  "epochs": 3.199
+ },
+ "trivia_ex": {
+  "unique_tokens": 2181170,
+  "used_tokens": 7636454,
+  "epochs": 3.501
+ },
+ "wordnet": {
+  "unique_tokens": 900425,
+  "used_tokens": 3152038,
+  "epochs": 3.501
+ },
+ "tables": {
+  "unique_tokens": 29075,
+  "used_tokens": 101776,
+  "epochs": 3.5
+ },
+ "wiki_plot": {
+  "unique_tokens": 12586740,
+  "used_tokens": 22657188,
+  "epochs": 1.8
+ },
+ "stories": {
+  "unique_tokens": 200285,
+  "used_tokens": 700515,
+  "epochs": 3.498
+ },
+ "jokes": {
+  "unique_tokens": 230810,
+  "used_tokens": 807335,
+  "epochs": 3.498
+ },
+ "synth": {
+  "unique_tokens": 11288564,
+  "used_tokens": 11288564,
+  "epochs": 1.0
+ },
+ "synth2": {
+  "unique_tokens": 4497635,
+  "used_tokens": 4497635,
+  "epochs": 1.0
+ },
+ "_windows": 417476,
+ "_tokens_in_windows": 211522831,
+ "_fill": 0.9877,
+ "_trained_targets": 209430985
+}
