@@ -6,19 +6,19 @@
   "turns": [
    {
     "msg": "hi! who are you?",
-    "max_abs_logit_diff": 1.687538997430238e-14,
-    "greedy_tokens": 21,
+    "max_abs_logit_diff": 1.9539925233402755e-14,
+    "greedy_tokens": 23,
     "greedy_match": true,
     "tool_call": "",
     "tool_result": "",
     "tool_match": true,
     "facts": 0,
     "display_match": true,
-    "scratch_reply": "I'm turbo 2.0, a friendly chatbot that runs inside a scratch project!"
+    "scratch_reply": "I'm turbo 2.0, so I'm pretty new! I was trained in 2026."
    },
    {
     "msg": "what is the capital of thailand?",
-    "max_abs_logit_diff": 1.5987211554602254e-14,
+    "max_abs_logit_diff": 2.341182803178299e-14,
     "greedy_tokens": 10,
     "greedy_match": true,
     "tool_call": "",
@@ -30,19 +30,19 @@
    },
    {
     "msg": "what's 17.5% of 240?",
-    "max_abs_logit_diff": 1.5654144647214707e-14,
-    "greedy_tokens": 15,
+    "max_abs_logit_diff": 2.220446049250313e-14,
+    "greedy_tokens": 5,
     "greedy_match": true,
     "tool_call": "pct_of 17.5 240",
     "tool_result": "42",
     "tool_match": true,
     "facts": 1,
     "display_match": true,
-    "scratch_reply": "17.5% of 240 is 42."
+    "scratch_reply": "That's 42."
    },
    {
     "msg": "tell me a story about a kind dragon",
-    "max_abs_logit_diff": 2.7533531010703882e-14,
+    "max_abs_logit_diff": 2.353672812205332e-14,
     "greedy_tokens": 40,
     "greedy_match": true,
     "tool_call": "",
@@ -50,11 +50,11 @@
     "tool_match": true,
     "facts": 2,
     "display_match": true,
-    "scratch_reply": "In the kingdom of fernwood, the royal guardianship is given a brave, enormous dragon, and she has never seen any other d"
+    "scratch_reply": "In a land of enormous dragons, there was one named pip who was no bigger than a cat. The other dragons could fly over mo"
    },
    {
     "msg": "my name is matt",
-    "max_abs_logit_diff": 1.8096635301390052e-14,
+    "max_abs_logit_diff": 2.842170943040401e-14,
     "greedy_tokens": 7,
     "greedy_match": true,
     "tool_call": "",
@@ -66,39 +66,39 @@
    },
    {
     "msg": "what is my name?",
-    "max_abs_logit_diff": 3.4861002973229915e-14,
-    "greedy_tokens": 3,
+    "max_abs_logit_diff": 3.019806626980426e-14,
+    "greedy_tokens": 5,
     "greedy_match": true,
     "tool_call": "",
     "tool_result": "",
     "tool_match": true,
     "facts": 0,
     "display_match": true,
-    "scratch_reply": "You're matt!"
+    "scratch_reply": "Your name is matt."
    },
    {
     "msg": "who invented the telephone?",
-    "max_abs_logit_diff": 2.90878432451791e-14,
-    "greedy_tokens": 16,
+    "max_abs_logit_diff": 1.4210854715202004e-14,
+    "greedy_tokens": 24,
     "greedy_match": true,
     "tool_call": "",
     "tool_result": "",
     "tool_match": true,
     "facts": 2,
     "display_match": true,
-    "scratch_reply": "I believe the telephone is a computer program that uses the same number of letters."
+    "scratch_reply": "The prototype telephone, the light bulb and the phonograph were all invented during 1870s."
    },
    {
     "msg": "what's 17.5% of 240?",
-    "max_abs_logit_diff": 1.5654144647214707e-14,
-    "greedy_tokens": 15,
+    "max_abs_logit_diff": 2.220446049250313e-14,
+    "greedy_tokens": 5,
     "greedy_match": true,
     "tool_call": "pct_of 17.5 240",
     "tool_result": "42",
     "tool_match": true,
     "facts": 1,
     "display_match": true,
-    "scratch_reply": "17.5% of 240 is 42."
+    "scratch_reply": "That's 42."
    }
   ]
  },
@@ -118,38 +118,38 @@
   "mismatches": []
  },
  "speed": {
-  "boot_ms": 295,
-  "load_ms": 1179,
+  "boot_ms": 348,
+  "load_ms": 1269,
   "turns": [
    {
     "msg": "what is the capital of france?",
     "prefill_tokens": 32,
-    "prefill_ms_per_token": 65.74007118749999,
+    "prefill_ms_per_token": 63.63778684375,
     "decode_tokens": 6,
-    "decode_ms_per_token": 39.82759666666675,
-    "turn_s": 2.3426478580000003,
+    "decode_ms_per_token": 37.3986983333333,
+    "turn_s": 2.2608013689999997,
     "facts": 2
    },
    {
     "msg": "how far away is the moon from earth?",
     "prefill_tokens": 35,
-    "prefill_ms_per_token": 29.036960228571427,
+    "prefill_ms_per_token": 27.222051514285713,
     "decode_tokens": 29,
-    "decode_ms_per_token": 40.273743827586195,
-    "turn_s": 2.1842321789999994,
+    "decode_ms_per_token": 34.58778668965517,
+    "turn_s": 1.955817617,
     "facts": 1
    },
    {
     "msg": "tell me about the planet jupiter",
     "prefill_tokens": 43,
-    "prefill_ms_per_token": 29.86357230232558,
-    "decode_tokens": 14,
-    "decode_ms_per_token": 39.51739371428572,
-    "turn_s": 1.837377121,
+    "prefill_ms_per_token": 27.504086697674417,
+    "decode_tokens": 22,
+    "decode_ms_per_token": 33.29103186363636,
+    "turn_s": 1.9150784289999998,
     "facts": 2
    }
   ],
   "project_json_bytes": null,
-  "sb3_bytes": 17563723
+  "sb3_bytes": 17516124
  }
 }

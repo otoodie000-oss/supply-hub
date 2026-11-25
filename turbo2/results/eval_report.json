@@ -1,0 +1,191 @@
+{
+ "turbo2": {
+  "table": {
+   "fact_in": {
+    "n": 166,
+    "correct_pct": 80.7,
+    "off_topic_pct": 1.2,
+    "idk_pct": 10.2
+   },
+   "fact_out": {
+    "n": 60,
+    "correct_pct": 3.3,
+    "confidently_wrong_pct": 26.7,
+    "off_topic_pct": 11.7,
+    "idk_pct": 43.3
+   },
+   "helper": {
+    "n": 152,
+    "correct_pct": 94.7,
+    "off_topic_pct": 0.0,
+    "idk_pct": 0.7
+   },
+   "chat": {
+    "n": 40,
+    "avg_score": 4.75,
+    "off_topic_pct": 2.5,
+    "idk_pct": 2.5
+   },
+   "recall": {
+    "n": 40,
+    "correct_pct": 85.0,
+    "off_topic_pct": 10.0,
+    "idk_pct": 0.0
+   },
+   "story": {
+    "n": 30,
+    "avg_score": 1.5,
+    "off_topic_pct": 40.0,
+    "idk_pct": 0.0
+   },
+   "joke": {
+    "n": 25,
+    "avg_score": 3.04,
+    "off_topic_pct": 48.0,
+    "idk_pct": 0.0
+   },
+   "explain": {
+    "n": 30,
+    "avg_score": 2.13,
+    "off_topic_pct": 6.7,
+    "idk_pct": 6.7
+   },
+   "instruct": {
+    "n": 25,
+    "avg_score": 1.68,
+    "off_topic_pct": 36.0,
+    "idk_pct": 4.0
+   },
+   "messy_auto": {
+    "n": 24,
+    "correct_pct": 33.3,
+    "off_topic_pct": 12.5,
+    "idk_pct": 16.7
+   },
+   "messy_open": {
+    "n": 26,
+    "avg_score": 3.15,
+    "off_topic_pct": 26.9,
+    "idk_pct": 7.7
+   }
+  },
+  "idk_answerable_pct": 5.0,
+  "off_topic_overall_pct": 9.5,
+  "story_joke_explain_avg": 2.18
+ },
+ "turbo1": {
+  "table": {
+   "fact_in": {
+    "n": 166,
+    "correct_pct": 1.2,
+    "off_topic_pct": 58.4,
+    "idk_pct": 72.3
+   },
+   "fact_out": {
+    "n": 60,
+    "correct_pct": 0.0,
+    "confidently_wrong_pct": 3.3,
+    "off_topic_pct": 63.3,
+    "idk_pct": 93.3
+   },
+   "helper": {
+    "n": 152,
+    "correct_pct": 0.0,
+    "off_topic_pct": 80.9,
+    "idk_pct": 25.0
+   },
+   "chat": {
+    "n": 40,
+    "avg_score": 2.5,
+    "off_topic_pct": 37.5,
+    "idk_pct": 2.5
+   },
+   "recall": {
+    "n": 40,
+    "correct_pct": 37.5,
+    "off_topic_pct": 40.0,
+    "idk_pct": 10.0
+   },
+   "story": {
+    "n": 30,
+    "avg_score": 1.1,
+    "off_topic_pct": 86.7,
+    "idk_pct": 0.0
+   },
+   "joke": {
+    "n": 25,
+    "avg_score": 1.08,
+    "off_topic_pct": 92.0,
+    "idk_pct": 4.0
+   },
+   "explain": {
+    "n": 30,
+    "avg_score": 1.13,
+    "off_topic_pct": 86.7,
+    "idk_pct": 46.7
+   },
+   "instruct": {
+    "n": 25,
+    "avg_score": 1.24,
+    "off_topic_pct": 88.0,
+    "idk_pct": 36.0
+   },
+   "messy_auto": {
+    "n": 24,
+    "correct_pct": 0.0,
+    "off_topic_pct": 79.2,
+    "idk_pct": 37.5
+   },
+   "messy_open": {
+    "n": 26,
+    "avg_score": 1.19,
+    "off_topic_pct": 92.3,
+    "idk_pct": 3.8
+   }
+  },
+  "idk_answerable_pct": 35.3,
+  "off_topic_overall_pct": 69.4,
+  "story_joke_explain_avg": 1.11
+ },
+ "gates": {
+  "helpers >=95% correct": {
+   "value": 94.7,
+   "pass": false
+  },
+  "facts in base >=80% correct": {
+   "value": 80.7,
+   "pass": true
+  },
+  "facts not in base <=20% confidently wrong": {
+   "value": 26.7,
+   "pass": false
+  },
+  "IDK-style replies to answerable prompts <=3%": {
+   "value": 5.0,
+   "pass": false
+  },
+  "off-topic/unrelated replies <=5% overall": {
+   "value": 9.5,
+   "pass": false
+  },
+  "multi-turn recall >=80%": {
+   "value": 85.0,
+   "pass": true
+  },
+  "stories/jokes/explanations avg >=3.5/5": {
+   "value": 2.18,
+   "pass": false
+  },
+  "blind A/B vs Turbo 1 >=85% of decided": {
+   "value": 97.4,
+   "pass": true
+  }
+ },
+ "ab": {
+  "turbo2_wins": 75,
+  "turbo1_wins": 2,
+  "ties": 23,
+  "decided": 77,
+  "turbo2_win_rate_decided_pct": 97.4
+ }
+}

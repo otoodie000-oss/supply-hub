@@ -1,0 +1,22 @@
+{
+ "ckpt_sft_end.pt": {
+  "step": 14300,
+  "pretrain_val": 3.3801,
+  "sft_val": 0.9638
+ },
+ "ckpt_fix1_end.pt": {
+  "step": 15450,
+  "pretrain_val": 3.453,
+  "sft_val": 0.9581
+ },
+ "ckpt_fix2_end.pt": {
+  "step": 16600,
+  "pretrain_val": 3.5215,
+  "sft_val": 0.9878
+ },
+ "ckpt_final.pt": {
+  "step": 17750,
+  "pretrain_val": 3.5891,
+  "sft_val": 0.9986
+ }
+}

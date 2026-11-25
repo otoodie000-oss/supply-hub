@@ -1,0 +1,811 @@
+{
+ "summary": {
+  "turbo2_wins": 75,
+  "turbo1_wins": 2,
+  "ties": 23,
+  "decided": 77,
+  "turbo2_win_rate_decided_pct": 97.4
+ },
+ "rows": [
+  {
+   "sid": "ab000",
+   "id": 550,
+   "cat": "instruct",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab001",
+   "id": 421,
+   "cat": "recall",
+   "A_is": "turbo2",
+   "judgment": "B",
+   "winner": "turbo1"
+  },
+  {
+   "sid": "ab002",
+   "id": 551,
+   "cat": "instruct",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab003",
+   "id": 479,
+   "cat": "story",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab004",
+   "id": 350,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab005",
+   "id": 356,
+   "cat": "helper",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab006",
+   "id": 12,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab007",
+   "id": 391,
+   "cat": "chat",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab008",
+   "id": 181,
+   "cat": "fact_out",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab009",
+   "id": 430,
+   "cat": "recall",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab010",
+   "id": 480,
+   "cat": "story",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab011",
+   "id": 465,
+   "cat": "story",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab012",
+   "id": 392,
+   "cat": "chat",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab013",
+   "id": 179,
+   "cat": "fact_out",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab014",
+   "id": 233,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab015",
+   "id": 245,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab016",
+   "id": 75,
+   "cat": "fact_in",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab017",
+   "id": 540,
+   "cat": "explain",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab018",
+   "id": 146,
+   "cat": "fact_out",
+   "A_is": "turbo2",
+   "judgment": "B",
+   "winner": "turbo1"
+  },
+  {
+   "sid": "ab019",
+   "id": 28,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab020",
+   "id": 598,
+   "cat": "messy",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab021",
+   "id": 23,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab022",
+   "id": 478,
+   "cat": "story",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab023",
+   "id": 240,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab024",
+   "id": 249,
+   "cat": "helper",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab025",
+   "id": 109,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab026",
+   "id": 437,
+   "cat": "recall",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab027",
+   "id": 329,
+   "cat": "helper",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab028",
+   "id": 501,
+   "cat": "joke",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab029",
+   "id": 358,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab030",
+   "id": 87,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab031",
+   "id": 518,
+   "cat": "explain",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab032",
+   "id": 157,
+   "cat": "fact_out",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab033",
+   "id": 516,
+   "cat": "explain",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab034",
+   "id": 345,
+   "cat": "helper",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab035",
+   "id": 363,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab036",
+   "id": 197,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab037",
+   "id": 65,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab038",
+   "id": 253,
+   "cat": "helper",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab039",
+   "id": 318,
+   "cat": "helper",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab040",
+   "id": 36,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab041",
+   "id": 44,
+   "cat": "fact_in",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab042",
+   "id": 395,
+   "cat": "chat",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab043",
+   "id": 451,
+   "cat": "recall",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab044",
+   "id": 126,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab045",
+   "id": 440,
+   "cat": "recall",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab046",
+   "id": 591,
+   "cat": "messy",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab047",
+   "id": 503,
+   "cat": "joke",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab048",
+   "id": 612,
+   "cat": "messy",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab049",
+   "id": 42,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab050",
+   "id": 469,
+   "cat": "story",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab051",
+   "id": 505,
+   "cat": "joke",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab052",
+   "id": 589,
+   "cat": "messy",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab053",
+   "id": 472,
+   "cat": "story",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab054",
+   "id": 334,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab055",
+   "id": 389,
+   "cat": "chat",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab056",
+   "id": 175,
+   "cat": "fact_out",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab057",
+   "id": 35,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab058",
+   "id": 414,
+   "cat": "chat",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab059",
+   "id": 31,
+   "cat": "fact_in",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab060",
+   "id": 559,
+   "cat": "instruct",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab061",
+   "id": 553,
+   "cat": "instruct",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab062",
+   "id": 231,
+   "cat": "helper",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab063",
+   "id": 349,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab064",
+   "id": 527,
+   "cat": "explain",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab065",
+   "id": 275,
+   "cat": "helper",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab066",
+   "id": 89,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab067",
+   "id": 6,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab068",
+   "id": 114,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab069",
+   "id": 37,
+   "cat": "fact_in",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab070",
+   "id": 582,
+   "cat": "messy",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab071",
+   "id": 531,
+   "cat": "explain",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab072",
+   "id": 84,
+   "cat": "fact_in",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab073",
+   "id": 380,
+   "cat": "chat",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab074",
+   "id": 452,
+   "cat": "recall",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab075",
+   "id": 415,
+   "cat": "chat",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab076",
+   "id": 188,
+   "cat": "fact_out",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab077",
+   "id": 423,
+   "cat": "recall",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab078",
+   "id": 491,
+   "cat": "joke",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab079",
+   "id": 569,
+   "cat": "messy",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab080",
+   "id": 552,
+   "cat": "instruct",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab081",
+   "id": 533,
+   "cat": "explain",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab082",
+   "id": 524,
+   "cat": "explain",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab083",
+   "id": 216,
+   "cat": "fact_in",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab084",
+   "id": 376,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab085",
+   "id": 297,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab086",
+   "id": 317,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab087",
+   "id": 570,
+   "cat": "messy",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab088",
+   "id": 454,
+   "cat": "recall",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab089",
+   "id": 500,
+   "cat": "joke",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab090",
+   "id": 155,
+   "cat": "fact_out",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab091",
+   "id": 588,
+   "cat": "messy",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab092",
+   "id": 558,
+   "cat": "instruct",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab093",
+   "id": 191,
+   "cat": "fact_out",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab094",
+   "id": 173,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab095",
+   "id": 388,
+   "cat": "chat",
+   "A_is": "turbo1",
+   "judgment": "T",
+   "winner": "tie"
+  },
+  {
+   "sid": "ab096",
+   "id": 91,
+   "cat": "fact_in",
+   "A_is": "turbo2",
+   "judgment": "A",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab097",
+   "id": 502,
+   "cat": "joke",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab098",
+   "id": 235,
+   "cat": "helper",
+   "A_is": "turbo1",
+   "judgment": "B",
+   "winner": "turbo2"
+  },
+  {
+   "sid": "ab099",
+   "id": 473,
+   "cat": "story",
+   "A_is": "turbo2",
+   "judgment": "T",
+   "winner": "tie"
+  }
+ ]
+}

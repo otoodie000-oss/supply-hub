@@ -1,0 +1,300 @@
+ab000 | P: write a haiku about the sea
+     A: ah, yes, let's talk about hango. what do you enjoy most?
+     B: the sea is a sea, a land of blue, a land of orange, a divine, a sea, a land of water.
+ab001 | P: i live in chiang mai || it's hot here today || what time is it? || do you remember where i live?
+     A: you're in grade 4.
+     B: you live in chiengo.
+ab002 | P: write a short poem about cats
+     A: ah, catsmitte i had a shoesmaker. you can wirefully with your shotwritings and chanames!
+     B: a small, gray cat, buzzing in the air, a little bird in its eyes, a parrot, a bird in its eyes, a squirrel in its eyes, a whisper on its head, a bird in its eyes, a bird in its tail, a bird in its eyes, a bird in its eyes, a bird in its eyes, a bird in its eyes, a bird in its eyes, a bird in its eye
+ab003 | P: write a story about a dinosaur in a city
+     A: in a busy city full of concrete and cars, eleven-year-old mali lived in an apartment with no garden. she missed the green fields at her grandmother's house in the countryside. one day, she climbed the stairs to the building's flat roof. it was empty except for some old pipes and puddles. mali had an
+     B: a story, nice! is the weather good sharing right now?
+ab004 | P: reverse the word stressed
+     A: i wonder why the eiffelbacy bieber's were in batabet
+     B: stressed backwards is desserts.
+ab005 | P: whats 15 prcent of 200
+     A: 15% of 200 is 30.
+     B: i have 20 pairs at 8 pm, for $255 bercent with 4 p.m.
+ab006 | P: what's the biggest organ in the human body
+     A: the biggest organ in the human body is skin.
+     B: i know the sushier is because of a jefferson in courty the record of the modern, so i have to take you up online?
+ab007 | P: what do you do for fun?
+     A: i don't have feelings like a person, but i really enjoy chatting in my own way!
+     B: i like to read, go for walks, and play games.
+ab008 | P: what was the name of the robot in the movie wall-e he loves?
+     A: i don't have that one in my notes. what i do know is that the robot repairing on the outside of the ship in the movie wall-e was a light.
+     B: i don't know the name of the robin, so i can't look things up.
+ab009 | P: i'm allergic to peanuts || what should i make for lunch? || what am i allergic to?
+     A: you're allergic to peanuts.
+     B: let me think... you are always milling.
+ab010 | P: tell me a story about a soccer game
+     A: being a game i can search for you touch without your sport, chesko pients.
+     B: once upon a time... just kidding, here it is. mario was a bluechith with a red first, and his tally hand rumbled. "you're too small," she said. "one cup of coffee," a clever knock-knockedg said, "but you can't get any dumb." mario. "one cup of rain," he said. "one cup of rain." at noon, the old kids
+ab011 | P: story about a penguin who learns to fly
+     A: nice! that sounds like fun. is it hard to get right?
+     B: penguins were a penguin who lived in the same river, hungary, where he always landed in his backyard, where he never landed. every night, he climbed the wall next to the window and sang from behind a cloud. nobody flew him off. then he said, "if you waited you don't meet me," but someone else picked
+ab012 | P: are you a robot?
+     A: i am not a person, but i do know that you might have been to the other day as being an education.
+     B: i'm not a person. i'm a chatbot, a small ai that predicts words, running in scratch blocks.
+ab013 | P: what is the name of mario's brother?
+     A: i'm not sure. i don't know the price of mario brother. i can't look things up.
+     B: i'm not 100% sure, but i think the name of mario's brother is j.k.
+ab014 | P: whats todays date pls
+     A: ok. do you want me to make a reservation for?
+     B: today's date is tuesday, november 24, 2026.
+ab015 | P: how many days until valentines day
+     A: i'm not sure about how much long have you beenves. tell me more about yourself.
+     B: valentines day falls on sunday, february 14, 2027, in 82 days.
+ab016 | P: what's the atomic number for antimony?
+     A: i'm not sure about the price of a place. i don't want to guess and get it wrong. i'd rather be honest than make something up. but i'm happy to keep chatting.
+     B: antimony is a chemical element with the symbol sb and atomic number 51.
+ab017 | P: explain what an algorithm is
+     A: ah, oh, one!sh, fliliz, and pashvail.
+     B: an algorithm is a type of artificial intelligence that can be used to solve a problem or solve a problem. it involves training an algorithm with a set of inputs, such as a dataset, where the output is stored in a predicted order. the algorithm is trained on a large dataset, where the output is store
+ab018 | P: what was the name of the first cloned sheep?
+     A: if i remember right, the name of the first cloned sheep was adolf hit.
+     B: i'm not sure. i don't know the cloneage of beingephop, so i'm it wrong. you could check a reliable source.
+ab019 | P: who invented basketball?
+     A: the inventor of basketball was invented by james naismith in 1891.
+     B: i'm not sure about who invented the basketball to basketball. but i'm happy to keep chatting.
+ab020 | P: im hungry what should i eat
+     A: you told me you don't need food.
+     B: sure, let's book that.
+ab021 | P: what is roblox?
+     A: roblox was released in 2006.
+     B: i'm not sure about the price of roblor. i don't want to guess and get it wrong. i'd rather be honest than make something up. ask me something else!
+ab022 | P: tell me a mystery story for kids
+     A: once upon a time... just kidding, here it is. four friends, pim, joe, lin and aki, decided to build a treehouse in the big mango tree behind pim's house. they drew plans, collected old wood and borrowed tools from pim's grandfather. they built a rainforest where every day, they collected tools from 
+     B: sure, let's check online.
+ab023 | P: how long until halloween
+     A: i'm sorry, but don't have any pets.
+     B: the next halloween is sunday, october 31, 2027, in 341 days.
+ab024 | P: how many days since january 1 2000?
+     A: the answer is 9824 days.
+     B: i'm not sure about how many people feel like january 200
+ab025 | P: do you know anything about home and away?
+     A: i can't find that exact fact, but here's something related: home and away from home.
+     B: i do. what do you like to do for fun?
+ab026 | P: my favorite number is 27 || what's 3 times 9? || what's my favorite number?
+     A: your favorite number is 27.
+     B: it's 270-38-589
+ab027 | P: spell out the number 90210
+     A: 90210 in words is ninety thousand two hundred ten.
+     B: i have an appointment at 9pm. do you want it for me to repair you to book a table?
+ab028 | P: tell me a joke about space
+     A: a joker, i can change your mind. what are you up to today?
+     B: why did the chicken cross the road? to get to the other side! :(
+ab029 | P: yo flip a coin
+     A: ok, what movie are you interested in?
+     B: tails!
+ab030 | P: can you tell me who or what tellurium is?
+     A: i can't find that exact fact, but here's something related: the atomic mass of tellurium is about 127.6.
+     B: i'm not sure about the distance from an account. i don't want to guess and get it wrong. sorry i can't help with that one.
+ab031 | P: explain what a black hole is
+     A: i can see why you like it.
+     B: a black hole is a place in space where gravity is the smallest and most likely black hole, which means it is the smallest and more likely than the other. this means that when it is above the ground, it can be at least one point, or at least one point, or at least one point, then the black hole is th
+ab032 | P: what was the first animated pixar film to win best animated feature oscar?
+     A: i don't know the disney film for her a horror movie, who is most adventured in that one. i think he's been in oscur emptionale.
+     B: i'm not 100% sure, but i think the first animated film to win best animated feature oscar was the hulk.
+ab033 | P: explain what gravity is
+     A: i can see why comedies would be fun.
+     B: gravity is a fundamental concept in quantum gravity, and it involves the development of a system that is designed to work and solve problems. it consists of two parts: the gravitational pull, the gravitational pull, the gravitational pull, the gravitational pull, and the gravitational pull. gravity 
+ab034 | P: count the letter e in excellence
+     A: there are 4 e's in excellence.
+     B: sure, let's confirm that: you have no time to book the flight for 9 pm today on march 1st at 5:40 pm and arrives by 10:58 am.
+ab035 | P: what's ten plus five
+     A: i think i would.
+     B: it's 15.
+ab036 | P: what is a baby kangaroo called?
+     A: a baby kangaroo is called a joey.
+     B: i'm not sure about how much a babyner. i don't want to guess and get it wrong. i'd rather be honest than make something up.
+ab037 | P: which city is the capital of palau?
+     A: the capital of palau is ngerulmud.
+     B: i'm not sure. i don't know the capital!
+ab038 | P: what date is 3 weeks from now
+     A: it will be tuesday, december 15, 2026.
+     B: i found 2 houses for you to go to new tegratega, verrye mocha, the first is an expensive place i can add the address to.
+ab039 | P: what are the prime factors of 360?
+     A: 360 = 2 x 2 x 2 x 3 x 3 x 5.
+     B: i don't know the primembers, so i'm not sure. i'd rather be honest than make something up. but i can't imagine it would be hard for them and it's a pretty bored or something younger.
+ab040 | P: who became uk prime minister in 2024?
+     A: i'm not sure, my notes only say that paoliv shinawatra became prime minister of thailand in 2024.
+     B: i don't know who burritos for that display. i can't be worn with that one.
+ab041 | P: can you use the internet?
+     A: yes, how about fair mall?
+     B: i can't browse the internet. everything i know is stored inside my scratch project.
+ab042 | P: can we be friends?
+     A: sure, i can help you with that.
+     B: yes! friends it is. what should we talk about?
+ab043 | P: my favorite season is winter || i like snow || roll a dice || which season do i like?
+     A: you told me you like snow.
+     B: i didn't forget: you said autumn.
+ab044 | P: which of these is not one of harrys friends?
+     A: millicent is not one of harrys friends.
+     B: i don't know, i'd like to see that.
+ab045 | P: i want to visit iceland || i love the northern lights || where do i want to visit?
+     A: i have found 10 events for you. what city would you like to stay?
+     B: you told me you want to visit iceland.
+ab046 | P: pizza or burger
+     A: i pick pizza!
+     B: okay, no problem.
+ab047 | P: tell me a silly joke
+     A: being a look forward.
+     B: what do you call a cow that doesn't matter? an owl
+ab048 | P: i love soccer || wait, how many days until christmas?
+     A: i'm not sure. i don't know how many distilials skreestma is. i'd rather be honest than make something up.
+     B: christmas falls on friday, december 25, 2026, in 31 days.
+ab049 | P: what is your name?
+     A: my name is turbo. i'm version 2.0, a small ai made of scratch blocks.
+     B: my name is maruna.
+ab050 | P: a story about a lost puppy finding home
+     A: once upon a time... just kidding, here it is. in the middle of the desert lived a small animal named echo. all the animals avoided hising with ripe10 times, but he had no teeth. heced
+     B: okay, i found 10 restaurants in austin, the first is cheap restaurant near you.
+ab051 | P: tell me a dad joke
+     A: why do scuba divers fall backwards off the boat? because if they fell forward, they'd still be on the boat.
+     B: ok. i can assist you with that. one moment. here's the suggestions and one option, 26 wait.
+ab052 | P: ok wait what's 9 times 8
+     A: the answer is 72.
+     B: 10
+ab053 | P: tell me a story about a snowman in summer
+     A: a syricar, nice! is the weather good there? what's new with you?
+     B: in the hottest part of summer, the snowman looked up at her. "you're too, me," he said. "when you walk in colorfuls, it's golden white and their whole life's little beaver." all the snowmen felt was nervous, but shephergic, hurried. then she looked in herine to see the sunset. "i never seen the sun 
+ab054 | P: roll 2 dice
+     A: ok. and what type of food do you want?
+     B: the dice say 5 + 1, total 6.
+ab055 | P: what's your favorite color?
+     A: i like salad too.
+     B: i like blue, like my sprite! what's yours?
+ab056 | P: what is the hardest working muscle in the body?
+     A: i don't have that one in my notes. what i do know is that tooth enamel is the hardest substance in the body.
+     B: i'm not sure about the price of antique fact. i don't want to guess and get it wrong. i'm a small model and i don't know many facts.
+ab057 | P: who is the president of the united states in 2026?
+     A: i don't have a note about that, but i believe the president of the united states in 2026 is john f. kennedy.
+     B: i think it is too bad. the president of indonesia has had an inside aliens and destr. i wonder if there was a special party that use to put uploadays at least 1 billion a year when they pay for that long.
+ab058 | P: are you smart?
+     A: i do, i watch a lot of times.
+     B: i know a lot of facts and i'm good at math with my helpers, but i can still make mistakes.
+ab059 | P: what currency do they use in thailand
+     A: they use a bongby
+     B: the currency of thailand is the baht.
+ab060 | P: suggest a name for my new dog
+     A: cool! do you and simple spend a lot of time together? how is your day going?
+     B: how about biscuit, luna, mochi or pickles?
+ab061 | P: how do i stay safe online?
+     A: i'm not sure. i don't know how much a little dubler would be safe! sorry i can't help with that one.
+     B: i can't browse the internet. everything i know is stored inside my scratch project.
+ab062 | P: what's today's date?
+     A: today's date is tuesday, november 24, 2026.
+     B: i'm not sure. i don't know when date is. i'd rather be honest than make something up.
+ab063 | P: how do you spell necessary?
+     A: i'm not sure, you haven't told me about yourself. i'd love to know.
+     B: necessary is spelled n-e-c-e-s-s-a-r-y.
+ab064 | P: explain what dna is
+     A:  dna is a process by which methyl groups are added to the dna molecule.
+     B: ah, hi! nice to meet you. how is your day going?
+ab065 | P: what's 17.5% of 240?
+     A: that's 42.
+     B: hmm, 17 is a choice and over $20 dollars the forms of rap buttons delivered by country music.
+ab066 | P: quick question: what's stan winston?
+     A: stanley "stan" winston was an american television and film special make-up effects creator.
+     B: i'm not sure. i don't know the stonds toston. maybe look it up online? ask me something else!
+ab067 | P: what's the deepest spot in the ocean called
+     A: the deepest spot in the oceans is mariana trench.
+     B: i'm not sure about the ocean icean at all. i don't want to guess and get it wrong. maybe look it up online?
+ab068 | P: do you know anything about sally field?
+     A: good question! sally field got her start as a surfer girl on the 1960s show gidget.
+     B: i do know that as well. what are you up to today?
+ab069 | P: who won the 2022 world cup?
+     A: i'm not sure about who won the 20 world cup in high school. i'd rather be honest than make something up. is there something else i can help with?
+     B: ah, argentina won the 2022 fifa world cup in qatar.
+ab070 | P: whos the presdent of usa 2026
+     A: i don't have a note about that, but i believe the presdent of usa 2026 is a british television series created by joel green.
+     B: i would like to pay for us. what about duba
+ab071 | P: what causes earthquakes?
+     A: i'm not sure, my notes only say that ancient japanese thought spiders caused earthquakes.
+     B: i don't know how many cats like in earth haspected, but i found everyone several recipes with a catch to read the planet. want to see what you want.
+ab072 | P: which currency would i need in taiwan
+     A: what type of movie are you interested in?
+     B: the new taiwan dollar is the official currency of taiwan.
+ab073 | P: hey turbo, how are you?
+     A: pretty good! my blocks are running smoothly. how are you?
+     B: hello, friendbo! i'm byte. how can i help you today?
+ab074 | P: i'm max || actually, call me maximilian || what should you call me?
+     A: i can answer questions, tell stories and jokes, explain things, and chat. i also have helpers for the time, dates, math, conversions, timers, dice and word games!
+     B: i'm byte! nice to chat with you.
+ab075 | P: i made a new friend today
+     A: that's so exciting! i'm happy for you.
+     B: i can help you with that. what are your plans of the event?
+ab076 | P: what is the name of the stadium where the 2023 cricket world cup final was played?
+     A: i don't know the ukiliaum in is, so i'm not sure.
+     B: i'm not 100% sure, but i think the name of the stadium where the 2023 cricket world cup final was played is 450 matches.
+ab077 | P: my sister's name is lena || she is ten years old || tell me a joke || how old is my sister?
+     A: it's lena, your sister. anything else you want me to remember?
+     B: your sister is 10.
+ab078 | P: make me laugh
+     A: how many people does it take to change a light bulb? it's a really obscure number.
+     B: maybe, looks nice online. what are you up to today?
+ab079 | P: whos albert einstien
+     A: i'm not completely sure, but i think albert einstien is a german former professional football player who played every single spelling.
+     B: i'm not sure about who evane was. maybe look it up online?
+ab080 | P: give me three fun facts about space
+     A: sure, let's talk about space soup
+     B: 1. space: the space is a geometric shape, with its own unique features, and it can be used to represent different types of spaces. 2. object: the object that stands for space is an object that is made up of three elements, depending on the location. 3. object: the object that stands for space is a g
+ab081 | P: explain what coding is
+     A: coding, or programming, means writing instructions that tell a computer what to do.
+     B: it's a pleasure, eye.
+ab082 | P: explain how vaccines work
+     A:  vaccines are vaccines that either treat poliomyelitis (polio), or cause to become immune, and may also be a form of immune system. this process is commonly used in healthcare, where the body's cells are in the form of kidney, water, and water. vaccines can also be used for preventing poliomyelitis 
+     B: oh, oh, vacilian! do you have a favorite song? what's new with your local latin?
+ab083 | P: what is the capital of new zealand?
+     A: i'm not sure about the capital town new zealand. i'd rather be honest than make something up. but i'm happy to keep chatting.
+     B: new zealand is a country in australia and new zealand, and its capital is wellington.
+ab084 | P: what's 3 to the power of 4
+     A: i found 2 cancer with 3. 0 at the powers, sudil & other options.
+     B: that's 81.
+ab085 | P: what is 15 + 27 - 8
+     A: 10 pm and 4:35 pm, correct?
+     B: that's 34.
+ab086 | P: is 7919 prime
+     A: i will get you on the way to pick you up and focus. do you need directions?
+     B: yes, 7919 is a prime number!
+ab087 | P: yo whats good
+     A: ok. let me just confirm that you'd like three tickets for no time to die at amc mountain 16 tonight at 9:05pm. is that all correct?
+     B: just hanging out in turbowarp, ready to chat! what's up with you?
+ab088 | P: i don't like broccoli || i love carrots though || which vegetable do i love?
+     A: i like carolin too, but i don't get to love that.
+     B: i love carrots.
+ab089 | P: do you know a math joke?
+     A: why did the chicken cross the road? to get to the other side!
+     B: i do not know. i am a huge fan in the uk soldiers world cup in high school.
+ab090 | P: what is the name of the bear in the jungle book?
+     A: i'm not sure. i don't know the price of the jungle book.
+     B: i'm not sure, my notes only say that ian is a label inside a book that bears the owners name.
+ab091 | P: brb
+     A: brbrue is a lovely name. how is your day going?
+     B: sure, i'll be here!
+ab092 | P: how do i brush my teeth properly?
+     A: you told me you can sleep.
+     B: i'm not sure. i don't know how much do you like soccer has. but i'm happy to keep chatting.
+ab093 | P: who was the first woman to fly solo across the atlantic?
+     A: i'm not 100% sure, but i think the first woman to fly solo north across the atlantic was carl stampf.
+     B: i don't know the fact of the woman who gets based in the ending 2016 world cup from a single size. i can't look up that for you to seem to passengers!
+ab094 | P: what is the fastest fish in the ocean?
+     A: the fastest sea animal is sailfish.
+     B: sorry, i'm not sure about the fact of fishing fish. i'm a small model and i don't know many facts. is there something else i can help with?
+ab095 | P: bye, talk later
+     A: talk soon, later.
+     B: goodbye! it was nice chatting.
+ab096 | P: i keep hearing about dan jurgens. what is that?
+     A: dan jurgens is an american comic book writer and artist.
+     B: it is a single bologize of dancing, but putting enough.
+ab097 | P: another joke please
+     A: sure, and what do you want to book ?
+     B: why did the chicken cross the road? to get to the other side!
+ab098 | P: what day is it
+     A: it's a pleasure, (10).
+     B: today is tuesday.
+ab099 | P: story about a kid who can talk to animals
+     A: a animals collected mangoes, the octopus, who sat on a windowsill. everything was strange. the squeaky me frogs bought. the squeaked caterpillars had attached a new set of chunks. every year, they put two different clues. the first is, and the second is,. the squeak caterpillars wonafes a from-the-b
+     B: i love animals, and the artists are both fun.

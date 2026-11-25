@@ -1,6 +1,6 @@
 {
- "phase": "1",
- "step": "pretraining",
+ "phase": "done",
+ "step": "shipped",
  "done": [
   "env_check",
   "throughput_bench",
@@ -33,7 +33,18 @@
   "stories(207)",
   "pack_pretrain(342,266 windows, 173.5M tok)",
   "pack_sft(49,393 windows)",
-  "turbo1_baseline_replies"
+  "turbo1_baseline_replies",
+  "pretrain(59 chunks, 12,300 steps, 201.5M tok, 8.536 h)",
+  "sft(11 chunks, 2,000 steps, 1.478 h) -> main run 70 chunks 10.014 h",
+  "eval_sft_end + fix pass 1 (6 chunks, 1,150 steps)",
+  "fix pass 2 (6 chunks, 1,150 steps)",
+  "fix pass 3 (6 chunks, 1,150 steps) -> shipped ckpt_final (step 17,750)",
+  "export int8 (pretrain_val +0.031%, sft_val +0.078%)",
+  "build/Turbo2.sb3 (17,516,124 bytes, 19,600 blocks, largest list 199,000)",
+  "verify_final(parity 3.0e-14, greedy+sampled exact, retrieval 200/200, helpers 1927/1927)",
+  "eval 618 (auto + blind manual 352 + blind A/B 100) -> results/eval_report.json",
+  "sb3_conversations(20 convs, 61 turns, all identical to mirror)",
+  "README.md"
  ],
  "work_dir": "/home/user/work",
  "train": {
@@ -126,15 +137,15 @@
     }
    },
    "main": {
-    "chunks": 82,
-    "train_seconds": 42122.7,
-    "steps": 16600,
-    "tokens": 271974400,
+    "chunks": 88,
+    "train_seconds": 45201.5,
+    "steps": 17750,
+    "tokens": 290816000,
     "last": {
-     "loss": 0.5286,
+     "loss": 0.4542,
      "lr": 2.016071428571429e-05,
-     "phase": "fix2",
-     "time": "12:53:53"
+     "phase": "fix3",
+     "time": "13:59:27"
     }
    }
   }
@@ -142,12 +153,61 @@
  "notes": "see NOTES.md for decisions/flags",
  "decisions": [
   "keep 10 layers (speed ok)",
-  "torch.compile for training (nondeterministic across processes; resume exact in eager)"
+  "torch.compile for training (nondeterministic across processes; resume exact in eager)",
+  "shipped fix-3 checkpoint chosen on eval gates (fix-1 had lowest SFT val loss)",
+  "timer completion notice counted as helper output (non-model UI text)"
  ],
  "run": {
   "name": "main",
   "config": "configs/run_main.json",
   "resume_cmd": "python3 train.py --run main --budget 540",
   "dev_eval_cmd": "python3 dev_eval.py main"
+ },
+ "final": {
+  "checkpoint": "/home/user/work/main/ckpt_final.pt (step 17750, end of fix pass 3)",
+  "weights": "/home/user/work/final_q.npz",
+  "sb3": "build/Turbo2.sb3",
+  "params": 10126336,
+  "training_hours": {
+   "pretrain": 8.536,
+   "sft": 1.478,
+   "fix_passes": 2.542,
+   "total": 12.556
+  },
+  "gates": {
+   "helpers >=95% correct": {
+    "value": 94.7,
+    "pass": false
+   },
+   "facts in base >=80% correct": {
+    "value": 80.7,
+    "pass": true
+   },
+   "facts not in base <=20% confidently wrong": {
+    "value": 26.7,
+    "pass": false
+   },
+   "IDK-style replies to answerable prompts <=3%": {
+    "value": 5.0,
+    "pass": false
+   },
+   "off-topic/unrelated replies <=5% overall": {
+    "value": 9.5,
+    "pass": false
+   },
+   "multi-turn recall >=80%": {
+    "value": 85.0,
+    "pass": true
+   },
+   "stories/jokes/explanations avg >=3.5/5": {
+    "value": 2.18,
+    "pass": false
+   },
+   "blind A/B vs Turbo 1 >=85% of decided": {
+    "value": 97.4,
+    "pass": true
+   }
+  },
+  "gates_passed": "3/8"
  }
 }

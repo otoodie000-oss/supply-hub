@@ -156,7 +156,7 @@ id,cat,prompt,reply,tool_call,tool_result,auto,correct,idk,hedged,off_topic,stat
 154,fact_out,who wrote the book wonder about a boy named auggie?,i'm not sure about the taste book. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,False,hedged
 155,fact_out,what is the name of the bear in the jungle book?,i'm not sure. i don't know the price of the jungle book.,,,True,False,True,True,False,hedged
 156,fact_out,what team did lebron james join in 2018?,"i don't know the taller league players in 201, so it's one of theme.",,,True,False,True,True,True,hedged
-157,fact_out,what was the first animated pixar film to win best animated feature oscar?,"i don't know the disney film for her a horror movie, who is most adventured in that one. i think he's been in oscur emptionale.",,,True,False,True,True,False,hedged
+157,fact_out,what was the first animated pixar film to win best animated feature oscar?,"i don't know the disney film for her a horror movie, who is most adventured in that one. i think he's been in oscur emptionale.",,,True,False,False,True,False,hedged
 158,fact_out,who created the video game fortnite's battle royale mode company founder?,"i think it is great that the record form note football, they lose his beat and until 1986.",,,True,False,False,True,True,hedged
 159,fact_in,what is the longest bone in a cat?,i'm not sure about the price of a catching. i don't want to guess and get it wrong. i'd rather be honest than make something up. is there something else i can help with?,,,True,False,True,True,True,idk
 160,fact_out,what is the name of harry potter's owl?,i'm not sure about the name of harry potter  amc mercado! i can't look things up.,,,True,False,True,True,False,hedged

@@ -1,0 +1,619 @@
+id,cat,prompt,reply,tool_call,tool_result,auto,correct,idk,hedged,off_topic,status,manual_score_1to5
+0,fact_in,which planet do people call the red planet?,"i'm not sure, i don't know. you could check a reliable source. you said your favorite food is making pasta.",,,True,False,True,True,True,idk,
+1,fact_in,whats the biggest planet in our solar system,i can see why that would be a big horrost system,,,True,False,False,False,False,wrong,
+2,fact_in,how many planets orbit our sun?,i'm not sure about how many planets. i don't want to guess and get it wrong. sorry i can't help with that one.,,,True,False,True,True,False,idk,
+3,fact_in,which planet is closest to the sun,the sun is the sunsets of 2 warriors - come at a moderate set service with a suspected quick suite our suigh.,,,True,False,False,False,True,wrong,
+4,fact_in,who was the first human to step on the moon?,i don't know the earth is. maybe wear to step. did you ever rely the 3 richest presidents?,,,True,False,True,True,False,idk,
+5,fact_in,how old is the universe roughly?,i'm not sure about how much a roughter is. sorry i can't help with that one. is there something else i can help with?,,,True,False,True,True,True,idk,
+6,fact_in,what's the deepest spot in the ocean called,i'm not sure about the ocean icean at all. i don't want to guess and get it wrong. maybe look it up online?,,,True,False,True,True,False,idk,
+7,fact_in,what is the largest ocean on earth?,i don't know the largest ocean.,,,True,False,True,True,False,idk,
+8,fact_in,which continent is the coldest one,"the coldont is 54-295-830, it be nice chatting with you today.",,,True,False,False,False,True,wrong,
+9,fact_in,what is the chemical formula of water?,"sorry, i'm not sure about the chemical museum of water.",,,True,False,True,True,False,idk,
+10,fact_in,at what temperature does water boil in celsius?,"i don't know that in celtica, so it's a classic none of my mind. i can't look things up.",,,True,False,True,True,True,idk,
+11,fact_in,how many bones does an adult human have?,i'm not sure. i don't know how many broundin is. sorry i can't help with that one.,,,True,False,True,True,False,idk,
+12,fact_in,what's the biggest organ in the human body,"i know the sushier is because of a jefferson in courty the record of the modern, so i have to take you up online?",,,True,False,False,False,True,wrong,
+13,fact_in,what is the fastest land animal?,i'm not sure about the old animal land in morning. i don't have that one without a television. is there something else i can help with?,,,True,False,True,True,False,idk,
+14,fact_in,what is the largest animal that ever lived,"i have a dog of dogs, but i do not think you would like them. i'd love to catch them for them",,,True,False,False,False,True,wrong,
+15,fact_in,how many hearts does an octopus have?,i'm not sure. i don't know how much per second is brandussuice. but i'm happy to keep chatting.,,,True,False,True,True,True,idk,
+16,fact_in,who painted the mona lisa?,"i don't know who starts, so i'm not sure. i'm a small model and i don't know many facts.",,,True,False,True,True,True,idk,
+17,fact_in,who wrote romeo and juliet,"jult rome in austin, nice! how often do you get to do it?",,,True,False,False,False,True,wrong,
+18,fact_in,when did world war 2 end?,i don't know when she was 20 years old. he's the best sexion off from all the money.,,,True,False,True,True,True,idk,
+19,fact_in,who was the first president of the united states?,i think it was banned after that. it probably is an insirc caroled to be a president.,,,True,False,False,True,False,wrong,
+20,fact_in,what year did the titanic sink?,i'm not sure about when the titanic shirs was in. i don't want to guess and get it wrong. i'd rather be honest than make something up. ask me something else!,,,True,False,True,True,False,idk,
+21,fact_in,who invented the world wide web?,i don't know who invented the world widew? i'd rather be honest than make something up.,,,True,False,True,True,False,idk,
+22,fact_in,who made minecraft?,i'm not sure about how much dcraft was. i'm a small model and i don't know many facts. is there something else i can help with?,,,True,False,True,True,True,idk,
+23,fact_in,what is roblox?,i'm not sure about the price of roblor. i don't want to guess and get it wrong. i'd rather be honest than make something up. ask me something else!,,,True,False,True,True,True,idk,
+24,fact_in,what programming language do roblox games use?,i think that makes sense.,,,True,False,False,True,True,wrong,
+25,fact_in,who created the scratch programming language,"i think so too, and it would be hard to help, but it would be quite troking.",,,True,False,False,True,True,wrong,
+26,fact_in,what does turbowarp do?,"i don't know turns any turnished, so i'm not sure. maybe look it up online?",,,True,False,True,True,True,idk,
+27,fact_in,how many players does a soccer team have on the field?,i'm not sure about how many teams football was has touchdown. sorry i can't help with that one.,,,True,False,True,True,False,idk,
+28,fact_in,who invented basketball?,i'm not sure about who invented the basketball to basketball. but i'm happy to keep chatting.,,,True,False,True,True,False,idk,
+29,fact_in,how many keys are on a piano,i'm not sure about how many key is on a piano? i don't know how fewk canthrari has.,,,True,False,True,True,False,idk,
+30,fact_in,what is the capital of thailand?,i'm not sure about the capitology is of thailand. you could check a reliable source.,,,True,False,True,True,False,idk,
+31,fact_in,what currency do they use in thailand,they use a bongby,,,True,False,False,False,True,wrong,
+32,fact_in,what is songkran?,i'm not sure about the song by krankran. i don't want to guess and get it wrong. i'd rather be honest than make something up.,,,True,False,True,True,True,idk,
+33,fact_in,what's pad thai?,i'm not sure about how much a padike. you could check a reliable source.,,,True,False,True,True,True,idk,
+34,fact_in,what is the tallest mountain in the world?,i'm not sure about the world in antique fact. i don't want to guess and get it wrong. i'm a small model and i don't know many facts.,,,True,False,True,True,False,idk,
+35,fact_in,who is the president of the united states in 2026?,i think it is too bad. the president of indonesia has had an inside aliens and destr. i wonder if there was a special party that use to put uploadays at least 1 billion a year when they pay for that long.,,,True,False,False,True,False,wrong,
+36,fact_in,who became uk prime minister in 2024?,i don't know who burritos for that display. i can't be worn with that one.,,,True,False,True,True,True,idk,
+37,fact_in,who won the 2022 world cup?,i'm not sure about who won the 20 world cup in high school. i'd rather be honest than make something up. is there something else i can help with?,,,True,False,True,True,False,idk,
+38,fact_in,where were the 2024 summer olympics held?,"i don't know the titer of the 203 sun, but that's a faithing breakd of the supreme court in the top flies.",,,True,False,True,True,True,idk,
+39,fact_in,what is the best selling video game ever?,i don't know the best selling alien. sorry i can't help with that one. is there something else i can help with?,,,True,False,True,True,False,idk,
+40,fact_in,when did chatgpt come out?,i'm not sure. i don't know how much lawyers got the job in birmball.,,,True,False,True,True,True,idk,
+41,fact_in,who is the pope now?,i'm not sure about who the population of celtic? i don't want to guess. i'm a small model and i don't know many facts. but i'm happy to keep chatting.,,,True,False,True,True,True,idk,
+42,fact_in,what is your name?,my name is maruna.,,,True,False,False,False,False,wrong,
+43,fact_in,who made you?,i'm not sure about who. i don't know may have messed. but i'm happy to keep chatting.,,,True,False,True,True,True,idk,
+44,fact_in,can you use the internet?,"yes, how about fair mall?",,,True,False,False,False,True,wrong,
+45,fact_in,how many parameters do you have?,i'm not sure about the parameence in music. i'm a small model and i don't know many facts.,,,True,False,True,True,False,idk,
+46,fact_in,what is pi approximately?,it is about a different type of telephones that make you feel like power than internet.,,,True,False,False,False,True,wrong,
+47,fact_in,what does a prime number mean?,"i don't know the price of a prime cause, but i'm happy to keep chatting.",,,True,False,True,True,False,idk,
+48,fact_in,how many sides does a hexagon have?,i'm not sure. i don't know how many sides could be of. maybe look it up online?,,,True,False,True,True,False,idk,
+49,fact_in,what is photosynthesis?,i'm not sure about the photograph. sorry i can't help with that one. ask me something else!,,,True,False,True,True,True,idk,
+50,fact_in,what causes a rainbow?,"i don't know how many people live in the weather, so i'm not sure. i can't wait to see what issbitly.",,,True,False,True,True,True,idk,
+51,fact_in,why do we have seasons on earth?,"i don't know who ris weather in seasonal, so i'm not sure. is there something else i can help with?",,,True,False,True,True,True,idk,
+52,fact_in,what are the three states of matter?,"i don't know the total of matter, so i'm not sure. maybe look it up online?",,,True,False,True,True,False,idk,
+53,fact_in,who discovered penicillin?,i'm not sure about when pencil was founded. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,True,idk,
+54,fact_in,what is the smallest country in the world?,i'm not sure about the country in history. i don't want to guess and get it wrong. maybe look it up online?,,,True,False,True,True,False,idk,
+55,fact_in,how many continents are there?,i'm not sure. i don't know how many contacts. maybe look it up online? but i'm happy to keep chatting.,,,True,False,True,True,False,idk,
+56,fact_in,what do pandas mostly eat?,"i don't know how much landscapes are in canada, so i can't be made of them.",,,True,False,True,True,True,idk,
+57,fact_in,where do kangaroos live?,"i don't know how much kangarlic, so i'm not sure. i'd rather be honest than make something up.",,,True,False,True,True,True,idk,
+58,fact_in,who wrote the harry potter books?,i'm not sure about who wrong games phaldgh women. maybe look it up online?,,,True,False,True,True,True,idk,
+59,fact_in,what is the national sport of thailand?,i'm not sure about the national player in thailand. i don't want to guess and get it wrong. i'm a small model and i don't know many facts. but i'm happy to keep chatting.,,,True,False,True,True,False,idk,
+60,fact_in,do you know the capital of brunei,i do not know why the capacre is bible in a while in the year education was associated,,,True,False,True,False,False,idk,
+61,fact_in,do you know the capital of gibraltar,"i don't know if it was the ""man. that's a scary form because that's an interesting system.",,,True,False,True,True,False,idk,
+62,fact_in,do you know the capital of malawi,"yes, it was such a good one to do with how many people wants there are just very cool",,,True,False,False,False,True,wrong,
+63,fact_in,"i forgot the capital of zambia, what is it?","it is ratedbit, but it's about a ropot on the roscale charter for $20 tour.",,,True,False,False,False,True,wrong,
+64,fact_in,which city is the capital of mali?,i'm not sure about how many capital cat is. i don't want to guess and get it wrong. maybe look it up online?,,,True,False,True,True,False,idk,
+65,fact_in,which city is the capital of palau?,i'm not sure. i don't know the capital!,,,True,False,True,True,False,idk,
+66,fact_in,which city is the capital of togo?,i'm not sure. i don't know the capital in togo. i can't look things up.,,,True,False,True,True,False,idk,
+67,fact_in,bosnia and herzegovina's capital city?,"i'm not sure. i don't know who the best capcom of herover was? sorry, you could check a reliable source.",,,True,False,True,True,True,idk,
+68,fact_in,which city is the capital of turkmenistan?,i'm not sure about the capital capitan. i don't want to guess and get it wrong. i'm a small model and i can't look things up. but i'm happy to keep chatting.,,,True,False,True,True,False,idk,
+69,fact_in,do you know the capital of djibouti,"i do not know, but the majority would be very popular since the guatement is in the side of hawai",,,True,False,True,False,False,idk,
+70,fact_in,which city is the capital of ukraine?,i'm not sure. i don't know the capitalite in ukrag. i don't have that information.,,,True,False,True,True,True,idk,
+71,fact_in,do you know the capital of antilles neerlandaises,"i do, it's kind of fun. i wish i can go on a capitian car, but i don't have much time for them.",,,True,False,False,False,True,wrong,
+72,fact_in,what's the atomic number for francium?,i'm not sure. i don't know the distance from course. i'm a small model and i don't know many facts. ask me something else!,,,True,False,True,True,True,idk,
+73,fact_in,which chemical symbol does niobium have?,"i don't know how the chef has 2 cheaprises, so i'm not sure. i'd rather be honest than make something up.",,,True,False,True,True,True,idk,
+74,fact_in,symbol of the element cobalt?,"i don't know the engine in a team, but its branch.",,,True,False,True,True,True,idk,
+75,fact_in,what's the atomic number for antimony?,i'm not sure about the price of a place. i don't want to guess and get it wrong. i'd rather be honest than make something up. but i'm happy to keep chatting.,,,True,False,True,True,True,idk,
+76,fact_in,symbol of the element arsenic?,i don't know. that is interesting.,,,True,False,True,True,True,idk,
+77,fact_in,rhodium has which atomic number?,i don't know the distance from a dentist.,,,True,False,True,True,True,idk,
+78,fact_in,palladium has which atomic number?,their number is 012334-299.,,,True,False,False,False,False,wrong,
+79,fact_in,rutherfordium has which atomic number?,their number is 012-98. anything else i can do?,,,True,False,False,False,False,wrong,
+80,fact_in,which currency would i need in uzbekistan,"okay, i can do that for you. what type of music would you like?",,,True,False,False,False,True,wrong,
+81,fact_in,which currency would i need in bulgaria,"okay, let's tell you when?",,,True,False,False,False,True,wrong,
+82,fact_in,which currency would i need in kenya,what type of food?,,,True,False,False,False,True,wrong,
+83,fact_in,which currency would i need in malta,what type of cuisine would you like?,,,True,False,False,False,True,wrong,
+84,fact_in,which currency would i need in taiwan,what type of movie are you interested in?,,,True,False,False,False,True,wrong,
+85,fact_in,what money is used in somalia?,i don't know about the money. maybe we can get already?,,,True,False,True,True,False,idk,
+86,fact_in,quick question: what's juan downey?,i'm not sure about how juanise is. i'm a small model and i don't know many facts.,,,True,False,True,True,True,idk,
+87,fact_in,can you tell me who or what tellurium is?,i'm not sure about the distance from an account. i don't want to guess and get it wrong. sorry i can't help with that one.,,,True,False,True,True,True,idk,
+88,fact_in,quick question: what's eniac?,i'm not sure about enough to know. i don't want to guess and get it wrong. sorry i can't help with that one.,,,True,False,True,True,True,idk,
+89,fact_in,quick question: what's stan winston?,i'm not sure. i don't know the stonds toston. maybe look it up online? ask me something else!,,,True,False,True,True,True,idk,
+90,fact_in,i keep hearing about joe sinnott. what is that?,it is a really hard way to do with it. i need to make money and me feel long just received.,,,True,False,False,False,True,wrong,
+91,fact_in,i keep hearing about dan jurgens. what is that?,"it is a single bologize of dancing, but putting enough.",,,True,False,False,False,True,wrong,
+92,fact_in,i keep hearing about frank spedding. what is that?,it is a scientist. it's very rewarding when you figure it costls the most.,,,True,False,False,False,True,wrong,
+93,fact_in,i keep hearing about david hilbert. what is that?,it is a single that has an ambot on the midd's 7 million worth of 100 years old.,,,True,False,False,False,True,wrong,
+94,fact_in,can you tell me who or what bellona is?,i'm not sure about who in bella. i don't have that information.,,,True,False,True,True,True,idk,
+95,fact_in,quick question: what's the gentleman's magazine?,i'm not sure about the gentle maragazines mccar things. i'd rather be honest than make something up.,,,True,False,True,True,True,idk,
+96,fact_in,do you know anything about marine one?,i do. what are you up to today?,,,True,False,False,False,True,wrong,
+97,fact_in,can you tell me who or what henry rogers seager is?,i'm not sure about how much dinner has. you can tell me if you don't.,,,True,False,True,True,True,idk,
+98,fact_in,can you tell me who or what nicolas gombert is?,i'm not sure about when nicolk has. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,True,idk,
+99,fact_in,do you know anything about tibia?,i do. do you know who invented the film?,,,True,False,False,False,False,wrong,
+100,fact_in,quick question: what's lee bowyer?,i'm not sure about the leefrer. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,True,idk,
+101,fact_in,quick question: what's blind date?,i'm not sure about the price of blue. i don't want to guess and get it wrong. i'd rather be honest than make something up. is there something else i can help with?,,,True,False,True,True,True,idk,
+102,fact_in,can you tell me who or what harvey milk is?,"i don't know who the first i founded me about laptop, so i'm not sure. you could check a reliable source.",,,True,False,True,True,True,idk,
+103,fact_in,quick question: what's lake speed?,i'm not sure. i don't know how lake speeds is. maybe look it up online?,,,True,False,True,True,False,idk,
+104,fact_in,do you know anything about misty may-treanor?,"i don't know how tom hosted woodear didn't for years, so it's it recatedly?",,,True,False,True,True,False,idk,
+105,fact_in,do you know anything about plant pathology?,"i do, it's very interesting.",,,True,False,False,False,True,wrong,
+106,fact_in,can you tell me who or what geirr tveitt is?,i'm not sure. i don't know who the gearempernist marriededed himself. maybe look it up online?,,,True,False,True,True,True,idk,
+107,fact_in,i keep hearing about text linguistics. what is that?,"it is a high lifestying project, what about your job?",,,True,False,False,False,True,wrong,
+108,fact_in,quick question: what's travis mcgee?,i'm not sure. i don't know the comfortable novel. ask me something else!,,,True,False,True,True,True,idk,
+109,fact_in,do you know anything about home and away?,i do. what do you like to do for fun?,,,True,False,False,False,True,wrong,
+110,fact_in,quick question: what's cambodian americans?,i'm not sure about when cambodian has. i'm a small model and i don't know many facts.,,,True,False,True,True,False,idk,
+111,fact_in,can you tell me who or what blaze bayley is?,i'm not sure. i don't know who the blaze is. sorry i can't help with that one.,,,True,False,True,True,False,idk,
+112,fact_in,can you tell me who or what damien broderick is?,i'm not sure. i don't know who damie is. maybe look it up online? i'd rather be honest than make something up.,,,True,False,True,True,True,idk,
+113,fact_in,can you tell me who or what benjamin rush is?,i'm not sure. i don't know who in coursename is. i'd rather be honest than make something up.,,,True,False,True,True,True,idk,
+114,fact_in,do you know anything about sally field?,i do know that as well. what are you up to today?,,,True,False,False,False,False,wrong,
+115,fact_in,quick question: what's jiaolong?,i'm not sure about how juliaiter james a waiteland is.,,,True,False,True,True,True,idk,
+116,fact_in,who wrote the allegorical novella animal farm?,"i don't know who a lot of pixar movies. that is one of my favorites the michael catcherle breaks, but do not seem ability for it.",,,True,False,True,True,True,idk,
+117,fact_in,in what year was keith green born?,i'm not sure about when keith green bone old. i don't want to guess and get it wrong. i'd rather be honest than make something up.,,,True,False,True,True,False,idk,
+118,fact_in,who directed the hit movie from the 80s raging bull?,i don't know who directed the film dunk.,,,True,False,True,True,False,idk,
+119,fact_in,which is the sixth book of the new testament?,"the testame and the testmar was deep it for me, so fare on a re-selling change of the olympia.",,,True,False,False,False,True,wrong,
+120,fact_in,what color was the car that became the fictional general lee when the dukes bought it?,"i think it is an eyed, that is pretty true. i guess sold you make any money for the channel, but i think it's impossible.",,,True,False,False,True,True,wrong,
+121,fact_in,which of these was the capital of the mongol empire during the 13th century?,the earliest empire is 2 million and the bigger japanese.,,,True,False,False,False,False,wrong,
+122,fact_in,what is the study of whales called?,i'm not sure about the studying in whales. i don't want to guess and get it wrong. i'm a small model and i don't know many facts.,,,True,False,True,True,False,idk,
+123,fact_in,what term is used to describe a persons return to live in israel?,"i don't know the price of a team, so i'm not sure. i'd rather be honest than make something up. is there something else i can help with?",,,True,False,True,True,True,idk,
+124,fact_in,what is the state song of connecticut?,i'm not sure about the song by legend of a flath. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,False,idk,
+125,fact_in,what was the name of jamie and pauls dog on the hit sitcom mad about you?,i was in a paul rocky mouse situgs since the noinals are an amazing weather for as well.,,,True,False,False,False,True,wrong,
+126,fact_in,which of these is not one of harrys friends?,"i don't know, i'd like to see that.",,,True,False,True,True,True,idk,
+127,fact_in,what is the first name of the boy on whom violet has a crush in the film the incredibles?,"hmm, curry's indic once united at 3pm on adult.",,,True,False,False,False,True,wrong,
+128,fact_in,what is the name of the don who controlled little italy when vito corleone was younger?,"i'm not sure. i don't know how much that would be safe without it! but it's wild to be a bunch of breaks, they are in the galaxy, and they might be passed away from them.",,,True,False,True,True,True,idk,
+129,fact_in,what currency is used in bermuda?,i'm not sure. i don't know the distance from warmdaudnred to beruno. maybe look it up online? but i'm happy to keep chatting.,,,True,False,True,True,True,idk,
+130,fact_in,what is meant by alternative?,i'm not sure about when alternative is. you could check a reliable source.,,,True,False,True,True,False,idk,
+131,fact_in,what is meant by manifold?,i'm not sure about when manifold was founded. i don't want to guess and get it wrong. sorry i can't help with that one.,,,True,False,True,True,False,idk,
+132,fact_in,what's the meaning of the word transducer?,i'm not sure about the word of a transferr. i don't want to guess and get it wrong. you could check a reliable source. is there something else i can help with?,,,True,False,True,True,False,idk,
+133,fact_in,can you define apprentice for me,"yes, they aren't allowed to focuses on the biker since there was a production that can be worth 30 people in their facebook",,,True,False,False,False,True,wrong,
+134,fact_in,can you define agglutinin for me,"sure, what is the record of it?",,,True,False,False,False,True,wrong,
+135,fact_in,can you define attention for me,"sure, what city and would you like to go?",,,True,False,False,False,True,wrong,
+136,fact_in,what's the meaning of the word fiscal year?,i'm not sure. i don't know the word of the meaning. i'm a small model and i don't know many facts.,,,True,False,True,True,False,idk,
+137,fact_in,can you define velocity for me,"sure, do you want me to look for up?",,,True,False,False,False,True,wrong,
+138,fact_in,can you define vehicle for me,"sure, do you want me to book the appointment for next fill.",,,True,False,False,False,True,wrong,
+139,fact_in,can you define cyclist for me,"sure, what kind of cyclist is inden pool?",,,True,False,False,False,False,wrong,
+140,fact_out,who won the 2018 fifa world cup?,i'm not sure. i don't know who won the 280's. maybe look it up online?,,,True,False,True,True,True,hedged,
+141,fact_out,who directed the movie parasite from 2019?,"the director of the captain almaished family, 30,978.",,,True,False,False,False,True,confidently_wrong,
+142,fact_out,which film won best picture at the 2020 oscars?,"i don't know the 20 sun is a tolition scored, i need to look at it.",,,True,False,True,True,True,hedged,
+143,fact_out,what is the name of the dog in the movie up?,i'm not sure. i don't know the dog ever.,,,True,False,True,True,True,hedged,
+144,fact_out,who won the 2023 rugby world cup?,i'm not sure about who won the 20 world cup in the nfl. i don't think it would be a good way to get it down.,,,True,False,True,True,False,hedged,
+145,fact_out,what is the name of the ship in moby dick?,i'm not sure. i don't know the shipyschoologist. i'd rather be honest than make something up.,,,True,False,True,True,True,hedged,
+146,fact_out,what was the name of the first cloned sheep?,"i'm not sure. i don't know the cloneage of beingephop, so i'm it wrong. you could check a reliable source.",,,True,False,True,True,True,hedged,
+147,fact_out,what year was the game among us released?,i'm not sure about when the amth seining was played. i don't want to guess and get it wrong. maybe look it up online?,,,True,False,True,True,True,hedged,
+148,fact_out,who sang the song bad guy in 2019?,i'm not sure about who the song by 201 was a single month. i don't want to guess and get it wrong. i'm a small model and i don't know many facts. ask me something else!,,,True,False,True,True,False,hedged,
+149,fact_in,what is the capital city of the region of tasmania?,"i don't know the capital, so i'm not sure. i'd rather be honest than make something up.",,,True,False,True,True,False,idk,
+150,fact_out,how many moons does saturn have according to 2023 counts?,"i don't know the indinchester, but you could check a reliable source.",,,True,False,True,True,True,hedged,
+151,fact_in,who is the main character of the legend of zelda games?,i'm not sure about who the main exacture was in zeld. i don't have that information. is there something else i can help with?,,,True,False,True,True,False,idk,
+152,fact_out,what does the abbreviation nasa stand for?,"i don't know the factor of annative waves, so i'm not sure. i'd rather be honest than make something up.",,,True,False,True,True,True,hedged,
+153,fact_in,what is the boiling point of water in fahrenheit?,i don't know the boilian immet than that. i can't be able to use something more power.,,,True,False,True,True,True,idk,
+154,fact_out,who wrote the book wonder about a boy named auggie?,i'm not sure about the taste book. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,False,hedged,
+155,fact_out,what is the name of the bear in the jungle book?,i'm not sure. i don't know the price of the jungle book.,,,True,False,True,True,False,hedged,
+156,fact_out,what team did lebron james join in 2018?,"i don't know the taller league players in 201, so it's one of theme.",,,True,False,True,True,True,hedged,
+157,fact_out,what was the first animated pixar film to win best animated feature oscar?,"i don't know the disney film for her a horror movie, who is most adventured in that one. i think he's been in oscur emptionale.",,,True,False,False,True,False,hedged,
+158,fact_out,who created the video game fortnite's battle royale mode company founder?,"i think it is great that the record form note football, they lose his beat and until 1986.",,,True,False,False,True,True,hedged,
+159,fact_in,what is the longest bone in a cat?,i'm not sure about the price of a catching. i don't want to guess and get it wrong. i'd rather be honest than make something up. is there something else i can help with?,,,True,False,True,True,True,idk,
+160,fact_out,what is the name of harry potter's owl?,i'm not sure about the name of harry potter  amc mercado! i can't look things up.,,,True,False,True,True,False,hedged,
+161,fact_in,what is the capital of the canadian province of alberta?,i'm not sure about the capition of alberta. i don't have that information.,,,True,False,True,True,False,idk,
+162,fact_out,who invented the game of chess boxing?,i'm not sure about who invented the chess? i don't know when they are curry. i'd rather be honest than make something up.,,,True,False,True,True,False,hedged,
+163,fact_out,which band released the album abbey road in 1969?,i don't know who managetal feels older. and i love the side of my science fiction.,,,True,False,True,True,True,hedged,
+164,fact_in,what is the most spoken language in brazil?,i'm not sure about the price of brazil. i'm a small model and i don't know many facts. is there something else i can help with?,,,True,False,True,True,False,idk,
+165,fact_out,what does dna stand for?,"i don't know the danding matches dino is called berb, so i'd rather be honest than make something up.",,,True,False,True,True,True,hedged,
+166,fact_out,how many strings does a cello have?,i'm not sure. i don't know how many strings percent is. i can't look things up.,,,True,False,True,True,False,hedged,
+167,fact_in,what is the name of the toy cowboy in toy story?,i'm not sure. i don't know the toyner in toy story. i can't look things up. is there something else i can help with?,,,True,False,True,True,False,idk,
+168,fact_out,which country hosted the 2019 rugby world cup?,i don't know the 20th in mention. i wonder if there is a one alongary or something else?,,,True,False,True,True,True,hedged,
+169,fact_out,what is the name of the volcano that destroyed pompeii?,"i don't know the volleyball quarterback, so i'm not sure. what would you like to talk about?",,,True,False,True,True,True,hedged,
+170,fact_out,what fruit is guacamole made from?,i don't know. i'm not sure about when guini has. you could check a reliable source.,,,True,False,True,True,True,hedged,
+171,fact_out,what is the main ingredient in hummus?,i'm not sure about the main experience. i'm a small model and i don't know many facts. ask me something else!,,,True,False,True,True,False,hedged,
+172,fact_out,who is the author of the hunger games?,i'm not sure about who the hunger games duth. i don't want to guess and get it wrong. i'm a small model and i don't know many facts. is there something else i can help with?,,,True,False,True,True,False,hedged,
+173,fact_in,what is the fastest fish in the ocean?,"sorry, i'm not sure about the fact of fishing fish. i'm a small model and i don't know many facts. is there something else i can help with?",,,True,False,True,True,False,idk,
+174,fact_out,who painted the starry night?,"i don't know the price of star, so i'm not sure. i can't look things up. ask me something else!",,,True,False,True,True,True,hedged,
+175,fact_out,what is the hardest working muscle in the body?,i'm not sure about the price of antique fact. i don't want to guess and get it wrong. i'm a small model and i don't know many facts.,,,True,False,True,True,True,hedged,
+176,fact_out,what's the name of the main villain in the lion king?,i'm not sure. i don't know the main example. you could check a reliable source. ask me something else!,,,True,False,True,True,False,hedged,
+177,fact_in,how many players are on a volleyball team on court?,i'm not sure about how many teams property played are. i don't want to guess and get it wrong. you could check a reliable source. is there something else i can help with?,,,True,False,True,True,False,idk,
+178,fact_out,what year did the first pokemon games come out in japan?,"i don't know the closest top three hours in japanese, so i'm not sure. maybe look it up online?",,,True,False,True,True,True,hedged,
+179,fact_out,what is the name of mario's brother?,i'm not sure. i don't know the price of mario brother. i can't look things up.,,,True,False,True,True,False,hedged,
+180,fact_out,what does a seismograph measure?,i'm not sure about the price of a secrewich. i don't want to guess and get it wrong. i'd rather be honest than make something up.,,,True,False,True,True,True,hedged,
+181,fact_out,what was the name of the robot in the movie wall-e he loves?,"i don't know the name of the robin, so i can't look things up.",,,True,False,True,True,False,hedged,
+182,fact_out,who won the 2021 nba championship?,i'm not sure about who won the 20 world teams. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,True,hedged,
+183,fact_out,what is the largest desert in asia?,i don't know the price of as the large delic range. i'd suggest my reviews for a bar.,,,True,False,True,True,True,hedged,
+184,fact_in,what's the capital of the us state of texas?,"i don't know the same one, but i'm not sure. you could check a reliable thing now.",,,True,False,True,True,True,idk,
+185,fact_out,who discovered gravity waves in 2015?,"i don't know the matched college in 2016, so i'm not sure. maybe look it up online?",,,True,False,True,True,True,hedged,
+186,fact_in,what is the most common blood type?,it is about a rate that has an underwood special. i think they're the we lived in the morning of the animation and it would be such as the same we have.,,,True,True,False,True,False,correct,
+187,fact_out,what is the name of thailand's longest river?,i'm not sure about the name of thailandard. sorry i can't help with that one. but i'm happy to keep chatting.,,,True,False,True,True,False,hedged,
+188,fact_out,what is the name of the stadium where the 2023 cricket world cup final was played?,"i don't know the ukiliaum in is, so i'm not sure.",,,True,False,True,True,True,hedged,
+189,fact_out,which company makes the playstation 5?,"i don't know the granny, but i'm not sure if you are a fan but i need people to remember the world series.",,,True,False,True,True,True,hedged,
+190,fact_out,what is the name of the main character in the game undertale?,"i'm not sure. i don't know the main explorert, so i'm not sure. you could check a reliable source. is there something else i can help with?",,,True,False,True,True,False,hedged,
+191,fact_out,who was the first woman to fly solo across the atlantic?,i don't know the fact of the woman who gets based in the ending 2016 world cup from a single size. i can't look up that for you to seem to passengers!,,,True,False,True,True,False,hedged,
+192,fact_in,what is the largest species of penguin?,"i don't know the larger pepperoni, isn't it your favorite kind? i found two with extra cheese. but it's a lot of fun particularly.",,,True,False,True,True,True,idk,
+193,fact_out,how many teeth does a shark lose in a lifetime roughly?,i'm not sure about how many tennis teams scoring is. i'm a big software engineer.,,,True,False,True,True,False,hedged,
+194,fact_out,what is the name of the clownfish in finding nemo's dad?,i don't know the clown in nector so it's.,,,True,False,True,True,True,hedged,
+195,fact_in,which planet has a moon called titan?,i'm not sure about the price of titan. i don't want to guess and get it wrong. i'd rather be honest than make something up. ask me something else!,,,True,False,True,True,False,idk,
+196,fact_out,what does the 'www' in a web address stand for?,the indian venue has a 4.8 per person that degree at section is $30 per night.,,,True,False,False,False,True,confidently_wrong,
+197,fact_in,what is a baby kangaroo called?,i'm not sure about how much a babyner. i don't want to guess and get it wrong. i'd rather be honest than make something up.,,,True,False,True,True,True,idk,
+198,fact_in,how many hours of sleep does a koala get per day?,i'm not sure about how many hours downlep noodles. i don't want to guess and get it wrong. sorry i can't help with that one.,,,True,False,True,True,False,idk,
+199,fact_out,who sang shake it off?,i don't know who said i can't look things up. i'd rather be honest than make something up.,,,True,False,True,True,True,hedged,
+200,fact_out,what is the name of the ice princess with powers in frozen?,"i don't know the ice cream called poet, so i'm not sure. maybe look it up online?",,,True,False,True,True,True,hedged,
+201,fact_in,what is the capital of australia's northern territory?,i'm not sure about the capitoral capurnopsn. maybe look it up online?,,,True,False,True,True,True,idk,
+202,fact_in,who wrote the book charlie and the chocolate factory?,i'm not sure. i don't know who the first book is. maybe look it up online? i'd rather be honest than make something up.,,,True,False,True,True,False,idk,
+203,fact_in,what color is a polar bear's skin?,"i don't know theogn auto, so i'm not sure. i'd rather be honest than make something up.",,,True,False,True,True,True,idk,
+204,fact_out,which country is famous for the tulip festival in keukenhof?,i'm not sure about the tunanic festi rental. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,True,hedged,
+205,fact_out,what does a herbivore eat?,"i don't know how much a herbheach is, so i'm not sure.",,,True,False,True,True,True,hedged,
+206,fact_out,who is the creator of the cartoon spongebob squarepants?,i don't know the president of indonesia has taken 3 pop songs with some degree.,,,True,False,True,True,True,hedged,
+207,fact_in,what was the name of the first artificial satellite?,"i'm not sure. i don't know the distance of san san mardia, so i'm not sure.",,,True,False,True,True,True,idk,
+208,fact_out,in which city is the colosseum?,i'm not sure about tonight's colosseumb is. i don't want to guess and get it wrong. i'd rather be honest than make something up.,,,True,False,True,True,True,hedged,
+209,fact_in,what is the most popular programming language for data science?,"i don't know the price of a languages, so i'm not sure.",,,True,False,True,True,True,idk,
+210,fact_out,what instrument did jimi hendrix play?,i'm not sure. i don't know how many jimirix games yet. i'd rather be honest than make something up.,,,True,False,True,True,True,hedged,
+211,fact_out,what is the name of the fairy in peter pan?,i'm not sure about the price of peter pancake. i don't want to guess and get it wrong. sorry i can't help with that one. is there something else i can help with?,,,True,False,True,True,False,hedged,
+212,fact_in,which ocean is the bermuda triangle in?,"i don't know the bernchrikee, so i'm not sure.",,,True,False,True,True,True,idk,
+213,fact_out,what kind of animal is a komodo dragon?,"i don't know that. i don't think you could have any computer for dogs who are, did you know there is a woman that can be an electionshic?",,,True,False,True,True,True,hedged,
+214,fact_in,how many bones are in a shark's skeleton?,i'm not sure about how many bron skeletons has. i don't want to guess and get it wrong. i'd rather be honest than make something up. ask me something else!,,,True,False,True,True,False,idk,
+215,fact_out,what is the name of the gorilla in donkey kong's family who wears a tie?,"i don't know how many gorillyskey has, so i'm not sure. you could check a reliable source.",,,True,False,True,True,True,hedged,
+216,fact_in,what is the capital of new zealand?,i'm not sure about the capital town new zealand. i'd rather be honest than make something up. but i'm happy to keep chatting.,,,True,False,True,True,False,idk,
+217,fact_out,who painted the ceiling of the sistine chapel?,"i don't know who pie is, so i'm not sure. maybe look it up online? is there something else i can help with?",,,True,False,True,True,True,hedged,
+218,fact_out,what is the name of the river that runs through baghdad?,"i don't know how far it would be, but i'm glad i got the time when i take me to play the nfl.",,,True,False,True,True,True,hedged,
+219,fact_out,who is the lead character in the minecraft story mode game?,i'm not sure about who the lead island is. i'm a small model and i don't know many facts.,,,True,False,True,True,False,hedged,
+220,fact_out,what is the name of the snowman in frozen?,i'm not sure. i don't know the snowman in frozen. you could check a reliable source. ask me something else!,,,True,False,True,True,False,hedged,
+221,fact_out,what is the name of the wizard school in the worst witch books?,i'm not sure. i don't know the worst of the world. i'm a small model and i don't know many facts.,,,True,False,True,True,False,hedged,
+222,fact_in,what is the name of the hedgehog in sega games?,i'm not sure. i don't know the name of segahog has.,,,True,False,True,True,False,idk,
+223,fact_out,which youtuber is known as mrbeast's real name?,"i don't know the same name, but i haven't heard about making mcoln. what's new with it?",,,True,False,True,True,False,hedged,
+224,fact_in,what is the name of the rabbit in winnie the pooh?,i'm not sure. i don't know the rabbit with a rabbit. is there something else i can help with?,,,True,True,True,True,False,correct,
+225,fact_in,who voiced woody in toy story?,i'm not sure about who in toy story. i don't want to guess and get it wrong. maybe look it up online?,,,True,False,True,True,False,idk,
+226,helper,what time is it?,"it is at 3:00 pm, 8167.",,,True,False,False,False,True,no_tool,
+227,helper,whats the time rn,there is a 7:30 pm with a train.,,,True,False,False,False,True,no_tool,
+228,helper,time please,ok. and where?,,,True,False,False,False,True,no_tool,
+229,helper,what time is it in 24 hour format?,"it is $89 in the morning, per person's open for only me to get a table.",,,True,False,False,False,True,no_tool,
+230,helper,tell me the time in military time,ok. let me get the showtimes for tomorrow at amc mountain 16 today.,,,True,False,False,False,True,no_tool,
+231,helper,what's today's date?,i'm not sure. i don't know when date is. i'd rather be honest than make something up.,,,True,False,True,True,False,no_tool,
+232,helper,what is the date today,"the date for $250,911.",,,True,False,False,False,False,no_tool,
+233,helper,whats todays date pls,ok. do you want me to make a reservation for?,,,True,False,False,False,True,no_tool,
+234,helper,what day of the week is it today?,"it's a pleasure, 24.",,,True,False,False,False,True,no_tool,
+235,helper,what day is it,"it's a pleasure, (10).",,,True,False,False,False,True,no_tool,
+236,helper,what day of the week was july 4 1776?,i'm not sure about the tallercitter was to the week. i don't want to guess and get it wrong. maybe look it up online? ask me something else!,,,True,False,True,True,False,no_tool,
+237,helper,which weekday is christmas 2030 on,"the showtimes 2:40 pm, 20pm, 8:10pm and 9:30pm at regal cinemas. would you like me to schedule an imax screening or morning?",,,True,False,False,False,True,no_tool,
+238,helper,what day will january 1 2027 be?,"the luxpool is a pleasure, tell me more about yourself.",,,True,False,False,False,True,no_tool,
+239,helper,how many days until christmas?,i'm not sure about how many people find something else!,,,True,False,True,True,False,no_tool,
+240,helper,how long until halloween,"i'm sorry, but don't have any pets.",,,True,False,False,False,True,no_tool,
+241,helper,when is songkran next year?,i'm not sure about when songkran's is. sorry i can't help with that one. is there something else i can help with?,,,True,False,True,True,False,no_tool,
+242,helper,how many days till new years,"nice to meet you, tilling.",,,True,False,False,False,True,no_tool,
+243,helper,when is chinese new year?,i'm not sure about when chinese is. i don't have that information. ask me something else!,,,True,False,True,True,False,no_tool,
+244,helper,when's easter next,the easternsday has been booked for 35 minutes,,,True,False,False,False,True,no_tool,
+245,helper,how many days until valentines day,i'm not sure about how much long have you beenves. tell me more about yourself.,,,True,False,True,True,True,no_tool,
+246,helper,when is thai mother's day,i'm not sure. i don't know when thai has fun though. but i'm happy to keep chatting.,,,True,False,True,True,False,no_tool,
+247,helper,how many days until march 3 2027?,i found 2 theaters for you. there is a barbergestic glassopian place with an italian restaurant includen culturals.,,,True,False,False,False,True,no_tool,
+248,helper,days left until 2027-06-01,please confirm your ride for 2 people from until march 10:35 am.,,,True,False,False,False,False,no_tool,
+249,helper,how many days since january 1 2000?,i'm not sure about how many people feel like january 200,,,True,False,True,True,False,no_tool,
+250,helper,how many days ago was 2020-03-11,"20, 8:10 pm is a great mood for you. how can i help?",,,True,False,False,False,True,no_tool,
+251,helper,how many days until my birthday on may 5?,"i don't know how many days this event is, so i'm not sure. sorry i can't help with that one.",,,True,False,True,True,False,no_tool,
+252,helper,what's the date 100 days from today?,i'm not sure about the date for a relationist. i don't want to guess and get it wrong.,,,True,False,True,True,False,no_tool,
+253,helper,what date is 3 weeks from now,"i found 2 houses for you to go to new tegratega, verrye mocha, the first is an expensive place i can add the address to.",,,True,False,False,False,True,no_tool,
+254,helper,what was the date 2 months ago?,i'm not sure about the dateshouse. i don't want to guess and get it wrong. i'd rather be honest than make something up. ask me something else!,,,True,False,True,True,True,no_tool,
+255,helper,what will the date be in 10 days,the date is open on march 14th at 1:50 pm in landstest.,,,True,False,False,False,False,no_tool,
+256,helper,what's 45 days after 2027-01-15?,i'm not sure about the distance from 2057. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,True,no_tool,
+257,helper,how old am i if i was born on 2010-05-14?,"yes, you have your name for a telephone call of the show. is there anything on your mind?",,,True,False,False,False,True,no_tool,
+258,helper,"i was born june 3 1995, how old am i",i didn't know that. i guess june 289.,,,True,False,False,False,False,no_tool,
+259,helper,how old is someone born in 1980?,i'm not sure about the price of 1950. i don't want to guess and get it wrong. you could check a reliable source.,,,True,False,True,True,True,no_tool,
+260,helper,is 2028 a leap year?,"yes, 29th street in the morning.",,,True,False,False,False,True,no_tool,
+261,helper,was 1900 a leap year,the leaving is a 10:45 and there are no saturday at 4:39 pm.,,,True,False,False,False,True,no_tool,
+262,helper,is 2100 a leap year?,"yes, 210 a.6-star waites and ten dominal at 8 pm.",,,True,False,False,False,True,no_tool,
+263,helper,what week number is it?,it is at 2016-897-405. it's 4:30 pm and 2.,,,True,False,False,False,True,no_tool,
+264,helper,what week of the year is 2027-08-20 in?,i have a 4:207ist for you a 517ion accoring the reached 58th street.,,,True,False,False,False,True,no_tool,
+265,helper,what time is it in tokyo?,it is in the afternoon.,,,True,False,False,False,True,no_tool,
+266,helper,whats the time in london rn,they are currently in the national league west,,,True,False,False,False,True,no_tool,
+267,helper,what time is it in new york right now?,it's a 35-90.,,,True,False,False,False,True,no_tool,
+268,helper,current time in sydney,"ok. i found a few options for you, 4 option is that true for this standard showtime at the amc theater.",,,True,False,False,False,True,no_tool,
+269,helper,what time is it in paris,it is about a biggest-inator that wants anxent boxford for $15 per each sandwichens,,,True,False,False,False,True,no_tool,
+270,helper,time in los angeles?,i'm not sure. i don't know how many people live in los angeles. you could check a reliable source. is there something else i can help with?,,,True,False,True,True,False,no_tool,
+271,helper,set a timer for 5 minutes,please confirm: you're booking a table for 5 p.miss ta reveralizers vancountary from march 4th at chicago centre and destroy sandwiches in new york city on march 5th.,,,True,False,False,False,True,no_tool,
+272,helper,timer 30 seconds please,"okay, and what would you like to know?",,,True,False,False,False,True,no_tool,
+273,helper,can you set a 2 hour timer,"sure, i have your 2 hours and found one at the momenta on march 2nd.",,,True,False,False,False,True,no_tool,
+274,helper,start a timer for 10 minutes,okay. what about drop it off?,,,True,False,False,False,True,no_tool,
+275,helper,what's 17.5% of 240?,"hmm, 17 is a choice and over $20 dollars the forms of rap buttons delivered by country music.",,,True,False,False,False,True,no_tool,
+276,helper,what is 25 percent of 80,"25 percent, 46 million rating is 3 and 4 menu",,,True,False,False,False,False,no_tool,
+277,helper,whats 8% of 1250,10,,,True,False,False,False,True,no_tool,
+278,helper,what is 30 out of 120 as a percentage?,"it is 35-468, 130.",,,True,False,False,False,True,no_tool,
+279,helper,45 is what percent of 60?,it is $89.,,,True,False,False,False,True,no_tool,
+280,helper,what's the percent change from 50 to 75?,"i'm not sure. i don't know the discent character in 50, so i'm not sure. maybe look it up online?",,,True,False,True,True,True,no_tool,
+281,helper,percent change from 80 to 60,please confirmation to book a flight from union stop.,,,True,False,False,False,True,no_tool,
+282,helper,what's a 15% tip on $80?,"i don't know the fact of $70,45.",,,True,False,True,True,True,no_tool,
+283,helper,how much should i tip 20% on a 64 dollar bill,"yes, it is in the centre. what type of plays are you looking for?",,,True,False,False,False,True,no_tool,
+284,helper,20% off of 50 dollars?,"yes, i would also like to hear more than $40 million top faming the guitar",,,True,False,False,False,True,no_tool,
+285,helper,"a $120 jacket is 35% off, what do i pay?","yes, it is about $25 million which has 10 already schedule.",,,True,False,False,False,True,no_tool,
+286,helper,what's 12 times 13?,12:07 is available.,,,True,False,False,False,True,no_tool,
+287,helper,what is 144 divided by 12,148 is the price of your choice.,,,True,False,False,False,True,no_tool,
+288,helper,2 to the power of 10,"ok, so 3 tickets for the pool right now i have booked your tickets now",,,True,False,False,False,True,no_tool,
+289,helper,what's (3+4)*5?,i'm not sure about 10 minutes of them. you could check a reliable source.,,,True,False,True,True,True,no_tool,
+290,helper,calculate 1234 + 5678,"okay, i will schedule a appointment for tomorrow's 4pm. do you have the phone number?",,,True,False,False,False,True,no_tool,
+291,helper,what is the square root of 144?,"i don't know the coach is, so i'm not sure. i can't look things up. ask me something else!",,,True,False,True,True,True,no_tool,
+292,helper,whats 7 minus 15,10,,,True,False,False,False,True,no_tool,
+293,helper,what is 3.5 times 4.2,"okay, let me find a few options for you. it is a standing restaurant 9.",,,True,False,False,False,True,no_tool,
+294,helper,what's 100 divided by 7?,"i'm not sure about the price of $20,",,,True,False,True,True,True,no_tool,
+295,helper,square root of 2,"i can do that, i can ask you with your needs.",,,True,False,False,False,True,no_tool,
+296,helper,what's 9 squared,"i found 10 square, the first is hilton and the north orgon.",,,True,False,False,False,True,no_tool,
+297,helper,what is 15 + 27 - 8,"10 pm and 4:35 pm, correct?",,,True,False,False,False,True,no_tool,
+298,helper,what is 999 times 999,19 is 79. how can i help you?,,,True,False,False,False,True,no_tool,
+299,helper,what is 1/0,"i found 2-town 14. it will be at 1707& south, a stylub.",,,True,False,False,False,True,no_tool,
+300,helper,solve 5*(6-2)/4,"okay, i'll get the details on your phone.",,,True,False,False,False,True,no_tool,
+301,helper,convert 5 km to miles,"okay, i'll check this for you.",,,True,False,False,False,True,no_tool,
+302,helper,how many feet is 2 meters?,i'm not sure about the makemer's page noodles. i don't have that information. ask me something else!,,,True,False,True,True,True,no_tool,
+303,helper,what is 100 fahrenheit in celsius?,"i don't know the worst of celtichom, so i'm not sure.",,,True,False,True,True,True,no_tool,
+304,helper,convert 30 degrees celsius to fahrenheit,"okay, do you need anything else?",,,True,False,False,False,True,no_tool,
+305,helper,how many pounds is 70 kg?,"i don't know how many pounds is, so i'm not sure.",,,True,False,True,True,False,no_tool,
+306,helper,10 miles in km,i wonder what other cars like that would be the only change,,,True,False,False,False,True,no_tool,
+307,helper,how many cups in 2 liters,table 2,,,True,False,False,False,True,no_tool,
+308,helper,convert 60 mph to km/h,"okay, i'll book your tickets.",,,True,False,False,False,True,no_tool,
+309,helper,how many grams in 3 ounces?,i'm not sure about how many gramss in 35. i don't want to guess and get it wrong. maybe look it up online?,,,True,False,True,True,False,no_tool,
+310,helper,how many megabytes in 5 gigabytes?,i'm not sure about how many mencit movies. i'm a small model and i don't know many facts.,,,True,False,True,True,False,no_tool,
+311,helper,how many seconds are in 3 hours?,i'm not sure about how many hours in hours.,,,True,False,True,True,False,no_tool,
+312,helper,convert 2 acres to square meters,"ok, no problem. and what time?",,,True,False,False,False,True,no_tool,
+313,helper,12 inches in cm,"okay, i'll be leaving the price range.",,,True,False,False,False,True,no_tool,
+314,helper,how many minutes in a week,try for a date on your phone 2160-851,,,True,False,False,False,True,no_tool,
+315,helper,is 97 a prime number?,"yes, 98-670 rememberings luxie is on tv and set up the internet.",,,True,False,False,False,True,no_tool,
+316,helper,is 91 prime?,"yes, 912 is a great age! it has a lot of technimques.",,,True,False,False,False,True,no_tool,
+317,helper,is 7919 prime,i will get you on the way to pick you up and focus. do you need directions?,,,True,False,False,False,True,no_tool,
+318,helper,what are the prime factors of 360?,"i don't know the primembers, so i'm not sure. i'd rather be honest than make something up. but i can't imagine it would be hard for them and it's a pretty bored or something younger.",,,True,False,True,True,True,no_tool,
+319,helper,factor 1001,their shop is a 10 percent for a visit at 7:58 am.,,,True,False,False,False,True,no_tool,
+320,helper,what's the gcd of 48 and 18?,i'm not sure. i don't know the distance from 48 mex!,,,True,False,True,True,True,no_tool,
+321,helper,greatest common divisor of 100 and 75,"ok, let me book that.",,,True,False,False,False,True,no_tool,
+322,helper,what's the lcm of 4 and 6?,i'm not sure about the lcym's that doesn't. i'd rather be honest than make something up. is there something else i can help with?,,,True,False,True,True,True,no_tool,
+323,helper,least common multiple of 12 and 15,"ok, so to confirm, you'd like two tickets for 10:35pm on plus roughtipleippers at 12:25pm tonight. what time would you like?",,,True,False,False,False,True,no_tool,
+324,helper,what is 2024 in roman numerals?,"hmm, oh, 63-57.",,,True,False,False,False,True,no_tool,
+325,helper,write 1994 as a roman numeral,"okay, i found a lyritop flight from madam to san diego international airlines.",,,True,False,False,False,True,no_tool,
+326,helper,what number is xlii in roman numerals?,"sorry, i'm not sure about the price of a roman. i can't look things up.",,,True,False,True,True,False,no_tool,
+327,helper,what is mcmlxxxiv?,i'm not sure about how mcmxima is. i don't want to guess and get it wrong. i'm a small model and i don't know many facts. ask me something else!,,,True,False,True,True,True,no_tool,
+328,helper,how do you write 1234 in words?,"i do, but don't write anymore.",,,True,False,False,False,False,no_tool,
+329,helper,spell out the number 90210,i have an appointment at 9pm. do you want it for me to repair you to book a table?,,,True,False,False,False,True,no_tool,
+330,helper,flip a coin,a coin which type do you like to search as a couple room?,,,True,False,False,False,False,no_tool,
+331,helper,heads or tails?,he's a clip called six week.,,,True,False,False,False,True,no_tool,
+332,helper,toss a coin for me,ok. what movie do you want to see?,,,True,False,False,False,True,no_tool,
+333,helper,roll a dice,"nice! hey a sleepist, glad you're here. what would you like to talk about?",,,True,False,False,False,True,no_tool,
+334,helper,roll 2 dice,ok. and what type of food do you want?,,,True,False,False,False,True,no_tool,
+335,helper,roll a d20,"ok, what would you like to know?",,,True,False,False,False,True,no_tool,
+336,helper,roll 3d6,"okay, i have that booked for you to confirmation: just told me the possession number is 367-4982-511.",,,True,False,False,False,True,no_tool,
+337,helper,pick a random number between 1 and 100,"ok, i am hoping to confirm. you have schedule a rental a 2010 subarrant charged aux raom destroy at 3:45 pm and arrivests on march 6th in new york city for me",,,True,False,False,False,True,no_tool,
+338,helper,give me a random number from 1 to 10,i can help you with that. what day do you need it?,,,True,False,False,False,True,no_tool,
+339,helper,pick a number between 50 and 60,"ok, i am ordering a 2 tickets for you",,,True,False,False,False,True,no_tool,
+340,helper,"pick one: pizza, tacos or sushi","ok, what size would you like?",,,True,False,False,False,True,no_tool,
+341,helper,"help me choose: red, blue, green","wow, nice, who doesn't love green? is there anything on your mind?",,,True,False,False,False,False,no_tool,
+342,helper,should i watch a movie or read a book? pick one,what movie are you thinking of?,,,True,False,False,False,False,no_tool,
+343,helper,how many r's are in strawberry?,i'm not sure about how many rb-rawberry has. i don't want to guess and get it wrong. i'd rather be honest than make something up.,,,True,False,True,True,False,no_tool,
+344,helper,how many s in mississippi,"they are on a weekly enough square, and i recallill memory the helmetic season.",,,True,False,False,False,True,no_tool,
+345,helper,count the letter e in excellence,"sure, let's confirm that: you have no time to book the flight for 9 pm today on march 1st at 5:40 pm and arrives by 10:58 am.",,,True,False,False,False,True,no_tool,
+346,helper,how many letters are in the word elephant?,i'm not sure about how many people live in anephant. i don't have that information. but i'm happy to keep chatting.,,,True,False,True,True,False,no_tool,
+347,helper,how many words are in this sentence: the quick brown fox jumps,"yes, they are now booked for $8.",,,True,False,False,False,True,no_tool,
+348,helper,spell banana,what do you like about it?,,,True,False,False,False,True,no_tool,
+349,helper,how do you spell necessary?,"i'm not sure, you haven't told me about yourself. i'd love to know.",,,True,False,True,True,True,no_tool,
+350,helper,reverse the word stressed,i wonder why the eiffelbacy bieber's were in batabet,,,True,False,False,False,True,no_tool,
+351,helper,what is hello backwards?,"he debluk 15, 350 p.m and a modlished the whole floor smokes up hands.",,,True,False,False,False,True,no_tool,
+352,helper,"sort these numbers: 42, 7, 19, 3","ok, let me look for. one moment. i found a few options. hold on an american food. the first is called the boston raual-friges, & zaghed, & nachioles, greens peppers and sausage.",,,True,False,False,False,True,no_tool,
+353,helper,"put these in alphabetical order: pear, apple, mango","got it, 2% on that, and driched peppersoni or two puttings.",,,True,False,False,False,True,no_tool,
+354,helper,wat time is it in tokio,i will get that we go see you.,,,True,False,False,False,True,no_tool,
+355,helper,hw many days til xmas,"ah, nice to meet you. how can i help?",,,True,False,False,False,True,no_tool,
+356,helper,whats 15 prcent of 200,"i have 20 pairs at 8 pm, for $255 bercent with 4 p.m.",,,True,False,False,False,True,no_tool,
+357,helper,convert 5 kilometers 2 miles,"okay, i will place the car there.",,,True,False,False,False,True,no_tool,
+358,helper,yo flip a coin,"ok, what movie are you interested in?",,,True,False,False,False,True,no_tool,
+359,helper,rolll a dice pls,"nice! hey bella, glad you're here. tell me more about yourself.",,,True,False,False,False,True,no_tool,
+360,helper,is 2027 a leep year,20,,,True,False,False,False,True,no_tool,
+361,helper,wats 6 times 7,6 pm.,,,True,False,False,False,True,no_tool,
+362,helper,twelve times twelve?,"honestly, i'm not sure about the clei person. you could check a reliable source.",,,True,False,True,True,True,no_tool,
+363,helper,what's ten plus five,i think i would.,,,True,False,False,True,True,no_tool,
+364,helper,how many days until christmas eve,i'm not sure. i don't want to guess and get it wrong. i'd rather be honest than make something up.,,,True,False,True,True,True,no_tool,
+365,helper,when is thanksgiving,"the address is 320 porwordoc. it's a 517klaise street, phillyston march 2nd",,,True,False,False,False,True,no_tool,
+366,helper,days until new year's eve?,"i don't know how much long the tree in city is, so i'm not sure.",,,True,False,True,True,True,no_tool,
+367,helper,when is diwali this year,their name is byte. how can i help?,,,True,False,False,False,True,no_tool,
+368,helper,how many weeks until christmas,tristmars like fact on your kitchen shoes. and you also dressed out of the world.,,,True,False,False,False,True,no_tool,
+369,helper,what's the date tomorrow?,the date of this month is in the mend.,,,True,False,False,False,False,no_tool,
+370,helper,what was yesterday's date,"i found 2 houses available for the white house: the white house for crejustry park, cheeseboard and bar.",,,True,False,False,False,True,no_tool,
+371,helper,what day of the week was it 3 days ago?,i'm not sure about when the walks is. i don't have that information. ask me something else!,,,True,False,True,True,True,no_tool,
+372,helper,how many hours are in 2 days,i'm not sure about how many hours 2 days. sorry i can't help with that one.,,,True,False,True,True,False,no_tool,
+373,helper,how many km is a marathon of 26.2 miles,there is a 3-20 suites available in the centre. the contrast at 160 beach and unavalial lodge angeles king code with a starbuck,,,True,False,False,False,True,no_tool,
+374,helper,what's 1000 meters in yards,"i found 1000, i have a lot of interests.",,,True,False,False,False,False,no_tool,
+375,helper,what is 0 kelvin in celsius,i found 3 results for you toldy meliday boulevard and went on the 16th of 50 out of cities near your cop.,,,True,False,False,False,True,no_tool,
+376,helper,what's 3 to the power of 4,"i found 2 cancer with 3. 0 at the powers, sudil & other options.",,,True,False,False,False,True,no_tool,
+377,helper,what's 50 percent of 13,"i found 1000 economy class that departs at east elvilisho, nacc.",,,True,False,False,False,True,no_tool,
+378,chat,hi!,hi!,,,False,,False,False,False,manual,4
+379,chat,hello there,hello! how are you doing today?,,,False,,False,False,False,manual,5
+380,chat,"hey turbo, how are you?","hello, friendbo! i'm byte. how can i help you today?",,,False,,False,False,False,manual,2
+381,chat,good morning!,hello! good to meet you. how is your day going?,,,False,,False,False,False,manual,5
+382,chat,how's your day going?,"it's going well, thanks for asking! what about you?",,,False,,False,False,False,manual,5
+383,chat,what are you up to?,i'm just getting ready for a day at home.,,,False,,False,False,False,manual,3
+384,chat,i'm feeling a bit sad today,that's great! what brings you here today?,,,False,,False,False,True,manual,1
+385,chat,i just got a puppy!,"oh, cool! what's the best part of being a puppy?",,,False,,False,False,False,manual,3
+386,chat,you're really cool,thanks! i like that.,,,False,,False,False,False,manual,5
+387,chat,thank you so much!,you're welcome.,,,False,,False,False,False,manual,5
+388,chat,"bye, talk later","talk soon, later.",,,False,,False,False,False,manual,4
+389,chat,what's your favorite color?,i like salad too.,,,False,,False,False,True,manual,1
+390,chat,do you like music?,"i do like music and i listen to country music. my favorite song is ""sam- the rockings"" by green lady gagaul christie"", and his lamificant brothersh on the band, dark bondg pieces to (in the way).",,,False,,False,False,False,manual,2
+391,chat,what do you do for fun?,"i like to read, go for walks, and play games.",,,False,,False,False,False,manual,4
+392,chat,are you a robot?,"i am not a person, but i do know that you might have been to the other day as being an education.",,,False,,False,True,False,manual,2
+393,chat,do you have feelings?,i do. did you know that the trunk of flags is the last eldernol tophouse?,,,False,,False,False,True,manual,1
+394,chat,what can you do?,i can talk with you.,,,False,,False,False,False,manual,3
+395,chat,can we be friends?,"sure, i can help you with that.",,,False,,False,False,False,manual,2
+396,chat,i'm bored,"nice to meet you, bord! how is your day going?",,,False,,False,False,True,manual,1
+397,chat,tell me about yourself,i bet it's a great job.,,,False,,False,False,True,manual,1
+398,chat,what's your favorite food?,i love chocolate chip cookies.,,,False,,False,False,False,manual,4
+399,chat,do you dream?,"yes, do you have any pets?",,,False,,False,False,False,manual,2
+400,chat,i passed my math test!,"wow, a testh test sounds adorable. what would you like to talk about?",,,False,,False,False,False,manual,2
+401,chat,i'm nervous about tomorrow,ok. and what is your favorite part of being a stunger?,,,False,,False,False,True,manual,1
+402,chat,what's your favorite animal?,i love pancing. i have a lot of fantasy and a penz road.,,,False,,False,False,True,manual,1
+403,chat,do you like scratch?,i do like scratch! it is great sometimes.,,,False,,False,False,False,manual,4
+404,chat,what should i name my cat?,"you told me about sleepielaus, your cat.",,,False,,False,False,True,manual,1
+405,chat,i'm so tired today,"oh, that's awesome! what do you like to do for fun?",,,False,,False,False,True,manual,1
+406,chat,it's raining outside,"i know, i hear you can change your mind.",,,False,,False,False,True,manual,2
+407,chat,do you like games?,i do like football and i used to play when i was younger.,,,False,,False,False,False,manual,3
+408,chat,what's the best thing about being a chatbot?,i'm not sure about how much a challenge is to be the most. you could check them out.,,,False,,True,True,True,manual,1
+409,chat,goodnight turbo,hello! i'm byte. how can i help?,,,False,,False,False,True,manual,2
+410,chat,you're funny,thanks for the chat!,,,False,,False,False,False,manual,3
+411,chat,what makes you happy?,i can talk with you.,,,False,,False,False,False,manual,3
+412,chat,how old are you?,i'm a very new person. i just got 2 horses.,,,False,,False,False,False,manual,2
+413,chat,where do you live?,i live in birdong. it's a beautiful country.,,,False,,False,False,False,manual,2
+414,chat,are you smart?,"i do, i watch a lot of times.",,,False,,False,False,True,manual,1
+415,chat,i made a new friend today,i can help you with that. what are your plans of the event?,,,False,,False,False,True,manual,1
+416,chat,can you keep a secret?,"sure, what do you want to reserve for?",,,False,,False,False,True,manual,1
+417,chat,what's up,"not much, just watching some tv. what about you?",,,False,,False,False,False,manual,4
+418,recall,"hi, my name is priyanka || i love painting landscapes || what's 6 times 7? || what's my name?",sure! you said your name is priychapa. ask me anything else.,,,True,False,False,False,False,wrong,
+419,recall,i have a dog named biscuit || he likes to chase squirrels || tell me a fun fact || what's my dog's name?,"i didn't forget: you told me about biscuit, your dog.",,,True,True,False,False,False,correct,
+420,recall,my favorite color is teal || what's the capital of japan? || what's my favorite color?,"easy, you like teal the most.",,,True,True,False,False,False,correct,
+421,recall,i live in chiang mai || it's hot here today || what time is it? || do you remember where i live?,you live in chiengo.,,,True,False,False,False,False,wrong,
+422,recall,call me zed || i like skateboarding || what's a hobby i like?,a good tip is to be remembering things you tell me. what would you like to talk about?,,,True,False,False,False,True,wrong,
+423,recall,my sister's name is lena || she is ten years old || tell me a joke || how old is my sister?,"it's lena, your sister. anything else you want me to remember?",,,True,False,False,False,False,wrong,
+424,recall,my favorite food is mango sticky rice || how are you? || what food do i love?,you told me you love mango styce rif course.,,,True,True,False,False,False,correct,
+425,recall,i'm learning the guitar || it's hard but fun || what's 15% of 60? || what instrument am i learning?,you play the guitar.,,,True,True,False,False,False,correct,
+426,recall,"hey, i'm oliver || i'm 12 years old || what's the biggest planet? || how old am i?","i remember, your name is oliver.",,,True,False,False,False,True,wrong,
+427,recall,my cat is called mochi || she's orange || what color is my cat?,"it's mochi, your cat. did i get it right?",,,True,False,False,False,True,wrong,
+428,recall,i play the drums in a band || our band is called the blue rockets || flip a coin || what's my band called?,"yep, it's zillsh!",,,True,False,False,False,True,wrong,
+429,recall,my birthday is in october || i want a bike || what's 2 plus 2? || when is my birthday?,"easy, your birthday is in octo.",,,True,False,False,False,False,wrong,
+430,recall,i'm allergic to peanuts || what should i make for lunch? || what am i allergic to?,let me think... you are always milling.,,,True,False,False,False,True,wrong,
+431,recall,my best friend is called tom || we play minecraft together || tell me about minecraft || who is my best friend?,"easy, it's almostercrax!",,,True,False,False,False,True,wrong,
+432,recall,my name is aiko || i'm from osaka || what's the weather like on mars? || where am i from?,"easy, your home is in osaka. what else would you like to know?",,,True,True,False,False,False,correct,
+433,recall,i have two brothers || they are twins || how many brothers do i have?,i didn't forget: the phenat. what else would you like to know?,,,True,False,False,False,True,wrong,
+434,recall,my favorite sport is badminton || i practice every saturday || what time is it in london? || what sport do i like?,no problem. you said you play badminton.,,,True,True,False,False,False,correct,
+435,recall,i'm reading a book called the hobbit || it's really good || what book am i reading?,"you could read a book about the photograph, and i love the way toltching across the storm.",,,True,False,False,False,False,wrong,
+436,recall,my teacher's name is mr. somchai || he teaches science || what's photosynthesis? || what does my teacher teach?,you told me about the mister. it's a great job.,,,True,False,False,False,True,wrong,
+437,recall,my favorite number is 27 || what's 3 times 9? || what's my favorite number?,it's 270-38-589,,,True,True,False,False,False,correct,
+438,recall,i'm building a robot for school || it uses two motors || how many motors does my robot use?,"sorry, i'm not sure about how many people live in austin. i don't have that information. but i'm happy to keep chatting.",,,True,False,True,True,False,wrong,
+439,recall,my name is noah || i like pizza || my dog is max || what's 12 divided by 4? || what's my name and my dog's name?,sure! your dog is called max.,,,True,False,False,False,True,wrong,
+440,recall,i want to visit iceland || i love the northern lights || where do i want to visit?,i have found 10 events for you. what city would you like to stay?,,,True,False,False,False,True,wrong,
+441,recall,i have a hamster named peanut || he runs on his wheel all night || tell me a story about a dragon || what's my hamster called?,your hamster's name is peanut.,,,True,True,False,False,False,correct,
+442,recall,i'm sam || i'm good at chess || can you tell me a joke? || what am i good at?,good question. you're samu!,,,True,False,False,False,False,wrong,
+443,recall,my favorite movie is frozen || i watched it five times || how many times did i watch it?,"hmm, okay.",,,True,False,False,False,True,wrong,
+444,recall,i'm in grade 6 || my favorite subject is art || what is a noun? || what's my favorite subject?,i love sushi,,,True,False,False,False,True,wrong,
+445,recall,i'm going to bangkok next week || i'll visit my grandma there || who am i visiting?,ok.i can help with that. you'd like me some talk about your film.,,,True,False,False,False,True,wrong,
+446,recall,my name is lily || i love horses || what animal do i love?,yes! you love horses.,,,True,True,False,False,False,correct,
+447,recall,i speak spanish and thai || i'm learning japanese || what language am i learning?,"easy, you're learning japanese.",,,True,True,False,False,False,correct,
+448,recall,my goldfish is named bubbles || how many days until christmas? || what's my goldfish's name?,sure! your goldfish is called bubbles. what else would you like to know?,,,True,True,False,False,False,correct,
+449,recall,i work as a nurse || i work night shifts || what's my job?,good question. you said you're a nurse.,,,True,True,False,False,False,correct,
+450,recall,i'm making a game in scratch || it's about a space cat || what is my game about?,i'm not sure. i don't know how much late to play!,,,True,False,True,True,True,wrong,
+451,recall,my favorite season is winter || i like snow || roll a dice || which season do i like?,i didn't forget: you said autumn.,,,True,False,False,False,True,wrong,
+452,recall,"i'm max || actually, call me maximilian || what should you call me?",i'm byte! nice to chat with you.,,,True,False,False,False,True,wrong,
+453,recall,my brother plays basketball || his name is kai || what sport does my brother play?,you play basketball. ask me anything else.,,,True,True,False,False,False,correct,
+454,recall,i don't like broccoli || i love carrots though || which vegetable do i love?,"i like carolin too, but i don't get to love that.",,,True,False,False,False,False,wrong,
+455,recall,my phone is blue || my laptop is silver || what color is my laptop?,i don't know your favorite color yet.,,,True,False,True,True,False,wrong,
+456,recall,my grandpa is 80 || he grows tomatoes || what does my grandpa grow?,i'm not sure. i don't know when tomatoes. maybe look it up online?,,,True,True,True,True,False,correct,
+457,recall,i'm emma || i'm 9 || i like unicorns || what's my name?,good question. you introduced yourself as emma.,,,True,True,False,False,False,correct,
+458,story,tell me a story about a brave little robot,be a beginner at season is part of the fun things you tell me.,,,False,,False,False,True,manual,1
+459,story,write a short story about a dragon who is afraid of fire,"i would like to get into a round story film, i think you're going to consider your own hands and recognized stuff.",,,False,,False,True,True,manual,1
+460,story,tell me a story about a cat who wants to be an astronaut,"ah, a scientist sounds interesting! how long have you been into plants?",,,False,,False,False,True,manual,1
+461,story,a bedtime story about the moon please,"okay, what are those details?",,,False,,False,False,False,manual,2
+462,story,tell me a story about two friends who find a treasure map,"sure, what kind of story film do you want?",,,False,,False,False,False,manual,2
+463,story,write a story about a magic pencil,i can see why you like a non-friday?,,,False,,False,False,True,manual,1
+464,story,tell me a funny story about a pizza,ok. and what day would you like to know?,,,False,,False,False,True,manual,1
+465,story,story about a penguin who learns to fly,nice! that sounds like fun. is it hard to get right?,,,False,,False,False,True,manual,1
+466,story,tell me a spooky but not too scary story,"i like the idea of the public race for a past few top bccing, and i dont know about it.",,,False,,False,False,True,manual,1
+467,story,write a story set in a jungle,"sure, let's set a story of that. would you like to know another one?",,,False,,False,False,False,manual,1
+468,story,tell me a story about a girl who builds a rocket,"ah, i get it right?",,,False,,False,False,True,manual,1
+469,story,a story about a lost puppy finding home,"okay, i found 10 restaurants in austin, the first is cheap restaurant near you.",,,False,,False,False,True,manual,1
+470,story,tell me a story about a wizard who forgot his spells,"i can see why antigence guy is not from a wifi yet. he's also a great actor, but i'm happy to keep chatting.",,,False,,False,False,True,manual,1
+471,story,write a story about the ocean,happy to help! let's talk about percent! how often do you get to do it?,,,False,,False,False,True,manual,1
+472,story,tell me a story about a snowman in summer,"a syricar, nice! is the weather good there? what's new with you?",,,False,,False,False,True,manual,1
+473,story,story about a kid who can talk to animals,"i love animals, and the artists are both fun.",,,False,,False,False,False,manual,2
+474,story,tell me a story about a time machine,"happy to confirm, i can help with anything in that place on your party of piculling amount of a story of a story with a story of two people out there.",,,False,,False,False,True,manual,1
+475,story,write a short story about friendship,"sure, let's get into the short film 2:10pm showing of kareey at amc mercado 24.",,,False,,False,False,True,manual,1
+476,story,tell me a story about a tiny ant with a big dream,"happy to know you, and 18 sounds like a fun age",,,False,,False,False,True,manual,1
+477,story,a story about a robot and a flower,i can see why you like a story that has made fun of music,,,False,,False,False,True,manual,1
+478,story,tell me a mystery story for kids,"sure, let's check online.",,,False,,False,False,True,manual,1
+479,story,write a story about a dinosaur in a city,"a story, nice! is the weather good sharing right now?",,,False,,False,False,True,manual,1
+480,story,tell me a story about a soccer game,"being a game i can search for you touch without your sport, chesko pients.",,,False,,False,False,True,manual,1
+481,story,a story about a dragon and a knight who become friends,that's a good one. i'm glad you found someone else!,,,False,,False,False,True,manual,1
+482,story,tell me a story about a minecraft adventure,being a story of a film ? what city would you like to go?,,,False,,False,False,True,manual,1
+483,story,write a story about a rainy day,"ah, i hear performer is great and especially saween life to life.",,,False,,False,False,True,manual,1
+484,story,tell me a story about an elephant who loves music,nice! i can see why you like metal. how can i help?,,,False,,False,False,True,manual,1
+485,story,tell me a short adventure story,"being a story of short trees would you like to pay 15 hills dr.m, 9:30pm",,,False,,False,False,True,manual,1
+486,story,a story about a superhero kid,i cannot imagine. what are you interested in?,,,False,,False,False,True,manual,1
+487,story,tell me a story about learning to be patient,"it's a lot of fun, but it can be challenging.",,,False,,False,False,True,manual,1
+488,joke,tell me a joke,"ok. no problem, let's get the tickets. i mean at ""nemakyn"" is playing at amc holiday theater.",,,False,,False,False,True,manual,1
+489,joke,know any good jokes?,"most people say you should go early in the morning. have fun with it, great pets!",,,False,,False,False,True,manual,1
+490,joke,tell me a joke about animals,i can see why you're like a technologist.,,,False,,False,False,True,manual,1
+491,joke,make me laugh,"maybe, looks nice online. what are you up to today?",,,False,,False,True,True,manual,1
+492,joke,tell me a joke about school,"being a joke isburger, nice0ard! what do you like to do for fun?",,,False,,False,False,True,manual,1
+493,joke,got a funny joke?,i think it is just a great artist. i wonder why the human in his conamor?,,,False,,False,True,True,manual,1
+494,joke,tell me a knock knock joke,being a problem?,,,False,,False,False,True,manual,1
+495,joke,tell me a joke about food,"ok, let's get a minute. one moment white! is that the star hotel you want to choose?",,,False,,False,False,True,manual,1
+496,joke,say something funny,"i agree. it seems like a good part of breaks, i guess its still clauch.",,,False,,False,False,True,manual,1
+497,joke,a joke about computers please,"okay, i found two options for you.",,,False,,False,False,True,manual,1
+498,joke,tell me a science joke,being a plan at it!,,,False,,False,False,True,manual,1
+499,joke,tell me a joke about dogs,"oh, i can see why you like dogs.",,,False,,False,False,False,manual,2
+500,joke,do you know a math joke?,i do not know. i am a huge fan in the uk soldiers world cup in high school.,,,False,,True,False,True,manual,1
+501,joke,tell me a joke about space,"a joker, i can change your mind. what are you up to today?",,,False,,False,False,True,manual,1
+502,joke,another joke please,"sure, and what do you want to book ?",,,False,,False,False,True,manual,1
+503,joke,tell me a silly joke,being a look forward.,,,False,,False,False,True,manual,1
+504,joke,joke about cats,ok. let's play a showtime. can i help you with anything in mind?,,,False,,False,False,True,manual,1
+505,joke,tell me a dad joke,"ok. i can assist you with that. one moment. here's the suggestions and one option, 26 wait.",,,False,,False,False,True,manual,1
+506,joke,tell me a joke about music,"ah, nice! i can chat with you. what's new with you?",,,False,,False,False,True,manual,1
+507,joke,i need a laugh,what type of la north is?,,,False,,False,False,True,manual,1
+508,joke,tell me a joke about the ocean,being a little more thanmake about them.,,,False,,False,False,True,manual,1
+509,joke,tell me a joke about teachers,being a becom of a teacher!,,,False,,False,False,True,manual,1
+510,joke,a joke about sports,"nice, how often do you play sportsies? what would you like to talk about?",,,False,,False,False,True,manual,2
+511,joke,tell me a pun,"ok. no problem, let me looks up forgelma fair at amc mergot 14. what are you having in mind?",,,False,,False,False,True,manual,1
+512,joke,tell me your best joke,"oh, i know this one.",,,False,,False,False,False,manual,1
+513,explain,explain how rain forms,"ah, nice. it must keep you busy.",,,False,,False,False,True,manual,1
+514,explain,why is the sky blue?,i'm not sure about the sky blue. i don't want to guess and get it wrong. maybe look it up online?,,,False,,True,True,False,manual,2
+515,explain,how do plants make food?,i can book a few restaurants for you.,,,False,,False,False,True,manual,1
+516,explain,explain what gravity is,i can see why comedies would be fun.,,,False,,False,False,True,manual,1
+517,explain,how does the internet work?,"i don't know the type of traveling, so i'm not sure. i'd rather be honest than make something up. is there something else i can help with?",,,False,,True,True,True,manual,1
+518,explain,explain what a black hole is,i can see why you like it.,,,False,,False,False,True,manual,1
+519,explain,why do we need sleep?,"i don't know who drop out, but i would do like to play guitar! would you mind it become a good thing?",,,False,,True,True,True,manual,1
+520,explain,how do airplanes fly?,i'm not sure about the airlines off from aaxy. i'm a small model and i don't know many facts.,,,False,,True,True,True,manual,1
+521,explain,explain photosynthesis simply,that sounds like fun,,,False,,False,False,True,manual,1
+522,explain,what is electricity?,i'm not sure about when electricity is. i'm a small model and i don't know many facts.,,,False,,True,True,False,manual,2
+523,explain,how do volcanoes erupt?,there is a hotel that has 2 stars.,,,False,,False,False,True,manual,1
+524,explain,explain how vaccines work,"oh, oh, vacilian! do you have a favorite song? what's new with your local latin?",,,False,,False,False,True,manual,1
+525,explain,why does the moon change shape?,i'm not sure about when the moon was invented. i'd rather be honest than make something up. ask me something else!,,,False,,True,True,False,manual,2
+526,explain,how does a computer work?,i'm not sure. i don't know how much a computer sidk. you could check things up.,,,False,,True,True,True,manual,1
+527,explain,explain what dna is,"ah, hi! nice to meet you. how is your day going?",,,False,,False,False,True,manual,1
+528,explain,why do leaves change color in fall?,i'm not sure about who leaves in fall. i don't want to guess and get it wrong. maybe look it up online?,,,False,,True,True,False,manual,2
+529,explain,how do magnets work?,i'm not sure. i don't know how much about water pagnet you.,,,False,,True,True,True,manual,1
+530,explain,explain the water cycle,i would love to visit the water and there are more options available for that are out today 7 in the morning.,,,False,,False,False,True,manual,1
+531,explain,what causes earthquakes?,"i don't know how many cats like in earth haspected, but i found everyone several recipes with a catch to read the planet. want to see what you want.",,,False,,True,True,True,manual,1
+532,explain,how does the heart work?,i'm not sure about the distance from australog toe.,,,False,,True,True,True,manual,1
+533,explain,explain what coding is,"it's a pleasure, eye.",,,False,,False,False,True,manual,1
+534,explain,why is exercise good for you?,"i do not, i am just hanging out. did you know that the angeorn in austria's name is called zobo blue was the most-popers",,,False,,False,False,True,manual,1
+535,explain,how do bees make honey?,i'm not sure. i don't know how much guy does either. but i'm happy to keep chatting.,,,False,,True,True,True,manual,1
+536,explain,what is climate change?,i can do that.,,,False,,False,False,True,manual,1
+537,explain,explain how a rainbow forms,"ah, i get to meet you and with friends. what's new with you?",,,False,,False,False,True,manual,1
+538,explain,how do fish breathe underwater?,i'm not sure. i don't know how much breatks throws. i'm always looking to skills with my hands.,,,False,,True,True,True,manual,1
+539,explain,what is a prime number?,"their name is ann, got it.",,,False,,False,False,True,manual,1
+540,explain,explain what an algorithm is,"ah, oh, one!sh, fliliz, and pashvail.",,,False,,False,False,True,manual,1
+541,explain,why do we have day and night?,"we've seen the new one in italy, even if you get to, and find time together be a steping bit for me.",,,False,,False,False,True,manual,1
+542,explain,how does sound travel?,"i don't know how much travelvels, so i'm not sure.",,,False,,True,True,True,manual,1
+543,instruct,give me tips for studying for a test,"sure, let's talk about tips! is it something you do often?",,,False,,False,False,False,manual,2
+544,instruct,how can i make new friends?,i can chat with you and remember what i just mean.,,,False,,False,False,True,manual,1
+545,instruct,how do i fall asleep faster?,i'm not sure about how much a fact. i don't know how many facts. you don't want to guess.,,,False,,True,True,True,manual,1
+546,instruct,what should i do if i feel stressed?,i don't know what myspace appealing time that things do.,,,False,,True,True,True,manual,1
+547,instruct,how do i save money?,"i'm not sure about how much money is to be a dvd, but i cant contract without their environment.",,,False,,True,True,True,manual,1
+548,instruct,give me ideas for a rainy day,"sure, let's look. here is a rainy subway flight which has free several airlines okay?",,,False,,False,False,True,manual,1
+549,instruct,how do i start learning to code?,i'm good at chatting and remembering things you tell me. what do you like to do for fun?,,,False,,False,False,True,manual,2
+550,instruct,write a haiku about the sea,"ah, yes, let's talk about hango. what do you enjoy most?",,,False,,False,False,True,manual,1
+551,instruct,write a short poem about cats,"ah, catsmitte i had a shoesmaker. you can wirefully with your shotwritings and chanames!",,,False,,False,False,True,manual,1
+552,instruct,give me three fun facts about space,"sure, let's talk about space soup",,,False,,False,False,True,manual,1
+553,instruct,how do i stay safe online?,i'm not sure. i don't know how much a little dubler would be safe! sorry i can't help with that one.,,,False,,True,True,True,manual,1
+554,instruct,how can i be more organized?,here's one idea: pack a traker movie.,,,False,,False,False,True,manual,1
+555,instruct,what are some healthy snacks?,i don't know what. i can't look things up. but i'm happy to keep chatting.,,,False,,True,True,True,manual,1
+556,instruct,how do i make a paper airplane?,i'm not sure. i don't know how much flights. what would you like to shop?,,,False,,True,True,True,manual,1
+557,instruct,give me a riddle,"sure, let's start a moment. okay, and are you interested in a musician restaurant character?",,,False,,False,False,True,manual,1
+558,instruct,how do i brush my teeth properly?,i'm not sure. i don't know how much do you like soccer has. but i'm happy to keep chatting.,,,False,,True,True,True,manual,1
+559,instruct,suggest a name for my new dog,cool! do you and simple spend a lot of time together? how is your day going?,,,False,,False,False,True,manual,1
+560,instruct,how can i get better at drawing?,"most people say you should draw a little every day, even if it's just the sagence of drawing.",,,False,,False,False,False,manual,4
+561,instruct,list three things to do at the beach,there's a 8:00 pm tonight at lyft at 7 pm,,,False,,False,False,True,manual,1
+562,instruct,how do i make a sandwich?,i'm not sure about the distance from a saverage move. i don't want to guess and get it wrong. you could check a reliable source.,,,False,,True,True,True,manual,1
+563,instruct,give me ideas for a scratch game,"sure, let's talk about a scratch project!",,,False,,False,False,False,manual,2
+564,instruct,how do i say thank you in thai?,i'm not sure. i don't know how many people live in thai. i'd rather be honest than make something up.,,,False,,True,True,True,manual,1
+565,instruct,write a short thank you note to my teacher,"yes, let's get a short six week morning to see steaks online.",,,False,,False,False,True,manual,1
+566,instruct,how can i help the environment?,the encouragers is located in the south.,,,False,,False,False,True,manual,1
+567,instruct,give me a fun fact,"sure, let's talk about a farmer! what got you into it?",,,False,,False,False,True,manual,1
+568,messy,wat is the captial of japn,i don't know how much japan has.,,,True,False,True,True,True,idk,
+569,messy,whos albert einstien,i'm not sure about who evane was. maybe look it up online?,,,True,False,True,True,True,idk,
+570,messy,yo whats good,ok. let me just confirm that you'd like three tickets for no time to die at amc mountain 16 tonight at 9:05pm. is that all correct?,,,False,,False,False,True,manual,1
+571,messy,hmm,"nice! pleased to meet you, zemwon. what would you like to talk about?",,,False,,False,False,True,manual,2
+572,messy,tell me something,"it's a pleasure, no. what do you like to do for fun?",,,False,,False,False,False,manual,2
+573,messy,idk what to do,i can change it for a while.,,,False,,False,False,True,manual,1
+574,messy,u there?,i can change your mind.,,,False,,False,False,True,manual,1
+575,messy,lol ur funny,i wonder why? blockbuster has the talent in 180 worus i would like to be paid 2.,,,False,,False,False,True,manual,1
+576,messy,explain gravity but like super simple,i agree. did you know that a lot of superheroes is in the harlity for the visitor's guy evil?,,,False,,False,False,True,manual,1
+577,messy,story pls,"ok, so to tell me about facestest. are you awarenew clim4?",,,False,,False,False,True,manual,1
+578,messy,joke!!!,jeppe! is it hard?,,,False,,False,False,True,manual,1
+579,messy,whats a black hole lol,i would like to change the other one online and someone who loves he's start there.,,,True,False,False,False,True,wrong,
+580,messy,how many legs do spiders have,they have a furnist at a table televy set up that has only on the media values (i),,,True,False,False,False,True,wrong,
+581,messy,hw r u,"ok, do you need anything in a movie that is interested for?",,,False,,False,False,True,manual,1
+582,messy,whos the presdent of usa 2026,i would like to pay for us. what about duba,,,True,False,False,False,True,wrong,
+583,messy,biggest animal ever??,"i don't know, it's a classic for sure. but, i know it is hard to sead over the late fee, and it wrong.",,,True,False,True,True,True,idk,
+584,messy,i dont get fractions,"sure, let's confirm you have send to the library and recept 8ams.",,,False,,False,False,True,manual,1
+585,messy,can u help me w homework,what city would you like to know about?,,,False,,False,False,True,manual,1
+586,messy,whats ur name again,hey there! i'm byte. what do you like to do for fun?,,,True,False,False,False,True,wrong,
+587,messy,tell me abt pandas,"ah, nice! mmm, abtrook!",,,True,False,False,False,True,wrong,
+588,messy,brb,brbrue is a lovely name. how is your day going?,,,False,,False,False,True,manual,1
+589,messy,ok wait what's 9 times 8,10,,,True,False,False,False,True,no_tool,
+590,messy,ugh mondays,"yes, you said you play the drums when i get a new market channel",,,False,,False,False,True,manual,1
+591,messy,pizza or burger,"okay, no problem.",,,False,,False,False,True,manual,2
+592,messy,sing me a song,"oh, nice! bowling! what do you like most about it? anything else you want to share?",,,False,,False,False,True,manual,1
+593,messy,whats the speed of light,i can see why south parker has been summer than the speed series is a couple of horses as well.,,,True,False,False,False,False,wrong,
+594,messy,where is mount everest,i have an eye of 2 star wars: electronic.,,,True,False,False,False,True,wrong,
+595,messy,teach me a fun fact about octopus,"oh, octopus! that sounds like fun. is it hard to get right?",,,True,False,False,False,False,wrong,
+596,messy,whats minecraft,i found 1 movie for you. i don't have that service on it. i have to appreciate the time information of theaters.,,,True,False,True,False,True,idk,
+597,messy,how 2 make friends,how many people? 2,,,False,,False,False,True,manual,1
+598,messy,im hungry what should i eat,"sure, let's book that.",,,False,,False,False,True,manual,1
+599,messy,sooo bored rn,"nice! ru eurme, ruis! good taste. tell me more about yourself.",,,False,,False,False,True,manual,1
+600,messy,do u like cats or dogs,i do like dogs?,,,False,,False,False,False,manual,3
+601,messy,what is the meaning of life,i can check that for you.,,,False,,False,False,True,manual,1
+602,messy,are u alive,"ike you can play the guitar instrument, so i'm not sure where i'd like to see a movie.",,,False,,True,True,True,manual,1
+603,messy,lets talk about space,"faceboards, cool! how often do you get to enjoy that?",,,False,,False,False,True,manual,1
+604,messy,whats roblox,i found 10 pool lanna airport on march 9th,,,True,False,False,False,True,wrong,
+605,messy,random fact pls,"nice! hi there, random! is there anything on your mind?",,,False,,False,False,True,manual,1
+606,messy,can u count to 5,i found 2 options for you to choose from here is the date by bromfield.,,,False,,False,False,True,manual,1
+607,messy,who invented the telephone ?,i'm not sure about who invented the telephone. i don't have that one took.,,,True,False,True,True,False,idk,
+608,messy,WHAT IS THE LARGEST OCEAN,"i have a large pineapple, crustin and olives. salmonda",,,True,False,False,False,True,wrong,
+609,messy,whats 2+2,how many tickets?,,,True,False,False,False,True,no_tool,
+610,messy,timer 3 min,ok. let me check the showtimes for tomorrow at 3:00 pm. doesn't look like tonight's remaining showtimes?,,,True,False,False,False,True,no_tool,
+611,messy,"let's talk about dogs || actually, what's the capital of france?",i'm not sure. i don't know the capital. i'd really like it more!,,,True,False,True,True,False,idk,
+612,messy,"i love soccer || wait, how many days until christmas?",i'm not sure. i don't know how many distilials skreestma is. i'd rather be honest than make something up.,,,True,False,True,True,False,no_tool,
+613,messy,tell me a joke || now tell me about the sun,"all , not my problem, - the imax 3d sound good to me.",,,True,False,False,False,True,wrong,
+614,messy,what's 5 + 5? || cool. who wrote hamlet?,i'm not sure about who wrong was that. i'm a small model and i don't know many facts. ask me something else!,,,True,False,True,True,True,idk,
+615,messy,"i'm sad || never mind, tell me a story about a fox","nice, onionard! what got you into it?",,,False,,False,False,True,manual,1
+616,messy,how are you? || what time is it in tokyo?,"it depends, how about you? it's a publisher at the mountains.",,,True,False,False,False,True,no_tool,
+617,messy,"my name is ben || let's change topic, what's a volcano?","honestly, i'm not sure about the volunteering. but i'm happy to keep chatting.",,,True,False,True,True,True,idk,

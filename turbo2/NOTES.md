@@ -33,3 +33,16 @@
   The LR schedule (warmup 300, stable, decay over the last 20% of pretrain_steps) was in its stable phase, so
   the change did not alter any LR already used.
 - End of pretraining: 12,300 steps, 201.5M tokens, 8.536 h. sft_steps 2,600 -> 2,000 so total training stays ~10 h (SFT had not started).
+
+## Fix passes and ship (see README for full tables)
+- SFT end (step 14,300) auto eval: facts-in 66.3, confidently wrong 51.7, helpers 81.6, recall 37.5.
+- Fix 1 (helper phrasing, more no-fact grounded Q&A, recall/pronoun): CW 28.3 but over-hedged.
+- Fix 2 (less hedging): facts-in 77.1, recall 80.0, but CW 56.7.
+- Fix 3 (contrastive near-miss examples): facts-in 80.7, CW 26.7, helpers 94.7, recall 85.0, IDK 5.0
+  (the near-miss template "i'm not sure, my notes only say that ..." leaks into answerable prompts).
+- Shipped fix 3 (passes facts-in, recall, A/B). Fix passes ran after the 10 h main run: total 12.56 h.
+- Grader: IDK = decline phrase and no attempted answer; all stages re-graded with the final grader.
+- Manual grading (352 open-ended replies) and A/B (100) were done blind by me (Claude); styles are recognisable.
+- Found one dark joke (serial-killer reference) in the pretraining joke set after pretraining; later stages
+  use jokes_clean (6,954). Flagged in README.
+- AlpacaDataCleaned data is CC BY-NC 4.0 -> weights are non-commercial. Flagged in README.
