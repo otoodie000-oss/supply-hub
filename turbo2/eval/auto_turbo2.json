@@ -1,0 +1,32 @@
+{
+ "summary": {
+  "fact_in": {
+   "n": 166,
+   "correct": 128,
+   "pct": 77.1
+  },
+  "fact_out": {
+   "n": 60,
+   "correct": 1,
+   "pct": 1.7,
+   "confidently_wrong_pct": 56.7,
+   "hedged": 25
+  },
+  "helper": {
+   "n": 152,
+   "correct": 144,
+   "pct": 94.7
+  },
+  "recall": {
+   "n": 40,
+   "correct": 32,
+   "pct": 80.0
+  },
+  "messy": {
+   "n": 24,
+   "correct": 8,
+   "pct": 33.3
+  },
+  "idk_pct_answerable_all_items": 0.5
+ }
+}

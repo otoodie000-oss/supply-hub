@@ -11,7 +11,8 @@
  "data_seed": 1234,
  "data": {
   "pretrain": "/home/user/work/pack/pretrain2",
-  "sft": "/home/user/work/pack/sft"
+  "sft": "/home/user/work/pack/sft",
+  "fix": "/home/user/work/pack/fix1"
  },
  "pretrain_steps": 12300,
  "sft_steps": 2000,
@@ -24,5 +25,22 @@
  "sft_decay_frac": 0.3,
  "sft_final_frac": 0.1,
  "micro_batch": 16,
- "accum": 2
+ "accum": 2,
+ "fix_steps": 1150,
+ "fix_peak": 0.0002,
+ "fix_warmup": 30,
+ "more_fixes": [
+  {
+   "steps": 1150,
+   "peak": 0.0002,
+   "warmup": 30,
+   "data": "/home/user/work/pack/fix2"
+  },
+  {
+   "steps": 1150,
+   "peak": 0.0002,
+   "warmup": 30,
+   "data": "/home/user/work/pack/fix3"
+  }
+ ]
 }

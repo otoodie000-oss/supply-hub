@@ -37,6 +37,31 @@ from model import GPT, Config  # noqa: E402
 WORK = "/home/user/work"
 
 
+def fix_list(r):
+    """Fix passes after SFT: pass 1 from the fix_* keys, later passes from r["more_fixes"]."""
+    out = []
+    if r.get("fix_steps"):
+        out.append({"steps": r["fix_steps"], "peak": r["fix_peak"], "warmup": r["fix_warmup"], "data": r["data"].get("fix"),
+                     "name": "fix"})
+    for i, fx in enumerate(r.get("more_fixes", [])):
+        out.append(dict(fx, name="fix%d" % (i + 2)))
+    return out
+
+
+def phase_of(step, r):
+    S1, S2 = r["pretrain_steps"], r["sft_steps"]
+    if step < S1:
+        return "pretrain", 0, S1
+    if step < S1 + S2:
+        return "sft", S1, S1 + S2
+    base = S1 + S2
+    for fx in fix_list(r):
+        if step < base + fx["steps"]:
+            return fx["name"], base, base + fx["steps"]
+        base += fx["steps"]
+    return None, base, base
+
+
 def lr_at(step, r):
     S1, S2 = r["pretrain_steps"], r["sft_steps"]
     if step < S1:
@@ -48,6 +73,17 @@ def lr_at(step, r):
             return peak
         frac = (step - d0) / max(1, S1 - d0)
         return peak * (1 - frac * (1 - r["final_frac"]))
+    if step >= S1 + S2 and r.get("fix_steps"):
+        base = S1 + S2
+        for fx in fix_list(r):
+            if step < base + fx["steps"] or fx is fix_list(r)[-1]:
+                f = step - base
+                F, peak, wu = fx["steps"], fx["peak"], fx["warmup"]
+                if f < wu:
+                    return peak * (f + 1) / wu
+                frac = min(1.0, (f - wu) / max(1, F - wu))
+                return peak * (1 - frac * 0.9)
+            base += fx["steps"]
     s = step - S1
     peak, wu = r["sft_peak"], r["sft_warmup"]
     if s < wu:
@@ -161,11 +197,13 @@ def main():
                                 lr=r["peak"], betas=(0.9, 0.95), eps=1e-8)
     S1, S2 = r["pretrain_steps"], r["sft_steps"]
     step = state["step"]
-    if step >= S1 + S2:
+    phase, _, end_phase = phase_of(step, r)
+    if phase is None:
         print(json.dumps({"done": True, "step": step}))
         return
-    phase = "pretrain" if step < S1 else "sft"
-    data = Data(r["data"][phase], r.get("data_seed", 1234))
+    state["cursor"].setdefault(phase, 0)
+    dpath = r["data"].get(phase) or next(fx["data"] for fx in fix_list(r) if fx["name"] == phase)
+    data = Data(dpath, r.get("data_seed", 1234))
     fmodel = model if a.no_compile else torch.compile(model)
     mb, accum = r["micro_batch"], r["accum"]
 
@@ -184,7 +222,6 @@ def main():
     t0 = time.time()
     losses = []
     steps_this = 0
-    end_phase = S1 if phase == "pretrain" else S1 + S2
     while True:
         if step >= end_phase:
             break

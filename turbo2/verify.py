@@ -32,9 +32,10 @@ def parity_prompts(tok):
     return [
         ["hi! who are you?"],
         ["what is the capital of thailand?"],                          # fact turn (retrieval hits)
-        [{"text": "what's 17.5% of 240?", "force": [TOOL] + call + [RES]}],  # tool turn (forced call)
-        ["tell me a story about a brave little robot"],
+        ["what's 17.5% of 240?"],                                      # tool turn (model calls the helper)
+        ["tell me a story about a kind dragon"],
         ["my name is matt", "what is my name?", "who invented the telephone?"],  # multi-turn + fact
+        [{"text": "what's 17.5% of 240?", "force": [TOOL] + call + [RES]}],  # forced tool path (extra check)
     ]
 
 

@@ -1,0 +1,14 @@
+{
+ "ckpt": "/home/user/work/main/ckpt_best.pt",
+ "params": 10126336,
+ "pretrain_val": {
+  "float": 3.36864,
+  "int8": 3.36881,
+  "rel_diff_pct": 0.005
+ },
+ "sft_val": {
+  "float": 0.99573,
+  "int8": 0.99604,
+  "rel_diff_pct": 0.031
+ }
+}
