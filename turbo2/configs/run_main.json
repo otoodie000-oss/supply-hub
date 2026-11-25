@@ -14,7 +14,7 @@
   "sft": "/home/user/work/pack/sft"
  },
  "pretrain_steps": 12300,
- "sft_steps": 2600,
+ "sft_steps": 2000,
  "peak": 0.0012,
  "warmup": 300,
  "decay_frac": 0.2,

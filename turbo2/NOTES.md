@@ -32,3 +32,4 @@
   cursor continues in pack/pretrain2's permutation (some already-seen windows can recur: <=~4% of steps).
   The LR schedule (warmup 300, stable, decay over the last 20% of pretrain_steps) was in its stable phase, so
   the change did not alter any LR already used.
+- End of pretraining: 12,300 steps, 201.5M tokens, 8.536 h. sft_steps 2,600 -> 2,000 so total training stays ~10 h (SFT had not started).

@@ -126,15 +126,15 @@
     }
    },
    "main": {
-    "chunks": 44,
-    "train_seconds": 22958.8,
-    "steps": 9377,
-    "tokens": 153632768,
+    "chunks": 59,
+    "train_seconds": 30730.2,
+    "steps": 12300,
+    "tokens": 201523200,
     "last": {
-     "loss": 3.052,
-     "lr": 0.0012,
+     "loss": 2.8334,
+     "lr": 0.00012043902439024387,
      "phase": "pretrain",
-     "time": "06:52:12"
+     "time": "09:04:53"
     }
    }
   }
