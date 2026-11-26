@@ -1,0 +1,107 @@
+# TurboX 2026 overlay: stale, high-traffic facts, hand-written from Claude's training knowledge (cutoff mid-2026).
+# Not checked against an external source (no internet here) -- flagged in the README.
+# Columns: entity <TAB> entity type (for linking) <TAB> relation <TAB> value <TAB> as-of year
+# Populations are rounded estimates (UN World Population Prospects 2024, mid-2024).
+united states	country	head_of_state	donald trump	2025
+united states	country	head_of_government	donald trump	2025
+united states	country	vice_president	jd vance	2025
+united kingdom	country	head_of_government	keir starmer	2024
+united kingdom	country	head_of_state	king charles iii	2022
+france	country	head_of_state	emmanuel macron	2017
+germany	country	head_of_government	friedrich merz	2025
+germany	country	head_of_state	frank-walter steinmeier	2017
+italy	country	head_of_government	giorgia meloni	2022
+spain	country	head_of_government	pedro sanchez	2018
+spain	country	head_of_state	king felipe vi	2014
+canada	country	head_of_government	mark carney	2025
+australia	country	head_of_government	anthony albanese	2022
+japan	country	head_of_government	sanae takaichi	2025
+japan	country	head_of_state	emperor naruhito	2019
+china	country	head_of_state	xi jinping	2013
+india	country	head_of_government	narendra modi	2014
+india	country	head_of_state	droupadi murmu	2022
+russia	country	head_of_state	vladimir putin	2012
+brazil	country	head_of_state	luiz inacio lula da silva	2023
+mexico	country	head_of_state	claudia sheinbaum	2024
+south africa	country	head_of_state	cyril ramaphosa	2018
+nigeria	country	head_of_state	bola tinubu	2023
+indonesia	country	head_of_state	prabowo subianto	2024
+thailand	country	head_of_state	king vajiralongkorn	2016
+south korea	country	head_of_state	lee jae-myung	2025
+argentina	country	head_of_state	javier milei	2023
+turkey	country	head_of_state	recep tayyip erdogan	2014
+ukraine	country	head_of_state	volodymyr zelenskyy	2019
+israel	country	head_of_government	benjamin netanyahu	2022
+egypt	country	head_of_state	abdel fattah el-sisi	2014
+saudi arabia	country	head_of_state	king salman	2015
+pakistan	country	head_of_government	shehbaz sharif	2024
+philippines	country	head_of_state	ferdinand marcos jr.	2022
+new zealand	country	head_of_government	christopher luxon	2023
+ireland	country	head_of_government	micheal martin	2025
+netherlands	country	head_of_state	king willem-alexander	2013
+sweden	country	head_of_state	king carl xvi gustaf	1973
+norway	country	head_of_state	king harald v	1991
+denmark	country	head_of_state	king frederik x	2024
+belgium	country	head_of_state	king philippe	2013
+vatican city	country	head_of_state	pope leo xiv	2025
+india	country	population	1,451,000,000	2024
+china	country	population	1,419,000,000	2024
+united states	country	population	345,000,000	2024
+indonesia	country	population	283,000,000	2024
+pakistan	country	population	251,000,000	2024
+nigeria	country	population	233,000,000	2024
+brazil	country	population	212,000,000	2024
+bangladesh	country	population	174,000,000	2024
+russia	country	population	144,000,000	2024
+ethiopia	country	population	132,000,000	2024
+mexico	country	population	131,000,000	2024
+japan	country	population	124,000,000	2024
+egypt	country	population	116,000,000	2024
+philippines	country	population	116,000,000	2024
+vietnam	country	population	101,000,000	2024
+iran	country	population	91,600,000	2024
+turkey	country	population	87,500,000	2024
+germany	country	population	84,600,000	2024
+thailand	country	population	71,700,000	2024
+united kingdom	country	population	69,100,000	2024
+france	country	population	66,500,000	2024
+south africa	country	population	64,000,000	2024
+italy	country	population	59,300,000	2024
+kenya	country	population	56,400,000	2024
+colombia	country	population	52,900,000	2024
+south korea	country	population	51,700,000	2024
+spain	country	population	47,900,000	2024
+argentina	country	population	45,700,000	2024
+canada	country	population	39,700,000	2024
+australia	country	population	26,700,000	2024
+earth	planet	human_population	8,160,000,000	2024
+fifa world cup	event	most_recent_winner	argentina (2022)	2022
+fifa world cup	event	next_host	united states, canada and mexico (2026)	2026
+summer olympics	event	most_recent_host	paris (2024)	2024
+summer olympics	event	next_host	los angeles (2028)	2028
+winter olympics	event	most_recent_host	milan and cortina d'ampezzo (2026)	2026
+united nations	organization	secretary_general	antonio guterres	2017
+catholic church	organization	pope	pope leo xiv	2025
+apple inc.	company	ceo	tim cook	2011
+microsoft	company	ceo	satya nadella	2014
+alphabet inc.	company	ceo	sundar pichai	2019
+google	company	ceo	sundar pichai	2015
+amazon	company	ceo	andy jassy	2021
+tesla, inc.	company	ceo	elon musk	2008
+meta platforms	company	ceo	mark zuckerberg	2004
+nvidia	company	ceo	jensen huang	1993
+openai	company	ceo	sam altman	2019
+burj khalifa	building	height	828 metres	2026
+burj khalifa	building	record	tallest building in the world	2026
+mount everest	mountain	height	8,849 metres	2020
+usain bolt	person	record	100 metres world record, 9.58 seconds (2009)	2026
+taylor swift	person	record	the eras tour is the highest-grossing concert tour of all time	2024
+avatar	film	record	highest-grossing film of all time	2026
+lionel messi	person	ballon d'or_wins	8	2023
+cristiano ronaldo	person	ballon d'or_wins	5	2017
+real madrid	sports team	champions_league_titles	15	2024
+queen elizabeth ii	person	death_date	2022-09-08	2022
+pope francis	person	death_date	2025-04-21	2025
+king charles iii	person	coronation_date	2023-05-06	2023
+twitter	company	current_name	x (renamed in 2023)	2023
+facebook, inc.	company	current_name	meta platforms (renamed in 2021)	2021

@@ -1,0 +1,1001 @@
+n	src	entity	type	relation	value	asof	context
+1	wiki2017	marbury v. madison	wiki	description	landmark case by the united states supreme court		Marbury v. Madison,, is a landmark case by the United States Supreme Court which forms the basis for the exercise of judicial review in the United States under Article III of the Constitution. The landmark decision helped define the boundary between the constitutionally separate executive and judici
+2	wordnet3.0	welfare work	word_n	is_a	@wn:work.n.01 (work)		wordnet hypernym @wn:work.n.01 (work)
+3	wikibio2015	bruce schneier	person	birth_place	new york city, new york		box[birth_place]=new york city, new york | bruce schneier (; born january 15, 1963) is an american cryptographer, computer security and privacy specialist, and writer.
+4	geonamescache	commack	city	state	@usstate:NY (new york)		
+5	geonamescache	taozhuang	city	population	60,137	2025	
+6	wikibio2015	arthur ernest morgan	person	death_place	xenia, ohio		box[death_place]=xenia, ohio | arthur ernest morgan (june 20, 1878 -- november 16, 1975) was a civil engineer, u.s. administrator, and educator.
+7	wikibio2015	william montagu, 1st earl of salisbury	person	birth_place	cassington, oxfordshire		box[birth_place]=cassington, oxfordshire | william montagu, alias de montacute, 1st earl of salisbury, 3rd baron montagu, king of mann (1301 -- 30 january 1344) was an english nobleman and loyal servant 
+8	wikibio2015	ron harper	person	occupation	actor		box[occupation]=actor | ronald robert " ron " harper (born january 12, 1936) is an american television and film actor.
+9	wikibio2015	elmo hope	person	occupation	musician		box[occupation]=musician, composer, arranger | st. elmo sylvester hope (june 27, 1923 -- may 19, 1967) was an american jazz pianist, composer, and arranger, chiefly in the bebop and hard bop genres.
+10	wikibio2015	tommy thompson	person	birth_place	elkhart, illinois		box[birth_place]=elkhart, illinois | rupert lockhart " tommy " thompson (may 19, 1910 -- may 24, 1971) was an american outfielder in major league baseball who played for the boston braves (1933 -- 
+11	airportsdata	sao felix do xingu airport	airport	city	sao felix do xingu		
+12	wikibio2015	igor biscan	person	birth_date	1978-05-04		box[birth_date]=4 may 1978 | igor bišćan (; born 4 may 1978) is a retired croatian professional footballer.
+13	wikibio2015	edmond safra	person	death_place	monaco		box[death_place]=monaco. | edmond j. safra (; august 6, 1932 -- december 3, 1999) was a lebanese brazilian jewish banker who continued the family tradition of banking in syria, lebanon, b
+14	geonamescache	rosemont-la petite-patrie	city	country	@country:CAN (canada)		
+15	wikibio2015	bebe moore campbell	person	birth_date	1950-02-18		box[birth_date]=18 february 1950 | bebe moore campbell (february 18, 1950 -- november 27, 2006), was the author of three " new york times " bestsellers: " brothers and sisters ", " singing in the
+16	wikibio2015	sam fay	person	death_place	awbridge, hampshire, england		box[death_place]=awbridge, hampshire, england | sir sam fay (30 december 1856 -- 30 may 1953), born in hamble-le-rice, hampshire, england, was a career railwayman who joined the london and south western railw
+17	airportsdata	tan tan airport	airport	city	tan tan		
+18	airportsdata	port gentil airport	airport	iata_code	pog		
+19	wikibio2015	grigoris lambrakis	person	birth_place	kerasitsa, arcadia, greece		box[birth_place]=kerasitsa, arcadia, greece | grigoris lambrakis (; 3 april 1912 -- 27 may 1963) was a greek politician, physician, track and field athlete, and member of the faculty of the school of medici
+20	wikibio2015	rosko	person	description	american singer		paul eric bosko, also known as rosko, is an american singer, songwriter, musician and producer.
+21	wikibio2015	john gilling	person	occupation	director		box[occupation]=director, screenwriter | john gilling (29 may 1912 -- 22 november 1984) was an english film director and screenwriter, born in london.
+22	wikibio2015	bob armstrong	person	alma_mater	university of texas		box[alma_mater]=university of texas | robert landis armstrong, known as bob armstrong (november 7, 1932 -- march 1, 2015), was a democratic politician and an environmental activist from the u.s. sta
+23	wiki2017	berezhany	city	description	city of regional significance		
+24	geonamescache	ala'er	city	population	126,259	2025	
+25	geonamescache	pearland	city	state	@usstate:TX (texas)		
+26	wikibio2015	lyman bostock	person	position	outfielder		box[position]=outfielder | lyman wesley bostock, jr. (november 22, 1950 -- september 23, 1978) was an american professional baseball player.
+27	geonamescache	sanaa	city	country	@country:YEM (yemen)		
+28	airportsdata	minami torishima airport	airport	country	@country:JPN (japan)		
+29	wikibio2015	jimmy bullard	person	position	midfielder		box[position]=midfielder | james richard " jimmy " bullard (born 23 october 1978) is an english former footballer who played as a midfielder.
+30	geonamescache	little rock	city	state	@usstate:AR (arkansas)		
+31	airportsdata	kunovice airport	airport	elevation	581 feet		
+32	wikibio2015	filip lundberg	person	birth_place	sweden		box[birth_place]=sweden | ernst filip oskar lundberg (2 june 1876 - 31 december 1965) swedish actuary, and mathematician.
+33	wikibio2015	j. r. r. tolkien	person	occupation	author		box[occupation]=author, academic, philologist, poet | john ronald reuel tolkien, cbe frsl (; 3 january 18922 september 1973) was an english writer, poet, philologist, and university professor who is best known as t
+34	wiki2017	in the mood for love	wiki	release_year	2000		In the Mood for Love is a 2000 Hong Kong film written, produced and directed by Wong Kar-wai, starring Tony Leung and Maggie Cheung. It is frequently listed as one of the greatest films of Asia. The film's original Chinese title, meaning "the age of blossoms" or "the flowery years" – Chinese metapho
+35	wikibio2015	l. p. hartley	person	birth_date	1895-12-30		box[birth_date]=30 december 1895 | leslie poles hartley cbe (30 december 1895 -- 13 december 1972), known as l. p. hartley, was a british novelist and short story writer.
+36	wikibio2015	david smith	person	description	english cricketer		david henry kilner smith (born 29 june 1940) was an english cricketer who played first class cricket for derbyshire between 1965 and 1970 and for orange free st
+37	wikibio2015	robert baillie	person	description	scottish divine and historical writer		robert baillie (30 april 1602 -- 1662) was a scottish divine and historical writer.
+38	wikibio2015	tamora pierce	person	occupation	writer		box[occupation]=writer | tamora pierce (born december 13, 1954) is an american writer of fantasy fiction for teenagers, known best for stories featuring young heroines.
+39	wikibio2015	paris	person	genre	political hip hop		box[genre]=political hip hop, west coast hip hop | oscar jackson, jr. (born october 29, 1967), better known by his stage name paris, is an american rapper from san francisco, california, known for his highly cha
+40	wordnet3.0	buffer	word_n	definition	an ionic compound that resists changes in its ph		
+41	wikibio2015	alister mcgrath	person	alma_mater	wadham college		box[alma_mater]=wadham college, oxford | alister edgar mcgrath (born 23 january 1953) is a northern irish theologian, priest, intellectual historian, scientist, and christian apologist.
+42	geonamescache	abepura	city	country	@country:IDN (indonesia)		
+43	wordnet3.0	cellulose	word_n	is_a	@wn:polysaccharide.n.01 (polysaccharide)		wordnet hypernym @wn:polysaccharide.n.01 (polysaccharide)
+44	wikibio2015	jose canseco	person	position	outfielder		box[position]=outfielder / designated hitter | josé canseco capas, jr. (born july 2, 1964), is a cuban-american former major league baseball (mlb) outfielder, and designated hitter.
+45	wikibio2015	john elliotson	person	birth_date	1791-10-29		box[birth_date]=29 october 1791 | john elliotson (29 october 1791 -- 29 july 1868), m.d. (edinburgh, 1810), m.r.c.p. (london, 1810), m.b. (oxford, 1816), m.d. (oxford, 1821), f.r.c.p. (london, 1
+46	mledoze-countries+countryinfo	puerto rico	country	continent	north america		
+47	wikibio2015	mark steyn	person	birth_place	toronto, ontario, canada		box[birth_place]=toronto, ontario, canada | mark steyn (born december 8, 1959) is a canadian-born writer and conservative political commentator.
+48	wiki2017	control engineering	wiki	description	engineering discipline		Control engineering or control systems engineering is an engineering discipline that applies automatic control theory to design systems with desired behaviors in control environments. The discipline of controls overlaps and is usually taught along with electrical engineering at many institutions aro
+49	airportsdata	sikeston memorial municipal airport	airport	city	sikeston		
+50	wikibio2015	miguel pro	person	death_place	mexico city, mexico		box[death_place]=mexico city, mexico | josé ramón miguel agustín pro juárez also known as blessed miguel pro (born january 13, 1891 -- executed november 23, 1927), was a mexican jesuit catholic pries
+51	wikibio2015	steve englehart	person	description	american writer		steve englehart (born april 22, 1947) is an american writer.
+52	wikibio2015	daniel henney	person	occupation	model		box[occupation]=model, actor | daniel phillip henney (" daniel pillip heni "; born november 28, 1979) is an american actor and model, known for starring in films such as " seducing mr. perfec
+53	wikibio2015	robert webb	person	occupation	actor		box[occupation]=actor, comedian, writer, activist | robert patrick webb (born 29 september 1972) is an english comedian, actor and writer, and one half of the double act mitchell and webb, alongside david mitchel
+54	wikibio2015	ted kotcheff	person	birth_place	toronto, canada		box[birth_place]=toronto, canada | ted kotcheff (born april 7, 1931), sometimes credited as william kotcheff or william t. kotcheff, is a canadian film and television director, who is well known 
+55	wikibio2015	andrae crouch	person	birth_place	san francisco, california, u.s.		box[birth_place]=san francisco, california, u.s. | andraé edward crouch (july 1, 1942 -- january 8, 2015) was an american gospel singer, songwriter, arranger, record producer and pastor.
+56	wikibio2015	reynaldo hahn	person	birth_date	1874-08-09		box[birth_date]=9 august 1874 | reynaldo hahn (; august 9, 1874 -- january 28, 1947) was a venezuelan, naturalised french, composer, conductor, music critic, diarist, theatre director, and sal
+57	wikibio2015	jose gaspar rodriguez de francia	person	death_place	asuncion, paraguay		box[death_place]=asunción, paraguay | dr. josé gaspar rodríguez de francia y velasco (january 6, 1766 -- september 20, 1840) was a paraguayan lawyer and politician, and one of the first leaders of p
+58	wikibio2015	garrett burnett	person	position	left wing		box[position]=left wing | garrett " rocky " burnett (born september 23, 1975 in coquitlam, british columbia) is a former professional ice hockey player who played with the mighty ducks o
+59	wikibio2015	richard price	person	nationality	american		box[nationality]=american | richard price (born october 12, 1949) is an american novelist and screenwriter, known for the books " the wanderers " (1974), " clockers " (1992) and " lush lif
+60	wikibio2015	kevin schmidt	person	birth_date	1986-02-14		box[birth_date]=14 february 1986 | kevin schmidt (born february 14, 1986) is a canadian professional ice hockey defenceman.
+61	airportsdata	renton municipal airport	airport	city	renton		
+62	wikibio2015	henry waxman	person	party	democratic		box[party]=democratic | henry arnold waxman (born september 12, 1939) is an american politician who served as the u.s. representative for from 1975 until 2015.
+63	wikibio2015	lester bird	person	party	labour		box[party]=labour | sir lester bryant bird, knh (born 21 february 1938) was the second prime minister of antigua and barbuda from 1994 to 2004 and a well-known athlete.
+64	wikibio2015	alex delvecchio	person	birth_place	fort william, on, can		box[birth_place]=fort william, on, can | alexander peter " fats " delvecchio (born december 4, 1931) is a former ice hockey player, coach, and general manager who spent his entire national hockey leagu
+65	wikibio2015	ramsey lewis	person	description	american jazz composer		ramsey emmanuel lewis, jr. (born may 27, 1935) is an american jazz composer, pianist and radio personality.
+66	wikibio2015	evan mecham	person	birth_place	duchesne, utah		box[birth_place]=duchesne, utah | evan mecham (; may 12, 1924 -- february 21, 2008) was the 17th governor of arizona.
+67	wikibio2015	henry dundas, 1st viscount melville	person	party	tory		box[party]=tory | henry dundas, 1st viscount melville, baron dunira pc frse (28 april 1742, arniston, midlothian -- 28 may 1811, edinburgh) was a scottish advocate and tory polit
+68	geonamescache	tolentino	city	population	16,504	2025	
+69	wikibio2015	verner von heidenstam	person	death_place	ovralid, ostergotland, sweden		box[death_place]=Övralid, Östergötland, sweden | carl gustaf verner von heidenstam (6 july 1859 -- 20 may 1940) was a swedish poet, novelist and laureate of the nobel prize in literature in 1916.
+70	wiki2017	1991 tour de france	wiki	description	78th edition of the tour de france		The 1991 Tour de France was the 78th edition of the Tour de France, taking place from 6 to 28 July. The total race distance was 22 stages over. The race was won by Miguel Indurain, whose Banesto team also won the team classification. The points classification was won by Djamolidine Abdoujaparov, alt
+71	wikibio2015	jozef balej	person	position	right wing		box[position]=right wing | jozef balej (born february 22, 1982) is a slovak professional ice hockey right winger who has spent parts of three seasons in the national hockey league, and cu
+72	wiki2017	vowel	wiki	description	sound in spoken language		In phonetics, a vowel is a sound in spoken language, with two complementary definitions. In the phonetic definition, a vowel is a sound pronounced with an open vocal tract, so that the tongue does not touch the lips, teeth, or roof of the mouth, such as the English "ah" or "oh". There is no build-up
+73	wikibio2015	joe budden	person	birth_date	1980-08-31		box[birth_date]=31 august 1980 | joe budden (born august 31, 1980) is an american rapper from jersey city, new jersey, who, in addition to being a solo artist, is a member of the american hip h
+74	wikibio2015	james watson	person	birth_date	1928-04-06		box[birth_date]=06 april 1928 | james dewey watson (born april 6, 1928) is an american molecular biologist, geneticist and zoologist, best known as one of the co-discoverers of the structure o
+75	airportsdata	phoenix sky harbor international airport	airport	iata_code	phx		
+76	wordnet3.0	cottus	word_n	definition	type genus of the cottidae: sculpins		
+77	wikibio2015	william warren baldwin	person	description	doctor		william warren baldwin (april 25, 1775 -- january 8, 1844) was a doctor, businessman, lawyer, judge, architect and reform politician in upper canada.
+78	airportsdata	mountain home afb airport	airport	city	mountain home		
+79	wordnet3.0	solar radiation	word_n	is_a	@wn:radiation.n.01 (radiation)		wordnet hypernym @wn:radiation.n.01 (radiation)
+80	wikibio2015	peter t. king	person	birth_date	1944-04-05		box[birth_date]=5 april 1944 | peter thomas " pete " king (born april 5, 1944) is the u.s. representative for.
+81	wikibio2015	benny more	person	birth_date	1919-08-24		box[birth_date]=24 august 1919 | bartolomé maximiliano moré gutiérrez (24 august 1919 -- 19 february 1963), known as benny moré, was a famous cuban singer.
+82	wikibio2015	david wright	person	position	defender		box[position]=defender | david wright is a retired american soccer defender who played professionally in the usl a-league.
+83	wordnet3.0	expressive	word_a	definition	characterized by expression		
+84	geonamescache	higashi-matsuyama	city	country	@country:JPN (japan)		
+85	wiki2017	hotel california	wiki	artist	the eagles		Hotel California is the fifth studio album by American rock band the Eagles, and is one of the best-selling albums of all time. Three singles were released from the album, each reaching high in the Billboard Hot 100: "New Kid in Town" (number 1), "Hotel California" (number 1), and "Life in the Fast 
+86	geonamescache	banga	city	population	91,536	2025	
+87	wikibio2015	nancy holder	person	genre	science fiction		box[genre]=science fiction, horror | nancy holder is an american writer and the author of several novels, including numerous tie-in books based on the tv series " buffy the vampire slayer ".
+88	wikibio2015	hugo gernsback	person	occupation	inventor		box[occupation]=inventor, magazine publisher, editor, writer | hugo gernsback (august 16, 1884 -- august 19, 1967), born hugo gernsbacher, was a luxembourgish - american inventor, writer, editor, and magazine publisher, bes
+89	wikibio2015	max gail	person	occupation	actor		box[occupation]=actor | maxwell trowbridge " max " gail, jr. (born april 5, 1943) is an american actor who has starred in stage, television, and film roles.
+90	wikibio2015	jamie durie	person	birth_date	1970-06-03		box[birth_date]=3 june 1970 | jamie paul durie oam (born 3 june 1970) is an australian-born award-winning international horticulturalist and landscape designer.
+91	wikibio2015	petr ginz	person	birth_place	prague, czechoslovakia		box[birth_place]=prague, czechoslovakia | petr ginz (1 february 1928 -- 28 september 1944) was a czechoslovak boy of partial jewish background who was deported to the terezín concentration camp during t
+92	wordnet3.0	vicarious	word_a	definition	experienced at secondhand		
+93	wikibio2015	j.-h. rosny aine	person	birth_date	1856-02-17		box[birth_date]=17 february 1856 | j.-h.
+94	wikibio2015	harkishan singh surjeet	person	party	communist party of india 24px		box[party]=communist party of india (marxist) 24px | harkishan singh surjeet (23 march 1916 -- 1 august 2008) was a communist politician from punjab, india.
+95	goodbooks-10k	celebrity in death	book	author	j.d. robb		
+96	wikibio2015	harry beck	person	birth_date	1901-02-21		box[birth_date]=21 february 1901 | henry alfred " harry " beck, also known as harold beck, (21 february 1901 in walsall wood, england -- 1979) was an english footballer.
+97	goodbooks-10k	last chance to see	book	author	douglas adams		
+98	geonamescache	fajardo	city	population	32,124	2025	
+99	wikibio2015	adrian cann	person	description	canadian international soccer defender		adrian cann (born september 19, 1980) is a canadian international soccer defender who currently plays for san antonio scorpions.
+100	wikibio2015	sanaa lathan	person	alma_mater	university of california		box[alma_mater]=university of california, berkeley yale school of drama | sanaa mccoy lathan (born september 19, 1971) is an american actress and voice actress.
+101	wikibio2015	monteiro lobato	person	birth_date	1882-04-18		box[birth_date]=18 april 1882 | " this article is about the brazilian writer.
+102	wikibio2015	michael gilbert	person	birth_date	1912-07-17		box[birth_date]=17 july 1912 | michael francis gilbert, cbe (17 july 1912 -- 8 february 2006) was a british writer of both fictional mysteries and thrillers who wrote as michael gilbert.
+103	wiki2017	red-throated loon	wiki	description	migratory aquatic bird found		The red-throated loon (North America) or red-throated diver (Britain and Ireland) (Gavia stellata) is a migratory aquatic bird found in the northern hemisphere. The most widely distributed member of the loon or diver family, it breeds primarily in Arctic regions, and winters in northern coastal wate
+104	wikibio2015	norman clyde	person	description	mountaineer		norman clyde (april 8, 1885 -- december 23, 1972) was a mountaineer, mountain guide, freelance writer, nature photographer, and self trained naturalist.
+105	goodbooks-10k	the stars shine down	book	publication_year	1992		
+106	wiki2017	ivan pavlov	wiki	description	russian physiologist		Ivan Petrovich Pavlov (27 February 1936) was a Russian physiologist known primarily for his work in classical conditioning. From his childhood days Pavlov demonstrated intellectual curiosity along with an unusual energy which he referred to as "the instinct for research". Inspired by the progressive
+107	wikibio2015	ernie kovacs	person	genre	character comedy		box[genre]=character comedy, surreal comedy, improvisational comedy, prop comedy, spoof, sk | ernest edward " ernie " kovacs (january 23, 1919 -- january 13, 1962) was an american comedian, actor, and writer.
+108	wikibio2015	eva green	person	description	french actress and model		eva gaëlle green (;; born 6 july 1980) is a french actress and model.
+109	wikibio2015	patrick pentland	person	birth_date	1969-09-20		box[birth_date]=20 september 1969 | patrick pentland (born 20 september 1969) is a member of the canadian rock band sloan.
+110	goodbooks-10k	touch & go	book	publication_year	2013		
+111	wikibio2015	robert q. lewis	person	birth_place	new york, new york, united states		box[birth_place]=new york, new york, united states | robert q. lewis (april 25, 1920 -- december 11, 1991) was an american radio and television personality, game show host, and actor.
+112	wikibio2015	graham coxon	person	occupation	musician		box[occupation]=musician, singer-songwriter, multi-instrumentalist, painter | graham leslie coxon (born 12 march 1969) is an english musician, singer-songwriter and painter who came to prominence as a founding member of the rock band blur
+113	geonamescache	ebina	city	country	@country:JPN (japan)		
+114	wordnet3.0	suspended	word_a	definition	supported or kept from sinking or falling by buoyancy and without apparent attachment		
+115	wikibio2015	carl bildt	person	alma_mater	stockholm university		box[alma_mater]=stockholm university | nils daniel carl bildt (born 15 july 1949) is a swedish politician and diplomat who was prime minister of sweden from 1991-94.
+116	wiki2017	i heard it through the grapevine	wiki	description	song		"I Heard It Through the Grapevine" is a song written by Norman Whitfield and Barrett Strong for Motown Records in 1966. The first recording of the song to be released was produced by Whitfield for Gladys Knight & the Pips and released as a single in September 1967; it went to number two in the Billb
+117	wikibio2015	adolf stieler	person	birth_place	gotha, thuringia, germany		box[birth_place]=gotha, thuringia, germany | adolf stieler (1775 -- 1836) was a german cartographer and lawyer who worked most of his life in the justus perthes geographical institute in gotha.
+118	geonamescache	kefamenanu	city	country	@country:IDN (indonesia)		
+119	wikibio2015	john of capistrano	person	birth_place	capestrano, abruzzi, kingdom of naples		box[birth_place]=capestrano, abruzzi, kingdom of naples | saint john of capistrano (" italian ": san giovanni da capestrano, " hungarian ": kapisztrán jános, " polish ": jan kapistran, " serbian ": Јован Капистран, jov
+120	goodbooks-10k	the rembrandt affair	book	author	daniel silva		
+121	geonamescache	cadiz	city	country	@country:PHL (philippines)		
+122	wikibio2015	zak starkey	person	occupation	musician		box[occupation]=musician | zak richard starkey (born 13 september 1965) is an english rock drummer well known for his unofficial membership of the english rock band the who, with whom he 
+123	geonamescache	narangba	city	country	@country:AUS (australia)		
+124	wikibio2015	adge cutler	person	description	english singer		alan john ` adge ' cutler (19 november 1930 -- 5 may 1974) was an english singer best known as the frontman of the comic folk band the wurzels.
+125	wiki2017	saint-augustin-de-desmaures	city	founded_year	1691		
+126	wikibio2015	ernie coombs	person	birth_date	1927-11-26		box[birth_date]=26 november 1927 | ernest " ernie " arthur coombs, cm (november 26, 1927 -- september 18, 2001) was a children's entertainer who starred in the canadian television series " mr. dr
+127	wikibio2015	johann joachim becher	person	birth_place	speyer, holy roman empire		box[birth_place]=speyer, holy roman empire | johann joachim becher (; 6 may 1635 -- october 1682) was a german physician, alchemist, precursor of chemistry, scholar and adventurer, best known for his devel
+128	wikibio2015	bob parsons	person	birth_place	baltimore, maryland		box[birth_place]=baltimore, maryland | robert parsons, better known as bob parsons, is an american entrepreneur and philanthropist.
+129	wikibio2015	dexter coakley	person	description	former american football linebacker		william dexter coakley (born october 20, 1972) is a former american football linebacker who played ten seasons in the national football league (nfl).
+130	wikibio2015	p-money	person	genre	rap		box[genre]=rap | peter wadams, better known by his stage name p-money, is a new zealand hip-hop dj and producer.
+131	wikibio2015	amien rais	person	birth_place	surakarta, dutch east indies		box[birth_place]=surakarta, dutch east indies | muhammad amien rais (born 26 april 1944) is a prominent indonesian politician who led and inspired the reform movement that forced the resignation of president 
+132	goodbooks-10k	losing it	book	publication_year	2012		
+133	wikibio2015	cristobal torriente	person	death_place	new york city, new york		box[death_place]=new york city, new york, | cristóbal torriente (november 16, 1893 -- april 11, 1938) was a cuban outfielder in negro league baseball with the cuban stars, all nations, chicago american gi
+134	wordnet3.0	housewifery	word_n	is_a	@wn:work.n.01 (work)		wordnet hypernym @wn:work.n.01 (work)
+135	wikibio2015	victor serge	person	death_place	mexico city, mexico		box[death_place]=mexico city, mexico | victor serge (), born victor lvovich kibalchich (; december 30, 1890 -- november 17, 1947), was a russian revolutionary and writer.
+136	wikibio2015	kostas vasileiadis	person	position	shooting guard		box[position]=shooting guard / small forward | konstantinos " kostas " vasileiadis (alternate spellings include: costas, vasiliadis, vassiliadis) (; born march 15, 1984) is a greek professional basketball pl
+137	wikibio2015	james cobban	person	death_date	1999-04-19		box[death_date]=19 april 1999 | sir james macdonald cobban, kbe (1982), dl (14 september 1910 -- 19 april 1999) was an english educator and headmaster, as well as a prominent lay leader in the
+138	wikibio2015	joe zawinul	person	occupation	musician		box[occupation]=musician, composer | josef erich " joe " zawinul (july 7, 1932 -- september 11, 2007) was an austrian jazz keyboardist and composer.
+139	wikibio2015	rocco mediate	person	birth_date	1962-12-17		box[birth_date]=17 december 1962 | rocco anthony mediate (born december 17, 1962) is an american professional golfer who has won six times on the pga tour and twice on the champions tour.
+140	wordnet3.0	hydromyinae	word_n	definition	water rats of australia and new guinea		
+141	goodbooks-10k	arrows of the queen	book	publication_year	1987		
+142	wordnet3.0	squeal	word_v	definition	utter a high-pitched cry, characteristic of pigs		
+143	wikibio2015	philip the good	person	birth_date	1396-07-31		box[birth_date]=31 july 1396 | philip the good (,; 31 july 1396 -- 15 june 1467) was duke of burgundy as philip iii from 1419 until his death.
+144	wikibio2015	aleksei brusilov	person	death_place	moscow, rsfsr, soviet union		box[death_place]=moscow, rsfsr, soviet union | aleksei alekseevich brusilov (; -- 17 march 1926) was a russian general most noted for the development of new offensive tactics used in the 1916 brusilov offens
+145	wikibio2015	stonewall jackson	person	birth_date	1824-01-21		box[birth_date]=21 january 1824 | thomas jonathan " stonewall " jackson (january 21, 1824 -- may 10, 1863) was a confederate general during the american civil war, and the best-known confederate
+146	airportsdata	crane county airport	airport	elevation	2,555 feet		
+147	wikibio2015	johann friedrich gmelin	person	birth_date	1748-08-08		box[birth_date]=8 august 1748 | johann friedrich gmelin (8 august 1748 -- 1 november 1804) was a german naturalist, botanist, entomologist, herpetologist and malacologist.
+148	wikibio2015	harriette simpson arnow	person	birth_date	1908-07-07		box[birth_date]=7 july 1908 | harriette arnow (july 7, 1908 -- march 22, 1986) was an american novelist, who lived in kentucky and michigan.
+149	wikibio2015	herbert stewart	person	death_date	1885-02-16		box[death_date]=16 february 1885 | major-general sir herbert stewart kcb adc (30 june 1843 -- 16 february 1885), british soldier, eldest son of the rev. edward stewart, was born at sparsholt, ham
+150	wikibio2015	hasil adkins	person	occupation	musician		box[occupation]=musician, singer-songwriter | hasil adkins (april 29, 1937 -- april 26, 2005) was an american singer-songwriter and multi-instrumentalist.
+151	wikibio2015	brian mackenzie, baron mackenzie of framwellgate	person	birth_date	1943-03-21		box[birth_date]=21 march 1943 | brian mackenzie, baron mackenzie of framwellgate, obe (born 21 march 1943) is a british labour member of the house of lords and a former president of the police
+152	wikibio2015	isabelo de los reyes	person	nationality	filipino		box[nationality]=filipino | isabelo de los reyes, sr. y florentino, also known as don belong (july 7, 1864 -- october 10, 1938), was a prominent filipino politician, writer and labor activ
+153	wordnet3.0	agony	word_n	is_a	@wn:pain.n.01 (pain)		wordnet hypernym @wn:pain.n.01 (pain)
+154	geonamescache	presidencia roque saenz pena	city	country	@country:ARG (argentina)		
+155	wikibio2015	andrew loog oldham	person	description	english record producer		andrew loog oldham (born 29 january 1944) is an english record producer, talent manager, impresario and author.
+156	wordnet3.0	melodrama	word_n	definition	an extravagant comedy in which action is more salient than characterization		
+157	wikibio2015	alex webster	person	description	american bass player		alex webster (born october 25, 1969) is an american bass player, who is best known as a member of the death metal band cannibal corpse.
+158	wikibio2015	grigol robakidze	person	death_place	geneva, switzerland		box[death_place]=geneva, switzerland | grigol robakidze () (october 28, 1880, sviri (west georgia) - november 19, 1962, geneva) was a georgian writer, publicist, and public figure primarily known for
+159	geonamescache	sinkat	city	country	@country:SDN (sudan)		
+160	wiki2017	vrije universiteit brussel	wiki	description	dutch-speaking university		The Vrije Universiteit Brussel is a Dutch-speaking university located in Brussels, Belgium. It has three campuses: Brussels Humanities, Science and Engineering Campus (in Etterbeek), Brussels Health Campus (in Jette) and Brussels Technology Campus (in Kaai). The university's name is sometimes abbrev
+161	wikibio2015	hugo race	person	description	australian rock musician and record producer		hugo justin race (born c. 1963) is an australian rock musician and record producer who had been based in europe from 1989 to 2011.
+162	wikibio2015	hermann ulrici	person	birth_date	1806-03-23		box[birth_date]=23 march 1806 | hermann ulrici (23 march 1806 - 11 january 1884) was a german philosopher.
+163	wordnet3.0	acnidosporidia	word_n	is_a	@wn:class.n.07 (class)		wordnet hypernym @wn:class.n.07 (class)
+164	wikibio2015	charles bannerman	person	death_place	surry hills, new south wales, australia		box[death_place]=surry hills, new south wales, australia | charles bannerman (3 july 1851 -- 20 august 1930) was an australia cricketer.
+165	goodbooks-10k	the hedge knight	book	publication_year	1998		
+166	wikibio2015	fred emery	person	death_date	1959		box[death_date]=1959 | fred emery (19 may 1900 -- 1959) was an english-born footballer who played as a wing half in the football league with doncaster rovers in the 1920s and 1930s.
+167	wikibio2015	david e. lilienthal	person	death_date	1981-01-15		box[death_date]=15 january 1981 | david eli lilienthal (july 8, 1899 -- january 15, 1981) was an american attorney and public administrator, best known for leading the tennessee valley authority
+168	wikibio2015	gregorio del pilar	person	death_date	1899-12-02		box[death_date]=2 december 1899 | gregorio del pilar y sempio (november 14, 1875 -- december 2, 1899) was one of the youngest generals in the philippine revolutionary forces during the philippin
+169	wikibio2015	pappy boyington	person	death_date	1988-01-11		box[death_date]=11 january 1988 | gregory " pappy " boyington (december 4, 1912 -- january 11, 1988) was a highly decorated american combat pilot who was a united states marine corps fighter ace
+170	geonamescache	promyshlennaya	city	population	17,216	2025	
+171	wikibio2015	ferdinand georg frobenius	person	birth_place	charlottenburg		box[birth_place]=charlottenburg | ferdinand georg frobenius (26 october 1849 -- 3 august 1917) was a german mathematician, best known for his contributions to the theory of elliptic functions, d
+172	wikibio2015	bill haast	person	death_date	2011-06-15		box[death_date]=15 june 2011 | bill haast (december 30, 1910 -- june 15, 2011) was the director of the miami serpentarium laboratories, a facility near punta gorda, florida that produces snak
+173	wikibio2015	john johnson	person	birth_place	norway		box[birth_place]=norway | john johnson (march 25, 1842 -- april 3, 1907) served in the union army during the american civil war.
+174	airportsdata	sywell aerodrome	airport	elevation	429 feet		
+175	wiki2017	american geophysical union	wiki	description	501 nonprofit organization of geophysicists		The American Geophysical Union (AGU) is a 501(c)(3) nonprofit organization of geophysicists, consisting of over 62,000 members from 144 countries. AGU's activities are focused on the organization and dissemination of scientific information in the interdisciplinary and international field of geophysi
+176	wiki2017	ouesso	city	description	town		
+177	geonamescache	diawala	city	population	26,206	2025	
+178	wordnet3.0	inning	word_n	is_a	@wn:part.n.09 (part)		wordnet hypernym @wn:part.n.09 (part)
+179	wordnet3.0	giggle	word_v	definition	laugh nervously		
+180	wiki2017	contemporary art	wiki	description	art of today		Contemporary art is the art of today, produced in the late 20th century or in the 21st century. Contemporary artists work in a globally influenced, culturally diverse, and technologically advancing world. Their art is a dynamic combination of materials, methods, concepts, and subjects that challenge
+181	wiki2017	film	wiki	release_year	1965		Film is a 1965 short film written by Samuel Beckett, his only screenplay. It was commissioned by Barney Rosset of Grove Press. Writing began on 5 April 1963 with a first draft completed within four days. A second draft was produced by 22 May and a 40-leaf shooting script followed thereafter. It was 
+182	airportsdata	prefeito renato moreira airport	airport	city	imperatriz		
+183	geonamescache	saint-ouen	city	population	39,353	2025	
+184	wikibio2015	zack wheat	person	death_place	sedalia, missouri		box[death_place]=sedalia, missouri | zachariah davis " zack " wheat (may 23, 1888 -- march 11, 1972), nicknamed " buck ", was a major league baseball left fielder for brooklyn in the national leagu
+185	wikibio2015	ruben cantu	person	death_place	huntsville, texas		box[death_place]=huntsville, texas | ruben montoya cantu (december 5, 1966 -- august 24, 1993) was a texan who was executed for murder committed when he was 17 years old.
+186	geonamescache	sterling	city	country	@country:USA (united states)		
+187	goodbooks-10k	halo	book	author	alexandra adornetto		
+188	goodbooks-10k	the executioner's song	book	publication_year	1979		
+189	wikibio2015	mehmed spaho	person	birth_date	1883-03-13		box[birth_date]=13 march 1883 | mehmed spaho (13 march 1883 -- 29 june 1939) was a bosniak politician and leader of the yugoslav muslim organization.
+190	wikibio2015	jose garcia villa	person	death_date	1997-02-07		box[death_date]=7 february 1997 | josé garcía villa (august 5, 1908 -- february 7, 1997) was a filipino poet, literary critic, short story writer, and painter.
+191	wikibio2015	tobin sprout	person	description	american artist and musician		tobin sprout is an american artist and musician, born on april 28, 1955.
+192	geonamescache	dong da	city	country	@country:VNM (vietnam)		
+193	wikibio2015	robert reed	person	death_place	pasadena, california, u.s.		box[death_place]=pasadena, california, u.s. | robert reed (october 19, 1932 -- may 12, 1992) was an american stage, film, and television actor and television director.
+194	geonamescache	thatta	city	country	@country:PAK (pakistan)		
+195	goodbooks-10k	children of the mind	book	publication_year	1996		
+196	wikibio2015	ormsby m. mitchel	person	birth_date	1810-08-28		box[birth_date]=28 august 1810 | ormsby macknight (or mcknight) mitchel (august 28, 1810, or possibly 1809, -- october 30, 1862) was an american astronomer and major general in the american civ
+197	wikibio2015	colin ireland	person	death_date	2012-02-21		box[death_date]=21 february 2012 | colin ireland (16 march 1954 -- 21 february 2012) was a british serial killer known as the gay slayer because his victims were homosexual men.
+198	wiki2017	cupar	wiki	description	town		Cupar is a town, former royal burgh and parish in Fife, Scotland. It lies between Dundee and Glenrothes. According to a 2011 population estimate, Cupar had a population around 9,000, making it the ninth largest settlement in Fife, and the civil parish a population of 11,183 (in 2011). It is the hist
+199	wordnet3.0	hundred dollar bill	word_n	definition	a united states bill worth 100 dollars		
+200	wikibio2015	david gascoyne	person	death_place	isle of wight		box[death_place]=isle of wight | david gascoyne (10 october 1916 -- 25 november 2001) was an english poet associated with the surrealist movement.
+201	geonamescache	sabara	city	country	@country:BRA (brazil)		
+202	wordnet3.0	elect	word_v	definition	select by a vote for an office or membership		
+203	wikibio2015	frank weston benson	person	description	american artist from salem		frank weston benson, frequently referred to as frank w. benson, (march 24, 1862 -- november 15, 1951) was an american artist from salem, massachusetts known for
+204	wikibio2015	vaclav klaus	person	description	czech economist and politician		václav klaus (; born 19 june 1941) is a czech economist and politician who served as the second president of the czech republic from 2003 to 2013.
+205	wikibio2015	jack white	person	description	american stock car racing driver		jack white was an american stock car racing driver.
+206	wikibio2015	zachary scott	person	birth_place	austin, texas, u.s.		box[birth_place]=austin, texas, u.s. | zachary scott (february 21, 1914 -- october 3, 1965) was an american actor, most notable for his roles as villains and " mystery men ".
+207	wordnet3.0	eumops	word_n	definition	mastiff bats		
+208	wikibio2015	larry craig	person	birth_date	1916-06-27		box[birth_date]=june 27, 1916 | larry gantt craig (june 27, 1916 - may 30, 1992) was an american football player who played running back and defensive back for the green bay packers of the nat
+209	geonamescache	ndiyona	city	population	20,633	2025	
+210	wiki2017	college of william & mary	wiki	description	public research university		The College of William & Mary in Virginia (also known as William & Mary, or W&M) is a public research university located in Williamsburg, Virginia, United States. Royally founded in 1693 by letters patent issued by King William III and Queen Mary II, it is the second-oldest institution of higher edu
+211	wikibio2015	mohammad shah qajar	person	birth_date	1808-01-05		box[birth_date]=5 january 1808 | mohammad shah qajar (born mohammad mirza,) (5 january 1808 -- 5 september 1848) was king of persia from the qajar dynasty (23 october 1834 -- 5 september 1848).
+212	airportsdata	tacuarembo airport	airport	country	@country:URY (uruguay)		
+213	wikibio2015	george talbot, 6th earl of shrewsbury	person	birth_date	1528		box[birth_date]=1528 | george talbot, 6th earl of shrewsbury, 6th earl of waterford, 12th baron talbot, 11th baron furnivall, kg, earl marshal (1528 -- 18 november 1590) was an englis
+214	wikibio2015	rashidi yekini	person	death_date	2012-05-04		box[death_date]=4 may 2012 | rashidi yekini (23 october 1963 -- 4 may 2012) was a nigerian footballer who played as a striker.
+215	wikibio2015	claire windsor	person	birth_place	marvin, phillips county, kansas, u.s.		box[birth_place]=marvin, phillips county, kansas, u.s. | claire windsor (april 14, 1892 -- october 24, 1972) was a notable american film actress of the silent screen era.
+216	geonamescache	lima	city	country	@country:USA (united states)		
+217	geonamescache	auburn	city	country	@country:USA (united states)		
+218	wikibio2015	claude ryan	person	birth_date	1925-01-26		box[birth_date]=26 january 1925 | claude ryan, (january 26, 1925 -- february 9, 2004) was a canadian journalist and politician.
+219	geonamescache	arakkonam	city	country	@country:IND (india)		
+220	airportsdata	rand airport	airport	city	johannesburg		
+221	geonamescache	abu ghurayb	city	country	@country:IRQ (iraq)		
+222	wikibio2015	elly beinhorn	person	occupation	pilot		box[occupation]=pilot | elly beinhorn-rosemeyer (30 may 1907 -- 28 november 2007) was a german pilot.
+223	wikibio2015	clara ward	person	birth_date	1924-04-21		box[birth_date]=21 april 1924 | clara ward (april 21, 1924 -- january 16, 1973) was an american gospel artist who achieved great artistic and commercial success in the 1940s and 1950s, as lead
+224	wikibio2015	john ryan	person	birth_place	borrisoleigh, county tipperary		box[birth_place]=borrisoleigh, county tipperary | john ryan vc (1839 -- 29 december 1864) was born in borrisoleigh, county tipperary and was an irish recipient of the victoria cross, the highest and most presti
+225	geonamescache	baras	city	country	@country:PHL (philippines)		
+226	geonamescache	puerto natales	city	country	@country:CHL (chile)		
+227	wikibio2015	edward shortt	person	party	liberal		box[party]=liberal | edward shortt pc kc (10 march 1862 -- 10 november 1935) was a british lawyer and liberal party politician.
+228	wikibio2015	david stirling	person	description	british mountaineer		colonel sir archibald david stirling, dso, obe (15 november 1915 -- 4 november 1990) was a british mountaineer, world war ii british army officer, and the found
+229	wiki2017	london, chatham and dover railway	wiki	description	railway company in south-eastern england		The London, Chatham and Dover Railway (LCDR) was a railway company in south-eastern England created on 1 August 1859, when the East Kent Railway was given Parliamentary approval to change its name. Its lines ran through London and northern and eastern Kent to form a significant part of the Greater L
+230	airportsdata	mafra airport	airport	elevation	2,690 feet		
+231	wikibio2015	anne heche	person	birth_place	aurora, ohio, u.s.		box[birth_place]=aurora, ohio, u.s. | anne celeste heche (; born may 25, 1969) is an american actress.
+232	wikibio2015	steve garvey	person	birth_place	tampa, florida		box[birth_place]=tampa, florida | steven patrick garvey (born december 22, 1948), nicknamed " mr. clean " because of the squeaky clean image he held throughout his career in baseball, is an amer
+233	goodbooks-10k	one flew over the cuckoo's nest	book	publication_year	1962		
+234	wikibio2015	basil l. plumley	person	birth_place	shady spring, west virginia, u.s.		box[birth_place]=shady spring, west virginia, u.s. | basil l. plumley (january 1, 1920 -- october 10, 2012) was a career soldier and airborne combat infantryman in the united states army who eventually achieved th
+235	wikibio2015	ferdinand von wrangel	person	death_date	1870-05-25		box[death_date]=25 may 1870 | baron ferdinand friedrich georg ludwig von wrangel (, " ferdinand petrovich vrangel "; --) was a baltic german explorer and seaman in russian service, honorable
+236	wiki2017	book of esther	wiki	description	book		The Book of Esther, also known in Hebrew as "the Scroll" (Megillah), is a book in the third section (Ketuvim, "Writings") of the Jewish Tanakh (the Hebrew Bible) and in the Christian Old Testament. It relates the story of a Hebrew woman in Persia, born as Hadassah but known as Esther, who becomes qu
+237	airportsdata	orleans-saint-denis-de-l'hotel airport	airport	elevation	396 feet		
+238	airportsdata	madivaru airport	airport	iata_code	lmv		
+239	wikibio2015	seal	person	birth_date	1963-02-19		box[birth_date]=19 february 1963 | henry olusegun adeola samuel (born 19 february 1963), better known by his stage name seal, is a british soul and r&b singer and songwriter.
+240	wiki2017	pun	wiki	description	form of wordplay		The pun, also called paronomasia, is a form of wordplay that exploits multiple meanings of a term, or of similar-sounding words, for an intended humorous or rhetorical effect. These ambiguities can arise from the intentional use of homophonic, homographic, metonymic, or figurative language. A pun di
+241	wikibio2015	dmitri bulykin	person	description	association footballer		dmitri olegovich bulykin (; born 20 november 1979 in moscow) is an association footballer who last played as a striker for fc volga nizhny novgorod in the russi
+242	wikibio2015	bobby edner	person	birth_date	1988-10-05		box[birth_date]=5 october 1988 | robert charles edner (born october 5, 1988) is an american actor, singer, dancer, and rapper.
+243	wordnet3.0	pervert	word_n	is_a	@wn:reprobate.n.01 (reprobate)		wordnet hypernym @wn:reprobate.n.01 (reprobate)
+244	wikibio2015	bobby previte	person	genre	jazz		box[genre]=jazz, experimental, rock | robert " bobby " previte (born july 16, 1951, niagara falls, new york) is a drummer, composer and bandleader.
+245	wikibio2015	christopher titus	person	description	american comedian and actor		christopher todd titus (born october 1, 1964) is an american comedian and actor.
+246	geonamescache	carson	city	population	93,281	2025	
+247	wiki2017	human torch	wiki	description	fictional superhero appearing in american comic books		The Human Torch, also known as Jim Hammond, is a fictional superhero appearing in American comic books published by Marvel Comics. Created by writer-artist Carl Burgos, he first appeared in Marvel Comics #1 (Oct.1939), published by Marvel's predecessor, Timely Comics. The "Human" Torch was actually 
+248	wikibio2015	wendi mclendon-covey	person	description	american actress		wendi anne mclendon-covey (born october 10, 1969) is an american actress, writer, producer and comedian.
+249	geonamescache	lubao	city	population	55,645	2025	
+250	wiki2017	naive bayes spam filtering	wiki	description	baseline technique for dealing with spam		Naive Bayes spam filtering is a baseline technique for dealing with spam that can tailor itself to the email needs of individual users and give low false positive spam detection rates that are generally acceptable to users. It is one of the oldest ways of doing spam filtering, with roots in the 1990
+251	geonamescache	abha	city	country	@country:SAU (saudi arabia)		
+252	wikibio2015	john fraser	person	birth_date	1958		box[birth_date]=1958 | john fraser (born) is a politician in ontario, canada.
+253	wikibio2015	carl sagan	person	birth_place	brooklyn, new york, u.s.		box[birth_place]=brooklyn, new york, u.s. | carl edward sagan (; november 9, 1934 -- december 20, 1996) was an american astronomer, cosmologist, astrophysicist, astrobiologist, author, science popularizer
+254	wordnet3.0	obscure	word_a	definition	not clearly understood or expressed; ; -anatole broyard; - p.a.sorokin		
+255	wiki2017	network congestion	wiki	description	reduced quality of service		Network congestion in data networking and queueing theory is the reduced quality of service that occurs when a network node is carrying more data than it can handle. Typical effects include queueing delay, packet loss or the blocking of new connections. A consequence of congestion is that an increme
+256	wikibio2015	curt hennig	person	death_place	tampa, florida		box[death_place]=tampa, florida | curtis michael " curt " hennig (march 28, 1958 -- february 10, 2003) was an american professional wrestler, manager, and color commentator who performed under h
+257	wikibio2015	li-young lee	person	occupation	poet		box[occupation]=poet | li-young lee (李立揚, pinyin: lǐ lìyáng) (born august 19, 1957) is an american poet.
+258	wikibio2015	jordan rudess	person	birth_date	1956-11-04		box[birth_date]=4 november 1956 | jordan rudess (born jordan charles rudes on november 4, 1956) is an american virtuoso keyboardist and composer best known as a member of the progressive metal/r
+259	wikibio2015	james pollock	person	death_date	1890-04-19		box[death_date]=19 april 1890 | james pollock (september 11, 1810 -- april 19, 1890) was the 13th governor of the state of pennsylvania from 1855 to 1858.
+260	wikibio2015	arthur smith	person	birth_place	lahore, india		box[birth_place]=lahore, india | arthur smith (born february 1915) was a british fencer.
+261	geonamescache	ngawi	city	population	22,412	2025	
+262	wikibio2015	james mcclurg	person	death_place	richmond, virginia		box[death_place]=richmond, virginia | james mcclurg (1746 -- july 9, 1823) was a delegate to the philadelphia convention and the 17th mayor of richmond, virginia.
+263	wikibio2015	guo jia	person	birth_date	170		box[birth_date]=170 | guo jia (170 -- 207), courtesy name fengxiao, was an advisor to the warlord cao cao in the late eastern han dynasty.
+264	wiki2017	dickeya dadantii	wiki	description	gram-negative bacillus		Dickeya dadantii is a gram-negative bacillus that belongs to the family Enterobacteriaceae. It was formerly known as Erwinia chrysanthemi but was reassigned as Dickeya dadantii in 2005. Members of this family are facultative anaerobes, able to ferment sugars to lactic acid, have nitrate reductase, b
+265	wikibio2015	hiram johnson	person	party	progressive		box[party]=progressive, republican | hiram warren johnson (september 2, 1866august 6, 1945) was a leading american progressive and isolationist politician from california; he served as the 23rd gov
+266	wikibio2015	ferdinand iii, holy roman emperor	person	birth_place	graz, austria		box[birth_place]=graz, austria | ferdinand iii (13 july 1608 -- 2 april 1657) was holy roman emperor from 15 february 1637 until his death, as well as king of hungary and croatia, king of bohem
+267	wordnet3.0	dejected	word_a	definition	affected or marked by low spirits		
+268	wiki2017	stonekeep	wiki	description	role-playing video game		Stonekeep is a role-playing video game developed and released by Interplay Productions for the PC in 1995. It is a first-person dungeon crawler game with pre-rendered environments, digitized characters and live-action cinematic sequences. Repeatedly delayed, the game that was supposed to be finished
+269	wikibio2015	patrick wolf	person	description	english singer-songwriter from south london		" for other people named patrick wolf, see patrick wolf (disambiguation) " patrick wolf (born patrick denis apps, 30 june 1983) is an english singer-songwriter 
+270	airportsdata	aguas claras airport	airport	iata_code	ocv		
+271	wiki2017	citibank	wiki	founded_year	1812		Citibank is the consumer division of financial services multinational Citigroup. Citibank was founded in 1812 as the City Bank of New York, later First National City Bank of New York. Citibank provides credit cards, mortgages, personal loans, commercial loans, and lines of credit. The bank has a tot
+272	wikibio2015	dale winton	person	birth_place	marylebone, london, england		box[birth_place]=marylebone, london, england | dale jonathan winton (born 22 may 1955 in marylebone, london) is an english radio dj and television presenter, best known for presenting the shows including " d
+273	wikibio2015	alexander william williamson	person	death_place	hindhead, surrey		box[death_place]=hindhead, surrey | alexander william williamson frs (1 may 1824 -- 6 may 1904) was an english chemist of scottish descent.
+274	wikibio2015	andrei shkuro	person	birth_date	1887-01-19		box[birth_date]=19 january 1887 | andrei grigoriyevich shkuro (russian: Андрей Григорьевич Шкуро; ukrainian: Андрій Григорович Шкуро) (19 january 1887 (o.s.: 7 january) -- 17 january 1947) was a
+275	wikibio2015	angelique kidjo	person	occupation	singer-songwriter		box[occupation]=singer-songwriter | angélique kpasseloko hinto hounsinou kandjo manta zogbin kidjo, known as angélique kidjo (july 14, 1960), is a grammy award winning singer-songwriter and activi
+276	wikibio2015	paul mcguinness	person	description	english former footballer		paul mcguinness (born 2 march 1966) is an english former footballer who played in the football league for crewe alexandra and chester city.
+277	geonamescache	roxbury crossing	city	country	@country:USA (united states)		
+278	geonamescache	itapeva	city	population	89,728	2025	
+279	wikibio2015	bill booth	person	position	centre-half		box[position]=centre-half | william samuel " bill " booth (7 july 1920 -- 18 february 1990) was an english footballer who played in the football league for brighton & hove albion and port 
+280	wordnet3.0	foam	word_n	definition	a mass of small bubbles formed in or on a liquid		
+281	wikibio2015	paul-emile leger	person	birth_date	1904-04-26		box[birth_date]=april 26, 1904 | paul-Émile léger, cc, goq, pss (april 26, 1904 -- november 13, 1991) was a canadian cardinal of the roman catholic church.
+282	wikibio2015	pablo de sarasate	person	occupation	composer		box[occupation]=composer, conductor, violinist | pablo martín melitón de sarasate y navascués (; 10 march 1844 -- 20 september 1908) was a spanish violinist and composer of the romantic period.
+283	geonamescache	bad salzungen	city	population	16,410	2025	
+284	wikibio2015	mohammad ali bogra	person	death_date	1963-01-23		box[death_date]=23 january 1963 | shahebzada mohammad ali bogra (19 october 1909 -- 23 january 1963), also known as mohammad ali of bogra, was a notable pakistani politician, diplomat and states
+285	wordnet3.0	criminal law	word_n	definition	the body of law dealing with crimes and their punishment		
+286	wikibio2015	ed joyce	person	death_date	2014-08-02		box[death_date]=2 august 2014 | edward matthew joyce (december 13, 1932 -- august 2, 2014) was a former television executive.
+287	wikibio2015	olympia brown	person	description	american suffragist		olympia brown (january 5, 1835 -- october 23, 1926) was an american suffragist.
+288	wikibio2015	theda bara	person	death_place	los angeles, california, u.s.		box[death_place]=los angeles, california, u.s. | theda bara (; born theodosia burr goodman, july 29, 1885 -- april 7, 1955) was an american silent film and stage actress.
+289	airportsdata	glacier creek airport	airport	country	@country:USA (united states)		
+290	wiki2017	the hitchhiker's guide to the galaxy	wiki	release_year	2005		The Hitchhiker's Guide to the Galaxy is a 2005 British-American comic science fiction film directed by Garth Jennings, based upon previous works in the media franchise of the same name, created by Douglas Adams. It stars Martin Freeman, Sam Rockwell, Mos Def, Zooey Deschanel and the voices of Stephe
+291	geonamescache	clay	city	state	@usstate:NY (new york)		
+292	wordnet3.0	lancers	word_n	definition	a quadrille for 8 or 16 couples		
+293	geonamescache	koster	city	country	@country:ZAF (south africa)		
+294	wikibio2015	nellie bly	person	death_place	new york, new york, united states		box[death_place]=new york, new york, united states | nellie bly (may 5, 1864 -- january 27, 1922) was the pen name of american journalist elizabeth cochrane seaman.
+295	wordnet3.0	optimum	word_a	definition	most desirable possible under a restriction expressed or implied		
+296	wikibio2015	charley trippi	person	position	halfback		box[position]=halfback, quarterback | charles louis trippi (born december 14, 1921) is a former american football player.
+297	wordnet3.0	obstruction	word_n	is_a	@wn:hindrance.n.03 (hindrance)		wordnet hypernym @wn:hindrance.n.03 (hindrance)
+298	wikibio2015	miguel de icaza	person	birth_place	mexico city, mexico		box[birth_place]=mexico city, mexico | miguel de icaza (born c. 1972) is a mexican programmer, best known for starting the gnome, mono, and xamarin projects.
+299	goodbooks-10k	a random walk down wall street	book	publication_year	1973		
+300	wikibio2015	jim chamberlin	person	birth_date	1915-05-23		box[birth_date]=23 may 1915 | james a. " jim " chamberlin (may 23, 1915 -- march 8, 1981) was a canadian aerodynamicist who contributed to the design of the canadian avro arrow, nasa's gemin
+301	goodbooks-10k	invasion of the body snatchers	book	author	jack finney		
+302	wikibio2015	maximilian ii, holy roman emperor	person	death_date	1576-10-12		box[death_date]=12 october 1576 | maximilian ii (31 july 1527 -- 12 october 1576), a member of the austrian house of habsburg, was holy roman emperor from 1564 until his death.
+303	wikibio2015	lenka kotkova	person	birth_place	dobrichovice		box[birth_place]=dobřichovice | lenka kotková (" née " Šarounová; born 26 july 1973) is a czech astronomer.
+304	geonamescache	nowy tomysl	city	population	15,179	2025	
+305	wikibio2015	charles lamb	person	death_place	edmonton, london, england		box[death_place]=edmonton, london, england | charles lamb (10 february 1775 -- 27 december 1834) was an english writer and essayist, best known for his " essays of elia " and for the children's book " tale
+306	wikibio2015	ned yost	person	birth_date	1955-08-19		box[birth_date]=19 august 1955 | edgar frederick " ned " yost iii (; born august 19, 1955) is a former major league baseball catcher and current manager of the kansas city royals.
+307	wordnet3.0	concern	word_n	is_a	@wn:negative_stimulus.n.01 (negative stimulus)		wordnet hypernym @wn:negative_stimulus.n.01 (negative stimulus)
+308	wordnet3.0	sonoran lyre snake	word_n	is_a	@wn:lyre_snake.n.01 (lyre snake)		wordnet hypernym @wn:lyre_snake.n.01 (lyre snake)
+309	wikibio2015	david zubik	person	birth_date	1949-09-04		box[birth_date]=04 september 1949 | david allen zubik (; born september 4, 1949) is an american prelate of the roman catholic church who serves as the twelfth and current bishop of the diocese of 
+310	wiki2017	rhetoric	wiki	description	art of discourse		Rhetoric is the art of discourse, wherein a writer or speaker strives to inform, persuade or motivate particular audiences in specific situations. As a subject of formal study and a productive civic practice, rhetoric has played a central role in the European tradition. Its best known definition com
+311	wikibio2015	david taylor	person	birth_date	1965-08-25		box[birth_date]=25 august 1965 | david taylor (born 25 august 1965) is a retired welsh footballer and current manager.
+312	wikibio2015	james madison	person	birth_date	1842		box[birth_date]=1842 | james madison (1842 - august 7, 1926) was a sergeant in the united states army and a medal of honor recipient for his role in the american civil war.
+313	wikibio2015	graham leonard	person	alma_mater	balliol college		box[alma_mater]=balliol college, oxford | graham douglas leonard kcvo (8 may 1921 -- 6 january 2010) was an english roman catholic priest and former anglican bishop.
+314	wiki2017	charoen pokphand	wiki	founded_year	1921		The Charoen Pokphand Group (CP) is a Thai conglomerate company located in Bangkok. It is Thailand's largest private company and is one of world's largest conglomerates. It consists of three core businesses that operate in agribusiness and food, retail and distribution, and the telecommunications ind
+315	goodbooks-10k	twilight eyes	book	publication_year	1984		
+316	wikibio2015	jimmy nielsen	person	birth_place	aalborg, denmark		box[birth_place]=aalborg, denmark | jimmy nielsen (born august 6, 1977) is a retired danish professional footballer who played as a goalkeeper.
+317	wikibio2015	nathaniel parker willis	person	birth_place	portland, maine, us		box[birth_place]=portland, maine, us | nathaniel parker willis (january 20, 1806 -- january 20, 1867), also known as n. p. willis, was an american author, poet and editor who worked with several nota
+318	wikibio2015	milan michalek	person	position	left wing		box[position]=left wing | milan michálek (;; born december 7, 1984) is a czech professional ice hockey left winger currently playing for the ottawa senators of the national hockey league
+319	wikibio2015	yossi benayoun	person	birth_date	1980-05-05		box[birth_date]=5 may 1980 | yosef shai " yossi " benayoun (, born 5 may 1980) is an israeli professional footballer, of moroccan jewish origin, who plays for israeli club maccabi haifa and
+320	geonamescache	tanji	city	country	@country:GMB (gambia)		
+321	wikibio2015	rivellino	person	description	former brazilian professional footballer		roberto rivellino (also rivelino,;; born 1 january 1946 in são paulo) is a former brazilian professional footballer.
+322	airportsdata	shahroud airport	airport	city	shahroud		
+323	wikibio2015	jean, grand duke of luxembourg	person	birth_place	berg castle, luxembourg		box[birth_place]=berg castle, luxembourg | jean (given names: " jean benoît guillaume robert antoine louis marie adolphe marc d'aviano "; born 5 january 1921) reigned as grand duke of luxembourg from 196
+324	wikibio2015	danny cannon	person	birth_date	1968		box[birth_date]=1968 | danny cannon (born 1968, in luton, england) is a film and television writer, director and producer.
+325	geonamescache	hatogaya-honcho	city	population	53,062	2025	
+326	wikibio2015	george coulouris	person	description	english film and stage actor		george coulouris (1 october 1903 -- 25 april 1989) was an english film and stage actor.
+327	wikibio2015	john speed	person	death_place	st giles-without-cripplegate, cripplegate, london		box[death_place]=st giles-without-cripplegate, cripplegate, london | john speed (1552 -- 28 july 1629) was an english cartographer and historian.
+328	wikibio2015	eudoxis	person	genre	thrash metal		box[genre]=thrash metal | eudoxis was a thrash metal band formed in 1984 in montreal, canada.
+329	geonamescache	bektemir	city	country	@country:UZB (uzbekistan)		
+330	wikibio2015	arvell jones	person	description	american comic book illustrator		arvell jones (whose earliest work is billed arvell malcolm jones) (born september 5) is an american comic book illustrator best known for his work for marvel co
+331	wikibio2015	jim woodring	person	description	american cartoonist		james william woodring (born october 11, 1952) is an american cartoonist, fine artist, writer and toy designer.
+332	geonamescache	vadakkanandal	city	population	23,034	2025	
+333	wordnet3.0	semitrance	word_n	definition	a trancelike state in which the person can follow instructions but voluntary action is weak or absent		
+334	geonamescache	santo domingo tehuantepec	city	country	@country:MEX (mexico)		
+335	wordnet3.0	sanitary condition	word_n	definition	the state of sanitation		
+336	geonamescache	sachse	city	state	@usstate:TX (texas)		
+337	wikibio2015	jeff feagles	person	birth_date	1966-03-07		box[birth_date]=7 march 1966 | jeffrey allan feagles (born march 7, 1966) is a former american football punter who played in the national football league (nfl) for twenty-two seasons.
+338	geonamescache	ozery	city	population	25,900	2025	
+339	wikibio2015	dietrich bonhoeffer	person	birth_date	1906-02-04		box[birth_date]=04 february 1906 | dietrich bonhoeffer (; 4 february 1906 -- 9 april 1945) was a german lutheran pastor, theologian, anti-nazi dissident, and key founding member of the confessing
+340	goodbooks-10k	lady windermere's fan	book	author	oscar wilde		
+341	geonamescache	los rastrojos	city	population	100,497	2025	
+342	wikibio2015	danny thompson	person	genre	punk rock		box[genre]=punk rock | danny thompson (may 23, 1967) is an american musician from naperville, il.
+343	wiki2017	basic life support	wiki	description	level of medical care		Basic life support (BLS) is a level of medical care which is used for victims of life-threatening illnesses or injuries until they can be given full medical care at a hospital. It can be provided by trained medical personnel, including emergency medical technicians, paramedics, and by qualified byst
+344	mledoze-countries+countryinfo	wallis and futuna	country	official_languages	french		
+345	wikibio2015	pim fortuyn	person	birth_date	1948-02-19		box[birth_date]=19 february 1948 | wilhelmus simon petrus fortuijn, known as pim fortuyn (; 19 february 1948 -- 6 may 2002) was a dutch politician, civil servant, sociologist, author and professo
+346	wordnet3.0	refit	word_n	definition	outfitting a ship again		
+347	wikibio2015	dean moxey	person	description	english footballer		dean moxey (born 14 january 1986) is an english footballer who plays at the full back position for bolton wanderers.
+348	wikibio2015	robert koehler	person	death_date	1917-04-23		box[death_date]=23 april 1917 | robert koehler (november 28, 1850 - april 23, 1917) was a german-born painter and art teacher who spent most of his career in the united states of america.
+349	wikibio2015	roderick chisholm	person	death_place	providence, rhode island		box[death_place]=providence, rhode island | roderick milton chisholm (; november 27, 1916 -- january 19, 1999) was an american philosopher known for his work on epistemology, metaphysics, free will, value
+350	wikibio2015	betty davis	person	birth_date	1945-07-26		box[birth_date]=26 july 1945 | betty davis (born betty mabry, july 26, 1945) is an american funk singer.
+351	geonamescache	ghanzi	city	country	@country:BWA (botswana)		
+352	wikibio2015	darryl dawkins	person	position	center		box[position]=center | darryl dawkins (january 11, 1957 -- august 27, 2015) was an american professional basketball player, most noted for his days with the nba's philadelphia 76ers a
+353	wikibio2015	charles h. taylor	person	description	american politician		charles hart " chuck " taylor (born january 21, 1941) is an american politician; a republican, he represented north carolina's 11th congressional district in th
+354	periodictable	gadolinium	element	period	6		
+355	wikibio2015	david rothkopf	person	birth_date	1955-12-24		box[birth_date]=24 december 1955 | david j. rothkopf (born 24 december 1955) is ceo and editor the fp group publishes foreign policy magazine, rothkopf was first announced as ceo and editor-at-la
+356	wikibio2015	kurt otto friedrichs	person	birth_date	1901-09-28		box[birth_date]=28 september 1901 | kurt otto friedrichs (september 28, 1901 -- december 31, 1982) was a noted german american mathematician.
+357	wiki2017	michael halliday	wiki	description	linguist from england		Michael Alexander Kirkwood Halliday (often M. A. K. Halliday; born 13 April 1925) is a linguist from England who developed the internationally influential systemic functional linguistic model of language. His grammatical descriptions go by the name of systemic functional grammar (SFG). Halliday desc
+358	wikibio2015	louie anderson	person	occupation	actor		box[occupation]=actor, comedian, game show host, author | louie perry anderson (born march 24, 1953) is an american stand-up comedian, actor and television host.
+359	wikibio2015	abram hoffer	person	birth_date	1917-11-11		box[birth_date]=11 november 1917 | abram hoffer (november 11, 1917 -- may 27, 2009) was a canadian biochemist, physician and psychiatrist known for his " adrenochrome hypothesis " of schizoaffect
+360	wiki2017	california western railroad	wiki	description	heritage railroad in mendocino county		The California Western Railroad, popularly called the Skunk Train, is a heritage railroad in Mendocino County, California, running from the railroad's headquarters in the coastal town of Fort Bragg to the interchange with the Northwestern Pacific Railroad at Willits. The CWR runs steam and diesel-po
+361	wiki2017	drawn together	wiki	description	american adult animated sitcom		Drawn Together is an American adult animated sitcom which ran on Comedy Central from October 27, 2004 to November 14, 2007. The series was created by Dave Jeser and Matt Silverstein, and uses a sitcom format with a TV reality show setting. The show's eight characters are a combination of personaliti
+362	wikibio2015	lin carter	person	birth_place	st. petersburg, florida, usa		box[birth_place]=st. petersburg, florida, usa | linwood vrooman carter (june 9, 1930 -- february 7, 1988) was a prolific american author of science fiction and fantasy, as well as an editor, poet and critic.
+363	wikibio2015	stephen frears	person	birth_place	leicester, leicestershire, england, uk		box[birth_place]=leicester, leicestershire, england, uk | stephen arthur frears (born 20 june 1941) is an english film director.
+364	wiki2017	puerto barrios	city	description	city in guatemala		
+365	wikibio2015	daniel w. bursch	person	nationality	american		box[nationality]=american | daniel wheeler bursch (born july 25, 1957) is a former nasa astronaut, and captain of the united states navy.
+366	wikibio2015	babak khorramdin	person	death_date	0838-01-07		box[death_date]=7 january 838 | bābak khorram-din (formally known as " " pāpak " " meaning " " young father " ") (, alternative spelling: " pāpak xorramdin "; 795, according to some other sour
+367	wikibio2015	alina cojocaru	person	birth_date	1981-05-27		box[birth_date]=27 may 1981 | alina cojocaru (born 27 may 1981) is a romanian ballet dancer.
+368	wikibio2015	thomas w. lamont	person	birth_date	1870-09-30		box[birth_date]=30 september 1870 | thomas william lamont, jr. (september 30, 1870 -- february 2, 1948) was an american banker.
+369	wikibio2015	paul davies	person	nationality	british		box[nationality]=british | paul davies (born on 12 october 1966) is a welsh paralympic table tennis player.
+370	wiki2017	racing bicycle	wiki	description	bicycle designed for competitive road cycling		A racing bicycle, also known as a road bike, is a bicycle designed for competitive road cycling, a sport governed by according to the rules of the Union Cycliste Internationale (UCI). The UCI rules were altered in 1934 to exclude recumbent bicycles. The most important characteristics about a racing 
+371	geonamescache	castries	city	country	@country:LCA (saint lucia)		
+372	geonamescache	ennigerloh	city	population	20,713	2025	
+373	wiki2017	jiu valley	wiki	description	region in southwestern romania		The Jiu Valley is a region in southwestern Romania, in Hunedoara county, situated in a valley of the Jiu River between the Retezat Mountains and the Parâng Mountains. The region was heavily industrialised and the main activity was coal mining, but due to low efficiency, most of the mines were closed
+374	airportsdata	inukjuak airport	airport	country	@country:CAN (canada)		
+375	wikibio2015	john oster	person	position	winger		box[position]=winger, deep-lying playmaker | john morgan oster (born 8 december 1978) is an english-born welsh former professional footballer, who last played as a midfielder for conference premier side ga
+376	goodbooks-10k	vampire academy	book	author	richelle mead		
+377	wikibio2015	john entwistle	person	birth_place	chiswick, greater london, england		box[birth_place]=chiswick, greater london, england | john alec entwistle (9 october 1944 -- 27 june 2002) was an english musician, songwriter, singer, film and music producer, who was best known as the bass guitar
+378	wordnet3.0	purple grackle	word_n	definition	eastern united states grackle		
+379	wikibio2015	billy hughes	person	death_date	1981-06-16		box[death_date]=16 june 1981 | william marshall " billy " hughes (6 march 1918 -- 16 june 1981) was a welsh professional footballer who played as a left back.
+380	wikibio2015	jonathan agnew	person	birth_date	1960-04-04		box[birth_date]=4 april 1960 | jonathan philip agnew (born 4 april 1960) is an english cricket broadcaster and former professional cricketer.
+381	goodbooks-10k	poison study	book	publication_year	2005		
+382	wikibio2015	waldo de los rios	person	description	argentine composer		waldo de los ríos (7 september 1934 -- 28 march 1977) was an argentine composer, conductor and arranger.
+383	wikibio2015	karl leonhard reinhold	person	death_date	1823-04-10		box[death_date]=10 april 1823 | karl leonhard reinhold (26 october 1757 -- 10 april 1823) was an austrian philosopher.
+384	wikibio2015	stephen cummings	person	genre	rock		box[genre]=rock, rockabilly, country swing, r & b, new wave | stephen donald cummings (born 13 september 1954 in melbourne, australia) is an australian rock singer-songwriter and writer.
+385	wikibio2015	ken kesey	person	birth_place	la junta, colorado, u.s.		box[birth_place]=la junta, colorado, u.s. | kenneth elton " ken " kesey (; september 17, 1935 -- november 10, 2001) was an american author, best known for his novel " one flew over the cuckoo's nest " (19
+386	wikibio2015	arturo perez-reverte	person	birth_date	1951-11-25		box[birth_date]=25 november 1951 | arturo pérez-reverte gutiérrez (born 25 november 1951 in cartagena) is a spanish novelist and journalist.
+387	wiki2017	bendigo	city	description	city in victoria		
+388	wikibio2015	bing crosby	person	birth_date	1903-05-03		box[birth_date]=03 may 1903 | harry lillis " bing " crosby, jr. (may 3, 1903 -- october 14, 1977) was an american singer and actor.
+389	wikibio2015	ana barbara	person	genre	grupero		box[genre]=grupero, banda, mariachi, cumbia, latin pop | altagracia ugalde motta (born january 10, 1971) better known as ana bárbara is a mexican recording artist.
+390	wikibio2015	ron goodwin	person	genre	film		box[genre]=film, classical, pop, orchestral music | ronald alfred " ron " goodwin (17 february 19258 january 2003) was an english composer and conductor known for his film music.
+391	wikibio2015	eugene burnouf	person	birth_place	paris, france		box[birth_place]=paris, france | eugène burnouf (april 8, 1801 -- may 28, 1852) was an eminent french scholar and orientalist who made significant contributions to the deciphering of old persia
+392	geonamescache	talladega	city	state	@usstate:AL (alabama)		
+393	wikibio2015	w. d. ross	person	death_date	1971-05-05		box[death_date]=5 may 1971 | sir william david ross kbe fba (; 15 april 1877 -- 5 may 1971), known as david ross but usually cited as w. d. ross, was a scottish philosopher who is known for
+394	wikibio2015	ron underwood	person	description	american film director		ronald brian " ron " underwood (born november 6, 1953) is an american film director, producer and television director.
+395	wikibio2015	sandor torghelle	person	birth_place	budapest, hungary		box[birth_place]=budapest, hungary | sándor torghelle (; nicknamed as ` the lord of the air; born 5 may 1982) is a hungarian footballer who plays as a striker for nemzeti bajnokság i club mtk budap
+396	wikibio2015	olive custance	person	occupation	poet		box[occupation]=poet | olive eleanor custance (7 february 1874 -- 12 february 1944) was a british poet and wife of lord alfred douglas.
+397	wikibio2015	kurt otto friedrichs	person	description	noted german american mathematician		kurt otto friedrichs (september 28, 1901 -- december 31, 1982) was a noted german american mathematician.
+398	wikibio2015	pauline phillips	person	birth_date	1918-07-04		box[birth_date]=4 july 1918 | pauline esther " popo " phillips (née friedman; july 4, 1918 -- january 16, 2013), also known as abigail van buren, was an american advice columnist and radio s
+399	wiki2017	new westminster	city	description	historically important city		
+400	wikibio2015	khaled abou el fadl	person	birth_date	1963		box[birth_date]=1963 | dr. khaled abou el fadl (,) (born 1963 in kuwait) is the omar and azmeralda alfi distinguished professor of law at the ucla school of law where he has taught co
+401	geonamescache	iraucuba	city	country	@country:BRA (brazil)		
+402	wikibio2015	leonhard graf von blumenthal	person	death_date	1900-12-21		box[death_date]=21 december 1900 | count karl konstantin albrecht leonhard (leonhardt) graf von blumenthal (july 30, 1810 -- december 21, 1900) was a prussian field marshal, chiefly remembered fo
+403	wikibio2015	roger clemens	person	description	retired american baseball pitcher		william roger clemens (born august 4, 1962), nicknamed " rocket ", is a retired american baseball pitcher who played 24 seasons in major league baseball (mlb) f
+404	wikibio2015	cajeme	person	death_date	1887		box[death_date]=1887 | cajemé / kahe'eme (yoeme or yaqui language for " the one who does not stop to drink water " '), born josé maría bonifacio leiva peres (also spelled leyva, and l
+405	wikibio2015	wendell willkie	person	alma_mater	indiana university bloomington		box[alma_mater]=indiana university bloomington (b.a., ll.b.) | wendell lewis willkie (; february 18, 1892 -- october 8, 1944) was a corporate lawyer in the united states and a dark horse who became the republican party nomi
+406	wikibio2015	zhang ziyi	person	birth_date	1979-02-09		box[birth_date]=9 february 1979 | zhang ziyi (born 9 february 1979), sometimes credited as ziyi zhang, is a chinese actress and model.
+407	wikibio2015	sergei gonchar	person	birth_place	chelyabinsk, russian sfsr, soviet union		box[birth_place]=chelyabinsk, russian sfsr, soviet union | sergei viktorovich gonchar (; born april 13, 1974) is a russian professional ice hockey player who is currently on a professional tryout for the pittsburgh peng
+408	wikibio2015	tomas bata	person	birth_date	1876-04-03		box[birth_date]=3 april 1876 | tomáš baťa () (3 april 1876 in zlín, moravia -- 12 july 1932) was a czech entrepreneur, founder of the bata shoes company, one of the world's biggest multinatio
+409	wiki2017	skegness	city	description	seaside town and civil parish		
+410	wikibio2015	william mulholland	person	occupation	civil engineer		box[occupation]=civil engineer | william mulholland (september 11, 1855 -- july 22, 1935) was the head of a predecessor to the los angeles department of water and power.
+411	wikibio2015	qkumba zoo	person	description	dance music trio from johannesburg		qkumba zoo was a dance music trio from johannesburg, south africa, consisting of vocalist levannah, dancer/sculptor tziki and musician/producer owl.
+412	wikibio2015	joe morgan	person	birth_date	1945-08-07		box[birth_date]=07 august 1945 | joseph edmund " joe " morgan (7 august 1945 -- 22 december 2002) was a new zealand rugby union player.
+413	wikibio2015	david allan coe	person	birth_date	1939-09-06		box[birth_date]=6 september 1939 | david allan coe (born september 6, 1939) is an american songwriter, outlaw country music singer, and guitarist who achieved popularity in the 1970s and 1980s.
+414	wikibio2015	andre breton	person	death_place	paris		box[death_place]=paris | andré breton (; 19 february 1896 -- 28 september 1966) was a french writer and poet.
+415	wiki2017	lilo & stitch	wiki	description	2002 american animated science fiction comedy-drama film		Lilo & Stitch is a 2002 American animated science fiction comedy-drama film produced by Walt Disney Feature Animation and released by Walt Disney Pictures. The 42nd Disney animated feature film, Lilo & Stitch was written and directed by Dean DeBlois and Chris Sanders, the latter also starring as Sti
+416	geonamescache	sammamish	city	population	52,253	2025	
+417	airportsdata	bagram air base	airport	iata_code	oai		
+418	wiki2017	the iron bridge	wiki	description	bridge		The Iron Bridge is a bridge that crosses the River Severn in Shropshire, England. Opened in 1781, it was the first major bridge in the world to be made of cast iron, and was greatly celebrated after construction owing to its use of the new material. In 1934 it was designated a Scheduled Ancient Monu
+419	wikibio2015	robert haldane	person	occupation	scottish theologian		box[occupation]=scottish theologian | robert haldane (28 february 1764 -- 12 december 1842) was a scottish churchman.
+420	geonamescache	outat oulad al haj	city	population	17,895	2025	
+421	wordnet3.0	agency	word_n	definition	an administrative unit of government		
+422	wikibio2015	jeffrey ford	person	nationality	american		box[nationality]=american | jeffrey ford (born november 8, 1955 in west islip, new york) is an american writer in the fantastic genre tradition, although his works have spanned genres incl
+423	wikibio2015	john pemberton	person	birth_date	1964-11-18		box[birth_date]=18 november 1964 | john pemberton (born 18 november 1964 in oldham, lancashire) is an english former professional footballer and is currently assistant manager at bristol city.
+424	wikibio2015	jonathan swift	person	description	anglo-irish satirist		jonathan swift (30 november 1667 -- 19 october 1745) was an anglo-irish satirist, essayist, political pamphleteer (first for the whigs, then for the tories), po
+425	wikibio2015	al young	person	birth_date	1942-07-01		box[birth_date]=1 july 1942 | alfred leslie young (born july 1, 1942), was an american politician who was a member of the oregon house of representatives.
+426	wikibio2015	rolf liebermann	person	death_place	paris, france		box[death_place]=paris, france | rolf liebermann (september 14, 1910 -- january 2, 1999), was a swiss composer and music administrator.
+427	wikibio2015	michael powell	person	description	american professional lacrosse player		michael powell (born october 29, 1982) is an american professional lacrosse player who was a four-time first team all-american at syracuse university, played pr
+428	wikibio2015	laird barron	person	occupation	writer		box[occupation]=writer, sled dog racer | laird samuel barron (born 1970) is an award winning author and poet, much of whose work falls within the horror, noir, and dark fantasy genres.
+429	geonamescache	valley east	city	population	17,451	2025	
+430	wiki2017	arrested development	wiki	description	american television sitcom		Arrested Development is an American television sitcom created by Mitchell Hurwitz, which originally aired on Fox for three seasons from November 2, 2003, to February 10, 2006. A fourth season of 15 episodes was released on Netflix on May 26, 2013. The show follows the fictitious Bluth family, a form
+431	wordnet3.0	give off	word_v	definition	have as a by		
+432	geonamescache	rouge	city	population	46,496	2025	
+433	wikibio2015	samuel richardson	person	birth_date	1689-08-19		box[birth_date]=19 august 1689 | samuel richardson (19 august 1689 -- 4 july 1761) was an 18th-century english writer and printer.
+434	wikibio2015	kancha ilaiah	person	birth_place	papaiahpet, warangal district, telangana, india		box[birth_place]=papaiahpet, warangal district, telangana, india | kancha ilaiah (born 5 october 1952) is an indian academician, writer and activist for dalit rights.
+435	geonamescache	bandar-e anzali	city	country	@country:IRN (iran)		
+436	wikibio2015	harry franklin vickers	person	description	american inventor and industrialist		harry franklin vickers (october 1, 1898 -- january 12, 1977) was an american inventor and industrialist.
+437	wikibio2015	peter schilling	person	genre	ndw		box[genre]=ndw, new wave | peter schilling (born pierre michael schilling; january 28, 1956) is a german synthpop musician whose songs often feature science-fiction themes (aliens, astron
+438	wordnet3.0	negotiator	word_n	definition	someone who negotiates		
+439	wikibio2015	rebbie jackson	person	birth_place	gary, indiana, u.s.		box[birth_place]=gary, indiana, u.s. | maureen reillette " rebbie " brown (née jackson; born may 29, 1950) is an american singer professionally known as rebbie jackson.
+440	geonamescache	maramba	city	population	26,531	2025	
+441	airportsdata	selawik airport	airport	elevation	17 feet		
+442	wikibio2015	brothers quay	person	occupation	film directors		box[occupation]=film directors, animators | stephen and timothy quay (; born june 17, 1947) are american identical twin brothers better known as the brothers quay or quay brothers.
+443	wordnet3.0	lending	word_n	definition	disposing of money or property with the expectation that the same thing will be returned		
+444	wikibio2015	stephen mcmanus	person	birth_place	lanark, scotland		box[birth_place]=lanark, scotland | stephen mcmanus (born 10 september 1982) is a scottish footballer who currently plays as a centre back for scottish premiership club motherwell.
+445	geonamescache	plainfield	city	country	@country:USA (united states)		
+446	wikibio2015	tommy salo	person	birth_date	1971-02-01		box[birth_date]=1 february 1971 | tommy mikael salo (born february 1, 1971) is a swedish general manager of leksands if of the shl.
+447	wikibio2015	augustus pablo	person	birth_date	1954-06-21		box[birth_date]=21 june 1954 | horace swaby (21 june 1954 -- 18 may 1999), known as augustus pablo, was a jamaican roots reggae and dub record producer, melodica player and keyboardist, activ
+448	airportsdata	blackwell-tonkawa municipal airport	airport	city	blackwell		
+449	geonamescache	labutta	city	country	@country:MMR (myanmar)		
+450	wiki2017	union	wiki	artist	yes		Union is the thirteenth studio album by the English rock band Yes, released on 30 April 1991 by Arista Records. Production began in 1990 following the amalgamation of two bands featuring current and previous members of Yes at the time: Yes, consisting of Chris Squire, Trevor Rabin, Tony Kaye, and Al
+451	geonamescache	dublin	city	state	@usstate:GA (georgia)		
+452	airportsdata	mataiva airport	airport	elevation	11 feet		
+453	wikibio2015	danny glover	person	birth_place	crewe, england		box[birth_place]=crewe, england | daniel " danny " glover (born 24 october 1989) is an english football striker who plays for national league north side afc telford united.
+454	wikibio2015	e. power biggs	person	birth_date	1906-03-29		box[birth_date]=29 march 1906 | edward george power biggs (march 29, 1906 -- march 10, 1977), professionally known as e. power biggs, was a british-born american concert organist and recording
+455	wikibio2015	mike mccready	person	occupation	musician		box[occupation]=musician, songwriter | michael " mike " david mccready (born april 5, 1966) is an american musician who serves as the lead guitarist for the american rock band pearl jam.
+456	wikibio2015	darryl talley	person	description	former american college and professional football player		darryl victor talley (born july 10, 1960) is a former american college and professional football player who was a linebacker in the national football league (nf
+457	mledoze-countries+countryinfo	taiwan	country	calling_code	+886		
+458	wikibio2015	r. e. foster	person	birth_place	malvern, worcestershire, england		box[birth_place]=malvern, worcestershire, england | reginald erskine foster, nicknamed tip foster, commonly designated r. e. foster in sporting literature (16 april 1878 - 13 may 1914) was an english cricketer an
+459	wikibio2015	john fraser	person	death_place	bedford, pennsylvania		box[death_place]=bedford, pennsylvania | john fraser (1721 -- 16 april 1773) was a fur trader licensed by the province of pennsylvania for its western frontier, an interpreter with native americans, a 
+460	geonamescache	kinoshita	city	population	24,989	2025	
+461	wikibio2015	matthew butler	person	birth_date	1836-03-08		box[birth_date]=8 march 1836 | matthew calbraith butler (march 8, 1836april 14, 1909) was an american military commander and attorney and politician from south carolina.
+462	wordnet3.0	california	word_n	definition	a state in the western united states on the pacific; the 3rd largest state; known for earthquakes		
+463	wikibio2015	john ferraro	person	birth_date	1924-05-24		box[birth_date]=24 may 1924 | john ferraro (may 24, 1924 -- april 17, 2001) was the longest-serving los angeles city council member in the history of the city -- thirty-five years, from 1966
+464	wordnet3.0	dispersion	word_n	definition	the act of dispersing or diffusing something		
+465	wikibio2015	robert l. ghormley	person	description	admiral in the united states navy		vice admiral robert lee ghormley (15 october 1883 -- 21 june 1958) was an admiral in the united states navy, serving as commander, south pacific area, during th
+466	geonamescache	jelcz laskowice	city	country	@country:POL (poland)		
+467	wikibio2015	jeffrey miller	person	birth_place	plainview, new york, u.s.		box[birth_place]=plainview, new york, u.s. | jeffrey glenn miller (march 28, 1950 -- may 4, 1970) was an american student at kent state university in kent, ohio, when he was shot and killed by ohio nationa
+468	wiki2017	wizard of oz experiment	wiki	description	research experiment		In the field of human–computer interaction, a Wizard of Oz experiment is a research experiment in which subjects interact with a computer system that subjects believe to be autonomous, but which is actually being operated or partially operated by an unseen human being.
+469	wikibio2015	vicki morgan	person	description	model and a high-profile murder victim		vicki morgan (born august 9, 1952 in colorado springs, colorado -- july 7, 1983 in los angeles, california) was a model and a high-profile murder victim.
+470	wikibio2015	paul wilbur klipsch	person	death_date	2002-05-05		box[death_date]=5 may 2002 | paul wilbur klipsch (march 9, 1904 -- may 5, 2002) was an american engineer and high fidelity audio pioneer, known for developing a high-efficiency folded horn 
+471	geonamescache	wiesloch	city	country	@country:DEU (germany)		
+472	wikibio2015	richard burton	person	birth_date	1955-01-29		box[birth_date]=29 january 1955 | richard leslie burton (born 29 january 1955) is a former english cricketer.
+473	goodbooks-10k	the pioneer woman cooks: food from my frontier	book	publication_year	2011		
+474	wikibio2015	carol reed	person	occupation	weather person		box[occupation]=weather person | carol reed (1925 or 1926 -- june 4, 1970), always introduced as " carol reed, the weather girl ", presented the weather portion of the evening newscasts on wcbs
+475	goodbooks-10k	civilwarland in bad decline	book	publication_year	1996		
+476	wiki2017	ninja gaiden iii: the ancient ship of doom	wiki	description	side-scrolling platforming video game		Ninja Gaiden III: The Ancient Ship of Doom is a side-scrolling platforming video game developed and published by Tecmo. It was released in Japan on for the Famicom and in North America in August 1991 for the Nintendo Entertainment System (NES). The NES version was not released in Europe. It was late
+477	wikibio2015	earl anthony	person	occupation	ten pin bowler		box[occupation]=ten pin bowler, bowling broadcaster | earl roderick anthony (april 27, 1938 -- august 14, 2001) was a left-handed american professional bowler who amassed records of 43 titles and six bowler of the 
+478	wikibio2015	yunsi	person	birth_date	1681-03-29		box[birth_date]=29 march 1681 | " for the place and area in persia/iran see yunesi. "
+479	wordnet3.0	worldly concern	word_n	is_a	@wn:concern.n.01 (concern)		wordnet hypernym @wn:concern.n.01 (concern)
+480	wiki2017	divine light mission	wiki	description	organization		The Divine Light Mission (Divya Sandesh Parishad; DLM) was an organization founded in 1960 by guru Shri Hans Ji Maharaj for his following in northern India. During the 1970s, the DLM gained prominence in the West under the leadership of his fourth and youngest son, Guru Maharaj Ji (Prem Rawat). Some
+481	wikibio2015	radek stepanek	person	birth_place	karvina, czechoslovakia		box[birth_place]=karviná, czechoslovakia (now czech republic) | radek Štěpánek (; born 27 november 1978) is a professional tennis player from the czech republic.
+482	wikibio2015	arthur rackham	person	birth_place	lewisham, kent, england		box[birth_place]=lewisham, kent, england | arthur rackham (19 september 1867 -- 6 september 1939) was an english book illustrator.
+483	wikibio2015	ladysmith black mambazo	person	description	male choral group from south africa		ladysmith black mambazo is a male choral group from south africa that sings in the vocal styles of isicathamiya and mbube.
+484	wikibio2015	john marley	person	birth_date	1823-11-11		box[birth_date]=11 november 1823 | john marley (heighington, county durham, 11 november 1823 -- 4 april 1891, darlington) was a geologist and mining engineer from darlington who together with iro
+485	geonamescache	sattur	city	population	31,856	2025	
+486	wikibio2015	john hicks	person	birth_place	atlanta, georgia, us		box[birth_place]=atlanta, georgia, us | john josephus hicks, jr. (december 21, 1941 -- may 10, 2006) was an american jazz pianist and composer, active in the new york and international jazz scenes fro
+487	airportsdata	ngari gunsa airport	airport	city	shiquanhe		
+488	wikibio2015	raveendran	person	genre	carnatic music		box[genre]=carnatic music, hindistani classical, malayalam music, world music | m. raveendran (born kulathupuzha, kollam, 9 november 1941 -- died chennai, tamil nadu, 3 march 2005) fondly known as " raveendran master ", was a popular south 
+489	wikibio2015	heinz erhardt	person	birth_place	riga, livonia russian empire		box[birth_place]=riga, livonia russian empire | heinz erhardt (20 february 1909 -- 5 june 1979) was a german comedian, musician, entertainer, actor, and poet.
+490	geonamescache	lodz	city	country	@country:POL (poland)		
+491	wordnet3.0	bath	word_n	definition	a vessel containing liquid in which something is immersed		
+492	wordnet3.0	pleasure	word_n	is_a	@wn:activity.n.01 (activity)		wordnet hypernym @wn:activity.n.01 (activity)
+493	wikibio2015	mosquito	person	position	forward		box[position]=forward | thiago rodrigues da silva (born 6 january 1996), commonly known as mosquito, is a brazilian footballer who plays for spanish club ue llagostera as a forward.
+494	wikibio2015	harry thompson	person	death_place	los angeles, california		box[death_place]=los angeles, california | harry julius thompson (january 8, 1926 -- november 26, 2003) was an american football offensive guard who played six seasons in the national football league wit
+495	wordnet3.0	drug war	word_n	definition	conflict between law enforcement and those who deal in illegal drugs		
+496	wordnet3.0	home	word_a	definition	used of your own ground		
+497	airportsdata	nakhon ratchasima airport	airport	elevation	765 feet		
+498	airportsdata	andoya airport	airport	elevation	43 feet		
+499	wikibio2015	edward h. levi	person	death_place	chicago, illinois, united states		box[death_place]=chicago, illinois, united states | edward hirsch levi (june 26, 1911 -- march 7, 2000) was an american law professor, academic leader, scholar, and statesman.
+500	wikibio2015	otto rehhagel	person	birth_place	essen, germany		box[birth_place]=essen, germany | otto rehhagel (; born 9 august 1938 in essen) is a german football coach and former football player.
+501	goodbooks-10k	mine	book	publication_year	2013		
+502	wikibio2015	louis koo	person	birth_date	1970-10-21		box[birth_date]=21 october 1970 | louis koo (koo tin-lok 古天樂; born 21 october 1970) is a hong kong film actor.
+503	wikibio2015	joe orton	person	birth_place	leicester, england		box[birth_place]=leicester, england | john kingsley " joe " orton (1 january 1933 -- 9 august 1967) was an english playwright and author.
+504	wordnet3.0	pectoral sandpiper	word_n	definition	american sandpiper that inflates its chest when courting		
+505	mledoze-countries+countryinfo	seychelles	country	demonym	seychellois		
+506	wikibio2015	john murray	person	birth_date	1906-10-12		box[birth_date]=12 october 1906 | john murray (october 12, 1906 -- june 17, 1984) was an american playwright best known for writing the 1937 play " room service " with allen boretz.
+507	wikibio2015	cardinal richelieu	person	death_place	paris, france		box[death_place]=paris, france | armand jean du plessis, cardinal-duke of richelieu and of fronsac (9 september 1585 -- 4 december 1642) was a french clergyman, noble and statesman.
+508	airportsdata	maygatka airport.	airport	elevation	768 feet		
+509	airportsdata	palonegro airport	airport	iata_code	bga		
+510	wikibio2015	troy dorsey	person	birth_place	mansfield, texas, united states		box[birth_place]=mansfield, texas, united states | troy glenn dorsey (born november 19, 1962) is an american former boxer and kickboxer who competed in the bantamweight, featherweight and lightweight divisions.
+511	wikibio2015	chia thye poh	person	description	singaporean former political prisoner		dr chia thye poh (born 1941) is a singaporean former political prisoner.
+512	wikibio2015	hank patterson	person	position	catcher		box[position]=catcher | henry joseph colquit patterson (july 17, 1907 -- september 30, 1970) was a catcher in major league baseball.
+513	airportsdata	suceava stefan cel mare airport	airport	elevation	1,375 feet		
+514	wikibio2015	james franck	person	birth_place	hamburg, german empire		box[birth_place]=hamburg, german empire | james franck (26 august 1882 -- 21 may 1964) was a german physicist who won the 1925 nobel prize for physics with gustav hertz " for their discovery of the laws
+515	wiki2017	food lion	wiki	description	grocery store company headquartered in salisbury		Food Lion LLC is a grocery store company headquartered in Salisbury, North Carolina, that operates more than 1,100 supermarkets in 10 states of the Southeastern United States under the Food Lion banner. With about 63,000 employees, Food Lion, LLC. is currently owned by Ahold Delhaize after it was ac
+516	wikibio2015	cherie johnson	person	description	american actress		cherie johnson (born november 21, 1975) is an american actress, writer and film producer and author.
+517	wiki2017	1900 galveston hurricane	wiki	description	category 4 storm		The Great Galveston Hurricane, known regionally as the Great Storm of 1900, was a Category 4 storm, with winds of up to, which made landfall on September 8, 1900, in Galveston, Texas, in the United States. It killed 6,000 to 12,000 people, making it the deadliest hurricane and natural disaster in U.
+518	wikibio2015	frederick ashton	person	birth_place	guayaquil, ecuador		box[birth_place]=guayaquil, ecuador | sir frederick william mallandaine ashton om, ch, cbe (17 september 190418 august 1988) was a british ballet dancer and choreographer.
+519	geonamescache	onitsha	city	population	1,553,000	2025	
+520	wiki2017	beijing-shanghai high-speed railway	wiki	description	long high-speed railway		The Beijing–Shanghai High-Speed Railway (or Jinghu High-Speed Railway from its Chinese name) is a long high-speed railway that connects two major economic zones in the People's Republic of China, the Bohai Economic Rim and the Yangtze River Delta. Construction began on April 18, 2008, and a ceremony
+521	goodbooks-10k	dead heat	book	author	patricia briggs		
+522	wikibio2015	toby driver	person	birth_place	meriden, connecticut		box[birth_place]=meriden, connecticut | toby driver is a multi-instrumentalist, songwriter, and artist, best known for his work as the frontman of the experimental bands maudlin of the well and kayo d
+523	geonamescache	correntes	city	population	17,660	2025	
+524	wikibio2015	john wilson	person	birth_date	1890-06-15		box[birth_date]=june 15, 1890 | john nicodemus wilson (june 15, 1890 -- september 23, 1954) was a professional baseball pitcher.
+525	geonamescache	wanguru	city	country	@country:KEN (kenya)		
+526	wikibio2015	nikhil banerjee	person	genre	hindustani classical music		box[genre]=hindustani classical music | nikhil ranjan banerjee () (14 october 1931 -- 27 january 1986) was an eminent indian classical sitarist of the maihar gharana.
+527	geonamescache	henichesk	city	population	19,501	2025	
+528	wordnet3.0	northern phalarope	word_n	definition	breeds in arctic regions of old and new worlds; large flocks often seen far out at sea		
+529	wiki2017	mercyful fate	wiki	description	danish heavy metal band from copenhagen		Mercyful Fate is a Danish heavy metal band from Copenhagen, formed in 1981 by vocalist King Diamond and guitarist Hank Shermann. Influenced by progressive rock and hard rock, with lyrics dealing with Satan and the occult, Mercyful Fate were part of the first wave of black metal in the early to mid-1
+530	geonamescache	ishwardi	city	population	81,995	2025	
+531	wikibio2015	luke chadwick	person	birth_date	1980-11-18		box[birth_date]=18 november 1980 | luke harry chadwick (born 18 november 1980) is an english professional footballer who plays as a midfielder.
+532	wikibio2015	kevin max	person	birth_date	1967-08-17		box[birth_date]=17 august 1967 | kevin max (born august 17, 1967) is an american singer, songwriter, and poet.
+533	wikibio2015	otto heinrich warburg	person	birth_place	freiburg, baden, german empire		box[birth_place]=freiburg, baden, german empire | otto heinrich warburg (; october 8, 1883 -- august 1, 1970), son of physicist emil warburg, was a german physiologist, medical doctor and nobel laureate.
+534	wikibio2015	stendhal	person	birth_place	grenoble, france		box[birth_place]=grenoble, france | marie-henri beyle (; 23 january 1783 -- 23 march 1842), better known by his pen name stendhal (or; in english,, or), was a 19th-century french writer.
+535	wikibio2015	juliette greco	person	genre	chanson		box[genre]=chanson | juliette gréco (; born 7 february 1927), is a french actress and popular chanson singer.
+536	wiki2017	semantic change	wiki	description	evolution of word usage-usually to the point		Semantic change (also semantic shift, semantic progression, semantic development, or semantic drift) is the evolution of word usage—usually to the point that the modern meaning is radically different from the original usage. In diachronic (or historical) linguistics, semantic change is a change in o
+537	wikibio2015	ashia hansen	person	birth_place	evansville, indiana, us		box[birth_place]=evansville, indiana, us | ashia hansen, mbe (born 5 december 1971) is a retired british triple jumper who competed internationally from 1994 to 2008.
+538	geonamescache	shangqiu	city	country	@country:CHN (china)		
+539	wikibio2015	josh turner	person	genre	country		box[genre]=country, neotraditional country | joshua otis " josh " turner (born november 20, 1977) is an american contemporary country music singer and actor.
+540	goodbooks-10k	we're all damaged	book	publication_year	2016		
+541	wikibio2015	phil baroni	person	birth_place	long island, new york, united states		box[birth_place]=long island, new york, united states | philip george baroni (born april 16, 1976) is an american former professional mixed martial artist, former kickboxer and recent professional wrestler.
+542	wiki2017	plovdiv	wiki	located_in	bulgaria		Plovdiv is the second-largest city in Bulgaria, with a population of 341,567 inhabitants, while 675,586 live in its metro area. It is an important economic, transport, cultural, and educational center. Plovdiv has evidence of habitation since the 6th millennium BC when the first Neolithic settlement
+543	wikibio2015	hermann joseph muller	person	birth_place	new york city, new york, u.s.		box[birth_place]=new york city, new york, u.s. | hermann joseph muller (or h. j. muller) (december 21, 1890 -- april 5, 1967) was an american geneticist, educator, and nobel laureate best known for his work on
+544	wikibio2015	eric serra	person	birth_date	1959-09-09		box[birth_date]=9 september 1959 | Éric serra (born 9 september 1959) is a french composer.
+545	wiki2017	10,000 maniacs	wiki	description	united states-based multi-platinum alternative rock band		10,000 Maniacs is a United States-based multi-platinum alternative rock band, formed in 1981, that continues to perform and release music. In 2016, the band celebrated its 35th anniversary.
+546	wiki2017	virtual community of practice	wiki	description	community of practice		An online community of practice (OCoP), also known as a virtual community of practice (VCoP), is a community of practice (CoP) that is developed on, and is maintained using the Internet. To qualify as an OCoP, the characteristics of a community of practice (CoP) as described by Lave and Wenger must 
+547	wikibio2015	paul collingwood	person	description	english cricketer		paul david collingwood mbe (born 26 may 1976) is an english cricketer.
+548	wordnet3.0	honeycreeper	word_n	is_a	@wn:oscine.n.01 (oscine)		wordnet hypernym @wn:oscine.n.01 (oscine)
+549	wikibio2015	jordan ladd	person	occupation	actress		box[occupation]=actress | jordan elizabeth ladd (born january 14, 1975) is an american actress.
+550	wikibio2015	joseph fesch	person	birth_place	ajaccio, republic of genoa		box[birth_place]=ajaccio, republic of genoa | joseph fesch, prince of france (january 3, 1763 -- may 13, 1839) was a french cardinal and diplomat, prince of france and a member of the imperial house of the 
+551	wikibio2015	william carnegie, 7th earl of northesk	person	birth_date	1758-04-19		box[birth_date]=19 april 1758 | admiral william carnegie, 7th earl of northesk gcb (19 april 1758 -- 28 may 1831) was born at bruntsfield in edinburgh to admiral george carnegie, 6th earl of n
+552	wikibio2015	richard helms	person	birth_date	1913-03-30		box[birth_date]=30 march 1913 | richard mcgarrah helms (march 30, 1913 -- october 23, 2002) served as the director of central intelligence (dci) from june 1966 to february 1973.
+553	wikibio2015	john campbell	person	birth_place	sydney		box[birth_place]=sydney | john campbell (25 july 1802 -- 22 january 1886) was an australian politician.
+554	wikibio2015	noel rosa	person	occupation	songwriter		box[occupation]=songwriter, singer | noel de medeiros rosa (december 11, 1910 - may 4, 1937) was a brazilian songwriter, singer, and guitar/mandolin player.
+555	wordnet3.0	term	word_n	definition	a limited period of time		
+556	geonamescache	singapore	city	population	5,638,700	2025	
+557	wikibio2015	charles a. sprague	person	death_place	salem, oregon		box[death_place]=salem, oregon | charles arthur sprague, (november 12, 1887 -- march 13, 1969) was the 22nd governor of the us state of oregon from 1939 to 1943.
+558	wiki2017	the elephant man	wiki	release_year	1980		The Elephant Man is a 1980 American historical drama film about Joseph Merrick (whom the script calls John Merrick), a severely deformed man in late 19th century London. The film was directed by David Lynch and stars John Hurt, Anthony Hopkins, Anne Bancroft, John Gielgud, Wendy Hiller, Michael Elph
+559	wiki2017	toshio iwai	wiki	description	japanese interactive media and installation artist		Toshio Iwai on stage at Art Futura 2005 in Barcelona. is a Japanese interactive media and installation artist who has also created a number of commercial video games. In addition he has worked in television, music performance, museum design and digital musical instrument design.
+560	wikibio2015	george stewart henry	person	death_date	1958-09-02		box[death_date]=02 september 1958 | george stewart henry (july 16, 1871 -- september 2, 1958) was a farmer, businessman and politician in ontario, canada.
+561	geonamescache	northbrook	city	population	33,663	2025	
+562	wikibio2015	john tower	person	death_date	1991-04-05		box[death_date]=5 april 1991 | john goodwin tower (september 29, 1925 -- april 5, 1991) was the first republican united states senator from texas since reconstruction.
+563	wikibio2015	alpheus s. williams	person	birth_place	deep river, connecticut		box[birth_place]=deep river, connecticut | alpheus starkey williams (september 29, 1810 -- december 21, 1878) was a lawyer, judge, journalist, u.s. congressman, and a union general in the american civil 
+564	wikibio2015	john eldredge	person	description	american author		" for the actor see john eldredge (actor) " john eldredge (los angeles, june 6, 1960) is an american author, counselor, and lecturer on christianity.
+565	wikibio2015	ngaio marsh	person	death_date	1982-02-18		box[death_date]=18 february 1982 | dame ngaio marsh dbe (; 23 april 1895 -- 18 february 1982), born edith ngaio marsh, was a new zealand crime writer and theatre director.
+566	wiki2017	cater 2 u	wiki	description	song by american recording group destiny's child		"Cater 2 U" is a song by American recording group Destiny's Child, taken from their fourth studio album Destiny Fulfilled (2004). Columbia Records released it as the album's fourth and final single on June 14, 2005. The song was written by band members Beyoncé, Kelly Rowland and Michelle Williams al
+567	wikibio2015	oz fox	person	birth_date	1961-06-18		box[birth_date]=18 june 1961 | richard alfonso martinez (born june 18, 1961), better known by the stage name oz fox, is the lead guitarist of the christian glam metal band stryper.
+568	wikibio2015	ron howard	person	position	tight end		box[position]=tight end | ronald ford howard (born march 3, 1951) is a retired professional american football tight end who played in six seasons in the national football league (nfl) fo
+569	wikibio2015	hank poteat	person	birth_place	philadelphia, pennsylvania		box[birth_place]=philadelphia, pennsylvania | henry major " hank " poteat, ii (born august 30, 1977) is a former american football cornerback.
+570	wikibio2015	eino leino	person	description	finnish freestyle wrestler and olympic champion		eino leino (7 april 1891 -- 30 november 1986) was a finnish freestyle wrestler and olympic champion.
+571	wikibio2015	rachel fuller	person	birth_date	1973-07-24		box[birth_date]=24 july 1973 | rachel fuller (born 24 july 1973) is a british musician.
+572	wordnet3.0	chinch bug	word_n	is_a	@wn:lygaeid.n.01 (lygaeid)		wordnet hypernym @wn:lygaeid.n.01 (lygaeid)
+573	wikibio2015	dwarkanath kotnis	person	birth_date	1910-10-10		box[birth_date]=10 october 1910 | dwarkanath shantaram kotnis (10 october 1910 in solapur, maharashtra, india -- 9 december 1942, in china;; marathi: द्वारकानाथ शांताराम कोटणीस) was one of five 
+574	wikibio2015	dee wallace	person	birth_date	1948-12-14		box[birth_date]=14 december 1948 | deanna bowers, known as dee wallace or dee wallace stone (born december 14, 1948), is an american actress and scream queen.
+575	geonamescache	ad dujayl	city	population	26,362	2025	
+576	wikibio2015	eric jerome dickey	person	occupation	author		box[occupation]=author | eric jerome dickey (born july 7, 1961) is a " new york times " best-selling american author best known for his novels about contemporary african-american life.
+577	wikibio2015	charlie sheen	person	birth_date	1965-09-03		box[birth_date]=03 september 1965 | carlos irwin estévez (born september 3, 1965), best known by his stage name charlie sheen, is an american actor.
+578	wikibio2015	steve ashton	person	birth_place	surrey, england		box[birth_place]=surrey, england | steven john " steve " ashton (born february 29, 1956 in surrey, england) is a politician in manitoba, canada.
+579	wordnet3.0	nine	word_n	definition	the cardinal number that is the sum of eight and one		
+580	wiki2017	maersk	wiki	description	danish business conglomerate with activities		A.P. Moller–Maersk Group (Danish: A.P. Møller–Mærsk A/S), also known as Maersk, is a Danish business conglomerate with activities in the transport and logistics and energy sectors. Maersk has been the largest container ship and supply vessel operator in the world since 1996. The company is based in 
+581	geonamescache	kawasaki	city	country	@country:JPN (japan)		
+582	wikibio2015	ramzi abid	person	birth_place	montreal, qc, can		box[birth_place]=montreal, qc, can | ramzi abid (born march 24, 1980) is a canadian former professional ice hockey player who played in the national hockey league (nhl) with the phoenix coyotes, pi
+583	wiki2017	svalbard	wiki	description	norwegian archipelago		Svalbard (prior to 1925 known by its Dutch name Spitsbergen, meaning "jagged mountains") is a Norwegian archipelago in the Arctic Ocean. Situated north of mainland Europe, it is about midway between continental Norway and the North Pole. The islands of the group range from 74° to 81° north latitude,
+584	airportsdata	pocatello regional airport	airport	city	pocatello		
+585	wordnet3.0	completeness	word_n	is_a	@wn:integrity.n.01 (integrity)		wordnet hypernym @wn:integrity.n.01 (integrity)
+586	wordnet3.0	suffocation	word_n	definition	killing by depriving of oxygen		
+587	wikibio2015	jesse monroe knowles	person	death_date	2006-04-23		box[death_date]=23 april 2006 | jesse monroe knowles (july 23, 1919 -- april 23, 2006) was a lake charles, businessman, civic leader, former member of both houses of the louisiana state legisl
+588	wordnet3.0	infusorian	word_n	definition	any member of the subclass infusoria		
+589	wikibio2015	john bennett ramsey	person	birth_date	1943-12-07		box[birth_date]=7 december 1943 | john bennett ramsey (born december 7, 1943) is an american business man, author, and father of homicide victim jonbenét ramsey.
+590	wikibio2015	joi lansing	person	description	american model		joi lansing (april 6, 1928 -- august 7, 1972) was an american model, film and television actress, as well as a nightclub singer.
+591	wikibio2015	rocky gray	person	birth_place	jacksonville, arkansas, united states		box[birth_place]=jacksonville, arkansas, united states | william " rocky " gray (born july 2, 1974) is a drummer and guitarist who has been part of the arkansas metal scene since the early 1990s.
+592	wikibio2015	john e. hart	person	death_date	1863-06-11		box[death_date]=11 june 1863 | john elliot hart (april 4, 1824 -- june 11, 1863) was an officer in the union navy during the american civil war.
+593	wordnet3.0	attorney general	word_n	is_a	@wn:lawman.n.01 (lawman)		wordnet hypernym @wn:lawman.n.01 (lawman)
+594	wikibio2015	percy montgomery	person	birth_place	walvis bay, namibia		box[birth_place]=walvis bay, namibia | percival colin " percy " montgomery (born 15 march 1974 in walvis bay, south west africa, now namibia) is a retired south african rugby union player.
+595	wikibio2015	jesdaporn pholdee	person	occupation	actor		box[occupation]=actor, tv host, model, presenter | jesdaporn pholdee (;; born june 5, 1977 in bangkok, thailand) or nickname tik () is a thai actor, model, and presenter.
+596	wikibio2015	michael murphy	person	death_date	1893-04-04		box[death_date]=4 april 1893 | michael murphy vc (c. 1837, cahir, county tipperary, ireland -- 4 april 1893, darlington, county durham, england) was an irish recipient of the victoria cross (
+597	wordnet3.0	lepton	word_n	is_a	@wn:elementary_particle.n.01 (elementary particle)		wordnet hypernym @wn:elementary_particle.n.01 (elementary particle)
+598	wikibio2015	paul martin	person	birth_date	1932-03-09		box[birth_date]=09 march 1932 | paul charles martin (march 9, 1932 -- october 11, 2011) was an american professional baseball player.
+599	wordnet3.0	forepaw	word_n	is_a	@wn:paw.n.01 (paw)		wordnet hypernym @wn:paw.n.01 (paw)
+600	wikibio2015	jose antonio burciaga	person	birth_place	el paso, texas		box[birth_place]=el paso, texas | josé antonio " tony " burciaga (1940 - october 7, 1996) was a chicano artist, poet, and writer who explored issues of chicano identity and american society.
+601	wikibio2015	craig wedren	person	occupation	musician		box[occupation]=musician, singer-songwriter, composer | craig wedren (born august 15, 1969) an american singer-songwriter, musician and composer, who began his career fronting post-hardcore band shudder to think.
+602	geonamescache	puspokladany	city	population	15,990	2025	
+603	wikibio2015	princess augusta of saxe-gotha	person	death_place	carlton house, london, england		box[death_place]=carlton house, london, england | princess augusta of saxe-gotha-altenburg (30 november 1719 -- 8 february 1772) was princess of wales between 1736 and 1751, and dowager princess of wales therea
+604	wikibio2015	dave ross	person	alma_mater	cornell university		box[alma_mater]=cornell university | dave ross (born april 10, 1952) is a talk show host on seattle's kiro-fm radio station, with whom he had been a news anchor from 1978 until his talk show starte
+605	geonamescache	kirov	city	country	@country:RUS (russia)		
+606	wiki2017	rebranding	wiki	description	marketing strategy		Rebranding is a marketing strategy in which a new name, term, symbol, design, or combination thereof is created for an established brand with the intention of developing a new, differentiated identity in the minds of consumers, investors, competitors, and other stakeholders. Often, this involves rad
+607	geonamescache	santa cruz	city	state	@usstate:CA (california)		
+608	wikibio2015	jeremy beadle	person	description	english television presenter		jeremy james anthony gibson-beadle mbe (12 april 1948 -- 30 january 2008) was an english television presenter, radio presenter, writer and producer.
+609	wikibio2015	fred agabashian	person	death_place	alamo, california		box[death_place]=alamo, california | levon " fred " agabashian (21 august 1913 modesto, california -- 13 october 1989 alamo, california) was an armenian-american racer of midget cars and indy cars.
+610	wikibio2015	josh duhamel	person	occupation	actor		box[occupation]=actor | joshua david " josh " duhamel (; born november 14, 1972) is an american actor and former fashion model.
+611	wikibio2015	tim renwick	person	birth_place	cambridge, england		box[birth_place]=cambridge, england | timothy john pearson ` tim ' renwick (born 7 august 1949 in cambridge, cambridgeshire, england) is an english guitarist.
+612	wikibio2015	jean giraud	person	birth_date	1938-05-08		box[birth_date]=8 may 1938 | jean henri gaston giraud (; 8 may 1938 -- 10 march 2012) was a french artist, cartoonist, and writer, who worked in the franco-belgian " bandes dessinées " trad
+613	wikibio2015	the mccoys	person	genre	pop rock		box[genre]=pop rock, beat music | the mccoys were a rock group that started in union city, indiana, in 1962.
+614	wikibio2015	rachel pollack	person	description	american science fiction author		rachel pollack (born august 17, 1945 in brooklyn, new york) is an american science fiction author, comic book writer, and expert on divinatory tarot.
+615	wikibio2015	angelo	person	genre	alternative rock		box[genre]=alternative rock | angelo is a japanese visual kei rock band, formed in 2006 by three members of pierrot.
+616	wikibio2015	anne bradstreet	person	death_date	1672-09-16		box[death_date]=16 september 1672 | anne bradstreet (born anne dudley; march 20, 1612 -- september 16, 1672) was the most prominent of early english poets of north america and first female writer 
+617	wordnet3.0	spectrum	word_n	is_a	@wn:array.n.01 (array)		wordnet hypernym @wn:array.n.01 (array)
+618	wikibio2015	michael haneke	person	birth_place	munich, germany		box[birth_place]=munich, germany | michael haneke (; born 23 march 1942) is an austrian film director and screenwriter best known for films such as " funny games " (1997), " caché " (2005), " the
+619	wikibio2015	paul warfield	person	birth_place	warren, ohio		box[birth_place]=warren, ohio | paul dryden warfield (born november 28, 1942) is a former professional american football wide receiver in the 1960s and 1970s known for his speed, fluid moves, 
+620	geonamescache	derince	city	country	@country:TUR (turkiye)		
+621	wikibio2015	eileen barker	person	nationality	british		box[nationality]=british | eileen vartan barker obe, (born 21 april 1938, edinburgh, uk) is a professor in sociology, an emeritus member of the london school of economics (lse), and a con
+622	wikibio2015	michael d. west	person	birth_place	niles, michigan, usa		box[birth_place]=niles, michigan, usa | michael d. west, phd, is a gerontologist, stem cell scientist, cellular aging and telomere researcher, previous ceo of advanced cell technology, founder of gero
+623	geonamescache	dhankuta	city	country	@country:NPL (nepal)		
+624	wikibio2015	samuel w. pennypacker	person	death_date	1916-09-02		box[death_date]=2 september 1916 | samuel whitaker pennypacker (april 9, 1843 -- september 2, 1916) was the 23rd governor of pennsylvania from 1903 to 1907.
+625	wikibio2015	max yasgur	person	alma_mater	new york university		box[alma_mater]=new york university | max b. yasgur (december 15, 1919 -- february 9, 1973) was an american farmer, best known as the owner of the dairy farm in bethel, new york at which the woodsto
+626	wikibio2015	emperor gaozu of tang	person	birth_place	chang ' an, northern zhou		box[birth_place]=chang ` an, northern zhou | emperor gaozu of tang (566 -- 25 june 635), born li yuan (李淵), courtesy name " shude " (叔德), was the founder of the tang dynasty of china, and the first emperor
+627	geonamescache	jinan	city	population	4,335,989	2025	
+628	wikibio2015	dag hammarskjold	person	birth_date	1905-07-29		box[birth_date]=29 july 1905 | dag hjalmar agne carl hammarskjöld (; 29 july 1905 -- 18 september 1961) was a swedish diplomat, economist, and author.
+629	wikibio2015	milt larsen	person	occupation	actor		box[occupation]=actor, entrepreneur | milt larsen (born april 9, 1931 in pasadena, california) is a writer, actor, performer, lyricist, magician, entrepreneur, speaker and the creator of the magic c
+630	wikibio2015	bob woolmer	person	birth_place	kanpur, united province, union of india		box[birth_place]=kanpur, united province, union of india | robert andrew woolmer (14 may 1948 -- 18 march 2007) was an international cricketer, professional cricket coach and also a professional commentator.
+631	wordnet3.0	sea chub	word_n	definition	schooling fishes mostly of indian and western pacific oceans; two species in western atlantic		
+632	wikibio2015	paul boateng	person	birth_place	hackney, england		box[birth_place]=hackney, england | paul yaw boateng, baron boateng (born 14 june 1951) is a british labour party politician, who was the member of parliament (mp) for brent south from 1987 to 200
+633	wordnet3.0	sponge genus	word_n	is_a	@wn:genus.n.02 (genus)		wordnet hypernym @wn:genus.n.02 (genus)
+634	wikibio2015	r. c. sherriff	person	nationality	british		box[nationality]=british | robert cedric sherriff, fsa, frsl (6 june 1896 -- 13 november 1975) was an english writer best known for his play " journey's end ", which was based on his expe
+635	wikibio2015	al smith	person	position	goaltender		box[position]=goaltender | allan robert smith (november 10, 1945 in toronto, ontario -- august 7, 2002) was a canadian ice hockey goaltender.
+636	wikibio2015	khaosai galaxy	person	birth_place	phetchabun, thailand		box[birth_place]=phetchabun, thailand | khaosai galaxy (, born, may 15, 1959) is a former professional thai super flyweight boxer and muaythai kickboxer.
+637	wikibio2015	john milner	person	description	english former professional footballer		john milner (born 14 may 1942 in huddersfield) is an english former professional footballer who played in the football league as a wing half for huddersfield to
+638	wikibio2015	plutarco elias calles	person	birth_date	1877-09-25		box[birth_date]=25 september 1877 | plutarco elías calles (; september 25, 1877 -- october 19, 1945) was a mexican general and politician.
+639	wikibio2015	kathy ireland	person	description	american model and actress		kathleen marie " kathy " ireland (born march 20, 1963) is an american model and actress, turned author and entrepreneur.
+640	wordnet3.0	genus ibero-mesornis	word_n	is_a	@wn:bird_genus.n.01 (bird genus)		wordnet hypernym @wn:bird_genus.n.01 (bird genus)
+641	wikibio2015	adam price	person	alma_mater	cardiff university		box[alma_mater]=cardiff university | adam price (born 23 september 1968, carmarthen) is a politician in wales, and former plaid cymru member of parliament for carmarthen east and dinefwr.
+642	wikibio2015	craig johnston	person	birth_date	1960-06-25		box[birth_date]=25 june 1960 | craig peter johnston (born 25 june 1960) is a south african-born australian former footballer and he is forever remembered by his fellow countrymen as one of th
+643	wikibio2015	cassius marcellus coolidge	person	description	american artist		cassius marcellus coolidge (september 18, 1844 -- january 13, 1934) was an american artist, mainly known for his paintings of dogs playing poker.
+644	goodbooks-10k	the rainmaker	book	publication_year	1995		
+645	wikibio2015	merlin santana	person	birth_date	1976-03-14		box[birth_date]=14 march 1976 | merlin santana (march 14, 1976november 9, 2002) was an american actor.
+646	wikibio2015	gareth edwards	person	birth_place	st asaph, flintshire, england		box[birth_place]=st asaph, flintshire, england | gareth john maldwyn edwards (born 13 november 1976) is a former welsh cricketer.
+647	wikibio2015	esther friesner	person	occupation	author		box[occupation]=author | esther mona friesner-stutzman, née friesner (born july 16, 1951) is a prolific american science fiction and fantasy author.
+648	wikibio2015	patrick nagel	person	death_place	santa monica, california		box[death_place]=santa monica, california | patrick nagel (november 25, 1945 -- february 4, 1984) was an american artist.
+649	wikibio2015	donald cotton	person	occupation	writer		box[occupation]=writer (former) | donald cotton (26 april 1928 -- 28 december 1999) was a writer for radio and television during the black and white era.
+650	wikibio2015	camaron de la isla	person	description	spanish-romani flamenco singer		josé monje cruz (5 december 1950 -- 2 july 1992), better known by his stage name camarón de la isla, was a spanish-romani flamenco singer.
+651	wordnet3.0	finn	word_n	definition	a native or inhabitant of finland		
+652	geonamescache	san fernando	city	population	23,706	2025	
+653	wikibio2015	francis thomas	person	birth_place	frederick county, maryland		box[birth_place]=frederick county, maryland | francis thomas (february 3, 1799 -- january 22, 1876) was a maryland politician who served as the 26th governor of maryland from 1842 to 1845.
+654	wikibio2015	sami moubayed	person	birth_date	1978-07-16		box[birth_date]=16 july 1978 | sami moubayed () is a syrian historian specialized in pre - baath syria.
+655	geonamescache	brignoles	city	country	@country:FRA (france)		
+656	wikibio2015	dan jurgens	person	nationality	american		box[nationality]=american | dan jurgens (born june 27, 1959 in ortonville, minnesota) is an american comic book writer and artist.
+657	wikibio2015	li yundi	person	occupation	classical pianist		box[occupation]=classical pianist | li yundi () (born october 7, 1982) is a chinese classical pianist.
+658	wikibio2015	maurice stans	person	birth_place	shakopee, minnesota, u.s.		box[birth_place]=shakopee, minnesota, u.s. | maurice hubert stans (march 22, 1908april 14, 1998) was an american accountant, high-ranking civil servant, cabinet member, and political organizer.
+659	mledoze-countries+countryinfo	philippines	country	currency	philippine peso		
+660	geonamescache	ajiki	city	population	20,127	2025	
+661	wikibio2015	walter humphries montague	person	birth_date	1858-11-21		box[birth_date]=21 november 1858 | walter humphries montague, (november 21, 1858 -- november 14, 1915) was a canadian politician.
+662	wikibio2015	tin ujevic	person	birth_date	1891-07-05		box[birth_date]=5 july 1891 | augustin " tin " ujević (; 5 july 1891 -- 12 november 1955) was a croatian poet.
+663	geonamescache	rahlstedt	city	country	@country:DEU (germany)		
+664	wikibio2015	midhat pasha	person	nationality	ottoman		box[nationality]=ottoman | ahmed Şefik midhat pasha (october/november 1822 -- 26 april 1883) was one of the leading ottoman statesmen during the late tanzimat era.
+665	wikibio2015	matthew lawrence	person	position	right back		box[position]=right back, centre back | matthew james " matt " lawrence (born 19 june 1974) is an english footballer.
+666	goodbooks-10k	maybe not	book	author	colleen hoover		
+667	wiki2017	promethea	wiki	description	comic book series		Promethea is a comic book series created by Alan Moore, J. H. Williams III and Mick Gray, published by America's Best Comics/WildStorm. It tells the story of Sophie Bangs, a college student from an alternate futuristic New York City in 1999, who embodies the powerful entity known as Promethea whose 
+668	wikibio2015	henry cooper	person	death_place	oxted, surrey, england		box[death_place]=oxted, surrey, england | sir henry cooper obe ksg (3 may 19341 may 2011) was an english heavyweight boxer known for the sheer power of his left hook, " enry's ` ammer ", and his knockdo
+669	goodbooks-10k	convicted	book	publication_year	2013		
+670	airportsdata	ljubljana joze pucnik airport	airport	city	ljubljana		
+671	wikibio2015	john morgan	person	description	american mathematician		john willard morgan (born march 21, 1946) is an american mathematician, well known for his contributions to topology and geometry.
+672	wordnet3.0	secretary of war	word_n	definition	head of a former executive department; combined with the navy secretary to form the defense secretary in 1947		
+673	wikibio2015	bruce kulick	person	description	american guitarist		bruce howard kulick (born december 12, 1953) is an american guitarist, musician and a member of the band grand funk railroad.
+674	wikibio2015	george wyndham	person	party	conservative		box[party]=conservative | george wyndham pc (29 august 1863 -- 8 june 1913) was a british conservative politician, statesman, man of letters, and one of the souls.
+675	geonamescache	katoya	city	country	@country:IND (india)		
+676	wikibio2015	octavia e. butler	person	birth_date	1947-06-22		box[birth_date]=22 june 1947 | octavia estelle butler (june 22, 1947february 24, 2006) was an american science fiction writer.
+677	wordnet3.0	english lady crab	word_n	definition	crab of the english coasts		
+678	geonamescache	purral	city	country	@country:CRI (costa rica)		
+679	airportsdata	portland-hillsboro airport	airport	country	@country:USA (united states)		
+680	wikibio2015	martial	person	death_place	rome		box[death_place]=rome | marcus valerius martialis (known in english as martial) (march, between 38 and 41 ad -- between 102 and 104 ad), was a roman poet from hispania (the iberian pen
+681	wikibio2015	the berzerker	person	description	extreme metal band from melbourne		the berzerker was an extreme metal band from melbourne, australia and was formed in 1995.
+682	wikibio2015	hayley westenra	person	birth_place	christchurch, new zealand		box[birth_place]=christchurch, new zealand | hayley dee westenra (born 10 april 1987) is a new zealand singer, classical crossover artist, songwriter and unicef ambassador.
+683	wiki2017	jay and silent bob strike back	wiki	description	2001 american comedy film		Jay and Silent Bob Strike Back is a 2001 American comedy film written and directed by Kevin Smith, the fifth to be set in his View Askewniverse, a growing collection of characters and settings that developed out of his cult favorite Clerks. It focuses on the two eponymous characters, played respecti
+684	wikibio2015	henry mcleish	person	alma_mater	heriot-watt university		box[alma_mater]=heriot-watt university | henry baird mcleish (born 15 june 1948) is a scottish labour party politician, author and academic.
+685	wikibio2015	leslie cheung	person	death_date	2003-04-01		box[death_date]=1 april 2003 | leslie cheung kwok wing (12 september 1956 -- 1 april 2003) was a hong kong singer, actor and film producer.
+686	wikibio2015	bjorn wahlroos	person	nationality	finnish		box[nationality]=finnish | björn arne christer wahlroos (born october 10, 1952 in helsinki) is the chairman of the board in sampo group, nordea and upm-kymmene.
+687	wikibio2015	laura bozzo	person	birth_place	callao, peru		box[birth_place]=callao, peru | laura cecilia bozzo rotondo (born august 19, 1951) is a peruvian talk show hostess, best known for her spanish-language talk show " laura " that is being broadc
+688	geonamescache	trapani	city	population	67,531	2025	
+689	wikibio2015	paul goldberger	person	birth_place	passaic, new jersey		box[birth_place]=passaic, new jersey | paul goldberger (born december 4, 1950) is an american architectural critic and educator, and a contributing editor for " vanity fair " magazine.
+690	wikibio2015	joseph a. walker	person	description	american playwright and screenwriter		joseph alexander walker (24.02.1935 -- 25.01.2003) was an american playwright and screenwriter, theater director, actor and professor.
+691	goodbooks-10k	strange highways	book	publication_year	1995		
+692	wikibio2015	chris bohjalian	person	genre	fiction		box[genre]=fiction | chris bohjalian, is an american novelist and the author of 15 novels, including the bestsellers " midwives " and " the sandcastle girls ".
+693	wikibio2015	ilse delange	person	birth_date	1977-05-13		box[birth_date]=13 may 1977 | ilse annoeska de lange (born 13 may 1977) is a dutch country and pop singer, better known as ilse delange (english spelling).
+694	geonamescache	sanarate	city	country	@country:GTM (guatemala)		
+695	wikibio2015	dane looker	person	birth_place	puyallup, washington		box[birth_place]=puyallup, washington | dane alan looker (born may 5, 1976) is a former american football wide receiver and current member of the puyallup, washington school board.
+696	geonamescache	vihari	city	country	@country:PAK (pakistan)		
+697	airportsdata	fort mcmurray airport	airport	iata_code	ymm		
+698	wikibio2015	monier monier-williams	person	death_date	1899-04-11		box[death_date]=11 april 1899 | sir monier monier-williams, kcie (12 november 1819 -- 11 april 1899) was the second boden professor of sanskrit at oxford university, england.
+699	wikibio2015	steven hill	person	birth_place	seattle, washington, usa		box[birth_place]=seattle, washington, usa | steven hill (born february 24, 1922) is a retired american film and television actor.
+700	wikibio2015	dennis haysbert	person	description	american film and television actor		dennis dexter haysbert (born june 2, 1954) is an american film and television actor.
+701	wordnet3.0	scot	word_n	is_a	@wn:european.n.01 (european)		wordnet hypernym @wn:european.n.01 (european)
+702	wikibio2015	margaret lea houston	person	death_place	independence, texas		box[death_place]=independence, texas | margaret lea houston (april 11, 1819 -- december 3, 1867) was the third wife of politician sam houston of texas.
+703	wikibio2015	josephine of leuchtenberg	person	death_date	1876-06-07		box[death_date]=7 june 1876 | joséphine of leuchtenberg or joséphine de beauharnais (" joséphine maximilienne eugénie napoléone ") (14 march 1807 -- 7 june 1876) was queen consort of sweden 
+704	wikibio2015	sophus nielsen	person	birth_place	copenhagen, denmark		box[birth_place]=copenhagen, denmark | sophus erhard " krølben " nielsen (march 15, 1888 -- august 6, 1963) was a danish amateur football (soccer) player and manager, and the first player in history 
+705	wiki2017	2nd infantry division	wiki	description	regular army infantry division of the british army		The 2nd Infantry Division was a Regular Army infantry division of the British Army, with a long history. Its existence as a permanently embodied formation dated from 1809, when it was established by Lieutenant General Sir Arthur Wellesley (later to become the Duke of Wellington), as part of the Angl
+706	geonamescache	devrek	city	population	24,559	2025	
+707	wiki2017	pisek	city	description	middle-sized town		
+708	wikibio2015	dick thornburgh	person	birth_place	pittsburgh, pennsylvania, u.s.		box[birth_place]=pittsburgh, pennsylvania, u.s. | richard lewis " dick " thornburgh (born july 16, 1932) is an american lawyer and republican politician who served as the 41st governor of pennsylvania from 1979
+709	airportsdata	el calafate airport	airport	city	el calafate		
+710	wikibio2015	kim richards	person	description	american actress		kimberly " kim " richards (born september 19, 1964) is an american actress.
+711	wikibio2015	agnes varda	person	birth_place	ixelles, belgium		box[birth_place]=ixelles, belgium | agnès varda (born 30 may 1928) is a french film director and professor at the european graduate school.
+712	wordnet3.0	ethiopian	word_n	is_a	@wn:african.n.01 (african)		wordnet hypernym @wn:african.n.01 (african)
+713	wikibio2015	lev yashin	person	position	goalkeeper		box[position]=goalkeeper | lev ivanovich yashin (, 22 october 1929 -- 20 march 1990), nicknamed " the black spider " or " the black panther ", was a soviet-russian football goalkeeper, co
+714	airportsdata	new coalinga municipal airport	airport	country	@country:USA (united states)		
+715	wikibio2015	p. b. s. pinchback	person	death_date	1921-12-21		box[death_date]=21 december 1921 | pinckney benton stewart pinchback (born pinckney benton stewart; may 10, 1837 -- december 21, 1921) was a publisher and politician, a union army officer, and th
+716	wikibio2015	santiago iglesias	person	occupation	politician		box[occupation]=politician, labor organizer, cabinet maker. | santiago iglesias pantín (february 22, 1872 -- december 5, 1939), a supporter of statehood for puerto rico, was the resident commissioner of puerto rico in the 
+717	geonamescache	kelowna	city	population	144,576	2025	
+718	geonamescache	paraiso	city	country	@country:PHL (philippines)		
+719	wordnet3.0	calorimeter	word_n	definition	a measuring instrument that determines quantities of heat		
+720	wikibio2015	walter wriston	person	occupation	banker chairman		box[occupation]=banker chairman | walter bigelow wriston (august 3, 1919 -- january 19, 2005) was a banker and former chairman and ceo of citicorp.
+721	wikibio2015	john c. mcginley	person	nationality	american		box[nationality]=american | john christopher mcginley (born august 3, 1959) is an american actor, author and former comedian.
+722	wordnet3.0	air base	word_n	definition	a base for military aircraft		
+723	wikibio2015	noam chomsky	person	birth_date	1928-12-07		box[birth_date]=7 december 1928 | avram noam chomsky (; born december 7, 1928) is an american linguist, philosopher, cognitive scientist, logician, political commentator, social justice activist
+724	wikibio2015	juanita millender-mcdonald	person	birth_place	birmingham, alabama		box[birth_place]=birmingham, alabama | juanita millender-mcdonald (september 7, 1938 -- april 22, 2007) was an american politician who served as a member of the united states house of representatives
+725	wikibio2015	sergei belov	person	birth_date	1944-01-23		box[birth_date]=23 january 1944 | sergei alexandrovich belov (; january 23, 1944 -- october 3, 2013) was a professional basketball player, most noted for playing for the soviet union national ba
+726	goodbooks-10k	destined for an early grave	book	author	jeaniene frost		
+727	wikibio2015	ward cunningham	person	nationality	american		box[nationality]=american | howard g. " ward " cunningham (born may 26, 1949) is an american computer programmer from highland, indiana who developed the first wiki.
+728	wordnet3.0	briefcase	word_n	definition	a case with a handle; for carrying papers or files or books		
+729	wikibio2015	puig aubert	person	birth_place	andernach, germany		box[birth_place]=andernach, germany | robert aubert puig aka puig aubert (24 march 1925 in andernach, germany -- 3 june 1994 in carcassonne, france), was debatably the greatest french rugby league f
+730	wikibio2015	robin williams	person	birth_date	1952		box[birth_date]=1952 | robin a williams (born 1952) is a professor of science, technology and innovation studies at the university of edinburgh, scotland, and director of the institut
+731	geonamescache	gose	city	population	26,522	2025	
+732	wikibio2015	john anderson	person	death_place	colombo, ceylon		box[death_place]=colombo, ceylon | sir john anderson, gcmg, kcb, jp (23 june 1858 -- 24 march 1918) was a scottish colonial administrator, who was once the governor of ceylon and governor of stra
+733	wikibio2015	rick howard	person	description	canadian professional skateboarder		rick howard is a canadian professional skateboarder, who is a part-owner of girl skateboards and cofounded the lakai limited footwear company with fellow profes
+734	wikibio2015	kevin hodges	person	birth_date	1973-06-24		box[birth_date]=24 june 1973 | kevin jon hodges (born june 24, 1973 in houston, texas) is a former major league baseball and nippon professional baseball right-handed pitcher.
+735	geonamescache	nagykanizsa	city	population	47,349	2025	
+736	wordnet3.0	civilization	word_n	is_a	@wn:society.n.01 (society)		wordnet hypernym @wn:society.n.01 (society)
+737	airportsdata	mossendjo airport	airport	city	mossendjo		
+738	wikibio2015	mark mcmanus	person	occupation	actor		box[occupation]=actor | mark mcmanus (21 february 1935 -- 6 june 1994) was a scottish actor best known for his portrayal of detective chief inspector jim taggart in the long-running it
+739	wikibio2015	yehoram gaon	person	birth_date	1939-12-28		box[birth_date]=28 december 1939 | yehoram gaon (hebrew: יהורם גאון) (informally, yoram gaon) (born december 28, 1939) is an israeli singer, actor, director, producer, tv and radio host, and publ
+740	wordnet3.0	gobble	word_v	definition	eat hastily without proper chewing		
+741	geonamescache	sarapaka	city	country	@country:IND (india)		
+742	wikibio2015	bethsabee de rothschild	person	death_date	1999-04-20		box[death_date]=20 april 1999 | baroness bethsabée de rothschild (assumed the name batsheva after moving to israel in 1951), b. september 23, 1914 in london, d. april 20, 1999 in tel aviv, isr
+743	wikibio2015	simone lahbib	person	nationality	scottish		box[nationality]=scottish | simone lahbib (; born 6 february 1965) is a scottish actress.
+744	wikibio2015	patricio aylwin	person	occupation	lawyer		box[occupation]=lawyer | patricio aylwin azócar (born november 26, 1918) is a chilean christian democrat politician, lawyer, author, professor and former senator.
+745	airportsdata	igdir airport	airport	city	igdir		
+746	wikibio2015	pat jennings	person	birth_place	newry, northern ireland		box[birth_place]=newry, northern ireland | patrick anthony " pat " jennings obe (born 12 june 1945 in newry, county down) is a northern ireland former football player.
+747	wikibio2015	james davis	person	birth_date	1893		box[birth_date]=1893 | james davis (born 1893, date of death unknown) was a british wrestler.
+748	wikibio2015	jim ringo	person	description	professional american football player		james stephen " jim " ringo (november 21, 1931 -- november 19, 2007) was a professional american football player, a hall of fame center and coach.
+749	geonamescache	ouled moussa	city	country	@country:DZA (algeria)		
+750	wikibio2015	tonja walker	person	occupation	actress		box[occupation]=actress | tonja walker (born huntington, west virginia, september 19, 1960) is a former beauty pageant titleholder who has competed in the miss usa pageant, an actress, a
+751	wikibio2015	bettany hughes	person	occupation	broadcaster and writer		box[occupation]=broadcaster and writer | bettany hughes, born may 1967, is an english historian, author, and broadcaster.
+752	wikibio2015	luis scola	person	birth_place	buenos aires, argentina		box[birth_place]=buenos aires, argentina | luis alberto scola balvoa (born april 30, 1980) is an argentine professional basketball player who currently plays for the toronto raptors of the national baske
+753	geonamescache	saint peters	city	country	@country:GBR (united kingdom)		
+754	wikibio2015	tatiana navka	person	birth_date	1975-04-13		box[birth_date]=13 april 1975 | tatyana aleksandrovna navka (,, born 13 april 1975, dnipropetrovsk, ukrainian ssr, soviet union) is a russian ice dancer.
+755	wikibio2015	sly dunbar	person	genre	reggae		box[genre]=reggae | lowell " sly " fillmore dunbar (born 10 may 1952, kingston, jamaica) is a drummer, best known as one half of the prolific jamaican rhythm section and reggae pro
+756	wikibio2015	karl davies	person	description	english actor		karl davies (born 6 august 1982) is an english actor, who portrayed lyle anderson in the tv series " kingdom ".
+757	wiki2017	flip skateboards	wiki	description	united states-based international skateboard company		Flip Skateboards is a United States (US)-based international skateboard company, co-owned by Jeremy Fox and professional skateboarder Geoff Rowley. The company produces skateboard hard goods (decks, wheels, bearings, completes, and hardware), soft goods (T-shirts, tops, sweatshirts, hats, beanies, a
+758	wordnet3.0	crisscross	word_a	definition	marked with crossing lines		
+759	wikibio2015	stephen lang	person	alma_mater	swarthmore college		box[alma_mater]=swarthmore college | stephen lang (born july 11, 1952) is a tony award-nominated american actor and playwright.
+760	wordnet3.0	harmony	word_n	is_a	@wn:music.n.01 (music)		wordnet hypernym @wn:music.n.01 (music)
+761	geonamescache	new smyrna beach	city	state	@usstate:FL (florida)		
+762	wiki2017	psittacus	wiki	description	genus of african parrots		Psittacus is a genus of African parrots in the subfamily Psittacinae. It contains the two species: the grey parrot (Psittacus erithacus) and the Timneh parrot (Psittacus timneh). For many years, the grey parrot and Timneh parrot were classified as subspecies; the former as the nominate, the latter a
+763	wikibio2015	frank selee	person	position	manager		box[position]=manager | frank gibson selee (october 26, 1859 -- july 5, 1909) was an american major league baseball manager in the national league (nl).
+764	wordnet3.0	denationalization	word_n	definition	changing something from state to private ownership or control		
+765	wikibio2015	dark sanctuary	person	genre	dark atmospheric		box[genre]=dark atmospheric, goth opera | dark sanctuary is a french dark atmospheric, goth opera band which was formed in 1996 in paris.
+766	geonamescache	muzambinho	city	country	@country:BRA (brazil)		
+767	wordnet3.0	welsh springer spaniel	word_n	is_a	@wn:springer_spaniel.n.01 (springer spaniel)		wordnet hypernym @wn:springer_spaniel.n.01 (springer spaniel)
+768	wikibio2015	oskar r. lange	person	death_place	london, united kingdom		box[death_place]=london, united kingdom | oskar ryszard lange (july 27, 1904 -- october 2, 1965) was a polish economist and diplomat.
+769	wiki2017	cardinal	wiki	description	senior ecclesiastical leader		A cardinal (literally Cardinal of the Holy Roman Church) is a senior ecclesiastical leader, considered a Prince of the Church, and usually (now always for those created when still within the voting age-range) an ordained bishop of the Roman Catholic Church. The cardinals of the Church are collective
+770	wikibio2015	frantisek palacky	person	birth_place	hodslavice, habsburg monarchy		box[birth_place]=hodslavice, habsburg monarchy | františek palacký (; june 14, 1798, hodslavice -- may 26, 1876, prague) was a czech historian and politician, the most influential person of the czech national 
+771	wikibio2015	raymond f. jones	person	death_place	sandy, utah, usa		box[death_place]=sandy, utah, usa | raymond fisher jones (15 november 1915 -- 24 january 1994) was an american science fiction author.
+772	wikibio2015	clarence wijewardena	person	birth_date	1943-08-03		box[birth_date]=3 august 1943 | clarence wijewardena (; 3 august 1943 -- 13 december 1996) was one of the most respected sri lankan musicians in sinhala music, who pioneered the use of electri
+773	wikibio2015	cate blanchett	person	birth_place	melbourne, victoria, australia		box[birth_place]=melbourne, victoria, australia | catherine Élise " cate " blanchett (; born 14 may 1969) is an australian actress.
+774	geonamescache	norcross	city	population	16,634	2025	
+775	wikibio2015	john s. mosby	person	death_date	1916-05-30		box[death_date]=30 may 1916 | john singleton mosby (december 6, 1833 -- may 30, 1916), also known by his nickname, the " gray ghost ", was a confederate army cavalry battalion commander in t
+776	wikibio2015	kenneth d. cameron	person	occupation	naval aviator		box[occupation]=naval aviator, test pilot | kenneth donald cameron (born november 29, 1949), (col, usmc, ret.)
+777	airportsdata	moshoeshoe i international airport	airport	elevation	5,348 feet		
+778	wikibio2015	isidor isaac rabi	person	birth_date	1898-07-29		box[birth_date]=29 july 1898 | isidor isaac rabi (; born israel isaac rabi, 29 july 1898 -- 11 january 1988) was a polish-born american physicist and nobel laureate, recognized in 1944 for hi
+779	wikibio2015	kingsley wood	person	death_date	1943-09-21		box[death_date]=21 september 1943 | sir howard kingsley wood (19 august 1881 -- 21 september 1943) was an english conservative politician.
+780	wikibio2015	henrietta lacks	person	birth_date	1920-08-01		box[birth_date]=1 august 1920 | henrietta lacks (august 1, 1920 -- october 4, 1951) (sometimes erroneously called henrietta lakes, helen lane or helen larson) was an african-american woman who
+781	wiki2017	hex enduction hour	wiki	artist	the fall		Hex Enduction Hour is the fourth studio album by the English post-punk band the Fall. Released on 8 March 1982, it builds on the low-fidelity production values and caustic lyrical content of their earlier recordings. Frontman Mark E. Smith establishes an abrasive Northern aesthetic built in part fro
+782	wikibio2015	wim kok	person	description	retired dutch politician of the labour party		willem " wim " kok, jr. () (born 29 september 1938) is a retired dutch politician of the labour party (pvda).
+783	wikibio2015	john wetteland	person	birth_date	1966-08-21		box[birth_date]=21 august 1966 | john karl wetteland (born august 21, 1966) is a retired american major league baseball pitcher who specialized as a closer.
+784	wikibio2015	marcello malpighi	person	death_place	rome, papal states		box[death_place]=rome, papal states | marcello malpighi (10 march 1628 -- 29 november 1694) was an italian biologist and physician, who is referred to as the " father of microscopical anatomy, histo
+785	wikibio2015	persis khambatta	person	birth_place	bombay, bombay state, india		box[birth_place]=bombay, bombay state, india | persis khambatta (2 october 1948 -- 18 august 1998) was an indian model, actress.
+786	geonamescache	bishan	city	country	@country:CHN (china)		
+787	wikibio2015	tom mcmahon	person	birth_place	rochester, new york		box[birth_place]=rochester, new york | thomas m. mcmahon was the mayor of reading, pennsylvania from january 5, 2004 to january 2, 2012.
+788	wikibio2015	jay hammond	person	birth_place	troy, new york, u.s.		box[birth_place]=troy, new york, u.s. | jay sterner hammond (july 21, 1922 -- august 2, 2005) was an american politician of the republican party, who served as the fourth governor of alaska from 1974 
+789	wikibio2015	gerald casale	person	birth_date	1948-07-28		box[birth_date]=28 july 1948 | gerald vincent " jerry " casale (born gerald vincent pizzute, july 28, 1948) is a vocalist, bass guitar/synthesizer player, and a founding member (with his youn
+790	wikibio2015	arvid lindman	person	death_place	purley, london, england		box[death_place]=purley, london, england | salomon " arvid " achates lindman (19 september 1862 -- 9 december 1936) was a swedish rear admiral, industrialist and conservative politician who served as pri
+791	wikibio2015	matt talbot	person	nationality	irish		box[nationality]=irish | the venerable matt talbot, ofs (2 may 1856 -- 7 june 1925) was an irish ascetic revered by many catholics for his piety, charity and mortification of the flesh.
+792	wikibio2015	leslie lemke	person	description	blind american autistic savant		leslie lemke (born january 31, 1952) is a blind american autistic savant who is most notable for his work as a musician.
+793	wikibio2015	talia shire	person	birth_place	lake success, new york, u.s.		box[birth_place]=lake success, new york, u.s. | talia shire (; born april 25, 1946) is an american actress most known for her roles as connie corleone in " the godfather " films and adrian balboa in the " roc
+794	mledoze-countries+countryinfo	congo	country	continent	africa		
+795	wikibio2015	clint mathis	person	birth_place	conyers, georgia, united states		box[birth_place]=conyers, georgia, united states | clint mathis (born november 25, 1976) is a retired american soccer player and current assistant coach of the chicago fire soccer club.
+796	geonamescache	hendrik-ido-ambacht	city	country	@country:NLD (netherlands)		
+797	geonamescache	knurow	city	population	39,744	2025	
+798	mledoze-countries+countryinfo	burkina faso	country	capital	@city:2357048 (ouagadougou)		
+799	geonamescache	toma	city	population	15,851	2025	
+800	geonamescache	moncada	city	population	21,900	2025	
+801	wikibio2015	oswald mosley	person	death_place	orsay, paris, france		box[death_place]=orsay, paris, france | sir oswald ernald mosley, 6th baronet (16 november 1896 -- 3 december 1980) was an english politician, known principally as the founder of the british union of 
+802	geonamescache	jakobsberg	city	population	24,046	2025	
+803	wikibio2015	peter jennings	person	death_date	2005-08-07		box[death_date]=7 august 2005 | peter charles archibald ewart jennings, cm (july 29, 1938 -- august 7, 2005) was a canadian-american journalist and news anchor.
+804	wiki2017	santa barbara	wiki	description	american television soap opera		Santa Barbara is an American television soap opera that aired on NBC from July 30, 1984 to January 15, 1993. The show revolves around the eventful lives of the wealthy Capwell family of Santa Barbara, California. Other prominent families featured on the soap were the rival Lockridge family, and the 
+805	wiki2017	house of hohenzollern	wiki	description	dynasty of former princes		The House of Hohenzollern is a dynasty of former princes, electors, kings and emperors of Hohenzollern, Brandenburg, Prussia, the German Empire, and Romania. The family arose in the area around the town of Hechingen in Swabia during the 11th century and took their name from Hohenzollern Castle. The 
+806	goodbooks-10k	the farseer trilogy	book	author	robin hobb		
+807	geonamescache	denizli	city	population	313,238	2025	
+808	wikibio2015	pat conroy	person	nationality	australian		box[nationality]=australian | patrick martin " pat " conroy (born 10 may 1979) is an australian politician.
+809	wikibio2015	allen g. thurman	person	birth_place	lynchburg, virginia, us		box[birth_place]=lynchburg, virginia, us | allen granberry thurman (november 13, 1813 -- december 12, 1895) was a democratic representative, ohio supreme court justice, and senator from ohio, as well as 
+810	airportsdata	gibraltar airport	airport	country	@country:GIB (gibraltar)		
+811	wikibio2015	stanley bruce	person	birth_place	melbourne, australia		box[birth_place]=melbourne, australia | stanley melbourne bruce, 1st viscount bruce of melbourne (15 april 1883 -- 25 august 1967) was the eighth prime minister of australia (1923 -- 29).
+812	wordnet3.0	sketch map	word_n	is_a	@wn:map.n.01 (map)		wordnet hypernym @wn:map.n.01 (map)
+813	wikibio2015	catherine taber	person	description	american actress		catherine anne " cat " taber (born december 30, 1979) is an american actress who has appeared in films, television and video games.
+814	wikibio2015	b. everett jordan	person	death_date	1974-03-15		box[death_date]=15 march 1974 | benjamin everett jordan (september 8, 1896 -- march 15, 1974) was an american businessman and politician.
+815	geonamescache	walbrzych	city	population	127,431	2025	
+816	wikibio2015	david howell, baron howell of guildford	person	party	conservative		box[party]=conservative | david arthur russell howell, baron howell of guildford, pc (born 18 january 1936), is a british conservative politician, journalist, and economic consultant.
+817	wordnet3.0	homeowner	word_n	is_a	@wn:owner.n.02 (owner)		wordnet hypernym @wn:owner.n.02 (owner)
+818	wikibio2015	harry catterick	person	birth_place	darlington, county durham, england		box[birth_place]=darlington, county durham, england | harry catterick (26 november 1919 -- 9 march 1985) was an english football player and manager.
+819	wikibio2015	david buttolph	person	death_place	united states		box[death_place]=united states | david buttolph (born james david buttolph jr., august 3, 1902 -- january 1, 1983) was a film composer who scored over 300 movies in his career.
+820	wiki2017	jim crockett promotions	wiki	founded_year	1931		Jim Crockett Promotions Inc. was a family-owned professional wrestling promotion headquartered in Charlotte, North Carolina, United States. Founded in 1931, the promotion emerged as a cornerstone of the National Wrestling Alliance. By the 1980s, Jim Crockett Promotions was, along with the World Wres
+821	wikibio2015	big mama thornton	person	occupation	singer		box[occupation]=singer, songwriter | willie mae " big mama " thornton (december 11, 1926 -- july 25, 1984) was an american rhythm and blues singer and songwriter.
+822	wikibio2015	grigori perelman	person	alma_mater	leningrad state university		box[alma_mater]=leningrad state university | grigori yakovlevich perelman (;; born 13 june 1966) is a russian mathematician who made landmark contributions to riemannian geometry and geometric topology bef
+823	wikibio2015	james george frazer	person	birth_date	1854-01-01		box[birth_date]=1 january 1854 | sir james george frazer (; 1 january 1854 -- 7 may 1941), was a scottish social anthropologist influential in the early stages of the modern studies of mytholog
+824	mledoze-countries+countryinfo	sierra leone	country	currency	sierra leonean leone		
+825	wikibio2015	clara zetkin	person	birth_date	1857-07-05		box[birth_date]=5 july 1857 | clara zetkin (" née " eissner; 5 july 1857 -- 20 june 1933) was a german marxist theorist, activist, and advocate for women's rights.
+826	wikibio2015	dave rimington	person	birth_date	1960-05-22		box[birth_date]=22 may 1960 | david brian rimington (born may 22, 1960) is a former american college and professional football player who was a center in the national football league (nfl) f
+827	airportsdata	bellary airport	airport	iata_code	bep		
+828	wikibio2015	priyadarshan	person	birth_date	1957-01-30		box[birth_date]=30 january 1957 | priyadarshan soman nair is an indian film director, producer, and screenwriter.
+829	geonamescache	pirapora do bom jesus	city	country	@country:BRA (brazil)		
+830	wiki2017	sympathy	wiki	description	perception		Sympathy (from the Greek words syn "together" and pathos "feeling" which means "fellow-feeling") is the perception, understanding, and reaction to the distress or need of another life form. This empathic concern is driven by a switch in viewpoint, from a personal perspective to the perspective of an
+831	wikibio2015	judith miller	person	birth_place	new york city, new york, usa		box[birth_place]=new york city, new york, usa | judith miller (born january 2, 1948) is an american journalist and writer.
+832	goodbooks-10k	the lost prince	book	author	julie kagawa		
+833	geonamescache	hudson	city	state	@usstate:OH (ohio)		
+834	wikibio2015	john walker	person	birth_place	canongate, edinburgh		box[birth_place]=canongate, edinburgh | john walker (1731 -- 1803) was a scottish minister and natural historian.
+835	wikibio2015	dylan macallister	person	position	striker		box[position]=striker | dylan jacob macallister (born 17 may 1982 in manly, new south wales) is an australian football (soccer) player who plays as a forward for national premier leagu
+836	wiki2017	black mask	wiki	description	fictional supervillain appearing in comic books		Black Mask (Roman Sionis) is a fictional supervillain appearing in comic books published by DC Comics. Created by Doug Moench and Tom Mandrake, he first appeared in Batman #386 (Aug. 1985). The character is a brutally sadistic kingpin in Gotham City's criminal underworld who has a fixation with mask
+837	wikibio2015	charles iv of france	person	death_place	vincennes, france		box[death_place]=vincennes, france | charles iv (clermont 18/19 june 1294 -- vincennes 1 february 1328), called the fair (french: " le bel "), was count of champagne, king of navarre (as charles i)
+838	wikibio2015	jody williams	person	genre	pop		box[genre]=pop, r & b | jody williams (born 17 may 1990), better known as jody, is a south african pop/r & b singer.
+839	wikibio2015	sheree fitch	person	birth_place	ottawa, ontario, canada		box[birth_place]=ottawa, ontario, canada | sheree fitch (born 3 december 1956) is a canadian author and literacy advocate.
+840	wikibio2015	george swindin	person	description	english football player and manager		george hedley swindin (4 december 1914 -- 26 october 2005) was an english football player and manager.
+841	wikibio2015	stephen clark foster	person	death_place	pembroke, maine		box[death_place]=pembroke, maine | stephen clark foster (december 24, 1799-october 5, 1872) was a united states representative from maine.
+842	wikibio2015	jasraj	person	occupation	singer		box[occupation]=singer | pandit jasraj (; born 28 january 1930) is an indian classical vocalist.
+843	wikibio2015	anthony fokker	person	nationality	dutch		box[nationality]=dutch, us | anton herman gerard " anthony " fokker (6 april 1890 -- 23 december 1939) was a dutch aviation pioneer and an aircraft manufacturer.
+844	wikibio2015	marc kirschner	person	description	american cell biologist and biochemist		marc w. kirschner (born february 28, 1945) is an american cell biologist and biochemist and the founding chair of the department of systems biology at harvard m
+845	goodbooks-10k	ecstasy unveiled	book	publication_year	2010		
+846	geonamescache	gilbert	city	country	@country:USA (united states)		
+847	geonamescache	rouiba	city	population	117,558	2025	
+848	wikibio2015	helen keller	person	death_date	1968-06-01		box[death_date]=1 june 1968 | helen adams keller (june 27, 1880 -- june 1, 1968) was an american author, political activist, and lecturer.
+849	wikibio2015	emilio mola	person	death_place	alcocero, burgos, spain		box[death_place]=alcocero, burgos, spain | emilio mola y vidal, 1st duke of mola, grandee of spain (june 9, 1887 -- june 3, 1937) was a spanish nationalist commander during the spanish civil war.
+850	wikibio2015	mark gasnier	person	birth_date	1981-07-19		box[birth_date]=19 july 1981 | mark gasnier (born 19 july 1981) is an australian former professional rugby league footballer of the 2000s and 2010s.
+851	wikibio2015	francis e. warren	person	description	american politician of the republican party		francis emroy warren (june 20, 1844november 24, 1929) was an american politician of the republican party best known for his years in the united states senate re
+852	geonamescache	taytay	city	population	231,460	2025	
+853	geonamescache	sao bernardo do campo	city	population	743,372	2025	
+854	periodictable	aluminum	element	element_category	post-transition metal		
+855	wikibio2015	cory booker	person	birth_date	1969-04-27		box[birth_date]=27 april 1969 | cory anthony booker (born april 27, 1969) is an american politician and the junior united states senator from new jersey, in office since 2013.
+856	wikibio2015	liaquat ali khan	person	party	muslim league		box[party]=muslim league | nawabzada liaquat ali khan (" næʍābzādāh liāqat alī khān " (), urdu and; october 1895 -- 16 october 1951), often simply referred as liaquat, was one of the lead
+857	airportsdata	girona airport	airport	city	girona		
+858	wikibio2015	jessica hynes	person	birth_date	1972-10-30		box[birth_date]=30 october 1972 | tallulah jessica elina hynes (" née " stevenson; born 30 october 1972) is an english actress and writer.
+859	wikibio2015	robert carlyle	person	occupation	actor		box[occupation]=actor | robert carlyle, obe (born 14 april 1961) is a scottish actor.
+860	wikibio2015	louis-eugene cavaignac	person	birth_date	1802-10-15		box[birth_date]=15 october 1802 | louis-eugène cavaignac (; 15 october 1802 in paris -- 28 october 1857) was a french general who put down a massive rebellion in paris in 1848, known as the june
+861	wikibio2015	francis schaeffer	person	birth_place	germantown, philadelphia, pennsylvania		box[birth_place]=germantown, philadelphia, pennsylvania | francis august schaeffer (30 january 1912 -- 15 may 1984) was an american evangelical christian theologian, philosopher, and presbyterian pastor.
+862	wikibio2015	violet hunt	person	occupation	novelist		box[occupation]=novelist, short story writer | isobel violet hunt (28 september 1862 -- 16 january 1942) was a british author and literary hostess.
+863	geonamescache	aulnay-sous-bois	city	population	80,615	2025	
+864	geonamescache	cu chi	city	country	@country:VNM (vietnam)		
+865	wordnet3.0	disposed	word_a	definition	having made preparations		
+866	wikibio2015	allison hayes	person	death_place	san diego, california, u.s.		box[death_place]=san diego, california, u.s. | allison hayes (march 6, 1930 -- february 27, 1977) was an american film and television actress and model.
+867	wordnet3.0	jay	word_n	is_a	@wn:corvine_bird.n.01 (corvine bird)		wordnet hypernym @wn:corvine_bird.n.01 (corvine bird)
+868	wordnet3.0	ridgeling	word_n	definition	a colt with undescended testicles		
+869	wikibio2015	gordon macpherson	person	birth_date	1962-10-09		box[birth_date]=09 october 1962 | gordon macpherson (born 9 october 1962) is a former new zealand rugby union player.
+870	geonamescache	windsor	city	country	@country:GBR (united kingdom)		
+871	wikibio2015	pat stevens	person	birth_date	1945-09-16		box[birth_date]=16 september 1945 | pat stevens, also known as patricia stevens (born, patricia szczepaniak september 16, 1945 -- may 26, 2010) was an american actress and voice actor.
+872	wordnet3.0	weekly	word_n	definition	a periodical that is published every week		
+873	wikibio2015	roly jenkins	person	birth_date	1918-11-24		box[birth_date]=24 november 1918 | roly jenkins (sometimes spelt roley) (24 november 1918 -- 22 july 1995) was an english cricketer, almost exclusively for worcestershire as a leg spinner in the 
+874	geonamescache	san angelo	city	state	@usstate:TX (texas)		
+875	wikibio2015	jeremi wisniowiecki	person	birth_date	1612-08-17		box[birth_date]=17 august 1612 | jeremi wiśniowiecki (- yarema vyshnevetsky; august 17, 1612 -- august 20, 1651) nicknamed hammer on the cossacks or iron hand, was a notable member of the arist
+876	wikibio2015	mikhail kalinin	person	occupation	civil servant		box[occupation]=civil servant | mikhail ivanovich kalinin (; june 3, 1946), known familiarly by soviet citizens as " kalinych ", was a bolshevik revolutionary and stalinist functionary, who se
+877	wikibio2015	niki ashton	person	birth_place	thompson, manitoba		box[birth_place]=thompson, manitoba | niki christina ashton (born september 9, 1982) is a canadian politician.
+878	wikibio2015	michael dempsey	person	description	bassist from england		michael dempsey (born 29 november 1958) is a bassist from england, who has performed as a member of several post-punk and new wave bands including the cure and 
+879	wikibio2015	honore de balzac	person	birth_date	1799-05-20		box[birth_date]=20 may 1799 | honoré de balzac (;; 20 may 1799 -- 18 august 1850) was a french novelist and playwright.
+880	wikibio2015	shannon bex	person	description	american singer		shannon rae bex (born march 22, 1980) is an american singer, professional dancer, and a member of the musical group danity kane.
+881	geonamescache	balashikha	city	population	150,103	2025	
+882	wikibio2015	major ridge	person	death_date	1839-06-22		box[death_date]=june 22, 1839 (aged 67 or 68) | major ridge, the ridge (and sometimes pathkiller ii) (c. 1771 -- june 22, 1839) (also known as nunnehidihi, and later ganundalegi) was a cherokee leader, a memb
+883	wikibio2015	victor kugler	person	occupation	worker at opekta		box[occupation]=worker at opekta | victor kugler (5 june 1900, hohenelbe/vrchlab í -- 16 december 1981, toronto) was one of the people who helped hide anne frank and her family and friends during
+884	airportsdata	bahia negra airport	airport	elevation	277 feet		
+885	wikibio2015	john debney	person	occupation	composer		box[occupation]=composer, conductor | john c. debney (born august 18, 1956) is an american film composer and conductor.
+886	wikibio2015	yndi halda	person	genre	post rock		box[genre]=post rock, instrumental rock | yndi halda (pronounced yin-dee hal-dar and stylised " yndi halda " in lower case) is a post-rock band from canterbury, england.
+887	wikibio2015	catherine of bologna	person	death_date	1463-03-09		box[death_date]=9 march 1463 | saint catherine of bologna, o.s.c. (8 september 1413 -- 9 march 1463) was an italian cloistered nun, artist and saint.
+888	wikibio2015	grey ruthven, 2nd earl of gowrie	person	birth_place	ireland		box[birth_place]=ireland | alexander patrick greysteil ruthven, 2nd earl of gowrie pc, frsl (born 26 november 1939), usually known as grey gowrie, is a scottish hereditary peer.
+889	wikibio2015	paul davies	person	party	conservative		box[party]=conservative | paul windsor davies (born 1969) is a welsh conservative politician.
+890	wikibio2015	james alexander lougheed	person	description	businessman and politician from alberta		sir james alexander lougheed, kcmg, pc, kc (or; 1 september 1854 -- 2 november 1925) was a businessman and politician from alberta, canada.
+891	geonamescache	itauna	city	population	97,669	2025	
+892	wikibio2015	marina tsvetaeva	person	nationality	russian		box[nationality]=russian | marina ivanovna tsvetaeva (; 31 august 1941) was a russian and soviet poet.
+893	wordnet3.0	discord	word_n	definition	lack of agreement or harmony		
+894	wikibio2015	margherita of savoy	person	birth_place	palazzo chiablese, turin, kingdom of sardinia		box[birth_place]=palazzo chiablese, turin, kingdom of sardinia | princess margherita of savoy (margherita maria teresa giovanna; 20 november 1851 -- 4 january 1926), was the queen consort of the kingdom of italy during the re
+895	wikibio2015	otto toeplitz	person	death_place	jerusalem		box[death_place]=jerusalem | otto toeplitz (1 august 1881 -- 15 february 1940) was a german jewish mathematician working in functional analysis.
+896	wikibio2015	lee slater overman	person	birth_date	1854-01-03		box[birth_date]=3 january 1854 | lee slater overman (january 3, 1854december 12, 1930) was a democratic u.s. senator from the state of north carolina between 1903 and 1930.
+897	wikibio2015	pat brown	person	death_place	beverly hills, california		box[death_place]=beverly hills, california | edmund gerald " pat " brown, sr. (april 21, 1905 -- february 16, 1996) was an american politician and lawyer who served as the 32nd governor of california from 
+898	wikibio2015	james lafferty	person	birth_date	1985-07-25		box[birth_date]=25 july 1985 | james martin lafferty (born july 25, 1985) is an american actor, director and producer.
+899	wikibio2015	ingrid mattson	person	birth_date	1963-08-24		box[birth_date]=24 august 1963 | ingrid mattson (born august 24, 1963) is a muslim religious leader, a professor of islamic studies and an interfaith activist.
+900	wikibio2015	scherrie payne	person	description	american singer		scherrie payne (born november 4, 1944, in detroit, michigan) is an american singer.
+901	wikibio2015	udo jurgens	person	occupation	singer		box[occupation]=singer | udo jürgens (born udo jürgen bockelmann; 30 september 1934 -- 21 december 2014) was an austrian-swiss composer and singer of popular music whose career spanned 
+902	geonamescache	presidente figueiredo	city	population	33,004	2025	
+903	wikibio2015	bootsy collins	person	occupation	musician		box[occupation]=musician, singer-songwriter | william earl " bootsy " collins (born october 26, 1951) is an american musician and singer-songwriter.
+904	geonamescache	fanzeres	city	country	@country:PRT (portugal)		
+905	wikibio2015	jorg albertz	person	description	retired german professional footballer		jörg albertz (born 29 january 1971 in mönchengladbach) is a retired german professional footballer.
+906	wikibio2015	john anderson	person	birth_place	sydney		box[birth_place]=sydney | john duncan anderson ao (born 14 november 1956) is a former australian politician.
+907	wikibio2015	antony root	person	occupation	television executive and producer		box[occupation]=television executive and producer | antony root (born 16 april 1954) is a british television executive and producer.
+908	wikibio2015	jimmy collins	person	description	american professional baseball player		james joseph collins (january 16, 1870 -- march 6, 1943) was an american professional baseball player.
+909	geonamescache	peacehaven	city	population	18,579	2025	
+910	geonamescache	suakin	city	population	42,456	2025	
+911	geonamescache	campo verde	city	country	@country:BRA (brazil)		
+912	airportsdata	scholes international at galveston airport	airport	elevation	6 feet		
+913	wikibio2015	ray lawson	person	description	17th lieutenant governor of ontario		frank ray lawson, obe (august 30, 1886 -- april 4, 1980), was the 17th lieutenant governor of ontario, canada, from 1946 to 1952.
+914	wikibio2015	donald davies	person	nationality	american		box[nationality]=american | archibald donald davies (april 15, 1920 -- october 16, 2011) was the fourth episcopal bishop of dallas and subsequently the first episcopal bishop of fort worth
+915	wordnet3.0	spending	word_n	definition	the act of spending or disbursing money		
+916	wordnet3.0	desmidiaceae	word_n	is_a	@wn:protoctist_family.n.01 (protoctist family)		wordnet hypernym @wn:protoctist_family.n.01 (protoctist family)
+917	wikibio2015	gevorg emin	person	occupation	poet		box[occupation]=poet, essayist, translator | gevorg emin (, september 30, 1918 -- june 11, 1998) was an armenian poet, essayist, and translator.
+918	wikibio2015	marcia wallace	person	description	american actress		marcia karen wallace (november 1, 1942 -- october 25, 2013) was an american actress, voice artist, comedian, and game show panelist, primarily known for her rol
+919	geonamescache	jamul	city	population	25,878	2025	
+920	wikibio2015	karen black	person	death_place	los angeles, california, u.s.		box[death_place]=los angeles, california, u.s. | karen blanche black (née ziegler; july 1, 1939 -- august 8, 2013) was an american actress, screenwriter, singer and songwriter.
+921	wikibio2015	michael carbajal	person	birth_date	1967-09-17		box[birth_date]=17 september 1967 | michael carbajal (born september 17, 1967 in phoenix, arizona) is an american five-time world boxing champion of mexican descent.
+922	wikibio2015	ian rankin	person	birth_place	cardenden, fife, scotland		box[birth_place]=cardenden, fife, scotland | ian james rankin, obe, dl, frse (born 28 april 1960) is a scottish crime writer, best known for his " inspector rebus " novels.
+923	geonamescache	massamagrell	city	country	@country:ESP (spain)		
+924	geonamescache	elektrostal'	city	country	@country:RUS (russia)		
+925	geonamescache	villefontaine	city	country	@country:FRA (france)		
+926	airportsdata	wright-patterson afb airport	airport	elevation	823 feet		
+927	geonamescache	gundlupet	city	population	28,105	2025	
+928	airportsdata	mario ribeiro airport	airport	elevation	2,191 feet		
+929	wikibio2015	weng weng	person	birth_date	1957-09-07		box[birth_date]=07 september 1957 | ernesto de la cruz (september 7, 1957 -- august 29, 1992), better known as weng weng, was a filipino actor and martial artist.
+930	wikibio2015	elias hicks	person	death_date	1830-02-27		box[death_date]=february 27, 1830 | elias hicks (march 19, 1748 -- february 27, 1830) was a traveling quaker preacher from long island, new york.
+931	geonamescache	pachuca de soto	city	population	256,584	2025	
+932	goodbooks-10k	blood magick	book	author	nora roberts		
+933	wikibio2015	john laurinaitis	person	description	american former professional wrestler and senior producer		john hodger laurinaitis (born july 31, 1962), also known as johnny ace, is an american former professional wrestler and senior producer, currently employed by w
+934	wiki2017	cassia	wiki	description	genus of flowering plants		Cassia is a genus of flowering plants in the legume family, Fabaceae, and the subfamily Caesalpinioideae. Species are known commonly as cassias. Cassia is also the English common name of some species in the genus Cinnamomum of the family Lauraceae. Species of the genera Senna and Chamaecrista were p
+935	wordnet3.0	backsliding	word_n	is_a	@wn:failure.n.01 (failure)		wordnet hypernym @wn:failure.n.01 (failure)
+936	wordnet3.0	carangid fish	word_n	definition	a percoid fish of the family carangidae		
+937	wikibio2015	luisito vigoreaux	person	birth_place	san juan, puerto rico		box[birth_place]=san juan, puerto rico | luis vigoreaux lorenzana (born july 1, 1951) is a puerto rican actor and producer.
+938	wordnet3.0	studious	word_a	definition	marked by care and effort		
+939	goodbooks-10k	plainsong	book	publication_year	1999		
+940	wikibio2015	ghazan	person	death_date	1304-05-11		box[death_date]=11 may 1304 | mahmud ghazan (1271 -- 1304) (,, sometimes referred to as casanus by westerners) was the seventh ruler of the mongol empire's ilkhanate division in modern-day i
+941	wikibio2015	smash mouth	person	genre	alternative rock		box[genre]=alternative rock, ska punk, surf rock, pop punk, pop rock | smash mouth is an american rock band from san jose, california.
+942	wikibio2015	kal penn	person	party	democratic party		box[party]=democratic party | kal penn (born kalpen suresh modi; april 23, 1977) is an american actor, producer, and civil servant of indian origin.
+943	wikibio2015	philip abbott	person	birth_place	lincoln, nebraska, usa		box[birth_place]=lincoln, nebraska, usa | philip abbott (march 21, 1923 -- february 23, 1998) was an american character actor of film and television and an occasional voice actor.
+944	wikibio2015	jimmy frise	person	nationality	canadian		box[nationality]=canadian | canadian cartoonist jimmie frise (born james llewellyn frise, 1891 -- 1948) was best known for his work on the comic strips " birdseye center " and " juniper ju
+945	wikibio2015	michael kearney	person	birth_place	newmarket, ireland		box[birth_place]=newmarket, ireland | michael kearney (october 4, 1874 - october 31, 1937) was a private serving in the united states marine corps during the spanish -- american war who received the
+946	wordnet3.0	condescension	word_n	definition	the trait of displaying arrogance by patronizing those considered inferior		
+947	wikibio2015	lauren bush	person	occupation	model		box[occupation]=model, designer | lauren pierce bush (born june 25, 1984) is the ceo, creative director, and co-founder of feed projects.
+948	wiki2017	plame affair	wiki	description	political scandal		The Plame affair (also known as the CIA leak scandal and Plamegate) was a political scandal that revolved around journalist Robert Novak's public identification of Valerie Plame as a covert Central Intelligence Agency officer in 2003. In 2002, Plame wrote a memo to her superiors in which she express
+949	wiki2017	biotinylation	wiki	description	process of covalently attaching biotin to a protein		In biochemistry, biotinylation is the process of covalently attaching biotin to a protein, nucleic acid or other molecule. Biotinylation is rapid, specific and is unlikely to perturb the natural function of the molecule due to the small size of biotin (MW = 244.31 g/mol). Biotin binds to streptavidi
+950	wikibio2015	alexander frolov	person	birth_place	moscow, soviet union		box[birth_place]=moscow, soviet union | alexandrovich " alexander " frolov (; born june 19, 1982) is a russian professional ice hockey player currently playing for torpedo nizhny novgorod in the konti
+951	geonamescache	kirsanov	city	country	@country:RUS (russia)		
+952	wordnet3.0	tingle	word_v	definition	cause a stinging or tingling sensation		
+953	wikibio2015	philip pendleton barbour	person	birth_place	orange county, virginia		box[birth_place]=orange county, virginia | philip pendleton barbour (may 25, 1783 -- february 25, 1841) was speaker of the united states house of representatives and an associate justice of the supreme c
+954	geonamescache	los barrios	city	country	@country:ESP (spain)		
+955	wiki2017	chaozhou	city	description	city		
+956	wordnet3.0	flashlight battery	word_n	is_a	@wn:dry_battery.n.01 (dry battery)		wordnet hypernym @wn:dry_battery.n.01 (dry battery)
+957	wikibio2015	comte de lautreamont	person	death_place	paris		box[death_place]=paris | comte de lautréamont () was the pseudonym of isidore-lucien ducasse (4 april 1846 -- 24 november 1870), a french poet born in uruguay.
+958	wikibio2015	thomas heatherwick	person	alma_mater	manchester metropolitan university		box[alma_mater]=manchester metropolitan university | thomas alexander heatherwick, cbe, rdi (born 17 february 1970) is an english designer and the founder of london-based design practice heatherwick studio.
+959	wikibio2015	nazli sabri	person	birth_place	alexandria, khedivate of egypt		box[birth_place]=alexandria, khedivate of egypt | nazli sabri (;; 25 june 1894 -- 29 may 1978) was queen of egypt from 1919 to 1936 as the second wife of king fuad.
+960	wordnet3.0	schizomycetes	word_n	is_a	@wn:class.n.07 (class)		wordnet hypernym @wn:class.n.07 (class)
+961	airportsdata	kunovice airport	airport	city	uherske hradiste		
+962	wikibio2015	siobhan fahey	person	birth_date	1958-09-10		box[birth_date]=10 september 1958 | máire siobhán deirdre fahey (born 10 september 1958) is an irish-british musician.
+963	wikibio2015	ernie k-doe	person	occupation	singer		box[occupation]=singer | ernest kador, jr. (february 22, 1936 -- july 5, 2001), known by the stage name ernie k-doe, was an african american r&b singer best known for his 1961 hit singl
+964	wikibio2015	kirby grant	person	birth_place	butte, silver bow county montana, u.s.		box[birth_place]=butte, silver bow county montana, u.s. | kirby grant (november 24, 1911 - october 30, 1985), born kirby grant hoon, jr., was a long-time b movie and television actor, mostly remembered for having playe
+965	wikibio2015	roberta taylor	person	occupation	actress		box[occupation]=actress, author | roberta taylor (born roberta alexandra mary roberts 26 february 1948) is an english actress and author.
+966	wikibio2015	salote tupou iii	person	death_place	aotea hospital, auckland, new zealand		box[death_place]=aotea hospital, auckland, new zealand | sālote mafile`o pilolevu tupou iii, kgcp, kgctg, kgcgt, tmm (13 march 190016 december 1965), but usually named only sālote, was queen regnant of tonga from 5 ap
+967	wikibio2015	james bond	person	occupation	ornithologist		box[occupation]=ornithologist | james bond (january 4, 1900 -- february 14, 1989) was a leading american ornithologist, an expert on the birds of the caribbean.
+968	wikibio2015	gale sayers	person	description	former american college and professional football player		gale eugene sayers (born may 30, 1943), also known as " the kansas comet ", is a former american college and professional football player who was a running back
+969	wordnet3.0	bad temper	word_n	is_a	@wn:anger.n.01 (anger)		wordnet hypernym @wn:anger.n.01 (anger)
+970	wikibio2015	barbara deming	person	birth_place	new york city		box[birth_place]=new york city | barbara deming (july 23, 1917 -- august 2, 1984) was an american feminist and advocate of nonviolent social change.
+971	wordnet3.0	halogen	word_n	definition	any of five related nonmetallic elements that are all monovalent and readily form negative ions		
+972	geonamescache	vac	city	country	@country:HUN (hungary)		
+973	wikibio2015	conrad hunte	person	birth_date	1932-05-09		box[birth_date]=9 may 1932 | sir conrad cleophas hunte, ka (9 may 1932 -- 3 december 1999) was a barbadian cricketer.
+974	wikibio2015	bennie briscoe	person	death_date	2010-12-28		box[death_date]=28 december 2010 | " bad " bennie briscoe (february 8, 1943 -- december 28, 2010) was the quintessential philadelphia boxer.
+975	wikibio2015	p. j. kennedy	person	death_date	1929-05-18		box[death_date]=18 may 1929 | patrick joseph " p. j. " kennedy (january 14, 1858 -- may 18, 1929) was an american businessman and politician, a major figure in the democratic party in boston
+976	wikibio2015	jon finch	person	occupation	actor		box[occupation]=actor | jon finch (2 march 1942 -- 28 december 2012) was an english actor who performed in many shakespearean plays on stage, and made many films.
+977	wikibio2015	bruce grobbelaar	person	description	former zimbabwe international footballer		bruce david grobbelaar (born 6 october 1957) is a former zimbabwe international footballer who played as a goalkeeper, most prominently for the english team liv
+978	wordnet3.0	defense program	word_n	is_a	@wn:program.n.02 (program)		wordnet hypernym @wn:program.n.02 (program)
+979	wikibio2015	alice heine	person	birth_date	1858-02-10		box[birth_date]=10 february 1858 | alice heine (february 10, 1858 -- december 22, 1925), styled hsh the princess of monaco, and also the duchess of richelieu, was the american-born second wife of
+980	wikibio2015	barry pashak	person	party	alberta ndp the equity party		box[party]=alberta ndp the equity party | barry leonard pashak (born april 21, 1937) is a former college instructor and a canadian provincial and federal level politician.
+981	goodbooks-10k	fables, vol. 5: the mean seasons	book	author	bill willingham		
+982	wikibio2015	janet l. kavandi	person	birth_date	1959-07-17		box[birth_date]=17 july 1959 | janet lynn kavandi, a native of carthage, missouri, (born july 17, 1959) is an american scientist and a nasa astronaut.
+983	goodbooks-10k	the coffin club	book	publication_year	2008		
+984	wikibio2015	gary kurtz	person	birth_place	los angeles, california, united states		box[birth_place]=los angeles, california, united states | gary kurtz (born july 27, 1940) is an american film producer whose list of credits includes " american graffiti " (1973), " star wars " (1977), " the empire str
+985	wikibio2015	leo cardenas	person	birth_place	matanzas, cuba		box[birth_place]=matanzas, cuba | leonardo lazaro cárdenas alfonso (born december 17, 1938) was a right-handed batting major league baseball player.
+986	wikibio2015	brian sipe	person	position	quarterback		box[position]=quarterback | brian winfield sipe (born august 8, 1949) is a former professional american football quarterback who played in the national football league from 1974 to 1983 an
+987	wikibio2015	claude rains	person	death_place	laconia, new hampshire, u.s.		box[death_place]=laconia, new hampshire, u.s. | william claude rains (10 november 188930 may 1967) was an english actor of stage and screen whose career spanned 46 years.
+988	wikibio2015	philly joe jones	person	death_date	1985-08-30		box[death_date]=30 august 1985 | joseph rudolph " philly joe " jones (july 15, 1923 -- august 30, 1985) was a philadelphia-born american jazz drummer, known as the drummer for the first " great
+989	wikibio2015	george earle buckle	person	birth_date	1854-06-10		box[birth_date]=10 june 1854 | george earle buckle (10 june 1854 -- 13 march 1935) was an english editor and biographer.
+990	wikibio2015	william williams	person	death_place	mawphlang, meghalaya, india		box[death_place]=mawphlang, meghalaya, india | william williams (11 february 1859 - 22 april 1892) was a welsh presbyterian missionary to khasi hills, northeast india, in the late 19th century.
+991	wikibio2015	lee child	person	occupation	novelist		box[occupation]=novelist, writer, author | jim grant (born 29 october 1954), better known by his pen name lee child, is a british thriller writer.
+992	wikibio2015	dan shechtman	person	birth_place	tel aviv, israel		box[birth_place]=tel aviv, israel | dan shechtman (hebrew: דן שכטמן; born january 24, 1941) is the philip tobias professor of materials science at the technion -- israel institute of technology, a
+993	geonamescache	kairana	city	population	80,432	2025	
+994	wikibio2015	karl barth	person	birth_place	basel, switzerland		box[birth_place]=basel, switzerland | karl barth (;; --) was a swiss reformed theologian who is often regarded as the greatest protestant theologian of the twentieth century.
+995	wikibio2015	reginald victor jones	person	alma_mater	university of oxford		box[alma_mater]=university of oxford | reginald victor jones (29 september 1911 -- 17 december 1997) was a british physicist and scientific military intelligence expert who played an important role i
+996	wikibio2015	george morland	person	death_date	1804-10-29		box[death_date]=29 october 1804 | george morland (26 june 1763 in london -- 29 october 1804 in brighton) was an english painter of animals and rustic scenes.
+997	wikibio2015	george robertson, baron robertson of port ellen	person	alma_mater	university of dundee		box[alma_mater]=university of dundee | george islay macneill robertson, baron robertson of port ellen (born 12 april 1946) is a british labour party politician who was the tenth secretary general of 
+998	wikibio2015	masten gregory	person	death_date	1985-11-08		box[death_date]=8 november 1985 | masten gregory (february 29, 1932 − november 8, 1985) was a racing driver from the united states.
+999	wiki2017	the velvet rope	wiki	release_year	1997		The Velvet Rope is the sixth studio album by American recording artist Janet Jackson. The album was released on October 7, 1997 through Virgin Records America. Following the release of her first greatest hits compilation Design of a Decade: 1986–1996 (1995), Jackson's recording contract with Virgin 
+1000	wikibio2015	tammy lauren	person	occupation	actress		box[occupation]=actress | tammy lauren (born november 16, 1968) is an american actress who has appeared in film and television.

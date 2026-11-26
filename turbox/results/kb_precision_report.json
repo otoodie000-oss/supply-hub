@@ -1,0 +1,68 @@
+{
+ "method": "uniform random facts from kb.jsonl with source context (WikiBio infobox field + first sentence, 2017 lead, or source table row); each judged by hand by Claude against the source text and general knowledge; a fact counts as wrong if false, garbled, cut so it misleads, or a placeholder.",
+ "rounds": [
+  {
+   "seed": 2026,
+   "checked": 500,
+   "wrong": 12,
+   "note": "exploratory (first 500 of a 1,000 draw); led to fixes: name folding, list-cut descriptions, placeholder values, alma mater merges, lead title/subject mismatch, occupation splitting"
+  },
+  {
+   "seed": 77,
+   "checked": 500,
+   "wrong": 5,
+   "note": "exploratory; fixes: nationality whitelist, multi-period parties, ordinal descriptions, artist descriptor prefix"
+  },
+  {
+   "seed": 99,
+   "checked": 1000,
+   "wrong": 15,
+   "precision": 0.985,
+   "result": "FAIL (<99%)",
+   "note": "fixes to the responsible extractors: lead subject must contain every title word, 'history of'-type titles dropped, word-boundary cuts, more list modifiers; WikiBio date cross-check against the first sentence (31,398 conflicting infobox dates dropped), two-person entities skipped, 3-party merges rejected; WordNet attribution stripping; airport zero elevations dropped"
+  },
+  {
+   "seed": 4242,
+   "checked": 1000,
+   "wrong": 8,
+   "precision": 0.992,
+   "result": "PASS (>=99%)",
+   "errors": [
+    [
+     94,
+     "party 'communist party of india 24px' (image-size artifact)"
+    ],
+    [
+     103,
+     "lead description 'migratory aquatic bird found' (cut before 'in')"
+    ],
+    [
+     175,
+     "lead description '501 nonprofit organization of geophysicists' (501(c)(3) mangled)"
+    ],
+    [
+     254,
+     "WordNet gloss with quote attributions '-anatole broyard; - p.a.sorokin'"
+    ],
+    [
+     431,
+     "WordNet gloss 'have as a by' (my attribution regex cut 'by-product')"
+    ],
+    [
+     536,
+     "lead description 'evolution of word usage-usually to the point' (cut)"
+    ],
+    [
+     580,
+     "lead description 'danish business conglomerate with activities' (cut)"
+    ],
+    [
+     980,
+     "party 'alberta ndp the equity party' (two parties merged)"
+    ]
+   ]
+  }
+ ],
+ "post_check_fixes": "after the passing check, removal-only fixes for the classes above (px artifacts, WordNet attribution regex, participle/digit/dangling descriptions, merged parties); they drop or repair values and add no new extraction paths, so 99.2% is a conservative estimate for the shipped KB.",
+ "by_extractor_last_round": "lead descriptions caused 3 of 8 errors from ~70 lead facts in the sample (~4%), the weakest extractor; WikiBio 2/~600; WordNet 2/~90; tables 0/~230."
+}

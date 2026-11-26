@@ -1,0 +1,31 @@
+{
+ "project": "TurboX",
+ "phase": "0c",
+ "step": "KB done; next: freeze 1M test generator",
+ "done": [
+  "audit_2_0 (results/audit_2_0.json)",
+  "turbowarp_bench (int list 5.5 ns/MAC, 2-digit strings ~15 ns/MAC, bsearch 0.19 us)",
+  "train_bench (d128 L4 ~18K tok/s; bf16 only 1.04-1.6x fp32 here)",
+  "KB: 518,682 facts in KB + 27,299 withheld = 545,981 verified; 191,812 entities; 6.03 MB deflated (1.16 MB/100K facts)",
+  "KB precision: 992/1000 = 99.2% (seed 4242) after a failed 985/1000 round (results/kb_precision_report.json)"
+ ],
+ "work_dir": "/home/user/work/x",
+ "src_2_0": "/home/user/supply-hub/turbo2 (repo copy; /mnt/attach and uploads were empty)",
+ "flags": [
+  "No files were attached (uploads empty); using the 2.0 source and build/Turbo2.sb3 from this repo (turbo2/), which is the shipped 2.0.",
+  "Brief describes 2.0 as ~50K facts / ~30 helpers / 18 MB; the shipped 2.0 has 82,039 facts, 35 helpers, 17,516,124-byte .sb3.",
+  "Workspace measured: 4 cores, 15 GB RAM (brief says 2 cores, 7 GB); bf16 autocast is only 1.04-1.6x faster than fp32 here (brief says ~5x).",
+  "The 2017 Wikipedia dump 2.0 used (gensim wiki-english-20171001) has templates stripped: no infoboxes (5 of 20,000 sampled articles mention one). Wikimedia/Wikidata/DBpedia/archive.org are unreachable. Infobox facts come from WikiBio (728K Wikipedia biography infoboxes, enwiki 2015-09, CC BY-SA 3.0, on GitHub) instead; lead sentences still come from the 2017 dump.",
+  "Structured tables: mledoze/countries (ODbL), countryinfo (MIT, populations ~2015), geonamescache 3.0.2 (MIT/GeoNames CC BY 4.0, cities >=15K), us (BSD-3), periodictable (public domain), airportsdata (MIT), goodbooks-10k (CC BY-SA 4.0), planets hand table (moon counts as of 2023).",
+  "2026 overlay: 106 hand-written facts (leaders, populations, records) from Claude's knowledge, not externally verified.",
+  "Index: the sparse index is BM25-style word postings over entity names/aliases (plus exact sorted-name/alias binary search), not over full fact text; a fact-text BM25 index like 2.0's costs ~3.2 MB per 100K facts and cannot fit 500K facts in 8 MB.",
+  "Fact rendering (ISO date -> 'march 14, 1879', digits -> '66,078,000') is done by fact storage when evidence is shown to the model; it never chooses an answer.",
+  "Precision check judged by Claude (the builder); one round failed (98.5%) and the responsible extractors were fixed before the passing round (99.2%)."
+ ],
+ "decisions": [
+  "Weights stored as 2-digit decimal strings with QAT (~0.7 deflated bytes/weight at 32 levels vs 1.24 for 2.0's int8 list items); decode costs ~2.8x compute.",
+  "Engine = one small decoder ('brain') with a copy pointer that reads the question, issues lookups/tool calls, picks candidates, decides answer/fallback/clarify and writes every word; candidates come from the non-learned name index.",
+  "KB quota: persons 82K (WikiBio), leads 30K (2017), WordNet 25K senses (+is-a closure), all table entities."
+ ],
+ "kb_cmd": "Q_PERSONS=82000 Q_LEADS=30000 Q_WORDNET=25000 python3 kb/merge.py && POST_CAP=80 python3 kb/encode.py"
+}

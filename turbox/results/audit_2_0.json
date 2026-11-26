@@ -1,0 +1,205 @@
+{
+ "sb3_bytes": 17515706,
+ "deflated_bytes_by_part (each part zlib-9 on its own; sums slightly exceed the zip)": {
+  "model_weights (10,126,336 params, int8 list items)": 12573109,
+  "fact_text_as_token_ids (82,039 facts)": 2440514,
+  "bm25_index": 2632149,
+  "blocks (19,600 in sprite Turbo + 4 on Stage)": 257332,
+  "other_lists": 34821
+ },
+ "bytes_per_weight_deflated": 1.242,
+ "fact_bytes_per_100k_facts": 2974822,
+ "top_list_groups": [
+  {
+   "group": "L#f#a",
+   "raw": 11289062,
+   "deflated": 3212224,
+   "items": 2621440,
+   "lists": 20
+  },
+  {
+   "group": "L#f#b",
+   "raw": 11284372,
+   "deflated": 3211033,
+   "items": 2621440,
+   "lists": 20
+  },
+  {
+   "group": "wte#",
+   "raw": 8833811,
+   "deflated": 2470794,
+   "items": 2097152,
+   "lists": 16
+  },
+  {
+   "group": "L#qkv",
+   "raw": 8438021,
+   "deflated": 2400093,
+   "items": 1966080,
+   "lists": 10
+  },
+  {
+   "group": "ftok#",
+   "raw": 7540609,
+   "deflated": 2156780,
+   "items": 1495008,
+   "lists": 8
+  },
+  {
+   "group": "bm_pf#",
+   "raw": 3775983,
+   "deflated": 1507866,
+   "items": 550135,
+   "lists": 3
+  },
+  {
+   "group": "L#o",
+   "raw": 2823298,
+   "deflated": 811809,
+   "items": 655360,
+   "lists": 10
+  },
+  {
+   "group": "bm_pw#",
+   "raw": 3857173,
+   "deflated": 733321,
+   "items": 550135,
+   "lists": 3
+  },
+  {
+   "group": "prm",
+   "raw": 880496,
+   "deflated": 314945,
+   "items": 65536,
+   "lists": 1
+  },
+  {
+   "group": "f_start",
+   "raw": 606873,
+   "deflated": 225663,
+   "items": 82039,
+   "lists": 1
+  },
+  {
+   "group": "bm_words",
+   "raw": 639912,
+   "deflated": 186677,
+   "items": 57751,
+   "lists": 1
+  },
+  {
+   "group": "wpe",
+   "raw": 552670,
+   "deflated": 152211,
+   "items": 131072,
+   "lists": 1
+  }
+ ],
+ "blocks_per_target": {
+  "Stage": 4,
+  "Turbo": 19596
+ },
+ "load_ms_headless": [
+  1280,
+  1036,
+  1131
+ ],
+ "green_flag_to_ready": {
+  "sim_ms": 107,
+  "frames": {
+   "n": 2,
+   "max": 73.47,
+   "p99": 73.47,
+   "p50": 73.47,
+   "over50": 1
+  }
+ },
+ "idle_frames": {
+  "n": 90,
+  "max": 25.1,
+  "p99": 25.1,
+  "p50": 24.94,
+  "over50": 0
+ },
+ "answer_frames": {
+  "n": 44,
+  "max": 2205.39,
+  "p99": 2205.39,
+  "p50": 34.87,
+  "over50": 5
+ },
+ "frames_over_50ms": [
+  {
+   "i": 0,
+   "tag": "boot",
+   "ms": 73.5
+  },
+  {
+   "i": 93,
+   "tag": "answer",
+   "ms": 2205.4
+  },
+  {
+   "i": 94,
+   "tag": "answer",
+   "ms": 55.3
+  },
+  {
+   "i": 106,
+   "tag": "answer",
+   "ms": 1043.7
+  },
+  {
+   "i": 117,
+   "tag": "answer",
+   "ms": 147.4
+  },
+  {
+   "i": 126,
+   "tag": "answer",
+   "ms": 1412.7
+  }
+ ],
+ "turns_30fps": [
+  {
+   "prompt": "what is the capital of thailand?",
+   "frames": 13,
+   "sim_s": 2.64,
+   "forward_passes": 46,
+   "reply": "The capital of thailand is bangkok."
+  },
+  {
+   "prompt": "what's 17.5% of 240?",
+   "frames": 20,
+   "sim_s": 1.83,
+   "forward_passes": 55,
+   "reply": "That's 42."
+  },
+  {
+   "prompt": "tell me a story about a kind dragon",
+   "frames": 11,
+   "sim_s": 1.77,
+   "forward_passes": 53,
+   "reply": "Okay! The answer is a dragon."
+  }
+ ],
+ "ms_per_token_from_2_0_verify": {
+  "prefill_warm": [
+   63.6,
+   27.2,
+   27.5
+  ],
+  "decode": [
+   37.4,
+   34.6,
+   33.3
+  ]
+ },
+ "root_causes": {
+  "confidently_wrong_and_idk": "2.0 keeps knowledge in 10.1M weights and free-writes every reply; retrieval inserts near-miss facts (60% of not-in-base eval questions got one, 58.7% of non-factual dev prompts) and nothing checks the reply against evidence. Measured: 26.7% confidently wrong on not-in-base questions, 5.0% IDK on answerable prompts (2.0 README).",
+  "size": "72% of the zip is int8 weights stored one value per list item (~1.2 deflated bytes/weight); facts are stored as token-id lists (~3.0 MB per 100K facts) plus a 2.6 MB BM25 index.",
+  "slow_open_start": "52.6 MB project.json to parse (0.93-1.35 s headless load); green flag allocates KV caches and an 82K-item score list (one 67-74 ms frame).",
+  "low_fps": "each answer's first frame runs retrieval over all 82K facts plus the whole prompt prefill in one warp block (1.0-2.2 s frames), then one ~35 ms forward pass per frame while decoding.",
+  "kb_small": "82,039 facts, mostly free-text sentences; no structured records, so derived questions cannot be computed."
+ }
+}
