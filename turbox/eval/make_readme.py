@@ -163,16 +163,16 @@ def main():
     out["TABLE"] = "\n".join(rows + ["", "Other outcomes for TurboX on all 1M items: bare IDK %s, clarification where none was wanted %s, "
                                          "non-answer %s." % (pc(ALL.get("bare_idk", 0), 2), pc(ALL.get("clarify_wrong", 0), 2), pc(ALL.get("nonanswer", 0), 2))])
     m = tx["messy"]
-    out["MESSY"] = ("Messy items are %s of the 1M test. TurboX gets %s of them right, against %s on clean items in the same 20K subset "
-                    "(%s messy); Turbo 2.0 gets %s messy and %s clean.") % (
+    out["MESSY"] = ("these are %s of the 1M test items, and TurboX gets %s of them right. On the 20K subset, TurboX gets %s of "
+                    "clean items and %s of messy ones right; Turbo 2.0 gets %s clean and %s messy.") % (
         pc(m["n"] / N), pc(m["correct"]), pc(g(A, "clean", "correct")), pc(g(A, "messy", "correct")),
-        pc(g(B, "messy", "correct")), pc(g(B, "clean", "correct")))
+        pc(g(B, "clean", "correct")), pc(g(B, "messy", "correct")))
     kb = open(os.path.join(ROOT, "README_draft_parts.md")).read().split("## Knowledge base", 1)[1]
     kbb = bs["deflated_by_component"]["kb"]
     kb = kb.replace("Deflated size of the KB lists in the .sb3: 6,236,491 bytes, i.e. **1,161,464 bytes per 100K facts**.",
                     "Deflated size of the KB lists in the .sb3: %s bytes, i.e. **%s bytes per 100K facts**." % (
                         format(kbb, ","), format(round(kbb / 536951 * 100000), ",")))
-    out["KB"] = "## Knowledge base\n" + kb.strip()
+    out["KB"] = "## Knowledge base\n\n" + kb.strip()
     gl = ["Hand grading was done blind: the sheet showed id, mode, question, gold and reply, never the automatic grade.", "",
           "| Validation | Items | Agreement |", "|---|---:|---:|",
           "| Blind hand grades vs the grader used at the time | %d | %s |" % (gv["n"], pc(gv["agreement"])),

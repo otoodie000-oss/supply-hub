@@ -16,12 +16,13 @@ Gates: [all gates](#gates). Per-category table: [categories](#per-category-resul
 |---|---|
 | `build/TurboX.sb3` | the project (open in TurboWarp; green flag; type into the answer box) |
 | `build/TurboX.html` | the same project packaged by the TurboWarp packager 3.14.0 (single offline HTML file) |
-| `results/results.csv.gz` | all 1,000,000 test items: question, reply, reply type, evidence ids, confidence, grade |
+| `results/results.csv.gz` | all 1,000,000 test items: category, what the item requires, gold, earlier turns, question, reply, reply type, evidence ids, confidence, grade |
 | `results/sample_1000.csv` | 1,000 of them, stratified by category |
 | `results/final_1m.json` | per-category rates on the 1M test |
 | `results/baseline_2_0.json` | Turbo 2.0 on the 20K stratified subset (same grader) |
-| `results/grader_validation*.json` | 500 blind hand grades vs. the automatic grader |
-| `results/open_eval.json`, `results/open_prompts.json` | open-ended rubric (300) and blind A/B (200) |
+| `results/grader_validation*.json` | blind hand grades vs. the automatic grader: the original 500 (`_hand`, at the time, post-fix) and a fresh 500 (`_fresh`) |
+| `results/open_eval.json`, `results/open_prompts.json`, `results/open/` | open-ended rubric (300) and blind A/B (200): prompts, both systems' replies, blind sheets, keys, every score |
+| `results/perf_latency.json`, `results/perf_html.json`, `results/build_stats.json`, `results/parity_result.json` | performance, packaged-HTML check, build statistics, parity |
 | `results/test_freeze.json`, `results/test_samples.md` | test freeze (hashes, seed, composition) and 20 samples per category |
 | source | `kb/` (KB build), `traingen/` (training traces), `testgen/` (frozen test), `engine/` (model, trainer, executor, mirror), `scratch/` (Scratch runtime + builder), `harness/` (headless TurboWarp), `eval/` (grader, runners) |
 
@@ -33,7 +34,7 @@ TurboX was run on all 1,000,000 items on the Python mirror. Turbo 2.0 was run on
 
 @@TABLE@@
 
-Messy input (typos, slang, caps, missing punctuation, fillers) is on 35% of every category. @@MESSY@@
+Messy input (typos, slang, caps, missing punctuation, fillers): @@MESSY@@
 
 How this result was reached (all fix passes were driven by the 20K stratified test subset, not the full 1M):
 
@@ -191,6 +192,16 @@ python3 scratch/build_x.py --ckpt RUN/ckpt.pt --out TurboX.sb3 --levels 31 --fbb
 node harness/run_sb3.js TurboX.sb3 items.json out.jsonl && python3 eval/parity.py RUN/ckpt.pt items.json out.jsonl 31 3
 python3 eval/run_test.py RUN/ckpt.pt OUTDIR 0 1 ... 19 --levels 31 --fbb 3
 node harness/package_html.js TurboX.sb3 TurboX.html
+# deliverables, grader validation, open-ended eval, performance, README
+python3 eval/regrade.py OUTDIR && python3 eval/export_results.py OUTDIR results/
+python3 eval/grader_val.py fresh OUTDIR    # then hand-label WORK/gval_fresh/blind.md -> hand.json
+python3 eval/grader_val.py fresh_score
+python3 eval/open_eval.py gen RUN/ckpt.pt 31 3 && python3 baseline/open_t20.py && python3 eval/open_eval.py blind   # then score blind
+python3 eval/open_eval.py score
+node harness/run_sb3.js TurboX.sb3 perf_items.json perf.jsonl > perf_log.txt   # (and perf_items3.json: 75 stories)
+python3 harness/perf_summary.py results/perf_latency.json perf_cats_all.json perf.jsonl perf_log.txt ...
+node harness/check_html.js TurboX.html > results/perf_html.json
+python3 eval/make_readme.py
 ```
 
 WORK = `/home/user/work/x`. The 2.0 sources and build are in `../turbo2`.
