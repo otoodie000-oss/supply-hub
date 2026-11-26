@@ -50,11 +50,16 @@ anything else help instead what i do know closest verified can tell share""".spl
 def norm(s):
     s = clean_text(s or "").lower()
     s = s.replace("’", "'")
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    # detokenisation artifacts: "u. s." -> "u.s.", "d. c." -> "d.c.", "+ 252" -> "+252", "girls ' high" -> "girls' high"
+    s = re.sub(r"\b([a-z])\. (?=[a-z]\.)", r"\1.", s)
+    s = re.sub(r"([+$]) (?=\d)", r"\1", s)
+    s = re.sub(r" '(?=\s)", "'", s)
+    return s
 
 
 def words(s):
-    return re.findall(r"[a-z0-9']+", norm(s))
+    return [w.strip("'") for w in re.findall(r"[a-z0-9']+", norm(s)) if w.strip("'")]
 
 
 def content(s):
@@ -167,6 +172,8 @@ def match_gold(g, reply, question=""):
         tol = max(g.get("tol", 0.0), 1e-9)
         x = g["value"]
         ok = any(abs(v - x) <= tol * max(1.0, abs(x)) + 1e-9 for v in numbers(f2))
+        if not ok and x == 0:   # "doesn't border any other country", "none", "zero"
+            ok = bool(re.search(r"\b(zero|none|no other|doesn't [a-z]+ any|does not [a-z]+ any|not any)\b", norm(f2)))
     elif t == "list":
         items = g["items"]
         hit = sum(1 for a in items if has_phrase(reply, a))
@@ -263,7 +270,7 @@ markets money explain game games team teams follow place places country city tow
 nationality occupation date year years month day days language languages currency capital description definition
 author written published released elevation code airport book film song album something else instead give look
 specific part hardest advice explanation joke story stories since haven't told tell yet stock stocks share shares
-password phone address instead prices""".split())
+password phone address instead prices founding establishment""".split())
     return g
 
 
@@ -299,6 +306,9 @@ def grade(item, reply, trace_numbers=(), support=""):
         return "bare_idk", form
     if form == "fallback_unsupported":
         return "confidently_wrong", form
+    if form == "nonanswer" and mode in ("answer", "either") and g and g.get("type") not in (None, "none") \
+            and match_gold(g, reply, q) and extra_numbers_ok(reply, item, trace_numbers):
+        form = "answer"   # e.g. "Bovanenkovo is in Bovanenkovo." (the answer is a word of the question)
     if mode == "answer":
         if form == "answer":
             if match_gold(g, reply, q) and extra_numbers_ok(reply, item, trace_numbers):

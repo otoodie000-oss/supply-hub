@@ -1,0 +1,102 @@
+{
+ "n": 500,
+ "agree": 481,
+ "agreement": 0.962,
+ "disagreements": [
+  {
+   "id": "t0021551",
+   "hand": "correct",
+   "auto": "nonanswer"
+  },
+  {
+   "id": "t0110890",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0120673",
+   "hand": "correct",
+   "auto": "nonanswer"
+  },
+  {
+   "id": "t0155219",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0179942",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0286079",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0293942",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0312485",
+   "hand": "confidently_wrong",
+   "auto": "nonanswer"
+  },
+  {
+   "id": "t0341589",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0371558",
+   "hand": "fallback",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0398944",
+   "hand": "correct",
+   "auto": "bare_idk"
+  },
+  {
+   "id": "t0565432",
+   "hand": "fallback",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0630428",
+   "hand": "correct",
+   "auto": "clarify_wrong"
+  },
+  {
+   "id": "t0701093",
+   "hand": "fallback",
+   "auto": "correct"
+  },
+  {
+   "id": "t0754889",
+   "hand": "confidently_wrong",
+   "auto": "nonanswer"
+  },
+  {
+   "id": "t0800589",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0836230",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0907006",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0942075",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  }
+ ]
+}
