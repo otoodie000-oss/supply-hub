@@ -27,5 +27,5 @@
   "Engine = one small decoder ('brain') with a copy pointer that reads the question, issues lookups/tool calls, picks candidates, decides answer/fallback/clarify and writes every word; candidates come from the non-learned name index.",
   "KB quota: persons 82K (WikiBio), leads 30K (2017), WordNet 25K senses (+is-a closure), all table entities."
  ],
- "kb_cmd": "Q_PERSONS=82000 Q_LEADS=30000 Q_WORDNET=25000 python3 kb/merge.py && POST_CAP=80 python3 kb/encode.py"
+ "kb_cmd": "Q_PERSONS=80000 Q_LEADS=30000 Q_WORDNET=25000 python3 kb/merge.py && POST_CAP=80 python3 kb/encode.py"
 }

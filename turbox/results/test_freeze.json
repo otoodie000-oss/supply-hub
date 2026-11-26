@@ -1,0 +1,74 @@
+{
+ "seed": 20261126,
+ "n_items": 1000000,
+ "per_category": {
+  "withheld": 100000,
+  "kb_fact": 400000,
+  "tool": 150000,
+  "real": 100000,
+  "derived": 150000,
+  "multiturn": 50000,
+  "ambiguous": 50000
+ },
+ "messy_pct": {
+  "withheld": 34.84,
+  "kb_fact": 35.02,
+  "tool": 34.9,
+  "real": 35.09,
+  "derived": 35.21,
+  "multiturn": 34.92,
+  "ambiguous": 34.97
+ },
+ "kb_fact_test_only_entity_pct": 50.02,
+ "real_questions_used": 94275,
+ "real_kb_fill": 5725,
+ "modes": {
+  "ambiguous/clarify": 12510,
+  "ambiguous/clarify_or_likeliest": 37490,
+  "derived/answer": 150000,
+  "kb_fact/answer": 400000,
+  "multiturn/answer": 50000,
+  "real/answer": 16884,
+  "real/either": 83116,
+  "tool/answer": 150000,
+  "withheld/fallback": 100000
+ },
+ "code_sha256": {
+  "testgen/gen_test.py": "c06bd272166875eff7d2f17a189988b6c84af9a134bce54853748ff97bf8a37d",
+  "testgen/pools_test.py": "2a3c8e8803364a7635e571aa4b154128ea51fbfd20ed9b588435705ea48e7fbe",
+  "testgen/prep_real.py": "63b335473c7a334e068af29688eb20d72dbab4c876525d4ceee935baf19af17e",
+  "common/noise.py": "15769641fdb439bcb36bba2734b0c0101a69846fb9469ecee5578eb15f22ac67",
+  "common/render.py": "d3ae2d69c0fb83e6c58b6c7e821616968c0452c7a988db0982e9763937fe2cb2",
+  "common/kbx.py": "362701a4e054010a4cfb39e50265bb961d20cc0b6a019db460c42472673d15ee",
+  "helpers/twins.py": "199b9c5520d64a84260ace3f8bf3272b0847b76b6508a5b3a9d89ea19ef5f839",
+  "kb/relations.py": "6bad80621670d8fae8b0268c6656e5f5e636ba40e4f7751fd6a607bba3c104ec",
+  "textnorm.py": "bc41eea1ab6460a72eee7738735647021bde37739c6fd57bb97812fc9620c9bf"
+ },
+ "data_sha256": {
+  "kb.jsonl": "22f9250eb41df42da610f71cb0acc5db37dc8632f9afc15a3eaa974803ecfd61",
+  "withheld.jsonl": "c9acdf1ccd4d869e6c10a2c44416205366351cada12fdd7625fbf3dcf12990dc",
+  "real_questions.json": "69bad03cd097a12b88a7e63fd63a4e06e04565dbc17d2f3ae26ca9105277bea4"
+ },
+ "shards_sha256": {
+  "shard_00.jsonl.gz": "303dc795cb4641a3b272392bffcaa21855a94a3fc5a78980654eb202bee58147",
+  "shard_01.jsonl.gz": "973138cd7a23431d294e21265cdddc4cd691e0dcbf9eed121d3e20597ecc7105",
+  "shard_02.jsonl.gz": "d4a4c18283dd8f9296ad813de2f79872b3dae17bafbf68ea87d08b7f47998ffc",
+  "shard_03.jsonl.gz": "5d0b846141e43e19d1ee8b5348ee7a4dfbfddc98c2b318d52f89250f25788020",
+  "shard_04.jsonl.gz": "2bfb019f2a951ff9595ea2aa68fbf1e930507432701f83a424ff96a6d25d0406",
+  "shard_05.jsonl.gz": "2831d6aa14e66278c8e469b7f302237a0b0cc68367f42c2513419e66dc3ed136",
+  "shard_06.jsonl.gz": "3cf97e5cf765b87b61d96847e4133aa33e84e63df47e76f5fe7ce7ca148034c3",
+  "shard_07.jsonl.gz": "05cfe357f576373b98720a6574a3d13ede11b3bc40191263e7d4e27efa5cc4fd",
+  "shard_08.jsonl.gz": "40b34a21be8463045772131f19956de6e9fabff51df494d2a1cb011af9c274f8",
+  "shard_09.jsonl.gz": "95d41ccf9feda614be7bd0c07efa08174fff8c5d84daeff22c03b259d4cd17cb",
+  "shard_10.jsonl.gz": "8827199552efe3ba36e970760551fe304cdf36262ab4e8cbc18aa749a85388ef",
+  "shard_11.jsonl.gz": "4e4e36dd1564956922852f22c98993efe22ae601bb05fb76b5b64b130deba693",
+  "shard_12.jsonl.gz": "b899c9989ec8c4c93588bbfe2dc2a6e5296be2b1d04b34ce0d72b65b7da47f5f",
+  "shard_13.jsonl.gz": "863c54a0d48810c0536e4853bb8accbd0252267f3c610ff30490954bde3bcdeb",
+  "shard_14.jsonl.gz": "18e4f1d32eb41c96fbe929a3d7bfecb4605c677fe8eb8d6941b61b2619cca184",
+  "shard_15.jsonl.gz": "19dc09da490ae410c0a7eb8bd8030fdf9652ee6b2c0eafe179fd91b66f708310",
+  "shard_16.jsonl.gz": "0ab4c4128ad01c82331bdd786c30da5f53ce3f91b0aaa95bf2317aa1eedbd9e7",
+  "shard_17.jsonl.gz": "80bfeba8f45c6b3e5db25485959f50fa083b9e025b6ab1db1bcec0fa1a83d581",
+  "shard_18.jsonl.gz": "044e58e997a224eecb4ed3c4c3c6c154f22f8f89eee32891e23d83ef82c59436",
+  "shard_19.jsonl.gz": "962c0d8123a16ce4678dffe003a90b69372922f7b0a77ba024ff3583fb826f55"
+ }
+}

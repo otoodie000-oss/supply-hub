@@ -78,14 +78,48 @@ def good_desc(d):
 
 
 def prior(rec, titles):
-    """Non-learned popularity prior used only to order candidates in the index and to select entities."""
+    """Non-learned importance score (~0-100) used only to order index candidates, to select entities and to
+    define the 'likeliest reading' of ambiguous test questions."""
     t = rec.get("type")
+    L = lambda x: math.log10(1 + max(0, x))  # noqa: E731
+    f = {g[0]: g[1] for g in rec["facts"]}
+    if t == "country":
+        p = f.get("population")
+        return 80 + (L(float(str(p).replace(",", ""))) if p else 5)
+    if t == "us_state":
+        return 75
+    if t == "planet":
+        return 85
+    if t == "element":
+        return 60
     if t == "city":
-        wl = titles.get(rec["name"], (0,))[0]
-        return max(wl, int(200 * math.log10(1 + rec.get("citypop", 0)) ** 2))
+        return 10 * L(rec.get("citypop", 0)) + (5 if "capital_of" in f else 0)
+    if t == "person":
+        tl = titles.get(rec["name"])
+        by = (f.get("birth_date") or "")[:4]
+        if tl and by and by in tl[1][:600]:
+            return 15 * L(tl[0])
+        return 30 + 2 * min(10, rec.get("nsent", 0))
+    if t == "wiki":
+        return 15 * L(rec.get("pop", 0)) - 5
+    if t == "book":
+        return 10 + 10 * L(10 * rec.get("pop", 0))
+    if t == "airport":
+        return 30
     if t in ("word_n", "word_v", "word_a"):
-        return 50 * rec.get("pop", 0)
-    return rec.get("pop", 0) or 0
+        return 20 + 10 * L(rec.get("pop", 0))
+    return 40 + 5 * L(rec.get("pop", 0))
+
+
+COUNTRY_NAMES = {}
+
+
+def _qual_ok(q, c):
+    names = set()
+    for f in c["facts"]:
+        if f[0] in ("country", "state") and isinstance(f[1], str):
+            names.add(f[1].lower())
+    return any(n and n in q for n in names)
 
 
 def main():
@@ -110,8 +144,18 @@ def main():
                "island", "city", "town", "village", "area", "parish", "borough", "prefecture"}
     for r in leads:
         r["facts"] = [f for f in r["facts"] if f[0] != "located_in" or (f[1] in place_names and f[1] not in GENERIC)]
+    adult = re.compile(r"\b(porn\w*|adult film|adult entertain\w*|adult model|erotic\w*|stripper|sex worker|"
+                       r"prostitut\w*|glamour model|fetish|escort|camgirl|webcam model)\b")
+
+    def clean_rec(r):
+        return not any(adult.search(str(f[1])) for f in r["facts"]) and not adult.search(r["name"])
     persons = [r for r in persons if r["facts"]]
     leads = [r for r in leads if r["facts"]]
+    n0 = len(persons) + len(leads) + len(words)
+    persons = [r for r in persons if clean_rec(r)]
+    leads = [r for r in leads if clean_rec(r)]
+    words = [r for r in words if clean_rec(r) and not any(adult.search(a) for a in r.get("aliases") or [])]
+    stats["dropped_adult_content"] = n0 - len(persons) - len(leads) - len(words)
     # ---------------- merge wiki leads into table entities of the same name
     tab_by_name = defaultdict(list)
     for r in tables:
@@ -121,6 +165,13 @@ def main():
         cands = tab_by_name.get(r["name"])
         d = r.get("desc") or ""
         tgt = None
+        q = (r.get("qual") or "").lower()
+        if cands and q:
+            # a qualified lead ('springfield (the simpsons)') merges only when its qualifier names the
+            # table entity's own state or country
+            cands = [c for c in cands if any(q.find(str(v).split(":")[-1].lower()) >= 0 for k, v in
+                                             [(f[0], f[1]) for f in c["facts"]] if k in ("country", "state"))
+                     and False] if False else [c for c in cands if _qual_ok(q, c)]
         if cands:
             for c in sorted(cands, key=lambda c: -prior(c, titles)):
                 if (c["type"] == "country" and re.search(r"\b(country|state|kingdom|republic|nation)\b", d)) or \
@@ -143,7 +194,9 @@ def main():
             kept_leads.append(r)
     leads = kept_leads
     # ---------------- selection
-    persons.sort(key=lambda r: -(r["pop"] * 10 + r.get("nsent", 0)))
+    for r in persons:
+        r["prior"] = prior(r, titles)
+    persons.sort(key=lambda r: -r["prior"])
     leads.sort(key=lambda r: -r["pop"])
     words.sort(key=lambda r: -r["pop"])
     sel = tables + persons[:QUOTA["persons"]] + leads[:QUOTA["leads"]]
@@ -277,7 +330,7 @@ def main():
             fo.write(json.dumps(w) + "\n")
     with open(os.path.join(W, "kb.jsonl"), "w") as fo:
         for r in sel:
-            fo.write(json.dumps({k: r.get(k) for k in ("key", "name", "qual", "aliases", "type", "desc", "prior", "facts", "src")}) + "\n")
+            fo.write(json.dumps({k: r.get(k) for k in ("key", "name", "qual", "aliases", "type", "prior", "facts", "src")}) + "\n")
     st = {"entities": len(sel), "facts_in_kb": sum(len(r["facts"]) for r in sel), "withheld": len(wh),
           "verified_total": sum(len(r["facts"]) for r in sel) + len(wh),
           "by_src": Counter(f[3] for r in sel for f in r["facts"]), "by_type": Counter(r["type"] for r in sel),
