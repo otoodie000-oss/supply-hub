@@ -1,7 +1,7 @@
 {
  "project": "TurboX",
  "phase": "2",
- "step": "training tx1 (d128 L4, 16K steps, QAT 31 levels from 13K) via engine/train_loop.sh; resume: sh engine/train_loop.sh tx1 4",
+ "step": "training tx2 = tx1 step 9308 + 8000 steps with fixed input vocab (QAT 31 levels from 6000); resume: sh engine/train_loop.sh tx2 4; then dev calibration (eval/dev_calib.py), build, parity",
  "done": [
   "audit_2_0 (results/audit_2_0.json)",
   "turbowarp_bench (int list 5.5 ns/MAC, 2-digit strings ~15 ns/MAC, bsearch 0.19 us)",
@@ -36,7 +36,8 @@
   "Python mirror and Scratch cap a turn at 500 positions and 150 user tokens; /reset and /help are handled before the model in both.",
   "KB fix: capital/largest_city references resolved to same-named cities elsewhere (e.g. Augusta GA for Maine); now only cities inside that country/state; 830 test golds corrected (questions unchanged), test re-frozen.",
   "lists.json had been encoded before 'infinity' stopped being numeric-like: entity ids were shifted by one after it, so the trace generator mapped ~45% of lookups to the wrong id. Re-encoded; mapping now asserted against E_NAME.",
-  "Open-ended replies copy stored texts (MIT jokes, the 207 original 2.0 stories, 46 explanations + 28 advice notes written for TurboX) chosen by a non-learned topic index; the model decides to call the tool, which words to pass, and writes the reply by copying/framing."
+  "Open-ended replies copy stored texts (MIT jokes, the 207 original 2.0 stories, 46 explanations + 28 advice notes written for TurboX) chosen by a non-learned topic index; the model decides to call the tool, which words to pass, and writes the reply by copying/framing.",
+  "Input vocabulary bug found on dev: the input vocab held only word tokens, so + / * ^ = ( ) $ etc. all mapped to <unk> and the calculator picked wrong operators. 19 symbols replaced the 19 rarest input words (all other ids unchanged); data re-packed; training continued from tx1 step 9308 as run tx2 (tx1 stopped early)."
  ],
  "decisions": [
   "Weights stored as 2-digit decimal strings with QAT (~0.7 deflated bytes/weight at 32 levels vs 1.24 for 2.0's int8 list items); decode costs ~2.8x compute.",

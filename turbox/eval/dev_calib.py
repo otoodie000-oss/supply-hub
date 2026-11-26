@@ -2,7 +2,8 @@
 3% dev-held-out entities (never in training).  Single-turn dev traces only.
 For each bias: run the Python mirror, compare with the dev trace's own reply:
   wrong   = the model answers (<say_ans>/<say_open>) but its copied content (names, numbers, dates: reply tokens
-            that are not generatable words) differs from the trace's, or the trace falls back / asks back
+            that are not generatable words) includes anything the trace's reply does not, or none of it; or the
+            trace falls back / asks back
   fb_ok   = model falls back where the trace answers (over-cautious)
 Picks the smallest bias with wrong <= target (default 0.5%, leaving margin for the 1% gate).
 Usage: python3 eval/dev_calib.py CKPT [n=3000] [biases=0,1,2,3,4] [levels]"""
@@ -38,7 +39,7 @@ def load(n):
         q = " ".join(t[2:k])
         say = next((x for x in t if x in SAYS), None)
         rep = t[t.index(say) + 1:-1] if say else []
-        out.append({"q": q, "say": say, "rep": rep, "c": tr["c"], "seed": tr.get("seed", 1)})
+        out.append({"q": q, "say": say, "rep": rep, "c": tr["c"], "seed": tr.get("seed", 1), "now": tr.get("now")})
         if len(out) >= n:
             break
     return out
@@ -48,8 +49,20 @@ def content(toks, codec):
     return [x for x in toks if codec.gen(x) < len(SPECIALS)]
 
 
+EX = []
+
+
 def evaluate(R, items, codec):
-    res = R.run([[it["q"]] for it in items], seeds=[it["seed"] for it in items])
+    import twins
+    from datetime import datetime
+
+    def nf(it):
+        if not it["now"]:
+            return None
+        y, mo, d, h, mi, off = it["now"]
+        v = twins.Now(datetime(y, mo, d, h, mi), off)
+        return lambda: v
+    res = R.run([[it["q"]] for it in items], now_fns=[nf(it) for it in items], seeds=[it["seed"] for it in items])
     st = {"n": len(items), "wrong": 0, "fb_ok": 0, "right": 0, "fb_right": 0, "other": 0}
     by = {}
     for it, r in zip(items, res):
@@ -58,7 +71,10 @@ def evaluate(R, items, codec):
         exp_ans = it["say"] in ("<say_ans>", "<say_open>")
         got_ans = m in ("<say_ans>", "<say_open>")
         if got_ans and exp_ans:
-            k = "right" if content(rep, codec) == content(it["rep"], codec) else "wrong"
+            gc, ec = content(rep, codec), content(it["rep"], codec)
+            # wrong = states content the expected reply does not contain, or omits all of it
+            bad = any(x not in set(ec) for x in gc) or (ec and not (set(gc) & set(ec)))
+            k = "wrong" if bad else "right"
         elif got_ans:
             k = "wrong"
         elif exp_ans:
@@ -68,6 +84,9 @@ def evaluate(R, items, codec):
         else:
             k = "other"
         st[k] += 1
+        if k in ("wrong", "fb_ok", "other") and len(EX) < 60:
+            EX.append({"k": k, "c": it["c"], "q": it["q"], "exp": it["say"] + " " + " ".join(it["rep"]),
+                       "got": m + " " + r[0]["reply"], "trace": " ".join(r[0]["trace"])[:300]})
         by.setdefault(it["c"], {}).setdefault(k, 0)
         by[it["c"]][k] += 1
     return st, by
@@ -89,6 +108,7 @@ def main():
         st["fb_ok_rate"] = round(st["fb_ok"] / st["n"], 4)
         out[b] = {"stats": st, "by_cat": by}
         print(b, json.dumps(st), flush=True)
+    out["examples"] = EX
     json.dump(out, open(os.path.join(os.path.dirname(ckpt), "calib.json"), "w"), indent=1)
 
 
