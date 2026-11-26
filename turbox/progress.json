@@ -1,7 +1,7 @@
 {
  "project": "TurboX",
- "phase": "4 (fix pass 2)",
- "step": "fix pass 2: training tx4 (from tx3, fx2 data) 8000 steps; resume: sh engine/train_loop.sh tx4 4; then calib, 20K diag, build sb3 (parity 2K, perf), full 1M, grader validation, A/B, rubric, README",
+ "phase": "4 (final eval)",
+ "step": "full 1M eval running: WORK/eval/final_1m (resumable: rerun eval/run_test.py with the same shard lists; done shards are skipped); then grader validation, A/B, rubric, README",
  "done": [
   "audit_2_0 (results/audit_2_0.json)",
   "turbowarp_bench (int list 5.5 ns/MAC, 2-digit strings ~15 ns/MAC, bsearch 0.19 us)",
@@ -17,7 +17,11 @@
   "tx2 trained (tx1 9308 + 8000 steps, fixed vocab): dev 80.4% right, 1.17% wrong at bias 0; bias 1.5 -> 0.50% wrong / 1.63% over-cautious",
   "20K test-subset diagnostic of tx2 @ bias 1.5: 57.4% correct, 35.7% confidently wrong (2.0: 20.8% / 62.2%) -> fix pass 1",
   "Fix pass 1 (tx3): 20K subset 78.3% correct / 9.5% CW with the corrected grader (2.0: 21.0% / 63.7%)",
-  "TurboWarp packager 3.14.0 installed in /home/user/work/pkgr; harness/package_html.js"
+  "TurboWarp packager 3.14.0 installed in /home/user/work/pkgr; harness/package_html.js",
+  "Fix pass 2 (tx4): 20K subset @ bias 3: 82.1% correct / 6.1% CW (grader v3); 2.0: 21.0% / 64.0%",
+  "Fix pass 3 (no retraining): display joins '-' and '/' between words; grader sentence split ignores initials/abbreviations, clarification detection, hyphen/leading-dot phrase matching; UI bubble updates throttled to ~8/s",
+  "Final build WORK/final/TurboX.sb3: 7,548,646 bytes; Cast.compare order check 0 out of order; parity 2,135/2,135 turns on the 2K stratified subset",
+  "Performance (uncontended): load 0.48-0.52 s, flag->ready 267 ms, max frame 33.9 ms (0 over 50), idle 0.04 ms; factual median 0.93 s p95 1.53 s; stories median 8.0 s p95 9.7 s"
  ],
  "work_dir": "/home/user/work/x",
  "src_2_0": "/home/user/supply-hub/turbo2 (repo copy; /mnt/attach and uploads were empty)",
@@ -46,7 +50,9 @@
   "Grader fix (applies to 2.0 and TurboX equally): fallback support check no longer requires evidence for words that name a kind of fact or the system's own limits (occupation, nationality, future, spelling...); names and numbers still must be supported. 2.0 regraded: 20.8% correct / 62.2% CW.",
   "Fallback content now must add a fact the question did not already state (bare-IDK fix); not-found replies name the searched term.",
   "Fix pass 2 (driven by the 20K subset analysis): tool-call context for follow-ups (runtime feature in mirror + Scratch), memory statement/recall phrasings with KB-derived value pools, irrelevant ctx/mem prefixes on 30% of single-turn traces, broad unit conversions, extra relation phrasings, removed unsupported-question templates that overlapped real relations.",
-  "Grader fix 2 (applies to both systems): possessive normalisation, 'private details / haven't told me' declines, a fallback stating one specific new fact is not bare IDK. 2.0 regraded: 21.0% correct / 63.7% CW / 1.6% bare IDK."
+  "Grader fix 2 (applies to both systems): possessive normalisation, 'private details / haven't told me' declines, a fallback stating one specific new fact is not bare IDK. 2.0 regraded: 21.0% correct / 63.7% CW / 1.6% bare IDK.",
+  "Scratch isa tool used relation code 'ia' instead of 'ip' (caught by the 2K parity run: 6 mismatches); fixed via the C_ISA constant.",
+  "Fallback bias 3.0 chosen on dev (lowest dev wrong rate 0.70% with over-cautious fallbacks <= 2%, 1.83%)."
  ],
  "decisions": [
   "Weights stored as 2-digit decimal strings with QAT (~0.7 deflated bytes/weight at 32 levels vs 1.24 for 2.0's int8 list items); decode costs ~2.8x compute.",

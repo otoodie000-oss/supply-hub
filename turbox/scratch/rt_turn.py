@@ -740,7 +740,7 @@ def years_between():
 def isa_walk(child, parent):
     cur = child
     for i in range(0, 20):
-        k = fact_index(cur, "ia")
+        k = fact_index(cur, C_ISA)
         if k == 0:
             return 0
         v = FVAL[k]
@@ -1041,10 +1041,11 @@ def _go():
 
 UI_SRC = r'''
 ui_shown = ""
+ui_t = 0
 
 @when_flag
 def _ui():
-    global user_msg, busy, ui_shown
+    global user_msg, busy, ui_shown, ui_t
     say("Hi! Ask me anything. Type /help for help.")
     wait_until(booted == 1)
     while True:
@@ -1054,10 +1055,15 @@ def _ui():
         say("...")
         ui_shown = "..."
         broadcast("tx_go")
+        ui_t = days2000()
         while busy == 1:
+            # stream the reply, at most ~8 bubble updates a second: every say requests a redraw, which ends the
+            # frame's engine work early, so updating on every word would slow long replies down
             if not (display == ui_shown) and not (display == ""):
-                say(display)
-                ui_shown = display
+                if (days2000() - ui_t) * 86400000 > 120:
+                    say(display)
+                    ui_shown = display
+                    ui_t = days2000()
         say(display)
 '''
 
