@@ -300,6 +300,9 @@ class Gen:
             if rel2 == "official_languages" and ";" in f2[1]:
                 return None
             g = gold_for(kb, c, rel2, f2[1], f2[2])
+            if g is None and not str(f2[1]).startswith("@"):
+                # value stored as plain text (some capitals are not KB entities): the text is the answer
+                g = {"type": "text", "answers": [f2[1]]}
             return t.replace("{a}", m), g, [[e["key"], "country"], [c["key"], rel2]], kind
         if kind == "population_of_capital":
             r = self.ent_with(rng, ["country"], ["capital"])

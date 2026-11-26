@@ -23,8 +23,16 @@ def split(text):
             j = i
             while j < n and (text[j].isalpha() or (text[j] == "'" and j + 1 < n and text[j + 1].isalpha())):
                 j += 1
-            toks.append(text[i:j])
+            w = text[i:j]
+            if len(w) > 2 and w.endswith("'s"):   # possessive / 'is' contraction: "bartlett's" -> bartlett 's
+                toks.append(w[:-2])
+                toks.append("'s")
+            else:
+                toks.append(w)
             i = j
+        elif c == "'" and text[i + 1:i + 2] == "s" and (i + 2 == n or not text[i + 2].isalpha()):
+            toks.append("'s")
+            i += 2
         elif c.isdigit():
             j = i
             while j < n and (text[j].isdigit() or (text[j] in ".," and j + 1 < n and text[j + 1].isdigit())):
@@ -52,8 +60,16 @@ def trigrams(w):
     return [s[k:k + 3] for k in range(len(s) - 2)][:MAX_TRI]
 
 
+TRI_ALPH = "#'abcdefghijklmnopqrstuvwxyz"   # index 0..27; any other character -> 28
+
+
 def tri_bucket(t):
-    return 1 + int(hashlib.md5(t.encode()).hexdigest()[:6], 16) % (N_BUCKETS - 1)
+    """bucket 1..N_BUCKETS-1 of a character trigram (integer hash Scratch computes exactly)"""
+    i = 0
+    for ch in t:
+        k = TRI_ALPH.find(ch)
+        i = i * 29 + (k if k >= 0 else 28)
+    return 1 + (i * 2654435761) % 4294967296 % (N_BUCKETS - 1)
 
 
 class Tok:

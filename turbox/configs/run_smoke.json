@@ -1,0 +1,2 @@
+{"model": {"n_inp": 4368, "n_gen": 630, "d": 64, "n_layer": 2, "n_head": 4, "d_ff": 256, "d_emb": 32, "ctx": 512, "d_ptr": 32},
+ "data": "/home/user/work/x/pack/smoke", "batch": 32, "steps": 400, "peak": 0.003, "warmup": 30, "decay_frac": 0.3, "final_frac": 0.1, "seed": 1, "bf16": false}

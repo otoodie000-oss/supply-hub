@@ -31,7 +31,7 @@ NUMLIKE = re.compile(r"^\s*[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?\s*$|^\s*0x[0-9a-f]
 
 
 def skey(s):
-    return "#" + s if (s.strip() and NUMLIKE.match(s)) or s.strip() in ("infinity", "-infinity", "+infinity") else s
+    return "#" + s if (s.strip() and NUMLIKE.match(s)) else s
 
 
 def bounded_edit(a, b, k):
@@ -63,6 +63,8 @@ class Executor:
         self.words, self.post = L["WORDS"], L["POST"]
         self.lstart = L["LSTART"]
         self._rec_cache = {}
+        global ISA_FN
+        ISA_FN = self.isa
 
     # ------------------------------------------------------------ sorted-list search (1-based like Scratch)
     @staticmethod
@@ -223,7 +225,12 @@ class Executor:
         if v.startswith("@"):
             return self.name_tokens(int(v[1:])), int(v[1:])
         if kind == "date" and re.fullmatch(r"\d{8}", v):
-            return [MONTHS[int(v[4:6]) - 1], str(int(v[6:])), ",", str(int(v[:4]))], None
+            y, m, d = str(int(v[:4])), int(v[4:6]), int(v[6:])
+            if m < 1 or m > 12:          # year-only date stored with month 00
+                return [y], None
+            if d == 0:
+                return [MONTHS[m - 1], y], None
+            return [MONTHS[m - 1], str(d), ",", y], None
         if kind in ("date", "year") and re.fullmatch(r"\d{3,4}", v):
             return [str(int(v))], None
         if kind == "number":
@@ -272,3 +279,98 @@ def num_of(tokens):
             except ValueError:
                 pass
     return None
+
+
+OPSYM = {"<op_plus>": "+", "<op_minus>": "-", "<op_times>": "*", "<op_div>": "/", "<op_pow>": "^", "<op_lp>": "(",
+         "<op_rp>": ")", "<op_mod>": "%"}
+DATE_TOOLS = ("weekday", "days_until", "days_since", "age", "week")
+
+
+def assemble(tool, args):
+    """model's tool tokens -> helper call string (canonical argument grammar; same rules in Scratch)."""
+    def clean(a):
+        if a.startswith("<u_"):
+            return a[3:-1]
+        if a.startswith("<h_"):
+            return a[3:-1]
+        if a in ("<days>", "<weeks>", "<months>", "<years>"):
+            return a[1:-1]
+        if a == "<24h>":
+            return "24"
+        return a.replace(",", "") if a[:1].isdigit() else a
+    merged = []
+    for a in args:  # a copied '-' directly before a number makes it negative
+        if merged and merged[-1] == "-" and a[:1].isdigit() and (len(merged) == 1 or not merged[-2][:1].isdigit()):
+            merged[-1] = "-" + a
+        else:
+            merged.append(a)
+    args = merged
+    if tool == "calc":
+        return "calc " + "".join(OPSYM.get(a, clean(a)) for a in args)
+    if tool in DATE_TOOLS or tool == "years_between":
+        parts, cur = [], []
+        for a in args:
+            if a.startswith("<mo_"):
+                cur.append(a[4:-1])
+            else:
+                cur.append(clean(a))
+            if len(cur) == 3:
+                parts.append("%s-%s-%s" % (cur[0], cur[1], cur[2]))
+                cur = []
+        if cur:
+            parts.append(" ".join(cur))
+        return (tool + " " + " ".join(parts)).strip()
+    if tool == "world_time":
+        return "world_time " + "_".join(clean(a) for a in args)
+    if tool in ("sort", "pick"):
+        s = ""
+        for a in args:
+            s += ("" if a == "," or not s else " ") + clean(a)
+        return tool + " " + s
+    return (tool + " " + " ".join(clean(a) for a in args)).strip()
+
+
+class TurnState:
+    """executor bookkeeping inside one turn (values looked up, entities picked)"""
+    def __init__(self):
+        self.values = []      # numeric values from <v> blocks, in order
+        self.lists = []       # token lists of <v> blocks
+        self.picked = []      # picked entity ids
+        self.current = None   # entity that the next relation applies to
+
+
+def turbox_tool(name, args, st, now, lcg):
+    """TurboX tools over looked-up values; other names go to 2.0's helpers (twins)."""
+    if name in ("cmp_more", "cmp_less"):
+        if len(st.values) < 2:
+            return ["<err>"]
+        a, b = st.values[-2], st.values[-1]
+        first = (a > b) if name == "cmp_more" else (a < b)
+        return ["<first>"] if first else ["<second>"]
+    if name == "count_items":
+        if not st.lists:
+            return ["<err>"]
+        toks = st.lists[-1]
+        if toks == ["none"]:
+            return ["0"]
+        return [str(1 + sum(1 for t in toks if t in (",", "and")))]
+    if name == "isa":
+        if len(st.picked) < 2:
+            return ["<err>"]
+        return ["<yes>"] if ISA_FN(st.picked[-2], st.picked[-1]) else ["<no>"]
+    if name == "years_between":
+        call = assemble(name, args).split(" ")[1:]
+        try:
+            d1, d2 = [date(*map(int, c.split("-"))) for c in call[:2]]
+        except (ValueError, TypeError):
+            return ["<err>"]
+        y = d2.year - d1.year - ((d2.month, d2.day) < (d1.month, d1.day))
+        return [str(y)]
+    res = twins.run_tool(assemble(name, args), now, lcg)
+    if res in ("error", "unknown tool"):
+        return ["<err>"]
+    return split(res)
+
+
+ISA_FN = None
+from datetime import date  # noqa: E402

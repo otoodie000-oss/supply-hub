@@ -1,13 +1,16 @@
 {
  "project": "TurboX",
- "phase": "0c",
- "step": "test frozen (results/test_freeze.json); 2.0 baseline running; next: training generator + model",
+ "phase": "0d->2",
+ "step": "0d smoke test passed (train->export->build->TurboWarp->parity 84/84->grade); test re-generated after gold fix (re-freeze pending); next: full training data + brain training",
  "done": [
   "audit_2_0 (results/audit_2_0.json)",
   "turbowarp_bench (int list 5.5 ns/MAC, 2-digit strings ~15 ns/MAC, bsearch 0.19 us)",
   "train_bench (d128 L4 ~18K tok/s; bf16 only 1.04-1.6x fp32 here)",
   "KB: 518,682 facts in KB + 27,299 withheld = 545,981 verified; 191,812 entities; 6.03 MB deflated (1.16 MB/100K facts)",
-  "KB precision: 992/1000 = 99.2% (seed 4242) after a failed 985/1000 round (results/kb_precision_report.json)"
+  "KB precision: 992/1000 = 99.2% (seed 4242) after a failed 985/1000 round (results/kb_precision_report.json)",
+  "2.0 baseline: 20,000/20,000 items run on 2.0's mirror (WORK/baseline/t20_replies.jsonl); grading pending re-freeze",
+  "Scratch runtime: rt_text (fold, tokenizer, binary search), rt_kb (executor), rt_model (string-weight kernels), rt_turn (turn engine, scheduler, UI); build_x.py; harness/run_sb3.js; eval/parity.py",
+  "Phase 0d smoke: smoke.sb3 6.80 MB, load 0.47-0.70 s, flag->ready 180 ms, answer frames max 29 ms, boot frame max 49.9 ms; parity 84/84 turns (replies+traces) on 80 test items"
  ],
  "work_dir": "/home/user/work/x",
  "src_2_0": "/home/user/supply-hub/turbo2 (repo copy; /mnt/attach and uploads were empty)",
@@ -21,12 +24,20 @@
   "Index: the sparse index is BM25-style word postings over entity names/aliases (plus exact sorted-name/alias binary search), not over full fact text; a fact-text BM25 index like 2.0's costs ~3.2 MB per 100K facts and cannot fit 500K facts in 8 MB.",
   "Fact rendering (ISO date -> 'march 14, 1879', digits -> '66,078,000') is done by fact storage when evidence is shown to the model; it never chooses an answer.",
   "Precision check judged by Claude (the builder); one round failed (98.5%) and the responsible extractors were fixed before the passing round (99.2%).",
-  "Test re-frozen (same seed, same generator) after fixing a nondeterministic KB build: NLTK returns multiple hypernyms in hash-dependent order and the WordNet is-a choice took the first one; hypernyms are now sorted by name. The overlay's office-holder facts were also set to 'as of 2026' (their check date). No training had happened; the partial 2.0 baseline on the first freeze was discarded."
+  "Test re-frozen (same seed, same generator) after fixing a nondeterministic KB build: NLTK returns multiple hypernyms in hash-dependent order and the WordNet is-a choice took the first one; hypernyms are now sorted by name. The overlay's office-holder facts were also set to 'as of 2026' (their check date). No training had happened; the partial 2.0 baseline on the first freeze was discarded.",
+  "Trigram feature hash changed from md5 to an integer hash Scratch computes exactly (engine/tok.py tri_bucket), before any real training; a lookup table would have dropped unseen trigrams of typos and broken parity.",
+  "Scratch's timer block reads runtime.currentMSecs (updated once per frame), so chunk budgets use 'days since 2000' (wall clock) instead.",
+  "TurboWarp compiles a script on first run (~0.16-0.2 s for one script holding everything). The engine is split into 3 worker scripts (turn driver, model kernels, 2.0 tools) that the green flag starts once each on separate frames so each compiles in its own frame; this is the only green-flag work besides resetting state.",
+  "Test generator bug: 2,469 derived items (capital of the country of a city/airport) had gold=null because some capitals are stored as plain text. Fixed in the gold computation only (no RNG change); questions unchanged; test re-generated and re-frozen before training.",
+  "Executor fixes found while porting: ISA_FN was never set (isa tool would crash); 8-digit date with month 00 guard (no such facts exist; kept for safety).",
+  "Python mirror and Scratch cap a turn at 500 positions and 150 user tokens; /reset and /help are handled before the model in both."
  ],
  "decisions": [
   "Weights stored as 2-digit decimal strings with QAT (~0.7 deflated bytes/weight at 32 levels vs 1.24 for 2.0's int8 list items); decode costs ~2.8x compute.",
   "Engine = one small decoder ('brain') with a copy pointer that reads the question, issues lookups/tool calls, picks candidates, decides answer/fallback/clarify and writes every word; candidates come from the non-learned name index.",
-  "KB quota: persons 82K (WikiBio), leads 30K (2017), WordNet 25K senses (+is-a closure), all table entities."
+  "KB quota: persons 82K (WikiBio), leads 30K (2017), WordNet 25K senses (+is-a closure), all table entities.",
+  "Weights: per-row 2-digit codes (value = (code-49)*scale), dot products as sum(code*x) - 49*sum(x).",
+  "Work units ~1 ms; a chunk runs units for <= 3.5 ms wall time (cap 200 units)."
  ],
  "kb_cmd": "Q_PERSONS=80000 Q_LEADS=30000 Q_WORDNET=25000 python3 kb/merge.py && POST_CAP=80 python3 kb/encode.py"
 }

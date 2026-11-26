@@ -37,7 +37,7 @@ NUMRE = re.compile(r"^\s*[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?\s*$|^\s*0x[0-9a-f]+\
 
 def is_numeric_like(s):
     """True when JS Number(s) is a number (what Scratch's compare would treat numerically)."""
-    return bool(s.strip()) and bool(NUMRE.match(s)) or s.strip() in ("infinity", "-infinity", "+infinity")
+    return bool(s.strip()) and bool(NUMRE.match(s))
 
 
 def skey(s):
