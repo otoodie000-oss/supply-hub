@@ -1,0 +1,3806 @@
+{
+ "rubric": {
+  "R000": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a bananas joke."
+  },
+  "R001": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a library."
+  },
+  "R002": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for making friends?"
+  },
+  "R003": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  "R004": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe the seasons to me?"
+  },
+  "R005": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a lonely robot."
+  },
+  "R006": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with confidence?"
+  },
+  "R007": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about space?"
+  },
+  "R008": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a baker."
+  },
+  "R009": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about the seasons."
+  },
+  "R010": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about music."
+  },
+  "R011": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes solar panels happen?"
+  },
+  "R012": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a talking tree."
+  },
+  "R013": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes snowflakes happen?"
+  },
+  "R014": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  "R015": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with a bad mood. What should I try?"
+  },
+  "R016": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about the weather?"
+  },
+  "R017": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about cats."
+  },
+  "R018": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a brave little fox."
+  },
+  "R019": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about recycling."
+  },
+  "R020": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a missing key?"
+  },
+  "R021": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a spaceship?"
+  },
+  "R022": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a treehouse?"
+  },
+  "R023": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  "R024": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at learning a language?"
+  },
+  "R025": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about bananas?"
+  },
+  "R026": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with screen time?"
+  },
+  "R027": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about fireworks."
+  },
+  "R028": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  "R029": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a music joke."
+  },
+  "R030": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about the ocean?"
+  },
+  "R031": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do dreams work?"
+  },
+  "R032": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about bananas?"
+  },
+  "R033": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  "R034": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about trees?"
+  },
+  "R035": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a ghosts joke."
+  },
+  "R036": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a pirate ship."
+  },
+  "R037": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind the seasons?"
+  },
+  "R038": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  "R039": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about books."
+  },
+  "R040": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about eggs."
+  },
+  "R041": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about fish."
+  },
+  "R042": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about shoes?"
+  },
+  "R043": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  "R044": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with houseplants?"
+  },
+  "R045": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe magnets to me?"
+  },
+  "R046": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about bicycles?"
+  },
+  "R047": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe rainbows to me?"
+  },
+  "R048": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about the ocean."
+  },
+  "R049": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  "R050": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at running a marathon?"
+  },
+  "R051": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for houseplants?"
+  },
+  "R052": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a pirate ship?"
+  },
+  "R053": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a library."
+  },
+  "R054": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about ghosts."
+  },
+  "R055": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a lost kitten."
+  },
+  "R056": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes thunder happen?"
+  },
+  "R057": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes hurricanes happen?"
+  },
+  "R058": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  "R059": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Got any pointers on focus?"
+  },
+  "R060": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about tides."
+  },
+  "R061": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do snowflakes work?"
+  },
+  "R062": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for arguments?"
+  },
+  "R063": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind photosynthesis?"
+  },
+  "R064": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about dogs."
+  },
+  "R065": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a dragon who loves books."
+  },
+  "R066": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a baker."
+  },
+  "R067": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with exercise?"
+  },
+  "R068": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a shy turtle."
+  },
+  "R069": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a fish joke."
+  },
+  "R070": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with cooking?"
+  },
+  "R071": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do solar panels work?"
+  },
+  "R072": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about teachers?"
+  },
+  "R073": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about cows."
+  },
+  "R074": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a soccer game."
+  },
+  "R075": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Got any pointers on procrastination?"
+  },
+  "R076": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a birthday party."
+  },
+  "R077": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a talking tree."
+  },
+  "R078": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind tides?"
+  },
+  "R079": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for saving money?"
+  },
+  "R080": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at stress?"
+  },
+  "R081": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe refrigerators to me?"
+  },
+  "R082": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for stress?"
+  },
+  "R083": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring two best friends."
+  },
+  "R084": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a pirate ship?"
+  },
+  "R085": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about time."
+  },
+  "R086": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about school."
+  },
+  "R087": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about space?"
+  },
+  "R088": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe the stock market to me?"
+  },
+  "R089": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at time management?"
+  },
+  "R090": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about gravity."
+  },
+  "R091": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a fish joke."
+  },
+  "R092": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a brave little fox."
+  },
+  "R093": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about bees?"
+  },
+  "R094": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  "R095": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe the seasons to me?"
+  },
+  "R096": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a soccer game."
+  },
+  "R097": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for stress?"
+  },
+  "R098": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe democracy to me?"
+  },
+  "R099": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes earthquakes happen?"
+  },
+  "R100": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for reading more?"
+  },
+  "R101": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about the weather?"
+  },
+  "R102": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes wifi happen?"
+  },
+  "R103": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about the weather."
+  },
+  "R104": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at headaches?"
+  },
+  "R105": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about school?"
+  },
+  "R106": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do thunder work?"
+  },
+  "R107": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe democracy to me?"
+  },
+  "R108": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about chickens?"
+  },
+  "R109": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about math."
+  },
+  "R110": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at writing essays?"
+  },
+  "R111": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about shoes?"
+  },
+  "R112": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about pizza."
+  },
+  "R113": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Got any pointers on arguments?"
+  },
+  "R114": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at jet lag?"
+  },
+  "R115": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about time."
+  },
+  "R116": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at public speaking?"
+  },
+  "R117": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a sleepy bear."
+  },
+  "R118": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about ghosts."
+  },
+  "R119": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with focus. What should I try?"
+  },
+  "R120": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  "R121": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe eclipses to me?"
+  },
+  "R122": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about earthquakes."
+  },
+  "R123": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a bees joke."
+  },
+  "R124": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  "R125": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a trees joke."
+  },
+  "R126": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about eclipses."
+  },
+  "R127": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for packing for a trip?"
+  },
+  "R128": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  "R129": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about an old clock."
+  },
+  "R130": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a musician."
+  },
+  "R131": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with habits?"
+  },
+  "R132": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about two best friends."
+  },
+  "R133": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about cheese."
+  },
+  "R134": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about money?"
+  },
+  "R135": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about coffee."
+  },
+  "R136": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a fish joke."
+  },
+  "R137": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a brave little fox."
+  },
+  "R138": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind thunder?"
+  },
+  "R139": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  "R140": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe tornadoes to me?"
+  },
+  "R141": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about eggs."
+  },
+  "R142": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a rainy day?"
+  },
+  "R143": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a musician?"
+  },
+  "R144": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with screen time?"
+  },
+  "R145": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a birthday party."
+  },
+  "R146": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about space?"
+  },
+  "R147": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a brave little fox."
+  },
+  "R148": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about cows?"
+  },
+  "R149": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a shy turtle."
+  },
+  "R150": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about pizza."
+  },
+  "R151": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about the ocean?"
+  },
+  "R152": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Got any pointers on procrastination?"
+  },
+  "R153": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a library."
+  },
+  "R154": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a river."
+  },
+  "R155": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about bees?"
+  },
+  "R156": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about the ocean."
+  },
+  "R157": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a penguin."
+  },
+  "R158": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at reading more?"
+  },
+  "R159": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a magic garden."
+  },
+  "R160": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a dogs joke."
+  },
+  "R161": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about books."
+  },
+  "R162": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a treehouse."
+  },
+  "R163": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a magic garden."
+  },
+  "R164": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a talking tree."
+  },
+  "R165": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a farm."
+  },
+  "R166": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with focus. What should I try?"
+  },
+  "R167": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes wifi happen?"
+  },
+  "R168": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at jet lag?"
+  },
+  "R169": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a musician."
+  },
+  "R170": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a library."
+  },
+  "R171": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a computers joke."
+  },
+  "R172": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about cows."
+  },
+  "R173": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about music."
+  },
+  "R174": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about books?"
+  },
+  "R175": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a farm."
+  },
+  "R176": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe photosynthesis to me?"
+  },
+  "R177": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a lost kitten?"
+  },
+  "R178": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes airplanes happen?"
+  },
+  "R179": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind volcanoes?"
+  },
+  "R180": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with confidence?"
+  },
+  "R181": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at headaches?"
+  },
+  "R182": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about shoes."
+  },
+  "R183": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about skeletons?"
+  },
+  "R184": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about doctors?"
+  },
+  "R185": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe tornadoes to me?"
+  },
+  "R186": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a lost kitten?"
+  },
+  "R187": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about money."
+  },
+  "R188": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at stress?"
+  },
+  "R189": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about cats."
+  },
+  "R190": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about the moon."
+  },
+  "R191": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with procrastination. What should I try?"
+  },
+  "R192": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes airplanes happen?"
+  },
+  "R193": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a musician?"
+  },
+  "R194": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about chickens?"
+  },
+  "R195": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about an old clock?"
+  },
+  "R196": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  "R197": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  "R198": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about math?"
+  },
+  "R199": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with public speaking?"
+  },
+  "R200": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe the stock market to me?"
+  },
+  "R201": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about pizza."
+  },
+  "R202": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about earthquakes."
+  },
+  "R203": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe magnets to me?"
+  },
+  "R204": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about cats?"
+  },
+  "R205": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes wifi happen?"
+  },
+  "R206": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a hot air balloon?"
+  },
+  "R207": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a dragon who loves books?"
+  },
+  "R208": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind the seasons?"
+  },
+  "R209": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring the moon."
+  },
+  "R210": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a music joke."
+  },
+  "R211": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with procrastination?"
+  },
+  "R212": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do batteries work?"
+  },
+  "R213": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about two best friends."
+  },
+  "R214": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do glaciers work?"
+  },
+  "R215": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do airplanes work?"
+  },
+  "R216": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about trees?"
+  },
+  "R217": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about coffee?"
+  },
+  "R218": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind tides?"
+  },
+  "R219": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about books?"
+  },
+  "R220": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with sleep. What should I try?"
+  },
+  "R221": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with job interviews. What should I try?"
+  },
+  "R222": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a soccer game."
+  },
+  "R223": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe the immune system to me?"
+  },
+  "R224": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with houseplants?"
+  },
+  "R225": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a kite."
+  },
+  "R226": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Got any pointers on running a marathon?"
+  },
+  "R227": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with focus. What should I try?"
+  },
+  "R228": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a river."
+  },
+  "R229": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about airplanes."
+  },
+  "R230": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with job interviews. What should I try?"
+  },
+  "R231": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes black holes happen?"
+  },
+  "R232": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  "R233": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a spaceship."
+  },
+  "R234": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  "R235": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about bicycles."
+  },
+  "R236": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about cows."
+  },
+  "R237": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe taxes to me?"
+  },
+  "R238": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at headaches?"
+  },
+  "R239": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with cooking?"
+  },
+  "R240": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with eating healthy?"
+  },
+  "R241": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with public speaking?"
+  },
+  "R242": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about two best friends."
+  },
+  "R243": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with eating healthy?"
+  },
+  "R244": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do clouds work?"
+  },
+  "R245": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe recycling to me?"
+  },
+  "R246": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with confidence?"
+  },
+  "R247": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Got any pointers on moving to a new city?"
+  },
+  "R248": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with reading more. What should I try?"
+  },
+  "R249": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with public speaking?"
+  },
+  "R250": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Got any pointers on arguments?"
+  },
+  "R251": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about cheese."
+  },
+  "R252": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at writing essays?"
+  },
+  "R253": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a snowman?"
+  },
+  "R254": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  "R255": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a soccer game."
+  },
+  "R256": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe tides to me?"
+  },
+  "R257": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes clouds happen?"
+  },
+  "R258": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe magnets to me?"
+  },
+  "R259": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do vaccines work?"
+  },
+  "R260": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about glaciers."
+  },
+  "R261": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring the moon."
+  },
+  "R262": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Got any pointers on job interviews?"
+  },
+  "R263": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with time management. What should I try?"
+  },
+  "R264": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind coral reefs?"
+  },
+  "R265": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for houseplants?"
+  },
+  "R266": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for jet lag?"
+  },
+  "R267": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a eggs joke."
+  },
+  "R268": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  "R269": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about bicycles."
+  },
+  "R270": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about skeletons."
+  },
+  "R271": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about earthquakes."
+  },
+  "R272": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with making friends?"
+  },
+  "R273": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a birthday party."
+  },
+  "R274": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a kite?"
+  },
+  "R275": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a talking tree."
+  },
+  "R276": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about cows."
+  },
+  "R277": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at packing for a trip?"
+  },
+  "R278": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about cheese."
+  },
+  "R279": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about the ocean?"
+  },
+  "R280": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a magic garden."
+  },
+  "R281": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a shy turtle."
+  },
+  "R282": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with procrastination?"
+  },
+  "R283": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a dogs joke."
+  },
+  "R284": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with focus. What should I try?"
+  },
+  "R285": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with exercise?"
+  },
+  "R286": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a pirate ship."
+  },
+  "R287": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about black holes."
+  },
+  "R288": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a river."
+  },
+  "R289": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a shy turtle."
+  },
+  "R290": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about teachers?"
+  },
+  "R291": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do photosynthesis work?"
+  },
+  "R292": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a lighthouse."
+  },
+  "R293": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about cats."
+  },
+  "R294": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with learning a language. What should I try?"
+  },
+  "R295": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a lighthouse?"
+  },
+  "R296": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a river."
+  },
+  "R297": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with remembering things?"
+  },
+  "R298": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for moving to a new city?"
+  },
+  "R299": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about pizza."
+  },
+  "R300": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about computers?"
+  },
+  "R301": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a wizard?"
+  },
+  "R302": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe black holes to me?"
+  },
+  "R303": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  "R304": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe refrigerators to me?"
+  },
+  "R305": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes rainbows happen?"
+  },
+  "R306": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe magnets to me?"
+  },
+  "R307": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about gravity."
+  },
+  "R308": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about programmers?"
+  },
+  "R309": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind dreams?"
+  },
+  "R310": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about bananas?"
+  },
+  "R311": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about recycling."
+  },
+  "R312": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe volcanoes to me?"
+  },
+  "R313": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at eating healthy?"
+  },
+  "R314": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe photosynthesis to me?"
+  },
+  "R315": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for exercise?"
+  },
+  "R316": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about the weather."
+  },
+  "R317": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about eclipses."
+  },
+  "R318": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with a bad mood?"
+  },
+  "R319": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do photosynthesis work?"
+  },
+  "R320": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a wizard."
+  },
+  "R321": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a ghosts joke."
+  },
+  "R322": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes volcanoes happen?"
+  },
+  "R323": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with sleep?"
+  },
+  "R324": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for job interviews?"
+  },
+  "R325": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with saving money?"
+  },
+  "R326": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about black holes."
+  },
+  "R327": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind photosynthesis?"
+  },
+  "R328": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a missing key?"
+  },
+  "R329": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a brave little fox."
+  },
+  "R330": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes eclipses happen?"
+  },
+  "R331": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a treehouse."
+  },
+  "R332": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with a bad mood?"
+  },
+  "R333": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe refrigerators to me?"
+  },
+  "R334": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about computers?"
+  },
+  "R335": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about chickens."
+  },
+  "R336": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do glaciers work?"
+  },
+  "R337": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes earthquakes happen?"
+  },
+  "R338": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about dogs."
+  },
+  "R339": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Got any pointers on learning a language?"
+  },
+  "R340": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe refrigerators to me?"
+  },
+  "R341": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a farm."
+  },
+  "R342": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about pizza."
+  },
+  "R343": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe the stock market to me?"
+  },
+  "R344": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a birthday party."
+  },
+  "R345": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about skeletons."
+  },
+  "R346": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do taxes work?"
+  },
+  "R347": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at public speaking?"
+  },
+  "R348": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  "R349": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about coffee."
+  },
+  "R350": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about batteries."
+  },
+  "R351": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with public speaking?"
+  },
+  "R352": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a birthday party."
+  },
+  "R353": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Got any pointers on time management?"
+  },
+  "R354": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for moving to a new city?"
+  },
+  "R355": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for arguments?"
+  },
+  "R356": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes snowflakes happen?"
+  },
+  "R357": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes black holes happen?"
+  },
+  "R358": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about pizza."
+  },
+  "R359": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about music."
+  },
+  "R360": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with habits?"
+  },
+  "R361": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with screen time?"
+  },
+  "R362": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a lighthouse."
+  },
+  "R363": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about cats?"
+  },
+  "R364": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about glaciers."
+  },
+  "R365": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a brave little fox."
+  },
+  "R366": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about space?"
+  },
+  "R367": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a fish joke."
+  },
+  "R368": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a sleepy bear."
+  },
+  "R369": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a school joke."
+  },
+  "R370": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with cooking?"
+  },
+  "R371": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a rainy day."
+  },
+  "R372": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about programmers?"
+  },
+  "R373": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a penguin."
+  },
+  "R374": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind thunder?"
+  },
+  "R375": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a birthday party."
+  },
+  "R376": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about computers?"
+  },
+  "R377": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a dragon who loves books."
+  },
+  "R378": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at making friends?"
+  },
+  "R379": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a rainy day."
+  },
+  "R380": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind gravity?"
+  },
+  "R381": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about chickens?"
+  },
+  "R382": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about math?"
+  },
+  "R383": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a wizard?"
+  },
+  "R384": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a talking tree."
+  },
+  "R385": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about chickens."
+  },
+  "R386": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about tides."
+  },
+  "R387": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a eggs joke."
+  },
+  "R388": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for making friends?"
+  },
+  "R389": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a dragon who loves books."
+  },
+  "R390": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about batteries."
+  },
+  "R391": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with a bad mood. What should I try?"
+  },
+  "R392": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a dragon who loves books."
+  },
+  "R393": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about coffee?"
+  },
+  "R394": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  "R395": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for job interviews?"
+  },
+  "R396": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a hot air balloon."
+  },
+  "R397": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  "R398": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a lighthouse."
+  },
+  "R399": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a wizard."
+  },
+  "R400": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at making friends?"
+  },
+  "R401": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about computers?"
+  },
+  "R402": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for stress?"
+  },
+  "R403": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about coffee?"
+  },
+  "R404": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at learning a language?"
+  },
+  "R405": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about airplanes."
+  },
+  "R406": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes the immune system happen?"
+  },
+  "R407": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Got any pointers on learning a language?"
+  },
+  "R408": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with procrastination. What should I try?"
+  },
+  "R409": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about music."
+  },
+  "R410": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  "R411": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a computers joke."
+  },
+  "R412": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about dogs."
+  },
+  "R413": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with eating healthy. What should I try?"
+  },
+  "R414": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Got any pointers on time management?"
+  },
+  "R415": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind volcanoes?"
+  },
+  "R416": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about gravity."
+  },
+  "R417": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a baker."
+  },
+  "R418": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with saving money?"
+  },
+  "R419": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at writing essays?"
+  },
+  "R420": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about bicycles?"
+  },
+  "R421": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with confidence?"
+  },
+  "R422": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do snowflakes work?"
+  },
+  "R423": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for packing for a trip?"
+  },
+  "R424": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with remembering things?"
+  },
+  "R425": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about the moon."
+  },
+  "R426": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about doctors?"
+  },
+  "R427": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about shoes."
+  },
+  "R428": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do solar panels work?"
+  },
+  "R429": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes batteries happen?"
+  },
+  "R430": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a penguin."
+  },
+  "R431": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a lost kitten?"
+  },
+  "R432": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do batteries work?"
+  },
+  "R433": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes hurricanes happen?"
+  },
+  "R434": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Got any pointers on moving to a new city?"
+  },
+  "R435": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at headaches?"
+  },
+  "R436": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about tornadoes."
+  },
+  "R437": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a rainy day."
+  },
+  "R438": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes wifi happen?"
+  },
+  "R439": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about chickens?"
+  },
+  "R440": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about teachers."
+  },
+  "R441": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about school."
+  },
+  "R442": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a lost kitten."
+  },
+  "R443": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about school?"
+  },
+  "R444": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about math?"
+  },
+  "R445": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with eating healthy. What should I try?"
+  },
+  "R446": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about programmers?"
+  },
+  "R447": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about magnets."
+  },
+  "R448": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at time management?"
+  },
+  "R449": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a pirate ship."
+  },
+  "R450": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a shy turtle."
+  },
+  "R451": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a magic garden."
+  },
+  "R452": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about coffee?"
+  },
+  "R453": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a pirate ship."
+  },
+  "R454": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about teachers."
+  },
+  "R455": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with saving money?"
+  },
+  "R456": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a hot air balloon?"
+  },
+  "R457": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about the moon."
+  },
+  "R458": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about cats."
+  },
+  "R459": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a spaceship?"
+  },
+  "R460": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about elephants?"
+  },
+  "R461": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe taxes to me?"
+  },
+  "R462": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe black holes to me?"
+  },
+  "R463": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with learning a language. What should I try?"
+  },
+  "R464": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about an old clock?"
+  },
+  "R465": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a snowman?"
+  },
+  "R466": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind coral reefs?"
+  },
+  "R467": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a lighthouse?"
+  },
+  "R468": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a treehouse?"
+  },
+  "R469": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about the ocean?"
+  },
+  "R470": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a lighthouse."
+  },
+  "R471": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with sleep?"
+  },
+  "R472": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "I'm struggling with time management. What should I try?"
+  },
+  "R473": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about space?"
+  },
+  "R474": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do vaccines work?"
+  },
+  "R475": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes rainbows happen?"
+  },
+  "R476": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for reading more?"
+  },
+  "R477": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes clouds happen?"
+  },
+  "R478": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Got any pointers on running a marathon?"
+  },
+  "R479": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  "R480": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at headaches?"
+  },
+  "R481": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe tides to me?"
+  },
+  "R482": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Got any pointers on remembering things?"
+  },
+  "R483": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes hurricanes happen?"
+  },
+  "R484": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for jet lag?"
+  },
+  "R485": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with sleep. What should I try?"
+  },
+  "R486": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a lost kitten?"
+  },
+  "R487": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a kite?"
+  },
+  "R488": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  "R489": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a kite."
+  },
+  "R490": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Got any pointers on job interviews?"
+  },
+  "R491": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  "R492": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes the immune system happen?"
+  },
+  "R493": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a elephants joke."
+  },
+  "R494": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe democracy to me?"
+  },
+  "R495": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about two best friends."
+  },
+  "R496": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about teachers?"
+  },
+  "R497": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Give me a pun about money."
+  },
+  "R498": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes eclipses happen?"
+  },
+  "R499": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at habits?"
+  },
+  "R500": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about the moon."
+  },
+  "R501": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do thunder work?"
+  },
+  "R502": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes batteries happen?"
+  },
+  "R503": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind dreams?"
+  },
+  "R504": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for studying?"
+  },
+  "R505": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind gravity?"
+  },
+  "R506": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at writing essays?"
+  },
+  "R507": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with making friends?"
+  },
+  "R508": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe democracy to me?"
+  },
+  "R509": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a elephants joke."
+  },
+  "R510": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a dragon who loves books?"
+  },
+  "R511": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a missing key?"
+  },
+  "R512": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about fish."
+  },
+  "R513": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about clouds."
+  },
+  "R514": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe eclipses to me?"
+  },
+  "R515": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What makes volcanoes happen?"
+  },
+  "R516": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Got any pointers on focus?"
+  },
+  "R517": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about math."
+  },
+  "R518": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with cooking?"
+  },
+  "R519": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a rainy day?"
+  },
+  "R520": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about space?"
+  },
+  "R521": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes solar panels happen?"
+  },
+  "R522": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Hit me with a school joke."
+  },
+  "R523": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at eating healthy?"
+  },
+  "R524": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with saving money?"
+  },
+  "R525": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Got any pointers on remembering things?"
+  },
+  "R526": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a bananas joke."
+  },
+  "R527": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with exercise?"
+  },
+  "R528": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about time."
+  },
+  "R529": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do taxes work?"
+  },
+  "R530": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about doctors."
+  },
+  "R531": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about time."
+  },
+  "R532": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe rainbows to me?"
+  },
+  "R533": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Say a joke about dogs."
+  },
+  "R534": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a missing key?"
+  },
+  "R535": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for stress?"
+  },
+  "R536": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do dreams work?"
+  },
+  "R537": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about magnets."
+  },
+  "R538": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "I'm struggling with reading more. What should I try?"
+  },
+  "R539": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a farm."
+  },
+  "R540": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with sleep?"
+  },
+  "R541": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about teachers?"
+  },
+  "R542": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about gravity."
+  },
+  "R543": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a rainy day."
+  },
+  "R544": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about money?"
+  },
+  "R545": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a spaceship."
+  },
+  "R546": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  "R547": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  "R548": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a lonely robot."
+  },
+  "R549": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with sleep?"
+  },
+  "R550": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "How do airplanes work?"
+  },
+  "R551": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a hot air balloon."
+  },
+  "R552": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about clouds."
+  },
+  "R553": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with exercise?"
+  },
+  "R554": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind coral reefs?"
+  },
+  "R555": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What's the science behind fireworks?"
+  },
+  "R556": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at headaches?"
+  },
+  "R557": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes hurricanes happen?"
+  },
+  "R558": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about math?"
+  },
+  "R559": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  "R560": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a magic garden."
+  },
+  "R561": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about skeletons?"
+  },
+  "R562": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind fireworks?"
+  },
+  "R563": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for saving money?"
+  },
+  "R564": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Say a joke about doctors."
+  },
+  "R565": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a shy turtle."
+  },
+  "R566": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about the seasons."
+  },
+  "R567": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe volcanoes to me?"
+  },
+  "R568": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Tell a children's story about a baker."
+  },
+  "R569": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Give me a pun about cheese."
+  },
+  "R570": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "What makes thunder happen?"
+  },
+  "R571": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at reading more?"
+  },
+  "R572": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Know a good one about elephants?"
+  },
+  "R573": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about fireworks."
+  },
+  "R574": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Can you describe rainbows to me?"
+  },
+  "R575": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a penguin."
+  },
+  "R576": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a trees joke."
+  },
+  "R577": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a magic garden."
+  },
+  "R578": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "How can I get better at running a marathon?"
+  },
+  "R579": {
+   "sys": "turbo2",
+   "kind": "joke",
+   "prompt": "Know a good one about programmers?"
+  },
+  "R580": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "How do clouds work?"
+  },
+  "R581": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Teach me about earthquakes."
+  },
+  "R582": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe the stock market to me?"
+  },
+  "R583": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe the immune system to me?"
+  },
+  "R584": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "Any suggestions for exercise?"
+  },
+  "R585": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with screen time?"
+  },
+  "R586": {
+   "sys": "turbo2",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring two best friends."
+  },
+  "R587": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at packing for a trip?"
+  },
+  "R588": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Hit me with a bees joke."
+  },
+  "R589": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "What's the science behind coral reefs?"
+  },
+  "R590": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe recycling to me?"
+  },
+  "R591": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  "R592": {
+   "sys": "turbo2",
+   "kind": "explain",
+   "prompt": "Can you describe rainbows to me?"
+  },
+  "R593": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about bananas?"
+  },
+  "R594": {
+   "sys": "turbox",
+   "kind": "explain",
+   "prompt": "Teach me about tornadoes."
+  },
+  "R595": {
+   "sys": "turbox",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about cows?"
+  },
+  "R596": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a talking tree."
+  },
+  "R597": {
+   "sys": "turbox",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about an old clock."
+  },
+  "R598": {
+   "sys": "turbo2",
+   "kind": "advice",
+   "prompt": "Any suggestions for studying?"
+  },
+  "R599": {
+   "sys": "turbox",
+   "kind": "advice",
+   "prompt": "How can I get better at habits?"
+  }
+ },
+ "ab": {
+  "P000": {
+   "A": "turbo2",
+   "prompt": "Spin me a short story featuring a lighthouse."
+  },
+  "P001": {
+   "A": "turbo2",
+   "prompt": "I'm struggling with time management. What should I try?"
+  },
+  "P002": {
+   "A": "turbox",
+   "prompt": "How can I get better at reading more?"
+  },
+  "P003": {
+   "A": "turbox",
+   "prompt": "Know a good one about skeletons?"
+  },
+  "P004": {
+   "A": "turbo2",
+   "prompt": "How can I get better at writing essays?"
+  },
+  "P005": {
+   "A": "turbo2",
+   "prompt": "How do glaciers work?"
+  },
+  "P006": {
+   "A": "turbo2",
+   "prompt": "Hit me with a fish joke."
+  },
+  "P007": {
+   "A": "turbox",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  "P008": {
+   "A": "turbox",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  "P009": {
+   "A": "turbo2",
+   "prompt": "Know a good one about shoes?"
+  },
+  "P010": {
+   "A": "turbox",
+   "prompt": "Got any pointers on procrastination?"
+  },
+  "P011": {
+   "A": "turbo2",
+   "prompt": "Can you tell me something funny about books?"
+  },
+  "P012": {
+   "A": "turbo2",
+   "prompt": "Can you describe taxes to me?"
+  },
+  "P013": {
+   "A": "turbox",
+   "prompt": "What's the science behind thunder?"
+  },
+  "P014": {
+   "A": "turbox",
+   "prompt": "What's the best way to deal with public speaking?"
+  },
+  "P015": {
+   "A": "turbo2",
+   "prompt": "How can I get better at jet lag?"
+  },
+  "P016": {
+   "A": "turbox",
+   "prompt": "Say a joke about pizza."
+  },
+  "P017": {
+   "A": "turbox",
+   "prompt": "Can you describe black holes to me?"
+  },
+  "P018": {
+   "A": "turbox",
+   "prompt": "Hit me with a ghosts joke."
+  },
+  "P019": {
+   "A": "turbo2",
+   "prompt": "Give me a pun about time."
+  },
+  "P020": {
+   "A": "turbo2",
+   "prompt": "I'd like to hear a tale about a magic garden."
+  },
+  "P021": {
+   "A": "turbo2",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  "P022": {
+   "A": "turbox",
+   "prompt": "How can I get better at making friends?"
+  },
+  "P023": {
+   "A": "turbox",
+   "prompt": "What's the science behind tides?"
+  },
+  "P024": {
+   "A": "turbo2",
+   "prompt": "Tell a children's story about a river."
+  },
+  "P025": {
+   "A": "turbox",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  "P026": {
+   "A": "turbox",
+   "prompt": "What makes hurricanes happen?"
+  },
+  "P027": {
+   "A": "turbo2",
+   "prompt": "Tell a children's story about a shy turtle."
+  },
+  "P028": {
+   "A": "turbo2",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  "P029": {
+   "A": "turbox",
+   "prompt": "Write a bedtime tale about a magic garden."
+  },
+  "P030": {
+   "A": "turbo2",
+   "prompt": "Say a joke about teachers."
+  },
+  "P031": {
+   "A": "turbo2",
+   "prompt": "Spin me a short story featuring a sleepy bear."
+  },
+  "P032": {
+   "A": "turbox",
+   "prompt": "How do airplanes work?"
+  },
+  "P033": {
+   "A": "turbox",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  "P034": {
+   "A": "turbo2",
+   "prompt": "Could you write me a little story about a lost kitten?"
+  },
+  "P035": {
+   "A": "turbox",
+   "prompt": "Could you write me a little story about a wizard?"
+  },
+  "P036": {
+   "A": "turbo2",
+   "prompt": "How can I get better at headaches?"
+  },
+  "P037": {
+   "A": "turbox",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  "P038": {
+   "A": "turbo2",
+   "prompt": "What's the science behind gravity?"
+  },
+  "P039": {
+   "A": "turbo2",
+   "prompt": "Hit me with a elephants joke."
+  },
+  "P040": {
+   "A": "turbo2",
+   "prompt": "Can you tell me something funny about cows?"
+  },
+  "P041": {
+   "A": "turbox",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  "P042": {
+   "A": "turbox",
+   "prompt": "How can I get better at eating healthy?"
+  },
+  "P043": {
+   "A": "turbox",
+   "prompt": "What's the best way to deal with habits?"
+  },
+  "P044": {
+   "A": "turbox",
+   "prompt": "Any suggestions for arguments?"
+  },
+  "P045": {
+   "A": "turbo2",
+   "prompt": "Got any pointers on moving to a new city?"
+  },
+  "P046": {
+   "A": "turbo2",
+   "prompt": "Teach me about gravity."
+  },
+  "P047": {
+   "A": "turbox",
+   "prompt": "Teach me about the seasons."
+  },
+  "P048": {
+   "A": "turbox",
+   "prompt": "Teach me about recycling."
+  },
+  "P049": {
+   "A": "turbox",
+   "prompt": "Spin me a short story featuring a talking tree."
+  },
+  "P050": {
+   "A": "turbox",
+   "prompt": "Know a good one about space?"
+  },
+  "P051": {
+   "A": "turbox",
+   "prompt": "What's the science behind the seasons?"
+  },
+  "P052": {
+   "A": "turbo2",
+   "prompt": "What's the best way to deal with confidence?"
+  },
+  "P053": {
+   "A": "turbo2",
+   "prompt": "Got any pointers on time management?"
+  },
+  "P054": {
+   "A": "turbo2",
+   "prompt": "Say a joke about chickens."
+  },
+  "P055": {
+   "A": "turbo2",
+   "prompt": "Can you tell me something funny about teachers?"
+  },
+  "P056": {
+   "A": "turbo2",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  "P057": {
+   "A": "turbox",
+   "prompt": "Can you tell me something funny about the ocean?"
+  },
+  "P058": {
+   "A": "turbo2",
+   "prompt": "Could you write me a little story about a hot air balloon?"
+  },
+  "P059": {
+   "A": "turbox",
+   "prompt": "Got any pointers on running a marathon?"
+  },
+  "P060": {
+   "A": "turbo2",
+   "prompt": "I'd like to hear a tale about a baker."
+  },
+  "P061": {
+   "A": "turbo2",
+   "prompt": "Any suggestions for saving money?"
+  },
+  "P062": {
+   "A": "turbo2",
+   "prompt": "What's the best way to deal with screen time?"
+  },
+  "P063": {
+   "A": "turbo2",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  "P064": {
+   "A": "turbox",
+   "prompt": "Know a good one about programmers?"
+  },
+  "P065": {
+   "A": "turbo2",
+   "prompt": "Any suggestions for stress?"
+  },
+  "P066": {
+   "A": "turbo2",
+   "prompt": "Say a joke about music."
+  },
+  "P067": {
+   "A": "turbo2",
+   "prompt": "Say a joke about cheese."
+  },
+  "P068": {
+   "A": "turbo2",
+   "prompt": "Give me a pun about eggs."
+  },
+  "P069": {
+   "A": "turbo2",
+   "prompt": "What's the best way to deal with eating healthy?"
+  },
+  "P070": {
+   "A": "turbox",
+   "prompt": "Say a joke about the weather."
+  },
+  "P071": {
+   "A": "turbox",
+   "prompt": "Any suggestions for packing for a trip?"
+  },
+  "P072": {
+   "A": "turbox",
+   "prompt": "Could you write me a little story about a pirate ship?"
+  },
+  "P073": {
+   "A": "turbox",
+   "prompt": "Know a good one about space?"
+  },
+  "P074": {
+   "A": "turbo2",
+   "prompt": "I'm struggling with learning a language. What should I try?"
+  },
+  "P075": {
+   "A": "turbo2",
+   "prompt": "Write a bedtime tale about two best friends."
+  },
+  "P076": {
+   "A": "turbo2",
+   "prompt": "Teach me about eclipses."
+  },
+  "P077": {
+   "A": "turbo2",
+   "prompt": "Got any pointers on remembering things?"
+  },
+  "P078": {
+   "A": "turbo2",
+   "prompt": "I'd like to hear a tale about a kite."
+  },
+  "P079": {
+   "A": "turbo2",
+   "prompt": "Know a good one about computers?"
+  },
+  "P080": {
+   "A": "turbox",
+   "prompt": "Write a bedtime tale about a brave little fox."
+  },
+  "P081": {
+   "A": "turbo2",
+   "prompt": "Can you describe recycling to me?"
+  },
+  "P082": {
+   "A": "turbox",
+   "prompt": "Could you write me a little story about an old clock?"
+  },
+  "P083": {
+   "A": "turbo2",
+   "prompt": "Teach me about earthquakes."
+  },
+  "P084": {
+   "A": "turbox",
+   "prompt": "Say a joke about math."
+  },
+  "P085": {
+   "A": "turbox",
+   "prompt": "Say a joke about skeletons."
+  },
+  "P086": {
+   "A": "turbox",
+   "prompt": "Tell a children's story about a penguin."
+  },
+  "P087": {
+   "A": "turbox",
+   "prompt": "Say a joke about time."
+  },
+  "P088": {
+   "A": "turbo2",
+   "prompt": "How can I get better at headaches?"
+  },
+  "P089": {
+   "A": "turbox",
+   "prompt": "Can you describe the immune system to me?"
+  },
+  "P090": {
+   "A": "turbox",
+   "prompt": "Tell a children's story about a dragon who loves books."
+  },
+  "P091": {
+   "A": "turbox",
+   "prompt": "Any suggestions for studying?"
+  },
+  "P092": {
+   "A": "turbo2",
+   "prompt": "Can you describe tides to me?"
+  },
+  "P093": {
+   "A": "turbo2",
+   "prompt": "Write a bedtime tale about a library."
+  },
+  "P094": {
+   "A": "turbox",
+   "prompt": "Give me a pun about bicycles."
+  },
+  "P095": {
+   "A": "turbox",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  "P096": {
+   "A": "turbo2",
+   "prompt": "I'm struggling with procrastination. What should I try?"
+  },
+  "P097": {
+   "A": "turbox",
+   "prompt": "How can I get better at time management?"
+  },
+  "P098": {
+   "A": "turbox",
+   "prompt": "Say a joke about dogs."
+  },
+  "P099": {
+   "A": "turbo2",
+   "prompt": "I'm struggling with focus. What should I try?"
+  },
+  "P100": {
+   "A": "turbox",
+   "prompt": "Write a bedtime tale about a soccer game."
+  },
+  "P101": {
+   "A": "turbox",
+   "prompt": "Tell a children's story about a hot air balloon."
+  },
+  "P102": {
+   "A": "turbo2",
+   "prompt": "How do solar panels work?"
+  },
+  "P103": {
+   "A": "turbox",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  "P104": {
+   "A": "turbo2",
+   "prompt": "Can you describe refrigerators to me?"
+  },
+  "P105": {
+   "A": "turbo2",
+   "prompt": "Can you tell me something funny about chickens?"
+  },
+  "P106": {
+   "A": "turbo2",
+   "prompt": "Say a joke about pizza."
+  },
+  "P107": {
+   "A": "turbo2",
+   "prompt": "Any suggestions for job interviews?"
+  },
+  "P108": {
+   "A": "turbox",
+   "prompt": "Spin me a short story featuring a wizard."
+  },
+  "P109": {
+   "A": "turbox",
+   "prompt": "Know a good one about bicycles?"
+  },
+  "P110": {
+   "A": "turbo2",
+   "prompt": "How do photosynthesis work?"
+  },
+  "P111": {
+   "A": "turbo2",
+   "prompt": "What's the best way to deal with a bad mood?"
+  },
+  "P112": {
+   "A": "turbox",
+   "prompt": "Tell a children's story about a pirate ship."
+  },
+  "P113": {
+   "A": "turbox",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  "P114": {
+   "A": "turbo2",
+   "prompt": "Give me a pun about dogs."
+  },
+  "P115": {
+   "A": "turbo2",
+   "prompt": "Spin me a short story featuring a rainy day."
+  },
+  "P116": {
+   "A": "turbox",
+   "prompt": "Teach me about clouds."
+  },
+  "P117": {
+   "A": "turbo2",
+   "prompt": "What's the best way to deal with sleep?"
+  },
+  "P118": {
+   "A": "turbo2",
+   "prompt": "What makes the immune system happen?"
+  },
+  "P119": {
+   "A": "turbox",
+   "prompt": "Can you tell me something funny about school?"
+  },
+  "P120": {
+   "A": "turbo2",
+   "prompt": "Could you write me a little story about a missing key?"
+  },
+  "P121": {
+   "A": "turbo2",
+   "prompt": "Tell a children's story about a birthday party."
+  },
+  "P122": {
+   "A": "turbo2",
+   "prompt": "Could you write me a little story about a spaceship?"
+  },
+  "P123": {
+   "A": "turbo2",
+   "prompt": "Any suggestions for reading more?"
+  },
+  "P124": {
+   "A": "turbo2",
+   "prompt": "Give me a pun about cows."
+  },
+  "P125": {
+   "A": "turbox",
+   "prompt": "What's the best way to deal with exercise?"
+  },
+  "P126": {
+   "A": "turbox",
+   "prompt": "Give me a pun about books."
+  },
+  "P127": {
+   "A": "turbox",
+   "prompt": "What's the science behind coral reefs?"
+  },
+  "P128": {
+   "A": "turbox",
+   "prompt": "How do clouds work?"
+  },
+  "P129": {
+   "A": "turbox",
+   "prompt": "Got any pointers on arguments?"
+  },
+  "P130": {
+   "A": "turbo2",
+   "prompt": "Could you write me a little story about a rainy day?"
+  },
+  "P131": {
+   "A": "turbox",
+   "prompt": "Can you describe the stock market to me?"
+  },
+  "P132": {
+   "A": "turbo2",
+   "prompt": "Teach me about gravity."
+  },
+  "P133": {
+   "A": "turbo2",
+   "prompt": "Spin me a short story featuring a magic garden."
+  },
+  "P134": {
+   "A": "turbox",
+   "prompt": "Teach me about black holes."
+  },
+  "P135": {
+   "A": "turbox",
+   "prompt": "Tell a children's story about a lonely robot."
+  },
+  "P136": {
+   "A": "turbox",
+   "prompt": "What's the best way to deal with making friends?"
+  },
+  "P137": {
+   "A": "turbo2",
+   "prompt": "What makes hurricanes happen?"
+  },
+  "P138": {
+   "A": "turbo2",
+   "prompt": "Can you describe democracy to me?"
+  },
+  "P139": {
+   "A": "turbo2",
+   "prompt": "Could you write me a little story about a lighthouse?"
+  },
+  "P140": {
+   "A": "turbox",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  "P141": {
+   "A": "turbo2",
+   "prompt": "Got any pointers on focus?"
+  },
+  "P142": {
+   "A": "turbox",
+   "prompt": "Give me a pun about money."
+  },
+  "P143": {
+   "A": "turbo2",
+   "prompt": "Got any pointers on job interviews?"
+  },
+  "P144": {
+   "A": "turbo2",
+   "prompt": "Give me a pun about cats."
+  },
+  "P145": {
+   "A": "turbo2",
+   "prompt": "Say a joke about shoes."
+  },
+  "P146": {
+   "A": "turbox",
+   "prompt": "Spin me a short story featuring the moon."
+  },
+  "P147": {
+   "A": "turbox",
+   "prompt": "Know a good one about coffee?"
+  },
+  "P148": {
+   "A": "turbo2",
+   "prompt": "Tell a children's story about a farm."
+  },
+  "P149": {
+   "A": "turbo2",
+   "prompt": "I'm struggling with job interviews. What should I try?"
+  },
+  "P150": {
+   "A": "turbox",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  "P151": {
+   "A": "turbox",
+   "prompt": "What makes earthquakes happen?"
+  },
+  "P152": {
+   "A": "turbo2",
+   "prompt": "Spin me a short story featuring a shy turtle."
+  },
+  "P153": {
+   "A": "turbox",
+   "prompt": "How can I get better at headaches?"
+  },
+  "P154": {
+   "A": "turbo2",
+   "prompt": "Could you write me a little story about a treehouse?"
+  },
+  "P155": {
+   "A": "turbox",
+   "prompt": "Any suggestions for stress?"
+  },
+  "P156": {
+   "A": "turbox",
+   "prompt": "How can I get better at writing essays?"
+  },
+  "P157": {
+   "A": "turbo2",
+   "prompt": "Teach me about magnets."
+  },
+  "P158": {
+   "A": "turbox",
+   "prompt": "How can I get better at public speaking?"
+  },
+  "P159": {
+   "A": "turbo2",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  "P160": {
+   "A": "turbox",
+   "prompt": "Hi there!"
+  },
+  "P161": {
+   "A": "turbo2",
+   "prompt": "What's your name?"
+  },
+  "P162": {
+   "A": "turbox",
+   "prompt": "Who was Albert Einstein?"
+  },
+  "P163": {
+   "A": "turbox",
+   "prompt": "What is the capital of Australia?"
+  },
+  "P164": {
+   "A": "turbo2",
+   "prompt": "How tall is Mount Everest?"
+  },
+  "P165": {
+   "A": "turbox",
+   "prompt": "What's 15% of 80?"
+  },
+  "P166": {
+   "A": "turbo2",
+   "prompt": "Convert 10 miles to kilometers."
+  },
+  "P167": {
+   "A": "turbo2",
+   "prompt": "What day is it today?"
+  },
+  "P168": {
+   "A": "turbo2",
+   "prompt": "Who wrote Hamlet?"
+  },
+  "P169": {
+   "A": "turbo2",
+   "prompt": "What is the boiling point of water in Fahrenheit?"
+  },
+  "P170": {
+   "A": "turbo2",
+   "prompt": "How many legs does a spider have?"
+  },
+  "P171": {
+   "A": "turbox",
+   "prompt": "When did World War II end?"
+  },
+  "P172": {
+   "A": "turbo2",
+   "prompt": "What's the population of Canada?"
+  },
+  "P173": {
+   "A": "turbo2",
+   "prompt": "Who painted the Mona Lisa?"
+  },
+  "P174": {
+   "A": "turbo2",
+   "prompt": "What does photosynthesis mean?"
+  },
+  "P175": {
+   "A": "turbo2",
+   "prompt": "Is 97 a prime number?"
+  },
+  "P176": {
+   "A": "turbox",
+   "prompt": "What is 12 squared?"
+  },
+  "P177": {
+   "A": "turbox",
+   "prompt": "Spell 'necessary'."
+  },
+  "P178": {
+   "A": "turbox",
+   "prompt": "Which is bigger, Brazil or Argentina?"
+  },
+  "P179": {
+   "A": "turbo2",
+   "prompt": "What language do they speak in Brazil?"
+  },
+  "P180": {
+   "A": "turbo2",
+   "prompt": "My name is Sam. What's my name?"
+  },
+  "P181": {
+   "A": "turbox",
+   "prompt": "What time is it in Tokyo?"
+  },
+  "P182": {
+   "A": "turbox",
+   "prompt": "How many days until Christmas?"
+  },
+  "P183": {
+   "A": "turbox",
+   "prompt": "What's the chemical symbol for gold?"
+  },
+  "P184": {
+   "A": "turbo2",
+   "prompt": "Who is the president of France?"
+  },
+  "P185": {
+   "A": "turbox",
+   "prompt": "What is a haiku?"
+  },
+  "P186": {
+   "A": "turbo2",
+   "prompt": "Tell me something interesting."
+  },
+  "P187": {
+   "A": "turbo2",
+   "prompt": "Thanks for your help!"
+  },
+  "P188": {
+   "A": "turbo2",
+   "prompt": "What can you do?"
+  },
+  "P189": {
+   "A": "turbox",
+   "prompt": "Roll a die."
+  },
+  "P190": {
+   "A": "turbo2",
+   "prompt": "Flip a coin."
+  },
+  "P191": {
+   "A": "turbox",
+   "prompt": "What is the largest planet?"
+  },
+  "P192": {
+   "A": "turbo2",
+   "prompt": "Where was Mozart born?"
+  },
+  "P193": {
+   "A": "turbox",
+   "prompt": "How old is the Earth?"
+  },
+  "P194": {
+   "A": "turbox",
+   "prompt": "What's the weather like?"
+  },
+  "P195": {
+   "A": "turbox",
+   "prompt": "Can you sing?"
+  },
+  "P196": {
+   "A": "turbox",
+   "prompt": "What is the meaning of life?"
+  },
+  "P197": {
+   "A": "turbo2",
+   "prompt": "Recommend a good book."
+  },
+  "P198": {
+   "A": "turbo2",
+   "prompt": "Who invented the telephone?"
+  },
+  "P199": {
+   "A": "turbox",
+   "prompt": "What is the speed of light?"
+  }
+ }
+}

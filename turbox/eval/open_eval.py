@@ -1,5 +1,6 @@
 """Blind open-ended evaluation (rubric 300 prompts, A/B 200 prompts) of TurboX vs Turbo 2.0.
-  gen   CKPT [levels] [fbb] : replies of both systems -> WORK/open/replies.json
+  gen   CKPT [levels] [fbb] : TurboX replies -> WORK/open/replies_tx.json
+        (Turbo 2.0 replies: python3 baseline/open_t20.py -> WORK/open/replies_t20.json, separate process)
   blind                     : WORK/open/rubric_blind.md (600 replies, shuffled, no system names) and
                               WORK/open/ab_blind.md (200 pairs, sides randomised); keys in WORK/open/keys.json
   score                     : reads WORK/open/rubric_scores.json ({item: 1-5}) and ab_choices.json ({pair: A|B|tie})
@@ -27,26 +28,18 @@ def gen(ckpt, levels=None, fbb=0.0):
     prompts = [x["prompt"] for x in P["rubric"]] + [x["prompt"] for x in P["ab"]]
     uniq = sorted(set(prompts))
     q, _, _ = quantize(ckpt, levels)
-    R = Runner(None, slots=128, fb_bias=fbb, state_dict=q)
+    R = Runner(None, slots=48, fb_bias=fbb, state_dict=q)
     nw = twins.Now(datetime(*NOW[:5]), NOW[5])
     res = R.run([[p] for p in uniq], now_fns=[lambda: nw] * len(uniq), seeds=[777 + i for i in range(len(uniq))])
     tx = {p: r[0]["reply"] for p, r in zip(uniq, res)}
-    # Turbo 2.0: its own mirror with its default sampled decoding
-    sys.path.insert(0, "/home/user/supply-hub/turbo2")
-    import mirror
-    M = mirror.Model("/home/user/work/final_q.npz")
-    Rt = mirror.Retriever(mirror.Tokenizer.load())
-    t2 = {}
-    for i, p in enumerate(uniq):
-        s = mirror.Session(M, retriever=Rt, seed=777 + i, now_fn=lambda: nw)
-        t2[p] = s.turn(p)["display"]
     os.makedirs(W, exist_ok=True)
-    json.dump({"turbox": tx, "turbo2": t2}, open(os.path.join(W, "replies.json"), "w"), indent=1)
+    json.dump(tx, open(os.path.join(W, "replies_tx.json"), "w"), indent=1)
 
 
 def blind():
     P = json.load(open(os.path.join(HERE, "..", "results", "open_prompts.json")))
-    R = json.load(open(os.path.join(W, "replies.json")))
+    R = {"turbox": json.load(open(os.path.join(W, "replies_tx.json"))),
+         "turbo2": json.load(open(os.path.join(W, "replies_t20.json")))}
     r = random.Random(20261126)
     items = []
     for x in P["rubric"]:

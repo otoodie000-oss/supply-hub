@@ -1,0 +1,55 @@
+{
+ "rubric": {
+  "turbo2": {
+   "ALL": {
+    "n": 300,
+    "mean": 1.377
+   },
+   "advice": {
+    "n": 75,
+    "mean": 1.293
+   },
+   "explain": {
+    "n": 75,
+    "mean": 1.533
+   },
+   "joke": {
+    "n": 75,
+    "mean": 1.36
+   },
+   "story": {
+    "n": 75,
+    "mean": 1.32
+   }
+  },
+  "turbox": {
+   "ALL": {
+    "n": 300,
+    "mean": 2.993
+   },
+   "advice": {
+    "n": 75,
+    "mean": 2.093
+   },
+   "explain": {
+    "n": 75,
+    "mean": 1.893
+   },
+   "joke": {
+    "n": 75,
+    "mean": 3.787
+   },
+   "story": {
+    "n": 75,
+    "mean": 4.2
+   }
+  }
+ },
+ "ab": {
+  "turbox": 114,
+  "turbo2": 40,
+  "tie": 46,
+  "decided": 154,
+  "turbox_win_rate_of_decided": 0.7403
+ }
+}
