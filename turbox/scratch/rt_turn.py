@@ -890,11 +890,23 @@ def ts_query(kind):
 def render_display():
     """detokenize REPLY + display capitalization (twin of session.display)"""
     out = ""
-    for k in range(1, len(REPLY) + 1):
+    glue = 0
+    nr = len(REPLY)
+    for k in range(1, nr + 1):
         t = REPLY[k]
         if REPLY_CAP[k] == 1 and is_alpha(letter(1, t)) == 1 and not (t in SMALLW):
             t = join(letter(index_of(LOWL, letter(1, t)), UPPER), substr(t, 2, strlen(t)))
-        if strlen(out) == 0:
+        joinme = 0
+        if glue == 0 and (t == "-" or t == "/") and strlen(out) > 0 and k < nr:
+            if is_alpha(letter(strlen(out), out)) == 1 and is_alpha(letter(1, REPLY[k + 1])) == 1:
+                joinme = 1
+        if glue == 1:
+            out = join(out, t)
+            glue = 0
+        elif joinme == 1:
+            out = join(out, t)
+            glue = 1
+        elif strlen(out) == 0:
             out = t
         else:
             e = letter(strlen(out), out)

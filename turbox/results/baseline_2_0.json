@@ -2,44 +2,44 @@
  "real": {
   "n": 2000,
   "bare_idk": 0.035,
-  "clarify_wrong": 0.0145,
-  "confidently_wrong": 0.6905,
-  "correct": 0.2025,
+  "clarify_wrong": 0.0065,
+  "confidently_wrong": 0.697,
+  "correct": 0.2035,
   "fallback": 0.0275,
-  "nonanswer": 0.03
+  "nonanswer": 0.0305
  },
  "ALL": {
   "n": 20000,
   "bare_idk": 0.016,
-  "clarify_wrong": 0.0058,
-  "confidently_wrong": 0.6366,
-  "correct": 0.2097,
-  "fallback": 0.1196,
-  "nonanswer": 0.0124
+  "clarify_wrong": 0.0028,
+  "confidently_wrong": 0.6397,
+  "correct": 0.2095,
+  "fallback": 0.1195,
+  "nonanswer": 0.0125
  },
  "kb_fact": {
   "n": 8000,
   "bare_idk": 0.0152,
-  "clarify_wrong": 0.0049,
-  "confidently_wrong": 0.6999,
-  "correct": 0.0638,
+  "clarify_wrong": 0.0027,
+  "confidently_wrong": 0.7017,
+  "correct": 0.064,
   "fallback": 0.2086,
   "nonanswer": 0.0076
  },
  "messy": {
   "n": 6959,
   "bare_idk": 0.0171,
-  "clarify_wrong": 0.0062,
-  "confidently_wrong": 0.6696,
-  "correct": 0.1951,
+  "clarify_wrong": 0.0026,
+  "confidently_wrong": 0.6735,
+  "correct": 0.1947,
   "fallback": 0.1013,
-  "nonanswer": 0.0106
+  "nonanswer": 0.0108
  },
  "multiturn": {
   "n": 1000,
   "bare_idk": 0.003,
-  "clarify_wrong": 0.013,
-  "confidently_wrong": 0.668,
+  "clarify_wrong": 0.004,
+  "confidently_wrong": 0.677,
   "correct": 0.298,
   "fallback": 0.01,
   "nonanswer": 0.008
@@ -47,34 +47,34 @@
  "tool": {
   "n": 3000,
   "bare_idk": 0.0023,
-  "clarify_wrong": 0.002,
-  "confidently_wrong": 0.2237,
+  "clarify_wrong": 0.0003,
+  "confidently_wrong": 0.225,
   "correct": 0.7523,
   "fallback": 0.0057,
-  "nonanswer": 0.014
+  "nonanswer": 0.0143
  },
  "withheld": {
   "n": 2000,
   "bare_idk": 0.0095,
   "clarify_wrong": 0.001,
-  "confidently_wrong": 0.748,
-  "correct": 0.232,
+  "confidently_wrong": 0.7495,
+  "correct": 0.2305,
   "nonanswer": 0.0095
  },
  "ambiguous": {
   "n": 1000,
   "bare_idk": 0.009,
-  "clarify_wrong": 0.002,
-  "confidently_wrong": 0.699,
-  "correct": 0.05,
-  "fallback": 0.235,
+  "clarify_wrong": 0.001,
+  "confidently_wrong": 0.704,
+  "correct": 0.047,
+  "fallback": 0.234,
   "nonanswer": 0.005
  },
  "derived": {
   "n": 3000,
   "bare_idk": 0.03,
-  "clarify_wrong": 0.0083,
-  "confidently_wrong": 0.7393,
+  "clarify_wrong": 0.0043,
+  "confidently_wrong": 0.7433,
   "correct": 0.0697,
   "fallback": 0.135,
   "nonanswer": 0.0177

@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.join(HERE, "..", "common"))
 from textnorm import clean_text  # noqa: E402
 from render import MONTHS  # noqa: E402
 
-DECLINE = re.compile(r"\b(i don'?t know|i do not know|not sure|no idea|i can'?t (answer|tell|say|check|look|see|access)|"
+DECLINE = re.compile(r"\b(i don'?t know|i do not know|not sure|no idea|i can'?t (answer|tell|say|check|look|see|access|follow|get)|"
                      r"i cannot|don'?t have (that|this|a note|any|the exact|access)|isn'?t in my|is not in my|"
                      r"not in my (offline|notes|knowledge|data)|offline knowledge|can'?t check|unable to|i'm sorry, i can'?t|"
                      r"don'?t have live|no live|i have no way|can'?t know|i'm not able|beyond what i know|"
@@ -68,9 +68,23 @@ def content(s):
     return out
 
 
+ABBR = set("st dr mr mrs ms jr sr vs no mt ft co inc ltd sgt gen col capt rev prof".split())
+
+
 def sentences(s):
+    """split after . ! ? -- but not after an initial ("u. r. ananthamurthy") or a common abbreviation"""
     parts = re.split(r"(?<=[.!?])\s+", norm(s))
-    return [p for p in parts if p]
+    out = []
+    for p in parts:
+        if not p:
+            continue
+        if out:
+            last = out[-1].rstrip(".").split(" ")[-1] if out[-1].endswith(".") else None
+            if last is not None and (len(last) == 1 and last.isalpha() or last in ABBR):
+                out[-1] += " " + p
+                continue
+        out.append(p)
+    return out
 
 
 def first2(s):
@@ -93,11 +107,18 @@ def numbers(s):
     return out
 
 
+def _hy(s):
+    return re.sub(r"\s*-\s*", "-", s)
+
+
 def has_phrase(text, phrase):
-    p = norm(phrase)
+    """phrase match on word boundaries; spacing around hyphens is ignored and a leading dot (".cg") is optional"""
+    p = _hy(norm(phrase))
+    if p.startswith(".") and len(p) > 1:
+        p = p[1:]
     if not p:
         return False
-    return re.search(r"(?<![a-z0-9])" + re.escape(p) + r"(?![a-z0-9])", norm(text)) is not None
+    return re.search(r"(?<![a-z0-9])" + re.escape(p) + r"(?![a-z0-9])", _hy(norm(text))) is not None
 
 
 def form_of(reply, question):
@@ -114,7 +135,12 @@ def form_of(reply, question):
         concrete = True
     if dec:
         return "fallback" if concrete else "bare_idk"
-    if r.rstrip().endswith("?") or (len(sentences(r)) <= 2 and "?" in r and re.match(r"^(do|did|are|is|which|what|who|could|can|would)\b", sentences(r)[-1])):
+    ss = sentences(r)
+    qrx = r"^(do|did|are|is|which|what|who|whom|could|can|would|where|when|how)\b"
+    # a clarification asks first, or ends by offering readings ("which X do you mean", "... A or B?");
+    # an answer followed by an offer ("Want more?") stays an answer
+    if (ss and ss[0].endswith("?")) or \
+            (len(ss) <= 2 and ss[-1].endswith("?") and re.match(qrx, ss[-1]) and re.search(r"\bmean\b|\bor\b|asking about|referring to|talking about", ss[-1])):
         return "clarify"
     if not new and not re.search(r"\d", r):
         return "nonanswer"

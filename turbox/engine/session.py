@@ -268,11 +268,21 @@ class Turn:
 
 def display(toks, caps=None):
     """detokenize + display capitalization (non-learned): proper-noun words (flagged by the fact store), sentence
-    starts and standalone 'i'."""
+    starts and standalone 'i'; '-' and '/' between two words are joined without spaces."""
     out = ""
+    glue = False
+    n = len(toks)
     for k, t in enumerate(toks):
         if caps and caps[k] and t[:1].isalpha() and t not in SMALLW:
             t = t[0].upper() + t[1:]
+        if glue:                  # word after a joining '-' or '/'
+            out += t
+            glue = False
+            continue
+        if t in ("-", "/") and out and out[-1].isalpha() and k + 1 < n and toks[k + 1][:1].isalpha():
+            out += t              # "stand - up" -> "stand-up", "km / h" -> "km/h"
+            glue = True
+            continue
         if not out:
             out = t
         elif t in (".", ",", "!", "?", ":", ";", "%", ")", "'s", "'") or (out.endswith("(") or out.endswith("$")):
