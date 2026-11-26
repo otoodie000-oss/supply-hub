@@ -40,7 +40,7 @@ def main():
                 continue
             facts = [["definition", gloss]]
             if pos == "n":
-                hy = syn.hypernyms() or syn.instance_hypernyms()
+                hy = sorted(syn.hypernyms() or syn.instance_hypernyms(), key=lambda x: x.name())
                 if hy:
                     facts.append(["is_a", "@wn:" + hy[0].name()])
             cnt = sum(l.count() for l in syn.lemmas())

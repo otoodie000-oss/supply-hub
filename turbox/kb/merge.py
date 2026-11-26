@@ -122,6 +122,12 @@ def _qual_ok(q, c):
     return any(n and n in q for n in names)
 
 
+def _ck(tag, recs):
+    if os.environ.get("DEBUG_HASH"):
+        import hashlib as _h
+        print("CK", tag, _h.md5(json.dumps([[r.get("key"), r.get("facts")] for r in recs], sort_keys=True).encode()).hexdigest()[:10], flush=True)
+
+
 def main():
     titles = load_titles()
     stats = Counter()
@@ -149,6 +155,8 @@ def main():
 
     def clean_rec(r):
         return not any(adult.search(str(f[1])) for f in r["facts"]) and not adult.search(r["name"])
+    _ck("persons_filtered", persons)
+    _ck("leads_filtered", leads)
     persons = [r for r in persons if r["facts"]]
     leads = [r for r in leads if r["facts"]]
     n0 = len(persons) + len(leads) + len(words)
@@ -193,6 +201,8 @@ def main():
         else:
             kept_leads.append(r)
     leads = kept_leads
+    _ck("leads_after_merge", leads)
+    _ck("tables_after_merge", tables)
     # ---------------- selection
     for r in persons:
         r["prior"] = prior(r, titles)
@@ -223,14 +233,16 @@ def main():
                             rec = {"key": k, "name": nm, "type": "word_n", "qual": "word", "aliases": [],
                                    "facts": [["definition", dfn]] if len(dfn) <= 110 else [],
                                    "src": "wordnet3.0", "asof": None, "pop": 0, "desc": "word"}
-                            hy = hs.hypernyms() or hs.instance_hypernyms()
+                            hy = sorted(hs.hypernyms() or hs.instance_hypernyms(), key=lambda x: x.name())
                             if hy:
                                 rec["facts"].append(["is_a", "@wn:" + hy[0].name()])
                             wsel.append(rec)
                             wall[k] = rec
                             wkeys.add(k)
                             changed = True
+    _ck("wsel", wsel)
     sel += wsel
+    _ck("sel", sel)
     # overlay
     ov = []
     for l in open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "overlay_2026.tsv")):
@@ -254,6 +266,10 @@ def main():
             by_name[e].append(tgt)
         # an overlay value replaces an older value of the same relation
         tgt["facts"] = [f for f in tgt["facts"] if f[0] != rel]
+        # office holders, champions and current names are stated as true as of mid-2026 (the overlay's
+        # check date); populations, records and dates keep the year of their estimate or event
+        if rel not in ("population", "human_population", "height", "death_date", "coronation_date", "record"):
+            yr = 2026
         tgt["facts"].append([rel, val, yr, "overlay2026"])
         stats["overlay_facts"] += 1
     # ---------------- normalise facts: [rel, value, asof, src]
@@ -272,6 +288,7 @@ def main():
         r["facts"] = nf
         r["prior"] = prior(r, titles)
     sel = [r for r in sel if r["facts"]]
+    _ck("sel_norm", sel)
     # ---------------- entity references
     by_name = defaultdict(list)
     for r in sel:
@@ -301,6 +318,7 @@ def main():
                 if k:
                     f[1] = "@" + k
         r["facts"] = [f for f in r["facts"] if f[1]]
+    _ck("sel_refs", sel)
     # ---------------- withhold 5% (stratified by relation; never the only fact of an entity)
     rng = random.Random(SEED)
     allf = [(r["key"], i) for r in sel for i in range(len(r["facts"])) if len(r["facts"]) >= 2]

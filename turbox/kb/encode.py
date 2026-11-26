@@ -18,6 +18,13 @@ from collections import defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import W  # noqa: E402
 from relations import REL  # noqa: E402
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "engine"))
+from tok import split as tsplit  # noqa: E402
+
+
+def tkey(s):
+    """index key = the tokenizer's tokens joined by single spaces ('st. louis' -> 'st . louis')"""
+    return " ".join(tsplit(s))
 
 POST_CAP = int(os.environ.get("POST_CAP", 300))
 TYPE_CODE = {"person": "p", "city": "c", "country": "n", "us_state": "s", "element": "e", "planet": "l",
@@ -39,14 +46,16 @@ def skey(s):
 
 def main():
     ents = [json.loads(l) for l in open(os.path.join(W, "kb.jsonl"))]
-    ents.sort(key=lambda r: (skey(r["name"]), -r["prior"]))
+    for r in ents:
+        r["_k"] = tkey(r["name"])
+    ents.sort(key=lambda r: (skey(r["_k"]), -r["prior"]))
     idx = {r["key"]: i + 1 for i, r in enumerate(ents)}
     names, recs = [], []
     nf = 0
     tzs = sorted(set(f[1] for r in ents for f in r["facts"] if f[0] == "timezone"))
     tzi = {t: i + 1 for i, t in enumerate(tzs)}
     for r in ents:
-        names.append(skey(r["name"]))
+        names.append(skey(r["_k"]))
         parts = []
         for rel, val, asof, src in r["facts"]:
             v = val
@@ -69,18 +78,19 @@ def main():
                 s += "`" + SRC_CODE[src]
             parts.append(s)
             nf += 1
-        recs.append("%s%s|%s" % (TYPE_CODE.get(r["type"], "x"), SRC_CODE.get(r["src"], "?"), "~".join(parts)))
+        recs.append("%s%s%d|%s" % (TYPE_CODE.get(r["type"], "x"), SRC_CODE.get(r["src"], "?"),
+                                   min(9, max(0, int(r["prior"] // 10))), "~".join(parts)))
     al = []
     for r in ents:
         for a in r.get("aliases") or []:
-            if a != r["name"]:
-                al.append((skey(a), idx[r["key"]]))
+            if a != r["name"] and tkey(a) != r["_k"]:
+                al.append((skey(tkey(a)), idx[r["key"]]))
     al.sort()
     words = defaultdict(list)
     for r in ents:
-        ws = set(re.findall(r"[a-z0-9']+", r["name"]))
+        ws = set(t for t in r["_k"].split(" ") if t[:1].isalpha())
         for a in r.get("aliases") or []:
-            ws |= set(re.findall(r"[a-z0-9']+", a))
+            ws |= set(t for t in tkey(a).split(" ") if t[:1].isalpha())
         for w in ws:
             words[w].append((r["prior"], idx[r["key"]]))
     wl = sorted(words, key=skey)
@@ -95,8 +105,14 @@ def main():
             out.append(str(i - prev))
             prev = i
         post.append(" ".join(out))
-    lists = {"TZ": tzs, "E_NAME": names, "E_REC": recs, "A_KEY": [a for a, _ in al], "A_ID": [i for _, i in al],
+    letter_start = []
+    wl_keys = [skey(w) for w in wl]
+    for c in "abcdefghijklmnopqrstuvwxyz":
+        k = next((i + 1 for i, w in enumerate(wl_keys) if w >= c), len(wl_keys) + 1)
+        letter_start.append(k)
+    lists = {"LSTART": letter_start, "E_NAME": names, "E_REC": recs, "A_KEY": [a for a, _ in al], "A_ID": [i for _, i in al],
              "WORDS": [skey(w) for w in wl], "POST": post}
+    lists.pop("TZ", None)
     json.dump(lists, open(os.path.join(W, "lists.json"), "w"))
     tot = 0
     print("entities %d facts %d aliases %d words %d postings %d" % (len(names), nf, len(al), len(wl), np_))

@@ -12,12 +12,12 @@
  },
  "messy_pct": {
   "withheld": 34.84,
-  "kb_fact": 35.02,
+  "kb_fact": 35.04,
   "tool": 34.9,
   "real": 35.09,
-  "derived": 35.21,
-  "multiturn": 34.92,
-  "ambiguous": 34.97
+  "derived": 35.17,
+  "multiturn": 35.12,
+  "ambiguous": 35.04
  },
  "kb_fact_test_only_entity_pct": 50.02,
  "real_questions_used": 94275,
@@ -28,8 +28,8 @@
   "derived/answer": 150000,
   "kb_fact/answer": 400000,
   "multiturn/answer": 50000,
-  "real/answer": 16884,
-  "real/either": 83116,
+  "real/answer": 16955,
+  "real/either": 83045,
   "tool/answer": 150000,
   "withheld/fallback": 100000
  },
@@ -45,30 +45,30 @@
   "textnorm.py": "bc41eea1ab6460a72eee7738735647021bde37739c6fd57bb97812fc9620c9bf"
  },
  "data_sha256": {
-  "kb.jsonl": "22f9250eb41df42da610f71cb0acc5db37dc8632f9afc15a3eaa974803ecfd61",
-  "withheld.jsonl": "c9acdf1ccd4d869e6c10a2c44416205366351cada12fdd7625fbf3dcf12990dc",
-  "real_questions.json": "69bad03cd097a12b88a7e63fd63a4e06e04565dbc17d2f3ae26ca9105277bea4"
+  "kb.jsonl": "0fe38a2661cd309ad2c48c85c7de626f2b1cf2ca54180040eed8f7bf961a3c3a",
+  "withheld.jsonl": "afcfabb85d127bae3cbd28fe9e342a2a28bb1886acfbeb60d144b6f627a81506",
+  "real_questions.json": "0c8116443c5110a4dfde902a3988eda0cde243589989b9f0778ab7aa7ea7aa05"
  },
  "shards_sha256": {
-  "shard_00.jsonl.gz": "303dc795cb4641a3b272392bffcaa21855a94a3fc5a78980654eb202bee58147",
-  "shard_01.jsonl.gz": "973138cd7a23431d294e21265cdddc4cd691e0dcbf9eed121d3e20597ecc7105",
-  "shard_02.jsonl.gz": "d4a4c18283dd8f9296ad813de2f79872b3dae17bafbf68ea87d08b7f47998ffc",
-  "shard_03.jsonl.gz": "5d0b846141e43e19d1ee8b5348ee7a4dfbfddc98c2b318d52f89250f25788020",
-  "shard_04.jsonl.gz": "2bfb019f2a951ff9595ea2aa68fbf1e930507432701f83a424ff96a6d25d0406",
-  "shard_05.jsonl.gz": "2831d6aa14e66278c8e469b7f302237a0b0cc68367f42c2513419e66dc3ed136",
-  "shard_06.jsonl.gz": "3cf97e5cf765b87b61d96847e4133aa33e84e63df47e76f5fe7ce7ca148034c3",
-  "shard_07.jsonl.gz": "05cfe357f576373b98720a6574a3d13ede11b3bc40191263e7d4e27efa5cc4fd",
-  "shard_08.jsonl.gz": "40b34a21be8463045772131f19956de6e9fabff51df494d2a1cb011af9c274f8",
-  "shard_09.jsonl.gz": "95d41ccf9feda614be7bd0c07efa08174fff8c5d84daeff22c03b259d4cd17cb",
-  "shard_10.jsonl.gz": "8827199552efe3ba36e970760551fe304cdf36262ab4e8cbc18aa749a85388ef",
-  "shard_11.jsonl.gz": "4e4e36dd1564956922852f22c98993efe22ae601bb05fb76b5b64b130deba693",
-  "shard_12.jsonl.gz": "b899c9989ec8c4c93588bbfe2dc2a6e5296be2b1d04b34ce0d72b65b7da47f5f",
-  "shard_13.jsonl.gz": "863c54a0d48810c0536e4853bb8accbd0252267f3c610ff30490954bde3bcdeb",
-  "shard_14.jsonl.gz": "18e4f1d32eb41c96fbe929a3d7bfecb4605c677fe8eb8d6941b61b2619cca184",
-  "shard_15.jsonl.gz": "19dc09da490ae410c0a7eb8bd8030fdf9652ee6b2c0eafe179fd91b66f708310",
-  "shard_16.jsonl.gz": "0ab4c4128ad01c82331bdd786c30da5f53ce3f91b0aaa95bf2317aa1eedbd9e7",
-  "shard_17.jsonl.gz": "80bfeba8f45c6b3e5db25485959f50fa083b9e025b6ab1db1bcec0fa1a83d581",
-  "shard_18.jsonl.gz": "044e58e997a224eecb4ed3c4c3c6c154f22f8f89eee32891e23d83ef82c59436",
-  "shard_19.jsonl.gz": "962c0d8123a16ce4678dffe003a90b69372922f7b0a77ba024ff3583fb826f55"
+  "shard_00.jsonl.gz": "8bab135431d968b15e15beffcc2c1f2b62f593e969958432e08d4e18d54ea6a7",
+  "shard_01.jsonl.gz": "499ac3295b12014d84dc01d8438515e885e1bb6869dffe917dd7d359e503c8cc",
+  "shard_02.jsonl.gz": "4c96d809b9fad518db19f17991d4d6c7636a6c07f18debe852eb5a9ecba3fa0f",
+  "shard_03.jsonl.gz": "3cb7fcb0f61c7480141d8f38be5585d354c7c960033f92a39726e87186db5182",
+  "shard_04.jsonl.gz": "a21d8cd68f9d94e0ff0819ed5688ed5c0d6510a25f6f033d7f36d16400400191",
+  "shard_05.jsonl.gz": "d996cea80d85cb5ba776ef1084bcc675dd44fd5accf196c3d1f4afbfc2ecd3a8",
+  "shard_06.jsonl.gz": "c337ed308addd05a9e3a62b6b202246c14d06920ad8f5d329c2c570d147b0a5b",
+  "shard_07.jsonl.gz": "7e5ac103ece11594a7a4397b37587f4e7ff407f45e3cf05954ba5fda4d3dfbe1",
+  "shard_08.jsonl.gz": "d0fd2cc4cc53ec62cdcdbd67eeeb5c10e3c0f91088d01af9c2d29f52434294b1",
+  "shard_09.jsonl.gz": "671ae9b15c01617813e2891f69938bea8672b261536a84c4f348ffb8b3fe049b",
+  "shard_10.jsonl.gz": "1f2da6093ba61d27c133f5cff77635cb851bc49e1e6d8e12d071fbac176bfa01",
+  "shard_11.jsonl.gz": "69c7b71a868b0e6f82b2c008165a2335f59c83a2a4ef5f57090d5cfcdd220452",
+  "shard_12.jsonl.gz": "781f6738d4586f98c7f0488fdd8ec5f35cbf6603329170d8f72c30a0b9828829",
+  "shard_13.jsonl.gz": "1a2dbe35370124d22f4fdfb5fc4adcb01c48a3e0da888ebb6e898d16797f30a7",
+  "shard_14.jsonl.gz": "699ab5697de6e0213a59f596b0603f2d0b1d94a47f5178e2254e679268daf2d6",
+  "shard_15.jsonl.gz": "199c6ef45d2552ce4bbb4fc0a936b22bdd9f6b47bfaf1d847d0d4d50bc307aea",
+  "shard_16.jsonl.gz": "520d1d5483d3611ad5c00106712d526f9a6013b2a5e3e38a0522333ac6715276",
+  "shard_17.jsonl.gz": "860a9a74818562be10cdfbd0f2d69a8df2230de9a6d2232bb5741ac292aa3c9b",
+  "shard_18.jsonl.gz": "5fd9ef04cea039a4682aafa33f3f23291dae2d55fa4b7c45ed25c6b864251a21",
+  "shard_19.jsonl.gz": "2700179f410b72edb347bd6ff5454c81a9071c9f5645687694c129a8aab87761"
  }
 }
