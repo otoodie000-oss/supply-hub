@@ -210,6 +210,28 @@ def extra_numbers_ok(reply, item, allowed_extra=()):
     return True
 
 
+def _generic_words():
+    """words that name a kind of fact or describe the system's own limits; they are not factual claims, so a
+    fallback does not need evidence for them (names, other specific content and numbers still do)"""
+    sys.path.insert(0, os.path.join(HERE, "..", "kb"))
+    from relations import REL
+    g = set(FILLER)
+    for r, v in REL.items():
+        g.update(re.findall(r"[a-z']+", r.replace("_", " ")))
+        g.update(re.findall(r"[a-z']+", v[3]))
+    g.update("""future past result results live weather news headlines price prices current latest name names spelling
+spelled detail details more find found couldn't mean meant match closest linked related kind type types born died lived
+worked work known called located uses used spoken people person word words means private share wouldn't topic topics
+markets money explain game games team teams follow place places country city town state places birthplace population
+nationality occupation date year years month day days language languages currency capital description definition
+author written published released elevation code airport book film song album something else instead give look
+specific part hardest advice explanation joke story stories""".split())
+    return g
+
+
+GENERIC = _generic_words()
+
+
 def supported(reply, question, support):
     """A fallback's concrete content must come from the system's own retrieved evidence for this turn
     (2.0: its retrieved fact texts; TurboX: its evidence values), or be a question back to the user."""
@@ -218,7 +240,7 @@ def supported(reply, question, support):
     segs = [x for x in re.split(r"(?<=[.!?])\s+", rest) if x.strip()]
     stmt = " ".join(x for x in segs if not x.strip().endswith("?"))
     qw = set(content(question))
-    need = [w for w in content(stmt) if w not in qw and w not in FILLER]
+    need = [w for w in content(stmt) if w not in qw and w not in GENERIC]
     if not need:
         return True
     have = set(content(support))

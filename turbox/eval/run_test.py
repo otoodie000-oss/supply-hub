@@ -58,6 +58,7 @@ def main():
                                      "q": it["turns"][-1], "reply": last["reply"], "mode": last["mode"],
                                      "evidence": last["evidence"], "conf": last.get("conf"), "trace": last["trace"],
                                      "turns": [x["reply"] for x in r] if len(r) > 1 else None,
+                                     "support": last["support"],
                                      "grade": lab, "form": form}) + "\n")
         os.replace(path + ".tmp", path)
         print("shard", k, "items", len(items), "secs", round(time.time() - t0, 1), flush=True)

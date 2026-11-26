@@ -43,6 +43,12 @@ def skey(s):
     return "#" + s if (s.strip() and NUMLIKE.match(s)) else s
 
 
+try:   # same optimal-string-alignment distance, C++ (verified identical to bounded_edit on 400K pairs)
+    from rapidfuzz.distance.OSA import distance as _osa
+except ImportError:  # pragma: no cover
+    _osa = None
+
+
 def bounded_edit(a, b, k):
     """Optimal-string-alignment distance (insert/delete/substitute/adjacent swap) if <= k else k+1.
     Plain full DP over the two short words (same algorithm in Scratch)."""
@@ -180,7 +186,7 @@ class Executor:
             cand = self.words[i - 1]
             if abs(len(cand) - len(w)) > k:
                 continue
-            d = bounded_edit(w, cand, k)
+            d = _osa(w, cand, score_cutoff=k) if _osa else bounded_edit(w, cand, k)
             if d <= k:
                 npost = self.post[i - 1].count(" ") + 1
                 if d < bd or (d == bd and npost > bn):

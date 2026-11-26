@@ -1,7 +1,7 @@
 {
  "project": "TurboX",
- "phase": "2",
- "step": "training tx2 = tx1 step 9308 + 8000 steps with fixed input vocab (QAT 31 levels from 6000); resume: sh engine/train_loop.sh tx2 4; then dev calibration (eval/dev_calib.py), build, parity",
+ "phase": "4 (fix pass 1)",
+ "step": "fix pass 1: training tx3 (from tx2, fx1 data with broader phrasings) 8000 steps; resume: sh engine/train_loop.sh tx3 4; then dev calib, 20K subset, build, parity, 1M",
  "done": [
   "audit_2_0 (results/audit_2_0.json)",
   "turbowarp_bench (int list 5.5 ns/MAC, 2-digit strings ~15 ns/MAC, bsearch 0.19 us)",
@@ -13,7 +13,9 @@
   "Phase 0d smoke: smoke.sb3 6.80 MB, load 0.47-0.70 s, flag->ready 180 ms, answer frames max 29 ms, boot frame max 49.9 ms; parity 84/84 turns (replies+traces) on 80 test items",
   "Training data: 4 x 300K traces (tx_a..d, seeds 197..200) + 20K dev traces from 3% dev-held-out entities; 55M positions; replay validator 1 failure / 30K",
   "Open-ended prompt sets frozen: results/open_prompts.json (300 rubric + 200 A/B, 0 8-gram overlap with training pools)",
-  "2.0 baseline graded: results/baseline_2_0.json (20.7% correct, 62.6% confidently wrong)"
+  "2.0 baseline graded: results/baseline_2_0.json (20.7% correct, 62.6% confidently wrong)",
+  "tx2 trained (tx1 9308 + 8000 steps, fixed vocab): dev 80.4% right, 1.17% wrong at bias 0; bias 1.5 -> 0.50% wrong / 1.63% over-cautious",
+  "20K test-subset diagnostic of tx2 @ bias 1.5: 57.4% correct, 35.7% confidently wrong (2.0: 20.8% / 62.2%) -> fix pass 1"
  ],
  "work_dir": "/home/user/work/x",
  "src_2_0": "/home/user/supply-hub/turbo2 (repo copy; /mnt/attach and uploads were empty)",
@@ -37,7 +39,10 @@
   "KB fix: capital/largest_city references resolved to same-named cities elsewhere (e.g. Augusta GA for Maine); now only cities inside that country/state; 830 test golds corrected (questions unchanged), test re-frozen.",
   "lists.json had been encoded before 'infinity' stopped being numeric-like: entity ids were shifted by one after it, so the trace generator mapped ~45% of lookups to the wrong id. Re-encoded; mapping now asserted against E_NAME.",
   "Open-ended replies copy stored texts (MIT jokes, the 207 original 2.0 stories, 46 explanations + 28 advice notes written for TurboX) chosen by a non-learned topic index; the model decides to call the tool, which words to pass, and writes the reply by copying/framing.",
-  "Input vocabulary bug found on dev: the input vocab held only word tokens, so + / * ^ = ( ) $ etc. all mapped to <unk> and the calculator picked wrong operators. 19 symbols replaced the 19 rarest input words (all other ids unchanged); data re-packed; training continued from tx1 step 9308 as run tx2 (tx1 stopped early)."
+  "Input vocabulary bug found on dev: the input vocab held only word tokens, so + / * ^ = ( ) $ etc. all mapped to <unk> and the calculator picked wrong operators. 19 symbols replaced the 19 rarest input words (all other ids unchanged); data re-packed; training continued from tx1 step 9308 as run tx2 (tx1 stopped early).",
+  "Fix pass 1 (driven by the 20K stratified test subset, not the full 1M): training phrasings were ~4 per relation / 3 per tool / 2 per derived kind, so test phrasings did not generalize. Added traingen/pools_x.py (compositional frames, relation nouns, 8-12 phrasings per tool, more derived/unknowable/follow-up phrasings, unsupported-relation questions); 55 new templates were dropped automatically for equalling a test template; 8-gram filter still applied.",
+  "Grader fix (applies to 2.0 and TurboX equally): fallback support check no longer requires evidence for words that name a kind of fact or the system's own limits (occupation, nationality, future, spelling...); names and numbers still must be supported. 2.0 regraded: 20.8% correct / 62.2% CW.",
+  "Fallback content now must add a fact the question did not already state (bare-IDK fix); not-found replies name the searched term."
  ],
  "decisions": [
   "Weights stored as 2-digit decimal strings with QAT (~0.7 deflated bytes/weight at 32 levels vs 1.24 for 2.0's int8 list items); decode costs ~2.8x compute.",

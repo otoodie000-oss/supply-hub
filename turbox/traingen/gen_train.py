@@ -32,6 +32,7 @@ from executor import Executor, num_of  # noqa: E402
 from vocab import TOK_OF_REL  # noqa: E402
 import twins  # noqa: E402
 import pools_train as P  # noqa: E402
+import pools_x as PX  # noqa: E402
 from gen_test import title_case, NAMED_TYPES, qualifier, date_parts  # noqa: E402  (mention helpers only)
 from textnorm import filter_chars  # noqa: E402
 
@@ -42,6 +43,59 @@ FB_REL = {"p": ["description", "occupation", "nationality", "birth_date", "birth
           "a": ["city", "country"], "b": ["author", "publication_year"], "w": ["description", "located_in"],
           "o": ["definition", "is_a"], "v": ["definition"], "j": ["definition"], "e": ["symbol", "atomic_number"],
           "l": ["planet_type", "planet_order"], "s": ["capital", "abbreviation"]}
+
+
+def _norm_t(t):
+    return " ".join(re.sub(r"[^a-z0-9{} ]", " ", t.lower()).split())
+
+
+def merge_pools():
+    """fix pass 1: add the broader training phrasings; drop any template equal to a test template"""
+    import pools_test as PT
+    test = set()
+
+    def walk(x):
+        if isinstance(x, dict):
+            for v in x.values():
+                walk(v)
+        elif isinstance(x, (list, tuple)):
+            for v in x:
+                walk(v)
+        elif isinstance(x, str):
+            test.add(_norm_t(x))
+    for name in dir(PT):
+        if name.isupper():
+            walk(getattr(PT, name))
+    dropped = []
+
+    def add(pool, extra):
+        for t in extra:
+            if _norm_t(t) in test:
+                dropped.append(t)
+            elif t not in pool:
+                pool.append(t)
+    for k, v in PX.TOOL_X.items():
+        add(P.TOOL_TRAIN.setdefault(k, []), v)
+    for k, v in PX.DERIVED_X.items():
+        add(P.DERIVED_TRAIN.setdefault(k, []), v)
+    for k, v in PX.UNKNOWABLE_X.items():
+        add(P.UNKNOWABLE_TRAIN.setdefault(k, []), v)
+    P.UNKNOWABLE_REPLY.update(PX.UNKNOWABLE_X_REPLY)
+    for k, v in PX.FOLLOWUP_X.items():
+        add(P.FOLLOWUP_REL_TRAIN.setdefault(k, []), v)
+    for k, v in PX.REL_Q.items():
+        if isinstance(v, dict):
+            for kk, vv in v.items():
+                add(P.REL_TRAIN[k][kk], vv)
+        elif k in P.REL_TRAIN and not isinstance(P.REL_TRAIN[k], dict):
+            add(P.REL_TRAIN[k], v)
+    PX.GEN_FRAMES[:] = [f for f in PX.GEN_FRAMES if _norm_t(f) not in test]
+    for k, v in PX.UNSUPPORTED_X.items():
+        PX.UNSUPPORTED_X[k] = [t for t in v if _norm_t(t) not in test] or v[:0]
+    return dropped
+
+
+MERGE_DROPPED = merge_pools()
 
 
 class Trace:
@@ -118,6 +172,17 @@ class Gen:
         q = qualifier(kb, e)
         return q, False
 
+    def wrap(self, t):
+        """optional conversational prefix/suffix (training phrasing variety)"""
+        r = self.r
+        if r.random() < 0.3:
+            pre, post = r.choice(PX.PRE), r.choice(PX.POST)
+            if pre:
+                t = pre + t[0].lower() + t[1:]
+            if post:
+                t = t.rstrip("?.!") + post + ("" if post.endswith("?") else "?" if t.rstrip().endswith("?") else "")
+        return t
+
     def maybe_messy(self, text):
         if self.r.random() < MESSY_P:
             return messy(text, self.r)[0]
@@ -149,6 +214,7 @@ class Gen:
         m = self.find_tokens(qtoks, e)
         if m is None:
             return None, []
+        self.last_mention = m
         tr.out(["<find>"] + m + ["</find>"])
         ids = self.X.find(m)
         tr.inp([t for _, t in self.X.render_cands(ids)])
@@ -208,6 +274,14 @@ class Gen:
                 tmpl = r.choice(pool[key])
             else:
                 tmpl = r.choice(pool)
+            nouns = PX.REL_NOUN.get(rel)
+            if nouns and r.random() < 0.45:     # compositional: generic frame + relation noun
+                if isinstance(nouns, dict):
+                    key2 = variant if variant in nouns else ("person" if e["type"] == "person" else "thing")
+                    nouns = nouns.get(key2) or []
+                if nouns:
+                    tmpl = r.choice(PX.GEN_FRAMES).replace("{n}", r.choice(nouns))
+            tmpl = self.wrap(tmpl)
             q = self.maybe_messy(tmpl.replace("{e}", m))
             tr = Trace()
             qt = norm_q(q)
@@ -216,14 +290,14 @@ class Gen:
             if k is None:
                 continue
             if k == 0:
-                self.reply_not_found(tr, qt, ids)
+                self.reply_not_found(tr, qt, ids, self.last_mention)
                 return tr, "kb_notfound"
             tr.out(["<pick%d>" % k])
             eid = ids[k - 1]
             vals, asof, ref, found = self.lookup(tr, eid, rel)
             E = self.name_toks(eid)
             if not found:
-                self.fallback(tr, eid, rel, E)
+                self.fallback(tr, eid, rel, E, qt)
                 return tr, "kb_missing"
             key = rel
             if rel in ("birth_date", "death_date") and variant == "year":
@@ -252,12 +326,21 @@ class Gen:
                 "wiki": ["description", "founded_year", "release_year", "located_in", "director"],
                 "word_n": ["definition", "is_a"]}.get(t, ["description"])
 
-    def fallback(self, tr, eid, rel, E):
-        """<nov>: look up a related fact and write a fallback that shares it."""
+    def new_fact_ok(self, eid, rel2, qt):
+        """a fallback fact must add something: its value is not already all in the question"""
+        toks, ref, found = self.X.value(eid, rel2)
+        vals = [t for _, t in toks if not t.startswith("<")]
+        if not found or not vals:
+            return False
+        qs = set(qt or [])
+        return any(v not in qs for v in vals if v[:1].isalnum())
+
+    def fallback(self, tr, eid, rel, E, qt=None):
+        """<nov>: look up a related fact (one the question did not already state) and share it."""
         r = self.r
         t = self.X.rec(eid)["type"]
         for rel2 in r.sample(FB_REL.get(t, ["description"]), len(FB_REL.get(t, ["description"]))):
-            if rel2 == rel or not self.X.fact(eid, rel2):
+            if rel2 == rel or not self.X.fact(eid, rel2) or not self.new_fact_ok(eid, rel2, qt):
                 continue
             vals, asof, ref, found = self.lookup(tr, eid, rel2)
             fk = {"description": "{E} is a {V}", "definition": "{E} means {V}", "country": "{E} is in {V}",
@@ -285,9 +368,12 @@ class Gen:
         self.say(tr, "<say_fb>", "I don't have {E}'s {R} in my offline knowledge. Is there something else about {E} I can look up?",
                  {"E": E, "R": R})
 
-    def reply_not_found(self, tr, qt, ids):
-        """the entity is not among the candidates: fall back, naming what was found."""
+    def reply_not_found(self, tr, qt, ids, mention=None):
+        """the entity is not among the candidates: fall back, naming what was found (or what was searched)."""
         r = self.r
+        if not ids and mention:
+            self.say(tr, "<say_fb>", r.choice(PX.NOT_FOUND_X), {"M": mention})
+            return
         if ids:
             A = self.name_toks(ids[0])
             D = self.X.describe(ids[0])
@@ -790,13 +876,53 @@ class Gen:
                 eid = self.find_pick(tr, qt, e)
                 if not eid:
                     return None, None
-                rel2 = "country" if e["type"] == "city" else ("description" if X.fact(eid, "description") else "birth_date")
+                opts = ["country", "population", "description"] if e["type"] == "city" else ["description", "birth_date"]
+                rel2 = next((x for x in opts if X.fact(eid, x) and self.new_fact_ok(eid, x, qt)), None)
+                if rel2 is None:
+                    return None, None
                 v, a, _, ok = self.lookup(tr, eid, rel2)
                 if not ok:
                     return None, None
-                F = self.name_toks(eid) + (["is", "in"] if rel2 == "country" else (["is", "a"] if rel2 == "description" else ["was", "born", "on"])) + v
+                lead = {"country": ["is", "in"], "description": ["is", "a"], "birth_date": ["was", "born", "on"],
+                        "population": ["has", "a", "population", "of"]}[rel2]
+                F = self.name_toks(eid) + lead + v + (["as", "of", a] if a else [])
         self.say(tr, "<say_fb>", tmpl, {"F": F})
         return tr, "unknowable_" + kind
+
+    def unsupported(self):
+        """a question about a known entity that the KB has no relation for: fall back with a known fact"""
+        r, X = self.r, self.X
+        typ = r.choice(sorted(PX.UNSUPPORTED_X))
+        pool = PX.UNSUPPORTED_X[typ]
+        if not pool:
+            return None, None
+        e, m = self.pick_ent([typ], [])
+        if not e:
+            return None, None
+        tr, qt = self.start(self.wrap(r.choice(pool)).replace("{e}", m))
+        eid = self.find_pick(tr, qt, e)
+        if not eid:
+            return None, None
+        tcode = X.rec(eid)["type"]
+        opts = [x for x in FB_REL.get(tcode, ["description"]) if X.fact(eid, x) and self.new_fact_ok(eid, x, qt)]
+        if not opts:
+            return None, None
+        rel2 = r.choice(opts)
+        vals, asof, ref, found = self.lookup(tr, eid, rel2)
+        E = self.name_toks(eid)
+        fk = {"description": "{E} is a {V}", "country": "{E} is in {V}", "state": "{E} is in {V}", "city": "{E} is in {V}",
+              "capital": "the capital of {E} is {V}", "continent": "{E} is in {V}", "author": "{E} was written by {V}",
+              "occupation": "{E} worked as a {V}", "nationality": "{E}'s nationality is {V}",
+              "birth_date": "{E} was born on {V}", "birth_place": "{E} was born in {V}",
+              "population": "{E} has a population of {V}", "currency": "{E} uses the {V}",
+              "publication_year": "{E} came out in {V}"}.get(rel2, "{E}: {V}")
+        F = []
+        for part in re.split(r"(\{[A-Z]+\})", fk):
+            F += E if part == "{E}" else vals if part == "{V}" else (split(part) if part else [])
+        if asof:
+            F += ["as", "of", asof]
+        self.say(tr, "<say_fb>", r.choice(PX.UNSUPPORTED_REPLY), {"E": E, "F": F})
+        return tr, "unsupported_" + typ
 
     # ------------------------------------------------------------ multi-turn: follow-ups and recall
     def ctx_prefix(self, tr, rel, eid):
@@ -1014,8 +1140,8 @@ class Gen:
         return True
 
 
-MIX = [("kb_fact", 40), ("kb_missing", 6), ("derived", 14), ("tool", 15), ("unknowable", 3), ("ambiguous", 4),
-       ("underspecified", 1), ("followup", 6), ("recall", 5), ("chat", 2), ("open_ended", 5)]
+MIX = [("kb_fact", 40), ("kb_missing", 6), ("derived", 14), ("tool", 15), ("unknowable", 4), ("ambiguous", 4),
+       ("underspecified", 1), ("followup", 6), ("recall", 5), ("chat", 2), ("open_ended", 5), ("unsupported", 4)]
 
 
 def test_ngrams():

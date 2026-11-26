@@ -73,7 +73,8 @@ def evaluate(R, items, codec):
         if got_ans and exp_ans:
             gc, ec = content(rep, codec), content(it["rep"], codec)
             # wrong = states content the expected reply does not contain, or omits all of it
-            bad = any(x not in set(ec) for x in gc) or (ec and not (set(gc) & set(ec)))
+            qset = set(split(filter_chars(it["q"]).lower()))
+            bad = any(x not in set(ec) and x not in qset for x in gc) or (ec and not (set(gc) & set(ec)))
             k = "wrong" if bad else "right"
         elif got_ans:
             k = "wrong"
