@@ -18,6 +18,12 @@ for p in ("common", "helpers", "kb", "engine", "testgen", "traingen"):
     sys.path.insert(0, os.path.join(ROOT, p))
 sys.path.insert(0, ROOT)
 from kbx import KB, is_test_only  # noqa: E402
+import hashlib  # noqa: E402
+
+
+def is_dev_only(key):
+    """3% of the non-test entities are kept out of training traces for calibration (dev)"""
+    return int(hashlib.sha1(("turbox-dev:" + key).encode()).hexdigest(), 16) % 100 < 3
 from relations import REL  # noqa: E402
 from render import MONTHS  # noqa: E402
 from noise import messy  # noqa: E402
@@ -69,7 +75,9 @@ class Gen:
             pass
         # entity key -> executor id: by (token key, prior order) via matching names
         self.ent_id = self._map_ids()
-        self.train_ents = [e for e in kb.ents if not is_test_only(e["key"]) and e["key"] in self.ent_id]
+        dev = os.environ.get("TX_DEV") == "1"   # dev traces: only the 3% dev-held-out entities
+        self.train_ents = [e for e in kb.ents if not is_test_only(e["key"]) and e["key"] in self.ent_id
+                           and is_dev_only(e["key"]) == dev]
         self.rel_facts = {}
         for e in self.train_ents:
             for f in e["facts"]:
@@ -335,6 +343,8 @@ class Gen:
     def pick_ent(self, types, rels, pred=None):
         r = self.r
         pool = [e for t in types for e in self.by_type.get(t, [])]
+        if not pool:
+            return None, None
         for _ in range(200):
             e = pool[r.randrange(len(pool))]
             if all(self.kb.value(e, x) for x in rels) and (pred is None or pred(e)):

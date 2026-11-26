@@ -59,6 +59,26 @@ def check_sorted(name, items, single_digits_ok=False):
             raise SystemExit("numeric-looking key in sorted list %s: %r" % (name, a))
 
 
+TOOLS_A = ["time", "date", "weekday", "days_until", "days_since", "date_add", "age", "leap", "week", "world_time",
+           "holiday", "timer"]
+
+
+def split_tools(src):
+    """2.0's run_tool dispatcher -> run_tool_a (time/date tools) + run_tool_b (math/text tools), so the two
+    tools workers compile only their own helpers"""
+    a = src.index("@proc\ndef run_tool(callstr):")
+    head = src[a:]
+    i_time = head.index('    if name == "time":')
+    i_calc = head.index('    if name == "calc":')
+    i_end = head.index('    return "unknown tool"')
+    pre = head[:i_time]
+    tail = head[i_end:]
+    ra = pre.replace("def run_tool(callstr):", "def run_tool_a(callstr):") + head[i_time:i_calc] + tail
+    rb = pre.replace("def run_tool(callstr):", "def run_tool_b(callstr):") + head[i_calc:i_end] + tail
+    assert all('if name == "%s"' % t in ra for t in TOOLS_A)
+    return src[:a] + ra + "\n" + rb
+
+
 def const_source(lay, cfg):
     G = cfg["n_gen"]
     rng = lambda toks: (SID[toks[0]], SID[toks[-1]])  # noqa: E731
@@ -75,7 +95,7 @@ def const_source(lay, cfg):
         "ID_SAYFB": SID["<say_fb>"], "ID_ENDFIND": SID["</find>"], "ID_ENDTOOL": SID["</tool>"],
         "TOOL_LO": tl, "TOOL_HI": th, "ARG_LO": al, "ARG_HI": ah, "OPS_LO": ol, "OPS_HI": oh, "MEM_LO": ml,
         "MEM_HI": mh, "ID_SEP": SID["<sep>"], "ID_END": SID["<end>"], "N_SPEC": len(SPECIALS), "N_GEN": G,
-        "U_HK": lay.U_HK, "U_HV": lay.U_HV, "ID_NUM": SID["<num>"], "ID_UNK": SID["<unk>"], "CHAT_MAX": CHAT_MAX,
+        "U_HK": lay.U_HK, "U_HV": lay.U_HV, "U_SPLIT": lay.U_SPLIT, "ID_NUM": SID["<num>"], "ID_UNK": SID["<unk>"], "CHAT_MAX": CHAT_MAX,
         "FZ_STEP": FZ_STEP, "UNIT_CAP": 200, "RESET_TXT": SS.RESET, "HELP_TXT": SS.HELP,
         "C_DESC": REL["description"][0], "C_STATE": REL["state"][0], "C_COUNTRY": REL["country"][0],
         "C_CITY": REL["city"][0], "C_AUTHOR": REL["author"][0], "C_OCC": REL["occupation"][0],
@@ -160,6 +180,10 @@ def declare_tables(P, cfg):
     for k in order:   # each kind contiguous
         lo, hi = kinds.index(k), len(kinds) - 1 - kinds[::-1].index(k)
         assert all(x == k for x in kinds[lo:hi + 1])
+    P.lst("TOOLS_A", TOOLS_A)
+    P.lst("NAMED_T", list(EX.NAMED_TYPES))
+    P.lst("SMALLW", list(EX.SMALLW))
+    P.lst("RCAP", [1 if REL_OF_TOK[t] in EX.CAP_RELS else 0 for t in REL_TOK])
     P.lst("TYPE_CODE", list(EX.TYPE_PHRASE.keys()))
     P.lst("TYPE_PHRASE", list(EX.TYPE_PHRASE.values()))
     return None
@@ -179,11 +203,11 @@ def build(ckpt, out, levels=None, fbb=0.0):
             (const_source(lay, cfg), "consts", eng),
             (rt_text.SRC, "rt_text", eng),
             (rt_kb.SRC, "rt_kb", eng),
-            (scratch_tools.tools_source(), "tools", eng),
+            (split_tools(scratch_tools.tools_source()), "tools", eng),
             (rt_model.model_source(lay), "rt_model", eng),
             (rt_turn.SRC, "rt_turn", eng),
-            (rt_turn.K_SRC, "rt_kworker", eng),
-            (rt_turn.T_SRC, "rt_tworker", eng)]
+            (rt_turn.K1_SRC, "rt_k1", eng), (rt_turn.K2_SRC, "rt_k2", eng), (rt_turn.X_SRC, "rt_x", eng),
+            (rt_turn.TA_SRC, "rt_ta", eng), (rt_turn.TB_SRC, "rt_tb", eng)]
     if os.environ.get("TX_DBG_HATS"):
         mods.append(('@when_broadcast("x_tools")\ndef _xt():\n    run_tool("")\n\n'
                      '@when_broadcast("x_model")\ndef _xm():\n    fwd_unit(0)\n\n'

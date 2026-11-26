@@ -23,10 +23,23 @@ WORK = "/home/user/work/x"
 
 class Data:
     def __init__(self, d, seed):
-        self.cols = {k: np.load(os.path.join(d, k + ".npy"), mmap_mode="r")
-                     for k in ("inp", "wtype", "shash", "copyable", "gen", "tgt")}
-        self.off = np.load(os.path.join(d, "offsets.npy"))
-        words = json.load(open(os.path.join(d, "words.json")))
+        """d: one pack directory or a list of them (concatenated; word-type ids shifted per pack)"""
+        dirs = d if isinstance(d, list) else [d]
+        cols = {k: [] for k in ("inp", "wtype", "shash", "copyable", "gen", "tgt")}
+        offs, words, base = [np.zeros(1, dtype=np.int64)], [], 0
+        for dd in dirs:
+            wl = json.load(open(os.path.join(dd, "words.json")))
+            for k in cols:
+                a = np.load(os.path.join(dd, k + ".npy"))
+                if k == "wtype":
+                    a = np.where(a > 0, a + len(words), 0).astype(np.int32)
+                cols[k].append(a)
+            o = np.load(os.path.join(dd, "offsets.npy"))
+            offs.append(o[1:] + base)
+            base += int(o[-1])
+            words += wl if not words else wl   # index 0 of every table is "" (no word)
+        self.cols = {k: np.concatenate(v) for k, v in cols.items()}
+        self.off = np.concatenate(offs)
         self.tri = np.zeros((len(words), MAX_TRI), dtype=np.int16)
         for i, w in enumerate(words):
             if w:
@@ -37,11 +50,26 @@ class Data:
         lens = self.off[1:] - self.off[:-1]
         self.lens = lens
 
-    def order(self, epoch):
-        """length-bucketed shuffled batches of trace indices"""
+    def batches(self, epoch, tokens):
+        """length-bucketed batches: shuffle, sort chunks of ~200 traces by length, cut batches of <= `tokens`
+        padded tokens, shuffle the batch order (deterministic per epoch)"""
         rng = np.random.RandomState(self.seed + epoch)
         idx = rng.permutation(self.n)
-        return idx
+        out = []
+        for c in range(0, self.n, 4096):
+            ch = idx[c:c + 4096]
+            ch = ch[np.argsort(self.lens[ch], kind="stable")]
+            cur = []
+            for i in ch:
+                L = max([self.lens[j] for j in cur[-1:]] + [self.lens[i]])
+                if cur and (len(cur) + 1) * L > tokens:
+                    out.append(np.array(cur))
+                    cur = []
+                cur.append(i)
+            if cur:
+                out.append(np.array(cur))
+        rng.shuffle(out)
+        return out
 
     def batch(self, ids):
         L = int(max(self.lens[i] for i in ids))
@@ -111,24 +139,38 @@ def main():
     elif r.get("init_from"):
         model.load_state_dict(torch.load(r["init_from"], weights_only=False)["model"])
     data = Data(r["data"], r.get("seed", 1))
-    bs = r["batch"]
-    order = data.order(state["epoch"])
+    toks = r.get("batch_tokens", 8192)
+    order = data.batches(state["epoch"], toks)
+    qparams = [p for n_, p in model.named_parameters() if p.dim() == 2]
+    qhi = (r["qat_levels"] - 1) // 2 if r.get("qat_levels") else None
     t0 = time.time()
     losses, accs = [], []
     while state["step"] < r["steps"] and time.time() - t0 < a.budget:
         lr = lr_at(state["step"], r)
         for g in opt.param_groups:
             g["lr"] = lr
-        if state["cursor"] + bs > data.n:
+        if state["cursor"] >= len(order):
             state["epoch"] += 1
             state["cursor"] = 0
-            order = data.order(state["epoch"])
-        ids = order[state["cursor"]:state["cursor"] + bs]
-        state["cursor"] += bs
+            order = data.batches(state["epoch"], toks)
+        ids = order[state["cursor"]]
+        state["cursor"] += 1
         b = data.batch(ids)
+        qat = qhi is not None and state["step"] >= r.get("qat_from", 0)
+        saved = []
+        if qat:   # forward/backward on the export grid (per-row 2-digit codes); update the float weights (STE)
+            with torch.no_grad():
+                for p in qparams:
+                    saved.append(p.data.clone())
+                    m = p.data.abs().amax(1, keepdim=True).clamp(min=1e-12) / qhi
+                    p.data.copy_(torch.clamp(torch.round(p.data / m), -qhi, qhi) * m)
         with torch.autocast("cpu", dtype=torch.bfloat16, enabled=r.get("bf16", True)):
             loss, acc, n = loss_fn(model, b)
         loss.backward()
+        if qat:
+            with torch.no_grad():
+                for p, v in zip(qparams, saved):
+                    p.data.copy_(v)
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         opt.step()
         opt.zero_grad(set_to_none=True)

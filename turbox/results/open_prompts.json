@@ -1,0 +1,2308 @@
+{
+ "seed": 4401,
+ "rubric": [
+  {
+   "id": "r000",
+   "kind": "story",
+   "prompt": "Tell a children's story about a lonely robot."
+  },
+  {
+   "id": "r001",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a brave little fox."
+  },
+  {
+   "id": "r002",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a dragon who loves books?"
+  },
+  {
+   "id": "r003",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a lighthouse."
+  },
+  {
+   "id": "r004",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a lost kitten."
+  },
+  {
+   "id": "r005",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about two best friends."
+  },
+  {
+   "id": "r006",
+   "kind": "story",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  {
+   "id": "r007",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a pirate ship."
+  },
+  {
+   "id": "r008",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a magic garden."
+  },
+  {
+   "id": "r009",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  {
+   "id": "r010",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about the moon."
+  },
+  {
+   "id": "r011",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a talking tree."
+  },
+  {
+   "id": "r012",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a rainy day?"
+  },
+  {
+   "id": "r013",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a birthday party."
+  },
+  {
+   "id": "r014",
+   "kind": "story",
+   "prompt": "Tell a children's story about a shy turtle."
+  },
+  {
+   "id": "r015",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a treehouse?"
+  },
+  {
+   "id": "r016",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about an old clock."
+  },
+  {
+   "id": "r017",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a hot air balloon?"
+  },
+  {
+   "id": "r018",
+   "kind": "story",
+   "prompt": "Tell a children's story about a baker."
+  },
+  {
+   "id": "r019",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a wizard."
+  },
+  {
+   "id": "r020",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a spaceship."
+  },
+  {
+   "id": "r021",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a soccer game."
+  },
+  {
+   "id": "r022",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a missing key?"
+  },
+  {
+   "id": "r023",
+   "kind": "story",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  {
+   "id": "r024",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a penguin."
+  },
+  {
+   "id": "r025",
+   "kind": "story",
+   "prompt": "Tell a children's story about a river."
+  },
+  {
+   "id": "r026",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a kite?"
+  },
+  {
+   "id": "r027",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a musician."
+  },
+  {
+   "id": "r028",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a library."
+  },
+  {
+   "id": "r029",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a farm."
+  },
+  {
+   "id": "r030",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  {
+   "id": "r031",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a brave little fox."
+  },
+  {
+   "id": "r032",
+   "kind": "story",
+   "prompt": "Tell a children's story about a dragon who loves books."
+  },
+  {
+   "id": "r033",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a lighthouse?"
+  },
+  {
+   "id": "r034",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a lost kitten?"
+  },
+  {
+   "id": "r035",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about two best friends."
+  },
+  {
+   "id": "r036",
+   "kind": "story",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  {
+   "id": "r037",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a pirate ship?"
+  },
+  {
+   "id": "r038",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a magic garden."
+  },
+  {
+   "id": "r039",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a sleepy bear."
+  },
+  {
+   "id": "r040",
+   "kind": "story",
+   "prompt": "Tell a children's story about the moon."
+  },
+  {
+   "id": "r041",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a talking tree."
+  },
+  {
+   "id": "r042",
+   "kind": "story",
+   "prompt": "Tell a children's story about a rainy day."
+  },
+  {
+   "id": "r043",
+   "kind": "story",
+   "prompt": "Tell a children's story about a birthday party."
+  },
+  {
+   "id": "r044",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a shy turtle."
+  },
+  {
+   "id": "r045",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a treehouse."
+  },
+  {
+   "id": "r046",
+   "kind": "story",
+   "prompt": "Could you write me a little story about an old clock?"
+  },
+  {
+   "id": "r047",
+   "kind": "story",
+   "prompt": "Tell a children's story about a hot air balloon."
+  },
+  {
+   "id": "r048",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a baker."
+  },
+  {
+   "id": "r049",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a wizard?"
+  },
+  {
+   "id": "r050",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a spaceship?"
+  },
+  {
+   "id": "r051",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a soccer game."
+  },
+  {
+   "id": "r052",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a missing key?"
+  },
+  {
+   "id": "r053",
+   "kind": "story",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  {
+   "id": "r054",
+   "kind": "story",
+   "prompt": "Tell a children's story about a penguin."
+  },
+  {
+   "id": "r055",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a river."
+  },
+  {
+   "id": "r056",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a kite."
+  },
+  {
+   "id": "r057",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a musician?"
+  },
+  {
+   "id": "r058",
+   "kind": "story",
+   "prompt": "I'd like to hear a tale about a library."
+  },
+  {
+   "id": "r059",
+   "kind": "story",
+   "prompt": "Tell a children's story about a farm."
+  },
+  {
+   "id": "r060",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  {
+   "id": "r061",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a brave little fox."
+  },
+  {
+   "id": "r062",
+   "kind": "story",
+   "prompt": "Tell a children's story about a dragon who loves books."
+  },
+  {
+   "id": "r063",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a lighthouse."
+  },
+  {
+   "id": "r064",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a lost kitten?"
+  },
+  {
+   "id": "r065",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring two best friends."
+  },
+  {
+   "id": "r066",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a snowman?"
+  },
+  {
+   "id": "r067",
+   "kind": "story",
+   "prompt": "Tell a children's story about a pirate ship."
+  },
+  {
+   "id": "r068",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a magic garden."
+  },
+  {
+   "id": "r069",
+   "kind": "story",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  {
+   "id": "r070",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring the moon."
+  },
+  {
+   "id": "r071",
+   "kind": "story",
+   "prompt": "Tell a children's story about a talking tree."
+  },
+  {
+   "id": "r072",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a rainy day."
+  },
+  {
+   "id": "r073",
+   "kind": "story",
+   "prompt": "Spin me a short story featuring a birthday party."
+  },
+  {
+   "id": "r074",
+   "kind": "story",
+   "prompt": "Write a bedtime tale about a shy turtle."
+  },
+  {
+   "id": "r075",
+   "kind": "joke",
+   "prompt": "Give me a pun about cats."
+  },
+  {
+   "id": "r076",
+   "kind": "joke",
+   "prompt": "Give me a pun about dogs."
+  },
+  {
+   "id": "r077",
+   "kind": "joke",
+   "prompt": "Know a good one about computers?"
+  },
+  {
+   "id": "r078",
+   "kind": "joke",
+   "prompt": "Say a joke about math."
+  },
+  {
+   "id": "r079",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about school?"
+  },
+  {
+   "id": "r080",
+   "kind": "joke",
+   "prompt": "Hit me with a fish joke."
+  },
+  {
+   "id": "r081",
+   "kind": "joke",
+   "prompt": "Know a good one about coffee?"
+  },
+  {
+   "id": "r082",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about teachers?"
+  },
+  {
+   "id": "r083",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about the ocean?"
+  },
+  {
+   "id": "r084",
+   "kind": "joke",
+   "prompt": "Say a joke about pizza."
+  },
+  {
+   "id": "r085",
+   "kind": "joke",
+   "prompt": "Hit me with a bananas joke."
+  },
+  {
+   "id": "r086",
+   "kind": "joke",
+   "prompt": "Say a joke about music."
+  },
+  {
+   "id": "r087",
+   "kind": "joke",
+   "prompt": "Know a good one about space?"
+  },
+  {
+   "id": "r088",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about chickens?"
+  },
+  {
+   "id": "r089",
+   "kind": "joke",
+   "prompt": "Give me a pun about cows."
+  },
+  {
+   "id": "r090",
+   "kind": "joke",
+   "prompt": "Say a joke about doctors."
+  },
+  {
+   "id": "r091",
+   "kind": "joke",
+   "prompt": "Know a good one about trees?"
+  },
+  {
+   "id": "r092",
+   "kind": "joke",
+   "prompt": "Know a good one about skeletons?"
+  },
+  {
+   "id": "r093",
+   "kind": "joke",
+   "prompt": "Give me a pun about bicycles."
+  },
+  {
+   "id": "r094",
+   "kind": "joke",
+   "prompt": "Give me a pun about books."
+  },
+  {
+   "id": "r095",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about the weather?"
+  },
+  {
+   "id": "r096",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about bees?"
+  },
+  {
+   "id": "r097",
+   "kind": "joke",
+   "prompt": "Say a joke about ghosts."
+  },
+  {
+   "id": "r098",
+   "kind": "joke",
+   "prompt": "Hit me with a eggs joke."
+  },
+  {
+   "id": "r099",
+   "kind": "joke",
+   "prompt": "Give me a pun about time."
+  },
+  {
+   "id": "r100",
+   "kind": "joke",
+   "prompt": "Say a joke about shoes."
+  },
+  {
+   "id": "r101",
+   "kind": "joke",
+   "prompt": "Hit me with a elephants joke."
+  },
+  {
+   "id": "r102",
+   "kind": "joke",
+   "prompt": "Know a good one about money?"
+  },
+  {
+   "id": "r103",
+   "kind": "joke",
+   "prompt": "Say a joke about cheese."
+  },
+  {
+   "id": "r104",
+   "kind": "joke",
+   "prompt": "Know a good one about programmers?"
+  },
+  {
+   "id": "r105",
+   "kind": "joke",
+   "prompt": "Know a good one about cats?"
+  },
+  {
+   "id": "r106",
+   "kind": "joke",
+   "prompt": "Hit me with a dogs joke."
+  },
+  {
+   "id": "r107",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about computers?"
+  },
+  {
+   "id": "r108",
+   "kind": "joke",
+   "prompt": "Know a good one about math?"
+  },
+  {
+   "id": "r109",
+   "kind": "joke",
+   "prompt": "Hit me with a school joke."
+  },
+  {
+   "id": "r110",
+   "kind": "joke",
+   "prompt": "Hit me with a fish joke."
+  },
+  {
+   "id": "r111",
+   "kind": "joke",
+   "prompt": "Give me a pun about coffee."
+  },
+  {
+   "id": "r112",
+   "kind": "joke",
+   "prompt": "Say a joke about teachers."
+  },
+  {
+   "id": "r113",
+   "kind": "joke",
+   "prompt": "Give me a pun about the ocean."
+  },
+  {
+   "id": "r114",
+   "kind": "joke",
+   "prompt": "Say a joke about pizza."
+  },
+  {
+   "id": "r115",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about bananas?"
+  },
+  {
+   "id": "r116",
+   "kind": "joke",
+   "prompt": "Say a joke about music."
+  },
+  {
+   "id": "r117",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about space?"
+  },
+  {
+   "id": "r118",
+   "kind": "joke",
+   "prompt": "Say a joke about chickens."
+  },
+  {
+   "id": "r119",
+   "kind": "joke",
+   "prompt": "Say a joke about cows."
+  },
+  {
+   "id": "r120",
+   "kind": "joke",
+   "prompt": "Know a good one about doctors?"
+  },
+  {
+   "id": "r121",
+   "kind": "joke",
+   "prompt": "Hit me with a trees joke."
+  },
+  {
+   "id": "r122",
+   "kind": "joke",
+   "prompt": "Say a joke about skeletons."
+  },
+  {
+   "id": "r123",
+   "kind": "joke",
+   "prompt": "Know a good one about bicycles?"
+  },
+  {
+   "id": "r124",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about books?"
+  },
+  {
+   "id": "r125",
+   "kind": "joke",
+   "prompt": "Say a joke about the weather."
+  },
+  {
+   "id": "r126",
+   "kind": "joke",
+   "prompt": "Hit me with a bees joke."
+  },
+  {
+   "id": "r127",
+   "kind": "joke",
+   "prompt": "Hit me with a ghosts joke."
+  },
+  {
+   "id": "r128",
+   "kind": "joke",
+   "prompt": "Give me a pun about eggs."
+  },
+  {
+   "id": "r129",
+   "kind": "joke",
+   "prompt": "Say a joke about time."
+  },
+  {
+   "id": "r130",
+   "kind": "joke",
+   "prompt": "Know a good one about shoes?"
+  },
+  {
+   "id": "r131",
+   "kind": "joke",
+   "prompt": "Know a good one about elephants?"
+  },
+  {
+   "id": "r132",
+   "kind": "joke",
+   "prompt": "Give me a pun about money."
+  },
+  {
+   "id": "r133",
+   "kind": "joke",
+   "prompt": "Give me a pun about cheese."
+  },
+  {
+   "id": "r134",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about programmers?"
+  },
+  {
+   "id": "r135",
+   "kind": "joke",
+   "prompt": "Give me a pun about cats."
+  },
+  {
+   "id": "r136",
+   "kind": "joke",
+   "prompt": "Say a joke about dogs."
+  },
+  {
+   "id": "r137",
+   "kind": "joke",
+   "prompt": "Hit me with a computers joke."
+  },
+  {
+   "id": "r138",
+   "kind": "joke",
+   "prompt": "Know a good one about math?"
+  },
+  {
+   "id": "r139",
+   "kind": "joke",
+   "prompt": "Say a joke about school."
+  },
+  {
+   "id": "r140",
+   "kind": "joke",
+   "prompt": "Say a joke about fish."
+  },
+  {
+   "id": "r141",
+   "kind": "joke",
+   "prompt": "Know a good one about coffee?"
+  },
+  {
+   "id": "r142",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about teachers?"
+  },
+  {
+   "id": "r143",
+   "kind": "joke",
+   "prompt": "Know a good one about the ocean?"
+  },
+  {
+   "id": "r144",
+   "kind": "joke",
+   "prompt": "Say a joke about pizza."
+  },
+  {
+   "id": "r145",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about bananas?"
+  },
+  {
+   "id": "r146",
+   "kind": "joke",
+   "prompt": "Hit me with a music joke."
+  },
+  {
+   "id": "r147",
+   "kind": "joke",
+   "prompt": "Know a good one about space?"
+  },
+  {
+   "id": "r148",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about chickens?"
+  },
+  {
+   "id": "r149",
+   "kind": "joke",
+   "prompt": "Can you tell me something funny about cows?"
+  },
+  {
+   "id": "r150",
+   "kind": "explain",
+   "prompt": "Can you describe rainbows to me?"
+  },
+  {
+   "id": "r151",
+   "kind": "explain",
+   "prompt": "Teach me about the seasons."
+  },
+  {
+   "id": "r152",
+   "kind": "explain",
+   "prompt": "What's the science behind tides?"
+  },
+  {
+   "id": "r153",
+   "kind": "explain",
+   "prompt": "What's the science behind volcanoes?"
+  },
+  {
+   "id": "r154",
+   "kind": "explain",
+   "prompt": "Can you describe photosynthesis to me?"
+  },
+  {
+   "id": "r155",
+   "kind": "explain",
+   "prompt": "What's the science behind gravity?"
+  },
+  {
+   "id": "r156",
+   "kind": "explain",
+   "prompt": "How do vaccines work?"
+  },
+  {
+   "id": "r157",
+   "kind": "explain",
+   "prompt": "How do thunder work?"
+  },
+  {
+   "id": "r158",
+   "kind": "explain",
+   "prompt": "Teach me about earthquakes."
+  },
+  {
+   "id": "r159",
+   "kind": "explain",
+   "prompt": "Can you describe magnets to me?"
+  },
+  {
+   "id": "r160",
+   "kind": "explain",
+   "prompt": "What makes clouds happen?"
+  },
+  {
+   "id": "r161",
+   "kind": "explain",
+   "prompt": "What makes eclipses happen?"
+  },
+  {
+   "id": "r162",
+   "kind": "explain",
+   "prompt": "Can you describe black holes to me?"
+  },
+  {
+   "id": "r163",
+   "kind": "explain",
+   "prompt": "What makes airplanes happen?"
+  },
+  {
+   "id": "r164",
+   "kind": "explain",
+   "prompt": "Teach me about batteries."
+  },
+  {
+   "id": "r165",
+   "kind": "explain",
+   "prompt": "How do dreams work?"
+  },
+  {
+   "id": "r166",
+   "kind": "explain",
+   "prompt": "Teach me about tornadoes."
+  },
+  {
+   "id": "r167",
+   "kind": "explain",
+   "prompt": "How do solar panels work?"
+  },
+  {
+   "id": "r168",
+   "kind": "explain",
+   "prompt": "What makes wifi happen?"
+  },
+  {
+   "id": "r169",
+   "kind": "explain",
+   "prompt": "Can you describe democracy to me?"
+  },
+  {
+   "id": "r170",
+   "kind": "explain",
+   "prompt": "How do taxes work?"
+  },
+  {
+   "id": "r171",
+   "kind": "explain",
+   "prompt": "Can you describe the stock market to me?"
+  },
+  {
+   "id": "r172",
+   "kind": "explain",
+   "prompt": "Teach me about glaciers."
+  },
+  {
+   "id": "r173",
+   "kind": "explain",
+   "prompt": "What's the science behind fireworks?"
+  },
+  {
+   "id": "r174",
+   "kind": "explain",
+   "prompt": "Can you describe refrigerators to me?"
+  },
+  {
+   "id": "r175",
+   "kind": "explain",
+   "prompt": "What makes hurricanes happen?"
+  },
+  {
+   "id": "r176",
+   "kind": "explain",
+   "prompt": "What's the science behind coral reefs?"
+  },
+  {
+   "id": "r177",
+   "kind": "explain",
+   "prompt": "What makes the immune system happen?"
+  },
+  {
+   "id": "r178",
+   "kind": "explain",
+   "prompt": "Teach me about recycling."
+  },
+  {
+   "id": "r179",
+   "kind": "explain",
+   "prompt": "What makes snowflakes happen?"
+  },
+  {
+   "id": "r180",
+   "kind": "explain",
+   "prompt": "Can you describe rainbows to me?"
+  },
+  {
+   "id": "r181",
+   "kind": "explain",
+   "prompt": "What's the science behind the seasons?"
+  },
+  {
+   "id": "r182",
+   "kind": "explain",
+   "prompt": "Teach me about tides."
+  },
+  {
+   "id": "r183",
+   "kind": "explain",
+   "prompt": "What makes volcanoes happen?"
+  },
+  {
+   "id": "r184",
+   "kind": "explain",
+   "prompt": "What's the science behind photosynthesis?"
+  },
+  {
+   "id": "r185",
+   "kind": "explain",
+   "prompt": "Teach me about gravity."
+  },
+  {
+   "id": "r186",
+   "kind": "explain",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  {
+   "id": "r187",
+   "kind": "explain",
+   "prompt": "What makes thunder happen?"
+  },
+  {
+   "id": "r188",
+   "kind": "explain",
+   "prompt": "Teach me about earthquakes."
+  },
+  {
+   "id": "r189",
+   "kind": "explain",
+   "prompt": "Can you describe magnets to me?"
+  },
+  {
+   "id": "r190",
+   "kind": "explain",
+   "prompt": "How do clouds work?"
+  },
+  {
+   "id": "r191",
+   "kind": "explain",
+   "prompt": "Teach me about eclipses."
+  },
+  {
+   "id": "r192",
+   "kind": "explain",
+   "prompt": "What makes black holes happen?"
+  },
+  {
+   "id": "r193",
+   "kind": "explain",
+   "prompt": "Teach me about airplanes."
+  },
+  {
+   "id": "r194",
+   "kind": "explain",
+   "prompt": "How do batteries work?"
+  },
+  {
+   "id": "r195",
+   "kind": "explain",
+   "prompt": "What's the science behind dreams?"
+  },
+  {
+   "id": "r196",
+   "kind": "explain",
+   "prompt": "Can you describe tornadoes to me?"
+  },
+  {
+   "id": "r197",
+   "kind": "explain",
+   "prompt": "What makes solar panels happen?"
+  },
+  {
+   "id": "r198",
+   "kind": "explain",
+   "prompt": "What makes wifi happen?"
+  },
+  {
+   "id": "r199",
+   "kind": "explain",
+   "prompt": "Can you describe democracy to me?"
+  },
+  {
+   "id": "r200",
+   "kind": "explain",
+   "prompt": "Can you describe taxes to me?"
+  },
+  {
+   "id": "r201",
+   "kind": "explain",
+   "prompt": "Can you describe the stock market to me?"
+  },
+  {
+   "id": "r202",
+   "kind": "explain",
+   "prompt": "How do glaciers work?"
+  },
+  {
+   "id": "r203",
+   "kind": "explain",
+   "prompt": "Teach me about fireworks."
+  },
+  {
+   "id": "r204",
+   "kind": "explain",
+   "prompt": "Can you describe refrigerators to me?"
+  },
+  {
+   "id": "r205",
+   "kind": "explain",
+   "prompt": "What makes hurricanes happen?"
+  },
+  {
+   "id": "r206",
+   "kind": "explain",
+   "prompt": "What's the science behind coral reefs?"
+  },
+  {
+   "id": "r207",
+   "kind": "explain",
+   "prompt": "Can you describe the immune system to me?"
+  },
+  {
+   "id": "r208",
+   "kind": "explain",
+   "prompt": "Can you describe recycling to me?"
+  },
+  {
+   "id": "r209",
+   "kind": "explain",
+   "prompt": "How do snowflakes work?"
+  },
+  {
+   "id": "r210",
+   "kind": "explain",
+   "prompt": "What makes rainbows happen?"
+  },
+  {
+   "id": "r211",
+   "kind": "explain",
+   "prompt": "Can you describe the seasons to me?"
+  },
+  {
+   "id": "r212",
+   "kind": "explain",
+   "prompt": "Can you describe tides to me?"
+  },
+  {
+   "id": "r213",
+   "kind": "explain",
+   "prompt": "Can you describe volcanoes to me?"
+  },
+  {
+   "id": "r214",
+   "kind": "explain",
+   "prompt": "How do photosynthesis work?"
+  },
+  {
+   "id": "r215",
+   "kind": "explain",
+   "prompt": "Teach me about gravity."
+  },
+  {
+   "id": "r216",
+   "kind": "explain",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  {
+   "id": "r217",
+   "kind": "explain",
+   "prompt": "What's the science behind thunder?"
+  },
+  {
+   "id": "r218",
+   "kind": "explain",
+   "prompt": "What makes earthquakes happen?"
+  },
+  {
+   "id": "r219",
+   "kind": "explain",
+   "prompt": "Teach me about magnets."
+  },
+  {
+   "id": "r220",
+   "kind": "explain",
+   "prompt": "Teach me about clouds."
+  },
+  {
+   "id": "r221",
+   "kind": "explain",
+   "prompt": "Can you describe eclipses to me?"
+  },
+  {
+   "id": "r222",
+   "kind": "explain",
+   "prompt": "Teach me about black holes."
+  },
+  {
+   "id": "r223",
+   "kind": "explain",
+   "prompt": "How do airplanes work?"
+  },
+  {
+   "id": "r224",
+   "kind": "explain",
+   "prompt": "What makes batteries happen?"
+  },
+  {
+   "id": "r225",
+   "kind": "advice",
+   "prompt": "I'm struggling with sleep. What should I try?"
+  },
+  {
+   "id": "r226",
+   "kind": "advice",
+   "prompt": "How can I get better at stress?"
+  },
+  {
+   "id": "r227",
+   "kind": "advice",
+   "prompt": "Any suggestions for studying?"
+  },
+  {
+   "id": "r228",
+   "kind": "advice",
+   "prompt": "Got any pointers on focus?"
+  },
+  {
+   "id": "r229",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with procrastination?"
+  },
+  {
+   "id": "r230",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with making friends?"
+  },
+  {
+   "id": "r231",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with exercise?"
+  },
+  {
+   "id": "r232",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with eating healthy?"
+  },
+  {
+   "id": "r233",
+   "kind": "advice",
+   "prompt": "How can I get better at public speaking?"
+  },
+  {
+   "id": "r234",
+   "kind": "advice",
+   "prompt": "Any suggestions for saving money?"
+  },
+  {
+   "id": "r235",
+   "kind": "advice",
+   "prompt": "Got any pointers on time management?"
+  },
+  {
+   "id": "r236",
+   "kind": "advice",
+   "prompt": "Any suggestions for job interviews?"
+  },
+  {
+   "id": "r237",
+   "kind": "advice",
+   "prompt": "How can I get better at headaches?"
+  },
+  {
+   "id": "r238",
+   "kind": "advice",
+   "prompt": "I'm struggling with learning a language. What should I try?"
+  },
+  {
+   "id": "r239",
+   "kind": "advice",
+   "prompt": "Any suggestions for reading more?"
+  },
+  {
+   "id": "r240",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with a bad mood?"
+  },
+  {
+   "id": "r241",
+   "kind": "advice",
+   "prompt": "Got any pointers on arguments?"
+  },
+  {
+   "id": "r242",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with confidence?"
+  },
+  {
+   "id": "r243",
+   "kind": "advice",
+   "prompt": "How can I get better at habits?"
+  },
+  {
+   "id": "r244",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with screen time?"
+  },
+  {
+   "id": "r245",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with houseplants?"
+  },
+  {
+   "id": "r246",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with cooking?"
+  },
+  {
+   "id": "r247",
+   "kind": "advice",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  {
+   "id": "r248",
+   "kind": "advice",
+   "prompt": "Any suggestions for packing for a trip?"
+  },
+  {
+   "id": "r249",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with remembering things?"
+  },
+  {
+   "id": "r250",
+   "kind": "advice",
+   "prompt": "How can I get better at writing essays?"
+  },
+  {
+   "id": "r251",
+   "kind": "advice",
+   "prompt": "Any suggestions for jet lag?"
+  },
+  {
+   "id": "r252",
+   "kind": "advice",
+   "prompt": "How can I get better at running a marathon?"
+  },
+  {
+   "id": "r253",
+   "kind": "advice",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  {
+   "id": "r254",
+   "kind": "advice",
+   "prompt": "Any suggestions for moving to a new city?"
+  },
+  {
+   "id": "r255",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with sleep?"
+  },
+  {
+   "id": "r256",
+   "kind": "advice",
+   "prompt": "Any suggestions for stress?"
+  },
+  {
+   "id": "r257",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  {
+   "id": "r258",
+   "kind": "advice",
+   "prompt": "I'm struggling with focus. What should I try?"
+  },
+  {
+   "id": "r259",
+   "kind": "advice",
+   "prompt": "I'm struggling with procrastination. What should I try?"
+  },
+  {
+   "id": "r260",
+   "kind": "advice",
+   "prompt": "Any suggestions for making friends?"
+  },
+  {
+   "id": "r261",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with exercise?"
+  },
+  {
+   "id": "r262",
+   "kind": "advice",
+   "prompt": "How can I get better at eating healthy?"
+  },
+  {
+   "id": "r263",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with public speaking?"
+  },
+  {
+   "id": "r264",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with saving money?"
+  },
+  {
+   "id": "r265",
+   "kind": "advice",
+   "prompt": "How can I get better at time management?"
+  },
+  {
+   "id": "r266",
+   "kind": "advice",
+   "prompt": "I'm struggling with job interviews. What should I try?"
+  },
+  {
+   "id": "r267",
+   "kind": "advice",
+   "prompt": "How can I get better at headaches?"
+  },
+  {
+   "id": "r268",
+   "kind": "advice",
+   "prompt": "How can I get better at learning a language?"
+  },
+  {
+   "id": "r269",
+   "kind": "advice",
+   "prompt": "How can I get better at reading more?"
+  },
+  {
+   "id": "r270",
+   "kind": "advice",
+   "prompt": "I'm struggling with a bad mood. What should I try?"
+  },
+  {
+   "id": "r271",
+   "kind": "advice",
+   "prompt": "Any suggestions for arguments?"
+  },
+  {
+   "id": "r272",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with confidence?"
+  },
+  {
+   "id": "r273",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with habits?"
+  },
+  {
+   "id": "r274",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with screen time?"
+  },
+  {
+   "id": "r275",
+   "kind": "advice",
+   "prompt": "Any suggestions for houseplants?"
+  },
+  {
+   "id": "r276",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with cooking?"
+  },
+  {
+   "id": "r277",
+   "kind": "advice",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  {
+   "id": "r278",
+   "kind": "advice",
+   "prompt": "How can I get better at packing for a trip?"
+  },
+  {
+   "id": "r279",
+   "kind": "advice",
+   "prompt": "Got any pointers on remembering things?"
+  },
+  {
+   "id": "r280",
+   "kind": "advice",
+   "prompt": "How can I get better at writing essays?"
+  },
+  {
+   "id": "r281",
+   "kind": "advice",
+   "prompt": "How can I get better at jet lag?"
+  },
+  {
+   "id": "r282",
+   "kind": "advice",
+   "prompt": "Got any pointers on running a marathon?"
+  },
+  {
+   "id": "r283",
+   "kind": "advice",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  {
+   "id": "r284",
+   "kind": "advice",
+   "prompt": "Got any pointers on moving to a new city?"
+  },
+  {
+   "id": "r285",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with sleep?"
+  },
+  {
+   "id": "r286",
+   "kind": "advice",
+   "prompt": "Any suggestions for stress?"
+  },
+  {
+   "id": "r287",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  {
+   "id": "r288",
+   "kind": "advice",
+   "prompt": "I'm struggling with focus. What should I try?"
+  },
+  {
+   "id": "r289",
+   "kind": "advice",
+   "prompt": "Got any pointers on procrastination?"
+  },
+  {
+   "id": "r290",
+   "kind": "advice",
+   "prompt": "How can I get better at making friends?"
+  },
+  {
+   "id": "r291",
+   "kind": "advice",
+   "prompt": "Any suggestions for exercise?"
+  },
+  {
+   "id": "r292",
+   "kind": "advice",
+   "prompt": "I'm struggling with eating healthy. What should I try?"
+  },
+  {
+   "id": "r293",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with public speaking?"
+  },
+  {
+   "id": "r294",
+   "kind": "advice",
+   "prompt": "What's the best way to deal with saving money?"
+  },
+  {
+   "id": "r295",
+   "kind": "advice",
+   "prompt": "I'm struggling with time management. What should I try?"
+  },
+  {
+   "id": "r296",
+   "kind": "advice",
+   "prompt": "Got any pointers on job interviews?"
+  },
+  {
+   "id": "r297",
+   "kind": "advice",
+   "prompt": "How can I get better at headaches?"
+  },
+  {
+   "id": "r298",
+   "kind": "advice",
+   "prompt": "Got any pointers on learning a language?"
+  },
+  {
+   "id": "r299",
+   "kind": "advice",
+   "prompt": "I'm struggling with reading more. What should I try?"
+  }
+ ],
+ "ab": [
+  {
+   "id": "ab000",
+   "prompt": "Spin me a short story featuring a lighthouse."
+  },
+  {
+   "id": "ab001",
+   "prompt": "I'm struggling with time management. What should I try?"
+  },
+  {
+   "id": "ab002",
+   "prompt": "How can I get better at reading more?"
+  },
+  {
+   "id": "ab003",
+   "prompt": "Know a good one about skeletons?"
+  },
+  {
+   "id": "ab004",
+   "prompt": "How can I get better at writing essays?"
+  },
+  {
+   "id": "ab005",
+   "prompt": "How do glaciers work?"
+  },
+  {
+   "id": "ab006",
+   "prompt": "Hit me with a fish joke."
+  },
+  {
+   "id": "ab007",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  {
+   "id": "ab008",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  {
+   "id": "ab009",
+   "prompt": "Know a good one about shoes?"
+  },
+  {
+   "id": "ab010",
+   "prompt": "Got any pointers on procrastination?"
+  },
+  {
+   "id": "ab011",
+   "prompt": "Can you tell me something funny about books?"
+  },
+  {
+   "id": "ab012",
+   "prompt": "Can you describe taxes to me?"
+  },
+  {
+   "id": "ab013",
+   "prompt": "What's the science behind thunder?"
+  },
+  {
+   "id": "ab014",
+   "prompt": "What's the best way to deal with public speaking?"
+  },
+  {
+   "id": "ab015",
+   "prompt": "How can I get better at jet lag?"
+  },
+  {
+   "id": "ab016",
+   "prompt": "Say a joke about pizza."
+  },
+  {
+   "id": "ab017",
+   "prompt": "Can you describe black holes to me?"
+  },
+  {
+   "id": "ab018",
+   "prompt": "Hit me with a ghosts joke."
+  },
+  {
+   "id": "ab019",
+   "prompt": "Give me a pun about time."
+  },
+  {
+   "id": "ab020",
+   "prompt": "I'd like to hear a tale about a magic garden."
+  },
+  {
+   "id": "ab021",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  {
+   "id": "ab022",
+   "prompt": "How can I get better at making friends?"
+  },
+  {
+   "id": "ab023",
+   "prompt": "What's the science behind tides?"
+  },
+  {
+   "id": "ab024",
+   "prompt": "Tell a children's story about a river."
+  },
+  {
+   "id": "ab025",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  {
+   "id": "ab026",
+   "prompt": "What makes hurricanes happen?"
+  },
+  {
+   "id": "ab027",
+   "prompt": "Tell a children's story about a shy turtle."
+  },
+  {
+   "id": "ab028",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  {
+   "id": "ab029",
+   "prompt": "Write a bedtime tale about a magic garden."
+  },
+  {
+   "id": "ab030",
+   "prompt": "Say a joke about teachers."
+  },
+  {
+   "id": "ab031",
+   "prompt": "Spin me a short story featuring a sleepy bear."
+  },
+  {
+   "id": "ab032",
+   "prompt": "How do airplanes work?"
+  },
+  {
+   "id": "ab033",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  {
+   "id": "ab034",
+   "prompt": "Could you write me a little story about a lost kitten?"
+  },
+  {
+   "id": "ab035",
+   "prompt": "Could you write me a little story about a wizard?"
+  },
+  {
+   "id": "ab036",
+   "prompt": "How can I get better at headaches?"
+  },
+  {
+   "id": "ab037",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  {
+   "id": "ab038",
+   "prompt": "What's the science behind gravity?"
+  },
+  {
+   "id": "ab039",
+   "prompt": "Hit me with a elephants joke."
+  },
+  {
+   "id": "ab040",
+   "prompt": "Can you tell me something funny about cows?"
+  },
+  {
+   "id": "ab041",
+   "prompt": "Write a bedtime tale about a lonely robot."
+  },
+  {
+   "id": "ab042",
+   "prompt": "How can I get better at eating healthy?"
+  },
+  {
+   "id": "ab043",
+   "prompt": "What's the best way to deal with habits?"
+  },
+  {
+   "id": "ab044",
+   "prompt": "Any suggestions for arguments?"
+  },
+  {
+   "id": "ab045",
+   "prompt": "Got any pointers on moving to a new city?"
+  },
+  {
+   "id": "ab046",
+   "prompt": "Teach me about gravity."
+  },
+  {
+   "id": "ab047",
+   "prompt": "Teach me about the seasons."
+  },
+  {
+   "id": "ab048",
+   "prompt": "Teach me about recycling."
+  },
+  {
+   "id": "ab049",
+   "prompt": "Spin me a short story featuring a talking tree."
+  },
+  {
+   "id": "ab050",
+   "prompt": "Know a good one about space?"
+  },
+  {
+   "id": "ab051",
+   "prompt": "What's the science behind the seasons?"
+  },
+  {
+   "id": "ab052",
+   "prompt": "What's the best way to deal with confidence?"
+  },
+  {
+   "id": "ab053",
+   "prompt": "Got any pointers on time management?"
+  },
+  {
+   "id": "ab054",
+   "prompt": "Say a joke about chickens."
+  },
+  {
+   "id": "ab055",
+   "prompt": "Can you tell me something funny about teachers?"
+  },
+  {
+   "id": "ab056",
+   "prompt": "Any suggestions for a new puppy?"
+  },
+  {
+   "id": "ab057",
+   "prompt": "Can you tell me something funny about the ocean?"
+  },
+  {
+   "id": "ab058",
+   "prompt": "Could you write me a little story about a hot air balloon?"
+  },
+  {
+   "id": "ab059",
+   "prompt": "Got any pointers on running a marathon?"
+  },
+  {
+   "id": "ab060",
+   "prompt": "I'd like to hear a tale about a baker."
+  },
+  {
+   "id": "ab061",
+   "prompt": "Any suggestions for saving money?"
+  },
+  {
+   "id": "ab062",
+   "prompt": "What's the best way to deal with screen time?"
+  },
+  {
+   "id": "ab063",
+   "prompt": "How can I get better at negotiating a raise?"
+  },
+  {
+   "id": "ab064",
+   "prompt": "Know a good one about programmers?"
+  },
+  {
+   "id": "ab065",
+   "prompt": "Any suggestions for stress?"
+  },
+  {
+   "id": "ab066",
+   "prompt": "Say a joke about music."
+  },
+  {
+   "id": "ab067",
+   "prompt": "Say a joke about cheese."
+  },
+  {
+   "id": "ab068",
+   "prompt": "Give me a pun about eggs."
+  },
+  {
+   "id": "ab069",
+   "prompt": "What's the best way to deal with eating healthy?"
+  },
+  {
+   "id": "ab070",
+   "prompt": "Say a joke about the weather."
+  },
+  {
+   "id": "ab071",
+   "prompt": "Any suggestions for packing for a trip?"
+  },
+  {
+   "id": "ab072",
+   "prompt": "Could you write me a little story about a pirate ship?"
+  },
+  {
+   "id": "ab073",
+   "prompt": "Know a good one about space?"
+  },
+  {
+   "id": "ab074",
+   "prompt": "I'm struggling with learning a language. What should I try?"
+  },
+  {
+   "id": "ab075",
+   "prompt": "Write a bedtime tale about two best friends."
+  },
+  {
+   "id": "ab076",
+   "prompt": "Teach me about eclipses."
+  },
+  {
+   "id": "ab077",
+   "prompt": "Got any pointers on remembering things?"
+  },
+  {
+   "id": "ab078",
+   "prompt": "I'd like to hear a tale about a kite."
+  },
+  {
+   "id": "ab079",
+   "prompt": "Know a good one about computers?"
+  },
+  {
+   "id": "ab080",
+   "prompt": "Write a bedtime tale about a brave little fox."
+  },
+  {
+   "id": "ab081",
+   "prompt": "Can you describe recycling to me?"
+  },
+  {
+   "id": "ab082",
+   "prompt": "Could you write me a little story about an old clock?"
+  },
+  {
+   "id": "ab083",
+   "prompt": "Teach me about earthquakes."
+  },
+  {
+   "id": "ab084",
+   "prompt": "Say a joke about math."
+  },
+  {
+   "id": "ab085",
+   "prompt": "Say a joke about skeletons."
+  },
+  {
+   "id": "ab086",
+   "prompt": "Tell a children's story about a penguin."
+  },
+  {
+   "id": "ab087",
+   "prompt": "Say a joke about time."
+  },
+  {
+   "id": "ab088",
+   "prompt": "How can I get better at headaches?"
+  },
+  {
+   "id": "ab089",
+   "prompt": "Can you describe the immune system to me?"
+  },
+  {
+   "id": "ab090",
+   "prompt": "Tell a children's story about a dragon who loves books."
+  },
+  {
+   "id": "ab091",
+   "prompt": "Any suggestions for studying?"
+  },
+  {
+   "id": "ab092",
+   "prompt": "Can you describe tides to me?"
+  },
+  {
+   "id": "ab093",
+   "prompt": "Write a bedtime tale about a library."
+  },
+  {
+   "id": "ab094",
+   "prompt": "Give me a pun about bicycles."
+  },
+  {
+   "id": "ab095",
+   "prompt": "What's the best way to deal with studying?"
+  },
+  {
+   "id": "ab096",
+   "prompt": "I'm struggling with procrastination. What should I try?"
+  },
+  {
+   "id": "ab097",
+   "prompt": "How can I get better at time management?"
+  },
+  {
+   "id": "ab098",
+   "prompt": "Say a joke about dogs."
+  },
+  {
+   "id": "ab099",
+   "prompt": "I'm struggling with focus. What should I try?"
+  },
+  {
+   "id": "ab100",
+   "prompt": "Write a bedtime tale about a soccer game."
+  },
+  {
+   "id": "ab101",
+   "prompt": "Tell a children's story about a hot air balloon."
+  },
+  {
+   "id": "ab102",
+   "prompt": "How do solar panels work?"
+  },
+  {
+   "id": "ab103",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  {
+   "id": "ab104",
+   "prompt": "Can you describe refrigerators to me?"
+  },
+  {
+   "id": "ab105",
+   "prompt": "Can you tell me something funny about chickens?"
+  },
+  {
+   "id": "ab106",
+   "prompt": "Say a joke about pizza."
+  },
+  {
+   "id": "ab107",
+   "prompt": "Any suggestions for job interviews?"
+  },
+  {
+   "id": "ab108",
+   "prompt": "Spin me a short story featuring a wizard."
+  },
+  {
+   "id": "ab109",
+   "prompt": "Know a good one about bicycles?"
+  },
+  {
+   "id": "ab110",
+   "prompt": "How do photosynthesis work?"
+  },
+  {
+   "id": "ab111",
+   "prompt": "What's the best way to deal with a bad mood?"
+  },
+  {
+   "id": "ab112",
+   "prompt": "Tell a children's story about a pirate ship."
+  },
+  {
+   "id": "ab113",
+   "prompt": "Can you describe vaccines to me?"
+  },
+  {
+   "id": "ab114",
+   "prompt": "Give me a pun about dogs."
+  },
+  {
+   "id": "ab115",
+   "prompt": "Spin me a short story featuring a rainy day."
+  },
+  {
+   "id": "ab116",
+   "prompt": "Teach me about clouds."
+  },
+  {
+   "id": "ab117",
+   "prompt": "What's the best way to deal with sleep?"
+  },
+  {
+   "id": "ab118",
+   "prompt": "What makes the immune system happen?"
+  },
+  {
+   "id": "ab119",
+   "prompt": "Can you tell me something funny about school?"
+  },
+  {
+   "id": "ab120",
+   "prompt": "Could you write me a little story about a missing key?"
+  },
+  {
+   "id": "ab121",
+   "prompt": "Tell a children's story about a birthday party."
+  },
+  {
+   "id": "ab122",
+   "prompt": "Could you write me a little story about a spaceship?"
+  },
+  {
+   "id": "ab123",
+   "prompt": "Any suggestions for reading more?"
+  },
+  {
+   "id": "ab124",
+   "prompt": "Give me a pun about cows."
+  },
+  {
+   "id": "ab125",
+   "prompt": "What's the best way to deal with exercise?"
+  },
+  {
+   "id": "ab126",
+   "prompt": "Give me a pun about books."
+  },
+  {
+   "id": "ab127",
+   "prompt": "What's the science behind coral reefs?"
+  },
+  {
+   "id": "ab128",
+   "prompt": "How do clouds work?"
+  },
+  {
+   "id": "ab129",
+   "prompt": "Got any pointers on arguments?"
+  },
+  {
+   "id": "ab130",
+   "prompt": "Could you write me a little story about a rainy day?"
+  },
+  {
+   "id": "ab131",
+   "prompt": "Can you describe the stock market to me?"
+  },
+  {
+   "id": "ab132",
+   "prompt": "Teach me about gravity."
+  },
+  {
+   "id": "ab133",
+   "prompt": "Spin me a short story featuring a magic garden."
+  },
+  {
+   "id": "ab134",
+   "prompt": "Teach me about black holes."
+  },
+  {
+   "id": "ab135",
+   "prompt": "Tell a children's story about a lonely robot."
+  },
+  {
+   "id": "ab136",
+   "prompt": "What's the best way to deal with making friends?"
+  },
+  {
+   "id": "ab137",
+   "prompt": "What makes hurricanes happen?"
+  },
+  {
+   "id": "ab138",
+   "prompt": "Can you describe democracy to me?"
+  },
+  {
+   "id": "ab139",
+   "prompt": "Could you write me a little story about a lighthouse?"
+  },
+  {
+   "id": "ab140",
+   "prompt": "Tell a children's story about a snowman."
+  },
+  {
+   "id": "ab141",
+   "prompt": "Got any pointers on focus?"
+  },
+  {
+   "id": "ab142",
+   "prompt": "Give me a pun about money."
+  },
+  {
+   "id": "ab143",
+   "prompt": "Got any pointers on job interviews?"
+  },
+  {
+   "id": "ab144",
+   "prompt": "Give me a pun about cats."
+  },
+  {
+   "id": "ab145",
+   "prompt": "Say a joke about shoes."
+  },
+  {
+   "id": "ab146",
+   "prompt": "Spin me a short story featuring the moon."
+  },
+  {
+   "id": "ab147",
+   "prompt": "Know a good one about coffee?"
+  },
+  {
+   "id": "ab148",
+   "prompt": "Tell a children's story about a farm."
+  },
+  {
+   "id": "ab149",
+   "prompt": "I'm struggling with job interviews. What should I try?"
+  },
+  {
+   "id": "ab150",
+   "prompt": "Tell a children's story about a grandmother."
+  },
+  {
+   "id": "ab151",
+   "prompt": "What makes earthquakes happen?"
+  },
+  {
+   "id": "ab152",
+   "prompt": "Spin me a short story featuring a shy turtle."
+  },
+  {
+   "id": "ab153",
+   "prompt": "How can I get better at headaches?"
+  },
+  {
+   "id": "ab154",
+   "prompt": "Could you write me a little story about a treehouse?"
+  },
+  {
+   "id": "ab155",
+   "prompt": "Any suggestions for stress?"
+  },
+  {
+   "id": "ab156",
+   "prompt": "How can I get better at writing essays?"
+  },
+  {
+   "id": "ab157",
+   "prompt": "Teach me about magnets."
+  },
+  {
+   "id": "ab158",
+   "prompt": "How can I get better at public speaking?"
+  },
+  {
+   "id": "ab159",
+   "prompt": "Could you write me a little story about a sleepy bear?"
+  },
+  {
+   "id": "ab160",
+   "prompt": "Hi there!"
+  },
+  {
+   "id": "ab161",
+   "prompt": "What's your name?"
+  },
+  {
+   "id": "ab162",
+   "prompt": "Who was Albert Einstein?"
+  },
+  {
+   "id": "ab163",
+   "prompt": "What is the capital of Australia?"
+  },
+  {
+   "id": "ab164",
+   "prompt": "How tall is Mount Everest?"
+  },
+  {
+   "id": "ab165",
+   "prompt": "What's 15% of 80?"
+  },
+  {
+   "id": "ab166",
+   "prompt": "Convert 10 miles to kilometers."
+  },
+  {
+   "id": "ab167",
+   "prompt": "What day is it today?"
+  },
+  {
+   "id": "ab168",
+   "prompt": "Who wrote Hamlet?"
+  },
+  {
+   "id": "ab169",
+   "prompt": "What is the boiling point of water in Fahrenheit?"
+  },
+  {
+   "id": "ab170",
+   "prompt": "How many legs does a spider have?"
+  },
+  {
+   "id": "ab171",
+   "prompt": "When did World War II end?"
+  },
+  {
+   "id": "ab172",
+   "prompt": "What's the population of Canada?"
+  },
+  {
+   "id": "ab173",
+   "prompt": "Who painted the Mona Lisa?"
+  },
+  {
+   "id": "ab174",
+   "prompt": "What does photosynthesis mean?"
+  },
+  {
+   "id": "ab175",
+   "prompt": "Is 97 a prime number?"
+  },
+  {
+   "id": "ab176",
+   "prompt": "What is 12 squared?"
+  },
+  {
+   "id": "ab177",
+   "prompt": "Spell 'necessary'."
+  },
+  {
+   "id": "ab178",
+   "prompt": "Which is bigger, Brazil or Argentina?"
+  },
+  {
+   "id": "ab179",
+   "prompt": "What language do they speak in Brazil?"
+  },
+  {
+   "id": "ab180",
+   "prompt": "My name is Sam. What's my name?"
+  },
+  {
+   "id": "ab181",
+   "prompt": "What time is it in Tokyo?"
+  },
+  {
+   "id": "ab182",
+   "prompt": "How many days until Christmas?"
+  },
+  {
+   "id": "ab183",
+   "prompt": "What's the chemical symbol for gold?"
+  },
+  {
+   "id": "ab184",
+   "prompt": "Who is the president of France?"
+  },
+  {
+   "id": "ab185",
+   "prompt": "What is a haiku?"
+  },
+  {
+   "id": "ab186",
+   "prompt": "Tell me something interesting."
+  },
+  {
+   "id": "ab187",
+   "prompt": "Thanks for your help!"
+  },
+  {
+   "id": "ab188",
+   "prompt": "What can you do?"
+  },
+  {
+   "id": "ab189",
+   "prompt": "Roll a die."
+  },
+  {
+   "id": "ab190",
+   "prompt": "Flip a coin."
+  },
+  {
+   "id": "ab191",
+   "prompt": "What is the largest planet?"
+  },
+  {
+   "id": "ab192",
+   "prompt": "Where was Mozart born?"
+  },
+  {
+   "id": "ab193",
+   "prompt": "How old is the Earth?"
+  },
+  {
+   "id": "ab194",
+   "prompt": "What's the weather like?"
+  },
+  {
+   "id": "ab195",
+   "prompt": "Can you sing?"
+  },
+  {
+   "id": "ab196",
+   "prompt": "What is the meaning of life?"
+  },
+  {
+   "id": "ab197",
+   "prompt": "Recommend a good book."
+  },
+  {
+   "id": "ab198",
+   "prompt": "Who invented the telephone?"
+  },
+  {
+   "id": "ab199",
+   "prompt": "What is the speed of light?"
+  }
+ ],
+ "sha256": "fabac18597b157c055f7e986b0e8b21240dfd318b9a6232fa1c6de55273bcb21"
+}

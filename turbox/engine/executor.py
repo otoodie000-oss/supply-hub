@@ -27,6 +27,15 @@ CODE2REL = {REL[r][0]: r for r in REL}
 TYPE_PHRASE = {"c": "city", "n": "country", "s": "u.s. state", "e": "chemical element", "l": "planet",
                "a": "airport", "b": "book", "o": "word", "v": "verb", "j": "adjective", "p": "person", "w": "thing"}
 STOPW = {"the", "of", "a", "an", "and", "in", "on", "at", "de", "la", "le", "du", "von", "van", "der", "for", "to"}
+# display capitalization (non-learned, cosmetic): names of these entity types and values of these relations are
+# proper nouns; a reply word copied from such a position is shown title-cased unless it is a small word
+NAMED_TYPES = ("p", "c", "n", "s", "a", "b")
+CAP_RELS = ("alma_mater", "artist", "author", "birth_place", "ceo", "city", "continent", "current_name", "death_place",
+            "demonym", "director", "head_of_government", "head_of_state", "located_in", "most_recent_host",
+            "most_recent_winner", "nationality", "next_host", "party", "pope", "region", "secretary_general",
+            "vice_president", "official_languages", "borders")
+SMALLW = ("a", "an", "the", "and", "of", "in", "on", "at", "to", "for", "de", "la", "le", "du", "von", "van", "der",
+          "del", "da", "di", "y", "e", "or", "by", "with", "upon", "'s")
 NUMLIKE = re.compile(r"^\s*[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?\s*$|^\s*0x[0-9a-f]+\s*$|^\s*0b[01]+\s*$|^\s*0o[0-7]+\s*$")
 
 
@@ -208,6 +217,25 @@ class Executor:
                     return (["person", ","] + split(f[1]))[:6]
             return ["person"]
         return [TYPE_PHRASE.get(t, "thing")]
+
+    def cand_caps(self, ids):
+        """display-capitalization flags aligned with render_cands(ids)"""
+        if not ids:
+            return [0]
+        out = []
+        for e in ids:
+            c = 1 if self.rec(e)["type"] in NAMED_TYPES else 0
+            out.append(0)
+            out += [c] * len(self.name_tokens(e))
+            out.append(0)
+            out += [0] * len(self.describe(e))
+        return out
+
+    def value_cap(self, rel, ref):
+        """display-capitalization flag for the tokens of a value block"""
+        if ref is not None:
+            return 1 if self.rec(ref)["type"] in NAMED_TYPES else 0
+        return 1 if rel in CAP_RELS else 0
 
     def render_cands(self, ids):
         if not ids:

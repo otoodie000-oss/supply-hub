@@ -79,14 +79,15 @@ def replay(tr, X, codec, masks):
         nw = lambda: nv  # noqa: E731
     sess = Session(X, codec, masks, now_fn=nw, seed=tr.get("seed") or 1)
     t = Turn(sess, "")
-    t.pending = [(x, "q") for x in toks[:qi + 1]]
+    t.pending = [(x, "q", 0) for x in toks[:qi + 1]]
     # the question: everything after <q> up to the first target
     k = qi + 1
     while k < len(toks) and ys[k] == 0:
-        t.pending.append((toks[k], "q"))
+        t.pending.append((toks[k], "q", 0))
         k += 1
-    for (x, r) in t.pending:
+    for (x, r, _) in t.pending:
         t.seq.append(x)
+        t.capf.append(0)
         t.region.append(r)
         t.copyable.append(not (x.startswith("<") and x.endswith(">") and len(x) > 2))
     t.pending = []
@@ -99,9 +100,9 @@ def replay(tr, X, codec, masks):
             return why, k
         if t.mode == "action":
             t.n_actions += 1
-        t.emit(tok)
+        t.emit(tok, 0)
         # emitted token + executor inserts are now pending
-        fed = [x for x, _ in t.pending]
+        fed = [x for x, _, _ in t.pending]
         if fed[0] != tok:
             return "emit_mismatch", k
         ins = fed[1:]
@@ -112,8 +113,9 @@ def replay(tr, X, codec, masks):
             j += 1
         if ins != exp:
             return "insert_mismatch", (k, ins[:20], exp[:20])
-        for x, r in t.pending:
+        for x, r, c in t.pending:
             t.seq.append(x)
+            t.capf.append(c)
             t.region.append(r)
             t.copyable.append(not (x.startswith("<") and x.endswith(">") and len(x) > 2))
         t.pending = []

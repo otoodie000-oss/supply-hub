@@ -57,7 +57,9 @@ def main():
     C = Codec()
     words = {"": 0}
     surf = {}
-    cols = {k: [] for k in ("inp", "wtype", "shash", "copyable", "gen", "tgt")}
+    from array import array
+    tc = {"inp": "h", "wtype": "i", "shash": "i", "copyable": "b", "gen": "h", "tgt": "b"}
+    cols = {k: array(tc[k]) for k in tc}
     offsets = [0]
     n_bad = 0
     for f in sys.argv[2:]:
@@ -87,7 +89,7 @@ def main():
             offsets.append(len(cols["inp"]))
     for k, v in cols.items():
         dt = {"inp": np.int16, "wtype": np.int32, "shash": np.int32, "copyable": np.int8, "gen": np.int16, "tgt": np.int8}[k]
-        np.save(os.path.join(out, k + ".npy"), np.array(v, dtype=dt))
+        np.save(os.path.join(out, k + ".npy"), np.frombuffer(v, dtype=dt))
     np.save(os.path.join(out, "offsets.npy"), np.array(offsets, dtype=np.int64))
     wl = sorted(words, key=lambda w: words[w])
     json.dump(wl, open(os.path.join(out, "words.json"), "w"))

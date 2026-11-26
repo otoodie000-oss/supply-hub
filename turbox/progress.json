@@ -1,7 +1,7 @@
 {
  "project": "TurboX",
- "phase": "0d->2",
- "step": "0d smoke test passed (train->export->build->TurboWarp->parity 84/84->grade); test re-generated after gold fix (re-freeze pending); next: full training data + brain training",
+ "phase": "2",
+ "step": "training tx1 (d128 L4, 16K steps, QAT 31 levels from 13K) via engine/train_loop.sh; resume: sh engine/train_loop.sh tx1 4",
  "done": [
   "audit_2_0 (results/audit_2_0.json)",
   "turbowarp_bench (int list 5.5 ns/MAC, 2-digit strings ~15 ns/MAC, bsearch 0.19 us)",
@@ -10,7 +10,10 @@
   "KB precision: 992/1000 = 99.2% (seed 4242) after a failed 985/1000 round (results/kb_precision_report.json)",
   "2.0 baseline: 20,000/20,000 items run on 2.0's mirror (WORK/baseline/t20_replies.jsonl); grading pending re-freeze",
   "Scratch runtime: rt_text (fold, tokenizer, binary search), rt_kb (executor), rt_model (string-weight kernels), rt_turn (turn engine, scheduler, UI); build_x.py; harness/run_sb3.js; eval/parity.py",
-  "Phase 0d smoke: smoke.sb3 6.80 MB, load 0.47-0.70 s, flag->ready 180 ms, answer frames max 29 ms, boot frame max 49.9 ms; parity 84/84 turns (replies+traces) on 80 test items"
+  "Phase 0d smoke: smoke.sb3 6.80 MB, load 0.47-0.70 s, flag->ready 180 ms, answer frames max 29 ms, boot frame max 49.9 ms; parity 84/84 turns (replies+traces) on 80 test items",
+  "Training data: 4 x 300K traces (tx_a..d, seeds 197..200) + 20K dev traces from 3% dev-held-out entities; 55M positions; replay validator 1 failure / 30K",
+  "Open-ended prompt sets frozen: results/open_prompts.json (300 rubric + 200 A/B, 0 8-gram overlap with training pools)",
+  "2.0 baseline graded: results/baseline_2_0.json (20.7% correct, 62.6% confidently wrong)"
  ],
  "work_dir": "/home/user/work/x",
  "src_2_0": "/home/user/supply-hub/turbo2 (repo copy; /mnt/attach and uploads were empty)",
@@ -30,7 +33,10 @@
   "TurboWarp compiles a script on first run (~0.16-0.2 s for one script holding everything). The engine is split into 3 worker scripts (turn driver, model kernels, 2.0 tools) that the green flag starts once each on separate frames so each compiles in its own frame; this is the only green-flag work besides resetting state.",
   "Test generator bug: 2,469 derived items (capital of the country of a city/airport) had gold=null because some capitals are stored as plain text. Fixed in the gold computation only (no RNG change); questions unchanged; test re-generated and re-frozen before training.",
   "Executor fixes found while porting: ISA_FN was never set (isa tool would crash); 8-digit date with month 00 guard (no such facts exist; kept for safety).",
-  "Python mirror and Scratch cap a turn at 500 positions and 150 user tokens; /reset and /help are handled before the model in both."
+  "Python mirror and Scratch cap a turn at 500 positions and 150 user tokens; /reset and /help are handled before the model in both.",
+  "KB fix: capital/largest_city references resolved to same-named cities elsewhere (e.g. Augusta GA for Maine); now only cities inside that country/state; 830 test golds corrected (questions unchanged), test re-frozen.",
+  "lists.json had been encoded before 'infinity' stopped being numeric-like: entity ids were shifted by one after it, so the trace generator mapped ~45% of lookups to the wrong id. Re-encoded; mapping now asserted against E_NAME.",
+  "Open-ended replies copy stored texts (MIT jokes, the 207 original 2.0 stories, 46 explanations + 28 advice notes written for TurboX) chosen by a non-learned topic index; the model decides to call the tool, which words to pass, and writes the reply by copying/framing."
  ],
  "decisions": [
   "Weights stored as 2-digit decimal strings with QAT (~0.7 deflated bytes/weight at 32 levels vs 1.24 for 2.0's int8 list items); decode costs ~2.8x compute.",

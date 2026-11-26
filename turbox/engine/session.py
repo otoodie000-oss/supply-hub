@@ -19,7 +19,7 @@ for p in ("..", "../helpers", "../common", "../kb"):
     sys.path.insert(0, os.path.join(HERE, p))
 from vocab import SPECIALS, SID, REL_TOK, TOOL_TOK, MONTH_TOK, UNIT_TOK, HOLIDAY_TOK, MEM_TOK, OPS, REL_OF_TOK, TOOL_OF_TOK  # noqa: E402
 from tok import split, is_word, is_num, trigrams, tri_bucket  # noqa: E402
-from executor import Executor, TurnState, turbox_tool, num_of  # noqa: E402
+from executor import Executor, TurnState, turbox_tool, num_of, SMALLW  # noqa: E402
 import executor as EX  # noqa: E402
 from textnorm import filter_chars  # noqa: E402
 import twins  # noqa: E402
@@ -58,6 +58,8 @@ class Turn:
         self.st = TurnState()
         self.pending = []
         self.seq = []            # surfaces fed so far (positions 0..n-1)
+        self.capf = []           # display-capitalization flag per position
+        self.reply_caps = []
         self.copyable = []
         self.mode = "action"
         self.n_actions = 0
@@ -75,6 +77,7 @@ class Turn:
         self.region = []         # per position: 'q' question/context/memory, 'x' executor insert, 'm' model output
         self.last_rel = None
         self.rel_entity = None
+        self.conf = None
         pre = ["<bos>"]
         if sess.ctx:
             pre += ["<ctx>", sess.ctx[0]] + sess.ctx[1]
@@ -84,10 +87,10 @@ class Turn:
         pre += ["<q>"] + self.user_toks
         self.push(pre, "q")
 
-    def push(self, toks, region):
-        for t in toks:
+    def push(self, toks, region, caps=None):
+        for i, t in enumerate(toks):
             if len(self.seq) + len(self.pending) < SEQ_MAX:
-                self.pending.append((t, region))
+                self.pending.append((t, region, caps[i] if caps else 0))
 
     # ---------------------------------------------------------------- decision
     def decide(self, vocab, ptr):
@@ -110,6 +113,10 @@ class Turn:
                 v = vv
             tid = int(np.argmax(v))
             tok = SPECIALS[tid]
+            if tok in SAY:   # verifier confidence: 1 - P(<say_fb>) among the reply-type tokens (bias included)
+                sv = np.array([v[SID[x]] for x in SAY])
+                sv = np.exp(sv - sv.max())
+                self.conf = float(1 - sv[1] / sv.sum())
             self.n_actions += 1
             self.emit(tok)
             return
@@ -151,14 +158,16 @@ class Turn:
         v[allowed] = vocab[allowed]
         bv, bj = float(np.max(v)), int(np.argmax(v))
         bp = float(np.max(cp)) if n else NEG
+        cap = 0
         if bp > bv:
             j = int(np.argmax(cp))
             tok = self.seq[j]
+            cap = self.capf[j]
         else:
             tok = SPECIALS[bj] if bj < len(SPECIALS) else self.s.codec.out_words[bj - len(SPECIALS)]
-        self.emit(tok)
+        self.emit(tok, cap)
 
-    def emit(self, tok):
+    def emit(self, tok, cap=0):
         """apply a model-chosen token: feed it, and run the executor where an action completes"""
         X = self.s.X
         self.trace.append(tok)
@@ -176,7 +185,8 @@ class Turn:
                 ent = self.st.current
                 toks, ref, found = X.value(ent, rel)
                 vals = [t for _, t in toks]
-                self.push(vals, "x")
+                vc = X.value_cap(rel, ref) if found else 0
+                self.push(vals, "x", [vc] * len(vals))
                 body = [t for t in vals if not t.startswith("<")]
                 if found:
                     if "<asof>" in vals:
@@ -201,7 +211,7 @@ class Turn:
             if tok == "</find>":
                 self.cands = X.find(self.find_buf)
                 self.picked_ok = False
-                self.push([t for _, t in X.render_cands(self.cands)], "x")
+                self.push([t for _, t in X.render_cands(self.cands)], "x", X.cand_caps(self.cands))
                 self.mode = "action"
             else:
                 self.find_buf.append(tok)
@@ -230,6 +240,7 @@ class Turn:
                 self.done = True
             else:
                 self.reply.append(tok)
+                self.reply_caps.append(cap)
 
     @staticmethod
     def date_num(body):
@@ -243,13 +254,16 @@ class Turn:
         """update conversation context after the turn"""
         if self.last_rel is not None and self.rel_entity is not None:
             self.s.ctx = (self.last_rel, self.s.X.name_tokens(self.rel_entity))
-        return display(self.reply), self.say_mode
+        return display(self.reply, self.reply_caps), self.say_mode
 
 
-def display(toks):
-    """detokenize + display capitalization (non-learned): sentence starts and standalone 'i'."""
+def display(toks, caps=None):
+    """detokenize + display capitalization (non-learned): proper-noun words (flagged by the fact store), sentence
+    starts and standalone 'i'."""
     out = ""
-    for t in toks:
+    for k, t in enumerate(toks):
+        if caps and caps[k] and t[:1].isalpha() and t not in SMALLW:
+            t = t[0].upper() + t[1:]
         if not out:
             out = t
         elif t in (".", ",", "!", "?", ":", ";", "%", ")", "'s", "'") or (out.endswith("(") or out.endswith("$")):

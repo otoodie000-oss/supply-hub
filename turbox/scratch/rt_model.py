@@ -36,6 +36,7 @@ class Layout:
         self.n_prm = n
         self.U_HK = 1 + 4 * self.L
         self.U_HV = self.U_HK + 1
+        self.U_SPLIT = 4 * (self.L // 2)
 
 
 def declare_model(P, lay, rows):
@@ -241,12 +242,20 @@ def model_source(lay):
     s += "        for _u in range(0, %d):\n            acc = acc + %s\n            kb += 4\n            qi += 4\n" % (Pd // 4, e)
     s += "        PTR.append(acc / %s)\n" % repr(float(Pd) ** 0.5)
     S.append(s)
-    # dispatcher
-    s = "@proc\ndef fwd_unit(k):\n    if k == 0:\n        u_embed()\n"
-    for l in range(lay.L):
+    # dispatchers: the first half (embed + layers 0..L/2-1) and the second half (rest + heads) run in two
+    # worker scripts so each compiles in its own frame
+    half = lay.L // 2
+    lay.U_SPLIT = 4 * half          # last unit of the first half
+    s = "@proc\ndef fwd_unit_a(k):\n    if k == 0:\n        u_embed()\n"
+    for l in range(half):
         for u, nm in enumerate("abcd"):
             s += "    elif k == %d:\n        u_l%d%s()\n" % (1 + 4 * l + u, l, nm)
-    s += "    elif k == %d:\n        u_headk()\n    else:\n        u_headv()\n" % lay.U_HK
+    S.append(s)
+    s = "@proc\ndef fwd_unit_b(k):\n    if k == %d:\n        u_headk()\n" % lay.U_HK
+    s += "    elif k == %d:\n        u_headv()\n" % lay.U_HV
+    for l in range(half, lay.L):
+        for u, nm in enumerate("abcd"):
+            s += "    elif k == %d:\n        u_l%d%s()\n" % (1 + 4 * l + u, l, nm)
     S.append(s)
     s = "@proc\ndef model_reset():\n"
     for l in range(lay.L):

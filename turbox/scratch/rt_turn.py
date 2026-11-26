@@ -10,6 +10,9 @@ REG = List()
 CPY = List()
 PEND = List()
 PENDR = List()
+PENDC = List()
+CAPF = List()
+REPLY_CAP = List()
 REPLY = List()
 TRACE = List()
 TARGS_T = List()
@@ -54,10 +57,15 @@ stat_units = 0
 stat_tokens = 0
 k_req = 0
 t_req = 0
+x_req = 0
+x_tok = ""
+xf_started = 0
 t_arg = ""
 t_res = ""
 booting = 0
 booted = 0
+pcap = 0
+ecap = 0
 yb_y = 0
 yb_m = 0
 yb_d = 0
@@ -70,9 +78,11 @@ def lcg():
 
 @proc
 def push(t, r):
+    """queue a token for the model (pcap = its display-capitalization flag)"""
     if len(SEQ) + len(PEND) < SEQ_MAX:
         PEND.append(t)
         PENDR.append(r)
+        PENDC.append(pcap)
 
 @proc
 def push_toks(r):
@@ -112,9 +122,12 @@ def start_turn(msg):
     """build the prompt (or answer /reset, /help); sets eng_phase"""
     global t_mode, n_actions, picked_ok, tool_name, mem_slot, say_mode, last_rel, rel_ent, st_cur, eng_phase
     global display, reply_mode
+    global pcap
     m = fold(msg)
     c = trim_s(m)
     TRACE.clear()
+    REPLY_CAP.clear()
+    pcap = 0
     if c == "/reset":
         session_reset()
         tokenize(RESET_TXT)
@@ -137,9 +150,12 @@ def start_turn(msg):
     SEQ.clear()
     REG.clear()
     CPY.clear()
+    CAPF.clear()
     PEND.clear()
     PENDR.clear()
+    PENDC.clear()
     REPLY.clear()
+    REPLY_CAP.clear()
     TRACE.clear()
     CANDL.clear()
     ST_PICK.clear()
@@ -181,8 +197,10 @@ def feed_next():
     global f_id, f_pos, f_unit, eng_phase, stat_tokens, k_req
     t = PEND[1]
     r = PENDR[1]
+    CAPF.append(PENDC[1])
     PEND.delete(1)
     PENDR.delete(1)
+    PENDC.delete(1)
     SEQ.append(t)
     REG.append(r)
     if is_special(t) == 1:
@@ -214,10 +232,6 @@ def work_unit():
     if eng_phase == 3:
         decide()
         return 0
-    if eng_phase == 4:
-        if find_step() == 1:
-            find_done()
-        return 0
     if eng_phase == 5:
         finish_turn()
         return 0
@@ -240,7 +254,7 @@ def work_chunk():
         else:
             work_unit()
             n += 1
-            if busy == 0 or k_req == 1 or t_req == 1:
+            if busy == 0 or k_req > 0 or t_req > 0 or x_req > 0:
                 going = 0
             elif (days2000() - t0) * 86400000 > cfg_budget or n >= UNIT_CAP:
                 going = 0
@@ -258,7 +272,7 @@ def vbest(lo, hi):
 
 @proc
 def decide():
-    global bv, bj, n_actions
+    global bv, bj, n_actions, ecap
     n = len(SEQ)
     if t_mode == "action":
         bv = -1000000000
@@ -340,14 +354,17 @@ def decide():
                         bp = v
                         bpj = j
     if bp > bv:
+        ecap = CAPF[bpj]
         emit(SEQ[bpj])
     else:
+        ecap = 0
         emit(GSURF[bj + 1])
 
 @proc
 def emit(tok):
     """apply a model-chosen token (twin of Turn.emit)"""
     global t_mode, picked_ok, st_cur, last_rel, rel_ent, tool_name, mem_slot, say_mode, eng_phase, display
+    global x_req, x_tok
     TRACE.append(tok)
     push(tok, "m")
     eng_phase = 1
@@ -361,7 +378,8 @@ def emit(tok):
             ST_PICK.append(CANDL[k])
             picked_ok = 1
         elif letter(2, tok) == "r" and letter(3, tok) == "_":
-            apply_rel(tok)
+            x_tok = tok
+            x_req = 2
         elif tok == "<tool>":
             t_mode = "tool"
             tool_name = ""
@@ -377,10 +395,7 @@ def emit(tok):
         return 0
     if t_mode == "find":
         if tok == "</find>":
-            if find_begin() == 1:
-                find_done()
-            else:
-                eng_phase = 4
+            x_req = 1
         else:
             FIND_BUF.append(tok)
         return 0
@@ -388,7 +403,7 @@ def emit(tok):
         if tool_name == "":
             tool_name = substr(tok, 4, strlen(tok) - 1)
         elif tok == "</tool>":
-            run_tturn()
+            x_req = 3
             t_mode = "action"
         else:
             TARGS_T.append(tok)
@@ -418,14 +433,16 @@ def emit(tok):
             eng_phase = 5
             PEND.clear()
             PENDR.clear()
+            PENDC.clear()
         else:
             REPLY.append(tok)
+            REPLY_CAP.append(ecap)
             display = render_display()
 
 @proc
 def find_done():
     """CANDS final: push the candidate block (twin of render_cands) and return to action mode"""
-    global t_mode, picked_ok, eng_phase
+    global t_mode, picked_ok, eng_phase, pcap
     CANDL.clear()
     for k in range(1, len(CANDS) + 1):
         CANDL.append(CANDS[k])
@@ -435,8 +452,11 @@ def find_done():
     for k in range(1, len(CANDL) + 1):
         push(join("<c", join(k, ">")), "x")
         name_tokens(CANDL[k])
+        if letter(1, E_REC[CANDL[k]]) in NAMED_T:
+            pcap = 1
         for i in range(1, len(NAMET) + 1):
             push(NAMET[i], "x")
+        pcap = 0
         push("<d>", "x")
         describe(CANDL[k])
         for i in range(1, len(DESCT) + 1):
@@ -446,13 +466,20 @@ def find_done():
 
 @proc
 def apply_rel(tok):
-    global last_rel, rel_ent, st_cur
+    global last_rel, rel_ent, st_cur, pcap
     k = index_of(RTOKL, tok)
     code = RCODE[k]
     ent = st_cur
     lookup(ent, code)
     BODY.clear()
     has_asof = 0
+    pcap = 0
+    if val_found == 1:
+        if val_ref > 0:
+            if letter(1, E_REC[val_ref]) in NAMED_T:
+                pcap = 1
+        elif RCAP[k] == 1:
+            pcap = 1
     for i in range(1, len(VALT) + 1):
         t = VALT[i]
         push(t, "x")
@@ -477,6 +504,7 @@ def apply_rel(tok):
             nv = num_of()
         if not (nv == ""):
             ST_VAL.append(nv)
+    pcap = 0
     last_rel = tok
     rel_ent = ent
     if val_ref > 0:
@@ -780,7 +808,10 @@ def run_tturn():
         ts_query(t)
         return 0
     t_arg = assemble()
-    t_req = 1
+    if t in TOOLS_A:
+        t_req = 1
+    else:
+        t_req = 2
     eng_phase = 7
 
 @proc
@@ -847,6 +878,8 @@ def render_display():
     out = ""
     for k in range(1, len(REPLY) + 1):
         t = REPLY[k]
+        if REPLY_CAP[k] == 1 and is_alpha(letter(1, t)) == 1 and not (t in SMALLW):
+            t = join(letter(index_of(LOWL, letter(1, t)), UPPER), substr(t, 2, strlen(t)))
         if strlen(out) == 0:
             out = t
         else:
@@ -934,15 +967,21 @@ def engine_reset():
 @when_flag
 def _eflag():
     """reset state; then start each worker script once on its own frame so TurboWarp compiles them one per
-    frame (no frame carries the whole ~0.2 s compile); workers return at once while booting"""
+    frame (no frame carries the whole compile); workers return at once while booting"""
     global booting, booted
     booted = 0
     booting = 1
     engine_reset()
     wait(0)
-    broadcast("tx_k")
+    broadcast("tx_k1")
     wait(0)
-    broadcast("tx_t")
+    broadcast("tx_k2")
+    wait(0)
+    broadcast("tx_x")
+    wait(0)
+    broadcast("tx_ta")
+    wait(0)
+    broadcast("tx_tb")
     wait(0)
     broadcast("tx_go")
     wait(0)
@@ -951,19 +990,23 @@ def _eflag():
 
 @when_broadcast("tx_go")
 def _go():
-    """turn driver: prompt, decisions, executor; hands forward passes to the model worker and helper calls to
-    the tools worker"""
-    global k_req, t_req
+    """turn driver: prompt, decisions; forward passes go to the two model workers, lookups/candidate search/
+    tool dispatch to the executor worker, 2.0 helper calls to the two tools workers"""
+    global k_req, t_req, x_req
     if booting == 1:
         return
     k_req = 0
     t_req = 0
-    broadcast("tx_k")
-    broadcast("tx_t")
+    x_req = 0
+    broadcast("tx_k1")
+    broadcast("tx_k2")
+    broadcast("tx_x")
+    broadcast("tx_ta")
+    broadcast("tx_tb")
     chat_add(join("You: ", user_msg))
     start_turn(user_msg)
     while busy == 1:
-        if k_req == 0 and t_req == 0:
+        if k_req == 0 and t_req == 0 and x_req == 0:
             work_chunk()
 '''
 
@@ -989,16 +1032,44 @@ def _ui():
         say(display)
 '''
 
-K_SRC = r'''
+K1_SRC = r'''
 @proc
-def k_chunk():
-    """forward-pass units of the current token for ~cfg_budget ms; k_req = 0 when the token is done"""
+def k1_chunk():
+    """first-half forward units of the current token; hands over to the second half (k_req = 2)"""
+    global f_unit, k_req, stat_units
+    t0 = days2000()
+    going = 1
+    n = 0
+    while going == 1:
+        fwd_unit_a(f_unit)
+        n += 1
+        stat_units += 1
+        f_unit += 1
+        if f_unit > U_SPLIT:
+            k_req = 2
+            going = 0
+        elif (days2000() - t0) * 86400000 > cfg_budget or n >= UNIT_CAP:
+            going = 0
+
+@when_broadcast("tx_k1")
+def _k1():
+    if booting == 1:
+        return
+    while busy == 1:
+        if k_req == 1:
+            k1_chunk()
+'''
+
+K2_SRC = r'''
+@proc
+def k2_chunk():
+    """second-half forward units + heads; k_req = 0 when the token is done"""
     global f_unit, eng_phase, k_req, stat_units
     t0 = days2000()
     going = 1
     n = 0
     while going == 1:
-        fwd_unit(f_unit)
+        fwd_unit_b(f_unit)
         n += 1
         stat_units += 1
         if f_unit == U_HV:
@@ -1020,27 +1091,83 @@ def k_chunk():
         elif (days2000() - t0) * 86400000 > cfg_budget or n >= UNIT_CAP:
             going = 0
 
-@when_broadcast("tx_k")
-def _kw():
+@when_broadcast("tx_k2")
+def _k2():
     if booting == 1:
         return
     while busy == 1:
-        if k_req == 1:
-            k_chunk()
+        if k_req == 2:
+            k2_chunk()
 '''
 
-T_SRC = r'''
+X_SRC = r'''
 @proc
-def t_call():
+def x_chunk():
+    """executor requests: 1 candidate search (resumable), 2 relation lookup, 3 tool call"""
+    global x_req, xf_started
+    if x_req == 2:
+        apply_rel(x_tok)
+        x_req = 0
+        return 0
+    if x_req == 3:
+        run_tturn()
+        x_req = 0
+        return 0
+    if xf_started == 0:
+        xf_started = 1
+        if find_begin() == 1:
+            find_done()
+            xf_started = 0
+            x_req = 0
+            return 0
+    t0 = days2000()
+    going = 1
+    while going == 1:
+        if find_step() == 1:
+            find_done()
+            xf_started = 0
+            x_req = 0
+            going = 0
+        elif (days2000() - t0) * 86400000 > cfg_budget:
+            going = 0
+
+@when_broadcast("tx_x")
+def _xw():
+    if booting == 1:
+        return
+    while busy == 1:
+        if x_req > 0:
+            x_chunk()
+'''
+
+TA_SRC = r'''
+@proc
+def ta_call():
     global t_res, t_req
-    t_res = run_tool(t_arg)
+    t_res = run_tool_a(t_arg)
     t_req = 0
 
-@when_broadcast("tx_t")
-def _tw():
+@when_broadcast("tx_ta")
+def _ta():
     if booting == 1:
         return
     while busy == 1:
         if t_req == 1:
-            t_call()
+            ta_call()
+'''
+
+TB_SRC = r'''
+@proc
+def tb_call():
+    global t_res, t_req
+    t_res = run_tool_b(t_arg)
+    t_req = 0
+
+@when_broadcast("tx_tb")
+def _tb():
+    if booting == 1:
+        return
+    while busy == 1:
+        if t_req == 2:
+            tb_call()
 '''

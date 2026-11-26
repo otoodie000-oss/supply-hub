@@ -1,0 +1,12 @@
+[
+ {"id": "tr01", "turns": ["Hi! What can you do?", "What is the capital of Australia?", "How many people live there?"]},
+ {"id": "tr02", "turns": ["Who wrote Pride and Prejudice?", "When was she born?"]},
+ {"id": "tr03", "turns": ["whats 17 times 23", "and what's 15% of 80?", "convert 10 miles to km"]},
+ {"id": "tr04", "turns": ["My name is Sam and I live in Lisbon.", "What's my name?", "Where do I live?"]},
+ {"id": "tr05", "turns": ["Tell me a joke about cats.", "Tell me a story about a dragon."]},
+ {"id": "tr06", "turns": ["Who is older, Barack Obama or Angela Merkel?", "Which is bigger, Brazil or Argentina?"]},
+ {"id": "tr07", "turns": ["What's the price of Bitcoin right now?", "Who won the 2030 World Cup?"]},
+ {"id": "tr08", "turns": ["Where was Mozzart born?", "what is the populaton of tokyo"]},
+ {"id": "tr09", "turns": ["How do rainbows form?", "Any tips for sleeping better?"]},
+ {"id": "tr10", "turns": ["What day of the week is Christmas this year?", "How many days until New Year's Day?", "/reset", "What's my name?"]}
+]

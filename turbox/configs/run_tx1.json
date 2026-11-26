@@ -1,0 +1,4 @@
+{"model": {"n_inp": 4368, "n_gen": 660, "d": 128, "n_layer": 4, "n_head": 4, "d_ff": 512, "d_emb": 64, "ctx": 512, "d_ptr": 64},
+ "data": ["/home/user/work/x/pack/tx_a", "/home/user/work/x/pack/tx_b", "/home/user/work/x/pack/tx_c", "/home/user/work/x/pack/tx_d"],
+ "batch_tokens": 8192, "steps": 16000, "peak": 0.002, "warmup": 400, "decay_frac": 0.4, "final_frac": 0.05,
+ "seed": 7, "bf16": true, "qat_levels": 31, "qat_from": 13000}

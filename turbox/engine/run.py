@@ -61,14 +61,19 @@ class Backend:
         T = int(self.len[slots].max()) + 1
         ar = torch.arange(T)
         mask = ar[None, :] <= pos[:, None]               # [n,T]
+        full = n == self.B and list(slots) == list(range(self.B))   # all slots active: views, no gathers
         for li, blk in enumerate(m.blocks):
             hn = blk.ln1(x)
             q, k, v = blk.qkv(hn).split(cfg.d, dim=1)
             q = q.view(n, H, hd)
             self.K[sl, li, :, pos] = k.view(n, H, hd)
             self.V[sl, li, :, pos] = v.view(n, H, hd)
-            Kc = self.K[sl, li, :, :T]                    # [n,H,T,hd]
-            Vc = self.V[sl, li, :, :T]
+            if full:
+                Kc = self.K[:, li, :, :T]
+                Vc = self.V[:, li, :, :T]
+            else:
+                Kc = self.K[sl, li, :, :T]                # [n,H,T,hd]
+                Vc = self.V[sl, li, :, :T]
             att = torch.einsum("nhd,nhtd->nht", q, Kc) / (hd ** 0.5)
             att = att.masked_fill(~mask[:, None, :], float("-inf"))
             att = att - att.max(-1, keepdim=True).values
@@ -81,7 +86,8 @@ class Backend:
         vocab = m.w_o(h) @ m.emb.weight[:cfg.n_gen].t().to(self.dtype) + m.out_bias.to(self.dtype)
         qp = m.w_q(h)
         self.P[sl, pos] = m.w_k(h)
-        ptr = torch.einsum("nd,ntd->nt", qp, self.P[sl, :T]) / (cfg.d_ptr ** 0.5)
+        Pc = self.P[:, :T] if full else self.P[sl, :T]
+        ptr = torch.einsum("nd,ntd->nt", qp, Pc) / (cfg.d_ptr ** 0.5)
         self.len[slots] += 1
         return vocab.float().numpy().astype(np.float64), ptr.float().numpy().astype(np.float64)
 
@@ -138,9 +144,10 @@ class Runner:
             toks = []
             for b in act:
                 t = slot_turn[b]
-                tok, reg = t.pending.pop(0)
+                tok, reg, cf = t.pending.pop(0)
                 t.seq.append(tok)
                 t.region.append(reg)
+                t.capf.append(cf)
                 t.copyable.append(not (tok.startswith("<") and tok.endswith(">") and len(tok) > 2))
                 toks.append(tok)
             vocab, ptr = be.step(act, toks)
@@ -156,7 +163,7 @@ class Runner:
                 if t.done:
                     rep, mode = t.finish()
                     out[slot_item[b]].append({"reply": rep, "mode": mode, "trace": list(t.trace),
-                                              "evidence": list(t.st.picked),
+                                              "evidence": list(t.st.picked), "conf": t.conf,
                                               "support": " ".join(x for x, r in zip(t.seq, t.region) if r == "x")})
                     slot_k[b] += 1
                     if not new_turn(b):
