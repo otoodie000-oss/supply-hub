@@ -1,0 +1,145 @@
+{
+ "n": 500,
+ "agree": 476,
+ "agreement": 0.952,
+ "disagreements": [
+  {
+   "id": "t0001718",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0016968",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0027298",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0034759",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0043826",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0045985",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0053881",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0055428",
+   "hand": "confidently_wrong",
+   "auto": "correct"
+  },
+  {
+   "id": "t0058729",
+   "hand": "correct",
+   "auto": "bare_idk"
+  },
+  {
+   "id": "t0069262",
+   "hand": "clarify_wrong",
+   "auto": "correct"
+  },
+  {
+   "id": "t0078577",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0084821",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0098684",
+   "hand": "correct",
+   "auto": "bare_idk"
+  },
+  {
+   "id": "t0100020",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0122843",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0155249",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0158633",
+   "hand": "nonanswer",
+   "auto": "correct"
+  },
+  {
+   "id": "t0158841",
+   "hand": "clarify_wrong",
+   "auto": "correct"
+  },
+  {
+   "id": "t0159859",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0162624",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0172976",
+   "hand": "correct",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0179989",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0186097",
+   "hand": "clarify_wrong",
+   "auto": "correct"
+  },
+  {
+   "id": "t0191000",
+   "hand": "clarify_wrong",
+   "auto": "correct"
+  }
+ ],
+ "note": "fresh blind set, final build and final grader; items never inspected during development",
+ "binary_correct_agreement": 0.978,
+ "binary_confidently_wrong_agreement": 0.966,
+ "hand_rates": {
+  "fallback": 0.096,
+  "correct": 0.842,
+  "confidently_wrong": 0.018,
+  "clarify_wrong": 0.016,
+  "nonanswer": 0.028
+ },
+ "auto_rates": {
+  "fallback": 0.096,
+  "correct": 0.844,
+  "confidently_wrong": 0.048,
+  "bare_idk": 0.004,
+  "clarify_wrong": 0.008
+ },
+ "main_difference": "13 of 24 disagreements: a true statement that does not answer the question; hand label nonanswer, grader confidently_wrong (grader stricter). Grader bugs: '- 1015' (spaced minus) not parsed; two generic fallbacks in fallback mode graded bare_idk."
+}

@@ -180,7 +180,14 @@ def main():
     if gvf:
         gl.append("| Fresh blind hand grades vs the final grader (items from outside the 20K development subset) | %d | %s |" % (gvf["n"], pc(gvf["agreement"])))
         conf = collections.Counter((d["hand"], d["auto"]) for d in gvf["disagreements"])
-        gl += ["", "Disagreements on the fresh set (hand → grader): " + ", ".join("%s → %s: %d" % (a, b, n) for (a, b), n in conf.most_common()) + "."]
+        hr, ar = gvf["hand_rates"], gvf["auto_rates"]
+        gl += ["", "Disagreements on the fresh set (hand → grader): " + ", ".join("%s → %s: %d" % (a, b, n) for (a, b), n in conf.most_common()) + ".", "",
+               "On the fresh set:",
+               "- **Correct:** the grader and the hand labels agree on correct vs. not correct for %s of items. The correct rate is %s by hand and %s by the grader, so the headline correct rate is well calibrated." % (
+                   pc(gvf["binary_correct_agreement"]), pc(hr.get("correct", 0)), pc(ar.get("correct", 0))),
+               "- **Confidently wrong:** the grader is stricter than the hand labels: %s by grader against %s by hand. Most of the gap comes from replies that state a true fact that does not answer the question (\"Joe Paterno died on january 22, 2012.\" for his age at death). The grader counts these as confidently wrong; I labelled them non-answers. So the 1M confidently-wrong rate overstates the hand-judged rate, but even by hand it is above the 1%% gate." % (
+                   pc(ar.get("confidently_wrong", 0)), pc(hr.get("confidently_wrong", 0))),
+               "- **Real grader bugs found:** a spaced minus sign (\"The answer is - 1015.\") is not read as −1015, and two generic fallbacks on withheld facts were graded bare IDK. These were left unfixed so that this validation stays blind."]
     out["GRADER"] = "\n".join(gl)
     pl = ["| Measure | Result |", "|---|---|",
           "| `.sb3` size | %s bytes |" % format(bs["sb3_bytes"], ","),
