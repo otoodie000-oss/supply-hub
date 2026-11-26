@@ -1,7 +1,7 @@
 {
  "project": "TurboX",
- "phase": "4 (fix pass 1)",
- "step": "fix pass 1: training tx3 (from tx2, fx1 data with broader phrasings) 8000 steps; resume: sh engine/train_loop.sh tx3 4; then dev calib, 20K subset, build, parity, 1M",
+ "phase": "4 (fix pass 2)",
+ "step": "fix pass 2: training tx4 (from tx3, fx2 data) 8000 steps; resume: sh engine/train_loop.sh tx4 4; then calib, 20K diag, build sb3 (parity 2K, perf), full 1M, grader validation, A/B, rubric, README",
  "done": [
   "audit_2_0 (results/audit_2_0.json)",
   "turbowarp_bench (int list 5.5 ns/MAC, 2-digit strings ~15 ns/MAC, bsearch 0.19 us)",
@@ -15,7 +15,9 @@
   "Open-ended prompt sets frozen: results/open_prompts.json (300 rubric + 200 A/B, 0 8-gram overlap with training pools)",
   "2.0 baseline graded: results/baseline_2_0.json (20.7% correct, 62.6% confidently wrong)",
   "tx2 trained (tx1 9308 + 8000 steps, fixed vocab): dev 80.4% right, 1.17% wrong at bias 0; bias 1.5 -> 0.50% wrong / 1.63% over-cautious",
-  "20K test-subset diagnostic of tx2 @ bias 1.5: 57.4% correct, 35.7% confidently wrong (2.0: 20.8% / 62.2%) -> fix pass 1"
+  "20K test-subset diagnostic of tx2 @ bias 1.5: 57.4% correct, 35.7% confidently wrong (2.0: 20.8% / 62.2%) -> fix pass 1",
+  "Fix pass 1 (tx3): 20K subset 78.3% correct / 9.5% CW with the corrected grader (2.0: 21.0% / 63.7%)",
+  "TurboWarp packager 3.14.0 installed in /home/user/work/pkgr; harness/package_html.js"
  ],
  "work_dir": "/home/user/work/x",
  "src_2_0": "/home/user/supply-hub/turbo2 (repo copy; /mnt/attach and uploads were empty)",
@@ -42,7 +44,9 @@
   "Input vocabulary bug found on dev: the input vocab held only word tokens, so + / * ^ = ( ) $ etc. all mapped to <unk> and the calculator picked wrong operators. 19 symbols replaced the 19 rarest input words (all other ids unchanged); data re-packed; training continued from tx1 step 9308 as run tx2 (tx1 stopped early).",
   "Fix pass 1 (driven by the 20K stratified test subset, not the full 1M): training phrasings were ~4 per relation / 3 per tool / 2 per derived kind, so test phrasings did not generalize. Added traingen/pools_x.py (compositional frames, relation nouns, 8-12 phrasings per tool, more derived/unknowable/follow-up phrasings, unsupported-relation questions); 55 new templates were dropped automatically for equalling a test template; 8-gram filter still applied.",
   "Grader fix (applies to 2.0 and TurboX equally): fallback support check no longer requires evidence for words that name a kind of fact or the system's own limits (occupation, nationality, future, spelling...); names and numbers still must be supported. 2.0 regraded: 20.8% correct / 62.2% CW.",
-  "Fallback content now must add a fact the question did not already state (bare-IDK fix); not-found replies name the searched term."
+  "Fallback content now must add a fact the question did not already state (bare-IDK fix); not-found replies name the searched term.",
+  "Fix pass 2 (driven by the 20K subset analysis): tool-call context for follow-ups (runtime feature in mirror + Scratch), memory statement/recall phrasings with KB-derived value pools, irrelevant ctx/mem prefixes on 30% of single-turn traces, broad unit conversions, extra relation phrasings, removed unsupported-question templates that overlapped real relations.",
+  "Grader fix 2 (applies to both systems): possessive normalisation, 'private details / haven't told me' declines, a fallback stating one specific new fact is not bare IDK. 2.0 regraded: 21.0% correct / 63.7% CW / 1.6% bare IDK."
  ],
  "decisions": [
   "Weights stored as 2-digit decimal strings with QAT (~0.7 deflated bytes/weight at 32 levels vs 1.24 for 2.0's int8 list items); decode costs ~2.8x compute.",

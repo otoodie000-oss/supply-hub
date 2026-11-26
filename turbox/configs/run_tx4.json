@@ -1,0 +1,5 @@
+{"model": {"n_inp": 4368, "n_gen": 660, "d": 128, "n_layer": 4, "n_head": 4, "d_ff": 512, "d_emb": 64, "ctx": 512, "d_ptr": 64},
+ "data": ["/home/user/work/x/pack/fx2_a", "/home/user/work/x/pack/fx2_b", "/home/user/work/x/pack/fx2_c", "/home/user/work/x/pack/fx2_d"],
+ "init_from": "/home/user/work/x/runs/tx3/ckpt.pt",
+ "batch_tokens": 8192, "steps": 8000, "peak": 0.001, "warmup": 200, "decay_frac": 0.6, "final_frac": 0.03,
+ "seed": 17, "bf16": true, "qat_levels": 31, "qat_from": 6000}
