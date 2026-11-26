@@ -41,6 +41,7 @@ FB_REL = {"p": ["description", "occupation", "nationality", "birth_date", "birth
 class Trace:
     def __init__(self):
         self.t, self.y = ["<bos>"], [0]
+        self.now, self.seed = None, None
 
     def inp(self, toks):
         for x in toks:
@@ -81,12 +82,19 @@ class Gen:
             self.by_type.setdefault(e["type"], []).append(e)
 
     def _map_ids(self):
-        """KB entity key -> executor entity id (lists.json order = sorted by (token key, -prior), same as encode)."""
+        """KB entity key -> executor entity id: kb.jsonl in file order, sorted exactly as kb/encode.py sorts it
+        (stable sort by (skey(tkey(name)), -prior)); checked against the shipped E_NAME list."""
         sys.path.insert(0, os.path.join(ROOT, "kb"))
         from encode import tkey, skey  # noqa
-        ents = list(self.kb.ents)
-        ents.sort(key=lambda r: (skey(tkey(r["name"])), -r["prior"]))
-        return {e["key"]: i + 1 for i, e in enumerate(ents)}
+        rows = []
+        for l in open("/home/user/work/x/kb/kb.jsonl"):
+            r = json.loads(l)
+            rows.append((skey(tkey(r["name"])), -r["prior"], r["key"]))
+        order = sorted(range(len(rows)), key=lambda i: (rows[i][0], rows[i][1]))
+        m = {rows[i][2]: k + 1 for k, i in enumerate(order)}
+        for i in order[:: max(1, len(order) // 2000)]:
+            assert self.X.names[m[rows[i][2]] - 1] == rows[i][0], "entity id mapping mismatch"
+        return m
 
     # ------------------------------------------------------------ helpers
     def mention(self, e, rel=None):
@@ -125,7 +133,7 @@ class Gen:
                         ok = False
                         break
                 if ok:
-                    return seg
+                    return seg if len(seg) <= 12 else None
         return None
 
     def do_find(self, tr, qtoks, e):
@@ -386,14 +394,19 @@ class Gen:
         v1, a1, ref, ok = self.lookup(tr, eid, first)
         if not ok:
             return None
-        if ref is None:  # author stored as text: find the person
-            ps = X.find(v1)
-            if not ps:
+        if ref is None:  # author stored as text: find the person; pick only a candidate with exactly that name
+            if len(v1) > 12:
                 return None
+            ps = X.find(v1)
             tr.out(["<find>"] + v1 + ["</find>"])
             tr.inp([t for _, t in X.render_cands(ps)])
-            tr.out(["<pick1>"])
-            ref = ps[0]
+            match = [i for i, p in enumerate(ps) if X.name_tokens(p) == v1]
+            if not match:
+                self.say(tr, "<say_fb>", "{E} was written by {A}, but I don't have the {R} of {A} in my offline knowledge.",
+                         {"E": self.name_toks(eid), "A": v1, "R": split(P.RELWORD.get(rel2, rel2))})
+                return tr
+            tr.out(["<pick%d>" % (match[0] + 1)])
+            ref = ps[match[0]]
         v2, a2, _, ok2 = self.lookup(tr, ref, rel2)
         E, M = self.name_toks(eid), self.name_toks(ref)
         if not ok2:
@@ -596,7 +609,8 @@ class Gen:
         kind = r.choice(kinds)
         now_dt = datetime(2024, 1, 1) + timedelta(minutes=r.randrange(4 * 365 * 24 * 60))
         now = twins.Now(now_dt, r.choice([420, 0, -300, 60, 330]))
-        lcg = twins.LCG(r.randrange(1, 2 ** 31))
+        seed = r.randrange(1, 2 ** 31)
+        lcg = twins.LCG(seed)
         R = r.randint
         fill, args, tname = {}, [], kind
         if kind.startswith("calc_"):
@@ -690,16 +704,20 @@ class Gen:
             items = r.sample(["banana", "orange", "apple", "carrot", "melon", "onion", "bread", "rice", "pasta", "olive",
                               "cheese", "butter"], R(3, 5))
             fill = {"list": ", ".join(items)}
-            args = []
-            for i, it in enumerate(items):
-                if i:
-                    args.append(",")
-                args.append(it)
+            args = list(items)
         t = r.choice(P.TOOL_TRAIN[kind])
         q = t
         for k, v in fill.items():
             q = q.replace("{" + k + "}", str(v))
         tr, qt = self.start(q)
+        tr.now = [now_dt.year, now_dt.month, now_dt.day, now_dt.hour, now_dt.minute, now.offset_min]
+        tr.seed = seed
+        if kind == "sort" and "," in qt:      # commas in the question are copied as item separators
+            args = []
+            for i, it in enumerate(items):
+                if i:
+                    args.append(",")
+                args.append(it)
         # copied args must exist in the (noisy) question; arg tokens like <op_*>/<u_*> are generated
         for a in args:
             if not a.startswith("<") and a not in qt and a != ",":
@@ -895,9 +913,99 @@ class Gen:
         self.say(tr, "<say_open>", r.choice(replies), {})
         return tr, "chat"
 
+    # ------------------------------------------------------------ open-ended (text store)
+    def _ts(self):
+        if not hasattr(self, "TS"):
+            from textstore import TextStore
+            self.TS = TextStore()
+            self.TS.topic = json.load(open("/home/user/work/x/kb/textstore.json"))["TOPIC"]
+            used = set(w for k in self.TS.key for w in k)
+            common = set(json.load(open("/home/user/work/x/vocab.json"))["inp"])
+            self.no_topics = sorted(set(e["name"] for e in self.by_type.get("word_n", [])
+                                        if e["name"].isalpha() and 4 <= len(e["name"]) <= 9 and e["name"] not in used
+                                        and e["name"] + "s" not in used and e["name"] not in self.TS.stop
+                                        and e["name"] in common))
+        return self.TS
+
+    def open_ended(self):
+        r, T = self.r, self._ts()
+        kind = r.choices(["joke", "story", "explain", "advice"], weights=[3, 3, 3, 2])[0]
+        lo, hi = T.range[kind]
+        lcg_seed = r.randrange(1, 2 ** 31)
+        lcg = twins.LCG(lcg_seed)
+        mode = r.choices(["yes", "no", "any"], weights=[6, 2, 2 if kind in ("joke", "story") else 0])[0]
+        if mode == "yes":
+            i = r.randint(lo, hi)
+            if not T.key[i]:
+                return None, None
+            if kind == "story":
+                topic = T.topic[i] if r.random() < 0.6 else r.choice(T.key[i])
+            elif kind == "joke":
+                topic = r.choice(T.key[i])
+            else:
+                topic = T.topic[i]
+        elif mode == "no":
+            topic = r.choice(self.no_topics)
+        else:
+            topic = None
+        pool = P.OPEN_TRAIN[kind + ("_any" if mode == "any" else ("_topic" if kind in ("joke", "story") else ""))]
+        q = r.choice(pool).replace("{t}", topic or "")
+        tr, qt = self.start(q)
+        tr.seed = lcg_seed
+        args = []
+        if topic:
+            tt = split(filter_chars(topic).lower())
+            for w in tt:
+                if w in qt and w not in T.stop and w not in args:
+                    args.append(w)
+            if not args:
+                return None, None
+        tr.out(["<tool>", "<t_%s>" % kind] + args + ["</tool>"])
+        res, idx = T.query(kind, args, lcg)
+        tr.inp(["<r>"] + res)
+        hit = res[0] == "<yes>"
+        Tw = args
+        if kind in ("explain", "advice") and not hit:
+            if kind == "explain":
+                ok = self.explain_kb(tr, qt, args)
+                if ok:
+                    return tr, "open_explain_kb"
+            self.say(tr, "<say_fb>", r.choice(P.OPEN_REPLY[kind + "_no"]), {"T": Tw})
+            return tr, "open_%s_no" % kind
+        body = res[1:]
+        N = []
+        if "<d>" in body:
+            k = body.index("<d>")
+            N, body = body[:k], body[k + 1:]
+        key = kind + "_" + ("any" if mode == "any" else ("yes" if hit else "no"))
+        self.say(tr, "<say_open>", r.choice(P.OPEN_REPLY[key]), {"X": body, "N": N, "T": Tw})
+        if len(tr.t) > 512:
+            return None, None
+        return tr, "open_" + key
+
+    def explain_kb(self, tr, qt, args):
+        """no stored explanation: look the topic up and give its stored description"""
+        kb = self.kb
+        if len(args) != 1:
+            return False
+        ids = self.X.find(args)
+        tr.out(["<find>"] + args + ["</find>"])
+        tr.inp([t for _, t in self.X.render_cands(ids)])
+        match = [i for i, e in enumerate(ids) if self.X.name_tokens(e) == args]
+        if not match:
+            return False
+        eid = ids[match[0]]
+        rel = "definition" if self.X.fact(eid, "definition") else "description"
+        if not self.X.fact(eid, rel):
+            return False
+        tr.out(["<pick%d>" % (match[0] + 1)])
+        vals, asof, ref, found = self.lookup(tr, eid, rel)
+        self.say(tr, "<say_open>", self.r.choice(P.OPEN_REPLY["explain_kb"]), {"E": self.name_toks(eid), "V": vals})
+        return True
+
 
 MIX = [("kb_fact", 40), ("kb_missing", 6), ("derived", 14), ("tool", 15), ("unknowable", 3), ("ambiguous", 4),
-       ("underspecified", 1), ("followup", 6), ("recall", 5), ("chat", 2)]
+       ("underspecified", 1), ("followup", 6), ("recall", 5), ("chat", 2), ("open_ended", 5)]
 
 
 def test_ngrams():
@@ -952,7 +1060,12 @@ def main():
             if any(int(hashlib.md5(" ".join(qw[i:i + 8]).encode()).hexdigest()[:15], 16) in grams for i in range(len(qw) - 7)):
                 dropped += 1
                 continue
-            fo.write(json.dumps({"t": tr.t, "y": tr.y, "c": sub}) + "\n")
+            rec = {"t": tr.t, "y": tr.y, "c": sub}
+            if tr.now:
+                rec["now"] = tr.now
+            if tr.seed is not None:
+                rec["seed"] = tr.seed
+            fo.write(json.dumps(rec) + "\n")
             stats[sub] = stats.get(sub, 0) + 1
             made += 1
     os.replace(path + ".tmp", path)

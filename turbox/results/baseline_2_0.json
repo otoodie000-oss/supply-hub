@@ -1,0 +1,82 @@
+{
+ "real": {
+  "n": 2000,
+  "bare_idk": 0.08,
+  "clarify_wrong": 0.0145,
+  "confidently_wrong": 0.665,
+  "correct": 0.1865,
+  "fallback": 0.024,
+  "nonanswer": 0.03
+ },
+ "ALL": {
+  "n": 20000,
+  "bare_idk": 0.0389,
+  "clarify_wrong": 0.0058,
+  "confidently_wrong": 0.626,
+  "correct": 0.2073,
+  "fallback": 0.1098,
+  "nonanswer": 0.0123
+ },
+ "kb_fact": {
+  "n": 8000,
+  "bare_idk": 0.0374,
+  "clarify_wrong": 0.0049,
+  "confidently_wrong": 0.6919,
+  "correct": 0.0639,
+  "fallback": 0.1946,
+  "nonanswer": 0.0074
+ },
+ "messy": {
+  "n": 6959,
+  "bare_idk": 0.0414,
+  "clarify_wrong": 0.0062,
+  "confidently_wrong": 0.6558,
+  "correct": 0.1927,
+  "fallback": 0.0934,
+  "nonanswer": 0.0105
+ },
+ "multiturn": {
+  "n": 1000,
+  "bare_idk": 0.006,
+  "clarify_wrong": 0.013,
+  "confidently_wrong": 0.665,
+  "correct": 0.298,
+  "fallback": 0.01,
+  "nonanswer": 0.008
+ },
+ "tool": {
+  "n": 3000,
+  "bare_idk": 0.003,
+  "clarify_wrong": 0.002,
+  "confidently_wrong": 0.2237,
+  "correct": 0.7523,
+  "fallback": 0.005,
+  "nonanswer": 0.014
+ },
+ "withheld": {
+  "n": 2000,
+  "bare_idk": 0.0265,
+  "clarify_wrong": 0.001,
+  "confidently_wrong": 0.739,
+  "correct": 0.224,
+  "nonanswer": 0.0095
+ },
+ "ambiguous": {
+  "n": 1000,
+  "bare_idk": 0.024,
+  "clarify_wrong": 0.002,
+  "confidently_wrong": 0.699,
+  "correct": 0.05,
+  "fallback": 0.22,
+  "nonanswer": 0.005
+ },
+ "derived": {
+  "n": 3000,
+  "bare_idk": 0.0753,
+  "clarify_wrong": 0.0083,
+  "confidently_wrong": 0.7137,
+  "correct": 0.0697,
+  "fallback": 0.1153,
+  "nonanswer": 0.0177
+ }
+}

@@ -305,10 +305,17 @@ def main():
             if rel == "is_a" and val.startswith("@"):
                 f[1] = val if val[1:] in key2 else None
             elif rel in ("capital", "largest_city"):
-                k = find(val, ("city",))
-                if k:
-                    country = [g[1] for g in key2[k]["facts"] if g[0] in ("country", "state")]
-                    f[1] = "@" + k
+                # only a city located in this country / state (a same-named city elsewhere is a different place);
+                # otherwise the value stays plain text
+                where = (r["name"], "@" + r["key"])
+                c = [x for x in by_name.get(val, []) if x["type"] == "city" and
+                     any(g[0] in ("country", "state") and g[1] in where for g in x["facts"])]
+                c.sort(key=lambda x: -x["prior"])
+                if c:
+                    f[1] = "@" + c[0]["key"]
+                    stats["city_ref_local"] += 1
+                else:
+                    stats["city_ref_text"] += 1
             elif rel in ("country", "capital_of"):
                 k = find(val, ("country",))
                 if k:

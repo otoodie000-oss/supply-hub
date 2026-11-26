@@ -324,8 +324,9 @@ def assemble(tool, args):
         return "world_time " + "_".join(clean(a) for a in args)
     if tool in ("sort", "pick"):
         s = ""
+        sep = " " if "," in args else ", "      # no copied commas: every copied token is one item
         for a in args:
-            s += ("" if a == "," or not s else " ") + clean(a)
+            s += ("" if a == "," or not s else sep) + clean(a)
         return tool + " " + s
     return (tool + " " + " ".join(clean(a) for a in args)).strip()
 
@@ -366,6 +367,12 @@ def turbox_tool(name, args, st, now, lcg):
             return ["<err>"]
         y = d2.year - d1.year - ((d2.month, d2.day) < (d1.month, d1.day))
         return [str(y)]
+    if name in ("joke", "story", "advice", "explain"):
+        global TEXTSTORE
+        if TEXTSTORE is None:
+            from textstore import TextStore
+            TEXTSTORE = TextStore()
+        return TEXTSTORE.query(name, args, lcg)[0]
     res = twins.run_tool(assemble(name, args), now, lcg)
     if res in ("error", "unknown tool"):
         return ["<err>"]
@@ -373,4 +380,5 @@ def turbox_tool(name, args, st, now, lcg):
 
 
 ISA_FN = None
+TEXTSTORE = None
 from datetime import date  # noqa: E402

@@ -22,6 +22,7 @@ MEM_K = List()
 MEM_V = List()
 BODY = List()
 MRG = List()
+QW = List()
 CHAT = List()
 LOWL = List(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"])
 UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -295,8 +296,8 @@ def decide():
     cp = 1
     qonly = 0
     if t_mode == "find":
-        qonly = 1
-        if len(FIND_BUF) >= 8:
+        qonly = 2
+        if len(FIND_BUF) >= FIND_MAX:
             cp = 0
             vbest(ID_ENDFIND, ID_ENDFIND)
         elif len(FIND_BUF) > 0:
@@ -332,7 +333,8 @@ def decide():
     if cp == 1:
         for j in range(1, n + 1):
             if CPY[j] == 1:
-                if qonly == 0 or REG[j] == "q":
+                r = REG[j]
+                if qonly == 0 or r == "q" or (qonly == 2 and r == "x"):
                     v = PTR[j]
                     if v > bp:
                         bp = v
@@ -621,12 +623,15 @@ def assemble():
         return join("world_time ", s)
     if t == "sort" or t == "pick":
         s = ""
+        sep = ", "
+        if "," in MRG:
+            sep = " "
         for k in range(1, len(MRG) + 1):
             a = MRG[k]
             if a == "," or s == "":
                 s = join(s, clean_arg(a))
             else:
-                s = join(s, join(" ", clean_arg(a)))
+                s = join(s, join(sep, clean_arg(a)))
         return join(t, join(" ", s))
     s = t
     for k in range(1, len(MRG) + 1):
@@ -771,6 +776,9 @@ def run_tturn():
     if t == "years_between":
         push(years_between(), "x")
         return 0
+    if t == "joke" or t == "story" or t == "advice" or t == "explain":
+        ts_query(t)
+        return 0
     t_arg = assemble()
     t_req = 1
     eng_phase = 7
@@ -785,6 +793,52 @@ def tool_result():
         tokenize(t_res)
         push_toks("x")
     eng_phase = 1
+
+@proc
+def ts_query(kind):
+    """open-ended text store index (twin of engine/textstore.py TextStore.query); pushes the result tokens"""
+    k = index_of(TSR_KIND, kind)
+    lo = TSR_LO[k]
+    hi = TSR_HI[k]
+    QW.clear()
+    for j in range(1, len(TARGS_T) + 1):
+        a = TARGS_T[j]
+        if is_alpha(letter(1, a)) == 1 and strlen(a) >= 3:
+            if not (a in KEYSTOP) and not (a in QW):
+                QW.append(a)
+    best = 0
+    bi = 0
+    for i in range(lo, hi + 1):
+        sc = 0
+        st = TSK_START[i]
+        nk = TSK_N[i]
+        for q in range(1, len(QW) + 1):
+            w = QW[q]
+            hit = 0
+            kk = st
+            while hit == 0 and kk < st + nk:
+                b = TSK[kk]
+                if w == b or join(w, "s") == b or w == join(b, "s"):
+                    hit = 1
+                kk += 1
+            sc += hit
+        if sc > best:
+            best = sc
+            bi = i
+    if bi == 0:
+        if not (kind == "joke" or kind == "story"):
+            push("<no>", "x")
+            return 0
+        bi = lo + floor(lcg() * ((hi - lo) + 1))
+        push("<no>", "x")
+    else:
+        push("<yes>", "x")
+    if not (TS_TITLE[bi] == ""):
+        tokenize(TS_TITLE[bi])
+        push_toks("x")
+        push("<d>", "x")
+    tokenize(TS_TEXT[bi])
+    push_toks("x")
 
 # ------------------------------------------------------------------ finishing
 @proc

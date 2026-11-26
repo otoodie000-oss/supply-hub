@@ -2,10 +2,10 @@
 
 Decoding is greedy.  Structural masks (non-learned) only keep actions well-formed:
   action  : <find> <pickK>(K <= candidates shown) relation tokens (after a pick) <tool> <mem> <say_ans|fb|cq|open>
-  find    : copy from the question/context/memory, </find>  (<= 8 tokens)
+  find    : copy from the question/context/memory or a looked-up value, </find>  (<= 12 tokens)
   tool    : first a tool-name token, then copies, argument tokens (months, units, holidays, ops), </tool> (<= 12)
   mem     : a slot token, then copies from the question, <sep>
-  reply   : output-vocabulary words, copies from any earlier position, <end> (<= 200 tokens)
+  reply   : output-vocabulary words, copies from any earlier position, <end> (<= 260 tokens)
 Every word of the reply is chosen by the model; names, numbers and dates exist only as copies.
 fb_bias (calibrated on the dev set) is added to the <say_fb> logit: the trained verifier decision."""
 import os
@@ -25,9 +25,10 @@ from textnorm import filter_chars  # noqa: E402
 import twins  # noqa: E402
 
 MAX_ACTIONS = 16
-MAX_REPLY = 200
-MAX_USER = 150           # user tokens kept per turn
-SEQ_MAX = 500            # positions per turn (executor inserts beyond this are dropped; the turn then ends)
+MAX_REPLY = 260          # a stored story (<= 227 tokens) plus framing
+MAX_USER = 150
+FIND_MAX = 12            # tokens in one <find> mention           # user tokens kept per turn
+SEQ_MAX = 512            # positions per turn (executor inserts beyond this are dropped; the turn then ends)
 HELP = ("i answer questions from offline facts about people , places , words , books and science , do math , "
         "units , dates and times , and remember what you tell me . type /reset to clear my memory .")
 RESET = "memory cleared . let's start fresh ."
@@ -114,7 +115,9 @@ class Turn:
             return
         # copy-capable modes
         cp = np.full(n, NEG)
-        if self.mode in ("find", "mem"):
+        if self.mode == "find":    # a mention comes from the question or from a looked-up value
+            src = [j for j in range(n) if self.region[j] in ("q", "x") and self.copyable[j]]
+        elif self.mode == "mem":
             src = [j for j in range(n) if self.region[j] == "q" and self.copyable[j]]
         else:
             src = [j for j in range(n) if self.copyable[j]]
@@ -122,7 +125,7 @@ class Turn:
         v = np.full(len(vocab), NEG)
         if self.mode == "find":
             allowed = [SID["</find>"]] if self.find_buf else []
-            if len(self.find_buf) >= 8:
+            if len(self.find_buf) >= FIND_MAX:
                 cp[:] = NEG
                 allowed = [SID["</find>"]]
         elif self.mode == "tool":

@@ -71,7 +71,7 @@ def const_source(lay, cfg):
     assert list(range(ml, mh + 1)) == sorted(SID[t] for t in MEM_TOK)
     assert list(range(tl, th + 1)) == sorted(SID[t] for t in TOOL_TOK)
     C = {
-        "SEQ_MAX": SS.SEQ_MAX, "MAX_USER": SS.MAX_USER, "MAX_ACTIONS": SS.MAX_ACTIONS, "MAX_REPLY": SS.MAX_REPLY,
+        "SEQ_MAX": SS.SEQ_MAX, "FIND_MAX": SS.FIND_MAX, "MAX_USER": SS.MAX_USER, "MAX_ACTIONS": SS.MAX_ACTIONS, "MAX_REPLY": SS.MAX_REPLY,
         "ID_SAYFB": SID["<say_fb>"], "ID_ENDFIND": SID["</find>"], "ID_ENDTOOL": SID["</tool>"],
         "TOOL_LO": tl, "TOOL_HI": th, "ARG_LO": al, "ARG_HI": ah, "OPS_LO": ol, "OPS_HI": oh, "MEM_LO": ml,
         "MEM_HI": mh, "ID_SEP": SID["<sep>"], "ID_END": SID["<end>"], "N_SPEC": len(SPECIALS), "N_GEN": G,
@@ -136,6 +136,30 @@ def declare_tables(P, cfg):
     P.lst("OPS_TOK", list(EX.OPSYM.keys()))
     P.lst("OPS_SYM", list(EX.OPSYM.values()))
     P.lst("NOSP", [".", ",", "!", "?", ":", ";", "%", ")", "'s", "'"])
+    ts = json.load(open(os.path.join(WORK, "kb", "textstore.json")))
+    kinds = ts["KIND"]
+    P.lst("TS_TITLE", ts["TITLE"])
+    P.lst("TS_TEXT", ts["TEXT"])
+    flat, start, cnt = [], [], []
+    for k in ts["KEY"]:
+        ws = k.split(" ") if k else []
+        start.append(len(flat) + 1)
+        cnt.append(len(ws))
+        flat += ws
+    P.lst("TSK", flat)
+    P.lst("TSK_START", start)
+    P.lst("TSK_N", cnt)
+    P.lst("KEYSTOP", ts["KEYSTOP"])
+    order = []
+    for k in kinds:
+        if k not in order:
+            order.append(k)
+    P.lst("TSR_KIND", order)
+    P.lst("TSR_LO", [kinds.index(k) + 1 for k in order])
+    P.lst("TSR_HI", [len(kinds) - kinds[::-1].index(k) for k in order])
+    for k in order:   # each kind contiguous
+        lo, hi = kinds.index(k), len(kinds) - 1 - kinds[::-1].index(k)
+        assert all(x == k for x in kinds[lo:hi + 1])
     P.lst("TYPE_CODE", list(EX.TYPE_PHRASE.keys()))
     P.lst("TYPE_PHRASE", list(EX.TYPE_PHRASE.values()))
     return None

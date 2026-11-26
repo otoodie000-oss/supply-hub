@@ -60,10 +60,41 @@ def template_words():
     return sorted(words)
 
 
+def reply_words(paths, limit=400000):
+    """every reply token the traces need generated: a target after <say_*> that is not copyable from an earlier
+    position of the same trace (digit-initial tokens are never generatable: numbers must be copied)"""
+    need, digits = Counter(), Counter()
+    n = 0
+    for f in paths:
+        for l in gzip.open(f, "rt"):
+            tr = json.loads(l)
+            t, y = tr["t"], tr["y"]
+            seen = set()
+            inrep = False
+            for k, (w, yy) in enumerate(zip(t, y)):
+                if yy == 1 and w.startswith("<say_"):
+                    inrep = True
+                elif inrep and yy == 1 and w != "<end>" and w not in seen:
+                    if w[:1].isdigit():
+                        digits[w] += 1
+                    else:
+                        need[w] += 1
+                if not (w.startswith("<") and w.endswith(">") and len(w) > 2):
+                    seen.add(w)
+            n += 1
+            if n >= limit:
+                return need, digits
+    return need, digits
+
+
 def main():
-    out = template_words()
+    paths = sorted(glob.glob("/home/user/work/x/train/%s*.jsonl.gz" % (sys.argv[1] if len(sys.argv) > 1 else "")))
+    tw = set(template_words())
+    need, digits = reply_words(paths)
+    out = sorted(tw | set(need))
+    extra = sorted(set(need) - tw)
     cnt = Counter()
-    for f in sorted(glob.glob("/home/user/work/x/train/*.jsonl.gz"))[:4]:
+    for f in paths[:4]:
         for i, l in enumerate(gzip.open(f, "rt")):
             for t in json.loads(l)["t"]:
                 if is_word(t):
@@ -80,6 +111,8 @@ def main():
             have.add(w)
     json.dump({"out": out, "inp": inp}, open("/home/user/work/x/vocab.json", "w"))
     print("output words", len(out), "input words", len(inp), "specials", len(SPECIALS))
+    print("reply words not in templates (added):", extra[:80], len(extra))
+    print("digit tokens that would need generating (must be 0):", digits.most_common(10))
 
 
 if __name__ == "__main__":

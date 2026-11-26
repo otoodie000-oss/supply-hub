@@ -365,3 +365,33 @@ RECALL_REPLY = {"name": ["Your name is {V}.", "You told me your name is {V}."],
                 "job": ["You work as a {V}.", "You told me you're a {V}."],
                 "color": ["Your favorite color is {V}.", "You like {V} best."]}
 CLARIFY = ["Do you mean {A}, the {DA}, or {B}, the {DB}?", "Which {N} do you mean: the {DA} or the {DB}?"]
+
+# ---------------------------------------------------------------- open-ended (text store tools)
+OPEN_TRAIN = {
+    "joke_topic": ["Tell me a joke about {t}.", "Do you know any jokes about {t}?", "Got a {t} joke?",
+                   "I want to hear a funny joke about {t}", "Make me laugh with a joke about {t}.",
+                   "joke about {t} pls", "Any good {t} jokes?"],
+    "joke_any": ["Tell me a joke.", "Know any good jokes?", "Make me laugh!", "Say something funny.", "I need a joke.",
+                 "joke please", "Got any jokes for me?"],
+    "story_topic": ["Tell me a story about {t}.", "Can you tell me a short story about {t}?", "Write a story about {t}.",
+                    "I'd love a bedtime story about {t}.", "story about {t} please", "Make up a story about {t}."],
+    "story_any": ["Tell me a story.", "Can you tell me a bedtime story?", "Tell me a short story.", "I want to hear a story.",
+                  "story time!"],
+    "explain": ["Explain {t}.", "Can you explain {t} to me?", "Help me understand {t}.", "Explain {t} simply",
+                "I don't get {t}, can you explain?", "Give me a simple explanation of {t}."],
+    "advice": ["Any tips for {t}?", "Give me advice on {t}.", "I need help with {t}.", "What should I do about {t}?",
+               "Advice for {t}?", "Can you help me with {t}?"],
+}
+OPEN_REPLY = {
+    "joke_yes": ["{X}", "Here's one: {X}", "Sure! {X}"],
+    "joke_no": ["I don't know a joke about {T}, but here's one: {X}", "I don't have a {T} joke, but here's another one: {X}"],
+    "joke_any": ["{X}", "Here's one: {X}", "Okay! {X}"],
+    "story_yes": ["Here's a story called {N}. {X}", "Sure! This one is called {N}. {X}"],
+    "story_no": ["I don't have a story about {T}, but here's one called {N}. {X}"],
+    "story_any": ["Here's a story called {N}. {X}", "Okay, this one is called {N}. {X}"],
+    "explain_yes": ["{X}", "Sure. {X}"],
+    "explain_kb": ["{E} is {V}.", "In short, {E} is {V}."],
+    "explain_no": ["I don't have an explanation of {T} in my offline knowledge. Is there a specific part of it you'd like me to look up?"],
+    "advice_yes": ["{X}", "Here's what usually helps: {X}"],
+    "advice_no": ["I don't have advice about {T} in my offline knowledge. What part of it is hardest for you right now?"],
+}
