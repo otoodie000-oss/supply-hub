@@ -8,6 +8,7 @@ const Packager = require(process.env.TW_PACKAGER || '/home/user/work/pkgr/node_m
   const p = new Packager.Packager();
   p.project = loaded;
   p.options.app.windowTitle = 'TurboX';
+  p.options.autoplay = true;
   p.options.framerate = 30;
   p.options.compiler.enabled = true;
   p.options.compiler.warpTimer = false;

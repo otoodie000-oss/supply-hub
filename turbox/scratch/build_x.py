@@ -96,7 +96,7 @@ def const_source(lay, cfg):
         "TOOL_LO": tl, "TOOL_HI": th, "ARG_LO": al, "ARG_HI": ah, "OPS_LO": ol, "OPS_HI": oh, "MEM_LO": ml,
         "MEM_HI": mh, "ID_SEP": SID["<sep>"], "ID_END": SID["<end>"], "N_SPEC": len(SPECIALS), "N_GEN": G,
         "U_HK": lay.U_HK, "U_HV": lay.U_HV, "U_SPLIT": lay.U_SPLIT, "ID_NUM": SID["<num>"], "ID_UNK": SID["<unk>"], "CHAT_MAX": CHAT_MAX,
-        "FZ_STEP": FZ_STEP, "UNIT_CAP": 200, "RESET_TXT": SS.RESET, "HELP_TXT": SS.HELP,
+        "FZ_STEP": FZ_STEP, "UNIT_CAP": 200, "RESET_TXT": SS.RESET, "HELP_TXT": SS.HELP, "RESET_SHOWN": SS.RESET_SHOWN, "HELP_SHOWN": SS.HELP_SHOWN,
         "C_DESC": REL["description"][0], "C_STATE": REL["state"][0], "C_COUNTRY": REL["country"][0],
         "C_CITY": REL["city"][0], "C_AUTHOR": REL["author"][0], "C_OCC": REL["occupation"][0],
         "C_POS": REL["position"][0], "C_NAT": REL["nationality"][0], "C_ISA": REL["is_a"][0],

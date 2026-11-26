@@ -36,6 +36,10 @@ SEQ_MAX = 512            # positions per turn (executor inserts beyond this are 
 HELP = ("i answer questions from offline facts about people , places , words , books and science , do math , "
         "units , dates and times , and remember what you tell me . type /reset to clear my memory .")
 RESET = "memory cleared . let's start fresh ."
+# shown verbatim (fixed command text; bypasses display() so "/reset" is not glued to the word before it)
+HELP_SHOWN = ("I answer questions from offline facts about people, places, words, books and science, do math, "
+              "units, dates and times, and remember what you tell me. Type /reset to clear my memory.")
+RESET_SHOWN = "Memory cleared. Let's start fresh."
 SAY = ["<say_ans>", "<say_fb>", "<say_cq>", "<say_open>"]
 NEG = -1e9
 
@@ -327,7 +331,7 @@ class Session:
         c = filter_chars(text).lower().strip()
         if c == "/reset":
             self.reset()
-            return display(split(RESET)), "cmd"
+            return RESET_SHOWN, "cmd"
         if c == "/help":
-            return display(split(HELP)), "cmd"
+            return HELP_SHOWN, "cmd"
         return None

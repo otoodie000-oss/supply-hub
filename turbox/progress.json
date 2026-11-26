@@ -1,7 +1,7 @@
 {
  "project": "TurboX",
  "phase": "4 (final eval)",
- "step": "full 1M eval running: WORK/eval/final_1m (resumable: rerun eval/run_test.py with the same shard lists; done shards are skipped); then grader validation, A/B, rubric, README",
+ "step": "full 1M eval running (WORK/eval/final_1m, 4 procs x 5 shards, ~40 min/shard, ETA ~02:00 UTC; resumable: rerun eval/run_test.py with the same shard lists). Then: regrade, export_results, fresh grader set (grader_val.py fresh/fresh_score), final perf run on a quiet machine (harness/perf_summary.py), make_readme.py, commit build/.",
  "done": [
   "audit_2_0 (results/audit_2_0.json)",
   "turbowarp_bench (int list 5.5 ns/MAC, 2-digit strings ~15 ns/MAC, bsearch 0.19 us)",
@@ -21,7 +21,12 @@
   "Fix pass 2 (tx4): 20K subset @ bias 3: 82.1% correct / 6.1% CW (grader v3); 2.0: 21.0% / 64.0%",
   "Fix pass 3 (no retraining): display joins '-' and '/' between words; grader sentence split ignores initials/abbreviations, clarification detection, hyphen/leading-dot phrase matching; UI bubble updates throttled to ~8/s",
   "Final build WORK/final/TurboX.sb3: 7,548,646 bytes; Cast.compare order check 0 out of order; parity 2,135/2,135 turns on the 2K stratified subset",
-  "Performance (uncontended): load 0.48-0.52 s, flag->ready 267 ms, max frame 33.9 ms (0 over 50), idle 0.04 ms; factual median 0.93 s p95 1.53 s; stories median 8.0 s p95 9.7 s"
+  "Performance (uncontended): load 0.48-0.52 s, flag->ready 267 ms, max frame 33.9 ms (0 over 50), idle 0.04 ms; factual median 0.93 s p95 1.53 s; stories median 8.0 s p95 9.7 s",
+  "Open-ended blind eval: rubric TurboX 2.99/5 vs 2.0 1.38 (story 4.20, joke 3.79, advice 2.09, explain 1.89); A/B 114-40 with 46 ties = 74.0% of decided. Both gates fail; no further fix (prompts now seen = would be tuning to test).",
+  "2.0 baseline regraded with final grader: 21.19% correct / 63.94% CW / 1.6% bare IDK.",
+  "Grader post-fix agreement on the 500 blind hand grades: 98.6% (493/500, optimistic); blind (grader at the time) 96.2%.",
+  "Packaged HTML (autoplay on) works fully offline in headless Chromium: 0 network requests, first prompt 1.5-1.7 s under 4-core load.",
+  "/help printed 'Type/reset' (slash join rule): /help and /reset now fixed strings in mirror + Scratch; rebuilt sb3 7,548,735 bytes; structural diff vs parity-checked build = only those 2 branches + 2 constants; transcripts 25/25 identical."
  ],
  "work_dir": "/home/user/work/x",
  "src_2_0": "/home/user/supply-hub/turbo2 (repo copy; /mnt/attach and uploads were empty)",
@@ -52,14 +57,19 @@
   "Fix pass 2 (driven by the 20K subset analysis): tool-call context for follow-ups (runtime feature in mirror + Scratch), memory statement/recall phrasings with KB-derived value pools, irrelevant ctx/mem prefixes on 30% of single-turn traces, broad unit conversions, extra relation phrasings, removed unsupported-question templates that overlapped real relations.",
   "Grader fix 2 (applies to both systems): possessive normalisation, 'private details / haven't told me' declines, a fallback stating one specific new fact is not bare IDK. 2.0 regraded: 21.0% correct / 63.7% CW / 1.6% bare IDK.",
   "Scratch isa tool used relation code 'ia' instead of 'ip' (caught by the 2K parity run: 6 mismatches); fixed via the C_ISA constant.",
-  "Fallback bias 3.0 chosen on dev (lowest dev wrong rate 0.70% with over-cautious fallbacks <= 2%, 1.83%)."
+  "Fallback bias 3.0 chosen on dev (lowest dev wrong rate 0.70% with over-cautious fallbacks <= 2%, 1.83%).",
+  "Open-ended gates fail (rubric 2.99 < 3.5; A/B 74% < 90%). Rater is the builder and styles are recognizable: not truly blind.",
+  "Memory recall is phrasing-sensitive ('What's my name?' falls back where 'What is my name?' works); user-typed names display lowercase. Documented, not fixed (would need retraining / mirror+Scratch change + parity re-run; writing quality ranks below correctness).",
+  "Perf measured during the 1M run showed one boot frame at 63 ms under 4-core contention; the final perf numbers are re-measured on a quiet machine."
  ],
  "decisions": [
   "Weights stored as 2-digit decimal strings with QAT (~0.7 deflated bytes/weight at 32 levels vs 1.24 for 2.0's int8 list items); decode costs ~2.8x compute.",
   "Engine = one small decoder ('brain') with a copy pointer that reads the question, issues lookups/tool calls, picks candidates, decides answer/fallback/clarify and writes every word; candidates come from the non-learned name index.",
   "KB quota: persons 82K (WikiBio), leads 30K (2017), WordNet 25K senses (+is-a closure), all table entities.",
   "Weights: per-row 2-digit codes (value = (code-49)*scale), dot products as sum(code*x) - 49*sum(x).",
-  "Work units ~1 ms; a chunk runs units for <= 3.5 ms wall time (cap 200 units)."
+  "Work units ~1 ms; a chunk runs units for <= 3.5 ms wall time (cap 200 units).",
+  "Ship the tx4 build at bias 3 and report real numbers (gates fail after 3 fix passes).",
+  "Fresh blind grader-validation set of 500 items from outside every development subset, for an unbiased final-grader agreement figure."
  ],
  "kb_cmd": "Q_PERSONS=80000 Q_LEADS=30000 Q_WORDNET=25000 python3 kb/merge.py && POST_CAP=80 python3 kb/encode.py"
 }

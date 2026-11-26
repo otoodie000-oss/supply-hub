@@ -137,7 +137,7 @@ def start_turn(msg):
         REPLY.clear()
         for i in range(1, len(TOKS) + 1):
             REPLY.append(TOKS[i])
-        display = render_display()
+        display = RESET_SHOWN
         reply_mode = "cmd"
         eng_phase = 6
         return 0
@@ -146,7 +146,7 @@ def start_turn(msg):
         REPLY.clear()
         for i in range(1, len(TOKS) + 1):
             REPLY.append(TOKS[i])
-        display = render_display()
+        display = HELP_SHOWN
         reply_mode = "cmd"
         eng_phase = 6
         return 0

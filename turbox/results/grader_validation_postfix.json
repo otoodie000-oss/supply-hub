@@ -1,0 +1,43 @@
+{
+ "n": 500,
+ "agree": 493,
+ "agreement": 0.986,
+ "disagreements": [
+  {
+   "id": "t0179942",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  },
+  {
+   "id": "t0312485",
+   "hand": "confidently_wrong",
+   "auto": "nonanswer"
+  },
+  {
+   "id": "t0398944",
+   "hand": "correct",
+   "auto": "bare_idk"
+  },
+  {
+   "id": "t0630428",
+   "hand": "correct",
+   "auto": "clarify_wrong"
+  },
+  {
+   "id": "t0701093",
+   "hand": "fallback",
+   "auto": "correct"
+  },
+  {
+   "id": "t0754889",
+   "hand": "confidently_wrong",
+   "auto": "nonanswer"
+  },
+  {
+   "id": "t0907006",
+   "hand": "nonanswer",
+   "auto": "confidently_wrong"
+  }
+ ],
+ "note": "final grader vs the same blind hand labels; optimistic, fixes were made after seeing these items"
+}
