@@ -33,7 +33,8 @@ DECLINE = re.compile(r"\b(i don'?t know|i do not know|not sure|no idea|i can'?t 
                      r"i cannot|don'?t have (that|this|a note|any|the exact|access)|isn'?t in my|is not in my|"
                      r"not in my (offline|notes|knowledge|data)|offline knowledge|can'?t check|unable to|i'm sorry, i can'?t|"
                      r"don'?t have live|no live|i have no way|can'?t know|i'm not able|beyond what i know|"
-                     r"not something i (know|can)|i don'?t have information)\b")
+                     r"not something i (know|can)|i don'?t have information|i don'?t have private|wouldn'?t share|"
+                     r"haven'?t told me)\b")
 STOP = set("""the a an of in on at to for from with by and or but is are was were be been it its this that these those
 i you he she they we me my your his her their our them us what who where when why how which whose do does did done
 can could would should will shall may might must have has had not no yes so as if then than there here about into
@@ -57,7 +58,14 @@ def words(s):
 
 
 def content(s):
-    return [w for w in words(s) if w not in STOP and len(w) > 1]
+    """content words; a possessive 's is dropped (whipsnake's -> whipsnake)"""
+    out = []
+    for w in words(s):
+        if w.endswith("'s"):
+            w = w[:-2]
+        if w not in STOP and len(w) > 1:
+            out.append(w)
+    return out
 
 
 def sentences(s):
@@ -101,6 +109,9 @@ def form_of(reply, question):
     rest = DECLINE.sub(" ", r)
     new = [w for w in content(rest) if w not in qw and w not in FILLER]
     concrete = len(new) >= 3 or bool(re.search(r"\d", rest)) or ("?" in rest and len(new) >= 1)
+    # one specific new fact stated in a sentence ("..., but X is in Egypt.") is useful content
+    if not concrete and any(w not in GENERIC for w in new) and re.search(r"\b(is|was|are|were|has|had)\b", rest):
+        concrete = True
     if dec:
         return "fallback" if concrete else "bare_idk"
     if r.rstrip().endswith("?") or (len(sentences(r)) <= 2 and "?" in r and re.match(r"^(do|did|are|is|which|what|who|could|can|would)\b", sentences(r)[-1])):
@@ -225,7 +236,8 @@ worked work known called located uses used spoken people person word words means
 markets money explain game games team teams follow place places country city town state places birthplace population
 nationality occupation date year years month day days language languages currency capital description definition
 author written published released elevation code airport book film song album something else instead give look
-specific part hardest advice explanation joke story stories""".split())
+specific part hardest advice explanation joke story stories since haven't told tell yet stock stocks share shares
+password phone address instead prices""".split())
     return g
 
 

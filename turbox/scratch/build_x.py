@@ -181,6 +181,7 @@ def declare_tables(P, cfg):
         lo, hi = kinds.index(k), len(kinds) - 1 - kinds[::-1].index(k)
         assert all(x == k for x in kinds[lo:hi + 1])
     P.lst("TOOLS_A", TOOLS_A)
+    P.lst("CTX_TOOLS", list(SS.CTX_TOOLS))
     P.lst("NAMED_T", list(EX.NAMED_TYPES))
     P.lst("SMALLW", list(EX.SMALLW))
     P.lst("RCAP", [1 if REL_OF_TOK[t] in EX.CAP_RELS else 0 for t in REL_TOK])

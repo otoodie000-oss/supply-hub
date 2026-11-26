@@ -55,6 +55,8 @@ bv = 0
 bj = 0
 stat_units = 0
 stat_tokens = 0
+last_tool = ""
+last_targs = ""
 k_req = 0
 t_req = 0
 x_req = 0
@@ -121,6 +123,7 @@ def session_reset():
 def start_turn(msg):
     """build the prompt (or answer /reset, /help); sets eng_phase"""
     global t_mode, n_actions, picked_ok, tool_name, mem_slot, say_mode, last_rel, rel_ent, st_cur, eng_phase
+    global last_tool, last_targs
     global display, reply_mode
     global pcap
     m = fold(msg)
@@ -172,6 +175,8 @@ def start_turn(msg):
     mem_slot = ""
     say_mode = ""
     last_rel = ""
+    last_tool = ""
+    last_targs = ""
     rel_ent = 0
     st_cur = 0
     push("<bos>", "q")
@@ -749,7 +754,7 @@ def isa_walk(child, parent):
 @proc
 def run_tturn():
     """execute the model's tool call; push <r> + result tokens (2.0 helpers run in the tools worker)"""
-    global t_arg, t_req, eng_phase
+    global t_arg, t_req, eng_phase, last_tool, last_targs
     t = tool_name
     push("<r>", "x")
     if t == "cmp_more" or t == "cmp_less":
@@ -807,6 +812,15 @@ def run_tturn():
     if t == "joke" or t == "story" or t == "advice" or t == "explain":
         ts_query(t)
         return 0
+    if t in CTX_TOOLS:
+        last_tool = join("<t_", join(t, ">"))
+        s = ""
+        for i in range(1, len(TARGS_T) + 1):
+            if i == 1:
+                s = TARGS_T[i]
+            else:
+                s = join(s, join(" ", TARGS_T[i]))
+        last_targs = s
     t_arg = assemble()
     if t in TOOLS_A:
         t_req = 1
@@ -927,7 +941,10 @@ def chat_add(s):
 @proc
 def finish_turn():
     global ctx_rel, ctx_name, display, busy, eng_phase, reply_mode
-    if not (last_rel == "") and rel_ent > 0:
+    if not (last_tool == "") and last_rel == "":
+        ctx_rel = last_tool
+        ctx_name = last_targs
+    elif not (last_rel == "") and rel_ent > 0:
         ctx_rel = last_rel
         name_tokens(rel_ent)
         s = ""

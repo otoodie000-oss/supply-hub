@@ -33,6 +33,7 @@ from vocab import TOK_OF_REL  # noqa: E402
 import twins  # noqa: E402
 import pools_train as P  # noqa: E402
 import pools_x as PX  # noqa: E402
+import pools_x2 as PX2  # noqa: E402
 from gen_test import title_case, NAMED_TYPES, qualifier, date_parts  # noqa: E402  (mention helpers only)
 from textnorm import filter_chars  # noqa: E402
 
@@ -89,6 +90,24 @@ def merge_pools():
                 add(P.REL_TRAIN[k][kk], vv)
         elif k in P.REL_TRAIN and not isinstance(P.REL_TRAIN[k], dict):
             add(P.REL_TRAIN[k], v)
+    # fix pass 2
+    for k, v in PX2.TOOL_X2.items():
+        add(P.TOOL_TRAIN.setdefault(k, []), v)
+    for k, v in PX2.REL_Q_X2.items():
+        if k in P.REL_TRAIN and not isinstance(P.REL_TRAIN[k], dict):
+            add(P.REL_TRAIN[k], v)
+    for k, v in PX2.REL_NOUN_X2.items():
+        if isinstance(PX.REL_NOUN.get(k), list):
+            add(PX.REL_NOUN[k], v)
+    for k, v in PX2.RECALL_STATE_X.items():
+        add(P.RECALL_STATE_TRAIN[k], v)
+    for k, v in PX2.RECALL_ASK_X.items():
+        add(P.RECALL_ASK_TRAIN[k], v)
+    for k in PX.UNSUPPORTED_X:
+        PX.UNSUPPORTED_X[k] = [t for t in PX.UNSUPPORTED_X[k] if t not in PX2.UNSUPPORTED_DROP]
+    PX2.CONVERT_Q[:] = [t for t in PX2.CONVERT_Q if _norm_t(t) not in test]
+    for k in PX2.TOOL_FOLLOW:
+        PX2.TOOL_FOLLOW[k] = [t for t in PX2.TOOL_FOLLOW[k] if _norm_t(t) not in test]
     PX.GEN_FRAMES[:] = [f for f in PX.GEN_FRAMES if _norm_t(f) not in test]
     for k, v in PX.UNSUPPORTED_X.items():
         PX.UNSUPPORTED_X[k] = [t for t in v if _norm_t(t) not in test] or v[:0]
@@ -709,6 +728,7 @@ class Gen:
         lcg = twins.LCG(seed)
         R = r.randint
         fill, args, tname = {}, [], kind
+        forced_t = None
         if kind.startswith("calc_"):
             tname = "calc"
             op = kind[5:]
@@ -734,6 +754,18 @@ class Gen:
             x, y = R(10, 900), R(10, 900)
             fill = {"x": x, "y": y}
             args = [str(x), str(y)]
+        elif kind == "convert" and r.random() < 0.75:
+            dims = {}
+            for u, (dim, fac, lab) in twins.UNITS.items():
+                if dim != "temp" and u in PX2.UNIT_NAMES:
+                    dims.setdefault(dim, []).append(u)
+            dim = r.choice(sorted(dims))
+            u1, u2 = r.sample(dims[dim], 2)
+            n1, n2 = r.choice(PX2.UNIT_NAMES[u1]), r.choice(PX2.UNIT_NAMES[u2])
+            x = R(1, 900) if r.random() < 0.8 else round(r.uniform(0.5, 99), 1)
+            fill = {"x": twins.fmt(x) if isinstance(x, float) else x, "u1": n1, "u2": n2}
+            args = [str(fill["x"]), "<u_%s>" % u1, "<u_%s>" % u2]
+            forced_t = r.choice(PX2.CONVERT_Q)
         elif kind == "convert":
             u1, u2, n1, n2 = r.choice([("km", "mi", "km", "miles"), ("mi", "km", "miles", "km"), ("kg", "lb", "kg", "pounds"),
                                        ("lb", "kg", "lbs", "kg"), ("m", "ft", "meters", "feet"), ("ft", "m", "feet", "meters"),
@@ -801,7 +833,7 @@ class Gen:
                               "cheese", "butter"], R(3, 5))
             fill = {"list": ", ".join(items)}
             args = list(items)
-        t = r.choice(P.TOOL_TRAIN[kind])
+        t = forced_t or r.choice(P.TOOL_TRAIN[kind])
         q = t
         for k, v in fill.items():
             q = q.replace("{" + k + "}", str(v))
@@ -997,10 +1029,31 @@ class Gen:
                      "job": ["doctor", "engineer", "farmer", "lawyer", "writer", "student", "chef", "artist", "mechanic", "nurse"],
                      "color": ["blue", "red", "pink", "black", "gold", "silver", "white", "brown", "lime", "navy"]}
 
+    def recall_values(self):
+        """value pools for memory traces: first names / jobs / cities from the KB (training entities), lists for the rest"""
+        if hasattr(self, "_rv"):
+            return self._rv
+        first, jobs, cities = set(), set(), set()
+        for e in self.train_ents:
+            if e["type"] == "person":
+                w = e["name"].split(" ")[0]
+                if w.isalpha() and 3 <= len(w) <= 9:
+                    first.add(w.title())
+                for f in e["facts"]:
+                    if f[0] == "occupation" and f[1].isalpha() and 4 <= len(f[1]) <= 12:
+                        jobs.add(f[1])
+            elif e["type"] == "city" and e["prior"] > 40 and len(e["name"].split()) <= 2:
+                cities.add(title_case(e["name"]))
+        self._rv = {"name": sorted(first) + self.RECALL_VALUES["name"], "job": sorted(jobs) + self.RECALL_VALUES["job"],
+                    "city": sorted(cities) + self.RECALL_VALUES["city"], "food": PX2.FOODS, "color": PX2.COLORS,
+                    "pet": PX2.PETS}
+        return self._rv
+
     def recall(self):
         r = self.r
+        RV = self.recall_values()
         slot = r.choice(sorted(P.RECALL_STATE_TRAIN))
-        val = r.choice(self.RECALL_VALUES[slot])
+        val = r.choice(RV[slot])
         vt = split(val.lower())
         if r.random() < 0.5:  # the turn that states the fact: write memory, acknowledge
             tr = Trace()
@@ -1012,15 +1065,121 @@ class Gen:
             self.say(tr, "<say_open>", r.choice(P.RECALL_ACK[slot]), {"V": vt})
             return tr, "recall_state"
         tr = Trace()
-        slots = [slot] + r.sample([s for s in sorted(P.RECALL_STATE_TRAIN) if s != slot], r.choice([0, 1, 2]))
+        missing = r.random() < 0.2          # asked about something the user never said
+        others = [s for s in sorted(P.RECALL_STATE_TRAIN) if s != slot]
+        slots = ([] if missing else [slot]) + r.sample(others, r.choice([0, 1, 2]))
         r.shuffle(slots)
+        if r.random() < 0.3:
+            self.random_ctx(tr)
         for s in slots:
-            v = vt if s == slot else split(r.choice(self.RECALL_VALUES[s]).lower())
+            v = vt if s == slot else split(filter_chars(r.choice(RV[s])).lower())
             tr.inp(["<mem>", "<ms_%s>" % s] + v + ["<sep>"])
         qt = norm_q(self.maybe_messy(r.choice(P.RECALL_ASK_TRAIN[slot])))
         tr.inp(["<q>"] + qt)
+        if missing:
+            self.say(tr, "<say_fb>", P.UNKNOWABLE_REPLY["personal"], {})
+            return tr, "recall_missing"
         self.say(tr, "<say_ans>", r.choice(P.RECALL_REPLY[slot]), {"V": vt})
         return tr, "recall_ask"
+
+    def random_ctx(self, tr):
+        """a leftover context prefix from an earlier turn (relation + entity, or a helper call)"""
+        r = self.r
+        if r.random() < 0.75:
+            e = self.train_ents[r.randrange(len(self.train_ents))]
+            rels = [f[0] for f in e["facts"] if f[0] in TOK_OF_REL]
+            if rels:
+                tr.inp(["<ctx>", TOK_OF_REL[r.choice(rels)]] + self.name_toks(self.ent_id[e["key"]]))
+                return
+        x, y = r.randint(2, 999), r.randint(2, 99)
+        tr.inp(r.choice([["<ctx>", "<t_pct_of>", str(y), str(x)], ["<ctx>", "<t_calc>", str(x), "<op_times>", str(y)],
+                         ["<ctx>", "<t_convert>", str(x), "<u_km>", "<u_mi>"]]))
+
+    def random_mem(self, tr):
+        r = self.r
+        RV = self.recall_values()
+        for s in r.sample(sorted(P.RECALL_STATE_TRAIN), r.choice([1, 1, 2])):
+            tr.inp(["<mem>", "<ms_%s>" % s] + split(filter_chars(r.choice(RV[s])).lower()) + ["<sep>"])
+
+    def augment(self, tr):
+        """fix pass 2: an irrelevant context/memory prefix in front of a single-turn trace (the runtime carries
+        both across turns, so ordinary questions must be answered with them present)"""
+        r = self.r
+        if tr.t[1] != "<q>" or r.random() > 0.3:
+            return tr
+        pre = Trace()
+        if r.random() < 0.7:
+            self.random_ctx(pre)
+        if r.random() < 0.5:
+            self.random_mem(pre)
+        if len(pre.t) == 1:
+            return tr
+        tr.t = pre.t + tr.t[1:]
+        tr.y = pre.y + tr.y[1:]
+        return tr
+
+    def tool_follow(self):
+        """a follow-up that changes one argument of the previous helper call carried in the context"""
+        r = self.r
+        from executor import assemble
+        kind = r.choice(sorted(PX2.TOOL_FOLLOW))
+        nowv = twins.Now(datetime(2026, 1, 5, 10, 0), 0)
+        lcg = twins.LCG(1)
+        R = r.randint
+        tr = Trace()
+        if kind.startswith("pct_of") or kind.startswith("tip"):
+            tname = "pct_of" if kind.startswith("pct_of") else "tip"
+            p, x = r.choice([5, 10, 15, 20, 25, 30, 40, 50, 75]), R(10, 2000)
+            p2, x2 = r.choice([5, 10, 12.5, 15, 18, 20, 25, 30, 40, 50, 60, 75, 90]), R(10, 2000)
+            prev = [twins.fmt(p), str(x)]
+            if kind.endswith("_p"):
+                new, fill = [twins.fmt(p2), str(x)], {"p": twins.fmt(p2)}
+            else:
+                new, fill = [twins.fmt(p), str(x2)], {"x": x2}
+        elif kind == "calc_y":
+            tname = "calc"
+            op = r.choice(["<op_plus>", "<op_minus>", "<op_times>", "<op_div>"])
+            x, y, y2 = R(2, 999), R(2, 99), R(2, 99)
+            prev, new, fill = [str(x), op, str(y)], [str(x), op, str(y2)], {"y": y2}
+        elif kind == "convert_x":
+            tname = "convert"
+            u1, u2 = r.choice([("km", "mi"), ("mi", "km"), ("kg", "lb"), ("lb", "kg"), ("m", "ft"), ("c", "f"),
+                               ("l", "gal"), ("hr", "min"), ("cm", "in")])
+            x, x2 = R(1, 500), R(1, 500)
+            prev, new = [str(x), "<u_%s>" % u1, "<u_%s>" % u2], [str(x2), "<u_%s>" % u1, "<u_%s>" % u2]
+            fill = {"x": x2, "u1": r.choice(PX2.UNIT_NAMES.get(u1, [u1]))}
+        else:
+            tname = "world_time"
+            cs = r.sample(sorted(twins.CITIES), 2)
+            prev, new = split(cs[0]), split(cs[1])
+            fill = {"c": title_case(cs[1])}
+        tr.inp(["<ctx>", "<t_%s>" % tname] + prev)
+        q = r.choice(PX2.TOOL_FOLLOW[kind])
+        for k, v in fill.items():
+            q = q.replace("{" + k + "}", str(v))
+        qt = norm_q(self.maybe_messy(q))
+        tr.inp(["<q>"] + qt)
+        seen = set(qt) | set(prev)
+        if any(a not in seen for a in new if not a.startswith("<")):
+            return None, None
+        tr.out(["<tool>", "<t_%s>" % tname] + new + ["</tool>"])
+        res = twins.run_tool(assemble(tname, new), nowv, lcg)
+        if res in ("error", "unknown tool"):
+            return None, None
+        rt = split(res)
+        tr.inp(["<r>"] + rt)
+        tr.now = [2026, 1, 5, 10, 0, 0]
+        fam = tname if tname in P.TOOL_REPLY else "default"
+        if tname in ("pct_of", "tip"):
+            F = {"P": [new[0]], "X": [new[1]]}
+        else:
+            F = {}
+        F.update({"R": rt, "C": new if tname == "world_time" else []})
+        tmpl = r.choice(P.TOOL_REPLY[fam])
+        if any(("{%s}" % k) in tmpl and not F.get(k) for k in ("P", "X", "C")):
+            tmpl = "That's {R}."
+        self.say(tr, "<say_ans>", tmpl, F)
+        return tr, "tool_follow_" + kind
 
     # ------------------------------------------------------------ chat (basic; open-ended writing comes later)
     CHAT = [("hi", ["Hi! What would you like to know?", "Hello! Ask me anything."]),
@@ -1141,7 +1300,8 @@ class Gen:
 
 
 MIX = [("kb_fact", 40), ("kb_missing", 6), ("derived", 14), ("tool", 15), ("unknowable", 4), ("ambiguous", 4),
-       ("underspecified", 1), ("followup", 6), ("recall", 5), ("chat", 2), ("open_ended", 5), ("unsupported", 4)]
+       ("underspecified", 1), ("followup", 6), ("recall", 7), ("chat", 2), ("open_ended", 5), ("unsupported", 3),
+       ("tool_follow", 2)]
 
 
 def test_ngrams():
@@ -1188,6 +1348,7 @@ def main():
                 tr, sub = getattr(G, c)()
             if tr is None:
                 continue
+            tr = G.augment(tr)
             q = tr.t[tr.t.index("<q>") + 1:]
             qw = [x for x in q if x[:1].isalnum() and not x.startswith("<")]
             qw = qw[:next((i for i, x in enumerate(q) if x.startswith("<")), len(q))] if False else qw

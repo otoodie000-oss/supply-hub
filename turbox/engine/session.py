@@ -27,6 +27,10 @@ import twins  # noqa: E402
 MAX_ACTIONS = 16
 MAX_REPLY = 260          # a stored story (<= 227 tokens) plus framing
 MAX_USER = 150
+# helper calls that a follow-up turn can refer back to ("And 40%?"): the context then carries the call
+CTX_TOOLS = ("calc", "pct_of", "pct_is", "pct_change", "tip", "discount", "convert", "world_time", "weekday",
+             "days_until", "days_since", "date_add", "age", "holiday", "roman", "words", "prime", "factors", "gcd",
+             "lcm", "count_letter", "count_letters", "spell", "reverse", "leap")
 FIND_MAX = 12            # tokens in one <find> mention           # user tokens kept per turn
 SEQ_MAX = 512            # positions per turn (executor inserts beyond this are dropped; the turn then ends)
 HELP = ("i answer questions from offline facts about people , places , words , books and science , do math , "
@@ -77,6 +81,7 @@ class Turn:
         self.region = []         # per position: 'q' question/context/memory, 'x' executor insert, 'm' model output
         self.last_rel = None
         self.rel_entity = None
+        self.last_tool = None    # (tool token, argument tokens) of the turn's last helper call
         self.conf = None
         pre = ["<bos>"]
         if sess.ctx:
@@ -221,6 +226,8 @@ class Turn:
                 self.tool_name = TOOL_OF_TOK[tok]
             elif tok == "</tool>":
                 res = turbox_tool(self.tool_name, self.tool_args, self.st, self.s.now(), self.s.lcg)
+                if self.tool_name in CTX_TOOLS:
+                    self.last_tool = ("<t_%s>" % self.tool_name, list(self.tool_args))
                 self.push(["<r>"] + res, "x")
                 self.mode = "action"
             else:
@@ -252,7 +259,9 @@ class Turn:
 
     def finish(self):
         """update conversation context after the turn"""
-        if self.last_rel is not None and self.rel_entity is not None:
+        if self.last_tool is not None and self.last_rel is None:
+            self.s.ctx = self.last_tool
+        elif self.last_rel is not None and self.rel_entity is not None:
             self.s.ctx = (self.last_rel, self.s.X.name_tokens(self.rel_entity))
         return display(self.reply, self.reply_caps), self.say_mode
 
