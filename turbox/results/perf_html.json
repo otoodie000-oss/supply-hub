@@ -1,0 +1,26 @@
+{
+ "readyMs": 1397,
+ "blocked": [],
+ "turns": [
+  {
+   "q": "What is the capital of France?",
+   "reply": "The capital of France is Paris.",
+   "ms": 1109
+  },
+  {
+   "q": "What is 15% of 80?",
+   "reply": "That's 12.",
+   "ms": 726
+  },
+  {
+   "q": "Tell me a joke about cats.",
+   "reply": "What do you call a group of disorganized cats? A cat-tastrophe.",
+   "ms": 1109
+  },
+  {
+   "q": "/help",
+   "reply": "I answer questions from offline facts about people, places, words, books and science, do math, units, dates and times, and remember what you tell me. Type /reset to clear my memory.",
+   "ms": 393
+  }
+ ]
+}

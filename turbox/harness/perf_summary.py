@@ -33,9 +33,10 @@ def main():
             if r.get("flagMs") is not None:
                 flag.append(r["flagMs"])
         last = [json.loads(l) for l in open(log) if l.startswith("{")]
+        lm = [x["loadMs"] for x in last if "loadMs" in x]
+        if lm:
+            loads.append(lm[-1])  # run_sb3.js prints loadMs twice (after load and in the final summary)
         for x in last:
-            if "loadMs" in x:
-                loads.append(x["loadMs"])
             for ph, f in (x.get("frames") or {}).items():
                 a = frames.setdefault(ph, {"n": 0, "max": 0.0, "over50": 0, "p99": []})
                 a["n"] += f["n"]

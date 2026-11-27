@@ -1,41 +1,72 @@
 {
  "factual": {
   "n": 268,
-  "median_s": 0.97,
-  "p95_s": 1.77,
-  "max_s": 2.17,
-  "first_word_median_s": 0.47
- },
- "open_story": {
-  "n": 10,
-  "median_s": 11.2,
-  "p95_s": 12.77,
-  "max_s": 12.77,
-  "first_word_median_s": 4.07
- },
- "open_joke": {
-  "n": 10,
-  "median_s": 1.33,
-  "p95_s": 10.77,
-  "max_s": 10.77,
-  "first_word_median_s": 0.6
- },
- "open_explain": {
-  "n": 10,
-  "median_s": 1.53,
-  "p95_s": 1.83,
+  "median_s": 0.8,
+  "p95_s": 1.4,
   "max_s": 1.83,
-  "first_word_median_s": 0.6
+  "first_word_median_s": 0.47
  },
  "open_advice": {
   "n": 10,
-  "median_s": 1.77,
-  "p95_s": 2.77,
-  "max_s": 2.77,
-  "first_word_median_s": 0.83
+  "median_s": 1.23,
+  "p95_s": 1.97,
+  "max_s": 1.97,
+  "first_word_median_s": 0.7
+ },
+ "open_explain": {
+  "n": 10,
+  "median_s": 1.07,
+  "p95_s": 1.37,
+  "max_s": 1.37,
+  "first_word_median_s": 0.5
+ },
+ "open_joke": {
+  "n": 10,
+  "median_s": 0.93,
+  "p95_s": 7.6,
+  "max_s": 7.6,
+  "first_word_median_s": 0.53
+ },
+ "open_story": {
+  "n": 85,
+  "median_s": 7.6,
+  "p95_s": 8.43,
+  "max_s": 9.17,
+  "first_word_median_s": 3.44
  },
  "flag_to_ready_ms": {
-  "first": 266.7,
-  "median": 266.7
- }
+  "n": 355,
+  "median": 266.7,
+  "max": 272
+ },
+ "frames": {
+  "flag_first": {
+   "n": 16,
+   "max_ms": 38.62,
+   "worst_run_p99_ms": 38.62,
+   "over_50ms": 0
+  },
+  "answer": {
+   "n": 27387,
+   "max_ms": 44.65,
+   "worst_run_p99_ms": 31.29,
+   "over_50ms": 0
+  },
+  "flag": {
+   "n": 2824,
+   "max_ms": 2.13,
+   "worst_run_p99_ms": 0.19,
+   "over_50ms": 0
+  },
+  "idle": {
+   "n": 181,
+   "max_ms": 0.01,
+   "worst_run_p99_ms": 0.01,
+   "over_50ms": 0
+  }
+ },
+ "sb3_load_ms": [
+  587,
+  471
+ ]
 }

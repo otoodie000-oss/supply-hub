@@ -40,7 +40,7 @@ How this result was reached (all fix passes were driven by the 20K stratified te
 
 | Build | 20K subset correct | confidently wrong |
 |---|---:|---:|
-| Turbo 2.0 | 21.0% | 64.0% |
+| Turbo 2.0 (grader at the time; final grader 21.2% / 63.9%) | 21.0% | 64.0% |
 | tx2: first full training run | 57.4% | 35.7% (old grader) |
 | tx3, fix pass 1: broader training phrasings, fallback content, grader support check | 78.3% | 9.5% |
 | tx4, fix pass 2: tool-call context for follow-ups, memory phrasings, context augmentation, units | 81.6% | 7.8% |
@@ -148,6 +148,8 @@ The same grader and the same evidence rule apply to Turbo 2.0, whose retrieved f
 
 @@PERF@@
 
+The 7.6 s joke turn (`open_r076`, a cat joke) is a joke request that the model answered with a stored story, so it took story time.
+
 @@OPEN@@
 
 ## Ten unedited `.sb3` transcripts
@@ -158,10 +160,11 @@ These are the 10 conversations frozen in `eval/transcripts.json` before any outp
 
 ## Known limits
 
-- **The headline gates fail.** Correctness is @@CORRECT@@ (gate 95%) and confidently wrong is @@CW@@ (gate ≤1%). Bare IDK is not zero. Over-cautious fallbacks on answerable items exceed 2%. The model generalizes imperfectly from its training phrasings to the separate test phrasings, especially:
+- **The headline gates fail.** Correctness is @@CORRECT@@ against a 95% gate, and confidently wrong is @@CW@@ against a 1% gate. Bare IDK is not zero. Over-cautious fallbacks on answerable items exceed 2%. The model generalizes imperfectly from its training phrasings to the separate test phrasings, especially:
   - tool requests worded unusually (sort, spell, letter counts);
   - relation wordings it never saw ("educated" → alma mater);
   - long, complex real trivia questions.
+- **Bare IDK:** the grader calls a decline "bare" when it adds fewer than three new words beyond the question's own. The 5,705 such replies are mostly circular or garbled fallbacks, for example "I couldn't find that, since you haven't told me." and "I don't have mercury's population in my offline knowledge. Is there. What I don't have…". About half of them (2,813) are on withheld facts. The fresh validation found two that are proper fallbacks the grader mislabelled; I did not re-grade.
 - **Real questions:** most can't be answered from this KB. TurboX usually falls back, but some fallbacks are generic ("Could you check the spelling or give me more detail?") or point at an unrelated closest match.
 - **Memory:** statements packed with two facts ("My name is Sam and I live in Lisbon") store at most one, and the recall can still fail (transcript 4). Recall is phrasing-sensitive: after "My name is Sam.", "What is my name?" works but "What's my name?" fell back in my check.
 - **Display:** names stored lowercase are capitalized only when the fact store marks them as proper nouns. Text-store stories and values you type stay lowercase ("Hi sam", "lisbon", "felix"). Month and weekday names are not capitalized ("friday, december 25"). Negative numbers print with a space after the minus sign ("The answer is - 1015.").

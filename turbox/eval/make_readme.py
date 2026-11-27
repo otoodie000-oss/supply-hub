@@ -161,7 +161,10 @@ def main():
             "—" if fbc is None else pc(fbc), pc(g(A, c, "correct")), pc(g(A, c, "confidently_wrong")),
             pc(g(B, c, "correct")), pc(g(B, c, "confidently_wrong"))))
     out["TABLE"] = "\n".join(rows + ["", "Other outcomes for TurboX on all 1M items: bare IDK %s, clarification where none was wanted %s, "
-                                         "non-answer %s." % (pc(ALL.get("bare_idk", 0), 2), pc(ALL.get("clarify_wrong", 0), 2), pc(ALL.get("nonanswer", 0), 2))])
+                                         "non-answer %s." % (pc(ALL.get("bare_idk", 0), 2), pc(ALL.get("clarify_wrong", 0), 2), pc(ALL.get("nonanswer", 0), 2)),
+                                     "", "Fallback on answerable counts only items whose gold requires an answer. For real held-out questions that is "
+                                         "%s of the 100,000 (questions this KB can answer, plus the KB-fact fill); the rest accept a proper fallback, "
+                                         "so a fallback there is graded correct." % format(tx["fallback_on_answerable"]["n_by_category"]["real"], ",")])
     m = tx["messy"]
     out["MESSY"] = ("these are %s of the 1M test items, and TurboX gets %s of them right. On the 20K subset, TurboX gets %s of "
                     "clean items and %s of messy ones right; Turbo 2.0 gets %s clean and %s messy.") % (

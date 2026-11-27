@@ -160,6 +160,13 @@
    "derived": 0.09653,
    "multiturn": 0.19836,
    "real": 0.48015
+  },
+  "n_by_category": {
+   "kb_fact": 400000,
+   "tool": 150000,
+   "derived": 150000,
+   "multiturn": 50000,
+   "real": 16955
   }
  }
 }

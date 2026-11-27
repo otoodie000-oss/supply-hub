@@ -90,7 +90,8 @@ def main():
         res[c] = {"n": m, **{k: round(v / m, 5) for k, v in sorted(cnt.items())}, "counts": dict(cnt)}
     res["fallback_on_answerable"] = {"n": ans["n"], "fallback": ans["fallback"], "rate": round(ans["fallback"] / ans["n"], 5),
                                      "by_category": {k[2:]: round(ans["fallback_" + k[2:]] / v, 5)
-                                                     for k, v in ans.items() if k.startswith("n_")}}
+                                                     for k, v in ans.items() if k.startswith("n_")},
+                                     "n_by_category": {k[2:]: v for k, v in ans.items() if k.startswith("n_")}}
     json.dump(res, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "results", "final_1m.json"), "w"),
               indent=1)
     print("rows", n, "sample", min(1000, len(sample)))
