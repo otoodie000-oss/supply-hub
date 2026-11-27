@@ -1,7 +1,7 @@
 {
  "project": "TurboX",
  "phase": "4 (final eval)",
- "step": "full 1M eval running (WORK/eval/final_1m, 4 procs x 5 shards, ~40 min/shard, ETA ~02:00 UTC; resumable: rerun eval/run_test.py with the same shard lists). Then: regrade, export_results, fresh grader set (grader_val.py fresh/fresh_score), final perf run on a quiet machine (harness/perf_summary.py), make_readme.py, commit build/.",
+ "step": "1M eval finished 03:36 UTC (20/20 shards, regraded with final grader, exported to results/). Remaining: final perf suite on quiet machine (running), packaged-HTML check, make_readme, commit+push.",
  "done": [
   "audit_2_0 (results/audit_2_0.json)",
   "turbowarp_bench (int list 5.5 ns/MAC, 2-digit strings ~15 ns/MAC, bsearch 0.19 us)",
@@ -26,7 +26,8 @@
   "2.0 baseline regraded with final grader: 21.19% correct / 63.94% CW / 1.6% bare IDK.",
   "Grader post-fix agreement on the 500 blind hand grades: 98.6% (493/500, optimistic); blind (grader at the time) 96.2%.",
   "Packaged HTML (autoplay on) works fully offline in headless Chromium: 0 network requests, first prompt 1.5-1.7 s under 4-core load.",
-  "/help printed 'Type/reset' (slash join rule): /help and /reset now fixed strings in mirror + Scratch; rebuilt sb3 7,548,735 bytes; structural diff vs parity-checked build = only those 2 branches + 2 constants; transcripts 25/25 identical."
+  "/help printed 'Type/reset' (slash join rule): /help and /reset now fixed strings in mirror + Scratch; rebuilt sb3 7,548,735 bytes; structural diff vs parity-checked build = only those 2 branches + 2 constants; transcripts 25/25 identical.",
+  "1M eval complete: 83.803% correct, 5.300% CW, 0.571% bare IDK (5,705), 9.53% fallback; fallback on answerable 11.10% (85,126/766,955). results.csv.gz 59.8 MB, sample_1000.csv, final_1m.json."
  ],
  "work_dir": "/home/user/work/x",
  "src_2_0": "/home/user/supply-hub/turbo2 (repo copy; /mnt/attach and uploads were empty)",
@@ -60,7 +61,8 @@
   "Fallback bias 3.0 chosen on dev (lowest dev wrong rate 0.70% with over-cautious fallbacks <= 2%, 1.83%).",
   "Open-ended gates fail (rubric 2.99 < 3.5; A/B 74% < 90%). Rater is the builder and styles are recognizable: not truly blind.",
   "Memory recall is phrasing-sensitive ('What's my name?' falls back where 'What is my name?' works); user-typed names display lowercase. Documented, not fixed (would need retraining / mirror+Scratch change + parity re-run; writing quality ranks below correctness).",
-  "Perf measured during the 1M run showed one boot frame at 63 ms under 4-core contention; the final perf numbers are re-measured on a quiet machine."
+  "Perf measured during the 1M run showed one boot frame at 63 ms under 4-core contention; the final perf numbers are re-measured on a quiet machine.",
+  "Withheld category: 2,813 bare_idk grades (2.8%). The fresh grader validation showed some of these are generic fallbacks the grader labels bare_idk (a known grader bug, left unfixed so validation stays blind); reported as measured."
  ],
  "decisions": [
   "Weights stored as 2-digit decimal strings with QAT (~0.7 deflated bytes/weight at 32 levels vs 1.24 for 2.0's int8 list items); decode costs ~2.8x compute.",
