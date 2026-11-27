@@ -1,5 +1,5 @@
 """Re-grade saved results with the current grader (needs the saved support text).
-Usage: python3 eval/regrade.py RESDIR"""
+Usage: python3 eval/regrade.py RESDIR [SHARD ...]   (no shards = every res_XX file in RESDIR)"""
 import glob
 import gzip
 import json
@@ -15,8 +15,11 @@ TEST = "/home/user/work/x/test"
 
 def main():
     d = sys.argv[1]
+    only = set(int(x) for x in sys.argv[2:])
     for f in sorted(glob.glob(d + "/res_*.jsonl.gz")):
         k = int(os.path.basename(f)[4:6])
+        if only and k not in only:
+            continue
         items = {}
         for l in gzip.open(TEST + "/shard_%02d.jsonl.gz" % k, "rt"):
             it = json.loads(l)
